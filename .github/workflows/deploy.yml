@@ -49,7 +49,12 @@ jobs:
             ${{ runner.os }}-node-
       # - run: npm ci
 
-      - run: hugo
+      - name: Build
+        run: |
+          npm install -D --save postcss-cli
+          npm install -D --save postcss
+          hugo
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }} # <-- specify same branch as above here
