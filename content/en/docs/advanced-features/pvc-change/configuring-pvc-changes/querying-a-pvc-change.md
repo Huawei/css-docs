@@ -78,7 +78,7 @@ To query a VolumeModifyClaim using kubectl, perform the following steps.
     </tbody>
     </table>
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >You can use kubectl to view the  **Events**  information of a VolumeModifyClaim. If a VolumeModifyClaim cannot meet the creation requirements or an error occurs during the creation, the server will record the  **Events**  information. The following command is used as an example:
 >```
 >kubectl describe volumemodifyclaims local-to-hypermetro 
@@ -150,7 +150,7 @@ A VolumeModifyContent is created using a VolumeModifyClaim and records the chang
     </tbody>
     </table>
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >You can use kubectl to view the  **Events**  information of a VolumeModifyContent. If a VolumeModifyContent cannot meet the creation requirements or an error occurs during the PVC change, the server will record the  **Events**  information. The following command is used as an example:
 >```
 >kubectl describe volumemodifycontents myvmc-uid

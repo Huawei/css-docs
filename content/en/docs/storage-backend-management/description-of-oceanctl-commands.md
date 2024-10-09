@@ -59,7 +59,7 @@ weight: 3
 
 -   Run the following command to create a storage backend and specify  **provisioner**.  **csi.oceanstor.com**  is the driver name specified during installation. For details, see  [4](/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform#li4307135252018).
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >This command is used only when a backend is created on the CCE or CCE Agile platform.
 
     ```

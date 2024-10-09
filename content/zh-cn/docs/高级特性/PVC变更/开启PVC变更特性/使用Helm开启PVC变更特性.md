@@ -39,7 +39,7 @@ weight: 1
     customresourcedefinition.apiextensions.k8s.io/volumemodifycontents.xuanwu.huawei.io configured
     ```
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >如回显中存在“Warning: resource customresourcedefinitions/volumemodifycontents.xuanwu.huawei.io is missing the kubectl.kubernetes.io/last-applied-configuration...”提示，可忽略该提示。该提示出现原因是由于Helm安装应用时使用的是kubectl create命令而不是kubectl apply命令。
 
 4.  <a name="li1230915254221"></a>执行以下命令，获取原有服务配置文件。

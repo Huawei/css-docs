@@ -135,7 +135,7 @@ weight: 2
 
 8.  （可选）在升级过程中如需自定义更新配置项信息或者需要新增配置信息，可参考[Helm values.yaml参数说明](/docs/安装部署/安装华为CSI/使用Helm安装华为CSI/Helm-values-yaml参数说明)修改update-values.yaml文件中配置信息。
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >升级时，如果update-values.yaml与values.yaml配置文件中存在相同配置项，update-values.yaml中的配置将会优先生效。
 
 9.  执行以下命令，升级华为CSI。其中helm-huawei-csi为指定的Helm Chart名称，huawei-csi为指定的Helm Chart命名空间，update-values.yaml为步骤[6](#li1037712113474)中获取的文件。

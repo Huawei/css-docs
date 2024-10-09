@@ -9,7 +9,7 @@ This section describes how to manually upgrade Huawei CSI.
 
 During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access.
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   Some CSI 2._x_  versions are unavailable now. If the upgrade fails, CSI may fail to be rolled back to a version which is unavailable now.
 >-   During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC.
 >-   During the upgrade or rollback, do not uninstall the snapshot-dependent component service.

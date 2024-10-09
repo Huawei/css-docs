@@ -65,7 +65,7 @@ weight: 2
 
 联系Kubernetes平台管理员查看kube-apiserver与CSI webhook网络问题。例如kube-apiserver存在HTTPS代理时可能无法访问CSI webhook服务。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >临时规避方案中，将会删除webhook资源，该资源用于在创建存储后端时校验输入的账户信息是否正确和能否和存储建立连接，因此删除该资源仅影响创建后端时的校验，无其他功能影响，但需要注意以下几点。
 >-   请保证huawei-csi-controller服务所在宿主机能和存储通信。
 >-   请保证输入的账号密码正确。

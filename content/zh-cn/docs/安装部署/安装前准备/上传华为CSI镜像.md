@@ -45,7 +45,7 @@ weight: 2
     docker push repo.huawei.com/huawei-csi:4.5.0
     ```
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   也可以使用containerd来进行镜像的导入和上传。
 >-   CCE / CCE Agile平台请参考该平台用户手册完成镜像导入和上传。
 
@@ -83,6 +83,6 @@ weight: 2
     podman load -i <name>.tar
     ```
 
-    >![](/public_sys-resources/zh/icon-notice.gif)  
+    >![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
     >当节点主机安装的是其他容器引擎时，请使用对应容器引擎的导入镜像命令。
 

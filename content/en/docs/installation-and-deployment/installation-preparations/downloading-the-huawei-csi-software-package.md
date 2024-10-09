@@ -10,7 +10,7 @@ This section describes how to download the software package and the component st
 1.  Open a browser and enter  [https://github.com/Huawei/eSDK\_K8S\_Plugin/releases](https://github.com/Huawei/eSDK_K8S_Plugin/releases)  in the address box.
 2.  Download the software package of the  4.5.0  version based on the CPU architecture.
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >Software package naming rule: Plug-in name \(**eSDK\_Huawei\_Storage\_Kubernetes\_CSI\_Plugin**\) + Version number + CPU architecture
 
 3.  Decompress the downloaded software package. The following table shows the component structure of the software package.

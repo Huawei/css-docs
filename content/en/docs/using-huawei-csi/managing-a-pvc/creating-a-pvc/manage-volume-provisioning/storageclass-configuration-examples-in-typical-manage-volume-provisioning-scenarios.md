@@ -149,7 +149,7 @@ After the StorageClass configuration is complete, perform the following steps to
 
     After creating a StorageClass, you can use the StorageClass to create a PV or PVC.
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >In the Manage Volume Provisioning mode, pay attention to the following when using a StorageClass:
 >-   Modifications to a StorageClass do not take effect on existing PVs. You need to delete these PVs and create them again using the modified StorageClass to apply the modified parameters.
 

@@ -140,6 +140,6 @@ huawei-csi-controller服务依赖的sidecar镜像：livenessprobe、csi-provisio
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >集群若未连接互联网，需要手动下载容器镜像并上传到集群中，具体操作请参考[下载容器镜像](/docs/常用操作/下载容器镜像)。
 

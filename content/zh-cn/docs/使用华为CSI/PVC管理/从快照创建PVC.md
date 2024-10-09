@@ -28,7 +28,7 @@ spec:
       storage: 100Gi
 ```
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   指定的storageClassName必须和dataSource中的快照源卷的StorageClass需一致。
 >-   克隆卷的容量必须不小于快照容量，建议和快照容量保持一致。
 

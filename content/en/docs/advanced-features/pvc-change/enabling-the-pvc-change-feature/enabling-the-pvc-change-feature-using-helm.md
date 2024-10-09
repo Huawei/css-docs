@@ -39,7 +39,7 @@ weight: 1
     customresourcedefinition.apiextensions.k8s.io/volumemodifycontents.xuanwu.huawei.io configured
     ```
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >If the command output contains  **Warning: resource customresourcedefinitions/volumemodifycontents.xuanwu.huawei.io is missing the kubectl.kubernetes.io/last-applied-configuration...**, you can ignore it. This message is displayed because the  **kubectl create**  command instead of the  **kubectl apply**  command is used for installation by Helm.
 
 4.  <a name="li1230915254221"></a>Run the following command to obtain the original service configuration file.

@@ -11,7 +11,7 @@ Manage Volume Provisioning allows administrators to use resources created on sto
 -   The Kubernetes cluster is rebuilt.
 -   Storage data is migrated in disaster recovery \(DR\) scenarios.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >In scenarios where multiple Kubernetes clusters are deployed, when Manage Volume Provisioning is used to manage the same storage resource, management operations performed on the PVC corresponding to the resource in any cluster will not be synchronized to other clusters.
 >For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PVC](/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc).
 
@@ -85,7 +85,7 @@ Manage Volume Provisioning allows administrators to use resources created on sto
     mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO            mysc           12s
     ```
 
-    >![](/public_sys-resources/en/icon-notice.gif) 
+    >![](/css-docs/public_sys-resources/en/icon-notice.gif) 
     >-   After the PVC is created, if the PVC is in the  **Pending**  state after a long time \(for example, one minute\), refer to  [When a PVC Is Created, the PVC Is in the Pending State](/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state).
     >-   You are advised to create or delete a maximum of 100 PVCs in a batch.
 

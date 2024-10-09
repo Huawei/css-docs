@@ -62,7 +62,7 @@ weight: 3
 
 ## 卸载Snapshot依赖组件服务{#section48371491319}
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   请勿在存在快照时卸载Snapshot依赖组件服务，否则Kubernetes会自动删除所有的用户快照且无法恢复，请谨慎操作。详细说明请参见[删除 CustomResourceDefinition](https://kubernetes.io/zh/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#delete-a-customresourcedefinition)。
 >-   请勿在CSI升级时卸载Snapshot依赖组件服务。
 

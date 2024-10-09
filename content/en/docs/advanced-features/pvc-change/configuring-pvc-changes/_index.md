@@ -41,7 +41,7 @@ The PVC change feature is implemented using CRD. Related resources are described
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >-   VolumeModifyClaim resources can be created, deleted, and queried, but cannot be updated.
 >-   VolumeModifyContent resources can only be queried and are used to display the change details of a single PVC. Do not manually create, delete, or modify the resources.
 >-   VolumeModifyContent resources are managed by VolumeModifyClaim. Do not manually manage VolumeModifyContent resources.

@@ -7,7 +7,7 @@ weight: 2
 
 本章节介绍如何安装华为CSI。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >当前版本华为CSI添加了资源请求和限制，具体详情请参考[华为CSI资源管理](/docs/附录/华为CSI资源管理)。
 
 ## 前提条件{#zh-cn_topic_0000001324610777_section19453102010152}

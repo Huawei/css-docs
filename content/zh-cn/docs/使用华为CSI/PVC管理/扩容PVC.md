@@ -68,7 +68,7 @@ weight: 2
 
     其中，"_mypvc_"是需要扩容的PVC名称，“_120Gi_”是扩容后的容量大小。请根据实际情况进行替换。
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >-   PVC容量的规格取决于存储规格限制和主机规格限制。以OceanStor Dorado 6.1.2/OceanStor Pacific系列 8.1.0对接CentOS 7为例，当使用的是ext4文件系统时，容量限制见[表 ext4容量的规格](/docs/使用华为CSI/PVC管理/创建PVC/动态卷供应/动态卷供应PVC参数说明#zh-cn_topic_0150885187_table178824527142)；当使用的是XFS文件系统时，容量限制见[表 XFS容量的规格](/docs/使用华为CSI/PVC管理/创建PVC/动态卷供应/动态卷供应PVC参数说明#zh-cn_topic_0150885187_table101951367104)。如果使用的是NFS或者裸设备，容量需满足使用的华为存储设备型号和版本所要求的规格约束。
     >-   如果PVC容量不在规格范围内，可能会由于存储规格限制或主机文件系统规格限制导致创建PVC或Pod失败。
     >-   如果扩容的目标容量超过存储池容量导致扩容失败，请参考[PVC扩容的目标容量超过存储池容量导致扩容失败](/docs/故障处理/PVC相关问题/PVC扩容的目标容量超过存储池容量导致扩容失败)。

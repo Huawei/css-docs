@@ -10,7 +10,7 @@ weight: 2
 Kubernetes uses a series of officially maintained sidecar components to register and listen to Kubernetes object resources and call CSI Driver through gRPC when necessary. Huawei CSI Driver implements the call initiated by sidecar on Huawei storage, for example, creating a  [Persistent Volume \(PV\)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)  is to create a LUN or file system on Huawei storage. The following figure shows the overall structure of Kubernetes, Huawei CSI, and Huawei storage.
 
 **Figure  1**  CSI overall architecture<a name="fig15167123218203"></a>  
-![](/figures/csi-overall-architecture.png "csi-overall-architecture")
+![](/css-docs/figures/csi-overall-architecture.png "csi-overall-architecture")
 
 Huawei CSI consists of two components: huawei-csi-controller and huawei-csi-node.
 
@@ -20,7 +20,7 @@ Huawei CSI consists of two components: huawei-csi-controller and huawei-csi-node
 The following figure shows the deployment model of Huawei CSI.
 
 **Figure  2**  CSI deployment model<a name="fig64461013274"></a>  
-![](/figures/csi-deployment-model.png "csi-deployment-model")
+![](/css-docs/figures/csi-deployment-model.png "csi-deployment-model")
 
 This document describes how to install, deploy, and use the Huawei CSI V4.5.0  plug-in.
 

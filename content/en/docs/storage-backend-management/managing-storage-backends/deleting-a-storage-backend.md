@@ -5,7 +5,7 @@ description:
 weight: 4
 ---
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >Do not delete a storage backend when a volume management operation is being performed on it.
 
 ## Example of Deleting a Backend{#section20764568435}

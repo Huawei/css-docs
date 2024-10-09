@@ -9,7 +9,7 @@ weight: 1
 
 本章节介绍如何使用Helm 3安装部署华为CSI。
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   华为CSI的安装支持root用户和非root用户。使用非root用户安装华为CSI时，需要保证当前用户能够访问Kubernetes集群的API Server，配置非root用户访问Kubernetes集群请参考[配置非root用户访问Kubernetes集群](/docs/常用操作/配置非root用户访问Kubernetes集群)。
 >-   华为CSI必须在root用户权限下运行。
 

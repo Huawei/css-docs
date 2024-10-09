@@ -128,7 +128,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   For details about the values of  **huaweiCSIService**,  **storageBackendSidecar**,  **storageBackendController**, and  **huaweiCSIExtender**, see  [Uploading a Huawei CSI Image](/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image). Use the name and version of the finally generated image.
 >-   For details about other sidecar image parameters, see  [Checking the Images on Which CSI Depends](/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends). Use the name and version of the finally uploaded image.
 
@@ -291,7 +291,7 @@ The controller parameters are used to configure the huawei-csi-controller compon
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >If  **controller.snapshot.enabled**  is set to  **true**, you need to install the volume snapshot CRD resource in the  **helm/crd/snapshot-crds**  directory.
 
 ## node Parameters{#section374014171581}
@@ -631,7 +631,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >If Huawei CSI has been deployed in your container environment, ensure that the value of  **csiDriver.driverName**  is the same as that configured during previous deployment. Otherwise, existing volumes or snapshots provisioned by Huawei CSI in the system cannot be managed by the newly deployed Huawei CSI.
 
 ## Other Parameters{#section11500468593}
@@ -771,7 +771,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >Ensure that the namespace entered in  **kubernetes.namespace**  exists on Kubernetes. If the namespace does not exist, run the following command to create it. In this example, the namespace for running Huawei CSI is  **huawei-csi**.
 >```
 >kubectl create namespace huawei-csi

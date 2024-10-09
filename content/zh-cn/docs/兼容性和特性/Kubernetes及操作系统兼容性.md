@@ -47,7 +47,7 @@ weight: 1
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   华为CSI对接Tanzu Kubernetes仅支持集中式存储NAS场景，相关FAQ请参见[对接Tanzu Kubernetes集群常见问题及解决方法](/docs/故障处理/对接Tanzu-Kubernetes集群常见问题及解决方法)。
 >-   华为CSI对接CCE/CCE Agile仅支持集中式存储。
 
@@ -230,7 +230,7 @@ weight: 1
 
 注释3 Anolis OS仅支持OceanStor Pacific存储。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >因DM-Multipath在0.7版本存在执行multipathd show maps时可能无法回显所有的虚拟设备，因此建议使用0.8及以上版本。
 >DM-Multipath版本可以通过以下途径查询：
 >-   如果使用的是rpm包，执行：rpm -qa | grep multipath或rpm -qa | grep device-mapper。

@@ -62,7 +62,7 @@ The webhook resource named  **storage-backend-controller.xuanwu.huawei.io**  is 
 
 ## Uninstalling the Snapshot-Dependent Component Service{#section48371491319}
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   Do not uninstall the snapshot-dependent component service when snapshots exist. Otherwise, Kubernetes will automatically delete all user snapshots and they cannot be restored. Exercise caution when performing this operation. For details, see  [Delete a CustomResourceDefinition](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#delete-a-customresourcedefinition).
 >-   Do not uninstall the snapshot-dependent component service during the CSI upgrade.
 

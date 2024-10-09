@@ -10,7 +10,7 @@ weight: 1
 1.  打开浏览器，访问仓库地址：[https://github.com/Huawei/eSDK\_K8S\_Plugin/releases](https://github.com/Huawei/eSDK_K8S_Plugin/releases)。
 2.  根据CPU架构，下载对应的4.5.0版本软件包。
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >软件包命名规范：插件名称（eSDK\_Huawei\_Storage\_Kubernetes\_CSI\_Plugin）+版本号+CPU架构
 
 3.  将下载的软件包解压。软件包组件结构如下表所示。

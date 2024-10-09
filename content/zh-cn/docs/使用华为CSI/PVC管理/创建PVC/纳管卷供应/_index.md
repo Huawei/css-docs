@@ -11,7 +11,7 @@ weight: 2
 -   重建Kubernetes集群。
 -   容灾场景下，对存储数据进行迁移。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >在多Kubernetes集群场景下，使用纳管卷特性对同一存储资源进行管理时，在任一集群中对该资源对应的PVC进行管理操作后，不会同步到其他集群中。
 >例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容PVC](/docs/使用华为CSI/PVC管理/扩容PVC)中的扩容命令进行扩容。
 
@@ -85,7 +85,7 @@ weight: 2
     mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO            mysc           12s
     ```
 
-    >![](/public_sys-resources/zh/icon-notice.gif)  
+    >![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
     >-   完成创建PVC操作后，如果长时间后（如一分钟后）PVC的状态是Pending，请参考[创建PVC时， PVC的状态为Pending](/docs/故障处理/PVC相关问题/创建PVC时-PVC的状态为Pending)。
     >-   建议每批次最多批量创建/删除100个PVC。
 

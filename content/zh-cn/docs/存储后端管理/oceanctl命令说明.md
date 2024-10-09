@@ -59,7 +59,7 @@ weight: 3
 
 -   执行以下命令创建存储后端，并指定provisioner，其中“csi.oceanstor.com”是安装时指定的驱动名称，详情可以参考[4](/docs/安装部署/安装华为CSI/使用Helm安装华为CSI/CCE和CCE-Agile平台安装华为CSI#li4307135252018)。
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >仅在CCE / CCE Agile平台创建后端时使用该命令。
 
     ```

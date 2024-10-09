@@ -9,7 +9,7 @@ If you plan to use the FC/iSCSI/NVMe over RoCE/NVMe over FC protocol to access H
 
 For details about the OSs and multipathing software supported by Huawei CSI, see  [Table 2](/docs/compatibility-and-features/kubernetes-and-os-compatibility#table133422378818).
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >-   If you want to use the FC/iSCSI protocol to connect to Huawei storage, you are advised to use native DM-Multipath provided by the OS.
 >-   If you want to use the NVMe over RoCE/NVMe over FC protocol to connect to Huawei storage, you are advised to use Huawei-developed UltraPath-NVMe.
 >-   If you want to use the SCSI protocol to connect to Huawei storage, disable DM-Multipath provided by the OS.
@@ -37,6 +37,6 @@ Multipathing software has been correctly installed on a host.
 
     If the configuration item does not exist, add it to the beginning of the  **/etc/multipath.conf**  file.
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >For details about the functions of the  **user\_friendly\_names**  and  **find\_multipaths**  parameters, see  [dm\_multipath/config\_file\_defaults](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/dm_multipath/config_file_defaults).
 

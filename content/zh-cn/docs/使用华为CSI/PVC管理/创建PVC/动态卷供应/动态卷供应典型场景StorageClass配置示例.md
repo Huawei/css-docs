@@ -199,7 +199,7 @@ parameters:
   qos: '{"IOTYPE": 2, "MINIOPS": 1000}' # 配置QoS
 ```
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >-   OceanStor V5 租户用户不支持配置QoS策略。
 >-   配置QoS后只能在新建的PVC上生效；对于同名StorageClass已经发放的PVC，不能自动添加QoS
 
@@ -222,7 +222,7 @@ parameters:
   authClient: "*"
 ```
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   发放NAS双活卷前，需要在两台存储设备之间配置双活关系，包含远端设备、双活域等，仅支持文件系统双活域工作模式为双活AA模式，配置操作请参考对应存储型号的产品文档。
 >-   若存储发生故障，逻辑管理端口可能产生漂移，在漂移状态下删除NAS双活卷后，需手动清理对应的存储资源。
 
@@ -269,7 +269,7 @@ parameters:
 
     创建StorageClass后，就可以使用该StorageClass进行创建PV或者PVC。
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >在StorageClass的使用中请注意如下事项：
 >-   **针对StorageClass进行的修改将不会在已经创建的PV上生效。您需要删除这些PV，并重新使用修改后的StorageClass创建才能应用修改的参数。**
 

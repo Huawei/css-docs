@@ -45,7 +45,7 @@ A Linux host with Docker installed is available, and the host can access the ima
     docker push repo.huawei.com/huawei-csi:4.5.0
     ```
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   You can also use containerd to import and upload the images.
 >-   For details about how to import and upload images to the CCE or CCE Agile platform, see the user manual of the platform.
 
@@ -83,6 +83,6 @@ If the image has been uploaded to the image repository, skip this section.
     podman load -i <name>.tar
     ```
 
-    >![](/public_sys-resources/en/icon-notice.gif) 
+    >![](/css-docs/public_sys-resources/en/icon-notice.gif) 
     >If another container engine is installed on the node, use the image import command for the corresponding container engine.
 

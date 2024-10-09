@@ -128,7 +128,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   huaweiCSIService、storageBackendSidecar、storageBackendController、huaweiCSIExtender参数的值，请参考[上传华为CSI镜像](/docs/安装部署/安装前准备/上传华为CSI镜像)章节的说明，使用最终生成镜像的名称和版本。
 >-   其他sidecar镜像参数，请参考[检查CSI依赖的镜像](/docs/安装部署/安装前准备/检查CSI依赖的镜像)章节的说明，使用最终上传的镜像的名称和版本。
 
@@ -290,7 +290,7 @@ controller配置项用于配置huawei-csi-controller组件的相关配置。
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >当controller.snapshot.enabled参数配置为true时，需要安装“helm/crd/snapshot-crds”目录下的卷快照CRD资源。
 
 ## node参数配置说明{#section374014171581}
@@ -630,7 +630,7 @@ csiDriver配置项包括了华为CSI运行时的基本配置，如华为驱动�
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >如果您的容器环境已经部署了华为CSI，请确保csiDriver.driverName的设置和之前部署时的配置保持一致。否则会导致系统中已存在的有华为CSI发放的卷/快照无法被新部署的华为CSI管理。
 
 ## 其他参数配置说明{#section11500468593}
@@ -770,7 +770,7 @@ csiDriver配置项包括了华为CSI运行时的基本配置，如华为驱动�
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >请确保此kubernetes.namespace填入的命名空间在Kubernetes上已经存在，如果不存在请使用如下命令创建对应的命名空间。本例中，华为CSI运行的命名空间为“huawei-csi”。
 >```
 >kubectl create namespace huawei-csi

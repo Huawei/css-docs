@@ -9,7 +9,7 @@ weight: 1
 
 针对不同的操作系统，ALUA配置可能有所不同。进入[华为技术支持](https://support.huawei.com/enterprise/zh/index.html)，在搜索输入框中输入“主机连通性指南”，单击搜索。在搜索结果中，选择对应操作系统的主机连通性指南。结合实际需要根据指南的说明进行ALUA配置。华为CSI将在华为存储上对该主机的启动器应用您设置的配置项。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >已经发放的Pod的节点不会主动更改ALUA信息，需要通过在该节点重新发放Pod才会变更主机ALUA配置。
 
 ## OceanStor V5系列和OceanStor Dorado V3系列存储后端的ALUA参数{#section16218353201717}
@@ -102,7 +102,7 @@ parameters:
 
 华为CSI支持的OceanStor和OceanStor Dorado系列存储的ALUA参数见[表 OceanStor和OceanStor Dorado系列存储的ALUA参数说明](#zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_table7143850202411)。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >OceanStor和OceanStor Dorado系列存储在默认情况下启动器主机访问模式即为“均衡模式”，因此不建议对OceanStor和OceanStor Dorado系列存储配置ALUA参数。
 
 **表 2**  OceanStor和OceanStor Dorado系列存储的ALUA参数说明

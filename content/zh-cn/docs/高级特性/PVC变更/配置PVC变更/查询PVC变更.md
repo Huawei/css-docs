@@ -78,7 +78,7 @@ weight: 2
     </tbody>
     </table>
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >VolumeModifyClaim支持使用kubectl查看Events信息，当VolumeModifyClaim无法满足创建要求，或者创建过程中出现错误时，服务端将记录Events信息。参考命令如下：
 >```
 >kubectl describe volumemodifyclaims local-to-hypermetro 
@@ -150,7 +150,7 @@ VolumeModifyContent由VolumeModifyClaim资源创建，记录了单个PVC的变�
     </tbody>
     </table>
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >VolumeModifyContent支持使用kubectl查看Events信息，当VolumeModifyContent无法满足创建要求，或者变更PVC出现错误时，服务端将记录Events信息。参考命令如下：
 >```
 >kubectl describe volumemodifycontents myvmc-uid

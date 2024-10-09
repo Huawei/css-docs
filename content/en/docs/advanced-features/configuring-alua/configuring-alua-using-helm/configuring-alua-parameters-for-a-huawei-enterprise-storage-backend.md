@@ -9,7 +9,7 @@ For details about how to configure ALUA for Huawei enterprise storage, see the h
 
 The ALUA configuration may vary according to the OS. Visit  [Huawei Technical Support](https://support.huawei.com/enterprise/en/index.html), enter  **Host Connectivity Guide**  in the search box, and click the search button. In the search result, select the host connectivity guide for the desired OS. Configure ALUA according to the actual situation and the description in the guide. Huawei CSI will apply the configuration items you set to the initiator of the host on Huawei storage.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >A node with a Pod provisioned does not proactively change ALUA information. The host ALUA configuration changes only after a Pod is provisioned again to the node.
 
 ## ALUA Parameters for OceanStor V5 and OceanStor Dorado V3 Series{#section16218353201717}
@@ -102,7 +102,7 @@ parameters:
 
 [Table 2](#en-us_topic_0000001352783505_en-us_topic_0000001198982584_table7143850202411)  lists the ALUA parameters supported by Huawei CSI for OceanStor and OceanStor Dorado series.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >By default, the initiator host access mode of OceanStor and OceanStor Dorado series storage is "balanced mode". Therefore, you are advised not to configure ALUA parameters for OceanStor and OceanStor Dorado series storage.
 
 **Table  2**  ALUA parameters for OceanStor and OceanStor Dorado series

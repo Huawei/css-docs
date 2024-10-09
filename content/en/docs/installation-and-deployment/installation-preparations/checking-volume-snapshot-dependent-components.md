@@ -7,7 +7,7 @@ weight: 4
 
 This section describes how to check the volume snapshot-dependent components in the cluster.
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >Kubernetes earlier than v1.17.0 does not support the snapshot function. If the snapshot CRD is deployed, the cluster may be faulty. Therefore, if Huawei CSI is deployed on Kubernetes earlier than v1.17.0, perform the check according to  [Kubernetes Earlier Than v1.17.0](#section6894165917369).
 
 ## Kubernetes Earlier Than v1.17.0{#section6894165917369}

@@ -28,7 +28,7 @@ spec:
       storage: 100Gi
 ```
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   The specified  **storageClassName**  must be the same as the StorageClass of the snapshot source volume in  **dataSource**.
 >-   The capacity of the clone volume must be greater than or equal to that of the snapshot. Equal capacity is recommended.
 

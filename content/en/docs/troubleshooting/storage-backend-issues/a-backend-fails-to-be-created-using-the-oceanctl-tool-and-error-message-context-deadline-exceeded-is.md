@@ -65,7 +65,7 @@ Perform the following steps to check whether Huawei CSI fails to verify the conn
 
 Contact the Kubernetes platform administrator to check the network between kube-apiserver and CSI webhook. For example, if kube-apiserver has an HTTPS proxy, the CSI webhook service may fail to be accessed.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >In the temporary workaround, the webhook resource will be deleted. This resource is used to check whether the entered account information is correct and whether the connection to the storage can be set up when a storage backend is created. Therefore, deleting this resource affects only the verification during backend creation and does not affect other functions. Pay attention to the following:
 >-   Ensure that the host machine where the huawei-csi-controller service is located can properly communicate with the storage.
 >-   Ensure that the entered account and password are correct.

@@ -40,7 +40,7 @@ In the .yaml configuration files of the controller and node, the Huawei CSI imag
     kubectl edit daemonset huawei-csi-node -o yaml -n=huawei-csi
     ```
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >-   In  **huawei-csi-driver**  in the sample .yaml file, modify  **image**  to Huawei CSI image  **huawei-csi:4.5.0**.
     >    ```
     >    containers:
@@ -55,7 +55,7 @@ In the .yaml configuration files of the controller and node, the Huawei CSI imag
     kubectl edit deployment huawei-csi-controller -o yaml -n=huawei-csi
     ```
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >-   In  **huawei-csi-driver**  in the sample .yaml file, modify  **image**  to Huawei CSI image  **huawei-csi:4.5.0**.
     >    ```
     >    containers:

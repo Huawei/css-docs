@@ -10,7 +10,7 @@ weight: 3
 ## 华为CSI使用流程概览{#section10356165115616}
 
 **图 1**  CSI安装及使用流程图<a name="fig111116220210"></a>  
-![](/figures/CSI安装及使用流程图.png "CSI安装及使用流程图")
+![](/css-docs/figures/CSI安装及使用流程图.png "CSI安装及使用流程图")
 
 ## 兼容性和特性{#section17589135519713}
 

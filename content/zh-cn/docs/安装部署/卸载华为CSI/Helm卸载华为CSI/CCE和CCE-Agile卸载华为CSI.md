@@ -13,7 +13,7 @@ weight: 2
 2.  在主页单击“模板市场\> 模板实例 ”，进入模板实例页面。
 3.  选择华为CSI模板实例，单击“卸载”，在弹出的提示框中单击“确定”。
 
-    ![](/figures/卸载-ch.png)
+    ![](/css-docs/figures/卸载-ch.png)
 
 4.  卸载huawei-csi-host-info对象，请参考[卸载huawei-csi-host-info对象](/docs/安装部署/卸载华为CSI/Helm卸载华为CSI/卸载CSI依赖组件服务#section870813403017)进行操作。
 5.  卸载webhook资源，请参考[卸载Webhook资源](/docs/安装部署/卸载华为CSI/Helm卸载华为CSI/卸载CSI依赖组件服务#section871155813014)进行操作。

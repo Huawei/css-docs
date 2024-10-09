@@ -108,7 +108,7 @@ The sample template of the PVC change file is  **/examples/volumemodifyclaim.yam
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >-   The  **spec.source.kind**  and  **spec.source.name**  parameters are used to specify the volume change scope. For example, if they are set to a StorageClass and the corresponding name respectively, all PVCs in the  **Bound**  state provisioned using the target StorageClass will be changed.
 >-   After all associated PVCs are changed, Huawei CSI will replace the original StorageClass and add the  **spec.parameters**  parameter of the VolumeModifyClaim so that the PVCs meet the StorageClass definition.
 

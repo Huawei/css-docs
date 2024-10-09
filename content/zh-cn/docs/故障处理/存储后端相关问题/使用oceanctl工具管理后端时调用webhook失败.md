@@ -9,7 +9,7 @@ weight: 1
 
 当webhook的配置发生改变后，例如修改webhookPort参数值后，此时使用oceanctl工具对后端进行管理时调用webhook报错，如下：
 
-![](/figures/en-us_image_0000001524132062.png)
+![](/css-docs/figures/en-us_image_0000001524132062.png)
 
 ## 根因分析{#zh-cn_topic_0000001279996521_section1425013451056}
 

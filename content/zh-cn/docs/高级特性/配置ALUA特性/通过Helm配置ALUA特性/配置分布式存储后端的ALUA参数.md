@@ -9,7 +9,7 @@ weight: 2
 
 针对不同的操作系统，ALUA配置可能有所不同。进入[华为技术支持](https://support.huawei.com/enterprise/zh/index.html)，在搜索输入框中输入“主机连通性指南”，单击搜索。在搜索结果中，选择对应操作系统的主机连通性指南。结合实际需要根据指南的说明进行ALUA配置。华为CSI将在华为存储上对该主机的启动器应用您设置的配置项。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >已经发放的Pod的节点不会主动更改ALUA信息，需要通过在该节点重新发放Pod才会变更主机ALUA配置。
 >分布式存储非双活场景，存储系统自身为Active/Active模式，选择“启用ALUA”没有实际意义，建议选择存储默认的“禁用ALUA”。因此不建议对分布式存储配置ALUA参数。
 

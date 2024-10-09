@@ -5,7 +5,7 @@ description:
 weight: 3
 ---
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   当VolumeModifyClaim的STATUS值为Creating时，删除VolumeModifyClaim资源，将会在存储侧删除此次变更创建的资源，然后移除集群资源。在删除后，如果继续使用原有的StorageClass进行PVC管理，需要将关联的存储后端恢复为非双活存储后端。
 >-   当VolumeModifyClaim的STATUS值为Pending或Completed时，删除VolumeModifyClaim资源，仅会移除集群资源，不会和存储交互，即不会在存储侧删除变更创建的资源。
 >-   VolumeModifyContent被VolumeModifyClaim管理，请勿手动管理VolumeModifyContent资源。

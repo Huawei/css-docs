@@ -40,7 +40,7 @@ controller和node的yaml配置文件中，配置Huawei CSI的镜像版本号错�
     kubectl edit daemonset huawei-csi-node -o yaml -n=huawei-csi
     ```
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >-   示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.5.0。
     >    ```
     >    containers:
@@ -55,7 +55,7 @@ controller和node的yaml配置文件中，配置Huawei CSI的镜像版本号错�
     kubectl edit deployment huawei-csi-controller -o yaml -n=huawei-csi
     ```
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >-   示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.5.0。
     >    ```
     >    containers:

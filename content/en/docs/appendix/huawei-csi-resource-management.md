@@ -184,7 +184,7 @@ If you need to modify the resource requests and limits of a container, perform t
     -   If the Pod name is  **huawei-csi-controller**, modify the  **huawei-csi-controller.yaml**  file.
     -   If the Pod name is  **huawei-csi-node**, modify the  **huawei-csi-node.yaml**  file.
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >For details about Pod names, see  [Table 1](#table4106151116363).
 
     For example, to modify the resource request of the  **huawei-csi-driver**  container in the Pod named  **huawei-csi-node**, run the following command to edit the configuration file and find the container whose  **spec.template.spec.containes.name**  is  **huawei-csi-driver**. Modify resource requests and limits as required.

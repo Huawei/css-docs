@@ -44,7 +44,7 @@ Huawei CSI plug-in supports the following container management platforms.
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   The connection between Huawei CSI and Tanzu Kubernetes supports only the centralized storage NAS scenario. For the related FAQ, see  [Common Problems and Solutions for Interconnecting with the Tanzu Kubernetes Cluster](/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster).
 >-   The connection between Huawei CSI and CCE or CCE Agile supports only centralized storage.
 
@@ -227,7 +227,7 @@ Note 2: Only Kylin ARM V10 SP3 supports UltraPath 31.3.0.
 
 Note 3: Anolis OS supports only OceanStor Pacific storage.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >For DM-Multipath 0.7, some virtual devices may not be displayed in the command output after the  **multipathd show maps**  command is executed. Therefore, you are advised to use version 0.8 or later.
 >You can query the DM-Multipath version in either of the following ways:
 >-   If the rpm package is used, run the  **rpm -qa | grep multipath**  or  **rpm -qa | grep device-mapper**  command.

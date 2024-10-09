@@ -12,7 +12,7 @@ For different storage resources, refer to the following configurations:
 -   For NAS resources, configure the minimum permissions by referring to  [Table 1](#table66121923174916).
 -   For SAN resources, configure the minimum permissions by referring to  [Table 2](#table51362243359).
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >For details about how to configure permissions for user-defined roles, see  [OceanStor Dorado 6000, Dorado 18000 Series Product Documentation](https://support.huawei.com/hedex/hdx.do?docid=EDOC1100214756&id=EN-US_TOPIC_0000001640708705&lang=en).
 
 **Table  1**  Minimum permissions for NAS resources

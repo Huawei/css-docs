@@ -108,7 +108,7 @@ PVC变更文件样例模板为/examples/volumemodifyclaim.yaml，具体配置项
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >-   spec.source.kind和spec.source.name用于指定卷变更范围，例如配置为StorageClass和对应名称时，将会变更使用目标StorageClass发放的所有的处于Bound状态的PVC。
 >-   当所有关联的PVC完成变更后，华为CSI会替换原有的StorageClass，并增加VolumeModifyClaim的spec.parameters参数，使得PVC满足StorageClass定义。
 

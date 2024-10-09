@@ -38,7 +38,7 @@ A storage resource, such as a LUN or file system, required by the PV to be creat
         storage: 100Gi
     ```
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >In the configuration file for static volume provisioning,  **storageClassName**  must be set to  **""**. Otherwise, Kubernetes will use the default StorageClass.
 
 2.  Run the following command to create a PV based on the prepared .yaml file.
@@ -101,7 +101,7 @@ After a PV is created in static volume provisioning mode, you can create a PVC b
     mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO                           12s
     ```
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >-   After the PVC is created, if the PVC is in the  **Pending**  state after a long time \(for example, one minute\), refer to  [When a PVC Is Created, the PVC Is in the Pending State](/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state).
     >-   You are advised to create or delete a maximum of 100 PVCs in a batch.
 

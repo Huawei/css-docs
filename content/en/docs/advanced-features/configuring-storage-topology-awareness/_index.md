@@ -63,7 +63,7 @@ You need to configure topology labels on worker nodes in the cluster. The method
     </tbody>
     </table>
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >-   A topology label must start with  **topology.kubernetes.io**. Topology label examples:
     >    -   Example 1:  **topology.kubernetes.io/region=China-west**
     >    -   Example 2:  **topology.kubernetes.io/zone=ChengDu**

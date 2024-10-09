@@ -41,7 +41,7 @@ PVC变更特性使用CRD实现，当前资源说明如下。
 </tbody>
 </table>
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >-   VolumeModifyClaim资源支持创建/删除/查询，不支持更新。
 >-   VolumeModifyContent资源仅支持查询，用于展示单个PVC变更详情，请勿手动创建/删除/修改。
 >-   VolumeModifyContent资源被VolumeModifyClaim管理，请勿手动管理VolumeModifyContent资源。

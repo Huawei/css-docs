@@ -9,7 +9,7 @@ weight: 1
 
 升级/回退过程中，已经存在的PVC/快照/Pod等资源会正常运行，不会影响您的业务访问。
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >-   部分2.x版本CSI已经下架，若升级失败，可能无法回退到已下架版本的CSI。
 >-   从2.x或3.x版本或4.x版本升级至4.5.0版本，可能存在旧版本已发放Pod重新挂载时失败的问题，具体请参考[从2.x或3.x升级至4.x版本](/docs/安装部署/升级-回退华为CSI/使用Helm升级-回退华为CSI/升级华为CSI/从2-x或3-x升级至4-x版本)
 >-   在升级/回退过程中，不能使用华为CSI创建新的资源，或者对已有的PVC做挂载/卸载操作。

@@ -72,7 +72,7 @@ weight: 1
     mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO            mysc           12s
     ```
 
-    >![](/public_sys-resources/zh/icon-notice.gif)  
+    >![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
     >-   完成创建PVC操作后，如果长时间后（如一分钟后）PVC的状态是Pending，请参考[创建PVC时， PVC的状态为Pending](/docs/故障处理/PVC相关问题/创建PVC时-PVC的状态为Pending)。
     >-   建议每批次最多批量创建/删除100个PVC。
 

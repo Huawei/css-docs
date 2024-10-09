@@ -7,7 +7,7 @@ weight: 2
 
 本章节介绍如何基于已配置的PVC变更文件创建PVC变更资源。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >-   仅支持双活AA模式。
 >-   如果变更场景为普通卷变更为双活卷，则仅支持变更主站点端存储卷。
 >-   创建PVC变更资源期间，请勿使用华为CSI管理PVC。

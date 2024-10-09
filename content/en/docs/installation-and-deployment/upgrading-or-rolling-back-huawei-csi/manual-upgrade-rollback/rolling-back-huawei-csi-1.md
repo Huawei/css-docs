@@ -7,7 +7,7 @@ weight: 2
 
 Uninstall CSI by referring to  [Manually Uninstalling Huawei CSI](/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi), and then download and install CSI of the source version.
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access.
 >-   During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC.
 >-   During the upgrade or rollback, do not uninstall the snapshot-dependent component service.

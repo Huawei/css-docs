@@ -100,6 +100,6 @@ After Huawei storage is connected to the container platform, Huawei CSI needs to
 
 -   Note 1: If a user-defined role is used, you need to configure permissions for the role. For details about how to configure the minimum permissions, see  [Configuring Custom Permissions](/docs/appendix/configuring-custom-permissions).
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >You are advised not to use the users of the super administrator role.
 

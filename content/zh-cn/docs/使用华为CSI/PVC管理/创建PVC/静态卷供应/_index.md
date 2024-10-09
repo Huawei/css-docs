@@ -38,7 +38,7 @@ weight: 3
         storage: 100Gi
     ```
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >静态卷供应的配置文件中，storageClassName参数必须配置为‘“”’，如果不配置，Kubernetes会使用系统默认的StorageClass。
 
 2.  执行以下命令，基于准备好的yaml文件创建PV。
@@ -101,7 +101,7 @@ weight: 3
     mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO                           12s
     ```
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >-   完成创建PVC操作后，如果长时间后（如一分钟后）PVC的状态是Pending，请参考[创建PVC时， PVC的状态为Pending](/docs/故障处理/PVC相关问题/创建PVC时-PVC的状态为Pending)。
     >-   建议每批次最多批量创建/删除100个PVC。
 

@@ -135,7 +135,7 @@ If CSI of an earlier version is deployed using Helm, perform the following steps
 
 8.  \(Optional\) If you need to update configuration items or add configuration information during the upgrade, modify the configuration information in the  **update-values.yaml**  file by referring to  [Parameters in the values.yaml File of Helm](/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm).
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >During the upgrade, if the  **update-values.yaml**  and  **values.yaml**  configuration files contain the same configuration item, the configuration in the  **update-values.yaml**  file takes effect preferentially.
 
 9.  Run the following command to upgrade Huawei CSI. In the following command,  **helm-huawei-csi**  indicates the specified Helm chart name,  **huawei-csi**  indicates the specified Helm chart namespace, and  **update-values.yaml**  indicates the file obtained in  [6](#li1037712113474).

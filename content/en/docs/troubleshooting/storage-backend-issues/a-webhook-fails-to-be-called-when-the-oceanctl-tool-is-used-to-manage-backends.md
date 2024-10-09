@@ -9,7 +9,7 @@ weight: 1
 
 After the webhook configuration is changed, for example, the value of the  **webhookPort**  parameter is changed, an error is reported indicating that a webhook fails to be called when the oceanctl tool is used to manage backends, as shown in the following figure.
 
-![](/figures/en-us_image_0000001996023254.png)
+![](/css-docs/figures/en-us_image_0000001996023254.png)
 
 ## Root Cause Analysis{#en-us_topic_0000001279996521_section1425013451056}
 

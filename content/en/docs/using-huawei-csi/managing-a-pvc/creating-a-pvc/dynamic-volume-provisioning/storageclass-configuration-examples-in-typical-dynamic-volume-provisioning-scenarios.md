@@ -199,7 +199,7 @@ parameters:
   qos: '{"IOTYPE": 2, "MINIOPS": 1000}' # Configure QoS.
 ```
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >-   vStore users of OceanStor V5 cannot configure QoS policies.
 >-   The QoS configuration takes effect only on the newly created PVC. QoS cannot be added automatically for PVCs with the same StorageClass name that have been provisioned.
 
@@ -222,7 +222,7 @@ parameters:
   authClient: "*"
 ```
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   Before provisioning a NAS HyperMetro volume, you need to configure the HyperMetro relationship between two storage devices, including the remote device, HyperMetro domain, and the like. The HyperMetro domain of the file system can only work in HyperMetro active-active \(AA\) mode. For details about the configuration operation, see the product documentation of the corresponding storage model.
 >-   If a storage device is faulty, the logical management port may fail over. In this case, you need to manually clear the corresponding storage resources after deleting the NAS HyperMetro volume.
 
@@ -269,7 +269,7 @@ After the StorageClass configuration is complete, perform the following steps to
 
     After creating a StorageClass, you can use the StorageClass to create a PV or PVC.
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >Pay attention to the following when using a StorageClass:
 >-   Modifications to a StorageClass do not take effect on existing PVs. You need to delete these PVs and create them again using the modified StorageClass to apply the modified parameters.
 

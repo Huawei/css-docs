@@ -9,7 +9,7 @@ weight: 1
 
 This section describes how to install Huawei CSI using Helm 3.
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   Huawei CSI can be installed as the root user or a non-root user. When installing Huawei CSI as a non-root user, ensure that the current user can access the API Server of the Kubernetes cluster. For details about how to configure access to the Kubernetes cluster as a non-root user, see  [Configuring Access to the Kubernetes Cluster as a Non-root User](/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user).
 >-   Huawei CSI must be run as the root user.
 

@@ -7,7 +7,7 @@ weight: 2
 
 This section describes how to manually install Huawei CSI.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >Currently, only the Kubernetes platform supports manual installation of Huawei CSI.
 
 ## Procedure{#section113761618183018}
@@ -46,7 +46,7 @@ This section describes how to manually install Huawei CSI.
 
 8.  Run the following command to install the huawei-csi-controller service.
 
-    >![](/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en/icon-note.gif)
     >If the Kubernetes version is earlier than v1.17, modify the  _./deploy/huawei-csi-controller.yaml_  file as follows:
     >-   If the Kubernetes version is earlier than v1.17, the snapshot feature is not supported. In this case, delete the snapshot-related container configurations items  **csi-snapshotter**  and  **snapshot-controller**.
     >-   If the Kubernetes version is earlier than v1.17, the csi-provisioner sidecar image provided by the Kubernetes community does not support the  **--leader-election**  parameter. Therefore, the  **leader-election**  parameter of the csi-provisioner container is deleted and only single-copy deployment is supported.
@@ -78,7 +78,7 @@ This section describes how to manually install Huawei CSI.
     huawei-csi-node-xrntc                    3/3     Running   0          13m
     ```
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >In the multi-copy controller deployment scenario, you can modify the  **spec.replica**  field of the Deployment resource in the  _./deploy/huawei-csi-controller.yaml_  file to specify the number of copies. After the modification, run the following command for the modification to take effect.
 >```
 >kubectl apply -f ./deploy/huawei-csi-controller.yaml

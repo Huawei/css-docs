@@ -7,7 +7,7 @@ weight: 2
 
 本章节介绍如何手动安装华为CSI。
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >手动安装华为CSI当前仅支持Kubernetes平台。
 
 ## 安装步骤{#section113761618183018}
@@ -72,7 +72,7 @@ weight: 2
     huawei-csi-node-xrntc                    3/3     Running   0          13m
     ```
 
->![](/public_sys-resources/zh/icon-note.gif) 
+>![](/css-docs/public_sys-resources/zh/icon-note.gif) 
 >多副本controller部署场景下可以通过修改 _./deploy/huawei-csi-controller.yaml_ 文件中Deployment资源的spec.replica字段来指定副本个数，修改完成后，执行以下命令生效：
 >```
 >kubectl apply -f ./deploy/huawei-csi-controller.yaml

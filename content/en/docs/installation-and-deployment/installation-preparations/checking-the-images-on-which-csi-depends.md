@@ -140,6 +140,6 @@ For details about the functions and details of each image, see the following tab
 </tbody>
 </table>
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >If the cluster is not connected to the Internet, manually download the container images and upload them to the cluster. For details, see  [Downloading a Container Image](/docs/common-operations/downloading-a-container-image).
 

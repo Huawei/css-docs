@@ -9,7 +9,7 @@ For details about how to configure ALUA for Huawei distributed storage, see the 
 
 The ALUA configuration may vary according to the OS. Visit  [Huawei Technical Support](https://support.huawei.com/enterprise/en/index.html), enter  **Host Connectivity Guide**  in the search box, and click the search button. In the search result, select the host connectivity guide for the desired OS. Configure ALUA according to the actual situation and the description in the guide. Huawei CSI will apply the configuration items you set to the initiator of the host on Huawei storage.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >A node with a Pod provisioned does not proactively change ALUA information. The host ALUA configuration changes only after a Pod is provisioned again to the node.
 >In non-HyperMetro scenarios of distributed storage, you are advised to set the switchover mode to "disable ALUA" \(default value\). This is because the storage system is in active/active mode and "enables ALUA" is meaningless. Therefore, you are advised not to configure ALUA parameters for distributed storage.
 

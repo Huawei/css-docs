@@ -63,7 +63,7 @@ weight: 2
     </tbody>
     </table>
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >-   拓扑标签必须以topology.kubernetes.io开头。拓扑标签示例：
     >    -   示例1：topology.kubernetes.io/region=China-west
     >    -   示例2：topology.kubernetes.io/zone=ChengDu

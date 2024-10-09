@@ -10,7 +10,7 @@ This chapter describes how to quickly install and use Huawei CSI to manage Persi
 ## Huawei CSI Use Process{#section10356165115616}
 
 **Figure  1**  CSI installation and use process<a name="fig111116220210"></a>  
-![](/figures/csi-installation-and-use-process.png "csi-installation-and-use-process")
+![](/css-docs/figures/csi-installation-and-use-process.png "csi-installation-and-use-process")
 
 ## Compatibility and Features{#section17589135519713}
 

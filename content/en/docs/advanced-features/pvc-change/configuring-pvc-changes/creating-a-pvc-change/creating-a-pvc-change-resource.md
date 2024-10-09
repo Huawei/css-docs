@@ -7,7 +7,7 @@ weight: 2
 
 This section describes how to create a PVC change resource based on a configured PVC change file.
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >-   Only the HyperMetro active-active \(AA\) mode is supported.
 >-   When a common volume is changed to a HyperMetro volume, only the storage volume at the primary site can be changed.
 >-   Do not use Huawei CSI to manage a PVC during PVC change resource creation.

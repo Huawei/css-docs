@@ -5,7 +5,7 @@ description:
 weight: 2
 ---
 
->![](/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en/icon-note.gif)
 >-   PVC provisioning must be based on a configured storage backend. Therefore, if a PVC has been provisioned on a storage backend, do not change the storage backend.
 >-   The name uniquely identifies a storage backend. The name of a storage backend with a PVC provisioned cannot be changed.
 >-   After a storage backend is modified, the new configuration applies only to volumes to be provisioned.

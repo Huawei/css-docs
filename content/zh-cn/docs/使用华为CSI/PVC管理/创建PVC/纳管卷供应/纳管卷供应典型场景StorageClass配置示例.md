@@ -149,7 +149,7 @@ parameters:
 
     创建StorageClass后，就可以使用该StorageClass进行创建PV或者PVC。
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >在纳管卷供应场景下，StorageClass的使用中请注意如下事项：
 >-   **针对StorageClass进行的修改将不会在已经创建的PV上生效。您需要删除这些PV，并重新使用修改后的StorageClass创建才能应用修改的参数。**
 

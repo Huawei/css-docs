@@ -27,7 +27,7 @@ spec:
       storage: 2Gi
 ```
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   The specified  **storageClassName**  must be the same as the StorageClass of the source volume in  **dataSource**.
 >-   The capacity of the clone volume must be greater than or equal to that of the source volume. Equal capacity is recommended.
 

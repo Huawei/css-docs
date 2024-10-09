@@ -7,7 +7,7 @@ weight: 2
 
 本章节介绍如何手动卸载华为CSI。
 
->![](/public_sys-resources/zh/icon-notice.gif)  
+>![](/css-docs/public_sys-resources/zh/icon-notice.gif)  
 >如果您不是出于升级的目的卸载华为CSI，请确保卸载华为CSI前已经在您的容器平台中将华为CSI发放的资源（PV、PVC、快照、存储后端等）全部清理。否则一旦您卸载华为CSI后，这些资源将无法被自动调度、管理或者清理。
 
 ## 卸载huawei-csi-node服务{#section1012817231386}

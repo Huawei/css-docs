@@ -10,7 +10,7 @@ weight: 2
 Kubernetes通过其官方维护的一系列sidecar组件负责注册监听Kubernetes对象资源，并在需要的时候通过gRPC发起对CSI Driver调用，华为CSI Driver将sidecar发起的调用在华为存储上实施，如创建一个[持久卷（Persistent Volume，PV）](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)的操作被实施为在华为存储上创建一个LUN/文件系统。Kubernetes、华为CSI以及华为存储的整体结构如下图所示：
 
 **图 1**  CSI整体架构<a name="fig15167123218203"></a>  
-![](/figures/CSI整体架构.png "CSI整体架构")
+![](/css-docs/figures/CSI整体架构.png "CSI整体架构")
 
 华为CSI主要有两大组件，分别为huawei-csi-controller和huawei-csi-node：
 
@@ -20,7 +20,7 @@ Kubernetes通过其官方维护的一系列sidecar组件负责注册监听Kubern
 华为CSI的部署模型如下所示：
 
 **图 2**  CSI部署模型<a name="fig64461013274"></a>  
-![](/figures/CSI部署模型.png "CSI部署模型")
+![](/css-docs/figures/CSI部署模型.png "CSI部署模型")
 
 本文档主要介绍华为CSI V4.5.0插件的安装部署和使用。
 

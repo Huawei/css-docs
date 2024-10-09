@@ -59,13 +59,13 @@ CCE和CCE Agile平台无法直接通过Helm安装华为CSI，需要手动制作H
 3.  导出Helm安装包，具体请参考[制作Helm安装包](#section2032812215509)。
 4.  在主页单击“模板市场\> 我的模板\>上传模板”，进入上传模板对话框。将导出的Helm安装包导入CCE Agile平台。
 
-    ![](/figures/上传模板-ch.png)
+    ![](/css-docs/figures/上传模板-ch.png)
 
 5.  安装包上传完毕，在主页单击“模板市场\>我的模板”，进入我的模板页面，单击“安装\>提交”。其中模板实例名称可自定义填写。
 
-    ![](/figures/安装csi中文.png)
+    ![](/css-docs/figures/安装csi中文.png)
 
 6.  在主页单击“模板市场\>模板实例”，选择安装时指定的项目（例如样例中的项目是“default”）。安装成功后执行状态将回显为“安装成功”。
 
-    ![](/figures/安装结果-ch.png)
+    ![](/css-docs/figures/安装结果-ch.png)
 

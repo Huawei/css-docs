@@ -5,7 +5,7 @@ description:
 weight: 3
 ---
 
->![](/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en/icon-notice.gif) 
 >-   If  **STATUS**  of a VolumeModifyClaim is  **Creating**, deleting the VolumeModifyClaim resource will delete the created resource on the storage side and then remove the cluster resource. After the deletion, if you continue to use the original StorageClass for PVC management, you need to restore the associated storage backend to a non-HyperMetro storage backend.
 >-   If  **STATUS**  of a VolumeModifyClaim is  **Pending**  or  **Completed**, deleting the VolumeModifyClaim resource will only remove the cluster resource and will not delete the created resource on the storage side \(that is, there is not interaction with the storage side\).
 >-   VolumeModifyContent resources are managed by VolumeModifyClaim. Do not manually manage VolumeModifyContent resources.

@@ -184,7 +184,7 @@ weight: 6
     -   Pod名称为huawei-csi-controller时，修改huawei-csi-controller.yaml文件。
     -   Pod名称为huawei-csi-node时，修改huawei-csi-node.yaml文件。
 
-    >![](/public_sys-resources/zh/icon-note.gif) 
+    >![](/css-docs/public_sys-resources/zh/icon-note.gif) 
     >Pod名称的分类，请参考[表 容器资源请求和限制](#table4106151116363)。
 
     以修改Pod名称为huawei-csi-node中huawei-csi-driver容器的资源请求为例，执行命令编辑配置文件，找到spec.template.spec.containes.name为huawei-csi-driver的容器。按需修改资源请求和限制。
