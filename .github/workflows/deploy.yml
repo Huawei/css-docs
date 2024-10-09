@@ -27,6 +27,11 @@ jobs:
           hugo-version: '0.129.0'
           extended: true
 
+      - name: Setup Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.22.1'
+
       - name: Install Dart Sass
         run: sudo snap install dart-sass
 
@@ -35,9 +40,16 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - run: npm ci
-      - run: hugo --baseURL https://${REPO_OWNER}.github.io/${REPO_NAME} --minify
 
+      - run: hugo
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/main' }} # <-- specify same branch as above here
