@@ -1,5 +1,5 @@
 # Base configuration
-baseURL = "/"
+baseURL = "https://huawei.github.io/css-docs/"
 title = "Huawei"
 contentDir = "content/zh-cn"
 defaultContentLanguage = "zh-cn"
@@ -46,7 +46,7 @@ description = "Huawei Container Storage Suite"
 version_menu = "Releases"
 [[languages.en.params.versions]]
   version = "v4.5.0 (current)"
-  url = "http://8.44.188.128:1313/en/docs"
+  url = "https://huawei.github.io/css-docs/en/docs"
 
 [markup]
   [markup.goldmark]
@@ -80,7 +80,7 @@ showLightDarkModeMenu = false
 
 [[params.versions]]
   version = "v4.5.0（当前版本）"
-  url = "http://8.44.188.128:1313/docs"
+  url = "https://huawei.github.io/css-docs/docs"
 
 [[menu.main]]
     name = "GitHub"
