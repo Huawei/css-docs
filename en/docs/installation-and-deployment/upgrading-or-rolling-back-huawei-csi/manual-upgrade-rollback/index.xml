@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manual Upgrade/Rollback on Huawei</title>
-    <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/</link>
     <description>Recent content in Manual Upgrade/Rollback on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upgrading Huawei CSI</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</guid>
       <description>This section describes how to manually upgrade Huawei CSI.&#xA;During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access.&#xA;Some CSI 2.x versions are unavailable now. If the upgrade fails, CSI may fail to be rolled back to a version which is unavailable now. During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC.</description>
     </item>
     <item>
       <title>Rolling Back Huawei CSI</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</guid>
       <description>Uninstall CSI by referring to Manually Uninstalling Huawei CSI, and then download and install CSI of the source version.&#xA;During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access. During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC. During the upgrade or rollback, do not uninstall the snapshot-dependent component service.</description>
     </item>
   </channel>

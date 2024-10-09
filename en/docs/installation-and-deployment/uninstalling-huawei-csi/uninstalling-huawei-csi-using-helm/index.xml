@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uninstalling Huawei CSI Using Helm on Huawei</title>
-    <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/</link>
     <description>Recent content in Uninstalling Huawei CSI Using Helm on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Uninstalling Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
       <description>This section describes how to uninstall Huawei CSI on the Kubernetes, OpenShift, and Tanzu platforms.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to uninstall Huawei CSI. In the command, helm-huawei-csi indicates the custom Helm chart name and huawei-csi indicates the namespace where the Helm chart resides. This command will uninstall the huawei-csi-controller, huawei-csi-node, and RBAC resources of Huawei CSI.</description>
     </item>
     <item>
       <title>Uninstalling Huawei CSI on CCE or CCE Agile</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</guid>
       <description>This section describes how to uninstall Huawei CSI on the CCE or CCE Agile platform. The following uses CCE Agile v22.3.2 as an example.&#xA;Procedure Log in to the CCE Agile platform.&#xA;On the home page, choose Charts &amp;gt; Releases. The Releases page is displayed.&#xA;Select a Huawei CSI release and click Uninstall. In the displayed dialog box, click OK.&#xA;Uninstall the huawei-csi-host-info object. For details, see Uninstalling the huawei-csi-host-info Object.</description>
     </item>
     <item>
       <title>Uninstalling CSI-Dependent Component Services</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</guid>
       <description>This section describes how to uninstall the CSI-dependent component services.&#xA;Uninstalling the huawei-csi-host-info Object Secret object huawei-csi-host-info stores the initiator information about each node in the cluster, for example, iSCSI initiators. When you run the helm uninstall command, the resource will not be uninstalled. To uninstall the resource, perform the following steps:&#xA;Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
   </channel>

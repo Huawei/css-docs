@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compatibility and Features on Huawei</title>
-    <link>/en/docs/compatibility-and-features/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/</link>
     <description>Recent content in Compatibility and Features on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/compatibility-and-features/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/compatibility-and-features/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes and OS Compatibility</title>
-      <link>/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</guid>
       <description>Huawei CSI plug-in supports the following container management platforms.&#xA;Table 1 Supported container management platforms&#xA;Container Management Platform&#xA;Version&#xA;Kubernetes&#xA;1.16 to 1.30&#xA;Red Hat OpenShift Container Platform&#xA;4.6 EUS, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15&#xA;Tanzu Kubernetes&#xA;TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18&#xA;CCE Agile&#xA;22.3.2&#xA;CCE&#xA;22.9.5&#xA;The connection between Huawei CSI and Tanzu Kubernetes supports only the centralized storage NAS scenario.</description>
     </item>
     <item>
       <title>Kubernetes Feature Matrix</title>
-      <link>/en/docs/compatibility-and-features/kubernetes-feature-matrix/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-feature-matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/kubernetes-feature-matrix/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-feature-matrix/</guid>
       <description>This section describes the features of different Kubernetes versions supported by Huawei CSI.&#xA;Table 1 Kubernetes versions and supported features&#xA;Feature&#xA;V1.16&#xA;V1.17&#xA;V1.18&#xA;V1.19&#xA;V1.20&#xA;V1.21+&#xA;Static Provisioning&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Dynamic Provisioning&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Manage Provisioning1&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Expand Persistent Volume&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Create VolumeSnapshot&#xA;x&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Restore VolumeSnapshot</description>
     </item>
     <item>
       <title>Compatibility with Huawei Enterprise Storage</title>
-      <link>/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</guid>
       <description>Huawei CSI plug-in is compatible with Huawei OceanStor series all-flash storage and hybrid flash storage. The following table lists the supported storage versions.&#xA;Table 1 Supported Huawei enterprise storage&#xA;Storage Product&#xA;Version&#xA;OceanStor V5&#xA;V500R007, V500R007 Kunpeng&#xA;OceanStor Dorado V3&#xA;V300R002&#xA;OceanStor&#xA;6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;OceanStor Dorado&#xA;6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;Huawei CSI plug-in supports the following features for Huawei enterprise storage.&#xA;Table 2 Features supported by Huawei enterprise storage and constraints</description>
     </item>
     <item>
       <title>Compatibility with Huawei Distributed Storage</title>
-      <link>/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</guid>
       <description>Huawei CSI plug-in is compatible with Huawei OceanStor series distributed storage systems. The following table lists the supported storage versions.&#xA;Table 1 Supported Huawei distributed storage&#xA;Storage Product&#xA;Version&#xA;FusionStorage Block&#xA;8.0.1&#xA;OceanStor Pacific series&#xA;8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0&#xA;Huawei CSI plug-in supports the following features for Huawei distributed storage.&#xA;Table 2 Features supported by Huawei distributed storage and constraints&#xA;Feature&#xA;FusionStorage Block&#xA;OceanStor Pacific Series&#xA;Static Provisioning</description>
     </item>
   </channel>

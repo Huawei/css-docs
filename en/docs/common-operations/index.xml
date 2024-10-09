@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Common Operations on Huawei</title>
-    <link>/en/docs/common-operations/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/common-operations/</link>
     <description>Recent content in Common Operations on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/common-operations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/common-operations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Helm 3</title>
-      <link>/en/docs/common-operations/installing-helm-3/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/installing-helm-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/installing-helm-3/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/installing-helm-3/</guid>
       <description>This section describes how to install Helm 3.&#xA;For details, see https://helm.sh/docs/intro/install/.&#xA;Prerequisites Ensure that the master node in the Kubernetes cluster can access the Internet.&#xA;Procedure Run the following command to download the Helm 3 installation script.&#xA;curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 Run the following command to modify the permission on the Helm 3 installation script.&#xA;chmod 700 get_helm.sh Determine the Helm version to be installed based on the version mapping between Helm and Kubernetes.</description>
     </item>
     <item>
       <title>Downloading a Container Image</title>
-      <link>/en/docs/common-operations/downloading-a-container-image/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/downloading-a-container-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/downloading-a-container-image/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/downloading-a-container-image/</guid>
       <description>Downloading a Container Image Using containerd Run the following command to download an image to a local path. In the command, image:tag indicates the image to be pulled and its tag.&#xA;ctr image pull &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; Run the following command to export the image to a file. In the command, image:tag indicates the image to be exported, and file indicates the name of the exported image file.&#xA;ctr image export &amp;lt;file&amp;gt;.tar &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; Downloading a Container Image Using Docker Run the following command to download an image to a local path.</description>
     </item>
     <item>
       <title>Updating the huawei-csi-controller or huawei-csi-node Service</title>
-      <link>/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</guid>
       <description>Perform this operation when you need to update the huawei-csi-controller or huawei-csi-node service, for example, changing the number of copies for the huawei-csi-controller service.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the /helm/esdk directory and run the following command to obtain the original service configuration file. helm-huawei-csi indicates the Helm chart name specified during the installation of the earlier version, and huawei-csi indicates the Helm chart namespace specified during the installation of the earlier version.</description>
     </item>
     <item>
       <title>Modifying the Log Output Mode</title>
-      <link>/en/docs/common-operations/modifying-the-log-output-mode/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/modifying-the-log-output-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/modifying-the-log-output-mode/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/modifying-the-log-output-mode/</guid>
       <description>huawei-csi supports two log output modes: file and console. file indicates that logs are output to the fixed directory (/var/log/huawei), and console indicates that logs are output to the standard directory of the container. You can set the log output mode as required. The default mode is file.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Enabling the ReadWriteOncePod Feature Gate</title>
-      <link>/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</guid>
       <description>The ReadWriteOnce access mode is the fourth access mode introduced by Kubernetes v1.22 for PVs and PVCs. If you create a Pod using a PVC in ReadWriteOncePod access mode, Kubernetes ensures that the Pod is the only Pod in the cluster that can read or write the PVC.&#xA;The ReadWriteOncePod access mode is an alpha feature in Kubernetes v1.22/1.23/1.24. Therefore, you need to enable the ReadWriteOncePod feature in feature-gates of kube-apiserver, kube-scheduler, and kubelet before using the access mode.</description>
     </item>
     <item>
       <title>Configuring Access to the Kubernetes Cluster as a Non-root User</title>
-      <link>/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</guid>
       <description>Procedure Copy the authentication file of the Kubernetes cluster and modify /etc/kubernetes/admin.conf to be the actual authentication file.&#xA;mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config Change the user and user group of the authentication file.&#xA;sudo chown $(id -u):$(id -g) $HOME/.kube/config Configure the KUBECONFIG environment variable of the current user. The following uses Ubuntu 20.04 as an example.&#xA;echo &amp;#34;export KUBECONFIG=$HOME/.kube/config&amp;#34; &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc </description>
     </item>
   </channel>

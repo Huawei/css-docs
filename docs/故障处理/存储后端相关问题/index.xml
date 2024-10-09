@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>存储后端相关问题 on Huawei</title>
-    <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
     <description>Recent content in 存储后端相关问题 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用oceanctl工具管理后端时调用webhook失败</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86%E5%90%8E%E7%AB%AF%E6%97%B6%E8%B0%83%E7%94%A8webhook%E5%A4%B1%E8%B4%A5/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86%E5%90%8E%E7%AB%AF%E6%97%B6%E8%B0%83%E7%94%A8webhook%E5%A4%B1%E8%B4%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86%E5%90%8E%E7%AB%AF%E6%97%B6%E8%B0%83%E7%94%A8webhook%E5%A4%B1%E8%B4%A5/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E7%AE%A1%E7%90%86%E5%90%8E%E7%AB%AF%E6%97%B6%E8%B0%83%E7%94%A8webhook%E5%A4%B1%E8%B4%A5/</guid>
       <description>现象描述 当webhook的配置发生改变后，例如修改webhookPort参数值后，此时使用oceanctl工具对后端进行管理时调用webhook报错，如下：&#xA;根因分析 当webhook的配置发生改变后，导致validatingwebhookconfiguration资源失效。&#xA;解决措施或规避方法 执行以下命令，删除validatingwebhookconfiguration资源。&#xA;kubectl delete validatingwebhookconfiguration storage-backend-controller.xuanwu.huawei.io 执行以下命令，重启CSI Controller，请通过“&amp;ndash;replicas=*”恢复CSI Controller的副本数，下例为恢复至1个，请根据实际情况修改。&#xA;kubectl scale deployment huawei-csi-controller -n huawei-csi --replicas=0 kubectl scale deployment huawei-csi-controller -n huawei-csi --replicas=1 执行以下命令，检查CSI Controller是否成功拉起。&#xA;kubectl get pod -n huawei-csi 命令结果示例如下。Pod状态为“Running“说明Controller成功拉起。&#xA;NAME READY STATUS RESTARTS AGE huawei-csi-controller-58d5b6b978-s2dsq 9/9 Running 0 19s huawei-csi-node-dt6nd 3/3 Running 0 77m </description>
     </item>
     <item>
       <title>使用oceanctl工具创建后端失败，报错：context deadline exceeded</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E5%88%9B%E5%BB%BA%E5%90%8E%E7%AB%AF%E5%A4%B1%E8%B4%A5-%E6%8A%A5%E9%94%99-context-deadline-exceeded/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E5%88%9B%E5%BB%BA%E5%90%8E%E7%AB%AF%E5%A4%B1%E8%B4%A5-%E6%8A%A5%E9%94%99-context-deadline-exceeded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E5%88%9B%E5%BB%BA%E5%90%8E%E7%AB%AF%E5%A4%B1%E8%B4%A5-%E6%8A%A5%E9%94%99-context-deadline-exceeded/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8oceanctl%E5%B7%A5%E5%85%B7%E5%88%9B%E5%BB%BA%E5%90%8E%E7%AB%AF%E5%A4%B1%E8%B4%A5-%E6%8A%A5%E9%94%99-context-deadline-exceeded/</guid>
       <description>现象描述 用户使用oceanctl工具创建存储后端失败，控制台回显：“failed to call webhook: xxx :context deadline exceeded; error: exist status 1”。&#xA;根因分析 创建存储后端时，将会调用CSI提供的webhook服务校验与存储管理网络的连通性和存储账号密码信息，出现该问题原因可能是以下两种原因：&#xA;华为CSI校验存储管理网络连通性失败。 kube-apiserver和CSI webhook通信异常。 华为CSI校验存储管理网络连通性失败 请按照以下步骤检查是否是华为CSI校验存储管理网络连通性失败。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行命令，获取CSI服务信息。其中，huawei-csi为CSI服务部署的命名空间。&#xA;kubectl get pod -n huawei-csi -owide 命令结果示例如下：&#xA;NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES huawei-csi-controller-xxx 9/9 Running 0 19h host-ip1 host-1 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; huawei-csi-node-mnqbz 3/3 Running 0 19h host-ip1 host-1 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; 登录huawei-csi-controller所在节点，如2中的host-1。&#xA;进入到/var/log/huawei目录。&#xA;# cd /var/log/huawei 查看storage-backend-controller日志，以连接存储超时为例。&#xA;tail -n 1000 storage-backend-controller 日志示例如下：&#xA;2024-01-01 06:30:44.</description>
     </item>
     <item>
       <title>存储侧更新密码后账户被锁定</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%AD%98%E5%82%A8%E4%BE%A7%E6%9B%B4%E6%96%B0%E5%AF%86%E7%A0%81%E5%90%8E%E8%B4%A6%E6%88%B7%E8%A2%AB%E9%94%81%E5%AE%9A/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%AD%98%E5%82%A8%E4%BE%A7%E6%9B%B4%E6%96%B0%E5%AF%86%E7%A0%81%E5%90%8E%E8%B4%A6%E6%88%B7%E8%A2%AB%E9%94%81%E5%AE%9A/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%AD%98%E5%82%A8%E4%BE%A7%E6%9B%B4%E6%96%B0%E5%AF%86%E7%A0%81%E5%90%8E%E8%B4%A6%E6%88%B7%E8%A2%AB%E9%94%81%E5%AE%9A/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%AD%98%E5%82%A8%E4%BE%A7%E6%9B%B4%E6%96%B0%E5%AF%86%E7%A0%81%E5%90%8E%E8%B4%A6%E6%88%B7%E8%A2%AB%E9%94%81%E5%AE%9A/</guid>
       <description>现象描述 用户在存储侧修改后端密码之后，该后端账号被锁定。&#xA;根因分析 CSI登录存储时使用存储后端配置的账户和密码，当存储侧修改了该账户密码之后，CSI登录失败后会重试。以OceanStor Dorado存储为例，默认的登录策略是密码校验失败3次后将会锁定账户，因此当CSI重试超过3次之后，该账户就会被锁定。&#xA;解决措施或规避方法 如果后端配置的账户是admin，请执行以下命令，将huawei-csi-controller服务副本数置为0，如果使用的是非admin账户，忽略此步骤。&#xA;kubectl scale deployment huawei-csi-controller -n huawei-csi --replicas=0 使用admin账户登录存储，修改登录策略。以OceanStor Dorado存储为例，在DeviceManager管理界面，选择“设置 &amp;gt; 用户与安全 &amp;gt; 安全策略 &amp;gt;登录策略 &amp;gt;修改&amp;gt;密码锁定”，取消密码锁定。&#xA;如果如果后端配置的账户是admin，执行以下命令，通过“&amp;ndash;replicas=*”恢复CSI Controller的副本数，下例为恢复至1个，请根据实际情况修改。如果使用的是非admin账户，忽略此步骤。&#xA;kubectl scale deployment huawei-csi-controller -n huawei-csi --replicas=1 使用oceanctl工具修改存储后端密码，修改后端密码请参考更新存储后端章节。&#xA;使用admin账户登录存储，修改登录策略，以OceanStor Dorado存储为例，在DeviceManager管理界面，选择“设置 &amp;gt; 用户与安全 &amp;gt; 安全策略 &amp;gt;登录策略 &amp;gt;修改&amp;gt;密码锁定”，恢复密码锁定。</description>
     </item>
   </channel>

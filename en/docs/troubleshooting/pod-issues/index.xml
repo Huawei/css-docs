@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pod Issues on Huawei</title>
-    <link>/en/docs/troubleshooting/pod-issues/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/</link>
     <description>Recent content in Pod Issues on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/troubleshooting/pod-issues/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>After a Worker Node in the Cluster Breaks Down and Recovers, Pod Failover Is Complete but the Source Host Where the Pod Resides Has Residual Drive Letters</title>
-      <link>/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</guid>
       <description>Symptom A Pod is running on worker node A, and an external block device is mounted to the Pod through CSI. After worker node A is powered off abnormally, the Kubernetes platform detects that the node is faulty and switches the Pod to worker node B. After worker node A recovers, the drive letters on worker node A change from normal to faulty.&#xA;Environment Configuration Kubernetes version: 1.18 or later</description>
     </item>
     <item>
       <title>When a Pod Is Created, the Pod Is in the ContainerCreating State</title>
-      <link>/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</guid>
       <description>Symptom A Pod is created. After a period of time, the Pod is still in the ContainerCreating state. Check the log information (for details, see Viewing Huawei CSI Logs). The error message &amp;ldquo;Fibre Channel volume device not found&amp;rdquo; is displayed.&#xA;Root Cause Analysis This problem occurs because residual disks exist on the host node. As a result, disks fail to be found when a Pod is created next time.&#xA;Solution or Workaround Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>A Pod Is in the ContainerCreating State for a Long Time When It Is Being Created</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</guid>
       <description>Symptom When a Pod is being created, the Pod is in the ContainerCreating state for a long time. Check the huawei-csi-node log (for details, see Viewing Huawei CSI Logs). No Pod creation information is recorded in the huawei-csi-node log. After the kubectl get volumeattachment command is executed, the name of the PV used by the Pod is not displayed in the PV column. After a long period of time (more than ten minutes), the Pod is normally created and the Pod status changes to Running.</description>
     </item>
     <item>
       <title>A Pod Fails to Be Created and the Log Shows That the Execution of the mount Command Times Out</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</guid>
       <description>Symptom When a Pod is being created, the Pod keeps in the ContainerCreating status. In this case, check the log information of huawei-csi-node (for details, see Viewing Huawei CSI Logs). The log shows that the execution of the mount command times out.&#xA;Root Cause Analysis Cause 1: The configured service IP address is disconnected. As a result, the mount command execution times out and fails.&#xA;Cause 2: For some operating systems, such as Kylin V10 SP1 and SP2, it takes a long time to run the mount command in a container using NFSv3.</description>
     </item>
     <item>
       <title>A Pod Fails to Be Created and the Log Shows That the mount Command Fails to Be Executed</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</guid>
       <description>Symptom In NAS scenarios, when a Pod is being created, the Pod keeps in the ContainerCreating status. In this case, check the log information of huawei-csi-node (for details, see Viewing Huawei CSI Logs). The log shows that the mount command fails to be executed.&#xA;Root Cause Analysis The possible cause is that the NFS 4.0/4.1/4.2 protocol is not enabled on the storage side. After the NFS v4 protocol fails to be used for mounting, the host does not negotiate to use the NFS v3 protocol for mounting.</description>
     </item>
     <item>
       <title>A Pod Fails to Be Created and Message publishInfo doesn&#39;t exist Is Displayed in the Events Log</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</guid>
       <description>Symptom When a Pod is being created, the Pod keeps in the ContainerCreating state. It is found that the following alarm event is printed for the Pod: rpc error: code = Internal desc = publishInfo doesn&amp;rsquo;t exist&#xA;Root Cause Analysis As required by CSI, when a workload needs to use a PV, the Container Orchestration system (CO system, communicating with the CSI plug-in using RPC requests) invokes the ControllerPublishVolume interface (provided by huawei-csi-controller) in the CSI protocol provided by the CSI plug-in to map the PV, and then invokes the NodeStageVolume interface (provided by huawei-csi-node) provided by the CSI plug-in to mount the PV.</description>
     </item>
     <item>
       <title>After a Pod Fails to Be Created or kubelet Is Restarted, Logs Show That the Mount Point Already Exists</title>
-      <link>/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</guid>
       <description>Symptom When a Pod is being created, the Pod is always in the ContainerCreating state. Alternatively, after kubelet is restarted, logs show that the mount point already exists. Check the log information of huawei-csi-node (for details, see Viewing Huawei CSI Logs). The error information is: The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount&#xA;Root Cause Analysis The root cause of this problem is that Kubernetes performs repeated mounting operations.</description>
     </item>
     <item>
       <title>I/O error Is Displayed When a Volume Directory Is Mounted to a Pod</title>
-      <link>/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</guid>
       <description>Symptom When a Pod reads or writes a mounted volume, message &amp;ldquo;I/O error&amp;rdquo; is displayed.&#xA;Root Cause Analysis When a protocol such as SCSI is used, if the Pod continuously writes data to the mount directory, the storage device will restart. As a result, the link between the device on the host and the storage device is interrupted, triggering an I/O error. When the storage device is restored, the mount directory is still read-only.</description>
     </item>
     <item>
       <title>Failed to Create a Pod Because the iscsi tcp Service Is Not Started Properly When the Kubernetes Platform Is Set Up for the First Time</title>
-      <link>/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</guid>
       <description>Symptom When you create a Pod, error Cannot connect ISCSI portal *.*.*.*: libkmod: kmod_module_insert_module: could not find module by name=&amp;lsquo;iscsi_tcp&amp;rsquo; is reported in the /var/log/huawei-csi-node log.&#xA;Root Cause Analysis The iscsi_tcp service may be stopped after the Kubernetes platform is set up and the iSCSI service is installed. You can run the following command to check whether the service is stopped.&#xA;lsmod | grep iscsi | grep iscsi_tcp The following is an example of the command output.</description>
     </item>
   </channel>

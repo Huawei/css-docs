@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>配置存储拓扑感知 on Huawei</title>
-    <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/</link>
     <description>Recent content in 配置存储拓扑感知 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>通过Helm配置存储拓扑感知</title>
-      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AE%E5%AD%98%E5%82%A8%E6%8B%93%E6%89%91%E6%84%9F%E7%9F%A5/</guid>
       <description>操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;进入Helm工程的目录下，如果无法找到之前的Helm工程，则将组件包中的helm目录拷贝到master节点的任意目录下，组件包路径请参考表 软件包组件描述。&#xA;进入后端服务配置目录/examples/backend/下，备份backend.yaml文件&#xA;cp backend.yaml backend.yaml.bak 执行vi backend.yaml命令打开文件，按需求配置拓扑感知，示例如下所示。修改完成后，按Esc，并输入 :wq!，保存修改。&#xA;storage: &amp;#34;oceanstor-san&amp;#34; name: &amp;#34;dorado-iscsi-155&amp;#34; namespace: &amp;#34;huawei-csi&amp;#34; urls: - &amp;#34;https://192.168.129.155:8088&amp;#34; pools: - &amp;#34;StoragePool001&amp;#34; parameters: protocol: &amp;#34;iscsi&amp;#34; portals: - &amp;#34;10.10.30.20&amp;#34; - &amp;#34;10.10.30.21&amp;#34; supportedTopologies: - { &amp;#34;topology.kubernetes.io/region&amp;#34;: &amp;#34;China-west&amp;#34;, &amp;#34;topology.kubernetes.io/zone&amp;#34;: &amp;#34;ChengDu&amp;#34; } - { &amp;#34;topology.kubernetes.io/region&amp;#34;: &amp;#34;China-south&amp;#34;,&amp;#34;topology.kubernetes.io/zone&amp;#34;: &amp;#34;ShenZhen&amp;#34; } maxClientThreads: &amp;#34;30&amp;#34; 执行以下命令删除待修改存储后端，其中“dorado-iscsi-155”为存储后端名称。&#xA;oceanctl delete backend dorado-iscsi-155 -n huawei-csi 执行以下命令创建存储后端。&#xA;oceanctl create backend -f ../examples/backend/backend.yaml -i yaml 根据命令提示输入存储用户名和密码。&#xA;Please enter this backend user name:admin Please enter this backend password: 执行vi StorageClass.</description>
     </item>
   </channel>

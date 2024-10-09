@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Huawei CSI Service Issues on Huawei</title>
-    <link>/en/docs/troubleshooting/huawei-csi-service-issues/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/</link>
     <description>Recent content in Huawei CSI Service Issues on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/troubleshooting/huawei-csi-service-issues/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Failed to Start the huawei-csi-node Service with Error Message /var/lib/iscsi is not a directory Reported</title>
-      <link>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</guid>
       <description>Symptom The huawei-csi-node service cannot be started. When you run the kubectl describe daemonset huawei-csi-node -n huawei-csi command, error message &amp;ldquo;/var/lib/iscsi is not a directory&amp;rdquo; is reported.&#xA;Root Cause Analysis The /var/lib/iscsi directory does not exist in the huawei-csi-node container.&#xA;Solution or Workaround Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the directory where the Helm project is located.</description>
     </item>
     <item>
       <title>Huawei CSI Services Fail to Be Started and Error Message &#39;/etc/localtime is not a file&#39; Is Displayed</title>
-      <link>/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</guid>
       <description>Symptom During the installation and deployment of CSI, a Pod fails to run and is in the ContainerCreating state. Alarm /etc/localtime is not a file is generated for the Pod.&#xA;Root Cause Analysis When the container mounts the /etc/localtime file on the host, the type is incorrectly identified. As a result, the container fails to mount the /etc/localtime file on the host and the Pod cannot run.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Failed to Start huawei-csi Services with the Status Displayed as InvalidImageName</title>
-      <link>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</guid>
       <description>Symptom The huawei-csi services (huawei-csi-controller or huawei-csi-node) cannot be started. After the kubectl get pod -A | grep huawei command is executed, the command output shows that the service status is InvalidImageName.&#xA;kubectl get pod -A | grep huawei The following is an example of the command output.&#xA;huawei-csi huawei-csi-controller-fd5f97768-qlldc 6/9 InvalidImageName 0 16s huawei-csi huawei-csi-node-25txd 2/3 InvalidImageName 0 15s Root Cause Analysis In the .yaml configuration files of the controller and node, the Huawei CSI image version number is incorrect.</description>
     </item>
   </channel>

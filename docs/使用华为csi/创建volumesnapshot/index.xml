@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>创建VolumeSnapshot on Huawei</title>
-    <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/</link>
     <description>Recent content in 创建VolumeSnapshot on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>检查卷快照依赖组件信息</title>
-      <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E6%A3%80%E6%9F%A5%E5%8D%B7%E5%BF%AB%E7%85%A7%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6%E4%BF%A1%E6%81%AF/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E6%A3%80%E6%9F%A5%E5%8D%B7%E5%BF%AB%E7%85%A7%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6%E4%BF%A1%E6%81%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E6%A3%80%E6%9F%A5%E5%8D%B7%E5%BF%AB%E7%85%A7%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6%E4%BF%A1%E6%81%AF/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E6%A3%80%E6%9F%A5%E5%8D%B7%E5%BF%AB%E7%85%A7%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6%E4%BF%A1%E6%81%AF/</guid>
       <description>如果您需要在容器环境中使用卷快照以及卷快照关联的特性，请通过检查卷快照依赖组件检查您的环境是否部署了卷快照依赖组件以及卷快照api-versions信息。</description>
     </item>
     <item>
       <title>配置VolumeSnapshotClass</title>
-      <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshotclass/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshotclass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshotclass/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshotclass/</guid>
       <description>卷快照类（VolumeSnapshotClass）提供了一种在配置VolumeSnapshot时描述存储“类”的方法。每个VolumeSnapshotClass都包含“driver”、“deletionPolicy” 和“parameters”字段， 在需要动态配置属于该类的VolumeSnapshot时使用。&#xA;VolumeSnapshotClass对象的名称很重要，是用户可以请求特定类的方式。 管理员在首次创建VolumeSnapshotClass对象时设置类的名称和其他参数， 对象一旦创建就无法更新。&#xA;华为CSI使用的VolumeSnapshotClass示例如下：&#xA;如果您的环境中api-versions支持v1，请使用以下示例：&#xA;apiVersion: snapshot.storage.k8s.io/v1 kind: VolumeSnapshotClass metadata: name: mysnapclass driver: csi.huawei.com deletionPolicy: Delete 如果您的环境中api-versions支持v1beta1，请使用以下示例：&#xA;apiVersion: snapshot.storage.k8s.io/v1beta1 kind: VolumeSnapshotClass metadata: name: mysnapclass driver: csi.huawei.com deletionPolicy: Delete 如果您的环境中api-versions同时支持v1和v1beta1，我们推荐您使用v1版本。&#xA;实际参数可以参考表 VolumeSnapshotClass参数说明中的说明修改。由于当前华为CSI还不支持在VolumeSnapshotClass中设置自定义参数（parameters），因此建议只创建一个VolumeSnapshotClass，供所有快照使用。&#xA;表 1 VolumeSnapshotClass参数说明&#xA;参数&#xA;说明&#xA;备注&#xA;metadata.name&#xA;自定义的VolumeSnapshotClass对象名称。&#xA;以Kubernetes v1.22.1为例，支持数字、小写字母、中划线（-）和点（.）的组合，并且必须以字母数字字符开头和结尾。&#xA;driver&#xA;driver标识。必填参数。&#xA;该字段需要指定为安装华为CSI时设置的驱动名。默认的驱动名为“csi.huawei.com”。&#xA;deletionPolicy&#xA;快照删除策略。必填参数。可选值为：&#xA;DeleteRetain 如果删除策略是 Delete，那么存储设备上的快照会和VolumeSnapshotContent对象一起删除如果删除策略是Retain，那么存储设备上的快照和VolumeSnapshotContent对象都会被保留。 前提条件 华为CSI支持快照且运行所依赖的卷快照组件CRD已经安装。具体CRD信息请参考检查卷快照依赖组件章节说明，支持创建VolumeSnapshot的Kubernetes版本请参考表 Kubernetes版本与支持的特性。&#xA;操作步骤 执行以下命令，使用已经创建的VolumeSnapshotClass配置文件创建VolumeSnapshotClass。&#xA;kubectl create -f mysnapclass.yaml 执行以下命令，查看已创建的VolumeSnapshotClass信息。&#xA;kubectl get volumesnapshotclass 命令结果示例如下：&#xA;NAME DRIVER DELETIONPOLICY AGE mysnapclass csi.</description>
     </item>
     <item>
       <title>配置VolumeSnapshot</title>
-      <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshot/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshot/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/%E5%88%9B%E5%BB%BAvolumesnapshot/%E9%85%8D%E7%BD%AEvolumesnapshot/</guid>
       <description>VolumeSnapshot可以通过两种方式进行制备：预制备或动态制备。华为CSI当前仅支持动态制备。本章节将说明如何使用华为CSI动态制备VolumeSnapshot。&#xA;VolumeSnapshot的配置文件示例如下：&#xA;如果您的环境中api-versions支持v1，请使用以下示例：&#xA;apiVersion: snapshot.storage.k8s.io/v1 kind: VolumeSnapshot metadata: name: mysnapshot spec: volumeSnapshotClassName: mysnapclass source: persistentVolumeClaimName: mypvc 如果您的环境中api-versions支持v1beta1，请使用以下示例：&#xA;apiVersion: snapshot.storage.k8s.io/v1beta1 kind: VolumeSnapshot metadata: name: mysnapshot spec: volumeSnapshotClassName: mysnapclass source: persistentVolumeClaimName: mypvc VolumeSnapshot中api-versions信息，请和创建VolumeSnapshotClass使用的版本保持一致。&#xA;实际参数可以参考表 VolumeSnapshot参数说明中的说明修改。&#xA;表 1 VolumeSnapshot参数说明&#xA;参数&#xA;说明&#xA;备注&#xA;metadata.name&#xA;自定义的VolumeSnapshot对象名称。&#xA;以Kubernetes v1.22.1为例，支持数字、小写字母、中划线（-）和点（.）的组合，并且必须以字母数字字符开头和结尾。&#xA;spec.volumeSnapshotClassName&#xA;VolumeSnapshotClass对象名称。&#xA;--&#xA;spec.source.persistentVolumeClaimName&#xA;源PVC对象名称。&#xA;快照源PVC对应的名称&#xA;前提条件 源PVC存在，且PVC所在的backend存在支持创建VolumeSnapshot。支持创建VolumeSnapshot的存储请参考表 华为企业存储支持的特性及约束和表 华为分布式存储支持的特性及约束，支持创建VolumeSnapshot的Kubernetes版本请参考表 Kubernetes版本与支持的特性。 华为CSI运行所依赖的卷快照组件CRD已经安装。具体信息请参考检查卷快照依赖组件章节说明。 系统中已经存在使用华为CSI的VolumeSnapshotClass。 操作步骤 执行以下命令，使用已经创建的VolumeSnapshot配置文件创建VolumeSnapshot。&#xA;kubectl create -f mysnapshot.yaml 执行以下命令，查看已创建的VolumeSnapshot信息。&#xA;kubectl get volumesnapshot 命令结果示例如下：&#xA;NAME READYTOUSE SOURCEPVC SOURCESNAPSHOTCONTENT RESTORESIZE SNAPSHOTCLASS SNAPSHOTCONTENT CREATIONTIME AGE mysnapshot true mypvc 100Gi mysnapclass snapcontent-1009af0a-24c2-4435-861c-516224503f2d &amp;lt;invalid&amp;gt; 78s </description>
     </item>
   </channel>

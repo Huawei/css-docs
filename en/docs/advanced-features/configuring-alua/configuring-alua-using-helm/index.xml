@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configuring ALUA Using Helm on Huawei</title>
-    <link>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/</link>
     <description>Recent content in Configuring ALUA Using Helm on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuring ALUA Parameters for a Huawei Enterprise Storage Backend</title>
-      <link>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</guid>
       <description>For details about how to configure ALUA for Huawei enterprise storage, see the host connectivity guide of the corresponding product.&#xA;The ALUA configuration may vary according to the OS. Visit Huawei Technical Support, enter Host Connectivity Guide in the search box, and click the search button. In the search result, select the host connectivity guide for the desired OS. Configure ALUA according to the actual situation and the description in the guide.</description>
     </item>
     <item>
       <title>Configuring ALUA Parameters for a Distributed Storage Backend</title>
-      <link>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</guid>
       <description>For details about how to configure ALUA for Huawei distributed storage, see the host connectivity guide of the corresponding product.&#xA;The ALUA configuration may vary according to the OS. Visit Huawei Technical Support, enter Host Connectivity Guide in the search box, and click the search button. In the search result, select the host connectivity guide for the desired OS. Configure ALUA according to the actual situation and the description in the guide.</description>
     </item>
   </channel>

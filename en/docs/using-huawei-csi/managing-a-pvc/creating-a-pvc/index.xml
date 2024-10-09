@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creating a PVC on Huawei</title>
-    <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/</link>
     <description>Recent content in Creating a PVC on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

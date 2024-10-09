@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>卸载华为CSI on Huawei</title>
-    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
     <description>Recent content in 卸载华为CSI on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手动卸载华为CSI</title>
-      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</guid>
       <description>本章节介绍如何手动卸载华为CSI。&#xA;如果您不是出于升级的目的卸载华为CSI，请确保卸载华为CSI前已经在您的容器平台中将华为CSI发放的资源（PV、PVC、快照、存储后端等）全部清理。否则一旦您卸载华为CSI后，这些资源将无法被自动调度、管理或者清理。&#xA;卸载huawei-csi-node服务 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令卸载 huawei-csi-node 服务，huawei-csi 替换为华为CSI所在的命名空间。&#xA;kubectl delete daemonset huawei-csi-node -n huawei-csi 执行以下命令检查服务是否已成功卸载（如果提示NotFound错误，表示已成功卸载）。&#xA;kubectl get daemonset huawei-csi-node -n huawei-csi 卸载huawei-csi-controller服务 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令卸载 huawei-csi-controller 服务，huawei-csi 替换为华为CSI所在的命名空间。&#xA;kubectl delete deployment huawei-csi-controller -n huawei-csi 执行以下命令检查服务是否已成功卸载（如果提示NotFound错误，表示已成功卸载）。&#xA;kubectl get deployment huawei-csi-controller -n huawei-csi 卸载csidriver对象 如果安装时未使用CSIDriver特性，可跳过本步骤。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令卸载csidriver对象。&#xA;kubectl delete csidriver csi.huawei.com 执行以下命令检查服务是否已成功卸载（如果提示NotFound错误，表示已成功卸载）。&#xA;kubectl get csidriver csi.huawei.com 删除RBAC权限 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;删除RBAC权限。&#xA;kubectl -n huawei-csi -l provisioner=csi.huawei.com delete ServiceAccount,Service,role,rolebinding,ClusterRole,ClusterRoleBinding 其它资源卸载 卸载huawei-csi-host-info对象，请参考卸载huawei-csi-host-info对象进行操作。 卸载webhook资源，请参考卸载Webhook资源进行操作。 （可选）卸载快照依赖组件服务，请参考卸载Snapshot依赖组件服务进行操作。 （可选）卸载Lease资源，请参考卸载Lease资源进行操作。 </description>
     </item>
   </channel>

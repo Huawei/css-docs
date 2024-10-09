@@ -2,702 +2,702 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Huawei Container Storage Suite on Huawei</title>
-    <link>/en/</link>
+    <link>https://huawei.github.io/css-docs/en/</link>
     <description>Recent content in Huawei Container Storage Suite on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Pod Cannot Be Created Because the PSP Permission Is Not Created</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</guid>
       <description>Symptom When huawei-csi-controller and huawei-csi-node are created, only the Deployment and DaemonSet resources are successfully created, and no Pod is created for the controller and node.&#xA;Root Cause Analysis The service account used for creating resources does not have the &amp;ldquo;use&amp;rdquo; permission of the PSP policy.&#xA;Solution or Workaround Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>A webhook Fails to Be Called When the oceanctl Tool Is Used to Manage Backends</title>
-      <link>/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</guid>
       <description>Symptom After the webhook configuration is changed, for example, the value of the webhookPort parameter is changed, an error is reported indicating that a webhook fails to be called when the oceanctl tool is used to manage backends, as shown in the following figure.&#xA;Root Cause Analysis After the webhook configuration changes, the validatingwebhookconfiguration resource becomes invalid.&#xA;Solution or Workaround Run the following command to delete the validatingwebhookconfiguration resource.&#xA;kubectl delete validatingwebhookconfiguration storage-backend-controller.</description>
     </item>
     <item>
       <title>After a Worker Node in the Cluster Breaks Down and Recovers, Pod Failover Is Complete but the Source Host Where the Pod Resides Has Residual Drive Letters</title>
-      <link>/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-worker-node-in-the-cluster-breaks-down-and-recovers-pod-failover-is-complete-but-the-source/</guid>
       <description>Symptom A Pod is running on worker node A, and an external block device is mounted to the Pod through CSI. After worker node A is powered off abnormally, the Kubernetes platform detects that the node is faulty and switches the Pod to worker node B. After worker node A recovers, the drive letters on worker node A change from normal to faulty.&#xA;Environment Configuration Kubernetes version: 1.18 or later</description>
     </item>
     <item>
       <title>Checking Information About Volume Snapshot-dependent Components</title>
-      <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</guid>
       <description>If you need to use volume snapshots and features associated with volume snapshots in the container environment, perform the operations in Checking Volume Snapshot-Dependent Components to check whether volume snapshot-dependent components have been deployed in your environment and check the api-versions information about volume snapshots.</description>
     </item>
     <item>
       <title>Configuring ALUA Parameters for a Huawei Enterprise Storage Backend</title>
-      <link>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-huawei-enterprise-storage-backend/</guid>
       <description>For details about how to configure ALUA for Huawei enterprise storage, see the host connectivity guide of the corresponding product.&#xA;The ALUA configuration may vary according to the OS. Visit Huawei Technical Support, enter Host Connectivity Guide in the search box, and click the search button. In the search result, select the host connectivity guide for the desired OS. Configure ALUA according to the actual situation and the description in the guide.</description>
     </item>
     <item>
       <title>Configuring Storage Topology Awareness Using Helm</title>
-      <link>/en/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm/</guid>
       <description>Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the directory where the Helm project is located. If the previous Helm project cannot be found, copy the helm directory in the component package to any directory on the master node. For details about the component package path, see Table 1.&#xA;Go to the backend service configuration directory /examples/backend/ and back up the backend.</description>
     </item>
     <item>
       <title>Creating a Certificate for a Storage Backend</title>
-      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/creating-a-certificate-for-a-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/creating-a-certificate-for-a-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/creating-a-certificate-for-a-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/creating-a-certificate-for-a-storage-backend/</guid>
       <description>Prerequisites A certificate has been created. Take OceanStor Dorado as an example. For details about how to create a certificate, click here.&#xA;Example of Creating a Certificate Prepare a certificate file in advance, for example, cert.crt.&#xA;Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.</description>
     </item>
     <item>
       <title>Downloading the Huawei CSI Software Package</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package/</guid>
       <description>This section describes how to download the software package and the component structure of the software package.&#xA;Open a browser and enter https://github.com/Huawei/eSDK_K8S_Plugin/releases in the address box.&#xA;Download the software package of the 4.5.0 version based on the CPU architecture.&#xA;Software package naming rule: Plug-in name (eSDK_Huawei_Storage_Kubernetes_CSI_Plugin) + Version number + CPU architecture&#xA;Decompress the downloaded software package. The following table shows the component structure of the software package.&#xA;Table 1 Component description</description>
     </item>
     <item>
       <title>Enabling the PVC Change Feature Using Helm</title>
-      <link>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-using-helm/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-using-helm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-using-helm/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-using-helm/</guid>
       <description>Prerequisites You have installed Huawei CSI using Helm. Huawei CSI v4.5.0 or later is used. Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to check whether the PVC change feature is enabled.&#xA;helm-huawei-csi indicates the Helm chart name specified during installation, and huawei-csi indicates the Helm chart namespace specified during installation.</description>
     </item>
     <item>
       <title>Example ALUA Configuration Policy of OceanStor V5 and OceanStor Dorado V3</title>
-      <link>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-v5-and-oceanstor-dorado-v3/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-v5-and-oceanstor-dorado-v3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-v5-and-oceanstor-dorado-v3/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-v5-and-oceanstor-dorado-v3/</guid>
       <description>Example 1: The configuration file content is as follows:&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 0 node1: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 1 If the host name is node1, both of the preceding ALUA configuration sections can be used to configure initiators. According to the configuration policy rules in Configuring ALUA Parameters for a Huawei Enterprise Storage Backend, the priority of the second configuration section (where HostName is node1) is higher than that of the first configuration section (where HostName is *).</description>
     </item>
     <item>
       <title>Examples of Storage Backend Configuration Files in Typical Scenarios</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</guid>
       <description>For details about the backend configuration in typical scenarios, see the following examples. For details about the parameter configuration, see Storage Backend Parameters.&#xA;Configuring a Storage Backend of the iSCSI Type Configuring a Storage Backend of the FC Type Configuring a Storage Backend of the NVMe over RoCE Type Configuring a Storage Backend of the NVMe over FC Type Configuring a Storage Backend of the NFS Type Configuring a Storage Backend of the SCSI Type Configuring a Storage Backend of the DPC Type Configuring Storage Backends of the Dtree Type Configuring Storage Backends of the HyperMetro Type Configuring a Storage Backend of the iSCSI Type If you want to use the iSCSI protocol, ensure that the iSCSI client has been installed on the host before installing Huawei CSI.</description>
     </item>
     <item>
       <title>Failed to Start the huawei-csi-node Service with Error Message /var/lib/iscsi is not a directory Reported</title>
-      <link>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-the-huawei-csi-node-service-with-error-message-var-lib-iscsi-is-not-a-directory-repo/</guid>
       <description>Symptom The huawei-csi-node service cannot be started. When you run the kubectl describe daemonset huawei-csi-node -n huawei-csi command, error message &amp;ldquo;/var/lib/iscsi is not a directory&amp;rdquo; is reported.&#xA;Root Cause Analysis The /var/lib/iscsi directory does not exist in the huawei-csi-node container.&#xA;Solution or Workaround Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the directory where the Helm project is located.</description>
     </item>
     <item>
       <title>Installing Helm 3</title>
-      <link>/en/docs/common-operations/installing-helm-3/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/installing-helm-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/installing-helm-3/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/installing-helm-3/</guid>
       <description>This section describes how to install Helm 3.&#xA;For details, see https://helm.sh/docs/intro/install/.&#xA;Prerequisites Ensure that the master node in the Kubernetes cluster can access the Internet.&#xA;Procedure Run the following command to download the Helm 3 installation script.&#xA;curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 Run the following command to modify the permission on the Helm 3 installation script.&#xA;chmod 700 get_helm.sh Determine the Helm version to be installed based on the version mapping between Helm and Kubernetes.</description>
     </item>
     <item>
       <title>Installing Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
-      <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
       <description>Installation Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the cluster through the management IP address.&#xA;Copy the helm directory in the Kubernetes CSI component package to any directory on the master node. For details about the Helm tool path, see Table 1.&#xA;Go to the helm/esdk working directory.&#xA;cd helm/esdk Prepare the values.yaml file. Huawei CSI provides the values.yaml template file in the helm/esdk directory of the software package.</description>
     </item>
     <item>
       <title>Kubernetes and OS Compatibility</title>
-      <link>/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-and-os-compatibility/</guid>
       <description>Huawei CSI plug-in supports the following container management platforms.&#xA;Table 1 Supported container management platforms&#xA;Container Management Platform&#xA;Version&#xA;Kubernetes&#xA;1.16 to 1.30&#xA;Red Hat OpenShift Container Platform&#xA;4.6 EUS, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15&#xA;Tanzu Kubernetes&#xA;TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18&#xA;CCE Agile&#xA;22.3.2&#xA;CCE&#xA;22.9.5&#xA;The connection between Huawei CSI and Tanzu Kubernetes supports only the centralized storage NAS scenario.</description>
     </item>
     <item>
       <title>Obtaining the CSI Version</title>
-      <link>/en/docs/common-operations/collecting-information/obtaining-the-csi-version/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/collecting-information/obtaining-the-csi-version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/collecting-information/obtaining-the-csi-version/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/collecting-information/obtaining-the-csi-version/</guid>
       <description>This section describes how to view the CSI version.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to query information about the node where huawei-csi-node resides.&#xA;kubectl get pod -A -owide | grep huawei-csi-node The following is an example of the command output.&#xA;NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES huawei-csi huawei-csi-node-87mss 3/3 Running 0 6m41s 192.</description>
     </item>
     <item>
       <title>Preparing a PVC Change File</title>
-      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/preparing-a-pvc-change-file/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/preparing-a-pvc-change-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/preparing-a-pvc-change-file/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/preparing-a-pvc-change-file/</guid>
       <description>PVC Change File Description The sample template of the PVC change file is /examples/volumemodifyclaim.yaml. The following table lists the configuration items.&#xA;Table 1 Parameter description&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;apiVersion&#xA;API group, which is of the string type.&#xA;Yes&#xA;xuanwu.huawei.io/v1&#xA;The value is fixed at xuanwu.huawei.io/v1.&#xA;kind&#xA;Resource type, which is of the string type.&#xA;Yes&#xA;VolumeModifyClaim&#xA;The value is fixed at VolumeModifyClaim.&#xA;metadata.name&#xA;Name of a cluster resource object, which is of the string type.</description>
     </item>
     <item>
       <title>PV Parameters for Static Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pv-parameters-for-static-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pv-parameters-for-static-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pv-parameters-for-static-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pv-parameters-for-static-volume-provisioning/</guid>
       <description>Table 1 Static volume provisioning parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.name&#xA;User-defined name of a PV object.&#xA;Yes&#xA;-&#xA;Take Kubernetes v1.22.1 as an example. The value can contain digits, lowercase letters, hyphens (-), and periods (.), and must start and end with a letter or digit.&#xA;spec.volumeMode&#xA;Volume mode. This parameter is optional. When LUN volumes are used, the following types are supported:&#xA;Filesystem: local file system.Block: raw device.</description>
     </item>
     <item>
       <title>Rolling Back Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
       <description>Prerequisites CSI has been updated using Helm 3. Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the helm/esdk working directory. For the directory path, see Table 1.&#xA;cd helm/esdk Run the following command to query the historical versions of the CSI services deployed using Helm.&#xA;helm history helm-huawei-csi -n huawei-csi The following is an example of the command output.</description>
     </item>
     <item>
       <title>StorageClass Configuration Examples in Typical Dynamic Volume Provisioning Scenarios</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</guid>
       <description>A StorageClass provides administrators with methods to describe a storage &amp;ldquo;class&amp;rdquo;. Different types may map to a different group of capability definitions. Kubernetes cluster users can dynamically provision volumes based on a StorageClass.&#xA;If SAN storage is used, refer to example file /examples/sc-lun.yaml. If NAS storage is used, refer to example file /examples/sc-fs.yaml.&#xA;For details about how to configure a StorageClass in typical scenarios, see the following examples:&#xA;Setting the Backend and Storage Pool in a StorageClass Setting the NFS Access Mode in a StorageClass Setting a Dtree Type in a StorageClass Setting the Local File System Access Mode in a StorageClass Setting the DPC Access Mode in a StorageClass Setting an Application Type in a StorageClass Setting a Soft Quota in a StorageClass Setting HyperMetro in a StorageClass Setting the Permission on a Mount Directory in a StorageClass Setting QoS in a StorageClass Configuring a StorageClass on the CCE or CCE Agile Platform Setting the Backend and Storage Pool in a StorageClass If multiple Huawei backends are configured in a Kubernetes cluster or a Huawei backend provides multiple storage pools, you are advised to configure the specified backend and storage pool information in the StorageClass.</description>
     </item>
     <item>
       <title>StorageClass Configuration Examples in Typical Manage Volume Provisioning Scenarios</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-configuration-examples-in-typical-manage-volume-provisioning-scenarios/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-configuration-examples-in-typical-manage-volume-provisioning-scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-configuration-examples-in-typical-manage-volume-provisioning-scenarios/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-configuration-examples-in-typical-manage-volume-provisioning-scenarios/</guid>
       <description>For details about how to configure a StorageClass in typical Manage Volume Provisioning scenarios, see the following examples:&#xA;Setting the Backend and Storage Pool in a StorageClass Setting the NFS Access Mode in a StorageClass Setting the Local File System Access Mode in a StorageClass Setting the DPC Access Mode in a StorageClass Setting the Permission on a Mount Directory in a StorageClass Setting the Backend and Storage Pool in a StorageClass If multiple Huawei backends are configured in a Kubernetes cluster or a Huawei backend provides multiple storage pools, you are advised to configure the specified backend and storage pool information in the StorageClass.</description>
     </item>
     <item>
       <title>Uninstalling Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
       <description>This section describes how to uninstall Huawei CSI on the Kubernetes, OpenShift, and Tanzu platforms.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to uninstall Huawei CSI. In the command, helm-huawei-csi indicates the custom Helm chart name and huawei-csi indicates the namespace where the Helm chart resides. This command will uninstall the huawei-csi-controller, huawei-csi-node, and RBAC resources of Huawei CSI.</description>
     </item>
     <item>
       <title>Updating the Password of a Storage Backend Using oceanctl</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl/</guid>
       <description>Example of Updating a Backend Run the following command to obtain the help information about updating a storage backend.&#xA;oceanctl update backend -h The following is an example of the command output.&#xA;Update a backend for Ocean Storage in Kubernetes Usage: oceanctl update backend &amp;lt;name&amp;gt; [flags] Examples: # Update backend account information in default(huawei-csi) namespace oceanctl update backend &amp;lt;name&amp;gt; --password # Update backend account information in specified namespace oceanctl update backend &amp;lt;name&amp;gt; -n namespace --password Flags: -h, --help help for backend -n, --namespace string namespace of resources --password Update account password Run the following command to update a storage backend.</description>
     </item>
     <item>
       <title>Upgrading from 2.x or 3.x to 4.x</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</guid>
       <description>In CSI 2.x or 3.x, when block storage is used, the mapping with storage is set up in the huawei-csi-node service. Therefore, the huawei-csi-node service needs to communicate with the storage management network. Because the huawei-csi-node service is deployed as a DaemonSet, the huawei-csi-node service is deployed on each node in the cluster. As a result, in a large-scale cluster, each huawei-csi-node service sends requests to the storage and the number of storage connections may be fully occupied.</description>
     </item>
     <item>
       <title>Upgrading Huawei CSI</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/upgrading-huawei-csi-0/</guid>
       <description>This section describes how to manually upgrade Huawei CSI.&#xA;During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access.&#xA;Some CSI 2.x versions are unavailable now. If the upgrade fails, CSI may fail to be rolled back to a version which is unavailable now. During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC.</description>
     </item>
     <item>
       <title>When a PVC Is Created, the PVC Is in the Pending State</title>
-      <link>/en/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state/</guid>
       <description>Symptom A PVC is created. After a period of time, the PVC is still in the Pending state.&#xA;Root Cause Analysis Cause 1: A StorageClass with the specified name is not created in advance. As a result, Kubernetes cannot find the specified StorageClass name when a PVC is created.&#xA;Cause 2: The storage pool capability does not match the StorageClass capability. As a result, huawei-csi fails to select a storage pool.</description>
     </item>
     <item>
       <title>A Backend Fails to Be Created Using the oceanctl Tool and Error Message `context deadline exceeded` Is Displayed</title>
-      <link>/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</guid>
       <description>Symptom A user fails to create a storage backend using the oceanctl tool, and &amp;ldquo;failed to call webhook: xxx :context deadline exceeded; error: exist status 1&amp;rdquo; is displayed on the console.&#xA;Root Cause Analysis When a storage backend is created, the webhook service provided by CSI is invoked to verify the connectivity with the storage management network and the storage account and password. The possible causes are as follows:&#xA;Huawei CSI fails to verify the connectivity of the storage management network.</description>
     </item>
     <item>
       <title>Before a PVC Is Deleted, the PVC Is in the Pending State</title>
-      <link>/en/docs/troubleshooting/pvc-issues/before-a-pvc-is-deleted-the-pvc-is-in-the-pending-state/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/before-a-pvc-is-deleted-the-pvc-is-in-the-pending-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pvc-issues/before-a-pvc-is-deleted-the-pvc-is-in-the-pending-state/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/before-a-pvc-is-deleted-the-pvc-is-in-the-pending-state/</guid>
       <description>Symptom Before a PVC is deleted, the PVC is in the Pending state.&#xA;Root Cause Analysis Cause 1: A StorageClass with the specified name is not created in advance. As a result, Kubernetes cannot find the specified StorageClass name when a PVC is created.&#xA;Cause 2: The storage pool capability does not match the StorageClass capability. As a result, huawei-csi fails to select a storage pool.&#xA;Cause 3: An error code (for example, 50331651) is returned by a RESTful interface of the storage.</description>
     </item>
     <item>
       <title>Changing the Mount Point of a Host</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</guid>
       <description>Symptom A Pod fails to be created, and error message &amp;ldquo;mount point does not exist&amp;rdquo; is recorded in Huawei CSI logs.&#xA;Root Cause Analysis The native Kubernetes cluster in the pods-dir directory of huawei-csi-node is inconsistent with the Tanzu Kubernetes cluster.&#xA;Solution or Workaround Go to the helm/esdk/ directory and run the vi values.yaml command to open the configuration file.&#xA;vi values.yaml Change the value of kubeletConfigDir to the actual installation directory of kubelet.</description>
     </item>
     <item>
       <title>Configuring a VolumeSnapshotClass</title>
-      <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</guid>
       <description>VolumeSnapshotClass provides a way to describe the &amp;ldquo;classes&amp;rdquo; of storage when provisioning a VolumeSnapshot. Each VolumeSnapshotClass contains the driver, deletionPolicy, and parameters fields, which are used when a VolumeSnapshot belonging to the class needs to be dynamically provisioned.&#xA;The name of a VolumeSnapshotClass object is significant, and is how users can request a particular class. Administrators set the name and other parameters of a class when first creating VolumeSnapshotClass objects, and the objects cannot be updated once they are created.</description>
     </item>
     <item>
       <title>Configuring ALUA Parameters for a Distributed Storage Backend</title>
-      <link>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/configuring-alua/configuring-alua-using-helm/configuring-alua-parameters-for-a-distributed-storage-backend/</guid>
       <description>For details about how to configure ALUA for Huawei distributed storage, see the host connectivity guide of the corresponding product.&#xA;The ALUA configuration may vary according to the OS. Visit Huawei Technical Support, enter Host Connectivity Guide in the search box, and click the search button. In the search result, select the host connectivity guide for the desired OS. Configure ALUA according to the actual situation and the description in the guide.</description>
     </item>
     <item>
       <title>Creating a PVC Change Resource</title>
-      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/creating-a-pvc-change-resource/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/creating-a-pvc-change-resource/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/creating-a-pvc-change-resource/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/creating-a-pvc-change-resource/</guid>
       <description>This section describes how to create a PVC change resource based on a configured PVC change file.&#xA;Only the HyperMetro active-active (AA) mode is supported. When a common volume is changed to a HyperMetro volume, only the storage volume at the primary site can be changed. Do not use Huawei CSI to manage a PVC during PVC change resource creation. Multiple VolumeModifyClaim resources cannot be created for the same PVC. If the target PVC needs to be changed for multiple times, perform the changes one by one.</description>
     </item>
     <item>
       <title>Enabling the PVC Change Feature Manually</title>
-      <link>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-manually/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-manually/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-manually/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-manually/</guid>
       <description>Prerequisites Huawei CSI has been manually installed.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the manual/esdk working directory and run the following command to configure the volume change CRD.&#xA;kubectl apply -f ./crds/volume-modify/ Run the following command. For details about the component package path, see Table 1.&#xA;kubectl apply -f .</description>
     </item>
     <item>
       <title>Example ALUA Configuration Policy of OceanStor Dorado</title>
-      <link>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-dorado/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-dorado/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-dorado/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-dorado/</guid>
       <description>Example 1: The configuration file content is as follows:&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: accessMode: 1 hyperMetroPathOptimized: 1 node1: accessMode: 1 hyperMetroPathOptimized: 0 If the host name is node1, both of the preceding ALUA configuration sections can be used to configure initiators. According to the configuration policy rules in Configuring ALUA Parameters for a Huawei Enterprise Storage Backend, the priority of the second configuration section (where HostName is node1) is higher than that of the first configuration section (where HostName is *).</description>
     </item>
     <item>
       <title>Expanding the Capacity of a PVC</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</guid>
       <description>When the capacity of a PVC used by a container is insufficient, you need to expand the capacity of the PVC.&#xA;Prerequisites A PVC has been created, the backend to which it resides exists and supports capacity expansion.&#xA;For details about the storage devices that support capacity expansion, see Table 2 and Table 2. For details about the Kubernetes versions that support capacity expansion, see Kubernetes Feature Matrix.&#xA;The csi-resizer service is enabled for huawei-csi-controller.</description>
     </item>
     <item>
       <title>Huawei CSI Services Fail to Be Started and Error Message &#39;/etc/localtime is not a file&#39; Is Displayed</title>
-      <link>/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/huawei-csi-services-fail-to-be-started-and-error-message-etc-localtime-is-not-a-file-is-displayed/</guid>
       <description>Symptom During the installation and deployment of CSI, a Pod fails to run and is in the ContainerCreating state. Alarm /etc/localtime is not a file is generated for the Pod.&#xA;Root Cause Analysis When the container mounts the /etc/localtime file on the host, the type is incorrectly identified. As a result, the container fails to mount the /etc/localtime file on the host and the Pod cannot run.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Installing Huawei CSI on the CCE or CCE Agile Platform</title>
-      <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform/</guid>
       <description>This section describes how to install Huawei CSI on the CCE or CCE Agile platform.&#xA;Creating a Helm Installation Package The CCE or CCE Agile platform cannot directly install Huawei CSI using Helm. You need to manually create a Helm installation package and upload it to the chart list on the platform for installation.&#xA;Use a remote access tool, such as PuTTY, to log in to any node where Helm is deployed through the management IP address.</description>
     </item>
     <item>
       <title>Kubernetes Feature Matrix</title>
-      <link>/en/docs/compatibility-and-features/kubernetes-feature-matrix/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-feature-matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/kubernetes-feature-matrix/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/kubernetes-feature-matrix/</guid>
       <description>This section describes the features of different Kubernetes versions supported by Huawei CSI.&#xA;Table 1 Kubernetes versions and supported features&#xA;Feature&#xA;V1.16&#xA;V1.17&#xA;V1.18&#xA;V1.19&#xA;V1.20&#xA;V1.21+&#xA;Static Provisioning&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Dynamic Provisioning&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Manage Provisioning1&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Expand Persistent Volume&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Create VolumeSnapshot&#xA;x&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Restore VolumeSnapshot</description>
     </item>
     <item>
       <title>Manually Installing Huawei CSI</title>
-      <link>/en/docs/installation-and-deployment/installing-huawei-csi/manually-installing-huawei-csi/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/manually-installing-huawei-csi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/manually-installing-huawei-csi/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/manually-installing-huawei-csi/</guid>
       <description>This section describes how to manually install Huawei CSI.&#xA;Currently, only the Kubernetes platform supports manual installation of Huawei CSI.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the cluster through the management IP address.&#xA;Copy the manual directory in the Kubernetes CSI component package to any directory on the master node.&#xA;Run the following command to create a namespace.&#xA;kubectl create ns huawei-csi Go to the manual/esdk working directory.</description>
     </item>
     <item>
       <title>Manually Uninstalling Huawei CSI</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi/</guid>
       <description>This section describes how to manually uninstall Huawei CSI.&#xA;If you do not uninstall Huawei CSI for the purpose of an upgrade, ensure that all resources (such as PV, PVC, snapshot, and storage backend resources) provisioned by Huawei CSI have been cleared on your container platform before uninstalling Huawei CSI. Otherwise, once you uninstall Huawei CSI, these resources cannot be automatically scheduled, managed, or cleared.&#xA;Uninstalling the huawei-csi-node Service Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Manually Updating a Storage Backend</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/manually-updating-a-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/manually-updating-a-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/manually-updating-a-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/manually-updating-a-storage-backend/</guid>
       <description>PVC provisioning must be based on a configured storage backend. Therefore, if a PVC has been provisioned on a storage backend, do not change the storage backend. The name uniquely identifies a storage backend. The name of a storage backend with a PVC provisioned cannot be changed. After a storage backend is modified, the new configuration applies only to volumes to be provisioned. Do not perform volume management operations during the modification of a storage backend.</description>
     </item>
     <item>
       <title>PVC Parameters for Static Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pvc-parameters-for-static-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pvc-parameters-for-static-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pvc-parameters-for-static-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/static-volume-provisioning/pvc-parameters-for-static-volume-provisioning/</guid>
       <description>Table 1 PVC parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.name&#xA;User-defined name of a PVC object.&#xA;Yes&#xA;-&#xA;Take Kubernetes v1.22.1 as an example. The value can contain digits, lowercase letters, hyphens (-), and periods (.), and must start and end with a letter or digit.&#xA;spec.accessModes&#xA;Access mode of the volume.&#xA;RWO (ReadWriteOnce): A volume can be mounted to a node in read/write mode. This mode also allows multiple Pods running on the same node to access the volume.</description>
     </item>
     <item>
       <title>Querying a PVC Change</title>
-      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/querying-a-pvc-change/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/querying-a-pvc-change/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/querying-a-pvc-change/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/querying-a-pvc-change/</guid>
       <description>This section describes how to use Kubectl to query the PVC change status. Currently, Huawei CSI provides the following APIs through CRD.&#xA;Querying a VolumeModifyClaim To query a VolumeModifyClaim using kubectl, perform the following steps.&#xA;Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to query a PVC change. In the command, vmc-name indicates the name of the VolumeModifyClaim resource.</description>
     </item>
     <item>
       <title>Querying a Storage Backend</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/querying-a-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/querying-a-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/querying-a-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/querying-a-storage-backend/</guid>
       <description>Run the oceanctl commands in Querying a Storage Backend to query the storage backend information.</description>
     </item>
     <item>
       <title>Querying a Storage Backend Certificate</title>
-      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/querying-a-storage-backend-certificate/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/querying-a-storage-backend-certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/querying-a-storage-backend-certificate/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/querying-a-storage-backend-certificate/</guid>
       <description>Query storage backend certificates using the commands in Querying a Storage Backend Certificate.</description>
     </item>
     <item>
       <title>Rolling Back Huawei CSI</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/manual-upgrade-rollback/rolling-back-huawei-csi-1/</guid>
       <description>Uninstall CSI by referring to Manually Uninstalling Huawei CSI, and then download and install CSI of the source version.&#xA;During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access. During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC. During the upgrade or rollback, do not uninstall the snapshot-dependent component service.</description>
     </item>
     <item>
       <title>Rolling Back Huawei CSI on CCE or CCE Agile</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-cce-or-cce-agile/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-cce-or-cce-agile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-cce-or-cce-agile/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/rolling-back-huawei-csi/rolling-back-huawei-csi-on-cce-or-cce-agile/</guid>
       <description>During the upgrade or rollback, the existing resources such as PVCs, snapshots, and Pods will run properly and will not affect your service access. During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC. During the upgrade or rollback, do not uninstall the snapshot-dependent component service. Prerequisites You have downloaded the CSI software package of the source version.</description>
     </item>
     <item>
       <title>Storage Backend Parameters</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</guid>
       <description>An example template of the backend configuration file is /examples/backend/backend.yaml. The following table lists the parameters.&#xA;Table 1 backend parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;storage&#xA;Storage service type.&#xA;If enterprise storage provides SAN, set this parameter to oceanstor-san.If enterprise storage provides NAS, set this parameter to oceanstor-nas.If enterprise storage provides NAS of the Dtree type, set this parameter to oceanstor-dtree.If distributed storage provides SAN, set this parameter to fusionstorage-san.</description>
     </item>
     <item>
       <title>StorageClass Parameters for Dynamic Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</guid>
       <description>Table 1 StorageClass configuration parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.name&#xA;User-defined name of a StorageClass object.&#xA;Yes&#xA;-&#xA;Take Kubernetes v1.22.1 as an example. The value can contain digits, lowercase letters, hyphens (-), and periods (.), and must start and end with a letter or digit.&#xA;provisioner&#xA;Name of the provisioner.&#xA;Yes&#xA;csi.huawei.com&#xA;Set this parameter to the driver name set during Huawei CSI installation.&#xA;The value is the same as that of driverName in the values.</description>
     </item>
     <item>
       <title>StorageClass Parameters for Manage Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-parameters-for-manage-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-parameters-for-manage-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-parameters-for-manage-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/storageclass-parameters-for-manage-volume-provisioning/</guid>
       <description>A StorageClass provides administrators with methods to describe a storage &amp;ldquo;class&amp;rdquo;. Different types may map to a different group of capability definitions. Kubernetes cluster users can dynamically provision volumes based on a StorageClass.&#xA;A StorageClass supports the following parameters.&#xA;If SAN storage is used, refer to example file /examples/sc-lun.yaml. If NAS storage is used, refer to example file /examples/sc-fs.yaml.&#xA;Table 1 StorageClass configuration parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks</description>
     </item>
     <item>
       <title>Uninstalling Huawei CSI on CCE or CCE Agile</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-huawei-csi-on-cce-or-cce-agile/</guid>
       <description>This section describes how to uninstall Huawei CSI on the CCE or CCE Agile platform. The following uses CCE Agile v22.3.2 as an example.&#xA;Procedure Log in to the CCE Agile platform.&#xA;On the home page, choose Charts &amp;gt; Releases. The Releases page is displayed.&#xA;Select a Huawei CSI release and click Uninstall. In the displayed dialog box, click OK.&#xA;Uninstall the huawei-csi-host-info object. For details, see Uninstalling the huawei-csi-host-info Object.</description>
     </item>
     <item>
       <title>Upgrading Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
       <description>Prerequisites Huawei CSI of an earlier version is installed using Helm. A Huawei CSI image of a new version has been created and uploaded to the image repository or imported to all nodes by following the instructions provided in Uploading a Huawei CSI Image. Upgrading Huawei CSI If CSI of an earlier version is deployed using Helm, perform the following steps to upgrade Huawei CSI.&#xA;Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Uploading a Huawei CSI Image</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image/</guid>
       <description>Huawei provides the huawei-csi image for users. For details about how to obtain the image file, see Downloading the Huawei CSI Software Package.&#xA;To use the CSI image on the container management platform, you need to import the CSI image to the cluster in advance using either of the following methods:&#xA;(Recommended) Use Docker to upload the CSI image to the image repository. Manually import the CSI image to all nodes where Huawei CSI needs to be deployed.</description>
     </item>
     <item>
       <title>Viewing Huawei CSI Logs</title>
-      <link>/en/docs/common-operations/collecting-information/viewing-huawei-csi-logs/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/collecting-information/viewing-huawei-csi-logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/collecting-information/viewing-huawei-csi-logs/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/collecting-information/viewing-huawei-csi-logs/</guid>
       <description>Viewing Logs of the huawei-csi-controller Service Run the following command to obtain the node where huawei-csi-controller is located.&#xA;kubectl get pod -A -o wide | grep huawei The following is an example of the command output, where IP indicates the node IP address and NODE indicates the node name.&#xA;NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES huawei-csi-controller-695b84b4d8-tg64l 9/9 Running 0 14s &amp;lt;host1-ip&amp;gt; &amp;lt;host1-name&amp;gt; &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; Use a remote access tool, such as PuTTY, to log in to the node where the huawei-csi-controller service resides in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>When a Pod Is Created, the Pod Is in the ContainerCreating State</title>
-      <link>/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/when-a-pod-is-created-the-pod-is-in-the-containercreating-state/</guid>
       <description>Symptom A Pod is created. After a period of time, the Pod is still in the ContainerCreating state. Check the log information (for details, see Viewing Huawei CSI Logs). The error message &amp;ldquo;Fibre Channel volume device not found&amp;rdquo; is displayed.&#xA;Root Cause Analysis This problem occurs because residual disks exist on the host node. As a result, disks fail to be found when a Pod is created next time.&#xA;Solution or Workaround Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>A Pod Is in the ContainerCreating State for a Long Time When It Is Being Created</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-is-in-the-containercreating-state-for-a-long-time-when-it-is-being-created/</guid>
       <description>Symptom When a Pod is being created, the Pod is in the ContainerCreating state for a long time. Check the huawei-csi-node log (for details, see Viewing Huawei CSI Logs). No Pod creation information is recorded in the huawei-csi-node log. After the kubectl get volumeattachment command is executed, the name of the PV used by the Pod is not displayed in the PV column. After a long period of time (more than ten minutes), the Pod is normally created and the Pod status changes to Running.</description>
     </item>
     <item>
       <title>An Account Is Locked After the Password Is Updated on the Storage Device</title>
-      <link>/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</guid>
       <description>Symptom After a user changes the password on the storage device, the account is locked.&#xA;Root Cause Analysis CSI uses the account and password configured on the storage device to log in to the storage device. After the account password is changed on the storage device, CSI attempts to log in to the storage device again after the login fails. Take OceanStor Dorado as an example. The default login policy is that an account will be locked after three consecutive password verification failures.</description>
     </item>
     <item>
       <title>Changing the Default Port of the livenessprobe Container</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</guid>
       <description>Symptom The livenessprobe container of the huawei-csi-controller component keeps restarting.&#xA;Root Cause Analysis The default port (9808) of the livenessprobe container of huawei-csi-controller conflicts with the existing vSphere CSI port of Tanzu.&#xA;Solution or Workaround Change the default port of the livenessprobe container to an idle port.&#xA;Go to the helm/esdk directory and run the vi values.yaml command to open the configuration file.&#xA;vi values.yaml Change the default value 9808 of controller.</description>
     </item>
     <item>
       <title>Checking User Configurations on Huawei Storage</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/checking-user-configurations-on-huawei-storage/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-user-configurations-on-huawei-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-user-configurations-on-huawei-storage/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-user-configurations-on-huawei-storage/</guid>
       <description>After Huawei storage is connected to the container platform, Huawei CSI needs to manage storage resources on Huawei storage based on service requirements, such as creating and mapping volumes. In this case, Huawei CSI needs to use the users created on Huawei storage to communicate with Huawei storage. The following table lists the user information required for different storage devices.&#xA;Table 1 User requirements for connecting storage to CSI&#xA;Storage Type</description>
     </item>
     <item>
       <title>Cloning a PVC</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</guid>
       <description>This section describes how to clone a PVC.&#xA;When cloning a PVC, you need to specify the data source. The following is a simple example of cloning a PVC. In this example, mypvc is used as the data source and a PVC named myclone is created.&#xA;kind: PersistentVolumeClaim apiVersion: v1 metadata: name: myclone spec: storageClassName: mysc dataSource: name: mypvc kind: PersistentVolumeClaim volumeMode: Filesystem accessModes: - ReadWriteOnce resources: requests: storage: 2Gi The specified storageClassName must be the same as the StorageClass of the source volume in dataSource.</description>
     </item>
     <item>
       <title>Collecting Logs</title>
-      <link>/en/docs/common-operations/collecting-information/collecting-logs/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/collecting-information/collecting-logs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/collecting-information/collecting-logs/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/collecting-information/collecting-logs/</guid>
       <description>Performing Check Before Collection Use a remote access tool, such as PuTTY, to log in to the node where the oceanctl tool is installed in the Kubernetes cluster through the management IP address.&#xA;Run the following command. The displayed version is v4.5.0.&#xA;oceanctl version The following is an example of the command output.&#xA;Oceanctl Version: v4.5.0 Run the oceanctl collect logs &amp;ndash;help command. The following information is displayed.&#xA;$ oceanctl collect logs --help Collect logs of one or more nodes in specified namespace in Kubernetes Usage: oceanctl collect logs [flags] Examples: # Collect logs of all nodes in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; # Collect logs of specified node in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; -N &amp;lt;node&amp;gt; # Collect logs of all nodes in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; -a # Collect logs of all nodes in specified namespace with a maximum of 50 nodes collected at the same time oceanctl collect logs -n &amp;lt;namespace&amp;gt; -a --threads-max=50 # Collect logs of specified node in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; -N &amp;lt;node&amp;gt; -a Flags: -a, --all Collect all nodes messages -h, --help help for logs -n, --namespace string namespace of resources -N, --nodename string Specify the node for which information is to be collected.</description>
     </item>
     <item>
       <title>Compatibility with Huawei Enterprise Storage</title>
-      <link>/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage/</guid>
       <description>Huawei CSI plug-in is compatible with Huawei OceanStor series all-flash storage and hybrid flash storage. The following table lists the supported storage versions.&#xA;Table 1 Supported Huawei enterprise storage&#xA;Storage Product&#xA;Version&#xA;OceanStor V5&#xA;V500R007, V500R007 Kunpeng&#xA;OceanStor Dorado V3&#xA;V300R002&#xA;OceanStor&#xA;6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;OceanStor Dorado&#xA;6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;Huawei CSI plug-in supports the following features for Huawei enterprise storage.&#xA;Table 2 Features supported by Huawei enterprise storage and constraints</description>
     </item>
     <item>
       <title>Configuring a VolumeSnapshot</title>
-      <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</guid>
       <description>VolumeSnapshot can be provisioned in two ways: pre-provisioning and dynamic provisioning. Currently, Huawei CSI supports only dynamic provisioning. This section describes how to dynamically provision a VolumeSnapshot using Huawei CSI.&#xA;The following is an example of the VolumeSnapshot configuration file:&#xA;If api-versions in your environment supports v1, use the following example:&#xA;apiVersion: snapshot.storage.k8s.io/v1 kind: VolumeSnapshot metadata: name: mysnapshot spec: volumeSnapshotClassName: mysnapclass source: persistentVolumeClaimName: mypvc If api-versions in your environment supports v1beta1, use the following example:</description>
     </item>
     <item>
       <title>Deleting a PVC Change</title>
-      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/deleting-a-pvc-change/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/deleting-a-pvc-change/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/deleting-a-pvc-change/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/advanced-features/pvc-change/configuring-pvc-changes/deleting-a-pvc-change/</guid>
       <description>If STATUS of a VolumeModifyClaim is Creating, deleting the VolumeModifyClaim resource will delete the created resource on the storage side and then remove the cluster resource. After the deletion, if you continue to use the original StorageClass for PVC management, you need to restore the associated storage backend to a non-HyperMetro storage backend. If STATUS of a VolumeModifyClaim is Pending or Completed, deleting the VolumeModifyClaim resource will only remove the cluster resource and will not delete the created resource on the storage side (that is, there is not interaction with the storage side).</description>
     </item>
     <item>
       <title>Description of oceanctl Commands</title>
-      <link>/en/docs/storage-backend-management/description-of-oceanctl-commands/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/description-of-oceanctl-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/description-of-oceanctl-commands/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/description-of-oceanctl-commands/</guid>
       <description>Obtaining Help Information Obtain the oceanctl help information.&#xA;oceanctl --help Check the oceanctl version.&#xA;oceanctl version Specify the custom log file directory. The following example describes how to check the oceanctl version.&#xA;oceanctl version --log-dir=/path/to/custom Creating a Storage Backend Run the following command to obtain the help information about creating a backend.&#xA;oceanctl create backend -h Run the following command to create a storage backend based on the specified yaml file.</description>
     </item>
     <item>
       <title>Downloading a Container Image</title>
-      <link>/en/docs/common-operations/downloading-a-container-image/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/downloading-a-container-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/downloading-a-container-image/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/downloading-a-container-image/</guid>
       <description>Downloading a Container Image Using containerd Run the following command to download an image to a local path. In the command, image:tag indicates the image to be pulled and its tag.&#xA;ctr image pull &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; Run the following command to export the image to a file. In the command, image:tag indicates the image to be exported, and file indicates the name of the exported image file.&#xA;ctr image export &amp;lt;file&amp;gt;.tar &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; Downloading a Container Image Using Docker Run the following command to download an image to a local path.</description>
     </item>
     <item>
       <title>Example ALUA Configuration Policy of Distributed Storage</title>
-      <link>/en/docs/appendix/example-alua-configuration-policy-of-distributed-storage/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/appendix/example-alua-configuration-policy-of-distributed-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/appendix/example-alua-configuration-policy-of-distributed-storage/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/appendix/example-alua-configuration-policy-of-distributed-storage/</guid>
       <description>Example 1: The configuration file content is as follows:&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: switchoverMode: Enable_alua pathType: optimal_path node1: switchoverMode: Enable_alua pathType: non_optimal_path If the host name is node1, both of the preceding ALUA configuration sections can be used to configure initiators. According to the configuration policy rules in Configuring ALUA Parameters for a Distributed Storage Backend, the priority of the second configuration section (where HostName is node1) is higher than that of the first configuration section (where HostName is *).</description>
     </item>
     <item>
       <title>Failed to Expand the Capacity of a Generic Ephemeral Volume</title>
-      <link>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-capacity-of-a-generic-ephemeral-volume/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-capacity-of-a-generic-ephemeral-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-capacity-of-a-generic-ephemeral-volume/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-capacity-of-a-generic-ephemeral-volume/</guid>
       <description>Symptom In an environment where the Kubernetes version is earlier than 1.25, the capacity of a generic ephemeral volume of the LUN type fails to be expanded. The system displays a message indicating that the PV capacity has been expanded, but the PVC capacity fails to be updated.&#xA;Root Cause Analysis This problem is caused by a Kubernetes bug, which has been resolved in Kubernetes 1.25.</description>
     </item>
     <item>
       <title>Failed to Start huawei-csi Services with the Status Displayed as InvalidImageName</title>
-      <link>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/huawei-csi-service-issues/failed-to-start-huawei-csi-services-with-the-status-displayed-as-invalidimagename/</guid>
       <description>Symptom The huawei-csi services (huawei-csi-controller or huawei-csi-node) cannot be started. After the kubectl get pod -A | grep huawei command is executed, the command output shows that the service status is InvalidImageName.&#xA;kubectl get pod -A | grep huawei The following is an example of the command output.&#xA;huawei-csi huawei-csi-controller-fd5f97768-qlldc 6/9 InvalidImageName 0 16s huawei-csi huawei-csi-node-25txd 2/3 InvalidImageName 0 15s Root Cause Analysis In the .yaml configuration files of the controller and node, the Huawei CSI image version number is incorrect.</description>
     </item>
     <item>
       <title>Parameters in the values.yaml File of Helm</title>
-      <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm/</guid>
       <description>When using Helm to install CSI, you need to prepare the values.yaml file of the Helm project based on the features required during deployment. Huawei CSI provides the values.yaml template file in the helm/esdk directory of the software package.&#xA;This section describes the configuration items in the values.yaml file and backend configuration examples in typical scenarios.&#xA;images Parameters The images parameters in the values.yaml file are used to configure the component image information on which Huawei CSI depends during running.</description>
     </item>
     <item>
       <title>PVC Parameters for Dynamic Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</guid>
       <description>After configuring a StorageClass, you can use the StorageClass to configure a PVC. For details about the PVC configuration template, see example file pvc*.yaml in the examples directory in Huawei CSI software package.&#xA;Table 1 Parameters in the pvc*.yaml file&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.name&#xA;User-defined name of a PVC object.&#xA;Yes&#xA;-&#xA;Take Kubernetes v1.22.1 as an example. The value can contain digits, lowercase letters, hyphens (-), and periods (.</description>
     </item>
     <item>
       <title>PVC Parameters for Manage Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/pvc-parameters-for-manage-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/pvc-parameters-for-manage-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/pvc-parameters-for-manage-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/manage-volume-provisioning/pvc-parameters-for-manage-volume-provisioning/</guid>
       <description>After configuring a StorageClass, you can use the StorageClass to configure a PVC. For details about the PVC configuration template, see example file pvc-manager.yaml in the examples directory in Huawei CSI software package.&#xA;Table 1 Parameters in the pvc-manager.yaml file&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.annotations&#xA;PVC object annotations. Set the following parameters:&#xA;Driver name/manageVolumeName: volume name on the storage.Driver name/manageBackendName: name of the backend to which the volume belongs.</description>
     </item>
     <item>
       <title>Uninstalling CSI-Dependent Component Services</title>
-      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services/</guid>
       <description>This section describes how to uninstall the CSI-dependent component services.&#xA;Uninstalling the huawei-csi-host-info Object Secret object huawei-csi-host-info stores the initiator information about each node in the cluster, for example, iSCSI initiators. When you run the helm uninstall command, the resource will not be uninstalled. To uninstall the resource, perform the following steps:&#xA;Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Updating a Storage Backend Certificate</title>
-      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/updating-a-storage-backend-certificate/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/updating-a-storage-backend-certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/updating-a-storage-backend-certificate/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/updating-a-storage-backend-certificate/</guid>
       <description>Before updating a certificate, prepare a new certificate file and update the storage backend certificate by following the instructions provided in this section. If the certificate is no longer used, delete the certificate from the storage backend by referring to Deleting a Storage Backend Certificate.&#xA;Procedure Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.</description>
     </item>
     <item>
       <title>Upgrading Huawei CSI on CCE or CCE Agile</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</guid>
       <description>Prerequisites You have downloaded the CSI software package of a new version.&#xA;Procedure Uninstall CSI. For details, see Uninstalling Huawei CSI on CCE or CCE Agile. Install CSI of the new version. For details, see Installing Huawei CSI on the CCE or CCE Agile Platform. </description>
     </item>
     <item>
       <title>A Pod Fails to Be Created and the Log Shows That the Execution of the mount Command Times Out</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-execution-of-the-mount-command-times-out/</guid>
       <description>Symptom When a Pod is being created, the Pod keeps in the ContainerCreating status. In this case, check the log information of huawei-csi-node (for details, see Viewing Huawei CSI Logs). The log shows that the execution of the mount command times out.&#xA;Root Cause Analysis Cause 1: The configured service IP address is disconnected. As a result, the mount command execution times out and fails.&#xA;Cause 2: For some operating systems, such as Kylin V10 SP1 and SP2, it takes a long time to run the mount command in a container using NFSv3.</description>
     </item>
     <item>
       <title>Checking Volume Snapshot-Dependent Components</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/checking-volume-snapshot-dependent-components/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-volume-snapshot-dependent-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-volume-snapshot-dependent-components/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-volume-snapshot-dependent-components/</guid>
       <description>This section describes how to check the volume snapshot-dependent components in the cluster.&#xA;Kubernetes earlier than v1.17.0 does not support the snapshot function. If the snapshot CRD is deployed, the cluster may be faulty. Therefore, if Huawei CSI is deployed on Kubernetes earlier than v1.17.0, perform the check according to Kubernetes Earlier Than v1.17.0.&#xA;Kubernetes Earlier Than v1.17.0 If the Kubernetes version is earlier than v1.17.0, the cluster may be faulty during snapshot deployment.</description>
     </item>
     <item>
       <title>Communication Matrix</title>
-      <link>/en/docs/appendix/communication-matrix/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/appendix/communication-matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/appendix/communication-matrix/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/appendix/communication-matrix/</guid>
       <description>Source Device&#xA;Host where CSI controller is located&#xA;Host where CSI controller is located&#xA;Host where CSI node is located&#xA;Kubernetes master node&#xA;Source IP Address&#xA;IP address of the source device&#xA;IP address of the source device&#xA;IP address of the source device&#xA;IP address of the source device&#xA;Source Port&#xA;1024 to 65536&#xA;1024 to 65536&#xA;1024 to 65536&#xA;1024 to 65536&#xA;Destination Device&#xA;Storage device&#xA;Host where CSI controller is located</description>
     </item>
     <item>
       <title>Compatibility with Huawei Distributed Storage</title>
-      <link>/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage/</guid>
       <description>Huawei CSI plug-in is compatible with Huawei OceanStor series distributed storage systems. The following table lists the supported storage versions.&#xA;Table 1 Supported Huawei distributed storage&#xA;Storage Product&#xA;Version&#xA;FusionStorage Block&#xA;8.0.1&#xA;OceanStor Pacific series&#xA;8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0&#xA;Huawei CSI plug-in supports the following features for Huawei distributed storage.&#xA;Table 2 Features supported by Huawei distributed storage and constraints&#xA;Feature&#xA;FusionStorage Block&#xA;OceanStor Pacific Series&#xA;Static Provisioning</description>
     </item>
     <item>
       <title>Creating a PVC Using a Snapshot</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</guid>
       <description>This section describes how to create a PVC using a snapshot.&#xA;When creating a PVC, you need to specify the data source. The following is a simple example of creating a PVC using a snapshot. In this example, mysnapshot is used as the data source and a PVC named myrestore is created.&#xA;apiVersion: v1 kind: PersistentVolumeClaim metadata: name: myrestore spec: storageClassName: mysc dataSource: name: mysnapshot kind: VolumeSnapshot apiGroup: snapshot.storage.k8s.io volumeMode: Filesystem accessModes: - ReadWriteOnce resources: requests: storage: 100Gi The specified storageClassName must be the same as the StorageClass of the snapshot source volume in dataSource.</description>
     </item>
     <item>
       <title>Deleting a Storage Backend</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/deleting-a-storage-backend/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/deleting-a-storage-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/deleting-a-storage-backend/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/deleting-a-storage-backend/</guid>
       <description>Do not delete a storage backend when a volume management operation is being performed on it.&#xA;Example of Deleting a Backend Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.157:8088 huawei-csi backend-2 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.158:8088 Run the following command to delete the specified storage backend.</description>
     </item>
     <item>
       <title>Deleting a Storage Backend Certificate</title>
-      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/deleting-a-storage-backend-certificate/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/deleting-a-storage-backend-certificate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/deleting-a-storage-backend-certificate/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/deleting-a-storage-backend-certificate/</guid>
       <description>Procedure Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.157:8088 huawei-csi backend-2 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.158:8088 Run the following command to obtain information about the certificate of the specified storage backend.&#xA;oceanctl get cert -b backend-1 The following is an example of the command output.</description>
     </item>
     <item>
       <title>Failed to Create an Ephemeral Volume</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</guid>
       <description>Symptom A generic ephemeral volume fails to be created, and the error message PodSecurityPolicy: unable to admit pod: [spec.volumes[0]: Invalid value: &amp;ldquo;ephemeral&amp;rdquo;: ephemeral volumes are not allowed to be used spec.volumes[0] is displayed.&#xA;Root Cause Analysis The current PSP policy does not contain the permission to use ephemeral volumes.&#xA;Solution or Workaround Add the permission to use ephemeral volumes to the default PSP pks-privileged and pks-restricted. The following is an example of modifying pks-privileged:</description>
     </item>
     <item>
       <title>Failed to Expand the PVC Capacity Because the Target Capacity Exceeds the Storage Pool Capacity</title>
-      <link>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity/</guid>
       <description>Symptom In a Kubernetes environment earlier than 1.23, PVC capacity expansion fails when the target capacity exceeds the storage pool capacity.&#xA;Root Cause Analysis This is a known issue in the Kubernetes community. For details, see Recovering from Failure when Expanding Volumes.&#xA;Solution or Workaround For details, see Recovering from Failure when Expanding Volumes.</description>
     </item>
     <item>
       <title>Updating the huawei-csi-controller or huawei-csi-node Service</title>
-      <link>/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/updating-the-huawei-csi-controller-or-huawei-csi-node-service/</guid>
       <description>Perform this operation when you need to update the huawei-csi-controller or huawei-csi-node service, for example, changing the number of copies for the huawei-csi-controller service.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the /helm/esdk directory and run the following command to obtain the original service configuration file. helm-huawei-csi indicates the Helm chart name specified during the installation of the earlier version, and huawei-csi indicates the Helm chart namespace specified during the installation of the earlier version.</description>
     </item>
     <item>
       <title>A Pod Fails to Be Created and the Log Shows That the mount Command Fails to Be Executed</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-the-log-shows-that-the-mount-command-fails-to-be-executed/</guid>
       <description>Symptom In NAS scenarios, when a Pod is being created, the Pod keeps in the ContainerCreating status. In this case, check the log information of huawei-csi-node (for details, see Viewing Huawei CSI Logs). The log shows that the mount command fails to be executed.&#xA;Root Cause Analysis The possible cause is that the NFS 4.0/4.1/4.2 protocol is not enabled on the storage side. After the NFS v4 protocol fails to be used for mounting, the host does not negotiate to use the NFS v3 protocol for mounting.</description>
     </item>
     <item>
       <title>Checking the Host Multipathing Configuration</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/checking-the-host-multipathing-configuration/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-the-host-multipathing-configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-the-host-multipathing-configuration/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-the-host-multipathing-configuration/</guid>
       <description>If you plan to use the FC/iSCSI/NVMe over RoCE/NVMe over FC protocol to access Huawei storage in a container environment, you are advised to use host multipathing software to enhance the link redundancy and performance of the host and storage. If you do not want to use the software, skip this section.&#xA;For details about the OSs and multipathing software supported by Huawei CSI, see Table 2.&#xA;If you want to use the FC/iSCSI protocol to connect to Huawei storage, you are advised to use native DM-Multipath provided by the OS.</description>
     </item>
     <item>
       <title>Configuring Custom Permissions</title>
-      <link>/en/docs/appendix/configuring-custom-permissions/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/appendix/configuring-custom-permissions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/appendix/configuring-custom-permissions/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/appendix/configuring-custom-permissions/</guid>
       <description>User-defined Role Configurations For different storage resources, refer to the following configurations:&#xA;For NAS resources, configure the minimum permissions by referring to Table 1. For SAN resources, configure the minimum permissions by referring to Table 2. For details about how to configure permissions for user-defined roles, see OceanStor Dorado 6000, Dorado 18000 Series Product Documentation.&#xA;Table 1 Minimum permissions for NAS resources&#xA;Permission Object&#xA;Parent Object&#xA;Read/Write Permission&#xA;Function&#xA;workload_type</description>
     </item>
     <item>
       <title>Modifying the Log Output Mode</title>
-      <link>/en/docs/common-operations/modifying-the-log-output-mode/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/modifying-the-log-output-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/modifying-the-log-output-mode/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/modifying-the-log-output-mode/</guid>
       <description>huawei-csi supports two log output modes: file and console. file indicates that logs are output to the fixed directory (/var/log/huawei), and console indicates that logs are output to the standard directory of the container. You can set the log output mode as required. The default mode is file.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>A Pod Fails to Be Created and Message publishInfo doesn&#39;t exist Is Displayed in the Events Log</title>
-      <link>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/a-pod-fails-to-be-created-and-message-publishinfo-doesn-t-exist-is-displayed-in-the-events-log/</guid>
       <description>Symptom When a Pod is being created, the Pod keeps in the ContainerCreating state. It is found that the following alarm event is printed for the Pod: rpc error: code = Internal desc = publishInfo doesn&amp;rsquo;t exist&#xA;Root Cause Analysis As required by CSI, when a workload needs to use a PV, the Container Orchestration system (CO system, communicating with the CSI plug-in using RPC requests) invokes the ControllerPublishVolume interface (provided by huawei-csi-controller) in the CSI protocol provided by the CSI plug-in to map the PV, and then invokes the NodeStageVolume interface (provided by huawei-csi-node) provided by the CSI plug-in to mount the PV.</description>
     </item>
     <item>
       <title>Checking the Status of Host-Dependent Software</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/checking-the-status-of-host-dependent-software/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-the-status-of-host-dependent-software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-the-status-of-host-dependent-software/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-the-status-of-host-dependent-software/</guid>
       <description>This section describes how to check whether the status of host-dependent software on worker nodes in a cluster is normal. In this example, the host OS is CentOS 7.9 x86_64.&#xA;Check the status of the iSCSI client.&#xA;systemctl status iscsi iscsid Check the status of the NFS client.&#xA;systemctl status rpcbind Check the status of DM-Multipath.&#xA;systemctl status multipathd.socket multipathd Check the status of UltraPath.&#xA;systemctl status nxup Check the status of UltraPath-NVMe.</description>
     </item>
     <item>
       <title>Enabling the ReadWriteOncePod Feature Gate</title>
-      <link>/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/enabling-the-readwriteoncepod-feature-gate/</guid>
       <description>The ReadWriteOnce access mode is the fourth access mode introduced by Kubernetes v1.22 for PVs and PVCs. If you create a Pod using a PVC in ReadWriteOncePod access mode, Kubernetes ensures that the Pod is the only Pod in the cluster that can read or write the PVC.&#xA;The ReadWriteOncePod access mode is an alpha feature in Kubernetes v1.22/1.23/1.24. Therefore, you need to enable the ReadWriteOncePod feature in feature-gates of kube-apiserver, kube-scheduler, and kubelet before using the access mode.</description>
     </item>
     <item>
       <title>Huawei CSI Resource Management</title>
-      <link>/en/docs/appendix/huawei-csi-resource-management/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/appendix/huawei-csi-resource-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/appendix/huawei-csi-resource-management/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/appendix/huawei-csi-resource-management/</guid>
       <description>This section lists the resource requests and limits used by each container of the Huawei CSI plug-in. For details about the unit, see Resource units in Kubernetes.&#xA;Table 1 Container resource requests and limits&#xA;Pod Name&#xA;Container Name&#xA;CPU Request&#xA;CPU Limit&#xA;Memory Request&#xA;Memory Limit&#xA;huawei-csi-controller&#xA;huawei-csi-driver&#xA;50m&#xA;500m&#xA;128Mi&#xA;1Gi&#xA;storage-backend-sidecar&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;storage-backend-controller&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;huawei-csi-extender&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;csi-attacher&#xA;50m&#xA;300m</description>
     </item>
     <item>
       <title>After a Pod Fails to Be Created or kubelet Is Restarted, Logs Show That the Mount Point Already Exists</title>
-      <link>/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/after-a-pod-fails-to-be-created-or-kubelet-is-restarted-logs-show-that-the-mount-point-already-exist/</guid>
       <description>Symptom When a Pod is being created, the Pod is always in the ContainerCreating state. Alternatively, after kubelet is restarted, logs show that the mount point already exists. Check the log information of huawei-csi-node (for details, see Viewing Huawei CSI Logs). The error information is: The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount&#xA;Root Cause Analysis The root cause of this problem is that Kubernetes performs repeated mounting operations.</description>
     </item>
     <item>
       <title>Checking the Images on Which CSI Depends</title>
-      <link>/en/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends/</guid>
       <description>The installation of Huawei CSI depends on the images listed in the following table. If all worker nodes in the cluster have been connected to the Internet and can pull images online, you can skip this section. If nodes in the cluster cannot connect to the Internet, download the corresponding image file based on the Kubernetes version and upload it to the image repository or import it to all worker nodes in the Kubernetes cluster.</description>
     </item>
     <item>
       <title>Configuring Access to the Kubernetes Cluster as a Non-root User</title>
-      <link>/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/common-operations/configuring-access-to-the-kubernetes-cluster-as-a-non-root-user/</guid>
       <description>Procedure Copy the authentication file of the Kubernetes cluster and modify /etc/kubernetes/admin.conf to be the actual authentication file.&#xA;mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config Change the user and user group of the authentication file.&#xA;sudo chown $(id -u):$(id -g) $HOME/.kube/config Configure the KUBECONFIG environment variable of the current user. The following uses Ubuntu 20.04 as an example.&#xA;echo &amp;#34;export KUBECONFIG=$HOME/.kube/config&amp;#34; &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc </description>
     </item>
     <item>
       <title>I/O error Is Displayed When a Volume Directory Is Mounted to a Pod</title>
-      <link>/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/i-o-error-is-displayed-when-a-volume-directory-is-mounted-to-a-pod/</guid>
       <description>Symptom When a Pod reads or writes a mounted volume, message &amp;ldquo;I/O error&amp;rdquo; is displayed.&#xA;Root Cause Analysis When a protocol such as SCSI is used, if the Pod continuously writes data to the mount directory, the storage device will restart. As a result, the link between the device on the host and the storage device is interrupted, triggering an I/O error. When the storage device is restored, the mount directory is still read-only.</description>
     </item>
     <item>
       <title>Failed to Create a Pod Because the iscsi tcp Service Is Not Started Properly When the Kubernetes Platform Is Set Up for the First Time</title>
-      <link>/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/pod-issues/failed-to-create-a-pod-because-the-iscsi_tcp-service-is-not-started-properly-when-the-kubernetes-pla/</guid>
       <description>Symptom When you create a Pod, error Cannot connect ISCSI portal *.*.*.*: libkmod: kmod_module_insert_module: could not find module by name=&amp;lsquo;iscsi_tcp&amp;rsquo; is reported in the /var/log/huawei-csi-node log.&#xA;Root Cause Analysis The iscsi_tcp service may be stopped after the Kubernetes platform is set up and the iSCSI service is installed. You can run the following command to check whether the service is stopped.&#xA;lsmod | grep iscsi | grep iscsi_tcp The following is an example of the command output.</description>
     </item>
     <item>
       <title>search result</title>
-      <link>/en/search/</link>
+      <link>https://huawei.github.io/css-docs/en/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/search/</guid>
+      <guid>https://huawei.github.io/css-docs/en/search/</guid>
       <description></description>
     </item>
   </channel>

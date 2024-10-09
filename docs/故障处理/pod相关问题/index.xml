@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pod相关问题 on Huawei</title>
-    <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
     <description>Recent content in Pod相关问题 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>集群中worker节点宕机并恢复后，Pod完成failover，但是Pod所在源主机出现盘符残留</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E9%9B%86%E7%BE%A4%E4%B8%ADworker%E8%8A%82%E7%82%B9%E5%AE%95%E6%9C%BA%E5%B9%B6%E6%81%A2%E5%A4%8D%E5%90%8E-pod%E5%AE%8C%E6%88%90failover-%E4%BD%86%E6%98%AFpod%E6%89%80%E5%9C%A8%E6%BA%90%E4%B8%BB%E6%9C%BA%E5%87%BA%E7%8E%B0%E7%9B%98%E7%AC%A6%E6%AE%8B%E7%95%99/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E9%9B%86%E7%BE%A4%E4%B8%ADworker%E8%8A%82%E7%82%B9%E5%AE%95%E6%9C%BA%E5%B9%B6%E6%81%A2%E5%A4%8D%E5%90%8E-pod%E5%AE%8C%E6%88%90failover-%E4%BD%86%E6%98%AFpod%E6%89%80%E5%9C%A8%E6%BA%90%E4%B8%BB%E6%9C%BA%E5%87%BA%E7%8E%B0%E7%9B%98%E7%AC%A6%E6%AE%8B%E7%95%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E9%9B%86%E7%BE%A4%E4%B8%ADworker%E8%8A%82%E7%82%B9%E5%AE%95%E6%9C%BA%E5%B9%B6%E6%81%A2%E5%A4%8D%E5%90%8E-pod%E5%AE%8C%E6%88%90failover-%E4%BD%86%E6%98%AFpod%E6%89%80%E5%9C%A8%E6%BA%90%E4%B8%BB%E6%9C%BA%E5%87%BA%E7%8E%B0%E7%9B%98%E7%AC%A6%E6%AE%8B%E7%95%99/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E9%9B%86%E7%BE%A4%E4%B8%ADworker%E8%8A%82%E7%82%B9%E5%AE%95%E6%9C%BA%E5%B9%B6%E6%81%A2%E5%A4%8D%E5%90%8E-pod%E5%AE%8C%E6%88%90failover-%E4%BD%86%E6%98%AFpod%E6%89%80%E5%9C%A8%E6%BA%90%E4%B8%BB%E6%9C%BA%E5%87%BA%E7%8E%B0%E7%9B%98%E7%AC%A6%E6%AE%8B%E7%95%99/</guid>
       <description>现象描述 worker节点 A上运行Pod, 并通过CSI挂载外置块设备到该Pod；异常掉电节点worker节点A； Kubernetes平台会在感知到节点故障后，将Pod切换至worker节点B；恢复worker节点A， 节点A上的盘符会从正常变为故障。&#xA;环境配置 Kubernetes版本：1.18及以上&#xA;存储类型：块存储&#xA;根因分析 worker节点A恢复后，Kubernetes会向存储发起解除映射操作，但是不会发起主机侧的移除盘符操作。在Kubernetes解除映射后，worker节点A上就会出现盘符残留。&#xA;解决措施或规避方法 目前的解决方法只能人工介入，手动清理掉主机的残留盘符（或者再次重启主机，利用主机重启过程中扫盘机制，清理掉残留盘符）。具体方法如下：&#xA;排查主机的残留盘符。&#xA;执行命令，判断是否存在多路径状态异常的DM多路径设备：&#xA;multipath -ll 命令结果示例如下。路径状态为failed faulty running表示异常，对应的DM多路径设备为dm-12，关联的SCSI磁盘为sdi和sdj，在配置多条路径时，会有多个SCSI磁盘。记录这些SCSI磁盘。&#xA;mpathb (3618cf24100f8f457014a764c000001f6) dm-12 HUAWEI ,XSG1 size=100G features=&amp;#39;0&amp;#39; hwhandler=&amp;#39;0&amp;#39; wp=rw `-+- policy=&amp;#39;service-time 0&amp;#39; prio=-1 status=active |- 39:0:0:1 sdi 8:48 failed faulty running `- 38:0:0:1 sdj 8:64 failed faulty running 是 =&amp;gt; 继续执行步骤1.2。 否 =&amp;gt; 不涉及。 执行以下命令，判断残留的DM多路径设备是否可读。&#xA;dd if=/dev/dm-12 of=/dev/null count=1 bs=1M iflag=direct 命令结果示例如下。如果返回结果为：Input/output error，且读取数据为“0 bytes (0 B) copied”，表示该设备不可读。其中，dm-xx 为步骤1.1查到的设备号。&#xA;dd: error reading ‘/dev/dm-12’: Input/output error 0+0 records in 0+0 records out 0 bytes (0 B) copied, 0.</description>
     </item>
     <item>
       <title>创建Pod时，Pod的状态为ContainerCreating</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BAcontainercreating/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BAcontainercreating/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BAcontainercreating/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BAcontainercreating/</guid>
       <description>现象描述 执行完成Pod的创建操作，一段时间后，Pod的状态仍然处于ContainerCreating，查看具体日志信息（详情请参考如何查看华为CSI日志），报错“Fibre Channel volume device not found”。&#xA;根因分析 该问题是因为在主机节点有磁盘残留，导致下次创建Pod时，查找磁盘失败。&#xA;解决措施或规避方法 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，查看Pod所在节点信息。&#xA;kubectl get pod -o wide 命令结果示例如下。&#xA;NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES mypod 0/1 ContainerCreating 0 51s 10.244.1.224 node1 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; 删除Pod。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的 node1 节点。node1 节点为2中查询的节点。&#xA;移除盘符残留，详情请参考解决措施或规避方法。</description>
     </item>
     <item>
       <title>创建Pod时，Pod的状态长时间处于ContainerCreating状态</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E9%95%BF%E6%97%B6%E9%97%B4%E5%A4%84%E4%BA%8Econtainercreating%E7%8A%B6%E6%80%81/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E9%95%BF%E6%97%B6%E9%97%B4%E5%A4%84%E4%BA%8Econtainercreating%E7%8A%B6%E6%80%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E9%95%BF%E6%97%B6%E9%97%B4%E5%A4%84%E4%BA%8Econtainercreating%E7%8A%B6%E6%80%81/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E6%97%B6-pod%E7%9A%84%E7%8A%B6%E6%80%81%E9%95%BF%E6%97%B6%E9%97%B4%E5%A4%84%E4%BA%8Econtainercreating%E7%8A%B6%E6%80%81/</guid>
       <description>现象描述 创建Pod时，Pod长时间处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考如何查看华为CSI日志），huawei-csi-node的日志中无创建Pod的日志记录，执行kubectl get volumeattachment命令后，PV列无该Pod使用的PV名称。在等待较长时间后（超过十分钟），Pod正常创建，Pod状态变为Running状态。&#xA;根因分析 该问题是因为Kubernetes的kube-controller-manager组件服务异常导致。&#xA;解决措施或规避方法 请联系容器平台侧工程师解决。</description>
     </item>
     <item>
       <title>创建Pod失败，日志显示执行mount命令超时</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E8%B6%85%E6%97%B6/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E8%B6%85%E6%97%B6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E8%B6%85%E6%97%B6/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E8%B6%85%E6%97%B6/</guid>
       <description>现象描述 创建Pod时，Pod一直处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考如何查看华为CSI日志），日志显示执行mount命令超时。&#xA;根因分析 原因1：该问题可能由于配置的业务IP网络不通，导致mount命令执行超时失败。&#xA;原因2：对于部分操作系统，如Kylin V10 SP1和SP2，使用NFSv3从容器内执行mount命令耗时较长，导致mount命令超时并报错“error: exit status 255”，该问题可能由于容器运行时containerd的LimitNOFILE参数值过大（10亿+）。&#xA;原因3：可能由于网络问题导致挂载失败，CSI默认挂载超时时间为30秒，超过30秒仍挂载失败，日志会显示执行mount命令超时。&#xA;解决措施或规避方法 执行ping命令判断业务IP网络是否连通，如果无法ping通，则为原因1，请配置可用的业务IP地址，如果可以ping通，则执行2。&#xA;进入任意可以执行mount命令的容器中，指定使用NFSv3执行mount命令。如果命令超时，则可能是原因2，继续执行systemctl status containerd.service命令查看配置文件路径，然后执行cat _/xxx/containerd.service_命令查看配置文件。文件中如果有LimitNOFILE=infinity或LimitNOFILE的值大小为10亿，请执行3。否则请联系华为工程师处理。&#xA;原因2可参考以下方式处理：&#xA;尝试使用NFSv4.0及以上协议。 参考社区修改方案，将LimitNOFILE参数值修改为合适的值。该方案将会重启容器运行时，请评估对业务的影响。 在挂载失败的宿主机手动挂载该文件系统，如果时间超过30秒，需要用户自行排查该宿主机到存储节点网络是否存在问题。mount命令示例如下&#xA;执行以下命令创建测试目录。&#xA;mkdir /tmp/test_mount 执行mount命令，挂载文件系统，并观察耗时，其中ip:nfs_share_path可以从huawei-csi-node日志中获取，详情请参考如何查看华为CSI日志&#xA;time mount ip:nfs_share_path /tmp/test_mount 测试结束，执行以下命令解挂载文件系统&#xA;umount /tmp/test_mount </description>
     </item>
     <item>
       <title>创建Pod失败，日志显示执行mount命令失败</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E5%A4%B1%E8%B4%A5/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E5%A4%B1%E8%B4%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E5%A4%B1%E8%B4%A5/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8Cmount%E5%91%BD%E4%BB%A4%E5%A4%B1%E8%B4%A5/</guid>
       <description>现象描述 NAS场景下，创建Pod时，Pod一直处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考如何查看华为CSI日志），日志显示执行mount命令失败。&#xA;根因分析 该问题可能由于存储侧未开启NFS 4.0/4.1/4.2协议，主机在使用NFS v4协议挂载失败后，未进行协商使用NFS v3协议挂载。&#xA;解决措施或规避方法 开启存储侧的NFS 3/4.0/4.1/4.2协议，重新尝试默认挂载。 直接指定可用的NFS协议进行挂载，参考动态卷供应典型场景StorageClass配置示例。 </description>
     </item>
     <item>
       <title>创建Pod失败，Events日志显示“publishInfo doesn&#39;t exist”</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-events%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA-publishinfo-doesn-t-exist/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-events%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA-publishinfo-doesn-t-exist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-events%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA-publishinfo-doesn-t-exist/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5-events%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA-publishinfo-doesn-t-exist/</guid>
       <description>现象描述 创建Pod时，Pod一直处于ContainerCreating状态，查看Pod中有打印告警事件：rpc error: code = Internal desc = publishInfo doesn&amp;rsquo;t exist。&#xA;根因分析 按照CSI协议约定，工作负载要使用一个PV卷时，CO（Container Orchestration system，通过RPC请求与CSI插件通信）会调用CSI插件提供的CSI协议中的“ControllerPublishVolume”接口（huawei-csi-controller服务提供）完成PV卷的映射，然后调用CSI插件提供的“NodeStageVolume”接口（huawei-csi-node服务提供）完成PV卷的挂载。导致出现“publishInfo doesn&amp;rsquo;t exist”错误的原因是在一次完整的挂载时，仅huawei-csi-node服务收到了“NodeStageVolume”请求，而在此之前huawei-csi-controller服务未收到“ControllerPublishVolume”请求，导致huawei-csi-controller服务未完成PV卷的映射，没有把映射信息传递给huawei-csi-node服务。&#xA;解决措施 解决该问题，需要触发Kubernetes调用“ControllerPublishVolume”接口。&#xA;如果集群中所有旧版本创建的工作负载均触发了该操作，则后续将不会出现该问题。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，获取工作负载所在节点信息。&#xA;kubectl get pod error-pod -n error-pod-in-namespace -owide 命令结果示例如下。&#xA;NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES pod-nfs 0/1 ContainerCreating 0 3s &amp;lt;none&amp;gt; node-1 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; 将该工作负载漂移至其他节点。&#xA;若在集群内无法完成漂移，可在原节点完成工作负载重建，即进行删除-新建操作。&#xA;观察该工作负载是否成功拉起，如果拉起失败请联系华为工程师。&#xA;集群工作负载排查 Kubernetes调用CSI插件完成卷映射时，将使用VolumeAttachment资源保存映射信息，用于表示将指定的卷从指定的节点上附加或分离。由于该问题是由于publishInfo不存在导致，因此可通过查看VolumeAttachment资源信息排查集群中其他工作负载是否存在该问题。具体步骤如下：&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，获取VolumeAttachment信息，并保留ATTACHER字段为csi.huawei.com的资源，其中csi.huawei.com为华为CSI驱动名称，可在values.yaml文件中配置，配置项为csiDriver.driverName，配置项详情描述参考表 csiDriver配置项说明。&#xA;kubectl get volumeattachments.storage.k8s.io 命令结果示例如下。&#xA;NAME ATTACHER PV NODE ATTACHED AGE csi-47abxx csi.</description>
     </item>
     <item>
       <title>创建Pod失败或重启kubelet后，日志显示挂载点已存在</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5%E6%88%96%E9%87%8D%E5%90%AFkubelet%E5%90%8E-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%8C%82%E8%BD%BD%E7%82%B9%E5%B7%B2%E5%AD%98%E5%9C%A8/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5%E6%88%96%E9%87%8D%E5%90%AFkubelet%E5%90%8E-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%8C%82%E8%BD%BD%E7%82%B9%E5%B7%B2%E5%AD%98%E5%9C%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5%E6%88%96%E9%87%8D%E5%90%AFkubelet%E5%90%8E-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%8C%82%E8%BD%BD%E7%82%B9%E5%B7%B2%E5%AD%98%E5%9C%A8/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5%E6%88%96%E9%87%8D%E5%90%AFkubelet%E5%90%8E-%E6%97%A5%E5%BF%97%E6%98%BE%E7%A4%BA%E6%8C%82%E8%BD%BD%E7%82%B9%E5%B7%B2%E5%AD%98%E5%9C%A8/</guid>
       <description>现象描述 创建Pod时，Pod一直处于ContainerCreating状态，或者重启kubelet后，日志中显示挂载点已存在。此时查看huawei-csi-node的日志信息（详情请参考如何查看华为CSI日志），日志提示错误为：The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount&#xA;根因分析 该问题的根因是Kubernetes进行重复挂载操作。&#xA;解决措施或规避方法 执行以下命令，将已存在的路径解除挂载，其中“/var/lib/kubelet/pods/xxx/mount”为日志中提示的已存在的挂载路径。&#xA;umount /var/lib/kubelet/pods/xxx/mount </description>
     </item>
     <item>
       <title>Pod挂载卷目录提示I/O error</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/pod%E6%8C%82%E8%BD%BD%E5%8D%B7%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BAi-o-error/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/pod%E6%8C%82%E8%BD%BD%E5%8D%B7%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BAi-o-error/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/pod%E6%8C%82%E8%BD%BD%E5%8D%B7%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BAi-o-error/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/pod%E6%8C%82%E8%BD%BD%E5%8D%B7%E7%9B%AE%E5%BD%95%E6%8F%90%E7%A4%BAi-o-error/</guid>
       <description>现象描述 Pod对所挂载卷进行读写时，提示I/O error。&#xA;根因分析 使用SCSI等协议时，如果Pod持续往挂载目录写入数据时，存储发生重启，导致主机上设备到存储的链路中断，触发I/O error。存储恢复时，挂载目录仍然为只读。&#xA;解决措施 重新挂载该卷，即通过重建Pod可以触发重新挂载。</description>
     </item>
     <item>
       <title>Kubernetes平台第一次搭建时， iscsi tcp服务没有正常启动，导致创建Pod失败</title>
-      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/kubernetes%E5%B9%B3%E5%8F%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%97%B6-iscsi_tcp%E6%9C%8D%E5%8A%A1%E6%B2%A1%E6%9C%89%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A8-%E5%AF%BC%E8%87%B4%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/kubernetes%E5%B9%B3%E5%8F%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%97%B6-iscsi_tcp%E6%9C%8D%E5%8A%A1%E6%B2%A1%E6%9C%89%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A8-%E5%AF%BC%E8%87%B4%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/kubernetes%E5%B9%B3%E5%8F%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%97%B6-iscsi_tcp%E6%9C%8D%E5%8A%A1%E6%B2%A1%E6%9C%89%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A8-%E5%AF%BC%E8%87%B4%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pod%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/kubernetes%E5%B9%B3%E5%8F%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E6%97%B6-iscsi_tcp%E6%9C%8D%E5%8A%A1%E6%B2%A1%E6%9C%89%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A8-%E5%AF%BC%E8%87%B4%E5%88%9B%E5%BB%BApod%E5%A4%B1%E8%B4%A5/</guid>
       <description>现象描述 创建Pod时报错，在/var/log/huawei-csi-node日志中报错“ Cannot connect ISCSI portal *.*.*.*: libkmod: kmod_module_insert_module: could not find module by name=&amp;lsquo;iscsi_tcp&amp;rsquo;。&#xA;根因分析 搭建Kubernete和安装iSCSI服务后， iscsi_tcp服务可能会被停掉，可通过执行以下命令查看服务是否被停掉。&#xA;lsmod | grep iscsi | grep iscsi_tcp 命令结果示例如下。&#xA;iscsi_tcp 18333 6 libiscsi_tcp 25146 1 iscsi_tcp libiscsi 57233 2 libiscsi_tcp,iscsi_tcp scsi_transport_iscsi 99909 3 iscsi_tcp,libiscsi 解决措施或规避方法 执行以下命令，手动加载iscsi_tcp服务。&#xA;modprobe iscsi_tcp lsmod | grep iscsi | grep iscsi_tcp </description>
     </item>
   </channel>

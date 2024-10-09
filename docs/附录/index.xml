@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>附录 on Huawei</title>
-    <link>/docs/%E9%99%84%E5%BD%95/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/</link>
     <description>Recent content in 附录 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E9%99%84%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OceanStor V5系列和OceanStor Dorado V3系列ALUA特性配置策略样例</title>
-      <link>/docs/%E9%99%84%E5%BD%95/oceanstor-v5%E7%B3%BB%E5%88%97%E5%92%8Coceanstor-dorado-v3%E7%B3%BB%E5%88%97alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/oceanstor-v5%E7%B3%BB%E5%88%97%E5%92%8Coceanstor-dorado-v3%E7%B3%BB%E5%88%97alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%99%84%E5%BD%95/oceanstor-v5%E7%B3%BB%E5%88%97%E5%92%8Coceanstor-dorado-v3%E7%B3%BB%E5%88%97alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/oceanstor-v5%E7%B3%BB%E5%88%97%E5%92%8Coceanstor-dorado-v3%E7%B3%BB%E5%88%97alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</guid>
       <description>例1.配置文件如下：&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 0 node1: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 1 对于主机名为“node1”，上述ALUA配置段都能用于配置启动器。根据配置华为企业存储后端的ALUA参数中的配置策略规则，优先级顺序为第2条配置段（HostName为&amp;quot;node1&amp;quot;）高于第1条配置段（HostName为&amp;quot;*&amp;quot;）。&#xA;例2.配置文件如下：&#xA;parameters: ALUA: node[0-9]: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 0 node[5-7]: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 1 对于主机名为“node6”的主机，上述ALUA配置段都能用于配置启动器。根据配置华为企业存储后端的ALUA参数中的配置策略规则，选择第一条ALUA配置段来配置启动器。&#xA;例3.配置文件如下：&#xA;parameters: ALUA: node$: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 0 node10$: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 1 根据配置华为企业存储后端的ALUA参数中的配置策略规则，对于主机名为“node1”的主机，选择第一条ALUA配置段来配置启动器；对于主机名为“node10”的主机，选择第二条ALUA配置段来配置启动器。^表示匹配字符串的开头，$表示匹配字符串的结尾。</description>
     </item>
     <item>
       <title>OceanStor Dorado ALUA特性配置策略样例</title>
-      <link>/docs/%E9%99%84%E5%BD%95/oceanstor-dorado-alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/oceanstor-dorado-alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%99%84%E5%BD%95/oceanstor-dorado-alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/oceanstor-dorado-alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</guid>
       <description>例1.配置文件如下：&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: accessMode: 1 hyperMetroPathOptimized: 1 node1: accessMode: 1 hyperMetroPathOptimized: 0 对于主机名为“node1”，上述ALUA配置段都能用于配置启动器。根据配置华为企业存储后端的ALUA参数中的配置策略规则，优先级顺序为第2条配置段（HostName为&amp;quot;node1&amp;quot;）高于第1条配置段（HostName为&amp;quot;*&amp;quot;）。&#xA;例2.配置文件如下：&#xA;parameters: ALUA: node[0-9]: accessMode: 1 hyperMetroPathOptimized: 1 node[5-7]: accessMode: 1 hyperMetroPathOptimized: 0 对于主机名为“node6”的主机，上述ALUA配置段都能用于配置启动器。根据配置华为企业存储后端的ALUA参数中的配置策略规则，选择第一条ALUA配置段来配置启动器。&#xA;例3.配置文件如下：&#xA;parameters: node1$: node[0-9]: accessMode: 1 hyperMetroPathOptimized: 1 node10$: accessMode: 1 hyperMetroPathOptimized: 0 根据配置华为企业存储后端的ALUA参数中的配置策略规则，对于主机名为“node1”的主机，选择第一条ALUA配置段来配置启动器；对于主机名为“node10”的主机，选择第二条ALUA配置段来配置启动器。^表示匹配字符串的开头，$表示匹配字符串的结尾。</description>
     </item>
     <item>
       <title>分布式存储ALUA特性配置策略样例</title>
-      <link>/docs/%E9%99%84%E5%BD%95/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%99%84%E5%BD%95/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8alua%E7%89%B9%E6%80%A7%E9%85%8D%E7%BD%AE%E7%AD%96%E7%95%A5%E6%A0%B7%E4%BE%8B/</guid>
       <description>例1.配置文件如下：&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: switchoverMode: Enable_alua pathType: optimal_path node1: switchoverMode: Enable_alua pathType: non_optimal_path 对于主机名为“node1”，上述ALUA配置段都能用于配置启动器。根据配置分布式存储后端的ALUA参数中的配置策略规则，优先级顺序为第2条配置段（HostName为&amp;quot;node1&amp;quot;）高于第1条配置段（HostName为&amp;quot;*&amp;quot;）。&#xA;例2.配置文件如下：&#xA;parameters: ALUA: node[0-9]: switchoverMode: Enable_alua pathType: optimal_path node[5-7]: switchoverMode: Enable_alua pathType: non_optimal_path 对于主机名为“node6”的主机，上述ALUA配置段都能用于配置启动器。根据配置分布式存储后端的ALUA参数中的配置策略规则，选择第一条ALUA配置段来配置启动器。&#xA;例3.配置文件如下：&#xA;parameters: ALUA: node1$: switchoverMode: Enable_alua pathType: optimal_path node10$: switchoverMode: Enable_alua pathType: non_optimal_path 根据配置分布式存储后端的ALUA参数中的配置策略规则，对于主机名为“node1”的主机，选择第一条ALUA配置段来配置启动器；对于主机名为“node10”的主机，选择第二条ALUA配置段来配置启动器。^表示匹配字符串的开头，$表示匹配字符串的结尾。</description>
     </item>
     <item>
       <title>通信矩阵</title>
-      <link>/docs/%E9%99%84%E5%BD%95/%E9%80%9A%E4%BF%A1%E7%9F%A9%E9%98%B5/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E9%80%9A%E4%BF%A1%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%99%84%E5%BD%95/%E9%80%9A%E4%BF%A1%E7%9F%A9%E9%98%B5/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E9%80%9A%E4%BF%A1%E7%9F%A9%E9%98%B5/</guid>
       <description>源设备&#xA;源IP&#xA;源端口&#xA;目的设备&#xA;目的IP&#xA;目的端口 （监听）&#xA;协议&#xA;端口说明&#xA;监听端口是否可更改&#xA;认证方式&#xA;加密方式&#xA;所属平面&#xA;特殊场景&#xA;CSI controller所在主机&#xA;源设备IP&#xA;1024~65536&#xA;存储设备&#xA;存储阵列管理IP&#xA;8088&#xA;TCP&#xA;用于卷创建/管理/删除等一系列动作&#xA;否&#xA;用户名/密码&#xA;TLS 1.3/TLS 1.2&#xA;OM&#xA;无&#xA;CSI controller所在主机&#xA;源设备IP&#xA;1024~65536&#xA;CSI controller所在主机&#xA;目的设备IP&#xA;9808&#xA;TCP&#xA;用于k8s对CSI controller的健康检查&#xA;否&#xA;证书认证&#xA;TLS 1.3/TLS 1.2&#xA;运维面&#xA;无&#xA;CSI node所在主机&#xA;源设备IP&#xA;1024~65536&#xA;CSI node所在主机&#xA;目的设备IP&#xA;9800&#xA;TCP&#xA;用于k8s对CSI node的健康检查&#xA;否&#xA;证书认证&#xA;TLS 1.3/TLS 1.2&#xA;运维面&#xA;无&#xA;k8s master节点&#xA;源设备IP</description>
     </item>
     <item>
       <title>配置自定义权限</title>
-      <link>/docs/%E9%99%84%E5%BD%95/%E9%85%8D%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9D%83%E9%99%90/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E9%85%8D%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9D%83%E9%99%90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%99%84%E5%BD%95/%E9%85%8D%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9D%83%E9%99%90/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E9%85%8D%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9D%83%E9%99%90/</guid>
       <description>自定义角色配置 针对不同的存储资源，请参考以下配置：&#xA;NAS相关资源请参考表 NAS相关资源最小权限说明配置最小权限。 SAN相关资源请参考表 SAN相关资源最小权限说明配置最小权限。 可参考存储文档：《OceanStor Dorado 6000, Dorado 18000系列 产品文档》配置自定义角色权限。&#xA;表 1 NAS相关资源最小权限说明&#xA;权限对象&#xA;父级对象&#xA;读写权限&#xA;功能说明&#xA;workload_type&#xA;file_storage_service&#xA;只读&#xA;查询应用类型&#xA;file_system&#xA;file_storage_service&#xA;读写&#xA;管理文件系统&#xA;fs_snapshot&#xA;file_storage_service&#xA;读写&#xA;管理文件系统快照&#xA;quota&#xA;file_storage_service&#xA;读写&#xA;管理文件系统配额&#xA;nfs_service&#xA;file_storage_service&#xA;只读&#xA;查询NFS服务&#xA;share&#xA;file_storage_service&#xA;读写&#xA;管理NFS共享&#xA;dtree&#xA;file_storage_service&#xA;读写&#xA;管理dtree&#xA;hyper_metro_pair&#xA;hyper_metro&#xA;读写&#xA;创建文件系统双活Pair&#xA;hyper_metro_domain&#xA;hyper_metro&#xA;只读&#xA;查询文件系统双活域信息&#xA;remote_device&#xA;local_data_protection&#xA;只读&#xA;查询远端设备信息&#xA;storage_pool&#xA;pool&#xA;只读&#xA;查询存储池信息&#xA;smart_qos&#xA;resource_performance_tuning&#xA;读写&#xA;管理SmartQoS策略&#xA;system&#xA;system&#xA;只读</description>
     </item>
     <item>
       <title>华为CSI资源管理</title>
-      <link>/docs/%E9%99%84%E5%BD%95/%E5%8D%8E%E4%B8%BAcsi%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E5%8D%8E%E4%B8%BAcsi%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%99%84%E5%BD%95/%E5%8D%8E%E4%B8%BAcsi%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%99%84%E5%BD%95/%E5%8D%8E%E4%B8%BAcsi%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/</guid>
       <description>本章节列举了华为CSI插件中每个容器所使用的资源请求和限制。其中单位说明请参考Kubernetes 中的资源单位。&#xA;表 1 容器资源请求和限制&#xA;Pod 名称&#xA;容器名称&#xA;CPU 请求&#xA;CPU 限制&#xA;Memory 请求&#xA;Memory 限制&#xA;huawei-csi-controller&#xA;huawei-csi-driver&#xA;50m&#xA;500m&#xA;128Mi&#xA;1Gi&#xA;storage-backend-sidecar&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;storage-backend-controller&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;huawei-csi-extender&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;csi-attacher&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;csi-provisioner&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;csi-resize&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;csi-snapshotter&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;snapshot-controller&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;liveness-probe&#xA;10m&#xA;100m&#xA;128Mi&#xA;128Mi&#xA;huawei-csi-node&#xA;huawei-csi-driver&#xA;50m</description>
     </item>
   </channel>

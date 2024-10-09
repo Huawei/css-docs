@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>回退华为CSI on Huawei</title>
-    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</link>
     <description>Recent content in 回退华为CSI on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes、OpenShift、Tanzu回退华为CSI</title>
-      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</guid>
       <description>前提条件 已使用Helm 3完成CSI的更新。 操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;进入到helm/esdk的工作目录下，目录路径请参见表 软件包组件描述。&#xA;cd helm/esdk 执行命令，查看Helm部署CSI服务的历史版本。&#xA;helm history helm-huawei-csi -n huawei-csi 命令结果示例如下。&#xA;REVISION UPDATED STATUS CHART APP VERSION DESCRIPTION 1 Mon Jan 8 04:15:40 2024&#x9;superseded&#x9;esdk-4.4.0&#x9;4.4.0 Install complete 2 Mon Jan 8 04:16:12 2024&#x9;deployed esdk-4.5.0&#x9;4.5.0 Upgrade complete 执行命令，回退CSI服务到指定版本。&#xA;其中，revision-number为3查询到的版本号。例如版本为：1。&#xA;helm rollback helm-huawei-csi -n huawei-csi 1 命令结果示例如下，回显中有Rollback was a success，则表示回退CSI服务到指定版本成功。&#xA;Rollback was a success! Happy Helming! </description>
     </item>
     <item>
       <title>CCE和CCE Agile回退华为CSI</title>
-      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/</guid>
       <description> 在升级/回退过程中，已经存在的PVC/快照/Pod等资源会正常运行，不会影响您的业务访问。 在升级/回退过程中，不能使用华为CSI创建新的资源，或者对已有的PVC做挂载/卸载操作。 在升级/回退过程中，请勿卸载Snapshot依赖组件服务。 前提条件 已下载原版本CSI的软件包。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。 参考操作步骤卸载CSI。 参考CCE和CCE Agile平台安装华为CSI重新安装原版本的CSI。 </description>
     </item>
   </channel>

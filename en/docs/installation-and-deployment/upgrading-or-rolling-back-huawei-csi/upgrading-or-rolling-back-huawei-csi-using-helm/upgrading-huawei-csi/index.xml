@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Upgrading Huawei CSI on Huawei</title>
-    <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/</link>
     <description>Recent content in Upgrading Huawei CSI on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Upgrading from 2.x or 3.x to 4.x</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-from-2-x-or-3-x-to-4-x/</guid>
       <description>In CSI 2.x or 3.x, when block storage is used, the mapping with storage is set up in the huawei-csi-node service. Therefore, the huawei-csi-node service needs to communicate with the storage management network. Because the huawei-csi-node service is deployed as a DaemonSet, the huawei-csi-node service is deployed on each node in the cluster. As a result, in a large-scale cluster, each huawei-csi-node service sends requests to the storage and the number of storage connections may be fully occupied.</description>
     </item>
     <item>
       <title>Upgrading Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
       <description>Prerequisites Huawei CSI of an earlier version is installed using Helm. A Huawei CSI image of a new version has been created and uploaded to the image repository or imported to all nodes by following the instructions provided in Uploading a Huawei CSI Image. Upgrading Huawei CSI If CSI of an earlier version is deployed using Helm, perform the following steps to upgrade Huawei CSI.&#xA;Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Upgrading Huawei CSI on CCE or CCE Agile</title>
-      <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-cce-or-cce-agile/</guid>
       <description>Prerequisites You have downloaded the CSI software package of a new version.&#xA;Procedure Uninstall CSI. For details, see Uninstalling Huawei CSI on CCE or CCE Agile. Install CSI of the new version. For details, see Installing Huawei CSI on the CCE or CCE Agile Platform. </description>
     </item>
   </channel>

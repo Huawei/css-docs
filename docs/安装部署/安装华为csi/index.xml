@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>安装华为CSI on Huawei</title>
-    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
     <description>Recent content in 安装华为CSI on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手动安装华为CSI</title>
-      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</guid>
       <description>本章节介绍如何手动安装华为CSI。&#xA;手动安装华为CSI当前仅支持Kubernetes平台。&#xA;安装步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录集群的任意master节点。&#xA;将Kubernetes CSI组件包中的&amp;quot;manual&amp;quot;目录拷贝到master节点的任意目录下。&#xA;执行命令创建一个命名空间。&#xA;kubectl create ns huawei-csi 进入到manual/esdk的工作目录下。具体路径请参见表 软件包组件描述。&#xA;cd manual/esdk 执行命令，更新存储后端CRD&#xA;kubectl apply -f ./crds/backend/ （可选） 请务必按照检查卷快照依赖组件章节检查快照依赖组件，确认无误后执行执行命令更新快照CRD，如果Kubernetes版本低于v1.17，跳过本步骤。&#xA;kubectl apply -f ./crds/snapshot-crds/ --validate=false （可选） 执行命令安装CSIDriver。如果不使用CSIDriver特性，可跳过本步骤，详情请参考CSIDriver特性。&#xA;kubectl apply -f ./deploy/csidriver.yaml 执行命令安装huawei-csi-controller服务。如果Kubernetes版本低于v1.17，删除名称为csi-snapshotter和snapshot-controller的容器，并根据检查CSI依赖的镜像中的版本要求，修改其它容器镜像版本。&#xA;kubectl apply -f ./deploy/huawei-csi-controller.yaml 执行命令安装huawei-csi-node服务。&#xA;kubectl apply -f ./deploy/huawei-csi-node.yaml 执行命令检查服务是否启动。&#xA;kubectl get pod -n huawei-csi 回显示例如下，Pod状态为“Running“则安装成功。&#xA;NAME READY STATUS RESTARTS AGE huawei-csi-controller-68745d489c-v5xkj 9/9 Running 0 13m huawei-csi-node-4hbqp 3/3 Running 0 13m huawei-csi-node-f7dkf 3/3 Running 0 13m huawei-csi-node-xrntc 3/3 Running 0 13m 多副本controller部署场景下可以通过修改 .</description>
     </item>
   </channel>

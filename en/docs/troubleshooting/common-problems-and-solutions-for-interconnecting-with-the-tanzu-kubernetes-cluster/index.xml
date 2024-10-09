@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Common Problems and Solutions for Interconnecting with the Tanzu Kubernetes Cluster on Huawei</title>
-    <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/</link>
     <description>Recent content in Common Problems and Solutions for Interconnecting with the Tanzu Kubernetes Cluster on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Pod Cannot Be Created Because the PSP Permission Is Not Created</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/a-pod-cannot-be-created-because-the-psp-permission-is-not-created/</guid>
       <description>Symptom When huawei-csi-controller and huawei-csi-node are created, only the Deployment and DaemonSet resources are successfully created, and no Pod is created for the controller and node.&#xA;Root Cause Analysis The service account used for creating resources does not have the &amp;ldquo;use&amp;rdquo; permission of the PSP policy.&#xA;Solution or Workaround Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
     </item>
     <item>
       <title>Changing the Mount Point of a Host</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-mount-point-of-a-host/</guid>
       <description>Symptom A Pod fails to be created, and error message &amp;ldquo;mount point does not exist&amp;rdquo; is recorded in Huawei CSI logs.&#xA;Root Cause Analysis The native Kubernetes cluster in the pods-dir directory of huawei-csi-node is inconsistent with the Tanzu Kubernetes cluster.&#xA;Solution or Workaround Go to the helm/esdk/ directory and run the vi values.yaml command to open the configuration file.&#xA;vi values.yaml Change the value of kubeletConfigDir to the actual installation directory of kubelet.</description>
     </item>
     <item>
       <title>Changing the Default Port of the livenessprobe Container</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/changing-the-default-port-of-the-livenessprobe-container/</guid>
       <description>Symptom The livenessprobe container of the huawei-csi-controller component keeps restarting.&#xA;Root Cause Analysis The default port (9808) of the livenessprobe container of huawei-csi-controller conflicts with the existing vSphere CSI port of Tanzu.&#xA;Solution or Workaround Change the default port of the livenessprobe container to an idle port.&#xA;Go to the helm/esdk directory and run the vi values.yaml command to open the configuration file.&#xA;vi values.yaml Change the default value 9808 of controller.</description>
     </item>
     <item>
       <title>Failed to Create an Ephemeral Volume</title>
-      <link>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster/failed-to-create-an-ephemeral-volume/</guid>
       <description>Symptom A generic ephemeral volume fails to be created, and the error message PodSecurityPolicy: unable to admit pod: [spec.volumes[0]: Invalid value: &amp;ldquo;ephemeral&amp;rdquo;: ephemeral volumes are not allowed to be used spec.volumes[0] is displayed.&#xA;Root Cause Analysis The current PSP policy does not contain the permission to use ephemeral volumes.&#xA;Solution or Workaround Add the permission to use ephemeral volumes to the default PSP pks-privileged and pks-restricted. The following is an example of modifying pks-privileged:</description>
     </item>
   </channel>

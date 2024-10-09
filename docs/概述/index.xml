@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>概述 on Huawei</title>
-    <link>/docs/%E6%A6%82%E8%BF%B0/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E6%A6%82%E8%BF%B0/</link>
     <description>Recent content in 概述 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E6%A6%82%E8%BF%B0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E6%A6%82%E8%BF%B0/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

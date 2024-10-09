@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>开启PVC变更特性 on Huawei</title>
-    <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</link>
     <description>Recent content in 开启PVC变更特性 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Helm开启PVC变更特性</title>
-      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E4%BD%BF%E7%94%A8helm%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E4%BD%BF%E7%94%A8helm%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E4%BD%BF%E7%94%A8helm%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E4%BD%BF%E7%94%A8helm%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</guid>
       <description>前提条件 已使用Helm安装华为CSI。 要求华为CSI v4.5.0及以上版本。 操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令检查PVC变更特性是否开启。&#xA;其中helm-huawei-csi为安装时指定的Helm Chart名称，huawei-csi为安装时指定的Helm Chart命名空间。组件包路径请参考表 软件包组件描述。&#xA;helm get values helm-huawei-csi -n huawei-csi -a | grep volumeModify -A 1 命令结果示例如下：&#xA;若回显内容为“enabled: true”，则表示特性开启，可跳过后续步骤。 若回显内容为“enabled: false”，请按照后续步骤开启PVC变更特性。 volumeModify: enabled: false 进入/helm/esdk目录，执行命令，配置卷变更CRD。&#xA;# kubectl apply -f ./crds/volume-modify/ customresourcedefinition.apiextensions.k8s.io/volumemodifyclaims.xuanwu.huawei.io configured customresourcedefinition.apiextensions.k8s.io/volumemodifycontents.xuanwu.huawei.io configured 如回显中存在“Warning: resource customresourcedefinitions/volumemodifycontents.xuanwu.huawei.io is missing the kubectl.kubernetes.io/last-applied-configuration&amp;hellip;”提示，可忽略该提示。该提示出现原因是由于Helm安装应用时使用的是kubectl create命令而不是kubectl apply命令。&#xA;执行以下命令，获取原有服务配置文件。&#xA;helm get values helm-huawei-csi -n huawei-csi -a &amp;gt; ./update-values.yaml 执行vi update-values.yaml命令打开4中获取的文件，修改以下配置。修改完成后，按Esc，并输入**:wq!**，保存修改。&#xA;csiExtender: volumeModify: enabled: true 执行以下命令更新华为CSI服务。&#xA;helm upgrade helm-huawei-csi .</description>
     </item>
     <item>
       <title>手动方式开启PVC变更特性</title>
-      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E6%89%8B%E5%8A%A8%E6%96%B9%E5%BC%8F%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E6%89%8B%E5%8A%A8%E6%96%B9%E5%BC%8F%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E6%89%8B%E5%8A%A8%E6%96%B9%E5%BC%8F%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/%E6%89%8B%E5%8A%A8%E6%96%B9%E5%BC%8F%E5%BC%80%E5%90%AFpvc%E5%8F%98%E6%9B%B4%E7%89%B9%E6%80%A7/</guid>
       <description>前提条件 已使用手动方式安装华为CSI。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;进入manual/esdk工作目录下，执行以下命令，配置卷变更CRD。&#xA;kubectl apply -f ./crds/volume-modify/ 执行以下命令。组件包路径请参考表 软件包组件描述。&#xA;kubectl apply -f ./deploy/huawei-csi-controller-extender.yaml 执行命令检查服务是否启动。&#xA;kubectl get pod -n huawei-csi 命令结果示例如下，其中huawei-csi为华为CSI部署命名空间。&#xA;NAME READY STATUS RESTARTS AGE huawei-csi-controller-6dfcc4b79f-9vjtq 10/10 Running 0 24m huawei-csi-node-tqs87 3/3 Running 0 24m </description>
     </item>
   </channel>

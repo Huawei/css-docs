@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creating a Storage Backend on Huawei</title>
-    <link>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/</link>
     <description>Recent content in Creating a Storage Backend on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Examples of Storage Backend Configuration Files in Typical Scenarios</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/examples-of-storage-backend-configuration-files-in-typical-scenarios/</guid>
       <description>For details about the backend configuration in typical scenarios, see the following examples. For details about the parameter configuration, see Storage Backend Parameters.&#xA;Configuring a Storage Backend of the iSCSI Type Configuring a Storage Backend of the FC Type Configuring a Storage Backend of the NVMe over RoCE Type Configuring a Storage Backend of the NVMe over FC Type Configuring a Storage Backend of the NFS Type Configuring a Storage Backend of the SCSI Type Configuring a Storage Backend of the DPC Type Configuring Storage Backends of the Dtree Type Configuring Storage Backends of the HyperMetro Type Configuring a Storage Backend of the iSCSI Type If you want to use the iSCSI protocol, ensure that the iSCSI client has been installed on the host before installing Huawei CSI.</description>
     </item>
     <item>
       <title>Storage Backend Parameters</title>
-      <link>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters/</guid>
       <description>An example template of the backend configuration file is /examples/backend/backend.yaml. The following table lists the parameters.&#xA;Table 1 backend parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;storage&#xA;Storage service type.&#xA;If enterprise storage provides SAN, set this parameter to oceanstor-san.If enterprise storage provides NAS, set this parameter to oceanstor-nas.If enterprise storage provides NAS of the Dtree type, set this parameter to oceanstor-dtree.If distributed storage provides SAN, set this parameter to fusionstorage-san.</description>
     </item>
   </channel>

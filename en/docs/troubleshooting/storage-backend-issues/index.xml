@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Storage Backend Issues on Huawei</title>
-    <link>/en/docs/troubleshooting/storage-backend-issues/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/</link>
     <description>Recent content in Storage Backend Issues on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/troubleshooting/storage-backend-issues/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A webhook Fails to Be Called When the oceanctl Tool Is Used to Manage Backends</title>
-      <link>/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-webhook-fails-to-be-called-when-the-oceanctl-tool-is-used-to-manage-backends/</guid>
       <description>Symptom After the webhook configuration is changed, for example, the value of the webhookPort parameter is changed, an error is reported indicating that a webhook fails to be called when the oceanctl tool is used to manage backends, as shown in the following figure.&#xA;Root Cause Analysis After the webhook configuration changes, the validatingwebhookconfiguration resource becomes invalid.&#xA;Solution or Workaround Run the following command to delete the validatingwebhookconfiguration resource.&#xA;kubectl delete validatingwebhookconfiguration storage-backend-controller.</description>
     </item>
     <item>
       <title>A Backend Fails to Be Created Using the oceanctl Tool and Error Message `context deadline exceeded` Is Displayed</title>
-      <link>/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/a-backend-fails-to-be-created-using-the-oceanctl-tool-and-error-message-context-deadline-exceeded-is/</guid>
       <description>Symptom A user fails to create a storage backend using the oceanctl tool, and &amp;ldquo;failed to call webhook: xxx :context deadline exceeded; error: exist status 1&amp;rdquo; is displayed on the console.&#xA;Root Cause Analysis When a storage backend is created, the webhook service provided by CSI is invoked to verify the connectivity with the storage management network and the storage account and password. The possible causes are as follows:&#xA;Huawei CSI fails to verify the connectivity of the storage management network.</description>
     </item>
     <item>
       <title>An Account Is Locked After the Password Is Updated on the Storage Device</title>
-      <link>/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/troubleshooting/storage-backend-issues/an-account-is-locked-after-the-password-is-updated-on-the-storage-device/</guid>
       <description>Symptom After a user changes the password on the storage device, the account is locked.&#xA;Root Cause Analysis CSI uses the account and password configured on the storage device to log in to the storage device. After the account password is changed on the storage device, CSI attempts to log in to the storage device again after the login fails. Take OceanStor Dorado as an example. The default login policy is that an account will be locked after three consecutive password verification failures.</description>
     </item>
   </channel>

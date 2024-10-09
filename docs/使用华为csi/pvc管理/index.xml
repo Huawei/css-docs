@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PVC管理 on Huawei</title>
-    <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/</link>
     <description>Recent content in PVC管理 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>扩容PVC</title>
-      <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E6%89%A9%E5%AE%B9pvc/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E6%89%A9%E5%AE%B9pvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E6%89%A9%E5%AE%B9pvc/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E6%89%A9%E5%AE%B9pvc/</guid>
       <description>当容器使用的PVC容量不足时，需要对该PVC进行扩容操作。&#xA;前提条件 PVC已创建，所在的backend存在且支持扩容。&#xA;支持扩容的存储请参考表 华为企业存储支持的特性及约束和表 华为分布式存储支持的特性及约束，支持扩容的Kubernetes版本请参考Kubernetes特性矩阵。&#xA;huawei-csi-controller启用了csi-resizer服务。&#xA;kubectl describe deploy huawei-csi-controller -n huawei-csi | grep csi-resizer 命令回显示例如下则说明已启用csi-resizer服务。&#xA;csi-resizer: Image: k8s.gcr.io/sig-storage/csi-resizer:v1.4.0 操作步骤 执行命令，查询StorageClass是否支持扩容。其中，mysc 为需要查看的StorageClass名称。&#xA;kubectl get sc mysc 命令结果示例如下：&#xA;NAME PROVISIONER RECLAIMPOLICY VOLUMEBINDINGMODE ALLOWVOLUMEEXPANSION AGE mysc csi.huawei.com Delete Immediate true 172m 如果ALLOWVOLUMEEXPANSION的值为true，表示当前StorageClass已经支持扩容，请跳转至步骤3。&#xA;执行以下命令，将“allowVolumeExpansion“的值修改为“true“。其中，mysc 为需要修改的StorageClass名称。&#xA;kubectl patch sc mysc --patch &amp;#39;{&amp;#34;allowVolumeExpansion&amp;#34;:true}&amp;#39; 执行命令，查询PVC的StorageClass名称。其中，mypvc 为需要扩容的PVC名称。&#xA;kubectl get pvc mypvc 命令结果示例如下：&#xA;NAME STATUS VOLUME CAPACITY ACCESS MODES STORAGECLASS AGE mypvc Bound pvc-3383be36-537c-4cb1-8f32-a415fa6ba384 2Gi RW0 mysc 145m 执行以下命令进行扩容。</description>
     </item>
     <item>
       <title>克隆PVC</title>
-      <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E5%85%8B%E9%9A%86pvc/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E5%85%8B%E9%9A%86pvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E5%85%8B%E9%9A%86pvc/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E5%85%8B%E9%9A%86pvc/</guid>
       <description>本章节描述如何克隆PVC。&#xA;在克隆PVC时，需要指定数据源。如下示例是一个简单的克隆PVC示例，在该示例中，使用“mypvc”作为数据源，新创建了一个名叫“myclone”的PVC。&#xA;kind: PersistentVolumeClaim apiVersion: v1 metadata: name: myclone spec: storageClassName: mysc dataSource: name: mypvc kind: PersistentVolumeClaim volumeMode: Filesystem accessModes: - ReadWriteOnce resources: requests: storage: 2Gi 指定的storageClassName必须和dataSource中的源卷的StorageClass需一致。 克隆卷的容量必须不小于源卷容量，建议和源卷容量保持一致。 前提条件 系统中已经存在源PVC，且源PVC所在的backend存在支持克隆。支持克隆的存储请参考表 华为企业存储支持的特性及约束和表 华为分布式存储支持的特性及约束，支持克隆的Kubernetes版本请参考Kubernetes特性矩阵。&#xA;操作步骤 执行以下命令，基于克隆卷的配置文件创建PVC。&#xA;kubectl create -f myclone.yaml </description>
     </item>
     <item>
       <title>从快照创建PVC</title>
-      <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E4%BB%8E%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BApvc/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E4%BB%8E%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BApvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E4%BB%8E%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BApvc/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/pvc%E7%AE%A1%E7%90%86/%E4%BB%8E%E5%BF%AB%E7%85%A7%E5%88%9B%E5%BB%BApvc/</guid>
       <description>本章节描述如何从快照创建PVC。&#xA;在创建这个PVC时，需要指定数据源。如下示例是一个简单的从快照创建PVC示例，在该示例中，使用快照“mysnapshot”作为数据源，新创建了一个名叫“myrestore”的PVC。&#xA;apiVersion: v1 kind: PersistentVolumeClaim metadata: name: myrestore spec: storageClassName: mysc dataSource: name: mysnapshot kind: VolumeSnapshot apiGroup: snapshot.storage.k8s.io volumeMode: Filesystem accessModes: - ReadWriteOnce resources: requests: storage: 100Gi 指定的storageClassName必须和dataSource中的快照源卷的StorageClass需一致。 克隆卷的容量必须不小于快照容量，建议和快照容量保持一致。 前提条件 系统中已经存在快照，且快照所在的backend存在支持克隆。支持快照创建PVC的存储请参考表 华为企业存储支持的特性及约束和表 华为分布式存储支持的特性及约束，支持快照创建PVC的Kubernetes版本请参考Kubernetes特性矩阵。&#xA;操作步骤 执行以下命令，基于从快照创建卷的配置文件创建PVC。&#xA;kubectl create -f myrestore.yaml </description>
     </item>
   </channel>

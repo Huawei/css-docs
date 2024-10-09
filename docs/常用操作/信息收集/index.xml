@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>信息收集 on Huawei</title>
-    <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</link>
     <description>Recent content in 信息收集 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何获取CSI版本信息</title>
-      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96csi%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96csi%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96csi%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96csi%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF/</guid>
       <description>本章节指导用户如何查看CSI版本信息。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，查看huawei-csi-node所在节点信息。&#xA;kubectl get pod -A -owide | grep huawei-csi-node 命令结果示例如下：&#xA;NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES huawei-csi huawei-csi-node-87mss 3/3 Running 0 6m41s 192.168.129.155 node-1 &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; huawei-csi huawei-csi-node-xp8cc 3/3 Running 0 6m41s 192.168.129.156 node-2 &amp;lt;none&amp;gt; &amp;lt;none 使用远程访问工具（以PuTTY为例），通过节点IP地址，登录任意huawei-csi-node所在节点。&#xA;执行以下命令，查看CSI版本信息。&#xA;cat /var/lib/kubelet/plugins/csi.huawei.com/version 命令显示版本信息如下。&#xA;4.5.0 </description>
     </item>
     <item>
       <title>如何查看华为CSI日志</title>
-      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%8D%8E%E4%B8%BAcsi%E6%97%A5%E5%BF%97/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%8D%8E%E4%B8%BAcsi%E6%97%A5%E5%BF%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%8D%8E%E4%B8%BAcsi%E6%97%A5%E5%BF%97/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%8D%8E%E4%B8%BAcsi%E6%97%A5%E5%BF%97/</guid>
       <description>查看huawei-csi-controller服务的日志 执行以下命令，获取huawei-csi-controller所在的节点&#xA;kubectl get pod -A -o wide | grep huawei 命令结果示例如下，其中IP为节点主机ip，NODE为节点主机名称。&#xA;NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES huawei-csi-controller-695b84b4d8-tg64l 9/9 Running 0 14s &amp;lt;host1-ip&amp;gt; &amp;lt;host1-name&amp;gt; &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群中huawei-csi-controller服务所在节点&#xA;进入日志目录。&#xA;cd /var/log/huawei 执行以下命令，查看容器自定义输出日志。&#xA;vi huawei-csi-controller 进入容器目录。&#xA;cd /var/log/containers 执行以下命令， 查看容器标准输出日志。&#xA;vi huawei-csi-controller-&amp;lt;name&amp;gt;_huawei-csi_huawei-csi-driver-&amp;lt;contrainer-id&amp;gt;.log 查看huawei-csi-node服务的日志 执行以下命令，获取huawei-csi-node所在的节点&#xA;kubectl get pod -A -o wide | grep huawei 命令结果示例如下，其中IP为节点主机ip，NODE为节点主机名称。&#xA;NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES huawei-csi-node-g6f7z 3/3 Running 0 14s &amp;lt;host2-ip&amp;gt; &amp;lt;host2-name&amp;gt; &amp;lt;none&amp;gt; &amp;lt;none&amp;gt; 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群中huawei-csi-node服务所在节点</description>
     </item>
     <item>
       <title>日志收集</title>
-      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86/</guid>
       <description>前置检查 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群内有oceanctl工具的节点。&#xA;执行以下命令，显示版本号为v4.5.0。&#xA;oceanctl version 命令结果示例如下：&#xA;Oceanctl Version: v4.5.0 执行oceanctl collect logs &amp;ndash;help命令，返回信息如下。&#xA;$ oceanctl collect logs --help Collect logs of one or more nodes in specified namespace in Kubernetes Usage: oceanctl collect logs [flags] Examples: # Collect logs of all nodes in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; # Collect logs of specified node in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; -N &amp;lt;node&amp;gt; # Collect logs of all nodes in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; -a # Collect logs of all nodes in specified namespace with a maximum of 50 nodes collected at the same time oceanctl collect logs -n &amp;lt;namespace&amp;gt; -a --threads-max=50 # Collect logs of specified node in specified namespace oceanctl collect logs -n &amp;lt;namespace&amp;gt; -N &amp;lt;node&amp;gt; -a Flags: -a, --all Collect all nodes messages -h, --help help for logs -n, --namespace string namespace of resources -N, --nodename string Specify the node for which information is to be collected.</description>
     </item>
   </channel>

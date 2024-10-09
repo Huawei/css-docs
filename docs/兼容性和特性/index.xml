@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>兼容性和特性 on Huawei</title>
-    <link>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/</link>
     <description>Recent content in 兼容性和特性 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes及操作系统兼容性</title>
-      <link>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E5%8F%8A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E5%8F%8A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E5%8F%8A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E5%8F%8A%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
       <description>华为CSI插件支持如下容器管理平台：&#xA;表 1 支持的容器管理平台&#xA;容器管理平台&#xA;版本&#xA;Kubernetes&#xA;1.16~1.30&#xA;Red Hat OpenShift Container Platform&#xA;4.6 EUS, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15&#xA;Tanzu Kubernetes&#xA;TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18&#xA;CCE Agile&#xA;22.3.2&#xA;CCE&#xA;22.9.5&#xA;华为CSI对接Tanzu Kubernetes仅支持集中式存储NAS场景，相关FAQ请参见对接Tanzu Kubernetes集群常见问题及解决方法。 华为CSI对接CCE/CCE Agile仅支持集中式存储。 华为CSI插件支持的操作系统以及多路径信息如下表所示。&#xA;表 2 支持的主机操作系统及多路径软件版本&#xA;操作系统名称&#xA;操作系统版本&#xA;原生DM-Multipath版本&#xA;华为UltraPath版本&#xA;CentOS x86_64&#xA;7.6, 7.7, 7.9&#xA;随OS自带，支持FC/iSCSI&#xA;UltraPath 31.1.0，支持FC/iSCSI&#xA;CentOS x86_64&#xA;8.2, 8.4&#xA;随OS自带，支持FC/iSCSI&#xA;UltraPath 31.1.0，支持FC/iSCSI&#xA;UltraPath-NVMe 31.</description>
     </item>
     <item>
       <title>Kubernetes特性矩阵</title>
-      <link>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E7%89%B9%E6%80%A7%E7%9F%A9%E9%98%B5/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E7%89%B9%E6%80%A7%E7%9F%A9%E9%98%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E7%89%B9%E6%80%A7%E7%9F%A9%E9%98%B5/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/kubernetes%E7%89%B9%E6%80%A7%E7%9F%A9%E9%98%B5/</guid>
       <description>本章节说明华为CSI在不同Kubernetes版本下支持的特性。&#xA;表 1 Kubernetes版本与支持的特性&#xA;特性&#xA;V1.16&#xA;V1.17&#xA;V1.18&#xA;V1.19&#xA;V1.20&#xA;V1.21+&#xA;Static Provisioning&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Dynamic Provisioning&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Manage Provisioning1&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Expand Persistent Volume&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Create VolumeSnapshot&#xA;x&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Restore VolumeSnapshot&#xA;x&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Delete VolumeSnapshot&#xA;x&#xA;√&#xA;√&#xA;√&#xA;√&#xA;√&#xA;Clone Persistent Volume</description>
     </item>
     <item>
       <title>华为企业存储兼容性</title>
-      <link>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E4%BC%81%E4%B8%9A%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E4%BC%81%E4%B8%9A%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E4%BC%81%E4%B8%9A%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E4%BC%81%E4%B8%9A%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
       <description>华为CSI插件兼容华为OceanStor系列的全闪存存储和混合闪存存储，具体支持的存储版本如下表所示：&#xA;表 1 支持的华为企业存储&#xA;存储产品&#xA;版本&#xA;OceanStor V5&#xA;V500R007, V500R007 Kunpeng&#xA;OceanStor Dorado V3&#xA;V300R002&#xA;OceanStor&#xA;6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;OceanStor Dorado&#xA;6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;华为CSI插件针对华为企业存储支持如下特性。&#xA;表 2 华为企业存储支持的特性及约束&#xA;特性&#xA;OceanStor V5&#xA;OceanStor Dorado V3&#xA;OceanStor&#xA;OceanStor Dorado&#xA;Static Provisioning&#xA;SAN：FC/iSCSI2&#xA;NAS：NFS 3&#xA;SAN：FC/iSCSI2&#xA;SAN：FC/iSCSI/NVMe over RoCE/NVMe over FC3&#xA;NAS：NFS 3/4.0/4.1/4.2&#xA;SAN：FC/iSCSI/NVMe over RoCE/NVMe over FC3&#xA;NAS：NFS 3/4.0/4.1/4.24&#xA;Dynamic Provisioning&#xA;Manage Provisioning1&#xA;Expand Persistent Volume5</description>
     </item>
     <item>
       <title>华为分布式存储兼容性</title>
-      <link>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%85%BC%E5%AE%B9%E6%80%A7%E5%92%8C%E7%89%B9%E6%80%A7/%E5%8D%8E%E4%B8%BA%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E5%85%BC%E5%AE%B9%E6%80%A7/</guid>
       <description>华为CSI插件兼容华为OceanStor系列的分布式存储系统，具体支持的存储版本如下表所示：&#xA;表 1 支持的华为分布式存储&#xA;存储产品&#xA;版本&#xA;FusionStorage Block&#xA;8.0.1&#xA;OceanStor Pacific系列&#xA;8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0&#xA;华为CSI插件针对华为分布式存储支持如下特性。&#xA;表 2 华为分布式存储支持的特性及约束&#xA;特性&#xA;FusionStorage Block&#xA;OceanStor Pacific系列&#xA;Static Provisioning&#xA;SAN：iSCSI/SCSI&#xA;SAN：iSCSI/SCSI&#xA;NAS：DPC2/NFS 3/4.13&#xA;Dynamic Provisioning&#xA;Manage Provisioning1&#xA;Expand Persistent Volume4&#xA;支持使用Dynamic Provisioning，Manage Provisioning方式创建的卷&#xA;Create VolumeSnapshot&#xA;支持使用Dynamic Provisioning，Manage Provisioning方式创建的SAN类型卷&#xA;Delete VolumeSnapshot&#xA;支持&#xA;仅支持SAN类型的卷快照&#xA;Restore VolumeSnapshot&#xA;支持&#xA;仅支持SAN类型的卷快照&#xA;Clone Persistent Volume&#xA;支持使用Dynamic Provisioning，Manage Provisioning方式创建的SAN类型卷&#xA;Raw Block Volume&#xA;仅支持SAN类型的卷&#xA;仅支持SAN类型的卷&#xA;Topology&#xA;支持&#xA;支持&#xA;Generic Ephemeral Inline Volumes</description>
     </item>
   </channel>

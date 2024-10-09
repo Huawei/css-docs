@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>更新存储后端 on Huawei</title>
-    <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</link>
     <description>Recent content in 更新存储后端 on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>oceanctl更新存储后端密码</title>
-      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/oceanctl%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%AF%86%E7%A0%81/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/oceanctl%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%AF%86%E7%A0%81/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/oceanctl%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%AF%86%E7%A0%81/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/oceanctl%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%AF%86%E7%A0%81/</guid>
       <description>更新后端示例 执行以下命令获取更新存储后端帮助。&#xA;oceanctl update backend -h 命令结果如下：&#xA;Update a backend for Ocean Storage in Kubernetes Usage: oceanctl update backend &amp;lt;name&amp;gt; [flags] Examples: # Update backend account information in default(huawei-csi) namespace oceanctl update backend &amp;lt;name&amp;gt; --password # Update backend account information in specified namespace oceanctl update backend &amp;lt;name&amp;gt; -n namespace --password Flags: -h, --help help for backend -n, --namespace string namespace of resources --password Update account password 执行以下命令更新存储后端信息。&#xA;oceanctl update backend backend-1 --password 根据提示输入新的用户名和密码：</description>
     </item>
     <item>
       <title>手动更新存储后端</title>
-      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E7%AE%A1%E7%90%86%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</guid>
       <description> PVC发放需要基于已配置的存储后端，因此当存储后端已经发放PVC时，请勿随便修改存储后端。 名称是存储后端的唯一标识，已发放PVC的存储后端不允许修改名称。 存储后端修改后，新增配置仅作用于新发放的卷。 存储后端修改期间，请勿执行卷管理操作。 操作步骤 参考删除存储后端章节，删除待修改存储后端。 参考创建存储后端章节，创建同名存储后端，存储后端名称不可变更。 </description>
     </item>
   </channel>

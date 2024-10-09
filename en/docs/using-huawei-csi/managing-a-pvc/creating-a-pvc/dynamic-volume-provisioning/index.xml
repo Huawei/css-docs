@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dynamic Volume Provisioning on Huawei</title>
-    <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/</link>
     <description>Recent content in Dynamic Volume Provisioning on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>StorageClass Configuration Examples in Typical Dynamic Volume Provisioning Scenarios</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios/</guid>
       <description>A StorageClass provides administrators with methods to describe a storage &amp;ldquo;class&amp;rdquo;. Different types may map to a different group of capability definitions. Kubernetes cluster users can dynamically provision volumes based on a StorageClass.&#xA;If SAN storage is used, refer to example file /examples/sc-lun.yaml. If NAS storage is used, refer to example file /examples/sc-fs.yaml.&#xA;For details about how to configure a StorageClass in typical scenarios, see the following examples:&#xA;Setting the Backend and Storage Pool in a StorageClass Setting the NFS Access Mode in a StorageClass Setting a Dtree Type in a StorageClass Setting the Local File System Access Mode in a StorageClass Setting the DPC Access Mode in a StorageClass Setting an Application Type in a StorageClass Setting a Soft Quota in a StorageClass Setting HyperMetro in a StorageClass Setting the Permission on a Mount Directory in a StorageClass Setting QoS in a StorageClass Configuring a StorageClass on the CCE or CCE Agile Platform Setting the Backend and Storage Pool in a StorageClass If multiple Huawei backends are configured in a Kubernetes cluster or a Huawei backend provides multiple storage pools, you are advised to configure the specified backend and storage pool information in the StorageClass.</description>
     </item>
     <item>
       <title>StorageClass Parameters for Dynamic Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning/</guid>
       <description>Table 1 StorageClass configuration parameters&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.name&#xA;User-defined name of a StorageClass object.&#xA;Yes&#xA;-&#xA;Take Kubernetes v1.22.1 as an example. The value can contain digits, lowercase letters, hyphens (-), and periods (.), and must start and end with a letter or digit.&#xA;provisioner&#xA;Name of the provisioner.&#xA;Yes&#xA;csi.huawei.com&#xA;Set this parameter to the driver name set during Huawei CSI installation.&#xA;The value is the same as that of driverName in the values.</description>
     </item>
     <item>
       <title>PVC Parameters for Dynamic Volume Provisioning</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning/</guid>
       <description>After configuring a StorageClass, you can use the StorageClass to configure a PVC. For details about the PVC configuration template, see example file pvc*.yaml in the examples directory in Huawei CSI software package.&#xA;Table 1 Parameters in the pvc*.yaml file&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;metadata.name&#xA;User-defined name of a PVC object.&#xA;Yes&#xA;-&#xA;Take Kubernetes v1.22.1 as an example. The value can contain digits, lowercase letters, hyphens (-), and periods (.</description>
     </item>
   </channel>

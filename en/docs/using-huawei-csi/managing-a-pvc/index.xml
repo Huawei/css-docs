@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Managing a PVC on Huawei</title>
-    <link>/en/docs/using-huawei-csi/managing-a-pvc/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/</link>
     <description>Recent content in Managing a PVC on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/using-huawei-csi/managing-a-pvc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Expanding the Capacity of a PVC</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/expanding-the-capacity-of-a-pvc/</guid>
       <description>When the capacity of a PVC used by a container is insufficient, you need to expand the capacity of the PVC.&#xA;Prerequisites A PVC has been created, the backend to which it resides exists and supports capacity expansion.&#xA;For details about the storage devices that support capacity expansion, see Table 2 and Table 2. For details about the Kubernetes versions that support capacity expansion, see Kubernetes Feature Matrix.&#xA;The csi-resizer service is enabled for huawei-csi-controller.</description>
     </item>
     <item>
       <title>Cloning a PVC</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc/</guid>
       <description>This section describes how to clone a PVC.&#xA;When cloning a PVC, you need to specify the data source. The following is a simple example of cloning a PVC. In this example, mypvc is used as the data source and a PVC named myclone is created.&#xA;kind: PersistentVolumeClaim apiVersion: v1 metadata: name: myclone spec: storageClassName: mysc dataSource: name: mypvc kind: PersistentVolumeClaim volumeMode: Filesystem accessModes: - ReadWriteOnce resources: requests: storage: 2Gi The specified storageClassName must be the same as the StorageClass of the source volume in dataSource.</description>
     </item>
     <item>
       <title>Creating a PVC Using a Snapshot</title>
-      <link>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot/</guid>
       <description>This section describes how to create a PVC using a snapshot.&#xA;When creating a PVC, you need to specify the data source. The following is a simple example of creating a PVC using a snapshot. In this example, mysnapshot is used as the data source and a PVC named myrestore is created.&#xA;apiVersion: v1 kind: PersistentVolumeClaim metadata: name: myrestore spec: storageClassName: mysc dataSource: name: mysnapshot kind: VolumeSnapshot apiGroup: snapshot.storage.k8s.io volumeMode: Filesystem accessModes: - ReadWriteOnce resources: requests: storage: 100Gi The specified storageClassName must be the same as the StorageClass of the snapshot source volume in dataSource.</description>
     </item>
   </channel>

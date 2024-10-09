@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creating a VolumeSnapshot on Huawei</title>
-    <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/</link>
+    <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/</link>
     <description>Recent content in Creating a VolumeSnapshot on Huawei</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/en/docs/using-huawei-csi/creating-a-volumesnapshot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Checking Information About Volume Snapshot-dependent Components</title>
-      <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/checking-information-about-volume-snapshot-dependent-components/</guid>
       <description>If you need to use volume snapshots and features associated with volume snapshots in the container environment, perform the operations in Checking Volume Snapshot-Dependent Components to check whether volume snapshot-dependent components have been deployed in your environment and check the api-versions information about volume snapshots.</description>
     </item>
     <item>
       <title>Configuring a VolumeSnapshotClass</title>
-      <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshotclass/</guid>
       <description>VolumeSnapshotClass provides a way to describe the &amp;ldquo;classes&amp;rdquo; of storage when provisioning a VolumeSnapshot. Each VolumeSnapshotClass contains the driver, deletionPolicy, and parameters fields, which are used when a VolumeSnapshot belonging to the class needs to be dynamically provisioned.&#xA;The name of a VolumeSnapshotClass object is significant, and is how users can request a particular class. Administrators set the name and other parameters of a class when first creating VolumeSnapshotClass objects, and the objects cannot be updated once they are created.</description>
     </item>
     <item>
       <title>Configuring a VolumeSnapshot</title>
-      <link>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</link>
+      <link>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</guid>
+      <guid>https://huawei.github.io/css-docs/en/docs/using-huawei-csi/creating-a-volumesnapshot/configuring-a-volumesnapshot/</guid>
       <description>VolumeSnapshot can be provisioned in two ways: pre-provisioning and dynamic provisioning. Currently, Huawei CSI supports only dynamic provisioning. This section describes how to dynamically provision a VolumeSnapshot using Huawei CSI.&#xA;The following is an example of the VolumeSnapshot configuration file:&#xA;If api-versions in your environment supports v1, use the following example:&#xA;apiVersion: snapshot.storage.k8s.io/v1 kind: VolumeSnapshot metadata: name: mysnapshot spec: volumeSnapshotClassName: mysnapclass source: persistentVolumeClaimName: mypvc If api-versions in your environment supports v1beta1, use the following example:</description>
     </item>
   </channel>

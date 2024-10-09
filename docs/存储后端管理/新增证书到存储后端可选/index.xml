@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>新增证书到存储后端（可选） on Huawei</title>
-    <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/</link>
+    <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/</link>
     <description>Recent content in 新增证书到存储后端（可选） on Huawei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <atom:link href="/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建证书到存储后端</title>
-      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%9B%E5%BB%BA%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%9B%E5%BB%BA%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%9B%E5%BB%BA%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%9B%E5%BB%BA%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF/</guid>
       <description>前提条件 完成证书制作。以OceanStor Dorado为例，证书制作过程请参考：点此前往。&#xA;创建证书示例 提前准备好证书文件，如cert.crt。&#xA;执行以下命令获取存储后端。&#xA;oceanctl get backend 命令结果示例如下。&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.157:8088 huawei-csi backend-2 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.158:8088 执行以下命令为指定存储后端创建证书。&#xA;oceanctl create cert cert-1 -b backend-1 -f /path/to/cert.crt 检查证书创建结果。&#xA;oceanctl get cert -b backend-1 命令结果示例如下。&#xA;NAMESPACE NAME BOUNDBACKEND huawei-csi cert-1 backend-1 </description>
     </item>
     <item>
       <title>查询存储后端证书</title>
-      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9F%A5%E8%AF%A2%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9F%A5%E8%AF%A2%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9F%A5%E8%AF%A2%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9F%A5%E8%AF%A2%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</guid>
       <description>请根据查询存储后端证书所示命令对存储后端证书进行查询。</description>
     </item>
     <item>
       <title>更新存储后端证书</title>
-      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E6%9B%B4%E6%96%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</guid>
       <description>更新证书前请准备好新的证书文件，并参考本章节更新存储后端证书。如果不再使用证书，请参考删除存储后端证书章节移除存储后端上的证书。&#xA;更新证书步骤 执行以下命令获取存储后端。&#xA;oceanctl get backend 命令结果示例如下。&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.157:8088 huawei-csi backend-2 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.158:8088 执行以下命令查看指定存储后端是否存在证书。&#xA;oceanctl get cert -b backend-1 命令结果示例如下。&#xA;NAMESPACE NAME BOUNDBACKEND huawei-csi cert-1 backend-1 执行以下命令更新指定存储后端的证书。&#xA;oceanctl update cert -b backend-1 -f /path/to/cert.crt </description>
     </item>
     <item>
       <title>删除存储后端证书</title>
-      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%A0%E9%99%A4%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</link>
+      <link>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%A0%E9%99%A4%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%A0%E9%99%A4%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</guid>
+      <guid>https://huawei.github.io/css-docs/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/%E6%96%B0%E5%A2%9E%E8%AF%81%E4%B9%A6%E5%88%B0%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E5%8F%AF%E9%80%89/%E5%88%A0%E9%99%A4%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E8%AF%81%E4%B9%A6/</guid>
       <description>删除证书步骤 执行以下命令获取存储后端。&#xA;oceanctl get backend 命令结果示例如下。&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.157:8088 huawei-csi backend-2 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.158:8088 执行以下命令获取指定存储后端的证书。&#xA;oceanctl get cert -b backend-1 命令结果示例如下。&#xA;NAMESPACE NAME BOUNDBACKEND huawei-csi cert-1 backend-1 执行以下命令删除指定存储后端的证书。&#xA;oceanctl delete cert -b backend-1 检查删除结果。&#xA;oceanctl get cert -b backend-1 命令结果示例如下，如果回显为“no cert found”则删除成功。&#xA;Error from server (NotFound): no cert found on backend backend-1 in huawei-csi namespace </description>
     </item>
   </channel>
