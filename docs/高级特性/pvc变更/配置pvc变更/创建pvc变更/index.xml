@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>创建PVC变更 on Huawei</title>
+    <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4/</link>
+    <description>Recent content in 创建PVC变更 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>准备PVC变更文件</title>
+      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4/%E5%87%86%E5%A4%87pvc%E5%8F%98%E6%9B%B4%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4/%E5%87%86%E5%A4%87pvc%E5%8F%98%E6%9B%B4%E6%96%87%E4%BB%B6/</guid>
+      <description>PVC变更文件说明 PVC变更文件样例模板为/examples/volumemodifyclaim.yaml，具体配置项如下表所示：&#xA;表 1 参数说明&#xA;参数&#xA;描述&#xA;必选参数&#xA;默认值&#xA;备注&#xA;apiVersion&#xA;API组，string类型&#xA;是&#xA;xuanwu.huawei.io/v1&#xA;固定填写xuanwu.huawei.io/v1&#xA;kind&#xA;资源的类型，string类型&#xA;是&#xA;VolumeModifyClaim&#xA;固定填写VolumeModifyClaim&#xA;metadata.name&#xA;集群资源对象的名称，string类型&#xA;是&#xA;-&#xA;名称必须满足DNS 子域名的命名规则，支持数字、小写字母、中划线（-）和点（.）的组合，并且必须以小写字母数字字符开头和结尾，最大长度不超过63个字符&#xA;spec.source.kind&#xA;数据源类型，string类型&#xA;是&#xA;StorageClass&#xA;仅支持设置为：StorageClass&#xA;spec.source.name&#xA;数据源名称，string类型&#xA;是&#xA;-&#xA;仅支持设置StorageClass名称&#xA;spec.parameters.hyperMetro&#xA;是否将普通卷变更为双活卷。当前取值仅支持&#34;true&#34;。&#xA;是&#xA;-&#xA;仅支持主站点普通存储卷变更为双活存储卷。&#xA;spec.parameters.metroPairSyncSpeed&#xA;双活Pair同步速率。支持配置为1~4。&#xA;可选值：&#xA;1：低2：中3：高4：最高 否&#xA;-&#xA;当且仅当spec.parameters.hyperMetro为&#34;true&#34;时生效。&#xA;注意：&#xA;未配置该参数时，双活Pair存储速率由存储决定。最高速率同步时可能导致主机时延增大。 spec.source.kind和spec.source.name用于指定卷变更范围，例如配置为StorageClass和对应名称时，将会变更使用目标StorageClass发放的所有的处于Bound状态的PVC。 当所有关联的PVC完成变更后，华为CSI会替换原有的StorageClass，并增加VolumeModifyClaim的spec.parameters参数，使得PVC满足StorageClass定义。 典型场景配置请参考如下示例：&#xA;变更普通卷为双活卷 配置变更普通卷为双活卷示例如下：&#xA;apiVersion: xuanwu.huawei.io/v1 kind: VolumeModifyClaim metadata: name: myvmc spec: source: kind: StorageClass name: mysc parameters: hyperMetro: &amp;#34;true&amp;#34; </description>
+    </item>
+    <item>
+      <title>创建PVC变更资源</title>
+      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4/%E5%88%9B%E5%BB%BApvc%E5%8F%98%E6%9B%B4%E8%B5%84%E6%BA%90/</guid>
+      <description>本章节介绍如何基于已配置的PVC变更文件创建PVC变更资源。&#xA;仅支持双活AA模式。 如果变更场景为普通卷变更为双活卷，则仅支持变更主站点端存储卷。 创建PVC变更资源期间，请勿使用华为CSI管理PVC。 不支持对同一个PVC创建多个VolumeModifyClaim资源，若存在对目标PVC的多次变更，请在单次变更完成之后再执行。 操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，创建PVC变更。&#xA;kubectl create -f volumemodifyclaim.yaml 参考查询PVC变更查询创建结果。</description>
+    </item>
+  </channel>
+</rss>

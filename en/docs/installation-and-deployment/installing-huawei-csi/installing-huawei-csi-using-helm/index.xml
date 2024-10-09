@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installing Huawei CSI Using Helm on Huawei</title>
+    <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/</link>
+    <description>Recent content in Installing Huawei CSI Using Helm on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Huawei CSI on Kubernetes, OpenShift, and Tanzu</title>
+      <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu/</guid>
+      <description>Installation Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the cluster through the management IP address.&#xA;Copy the helm directory in the Kubernetes CSI component package to any directory on the master node. For details about the Helm tool path, see Table 1.&#xA;Go to the helm/esdk working directory.&#xA;cd helm/esdk Prepare the values.yaml file. Huawei CSI provides the values.yaml template file in the helm/esdk directory of the software package.</description>
+    </item>
+    <item>
+      <title>Installing Huawei CSI on the CCE or CCE Agile Platform</title>
+      <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-the-cce-or-cce-agile-platform/</guid>
+      <description>This section describes how to install Huawei CSI on the CCE or CCE Agile platform.&#xA;Creating a Helm Installation Package The CCE or CCE Agile platform cannot directly install Huawei CSI using Helm. You need to manually create a Helm installation package and upload it to the chart list on the platform for installation.&#xA;Use a remote access tool, such as PuTTY, to log in to any node where Helm is deployed through the management IP address.</description>
+    </item>
+    <item>
+      <title>Parameters in the values.yaml File of Helm</title>
+      <link>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm/</guid>
+      <description>When using Helm to install CSI, you need to prepare the values.yaml file of the Helm project based on the features required during deployment. Huawei CSI provides the values.yaml template file in the helm/esdk directory of the software package.&#xA;This section describes the configuration items in the values.yaml file and backend configuration examples in typical scenarios.&#xA;images Parameters The images parameters in the values.yaml file are used to configure the component image information on which Huawei CSI depends during running.</description>
+    </item>
+  </channel>
+</rss>

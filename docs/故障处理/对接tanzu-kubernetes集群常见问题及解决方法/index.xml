@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>对接Tanzu Kubernetes集群常见问题及解决方法 on Huawei</title>
+    <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+    <description>Recent content in 对接Tanzu Kubernetes集群常见问题及解决方法 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>未创建PSP权限导致Pod无法创建</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E6%9C%AA%E5%88%9B%E5%BB%BApsp%E6%9D%83%E9%99%90%E5%AF%BC%E8%87%B4pod%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E6%9C%AA%E5%88%9B%E5%BB%BApsp%E6%9D%83%E9%99%90%E5%AF%BC%E8%87%B4pod%E6%97%A0%E6%B3%95%E5%88%9B%E5%BB%BA/</guid>
+      <description>现象描述 创建huawei-csi-controller和huawei-csi-node时，仅Deployment和DaemonSet资源创建成功，controller和node的Pod未创建。&#xA;根因分析 创建资源使用的service account没有PSP策略的“use”权限。&#xA;解决措施或规避方法 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行vi psp-use.yaml 命令， 创建psp-use.yaml文件。&#xA;vi psp-use.yaml 配置psp-use.yaml文件。&#xA;apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRole metadata: name: huawei-csi-psp-role rules: - apiGroups: [&amp;#39;policy&amp;#39;] resources: [&amp;#39;podsecuritypolicies&amp;#39;] verbs: [&amp;#39;use&amp;#39;] --- apiVersion: rbac.authorization.k8s.io/v1 kind: ClusterRoleBinding metadata: name: huawei-csi-psp-role-cfg roleRef: kind: ClusterRole name: huawei-csi-psp-role apiGroup: rbac.authorization.k8s.io subjects: - kind: Group apiGroup: rbac.authorization.k8s.io name: system:serviceaccounts:huawei-csi - kind: Group apiGroup: rbac.authorization.k8s.io name: system:serviceaccounts:default 执行以下命令，创建PSP权限。&#xA;kubectl create -f psp-use.yaml </description>
+    </item>
+    <item>
+      <title>修改主机挂载点</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9C%BA%E6%8C%82%E8%BD%BD%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9C%BA%E6%8C%82%E8%BD%BD%E7%82%B9/</guid>
+      <description>现象描述 创建Pod时失败，华为CSI日志中报错“mount point does not exist”。&#xA;根因分析 huawei-csi-node中的“pods-dir”目录原生Kubernetes集群与Tanzu Kubernetes集群不一致。&#xA;解决措施或规避方法 进入helm/esdk/目录，执行vi values.yaml命令打开配置文件。&#xA;vi values.yaml 将kubeletConfigDir参数修改为kubelet实际的安装目录。&#xA;# Specify kubelet config dir path. # kubernetes and openshift is usually /var/lib/kubelet # Tanzu is usually /var/vcap/data/kubelet kubeletConfigDir: /var/vcap/data/kubelet </description>
+    </item>
+    <item>
+      <title>修改livenessprobe容器的默认端口</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E4%BF%AE%E6%94%B9livenessprobe%E5%AE%B9%E5%99%A8%E7%9A%84%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E4%BF%AE%E6%94%B9livenessprobe%E5%AE%B9%E5%99%A8%E7%9A%84%E9%BB%98%E8%AE%A4%E7%AB%AF%E5%8F%A3/</guid>
+      <description>现象描述 huawei-csi-controller组件中livenessprobe容器一直重启。&#xA;根因分析 huawei-csi-controller的livenessprobe容器的默认端口（9808）与已有的Tanzu的vSphere CSI端口冲突。&#xA;解决措施或规避方法 将livenessprobe容器的默认端口修改为未占用端口。&#xA;进入“helm/esdk”目录，执行vi values.yaml命令打开配置文件。&#xA;vi values.yaml 将controller.livenessProbePort默认值9808修改为其他未占用端口，例如改为9809。&#xA;controller: livenessProbePort: 9809 使用Helm更新华为CSI，具体信息请参考升级华为CSI。</description>
+    </item>
+    <item>
+      <title>创建临时卷失败</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E5%88%9B%E5%BB%BA%E4%B8%B4%E6%97%B6%E5%8D%B7%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%AF%B9%E6%8E%A5tanzu-kubernetes%E9%9B%86%E7%BE%A4%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/%E5%88%9B%E5%BB%BA%E4%B8%B4%E6%97%B6%E5%8D%B7%E5%A4%B1%E8%B4%A5/</guid>
+      <description>现象描述 创建通用临时卷失败，报错PodSecurityPolicy: unable to admit pod: [spec.volumes[0]: Invalid value: &amp;ldquo;ephemeral&amp;rdquo;: ephemeral volumes are not allowed to be used spec.volumes[0]&#xA;根因分析 当前使用的PSP策略中没有使用“ephemeral”卷的权限。&#xA;解决措施或规避方法 在默认PSP &amp;ldquo;pks-privileged&amp;quot;和&amp;quot;pks-restricted&amp;quot;中增加使用“ephemeral”卷的权限，以修改&amp;quot;pks-privileged&amp;quot;举例：&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行命令， 修改pks-privileged的配置。&#xA;kubectl edit psp pks-privileged 在spec.volumes中增加“ephemeral”，示例如下：&#xA;# Please edit the object below. Lines beginning with a &amp;#39;#&amp;#39; will be ignored, # and an empty file will abort the edit. If an error occurs while saving this file will be # reopened with the relevant failures.</description>
+    </item>
+  </channel>
+</rss>

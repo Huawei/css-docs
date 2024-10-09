@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuring Storage Topology Awareness on Huawei</title>
+    <link>/en/docs/advanced-features/configuring-storage-topology-awareness/</link>
+    <description>Recent content in Configuring Storage Topology Awareness on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/advanced-features/configuring-storage-topology-awareness/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuring Storage Topology Awareness Using Helm</title>
+      <link>/en/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm/</guid>
+      <description>Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the directory where the Helm project is located. If the previous Helm project cannot be found, copy the helm directory in the component package to any directory on the master node. For details about the component package path, see Table 1.&#xA;Go to the backend service configuration directory /examples/backend/ and back up the backend.</description>
+    </item>
+  </channel>
+</rss>

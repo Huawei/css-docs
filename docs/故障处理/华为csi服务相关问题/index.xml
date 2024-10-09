@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>华为CSI服务相关问题 on Huawei</title>
+    <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
+    <description>Recent content in 华为CSI服务相关问题 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>启动huawei-csi-node失败，提示错误为：“/var/lib/iscsi is not a directory”</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%90%AF%E5%8A%A8huawei-csi-node%E5%A4%B1%E8%B4%A5-%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF%E4%B8%BA-var-lib-iscsi-is-not-a-directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%90%AF%E5%8A%A8huawei-csi-node%E5%A4%B1%E8%B4%A5-%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF%E4%B8%BA-var-lib-iscsi-is-not-a-directory/</guid>
+      <description>现象描述 启动huawei-csi-node时，无法启动huawei-csi-node服务， 使用kubectl describe daemonset huawei-csi-node -n huawei-csi命令查看，提示错误为：“/var/lib/iscsi is not a directory”。&#xA;根因分析 huawei-csi-node中容器内部无/var/lib/iscsi目录。&#xA;解决措施或规避方法 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;进入Helm工程的目录下，如果无法找到之前的Helm工程，则将组件包中的helm目录拷贝到master节点的任意目录下，组件包路径请参考表 软件包组件描述。&#xA;进入下一级目录templates,找到huawei-csi-node.yaml文件。&#xA;cd /templates 执行以下命令，将huawei-csi-node.yaml &amp;gt; volumes &amp;gt; iscsi-dir &amp;gt; hostPath中“path“设置为“/var/lib/iscsi“ ，然后保存并退出文件。&#xA;vi huawei-csi-node.yaml 执行以下命令升级Helm chart。升级命令将更新Deployment、DaemonSet和RBAC资源。其中，helm-huawei-csi为自定义的chart名称，huawei-csi为自定义的命名空间。&#xA;helm upgrade helm-huawei-csi ./ -n huawei-csi values.yaml 命令结果示例如下。&#xA;Release &amp;#34;helm-huawei-csi&amp;#34; has been upgraded. Happy Helming! NAME: helm-huawei-csi LAST DEPLOYED: Thu Jun 9 07:58:15 2022 NAMESPACE: huawei-csi STATUS: deployed REVISION: 2 TEST SUITE: None </description>
+    </item>
+    <item>
+      <title>启动华为CSI服务失败，提示错误：“/etc/localtime is not a file”</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%90%AF%E5%8A%A8%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E5%A4%B1%E8%B4%A5-%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF-etc-localtime-is-not-a-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%90%AF%E5%8A%A8%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E5%A4%B1%E8%B4%A5-%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF-etc-localtime-is-not-a-file/</guid>
+      <description>现象描述 安装部署CSI时，Pod运行不起来，处于ContainerCreating状态，查看Pod中有打印告警事件：/etc/localtime is not a file。&#xA;根因分析 容器挂载主机/etc/localtime文件时，识别类型有误，容器挂载不上主机侧/etc/localtime文件，导致Pod运行不起来。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行命令，查看CSI服务Pod运行状态。&#xA;kubectl get pod -n huawei-csi 命令结果示例如下。其中，huawei-csi为CSI服务部署的命名空间。&#xA;NAME READY STATUS RESTARTS AGE huawei-csi-controller-6dfcc4b79f-9vjtq 9/9 ContainerCreating 0 24m huawei-csi-controller-6dfcc4b79f-csphc 9/9 ContainerCreating 0 24m huawei-csi-node-g6f4k 3/3 ContainerCreating 0 20m huawei-csi-node-tqs87 3/3 ContainerCreating 0 20m 执行命令，通过查看容器的“Events”参数。&#xA;kubectl describe pod huawei-csi-controller-6dfcc4b79f-9vjtq -n huawei-csi 命令结果示例如下。其中，huawei-csi-controller-6dfcc4b79f-9vjtq 为2中查找到的状态显示为“ContainerCreating”的Pod名称，huawei-csi为该Pod所在的命名空间。&#xA;... Events: Type Reason Age From Message ---- ------ ---- ---- ------- Normal Scheduled 96s default-scheduler Successfully assigned huawei-csi/huawei-csi-controller-6dfcc4b79f-9vjtq to node1 Warning FailedMount 33s (x8 over 96s) kubelet MountVolume.</description>
+    </item>
+    <item>
+      <title>启动huawei-csi服务时，服务启动异常， 状态显示InvalidImageName</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%90%AF%E5%8A%A8huawei-csi%E6%9C%8D%E5%8A%A1%E6%97%B6-%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8-%E7%8A%B6%E6%80%81%E6%98%BE%E7%A4%BAinvalidimagename/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/%E5%8D%8E%E4%B8%BAcsi%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%90%AF%E5%8A%A8huawei-csi%E6%9C%8D%E5%8A%A1%E6%97%B6-%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8-%E7%8A%B6%E6%80%81%E6%98%BE%E7%A4%BAinvalidimagename/</guid>
+      <description>现象描述 启动huawei-csi时，无法启动huawei-csi服务（huawei-csi-controller服务或者huawei-csi-node服务），使用kubectl get pod -A | grep huawei命令查看，显示状态为InvalidImageName&#xA;kubectl get pod -A | grep huawei 命令结果示例如下。&#xA;huawei-csi huawei-csi-controller-fd5f97768-qlldc 6/9 InvalidImageName 0 16s huawei-csi huawei-csi-node-25txd 2/3 InvalidImageName 0 15s 根因分析 controller和node的yaml配置文件中，配置Huawei CSI的镜像版本号错误。例如：&#xA;... - name: huawei-csi-driver image: huawei-csi:4.5.0 ... 解决措施或规避方法 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，修改huawei-csi-node服务的配置文件。按I或Insert进入编辑状态，修改相关参数。修改完成后，按Esc，并输入 :wq! ，保存修改。&#xA;kubectl edit daemonset huawei-csi-node -o yaml -n=huawei-csi 示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.5.0。 containers: ... - name: huawei-csi-driver image: huawei-csi:4.5.0 执行以下命令，修改huawei-csi-controller服务的配置文件。按I或Insert进入编辑状态，修改相关参数。修改完成后，按Esc，并输入 :wq! ，保存修改。&#xA;kubectl edit deployment huawei-csi-controller -o yaml -n=huawei-csi 示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.5.0。 containers: .</description>
+    </item>
+  </channel>
+</rss>

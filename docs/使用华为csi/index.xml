@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>使用华为CSI on Huawei</title>
+    <link>/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/</link>
+    <description>Recent content in 使用华为CSI on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E4%BD%BF%E7%94%A8%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

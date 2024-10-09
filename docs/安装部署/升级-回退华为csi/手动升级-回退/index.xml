@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>手动升级/回退 on Huawei</title>
+    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80/</link>
+    <description>Recent content in 手动升级/回退 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>升级华为CSI</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80/%E5%8D%87%E7%BA%A7%E5%8D%8E%E4%B8%BAcsi-0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80/%E5%8D%87%E7%BA%A7%E5%8D%8E%E4%B8%BAcsi-0/</guid>
+      <description>本章节介绍如何手动升级华为CSI。&#xA;升级/回退过程中，已经存在的PVC/快照/Pod等资源会正常运行，不会影响您的业务访问。&#xA;部分2.x版本CSI已经下架，若升级失败，可能无法回退到已下架版本的CSI。 在升级/回退过程中，不能使用华为CSI创建新的资源，或者对已有的PVC做挂载/卸载操作。 在升级/回退过程中，请勿卸载Snapshot依赖组件服务。 2.x和3.x版本的CSI升级至4.5.0版本 如果您从2.x和3.x版本的CSI升级至4.5.0版本，请按照以下操作步骤升级：&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行命令备份后端信息到configmap.json文件中。OpenShift平台使用oc替换kubectl命令。&#xA;kubectl get cm huawei-csi-configmap -n huawei-csi -o json &amp;gt; configmap.json 参考手动卸载华为CSI卸载CSI。&#xA;参考手动安装华为CSI安装当前版本的CSI。&#xA;将2中备份的后端信息，按照管理存储后端章节的说明安装。&#xA;从4.x版本的CSI升级至4.5.0版本。 如果您从4.x版本的CSI升级至4.5.0版本，请按照以下操作步骤升级：&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。 参考手动卸载华为CSI卸载CSI。 参考手动安装华为CSI安装当前版本的CSI。 </description>
+    </item>
+    <item>
+      <title>回退华为CSI</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi/%E6%89%8B%E5%8A%A8%E5%8D%87%E7%BA%A7-%E5%9B%9E%E9%80%80/%E5%9B%9E%E9%80%80%E5%8D%8E%E4%B8%BAcsi-1/</guid>
+      <description>请参考手动卸载华为CSI卸载CSI，然后下载安装升级之前版本的CSI。&#xA;在升级/回退过程中，已经存在的PVC/快照/Pod等资源会正常运行，不会影响您的业务访问。 在升级/回退过程中，不能使用华为CSI创建新的资源，或者对已有的PVC做挂载/卸载操作。 在升级/回退过程中，请勿卸载Snapshot依赖组件服务。 前提条件 已下载原版本CSI的软件包。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。 参考手动卸载华为CSI卸载CSI。 参考手动安装华为CSI重新安装原版本的CSI。 </description>
+    </item>
+  </channel>
+</rss>

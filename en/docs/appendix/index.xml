@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Appendix on Huawei</title>
+    <link>/en/docs/appendix/</link>
+    <description>Recent content in Appendix on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/appendix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example ALUA Configuration Policy of OceanStor V5 and OceanStor Dorado V3</title>
+      <link>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-v5-and-oceanstor-dorado-v3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-v5-and-oceanstor-dorado-v3/</guid>
+      <description>Example 1: The configuration file content is as follows:&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 0 node1: MULTIPATHTYPE: 1 FAILOVERMODE: 3 SPECIALMODETYPE: 0 PATHTYPE: 1 If the host name is node1, both of the preceding ALUA configuration sections can be used to configure initiators. According to the configuration policy rules in Configuring ALUA Parameters for a Huawei Enterprise Storage Backend, the priority of the second configuration section (where HostName is node1) is higher than that of the first configuration section (where HostName is *).</description>
+    </item>
+    <item>
+      <title>Example ALUA Configuration Policy of OceanStor Dorado</title>
+      <link>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-dorado/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/appendix/example-alua-configuration-policy-of-oceanstor-dorado/</guid>
+      <description>Example 1: The configuration file content is as follows:&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: accessMode: 1 hyperMetroPathOptimized: 1 node1: accessMode: 1 hyperMetroPathOptimized: 0 If the host name is node1, both of the preceding ALUA configuration sections can be used to configure initiators. According to the configuration policy rules in Configuring ALUA Parameters for a Huawei Enterprise Storage Backend, the priority of the second configuration section (where HostName is node1) is higher than that of the first configuration section (where HostName is *).</description>
+    </item>
+    <item>
+      <title>Example ALUA Configuration Policy of Distributed Storage</title>
+      <link>/en/docs/appendix/example-alua-configuration-policy-of-distributed-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/appendix/example-alua-configuration-policy-of-distributed-storage/</guid>
+      <description>Example 1: The configuration file content is as follows:&#xA;parameters: ALUA: &amp;#34;*&amp;#34;: switchoverMode: Enable_alua pathType: optimal_path node1: switchoverMode: Enable_alua pathType: non_optimal_path If the host name is node1, both of the preceding ALUA configuration sections can be used to configure initiators. According to the configuration policy rules in Configuring ALUA Parameters for a Distributed Storage Backend, the priority of the second configuration section (where HostName is node1) is higher than that of the first configuration section (where HostName is *).</description>
+    </item>
+    <item>
+      <title>Communication Matrix</title>
+      <link>/en/docs/appendix/communication-matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/appendix/communication-matrix/</guid>
+      <description>Source Device&#xA;Host where CSI controller is located&#xA;Host where CSI controller is located&#xA;Host where CSI node is located&#xA;Kubernetes master node&#xA;Source IP Address&#xA;IP address of the source device&#xA;IP address of the source device&#xA;IP address of the source device&#xA;IP address of the source device&#xA;Source Port&#xA;1024 to 65536&#xA;1024 to 65536&#xA;1024 to 65536&#xA;1024 to 65536&#xA;Destination Device&#xA;Storage device&#xA;Host where CSI controller is located</description>
+    </item>
+    <item>
+      <title>Configuring Custom Permissions</title>
+      <link>/en/docs/appendix/configuring-custom-permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/appendix/configuring-custom-permissions/</guid>
+      <description>User-defined Role Configurations For different storage resources, refer to the following configurations:&#xA;For NAS resources, configure the minimum permissions by referring to Table 1. For SAN resources, configure the minimum permissions by referring to Table 2. For details about how to configure permissions for user-defined roles, see OceanStor Dorado 6000, Dorado 18000 Series Product Documentation.&#xA;Table 1 Minimum permissions for NAS resources&#xA;Permission Object&#xA;Parent Object&#xA;Read/Write Permission&#xA;Function&#xA;workload_type</description>
+    </item>
+    <item>
+      <title>Huawei CSI Resource Management</title>
+      <link>/en/docs/appendix/huawei-csi-resource-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/appendix/huawei-csi-resource-management/</guid>
+      <description>This section lists the resource requests and limits used by each container of the Huawei CSI plug-in. For details about the unit, see Resource units in Kubernetes.&#xA;Table 1 Container resource requests and limits&#xA;Pod Name&#xA;Container Name&#xA;CPU Request&#xA;CPU Limit&#xA;Memory Request&#xA;Memory Limit&#xA;huawei-csi-controller&#xA;huawei-csi-driver&#xA;50m&#xA;500m&#xA;128Mi&#xA;1Gi&#xA;storage-backend-sidecar&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;storage-backend-controller&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;huawei-csi-extender&#xA;50m&#xA;300m&#xA;128Mi&#xA;512Mi&#xA;csi-attacher&#xA;50m&#xA;300m</description>
+    </item>
+  </channel>
+</rss>

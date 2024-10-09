@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>(Optional) Adding a Certificate to a Storage Backend on Huawei</title>
+    <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/</link>
+    <description>Recent content in (Optional) Adding a Certificate to a Storage Backend on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Certificate for a Storage Backend</title>
+      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/creating-a-certificate-for-a-storage-backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/creating-a-certificate-for-a-storage-backend/</guid>
+      <description>Prerequisites A certificate has been created. Take OceanStor Dorado as an example. For details about how to create a certificate, click here.&#xA;Example of Creating a Certificate Prepare a certificate file in advance, for example, cert.crt.&#xA;Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.</description>
+    </item>
+    <item>
+      <title>Querying a Storage Backend Certificate</title>
+      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/querying-a-storage-backend-certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/querying-a-storage-backend-certificate/</guid>
+      <description>Query storage backend certificates using the commands in Querying a Storage Backend Certificate.</description>
+    </item>
+    <item>
+      <title>Updating a Storage Backend Certificate</title>
+      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/updating-a-storage-backend-certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/updating-a-storage-backend-certificate/</guid>
+      <description>Before updating a certificate, prepare a new certificate file and update the storage backend certificate by following the instructions provided in this section. If the certificate is no longer used, delete the certificate from the storage backend by referring to Deleting a Storage Backend Certificate.&#xA;Procedure Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.</description>
+    </item>
+    <item>
+      <title>Deleting a Storage Backend Certificate</title>
+      <link>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/deleting-a-storage-backend-certificate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/storage-backend-management/optional-adding-a-certificate-to-a-storage-backend/deleting-a-storage-backend-certificate/</guid>
+      <description>Procedure Run the following command to obtain information about a storage backend.&#xA;oceanctl get backend The following is an example of the command output.&#xA;NAMESPACE NAME PROTOCOL STORAGETYPE SN STATUS ONLINE URL huawei-csi backend-1 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.157:8088 huawei-csi backend-2 roce oceanstor-san xxxxxxxxxxxxxxxxxxxx Bound true https://192.168.129.158:8088 Run the following command to obtain information about the certificate of the specified storage backend.&#xA;oceanctl get cert -b backend-1 The following is an example of the command output.</description>
+    </item>
+  </channel>
+</rss>

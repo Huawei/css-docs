@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>存储后端管理 on Huawei</title>
+    <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 存储后端管理 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>oceanctl命令说明</title>
+      <link>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/oceanctl%E5%91%BD%E4%BB%A4%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%AE%A1%E7%90%86/oceanctl%E5%91%BD%E4%BB%A4%E8%AF%B4%E6%98%8E/</guid>
+      <description>帮助说明 获取oceanctl帮助说明。&#xA;oceanctl --help 查看oceanctl版本号。&#xA;oceanctl version 指定自定义日志文件目录，以查看oceanctl版本号为例。&#xA;oceanctl version --log-dir=/path/to/custom 创建存储后端 执行以下命令获取创建后端帮助。&#xA;oceanctl create backend -h 执行以下命令根据指定的yaml文件创建存储后端。&#xA;oceanctl create backend -f /path/to/backend.yaml -i yaml 执行以下命令根据指定的json文件创建存储后端，json文件仅支持通过json格式导出huawei-csi-configmap文件。&#xA;oceanctl create backend -f /path/to/configmap.json -i json 执行以下命令在指定命名空间创建一个存储后端。&#xA;oceanctl create backend -f /path/to/backend.yaml -i yaml -n &amp;lt;namespace&amp;gt; 执行以下命令创建存储后端，并忽略存储后端名称校验，例如大写和字符“_”，非必要请勿使用该命令。&#xA;oceanctl create backend -f /path/to/backend.yaml -i yaml --not-validate-name 执行以下命令创建存储后端，并指定provisioner，其中“csi.oceanstor.com”是安装时指定的驱动名称，详情可以参考4。&#xA;仅在CCE / CCE Agile平台创建后端时使用该命令。&#xA;oceanctl create backend -f /path/to/backend.yaml -i yaml --provisioner=csi.oceanstor.com 查询存储后端 执行以下命令获取查询后端帮助。&#xA;oceanctl get backend -h 执行以下命令查询默认命名空间下单个存储后端。</description>
+    </item>
+  </channel>
+</rss>

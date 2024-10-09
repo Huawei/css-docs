@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creating a PVC Change on Huawei</title>
+    <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/</link>
+    <description>Recent content in Creating a PVC Change on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preparing a PVC Change File</title>
+      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/preparing-a-pvc-change-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/preparing-a-pvc-change-file/</guid>
+      <description>PVC Change File Description The sample template of the PVC change file is /examples/volumemodifyclaim.yaml. The following table lists the configuration items.&#xA;Table 1 Parameter description&#xA;Parameter&#xA;Description&#xA;Mandatory&#xA;Default Value&#xA;Remarks&#xA;apiVersion&#xA;API group, which is of the string type.&#xA;Yes&#xA;xuanwu.huawei.io/v1&#xA;The value is fixed at xuanwu.huawei.io/v1.&#xA;kind&#xA;Resource type, which is of the string type.&#xA;Yes&#xA;VolumeModifyClaim&#xA;The value is fixed at VolumeModifyClaim.&#xA;metadata.name&#xA;Name of a cluster resource object, which is of the string type.</description>
+    </item>
+    <item>
+      <title>Creating a PVC Change Resource</title>
+      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/creating-a-pvc-change-resource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/creating-a-pvc-change/creating-a-pvc-change-resource/</guid>
+      <description>This section describes how to create a PVC change resource based on a configured PVC change file.&#xA;Only the HyperMetro active-active (AA) mode is supported. When a common volume is changed to a HyperMetro volume, only the storage volume at the primary site can be changed. Do not use Huawei CSI to manage a PVC during PVC change resource creation. Multiple VolumeModifyClaim resources cannot be created for the same PVC. If the target PVC needs to be changed for multiple times, perform the changes one by one.</description>
+    </item>
+  </channel>
+</rss>

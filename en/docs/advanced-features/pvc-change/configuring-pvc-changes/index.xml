@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuring PVC Changes on Huawei</title>
+    <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/</link>
+    <description>Recent content in Configuring PVC Changes on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/advanced-features/pvc-change/configuring-pvc-changes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Querying a PVC Change</title>
+      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/querying-a-pvc-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/querying-a-pvc-change/</guid>
+      <description>This section describes how to use Kubectl to query the PVC change status. Currently, Huawei CSI provides the following APIs through CRD.&#xA;Querying a VolumeModifyClaim To query a VolumeModifyClaim using kubectl, perform the following steps.&#xA;Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to query a PVC change. In the command, vmc-name indicates the name of the VolumeModifyClaim resource.</description>
+    </item>
+    <item>
+      <title>Deleting a PVC Change</title>
+      <link>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/deleting-a-pvc-change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/pvc-change/configuring-pvc-changes/deleting-a-pvc-change/</guid>
+      <description>If STATUS of a VolumeModifyClaim is Creating, deleting the VolumeModifyClaim resource will delete the created resource on the storage side and then remove the cluster resource. After the deletion, if you continue to use the original StorageClass for PVC management, you need to restore the associated storage backend to a non-HyperMetro storage backend. If STATUS of a VolumeModifyClaim is Pending or Completed, deleting the VolumeModifyClaim resource will only remove the cluster resource and will not delete the created resource on the storage side (that is, there is not interaction with the storage side).</description>
+    </item>
+  </channel>
+</rss>

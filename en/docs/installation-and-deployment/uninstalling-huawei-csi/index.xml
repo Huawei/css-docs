@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uninstalling Huawei CSI on Huawei</title>
+    <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/</link>
+    <description>Recent content in Uninstalling Huawei CSI on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/installation-and-deployment/uninstalling-huawei-csi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manually Uninstalling Huawei CSI</title>
+      <link>/en/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi/</guid>
+      <description>This section describes how to manually uninstall Huawei CSI.&#xA;If you do not uninstall Huawei CSI for the purpose of an upgrade, ensure that all resources (such as PV, PVC, snapshot, and storage backend resources) provisioned by Huawei CSI have been cleared on your container platform before uninstalling Huawei CSI. Otherwise, once you uninstall Huawei CSI, these resources cannot be automatically scheduled, managed, or cleared.&#xA;Uninstalling the huawei-csi-node Service Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.</description>
+    </item>
+  </channel>
+</rss>

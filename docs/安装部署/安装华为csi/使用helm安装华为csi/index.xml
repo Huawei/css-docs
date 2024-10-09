@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>使用Helm安装华为CSI on Huawei</title>
+    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
+    <description>Recent content in 使用Helm安装华为CSI on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes、OpenShift、Tanzu安装华为CSI</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <description>安装步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录集群的任意master节点。&#xA;将Kubernetes CSI组件包中的&amp;quot;helm&amp;quot;目录拷贝到master节点的任意目录下。Helm工具路径请参见表 软件包组件描述。&#xA;进入到helm/esdk的工作目录下。&#xA;cd helm/esdk 准备values.yaml文件，华为CSI已经在软件包的helm/esdk目录下提供了values.yaml模板文件，您也可以根据Helm values.yaml参数说明修改参数对华为CSI进行定制。&#xA;安装前配置：&#xA;若容器平台为Kubernetes，可跳过该步骤。 若容器平台为Openshift，请根据OpenShift平台安装配置进行配置。 若容器平台为Tanzu，请根据Tanzu平台安装配置进行配置。 执行命令，更新存储后端CRD&#xA;kubectl apply -f ./crds/backend/ （可选） 请务必按照检查卷快照依赖组件章节检查快照依赖组件，确认无误后执行执行命令更新快照CRD，如果controller.snapshot.enabled参数设置为false或Kubernetes版本低于v1.17，可跳过本步骤，详情请参考表 controller配置项说明。&#xA;kubectl apply -f ./crds/snapshot-crds/ --validate=false 执行如下命令安装华为CSI。其中，helm-huawei-csi为自定义的Helm Chart名称，./表示使用当前目录下的Helm工程，huawei-csi为自定义的Helm Chart命名空间。&#xA;helm install helm-huawei-csi ./ -n huawei-csi --create-namespace 命令执行结果如下：&#xA;NAME: helm-huawei-csi LAST DEPLOYED: Wed Jun 8 11:50:28 2022 NAMESPACE: huawei-csi STATUS: deployed REVISION: 1 TEST SUITE: None 完成huawei-csi服务部署后，可执行如下命令检查服务是否启动：&#xA;kubectl get pod -n huawei-csi 命令结果示例如下，Pod状态为“Running“则安装成功。&#xA;NAME READY STATUS RESTARTS AGE huawei-csi-controller-6dfcc4b79f-9vjtq 9/9 Running 0 24m huawei-csi-controller-6dfcc4b79f-csphc 9/9 Running 0 24m huawei-csi-node-g6f4k 3/3 Running 0 20m huawei-csi-node-tqs87 3/3 Running 0 20m OpenShift平台安装配置 OpenShift平台请根据以下命令创建SecurityContextConstraints资源。</description>
+    </item>
+    <item>
+      <title>CCE和CCE Agile平台安装华为CSI</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%B9%B3%E5%8F%B0%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%B9%B3%E5%8F%B0%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <description>本章节介绍如何在CCE / CCE Agile平台安装华为CSI。&#xA;制作Helm安装包 CCE和CCE Agile平台无法直接通过Helm安装华为CSI，需要手动制作Helm安装包后上传至平台模板市场进行安装。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录已部署Helm的任意节点。&#xA;将华为CSI组件包中的&amp;quot;helm&amp;quot;目录拷贝到节点的任意目录下。Helm工具路径请参见表 软件包组件描述。&#xA;进入到helm的工作目录下。&#xA;cd helm/ 修改helm/esdk/values.yaml文件中kubeletConfigDir和csiDriver.driverName参数。&#xA;vi ./esdk/values.yaml 修改如下参数：&#xA;# Specify kubelet config dir path. # kubernetes and openshift is usually /var/lib/kubelet # Tanzu is usually /var/vcap/data/kubelet # CCE is usually /mnt/paas/kubernetes/kubelet kubeletConfigDir: /mnt/paas/kubernetes/kubelet # The CSI driver parameter configuration csiDriver: # Driver name, it is strongly recommended not to modify this parameter # The CCE platform needs to modify this parameter, e.</description>
+    </item>
+    <item>
+      <title>Helm values.yaml参数说明</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/helm-values-yaml%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/%E4%BD%BF%E7%94%A8helm%E5%AE%89%E8%A3%85%E5%8D%8E%E4%B8%BAcsi/helm-values-yaml%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E/</guid>
+      <description>在使用Helm安装CSI时，需要您根据部署时需要使用的特性准备Helm工程的values.yaml文件。华为CSI已经在软件包的helm/esdk目录下提供了values.yaml模板文件。&#xA;本章节将详细说明values.yaml中的配置项以及典型场景下的后端配置示例。&#xA;images参数配置说明 values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜像信息。需要配置的参数如下：&#xA;表 1 images配置项说明&#xA;参数&#xA;描述&#xA;必选参数&#xA;默认值&#xA;images.huaweiCSIService&#xA;huawei-csi镜像。&#xA;是&#xA;huawei-csi:4.5.0&#xA;images.storageBackendSidecar&#xA;华为后端管理sidecar镜像。&#xA;是&#xA;storage-backend-sidecar:4.5.0&#xA;images.storageBackendController&#xA;华为后端管理控制器镜像。&#xA;是&#xA;storage-backend-controller:4.5.0&#xA;images.huaweiCSIExtender&#xA;huawei-csi-extender镜像&#xA;否&#xA;huawei-csi-extender:4.5.0&#xA;images.sidecar.livenessProbe&#xA;livenessprobe sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/livenessprobe:v2.5.0&#xA;images.sidecar.provisioner&#xA;csi-provisioner sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/csi-provisioner:v3.0.0&#xA;images.sidecar.attacher&#xA;csi-attacher sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/csi-attacher:v3.4.0&#xA;images.sidecar.resizer&#xA;csi-resizer sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/csi-resizer:v1.4.0&#xA;images.sidecar.snapshotter&#xA;csi-snapshotter sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/csi-snapshotter:v4.2.1&#xA;images.sidecar.snapshotController&#xA;snapshot-controller sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/snapshot-controller:v4.2.1&#xA;images.sidecar.registrar&#xA;csi-node-driver-registrar sidecar镜像。&#xA;是&#xA;k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.3.0&#xA;huaweiCSIService、storageBackendSidecar、storageBackendController、huaweiCSIExtender参数的值，请参考上传华为CSI镜像章节的说明，使用最终生成镜像的名称和版本。 其他sidecar镜像参数，请参考检查CSI依赖的镜像章节的说明，使用最终上传的镜像的名称和版本。 controller参数配置说明 controller配置项用于配置huawei-csi-controller组件的相关配置。&#xA;表 2 controller配置项说明&#xA;参数</description>
+    </item>
+  </channel>
+</rss>

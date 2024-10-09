@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>通过Helm配置ALUA特性 on Huawei</title>
+    <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/</link>
+    <description>Recent content in 通过Helm配置ALUA特性 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>配置华为企业存储后端的ALUA参数</title>
+      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%8D%8E%E4%B8%BA%E4%BC%81%E4%B8%9A%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9A%84alua%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%8D%8E%E4%B8%BA%E4%BC%81%E4%B8%9A%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9A%84alua%E5%8F%82%E6%95%B0/</guid>
+      <description>华为企业存储针对ALUA的配置请参考产品对应的主机连通性指南文档说明。&#xA;针对不同的操作系统，ALUA配置可能有所不同。进入华为技术支持，在搜索输入框中输入“主机连通性指南”，单击搜索。在搜索结果中，选择对应操作系统的主机连通性指南。结合实际需要根据指南的说明进行ALUA配置。华为CSI将在华为存储上对该主机的启动器应用您设置的配置项。&#xA;已经发放的Pod的节点不会主动更改ALUA信息，需要通过在该节点重新发放Pod才会变更主机ALUA配置。&#xA;OceanStor V5系列和OceanStor Dorado V3系列存储后端的ALUA参数 华为CSI支持的OceanStor V5系列和OceanStor Dorado V3系列存储的ALUA参数见表 华为CSI支持的OceanStor V5系列和OceanStor Dorado V3系列存储的ALUA参数说明。&#xA;表 1 华为CSI支持的OceanStor V5系列和OceanStor Dorado V3系列存储的ALUA参数说明&#xA;参数名&#xA;参数描述&#xA;备注&#xA;HostName&#xA;主机名规则。必填，可使用正则表达式。&#xA;主机名通常使用 cat /etc/hostname 可获取。支持正则表达式方式匹配，如当HostName=“*”时，该条配置对任意主机名的主机生效。可参考《正则表达式》。&#xA;当计算节点的主机名可已匹配多条ALUA配置选项，会根据匹配的精确度进行排序，使用第一条ALUA配置选项。排序规则见ALUA配置项匹配主机名的规则。&#xA;MULTIPATHTYPE&#xA;多路径类型。必填，取值为：&#xA;0：不使用第三方多路径1：使用第三方多路径 --&#xA;FAILOVERMODE&#xA;启动器的切换模式。条件必选，取值为：&#xA;0：旧版本ALUA1：通用ALUA2：不使用ALUA3：特殊模式ALUA 当使用第三方多路径时该参数才需要指定。请参考连通性指南的说明，配置启动器的切换模式。&#xA;SPECIALMODETYPE&#xA;启动器的特殊模式类型。条件必选，取值为：&#xA;0：特殊模式01：特殊模式12：特殊模式23：特殊模式3 当启动器的切换模式为“特殊模式ALUA”时该参数才需要指定。请参考连通性指南的说明，配置启动器的特殊模式类型。&#xA;PATHTYPE&#xA;启动器的路径类型。条件必选，取值为：&#xA;0：优选路径1：非优选路径 当使用第三方多路径时该参数才需要指定。请参考连通性指南的说明，配置启动器的路径类型。&#xA;以OceanStor 18500 V5存储对接Red Hat操作系统为例，主机连通性指南见《华为SAN存储在Red Hat系统下的主机连通性指南》。&#xA;如下ALUA设置示例，是非双活存储场景下，OceanStor 18500 V5存储的Red Hat操作系统的连通性指南的推荐设置。本例中假设Kubernetes集群中计算节点“myhost01”的操作系统是RHEL 5.x，其他计算节点操作系统均为RHEL 7.x。根据推荐，RHEL 5.x的切换模式应该为“不使用ALUA”，RHEL 7.x的切换模式应该为“通用ALUA”。&#xA;storage: oceanstor-san name: oceanstor-iscsi-155 urls: - https://192.168.129.155:8088 - https://192.168.129.156:8088 pools: - StoragePool001 parameters: protocol: iscsi portals: - 192.</description>
+    </item>
+    <item>
+      <title>配置分布式存储后端的ALUA参数</title>
+      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9A%84alua%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%80%9A%E8%BF%87helm%E9%85%8D%E7%BD%AEalua%E7%89%B9%E6%80%A7/%E9%85%8D%E7%BD%AE%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8%E5%90%8E%E7%AB%AF%E7%9A%84alua%E5%8F%82%E6%95%B0/</guid>
+      <description>华为分布式存储针对ALUA的配置请参考产品对应的主机连通性指南文档说明。&#xA;针对不同的操作系统，ALUA配置可能有所不同。进入华为技术支持，在搜索输入框中输入“主机连通性指南”，单击搜索。在搜索结果中，选择对应操作系统的主机连通性指南。结合实际需要根据指南的说明进行ALUA配置。华为CSI将在华为存储上对该主机的启动器应用您设置的配置项。&#xA;已经发放的Pod的节点不会主动更改ALUA信息，需要通过在该节点重新发放Pod才会变更主机ALUA配置。 分布式存储非双活场景，存储系统自身为Active/Active模式，选择“启用ALUA”没有实际意义，建议选择存储默认的“禁用ALUA”。因此不建议对分布式存储配置ALUA参数。&#xA;华为CSI支持的分布式存储的ALUA参数见表 分布式存储ALUA参数说明。&#xA;表 1 分布式存储ALUA参数说明&#xA;参数名&#xA;参数描述&#xA;备注&#xA;HostName&#xA;HostName的值为worker节点的主机名，如HostName1、HostName2。&#xA;主机名通常使用 cat /etc/hostname 可获取。支持正则表达式方式匹配，如当HostName=“*”时，该条配置对任意主机名的主机生效。可参考《正则表达式》。&#xA;当计算节点的主机名可已匹配多条ALUA配置选项，会根据匹配的精确度进行排序，使用第一条ALUA配置选项。排序规则见ALUA配置项匹配主机名的规则。&#xA;switchoverMode&#xA;切换模式。必选，取值为：&#xA;Disable_alua：禁用ALUAEnable_alua：启用ALUA 非双活场景，存储系统自身为Active/Active模式，选择“启用ALUA”没有实际意义，建议选择“禁用ALUA”。当前华为CSI未支持SAN双活场景，请谨慎启用ALUA。&#xA;pathType&#xA;路径类型。条件必选，取值为：&#xA;optimal_path：优选路径non_optimal_path：非优选路径 切换模式为启动ALUA时需要设置该选项。&#xA;ALUA配置项匹配主机名的规则 如果设置的主机名规则精确匹配的业务节点主机名，则使用该主机名规则对应的ALUA配置项。&#xA;如配置项1中主机名规则为“*”，配置项2中的主机名规则为“^myhost01$”。当计算节点的主机名是“myhost01”时，精确匹配配置项2，华为CSI将使用配置项2中的配置应用到存储侧。&#xA;如果设置的主机名规则无法精确匹配的业务节点主机名，则直接使用正则匹配到的第一条ALUA配置项。&#xA;如配置项1中主机名规则为“myhost0[0-9]”，配置项2中的主机名规则为“myhost0[5-9]”，配置项1的优先级高于配置项2。当计算节点的主机名是“myhost06”时，两个配置项均可以匹配，此时华为CSI将使用配置项1中的配置应用到存储侧。</description>
+    </item>
+  </channel>
+</rss>

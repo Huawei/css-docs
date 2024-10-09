@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation Preparations on Huawei</title>
+    <link>/en/docs/installation-and-deployment/installation-preparations/</link>
+    <description>Recent content in Installation Preparations on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/installation-and-deployment/installation-preparations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Downloading the Huawei CSI Software Package</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package/</guid>
+      <description>This section describes how to download the software package and the component structure of the software package.&#xA;Open a browser and enter https://github.com/Huawei/eSDK_K8S_Plugin/releases in the address box.&#xA;Download the software package of the 4.5.0 version based on the CPU architecture.&#xA;Software package naming rule: Plug-in name (eSDK_Huawei_Storage_Kubernetes_CSI_Plugin) + Version number + CPU architecture&#xA;Decompress the downloaded software package. The following table shows the component structure of the software package.&#xA;Table 1 Component description</description>
+    </item>
+    <item>
+      <title>Uploading a Huawei CSI Image</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image/</guid>
+      <description>Huawei provides the huawei-csi image for users. For details about how to obtain the image file, see Downloading the Huawei CSI Software Package.&#xA;To use the CSI image on the container management platform, you need to import the CSI image to the cluster in advance using either of the following methods:&#xA;(Recommended) Use Docker to upload the CSI image to the image repository. Manually import the CSI image to all nodes where Huawei CSI needs to be deployed.</description>
+    </item>
+    <item>
+      <title>Checking User Configurations on Huawei Storage</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/checking-user-configurations-on-huawei-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-user-configurations-on-huawei-storage/</guid>
+      <description>After Huawei storage is connected to the container platform, Huawei CSI needs to manage storage resources on Huawei storage based on service requirements, such as creating and mapping volumes. In this case, Huawei CSI needs to use the users created on Huawei storage to communicate with Huawei storage. The following table lists the user information required for different storage devices.&#xA;Table 1 User requirements for connecting storage to CSI&#xA;Storage Type</description>
+    </item>
+    <item>
+      <title>Checking Volume Snapshot-Dependent Components</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/checking-volume-snapshot-dependent-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-volume-snapshot-dependent-components/</guid>
+      <description>This section describes how to check the volume snapshot-dependent components in the cluster.&#xA;Kubernetes earlier than v1.17.0 does not support the snapshot function. If the snapshot CRD is deployed, the cluster may be faulty. Therefore, if Huawei CSI is deployed on Kubernetes earlier than v1.17.0, perform the check according to Kubernetes Earlier Than v1.17.0.&#xA;Kubernetes Earlier Than v1.17.0 If the Kubernetes version is earlier than v1.17.0, the cluster may be faulty during snapshot deployment.</description>
+    </item>
+    <item>
+      <title>Checking the Host Multipathing Configuration</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/checking-the-host-multipathing-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-the-host-multipathing-configuration/</guid>
+      <description>If you plan to use the FC/iSCSI/NVMe over RoCE/NVMe over FC protocol to access Huawei storage in a container environment, you are advised to use host multipathing software to enhance the link redundancy and performance of the host and storage. If you do not want to use the software, skip this section.&#xA;For details about the OSs and multipathing software supported by Huawei CSI, see Table 2.&#xA;If you want to use the FC/iSCSI protocol to connect to Huawei storage, you are advised to use native DM-Multipath provided by the OS.</description>
+    </item>
+    <item>
+      <title>Checking the Status of Host-Dependent Software</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/checking-the-status-of-host-dependent-software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-the-status-of-host-dependent-software/</guid>
+      <description>This section describes how to check whether the status of host-dependent software on worker nodes in a cluster is normal. In this example, the host OS is CentOS 7.9 x86_64.&#xA;Check the status of the iSCSI client.&#xA;systemctl status iscsi iscsid Check the status of the NFS client.&#xA;systemctl status rpcbind Check the status of DM-Multipath.&#xA;systemctl status multipathd.socket multipathd Check the status of UltraPath.&#xA;systemctl status nxup Check the status of UltraPath-NVMe.</description>
+    </item>
+    <item>
+      <title>Checking the Images on Which CSI Depends</title>
+      <link>/en/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends/</guid>
+      <description>The installation of Huawei CSI depends on the images listed in the following table. If all worker nodes in the cluster have been connected to the Internet and can pull images online, you can skip this section. If nodes in the cluster cannot connect to the Internet, download the corresponding image file based on the Kubernetes version and upload it to the image repository or import it to all worker nodes in the Kubernetes cluster.</description>
+    </item>
+  </channel>
+</rss>

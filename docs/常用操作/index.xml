@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>常用操作 on Huawei</title>
+    <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link>
+    <description>Recent content in 常用操作 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装Helm 3</title>
+      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E5%AE%89%E8%A3%85helm-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E5%AE%89%E8%A3%85helm-3/</guid>
+      <description>本章节指导用户如何安装Helm 3。&#xA;参考：https://helm.sh/docs/intro/install/&#xA;前提条件 确保Kubernetes集群中的master节点可以访问Internet。&#xA;操作步骤 执行以下命令，下载Helm 3的安装脚本。&#xA;curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 执行以下命令，修改Helm 3的安装脚本权限。&#xA;chmod 700 get_helm.sh 根据Helm与Kubernetes版本配套关系确认需要安装的Helm版本，配套关系请参考Helm Version Support Policy，执行以下命令，修改DESIRED_VERSION环境变量为需要安装的Helm版本，并执行安装命令。&#xA;DESIRED_VERSION=v3.9.0 ./get_helm.sh 执行以下命令，查看指定版本的Helm 3是否安装成功。&#xA;helm version 命令结果示例如下，说明安装成功。&#xA;version.BuildInfo{Version:&amp;#34;v3.9.0&amp;#34;, GitCommit:&amp;#34;7ceeda6c585217a19a1131663d8cd1f7d641b2a7&amp;#34;, GitTreeState:&amp;#34;clean&amp;#34;, GoVersion:&amp;#34;go1.17.5&amp;#34;} </description>
+    </item>
+    <item>
+      <title>下载容器镜像</title>
+      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%B8%8B%E8%BD%BD%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%B8%8B%E8%BD%BD%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8F/</guid>
+      <description>使用containerd下载容器镜像 执行以下命令，下载镜像到本地。其中 image:tag 表示需要拉取的镜像及其标签。&#xA;ctr image pull &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; 执行以下命令，导出镜像到文件。其中 image:tag 表示需要导出的镜像，file 表示镜像导出后的文件名称。&#xA;ctr image export &amp;lt;file&amp;gt;.tar &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; 使用Docker下载容器镜像 执行以下命令，下载镜像到本地。其中 image:tag 表示需要拉取的镜像及其标签。&#xA;docker pull &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; 执行以下命令，导出镜像到文件。其中 image:tag 表示需要导出的镜像，file 表示镜像导出后的文件名称。&#xA;docker save &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; -o &amp;lt;file&amp;gt;.tar 使用Podman下载容器镜像 执行以下命令，下载镜像到本地。其中 image:tag 表示需要拉取的镜像及其标签。&#xA;podman pull &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; 执行以下命令，导出镜像到文件。其中 image:tag 表示需要导出的镜像，file 表示镜像导出后的文件名称。&#xA;podman save &amp;lt;image&amp;gt;:&amp;lt;tag&amp;gt; -o &amp;lt;file&amp;gt;.tar </description>
+    </item>
+    <item>
+      <title>更新huawei-csi-controller或huawei-csi-node服务</title>
+      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E6%9B%B4%E6%96%B0huawei-csi-controller%E6%88%96huawei-csi-node%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E6%9B%B4%E6%96%B0huawei-csi-controller%E6%88%96huawei-csi-node%E6%9C%8D%E5%8A%A1/</guid>
+      <description>当您需要更新huawei-csi-controller或huawei-csi-node服务时，例如修改huawei-csi-controller服务的副本数时，执行此操作。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;进入/helm/esdk 目录，执行以下命令，获取原有服务配置文件。其中helm-huawei-csi为旧版本安装时指定的Helm Chart名称，huawei-csi为旧版本安装时指定的Helm Chart命名空间。组件包路径请参考表 软件包组件描述。&#xA;helm get values helm-huawei-csi -n huawei-csi -a &amp;gt; ./update-values.yaml 执行 vi update-values.yaml 命令打开2中获取的文件，参考Helm values.yaml参数说明修改配置项，修改完成后，按Esc，并输入 :wq!，保存修改。&#xA;执行以下命令更新华为CSI服务。&#xA;helm upgrade helm-huawei-csi ./ -n huawei-csi -f ./update-values.yaml </description>
+    </item>
+    <item>
+      <title>修改日志输出模式</title>
+      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97%E8%BE%93%E5%87%BA%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%BF%AE%E6%94%B9%E6%97%A5%E5%BF%97%E8%BE%93%E5%87%BA%E6%A8%A1%E5%BC%8F/</guid>
+      <description>huawei-csi支持两种日志输出模式，分别是file和console。file指的是输出到固定的日志目录（例如：/var/log/huawei）；console指的是输出到容器标准目录。用户可以根据自身需求自行设置日志输出模式，默认为file.&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;进入/helm/esdk 目录，执行以下命令，获取原有服务配置文件。其中helm-huawei-csi为旧版本安装时指定的Helm Chart名称，huawei-csi为旧版本安装时指定的Helm Chart命名空间。组件包路径请参考表 软件包组件描述。&#xA;helm get values helm-huawei-csi -n huawei-csi -a &amp;gt; ./update-values.yaml 执行vi update-values.yaml命令打开2中获取的文件，修改配置项，修改完成后，按Esc，并输入 :wq!，保存修改。&#xA;# The CSI driver parameter configuration csiDriver: # Driver name, it is strongly recommended not to modify this parameter # The CCE platform needs to modify this parameter, e.g. csi.oceanstor.com driverName: csi.huawei.com # Endpoint, it is strongly recommended not to modify this parameter endpoint: /csi/csi.sock # DR Endpoint, it is strongly recommended not to modify this parameter drEndpoint: /csi/dr-csi.</description>
+    </item>
+    <item>
+      <title>开启ReadWriteOncePod功能门</title>
+      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E5%BC%80%E5%90%AFreadwriteoncepod%E5%8A%9F%E8%83%BD%E9%97%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E5%BC%80%E5%90%AFreadwriteoncepod%E5%8A%9F%E8%83%BD%E9%97%A8/</guid>
+      <description>ReadWriteOnce访问模式是Kubernetes v1.22版本为PV和PVC引入的第四种访问模式。如果您使用ReadWriteOncePod访问模式的PVC创建一个Pod，Kubernetes会确保该Pod是整个集群中唯一可以读取或写入该PVC的Pod。&#xA;由于ReadWriteOncePod访问模式在当前已发布的Kubernetes v1.22/1.23/1.24版本中是alpha特性，需要先在kube-apiserver、kube-scheduler和kubelet的feature-gates中开启ReadWriteOncePod特性才能使用。&#xA;CCE / CCE Agile平台暂时不支持开启ReadWriteOncePod功能门&#xA;操作步骤 为kube-apiserver启用ReadWriteOncePod功能门。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行vi /etc/kubernetes/manifests/kube-apiserver.yaml命令，按I或Insert进入编辑状态，为 kube-apiserver容器添加参数&amp;ndash;feature-gates=ReadWriteOncePod=true。修改完成后，按Esc，并输入 :wq!，保存修改。&#xA;... spec: containers: - command: - kube-apiserver - --feature-gates=ReadWriteOncePod=true ... 在编辑完成后，Kubernetes会自动应用更新，不需要手动更新。&#xA;为kube-scheduler启用ReadWriteOncePod功能门。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行vi /etc/kubernetes/manifests/kube-scheduler.yaml命令，按I或Insert进入编辑状态，为kube-scheduler容器添加参数&amp;ndash;feature-gates=ReadWriteOncePod=true。修改完成后，按Esc，并输入 :wq!，保存修改。&#xA;… spec: containers: - command: - kube-scheduler - --feature-gates=ReadWriteOncePod=true ... 在编辑完成后，Kubernetes会自动应用更新，不需要手动更新。&#xA;为kubelet启用ReadWriteOncePod功能门。&#xA;由于动态Kubelet配置功能在v1.22中已弃用，并且在v1.24中删除，因此集群中每个worker节点上的kubelet都需要执行以下操作。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意worker节点。&#xA;执行vi /var/lib/kubelet/config.yaml命令，按I或Insert进入编辑状态，为KubeletConfiguration对象的featureGates字段添加ReadWriteOncePod: true，如果没有featureGates字段请一并添加。修改完成后，按Esc，并输入 :wq!，保存修改。&#xA;apiVersion: kubelet.config.k8s.io/v1beta1 featureGates: ReadWriteOncePod: true ... kubelet配置文件的默认路径为/var/lib/kubelet/config.yaml，请根据实际情况填写。&#xA;在配置完成后，执行systemctl restart kubelet命令重启kubelet。</description>
+    </item>
+    <item>
+      <title>配置非root用户访问Kubernetes集群</title>
+      <link>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E9%9D%9Eroot%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEkubernetes%E9%9B%86%E7%BE%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E9%9D%9Eroot%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEkubernetes%E9%9B%86%E7%BE%A4/</guid>
+      <description>操作步骤 拷贝Kubernetes集群的认证文件，/etc/kubernetes/admin.conf修改为实际使用的认证文件。&#xA;mkdir -p $HOME/.kube sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config 修改认证文件的用户与用户组。&#xA;sudo chown $(id -u):$(id -g) $HOME/.kube/config 配置当前用户的KUBECONFIG环境变量，以Ubuntu 20.04举例如下。&#xA;echo &amp;#34;export KUBECONFIG=$HOME/.kube/config&amp;#34; &amp;gt;&amp;gt; ~/.bashrc source ~/.bashrc </description>
+    </item>
+  </channel>
+</rss>

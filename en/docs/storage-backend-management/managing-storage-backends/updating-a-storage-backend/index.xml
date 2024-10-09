@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updating a Storage Backend on Huawei</title>
+    <link>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/</link>
+    <description>Recent content in Updating a Storage Backend on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updating the Password of a Storage Backend Using oceanctl</title>
+      <link>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl/</guid>
+      <description>Example of Updating a Backend Run the following command to obtain the help information about updating a storage backend.&#xA;oceanctl update backend -h The following is an example of the command output.&#xA;Update a backend for Ocean Storage in Kubernetes Usage: oceanctl update backend &amp;lt;name&amp;gt; [flags] Examples: # Update backend account information in default(huawei-csi) namespace oceanctl update backend &amp;lt;name&amp;gt; --password # Update backend account information in specified namespace oceanctl update backend &amp;lt;name&amp;gt; -n namespace --password Flags: -h, --help help for backend -n, --namespace string namespace of resources --password Update account password Run the following command to update a storage backend.</description>
+    </item>
+    <item>
+      <title>Manually Updating a Storage Backend</title>
+      <link>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/manually-updating-a-storage-backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/manually-updating-a-storage-backend/</guid>
+      <description>PVC provisioning must be based on a configured storage backend. Therefore, if a PVC has been provisioned on a storage backend, do not change the storage backend. The name uniquely identifies a storage backend. The name of a storage backend with a PVC provisioned cannot be changed. After a storage backend is modified, the new configuration applies only to volumes to be provisioned. Do not perform volume management operations during the modification of a storage backend.</description>
+    </item>
+  </channel>
+</rss>

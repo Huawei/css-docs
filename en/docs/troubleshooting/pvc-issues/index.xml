@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PVC Issues on Huawei</title>
+    <link>/en/docs/troubleshooting/pvc-issues/</link>
+    <description>Recent content in PVC Issues on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/troubleshooting/pvc-issues/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When a PVC Is Created, the PVC Is in the Pending State</title>
+      <link>/en/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state/</guid>
+      <description>Symptom A PVC is created. After a period of time, the PVC is still in the Pending state.&#xA;Root Cause Analysis Cause 1: A StorageClass with the specified name is not created in advance. As a result, Kubernetes cannot find the specified StorageClass name when a PVC is created.&#xA;Cause 2: The storage pool capability does not match the StorageClass capability. As a result, huawei-csi fails to select a storage pool.</description>
+    </item>
+    <item>
+      <title>Before a PVC Is Deleted, the PVC Is in the Pending State</title>
+      <link>/en/docs/troubleshooting/pvc-issues/before-a-pvc-is-deleted-the-pvc-is-in-the-pending-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/troubleshooting/pvc-issues/before-a-pvc-is-deleted-the-pvc-is-in-the-pending-state/</guid>
+      <description>Symptom Before a PVC is deleted, the PVC is in the Pending state.&#xA;Root Cause Analysis Cause 1: A StorageClass with the specified name is not created in advance. As a result, Kubernetes cannot find the specified StorageClass name when a PVC is created.&#xA;Cause 2: The storage pool capability does not match the StorageClass capability. As a result, huawei-csi fails to select a storage pool.&#xA;Cause 3: An error code (for example, 50331651) is returned by a RESTful interface of the storage.</description>
+    </item>
+    <item>
+      <title>Failed to Expand the Capacity of a Generic Ephemeral Volume</title>
+      <link>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-capacity-of-a-generic-ephemeral-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-capacity-of-a-generic-ephemeral-volume/</guid>
+      <description>Symptom In an environment where the Kubernetes version is earlier than 1.25, the capacity of a generic ephemeral volume of the LUN type fails to be expanded. The system displays a message indicating that the PV capacity has been expanded, but the PVC capacity fails to be updated.&#xA;Root Cause Analysis This problem is caused by a Kubernetes bug, which has been resolved in Kubernetes 1.25.</description>
+    </item>
+    <item>
+      <title>Failed to Expand the PVC Capacity Because the Target Capacity Exceeds the Storage Pool Capacity</title>
+      <link>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity/</guid>
+      <description>Symptom In a Kubernetes environment earlier than 1.23, PVC capacity expansion fails when the target capacity exceeds the storage pool capacity.&#xA;Root Cause Analysis This is a known issue in the Kubernetes community. For details, see Recovering from Failure when Expanding Volumes.&#xA;Solution or Workaround For details, see Recovering from Failure when Expanding Volumes.</description>
+    </item>
+  </channel>
+</rss>

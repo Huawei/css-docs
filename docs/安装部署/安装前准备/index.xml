@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安装前准备 on Huawei</title>
+    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/</link>
+    <description>Recent content in 安装前准备 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>下载华为CSI软件包</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E4%B8%8B%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi%E8%BD%AF%E4%BB%B6%E5%8C%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E4%B8%8B%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi%E8%BD%AF%E4%BB%B6%E5%8C%85/</guid>
+      <description>本章节详细说明了下载方法以及软件包组件结构。&#xA;打开浏览器，访问仓库地址：https://github.com/Huawei/eSDK_K8S_Plugin/releases。&#xA;根据CPU架构，下载对应的4.5.0版本软件包。&#xA;软件包命名规范：插件名称（eSDK_Huawei_Storage_Kubernetes_CSI_Plugin）+版本号+CPU架构&#xA;将下载的软件包解压。软件包组件结构如下表所示。&#xA;表 1 软件包组件描述&#xA;组件&#xA;组件描述&#xA;image/huawei-csi-v4.5.0-arch.tar&#xA;huawei-csi-driver镜像，&#34;arch&#34;为X86或ARM。&#xA;image/storage-backend-controller-v4.5.0-arch.tar&#xA;后端管理控制器镜像，&#34;arch&#34;为X86或ARM。&#xA;image/storage-backend-sidecar-v4.5.0-arch.tar&#xA;后端管理sidecar镜像，&#34;arch&#34;为X86或ARM。&#xA;image/huawei-csi-extender-v4.5.0-arch.tar&#xA;huawei-csi-extender镜像，&#34;arch&#34;为X86或ARM。&#xA;bin/&#xA;华为提供的镜像使用的二进制文件。&#xA;bin/oceanctl&#xA;华为提供的命令行工具，可用于管理存储后端。&#xA;helm/&#xA;Helm工程，用于部署华为CSI。&#xA;manual/&#xA;用于手动安装部署华为CSI。&#xA;examples/&#xA;CSI使用过程中的yaml示例文件。&#xA;examples/backend&#xA;创建存储后端的yaml示例文件。</description>
+    </item>
+    <item>
+      <title>上传华为CSI镜像</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E4%B8%8A%E4%BC%A0%E5%8D%8E%E4%B8%BAcsi%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E4%B8%8A%E4%BC%A0%E5%8D%8E%E4%B8%BAcsi%E9%95%9C%E5%83%8F/</guid>
+      <description>华为提供huawei-csi镜像供用户使用，镜像文件获取请参考下载华为CSI软件包。&#xA;为了后续在容器管理平台中可以使用CSI镜像，需要按照以下方式中的一种提前将CSI镜像导入到集群中：&#xA;使用Docker工具，将CSI镜像上传至镜像仓库（推荐）。 手动将CSI镜像导入到所有需要部署华为CSI的节点。 上传镜像到镜像仓库 安装华为CSI依赖如下三个华为提供的镜像文件，请按照说明依次导入并上传下列镜像文件，镜像文件获取请参考下载华为CSI软件包。&#xA;huawei-csi-v4.5.0-arch.tar storage-backend-controller-v4.5.0-arch.tar storage-backend-sidecar-v4.5.0-arch.tar huawei-csi-extender-v4.5.0-arch.tar 前提条件&#xA;已准备一台已安装Docker的Linux主机，且该主机支持访问镜像仓库。&#xA;操作步骤&#xA;执行docker load -i huawei-csi-v4.5.0-arch.tar命令，将CSI镜像导入当前节点。&#xA;docker load -i huawei-csi-v4.5.0-arch.tar 执行docker tag huawei-csi:4.5.0 repo.huawei.com/huawei-csi:4.5.0命令，添加镜像仓库地址到镜像标签。其中repo.huawei.com表示镜像仓库的地址。&#xA;docker tag huawei-csi:4.5.0 repo.huawei.com/huawei-csi:4.5.0 执行docker push repo.huawei.com/huawei-csi:4.5.0命令，将CSI镜像上传到镜像仓库。其中repo.huawei.com表示镜像仓库的地址。&#xA;docker push repo.huawei.com/huawei-csi:4.5.0 也可以使用containerd来进行镜像的导入和上传。 CCE / CCE Agile平台请参考该平台用户手册完成镜像导入和上传。 上传镜像到本地节点 若镜像已上传至镜像仓库，则跳过本章节。&#xA;前提条件&#xA;该节点已获取对应的华为CSI镜像文件，镜像文件获取请参考下载华为CSI软件包。 该节点已经安装Docker或其他容器引擎。 操作步骤&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录需要导入镜像的节点。&#xA;将Kubernetes CSI组件包中的&amp;quot;image&amp;quot;目录拷贝到当前节点的任意目录下。&#xA;执行cd image命令，进入到image的工作目录。工具路径请参见表 软件包组件描述。&#xA;执行命令依次将image目录下的所有华为CSI镜像导入至本地节点，其中 name 参数是镜像tar包的名字。&#xA;使用Docker容器引擎执行：&#xA;docker load -i &amp;lt;name&amp;gt;.tar 使用containerd容器引擎执行：&#xA;ctr -n k8s.io image import &amp;lt;name&amp;gt;.tar 使用Podman容器引擎执行：&#xA;podman load -i &amp;lt;name&amp;gt;.</description>
+    </item>
+    <item>
+      <title>检查华为存储上的用户配置</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E5%8D%8E%E4%B8%BA%E5%AD%98%E5%82%A8%E4%B8%8A%E7%9A%84%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E5%8D%8E%E4%B8%BA%E5%AD%98%E5%82%A8%E4%B8%8A%E7%9A%84%E7%94%A8%E6%88%B7%E9%85%8D%E7%BD%AE/</guid>
+      <description>当华为存储接入容器平台后，华为CSI需要在华为存储上根据业务要求，管理存储资源，如创建卷、映射卷等操作。此时，华为CSI需要使用华为存储上已经创建的用户和华为存储进行通信。针对不同存储设备所需要的用户信息如下表所示。&#xA;表 1 存储对接CSI时使用的用户要求&#xA;存储类型&#xA;用户类型&#xA;角色&#xA;级别&#xA;类型&#xA;OceanStor V5&#xA;系统用户&#xA;管理员&#xA;管理员&#xA;本地用户&#xA;租户用户&#xA;租户管理员&#xA;管理员&#xA;本地用户&#xA;OceanStor Dorado V3&#xA;系统用户&#xA;管理员&#xA;管理员&#xA;本地用户&#xA;OceanStor 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;系统用户&#xA;管理员/自定义角色1&#xA;N/A&#xA;本地用户&#xA;OceanStor Dorado 6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8&#xA;系统用户&#xA;管理员/自定义角色1&#xA;N/A&#xA;本地用户&#xA;租户用户&#xA;租户管理员&#xA;N/A&#xA;本地用户&#xA;OceanStor Pacific系列&#xA;系统用户&#xA;管理员&#xA;N/A&#xA;本地用户&#xA;注释1 使用自定义角色，需要给角色配置权限，最小权限请参考配置自定义权限章节配置。 不推荐使用“超级管理员”角色下的用户。</description>
+    </item>
+    <item>
+      <title>检查卷快照依赖组件</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E5%8D%B7%E5%BF%AB%E7%85%A7%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E5%8D%B7%E5%BF%AB%E7%85%A7%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6/</guid>
+      <description>本章节介绍如何检查集群中卷快照依赖组件情况。&#xA;由于Kubernetes v1.17.0之前不支持快照功能，如果部署快照CRD可能导致集群出现问题，因此在低于Kubernetes v1.17.0版本上部署华为CSI，请务必按照Kubernetes低于v1.17.0章节检查。&#xA;Kubernetes低于v1.17.0 Kubernetes低于v1.17.0时，部署快照时将会导致集群出现问题，请按照以下步骤删除快照CRD安装文件。&#xA;执行以下命令查看Kubernetes版本。如下示例中，Kubernetes版本为v1.16.0。&#xA;kubectl get node 命令结果示例如下：&#xA;NAME STATUS ROLES AGE VERSION test-master Ready master 311d v1.16.0 test-node Ready &amp;lt;none&amp;gt; 311d v1.16.0 进入/helm/esdk/crds/snapshot-crds目录，执行以下命令，删除快照CRD安装文件。组件包路径请参考表 软件包组件描述。&#xA;rm -rf ./huawei-csi-snapshot-crd-v1.yaml </description>
+    </item>
+    <item>
+      <title>检查主机多路径配置</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E4%B8%BB%E6%9C%BA%E5%A4%9A%E8%B7%AF%E5%BE%84%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E4%B8%BB%E6%9C%BA%E5%A4%9A%E8%B7%AF%E5%BE%84%E9%85%8D%E7%BD%AE/</guid>
+      <description>当您计划在容器环境中使用FC/iSCSI/NVMe over RoCE/NVMe over FC协议对华为存储进行访问时，推荐您使用主机多路径软件增强主机和存储的链路冗余和性能。如果您不准备使用多路径软件，请跳过本章节。&#xA;华为CSI软件支持对接的操作系统和多路径软件请参考表 支持的主机操作系统及多路径软件版本。&#xA;如果您准备使用FC/iSCSI协议对接华为存储时，推荐使用操作系统自带的原生DM-Multipath。 如果您准备使用NVMe over RoCE/NVMe over FC协议对接华为存储时，推荐使用华为自研的UltraPath-NVMe。 如果您使用SCSI协议对接华为存储时，请关闭操作系统自带的DM-Multipath。 前提条件&#xA;主机多路径软件已经被正确的安装在主机上。&#xA;如果您使用的是操作系统自带的原生DM-Multipath，请咨询您的主机或操作系统提供商获取安装所需的资料和软件包。 如果您使用的是华为自研的UltraPath或者UltraPath-NVMe，请联系华为工程师获取UltraPath或者UltraPath-NVMe的资料和软件包。软件包版本请参考表 软件包组件描述。 操作步骤&#xA;如果您使用iSCSI/FC协议对接华为企业存储，请参考OceanStor Dorado &amp;amp; OceanStor在Red Hat下的主机连通性指南，对主机多路径进行配置和检查。&#xA;如果您使用NVMe over RoCE/NVMe over FC协议对接华为企业存储，请参考OceanStor Dorado &amp;amp; OceanStor在Red Hat下的主机连通性指南，对主机多路径进行配置和检查。&#xA;如果您使用iSCSI协议对接华为分布式存储，请参考 《FusionStorage 8.0.1 块存储基础业务配置指南》中的“应用服务器配置多路径”章节，对主机多路径进行配置和检查。&#xA;如果您使用了操作系统原生多路径时，需要检查/etc/multipath.conf文件，检查文件是否存在如下配置：&#xA;defaults { user_friendly_names yes find_multipaths no } 如果配置不存在，请在/etc/multipath.conf文件开始处增加该配置项。&#xA;user_friendly_names 和find_multipaths 的参数作用请参考：dm_multipath/config_file_defaults</description>
+    </item>
+    <item>
+      <title>检查主机依赖软件状态</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E4%B8%BB%E6%9C%BA%E4%BE%9D%E8%B5%96%E8%BD%AF%E4%BB%B6%E7%8A%B6%E6%80%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5%E4%B8%BB%E6%9C%BA%E4%BE%9D%E8%B5%96%E8%BD%AF%E4%BB%B6%E7%8A%B6%E6%80%81/</guid>
+      <description>本章节介绍如何检查集群中工作节点上主机依赖软件状态是否正常。本例中主机操作系统为CentOS 7.9 x86_64。&#xA;检查iSCSI客户端状态。&#xA;systemctl status iscsi iscsid 检查NFS客户端状态。&#xA;systemctl status rpcbind 检查DM-Multipath多路径软件状态。&#xA;systemctl status multipathd.socket multipathd 检查UltraPath多路径软件状态。&#xA;systemctl status nxup 检查UltraPath-NVMe多路径软件状态。&#xA;systemctl status upudev upService_plus </description>
+    </item>
+    <item>
+      <title>检查CSI依赖的镜像</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5csi%E4%BE%9D%E8%B5%96%E7%9A%84%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%AE%89%E8%A3%85%E5%89%8D%E5%87%86%E5%A4%87/%E6%A3%80%E6%9F%A5csi%E4%BE%9D%E8%B5%96%E7%9A%84%E9%95%9C%E5%83%8F/</guid>
+      <description>华为CSI安装过程中需要依赖下表中的镜像，若集群中的所有worker节点已连接互联网且能够在线拉取镜像，则可跳过本章节。若集群中的节点无法连接互联网，则请根据使用的Kubernetes版本，下载对应的镜像文件并上传到镜像仓库中或者导入Kubernetes集群的所有worker节点中。&#xA;huawei-csi-controller服务依赖的sidecar镜像：livenessprobe、csi-provisioner、csi-attacher、csi-resizer、csi-snapshotter、snapshot-controller、storage-backend-controller、storage-backend-sidecar、huawei-csi-driver和huawei-csi-extender。huawei-csi-node服务依赖的sidecar镜像：livenessprobe、csi-node-driver-registrar和huawei-csi-driver。&#xA;关于每个镜像的功能和详情，请参考下表。&#xA;表 1 Huawei CSI依赖的镜像&#xA;容器名称&#xA;容器镜像&#xA;K8s版本要求&#xA;功能描述&#xA;livenessprobe&#xA;k8s.gcr.io/sig-storage/livenessprobe:v2.5.0&#xA;v1.16+&#xA;Kubernetes社区提供，提供用于监控CSI的健康状态，并上报给Kubernetes，使Kubernetes能够自动检测CSI程序的问题并重启Pod尝试修改该问题。&#xA;csi-resizer&#xA;k8s.gcr.io/sig-storage/csi-resizer:v1.4.0&#xA;v1.16+&#xA;Kubernetes社区提供，在扩容PVC时，调用CSI给PVC提供更多的存储容量空间。&#xA;csi-node-driver-registrar&#xA;k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.3.0&#xA;v1.16+&#xA;Kubernetes社区提供，用于获取CSI信息，并通过kubelet的插件注册机制将节点注册到kubelet中，从而Kubernetes能够感知该节点与华为存储的对接。&#xA;csi-snapshotter&#xA;k8s.gcr.io/sig-storage/csi-snapshotter:v4.2.1&#xA;v1.17+&#xA;Kubernetes社区提供，在创建/删除VolumeSnapshot时，调用CSI在存储侧完成快照的创建和删除。&#xA;snapshot-controller&#xA;k8s.gcr.io/sig-storage/snapshot-controller:v4.2.1&#xA;v1.17+&#xA;Kubernetes社区提供，在创建/删除VolumeSnapshot时，监听Kubernetes API中关于VolumeSnapshot和VolumeSnapshotContent的对象，并触发csi-snapshotter在存储上完成快照的创建。&#xA;csi-provisioner&#xA;k8s.gcr.io/sig-storage/csi-provisioner:v3.0.0&#xA;v1.17+&#xA;Kubernetes社区提供，用于完成PVC创建/删除。&#xA;在创建PVC时，调用huawei-csi-controller服务在存储上创建LUN/文件系统作为PV。在删除PVC时，调用huawei-csi-controller服务在存储上删除该PV对应的LUN/文件系统。 quay.io/k8scsi/csi-provisioner:v1.4.0&#xA;v1.16.x&#xA;csi-attacher&#xA;k8s.gcr.io/sig-storage/csi-attacher:v3.4.0&#xA;v1.17+&#xA;在创建/删除Pod时，调用huawei-csi-controller服务执行Publish/Unpublish Volume操作。&#xA;quay.io/k8scsi/csi-attacher:v1.2.1&#xA;v.1.16.x&#xA;storage-backend-controller&#xA;storage-backend-controller:4.5.0&#xA;v1.16+&#xA;华为CSI软件包提供、用于管理storageBackendClaim资源。&#xA;storage-backend-sidecar&#xA;storage-backend-sidecar:4.5.0&#xA;v1.16+&#xA;华为CSI软件包提供、用于管理storageBackendContent资源。&#xA;huawei-csi-driver&#xA;huawei-csi:4.5.0&#xA;v1.16+&#xA;华为CSI软件包提供、用于提供华为CSI支持的所有特性。&#xA;huawei-csi-extender&#xA;huawei-csi-extender:4.5.0&#xA;v1.16+&#xA;华为CSI软件包提供、用于提供华为CSI的扩展特性。&#xA;集群若未连接互联网，需要手动下载容器镜像并上传到集群中，具体操作请参考下载容器镜像。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Upgrading or Rolling Back Huawei CSI on Huawei</title>
+    <link>/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/</link>
+    <description>Recent content in Upgrading or Rolling Back Huawei CSI on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

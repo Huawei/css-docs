@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enabling the PVC Change Feature on Huawei</title>
+    <link>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/</link>
+    <description>Recent content in Enabling the PVC Change Feature on Huawei</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enabling the PVC Change Feature Using Helm</title>
+      <link>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-using-helm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-using-helm/</guid>
+      <description>Prerequisites You have installed Huawei CSI using Helm. Huawei CSI v4.5.0 or later is used. Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Run the following command to check whether the PVC change feature is enabled.&#xA;helm-huawei-csi indicates the Helm chart name specified during installation, and huawei-csi indicates the Helm chart namespace specified during installation.</description>
+    </item>
+    <item>
+      <title>Enabling the PVC Change Feature Manually</title>
+      <link>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-manually/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/en/docs/advanced-features/pvc-change/enabling-the-pvc-change-feature/enabling-the-pvc-change-feature-manually/</guid>
+      <description>Prerequisites Huawei CSI has been manually installed.&#xA;Procedure Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.&#xA;Go to the manual/esdk working directory and run the following command to configure the volume change CRD.&#xA;kubectl apply -f ./crds/volume-modify/ Run the following command. For details about the component package path, see Table 1.&#xA;kubectl apply -f .</description>
+    </item>
+  </channel>
+</rss>

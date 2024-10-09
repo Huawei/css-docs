@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>配置PVC变更 on Huawei</title>
+    <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/</link>
+    <description>Recent content in 配置PVC变更 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>查询PVC变更</title>
+      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E6%9F%A5%E8%AF%A2pvc%E5%8F%98%E6%9B%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E6%9F%A5%E8%AF%A2pvc%E5%8F%98%E6%9B%B4/</guid>
+      <description>本章节介绍如何使用Kubectl查询PVC变更状态，当前华为CSI通过CRD提供以下API。&#xA;查询VolumeModifyClaim 使用kubectl查询VolumeModifyClaim步骤如下。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，查询PVC变更。其中 vmc-name 为VolumeModifyClaim资源名称。&#xA;kubectl get volumemodifyclaims &amp;lt;vmc-name&amp;gt; -owide 命令结果示例如下：&#xA;NAME STATUS READY SOURCEKIND SOURCENAME STARTEDAT COMPLETEDAT AGE myvmc Completed 1/1 StorageClass mysc 2024-06-06T03:19:13Z 2024-06-06T03:19:16Z 2m2s 表 1 回显说明&#xA;名称&#xA;说明&#xA;NAME&#xA;VolumeModifyClaim资源名称。&#xA;STATUS&#xA;VolumeModifyClaim资源状态，可取值如下：&#xA;Pending：初始状态。Creating：VolumeModifyClaim完成基本校验，且服务端已经接收变更任务，但是该任务还未执行完成。Completed：所有关联的PVC均完成变更。Rollback：关联的PVC部分完成变更时，用户执行了删除PVC变更操作。Deleting：关联的PVC全部完成变更时，用户执行了删除PVC变更操作。 READY&#xA;完成变更PVC数量/全部待变更PVC数量。&#xA;SOURCEKIND&#xA;数据源类型，例如StorageClass。&#xA;SOURCENAME&#xA;数据源名称，例如StorageClass名称。&#xA;STARTEDAT&#xA;变更开始时间，指服务端接收该任务并开始处理的时间戳。&#xA;COMPLETEDAT&#xA;变更完成时间，指所有关联的PVC均完成变更后的时时间戳，仅STATUS为Completed时，存在该值。&#xA;AGE&#xA;VolumeModifyClaim从创建至当前的存活时间。&#xA;VolumeModifyClaim支持使用kubectl查看Events信息，当VolumeModifyClaim无法满足创建要求，或者创建过程中出现错误时，服务端将记录Events信息。参考命令如下：&#xA;kubectl describe volumemodifyclaims local-to-hypermetro 查询VolumeModifyContent VolumeModifyContent由VolumeModifyClaim资源创建，记录了单个PVC的变更详情，使用kubectl查询VolumeModifyContent步骤如下。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行命令，查询PVC变更。其中myvmc-uid为VolumeModifyContent资源名称。&#xA;kubectl get volumemodifycontents myvmc-uid -owide 命令结果示例如下：&#xA;NAME STATUS MODIFYCLAIMNAME SOURCEVOLUME STARTEDAT COMPLETEDAT AGE myvmc-uid Completed myvmc default/mypvc 2024-06-06T03:19:07Z 2024-06-06T03:19:09Z 36m 表 2 回显说明</description>
+    </item>
+    <item>
+      <title>删除PVC变更</title>
+      <link>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%A0%E9%99%A4pvc%E5%8F%98%E6%9B%B4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/pvc%E5%8F%98%E6%9B%B4/%E9%85%8D%E7%BD%AEpvc%E5%8F%98%E6%9B%B4/%E5%88%A0%E9%99%A4pvc%E5%8F%98%E6%9B%B4/</guid>
+      <description>当VolumeModifyClaim的STATUS值为Creating时，删除VolumeModifyClaim资源，将会在存储侧删除此次变更创建的资源，然后移除集群资源。在删除后，如果继续使用原有的StorageClass进行PVC管理，需要将关联的存储后端恢复为非双活存储后端。 当VolumeModifyClaim的STATUS值为Pending或Completed时，删除VolumeModifyClaim资源，仅会移除集群资源，不会和存储交互，即不会在存储侧删除变更创建的资源。 VolumeModifyContent被VolumeModifyClaim管理，请勿手动管理VolumeModifyContent资源。 若待变更PVC中已有部分PVC满足变更要求，当批量变更失败时，会移除掉所有PVC的变更，导致已满足变更条件的PVC不再满足。 若待变更PVC已经在存储侧被手动管理，则可能导致变更失败。使用变更特性时，请勿手动管理存储卷。 当前章节介绍如何使用kubectl删除PVC变更，基于步骤如下。&#xA;操作步骤 使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，删除PVC变更。其中 vmc-name 为VolumeModifyClaim资源名称。&#xA;kubectl delete volumemodifyclaims &amp;lt;vmc-name&amp;gt; 参考创建PVC变更资源查询删除结果。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Helm卸载华为CSI on Huawei</title>
+    <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
+    <description>Recent content in Helm卸载华为CSI on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes、OpenShift、Tanzu卸载华为CSI</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/kubernetes-openshift-tanzu%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <description>本章节介绍如何在Kubernetes、OpenShift、Tanzu平台卸载华为CSI。&#xA;操作步骤 卸载huawei-csi-host-info对象使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令卸载华为CSI，helm-huawei-csi 是自定义的Helm Chart名称，huawei-csi 是该Helm Chart所在的命名空间。该卸载命令将会卸载华为CSI的huawei-csi-controller、huawei-csi-node和RBAC资源。&#xA;helm uninstall helm-huawei-csi -n huawei-csi 卸载命令执行后，还需要检查卸载是否成功。其中，huawei-csi 为chart所在的命名空间。&#xA;helm list -n huawei-csi 命令结果示例如下，如果回显为空，则表示服务卸载成功。&#xA;NAME NAMESPACE REVISION UPDATED STATUS CHART APP VERSION 卸载huawei-csi-host-info对象，请参考卸载huawei-csi-host-info对象进行操作。&#xA;卸载webhook资源，请参考卸载Webhook资源进行操作。&#xA;（可选）卸载快照依赖组件服务，请参考卸载Snapshot依赖组件服务进行操作。&#xA;（可选）卸载Lease资源，请参考卸载Lease资源进行操作。</description>
+    </item>
+    <item>
+      <title>CCE和CCE Agile卸载华为CSI</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/cce%E5%92%8Ccce-agile%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/</guid>
+      <description>本章节介绍如何在CCE / CCE Agile平台卸载华为CSI，以CCE Agile v22.3.2为例。&#xA;操作步骤 登录CCE Agile平台。&#xA;在主页单击“模板市场&amp;gt; 模板实例 ”，进入模板实例页面。&#xA;选择华为CSI模板实例，单击“卸载”，在弹出的提示框中单击“确定”。&#xA;卸载huawei-csi-host-info对象，请参考卸载huawei-csi-host-info对象进行操作。&#xA;卸载webhook资源，请参考卸载Webhook资源进行操作。&#xA;（可选）卸载快照依赖组件服务，请参考卸载Snapshot依赖组件服务进行操作。</description>
+    </item>
+    <item>
+      <title>卸载CSI依赖组件服务</title>
+      <link>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/%E5%8D%B8%E8%BD%BDcsi%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/helm%E5%8D%B8%E8%BD%BD%E5%8D%8E%E4%B8%BAcsi/%E5%8D%B8%E8%BD%BDcsi%E4%BE%9D%E8%B5%96%E7%BB%84%E4%BB%B6%E6%9C%8D%E5%8A%A1/</guid>
+      <description>本章节介绍如何卸载CSI依赖组件服务。&#xA;卸载huawei-csi-host-info对象 名称为huawei-csi-host-info的Secret对象中保存着集群中各个节点的启动器信息，例如iSCSI启动器。使用helm uninstall命令时不会卸载该资源，若需卸载该资源，请参考以下步骤：&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令卸载Secret对象，其中huawei-csi-host-info是Secret对象的名称，huawei-csi是Secret对象所在的命名空间。&#xA;kubectl delete secret huawei-csi-host-info -n huawei-csi 执行以下命令检查Secret对象是否卸载成功。&#xA;kubectl get secret huawei-csi-host-info -n huawei-csi 命令结果示例如下，如果命令回显提示“NotFound”表示huawei-csi-host-info对象已成功卸载。&#xA;Error from server (NotFound): secrets &amp;#34;huawei-csi-host-info&amp;#34; not found 卸载Webhook资源 名称为storage-backend-controller.xuanwu.huawei.io的webhook资源用于校验Backend的秘钥信息和与存储的连通性，使用helm uninstall命令时不会卸载该资源，若需卸载该资源，请参考以下步骤：&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，查询webhook依赖组件服务。&#xA;kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io storage-backend-controller.xuanwu.huawei.io 命令结果如下。&#xA;NAME WEBHOOKS AGE storage-backend-controller.xuanwu.huawei.io 1 12d 执行以下命令，卸载webhook依赖组件服务。&#xA;kubectl delete validatingwebhookconfigurations.admissionregistration.k8s.io storage-backend-controller.xuanwu.huawei.io 执行以下命令，检查服务是否已成功卸载。如果结果为空，表示已成功卸载。&#xA;kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io storage-backend-controller.xuanwu.huawei.io 卸载Snapshot依赖组件服务 请勿在存在快照时卸载Snapshot依赖组件服务，否则Kubernetes会自动删除所有的用户快照且无法恢复，请谨慎操作。详细说明请参见删除 CustomResourceDefinition。 请勿在CSI升级时卸载Snapshot依赖组件服务。 场景说明&#xA;当前华为CSI使用了快照特性。 当前Kubernetes集群仅存在华为CSI，且不再使用华为CSI。 在卸载前请确保在Kubernetes集群中已经没有华为CSI管理的VolumeSnapshot资源。 操作步骤&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，卸载Snapshot依赖组件服务。&#xA;kubectl delete crd volumesnapshotclasses.snapshot.storage.k8s.io volumesnapshotcontents.snapshot.storage.k8s.io volumesnapshots.</description>
+    </item>
+  </channel>
+</rss>

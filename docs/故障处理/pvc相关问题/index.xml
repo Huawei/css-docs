@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PVC相关问题 on Huawei</title>
+    <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
+    <description>Recent content in PVC相关问题 on Huawei</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建PVC时， PVC的状态为Pending</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApvc%E6%97%B6-pvc%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BApending/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%9B%E5%BB%BApvc%E6%97%B6-pvc%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BApending/</guid>
+      <description>现象描述 执行完成PVC的创建操作，一段时间后，PVC的状态仍然处于Pending。&#xA;根因分析 原因1：由于没有提前创建指定名称的StorageClass，导致Kubernetes在创建PVC时无法找到指定StorageClass名称。&#xA;原因2：由于存储池能力和StorageClass能力不匹配，导致huawei-csi选择存储池失败。&#xA;原因3：由于存储RESTful接口执行返回具体错误码（例如：50331651），导致huawei-csi在执行创建PVC时失败。&#xA;原因4：由于存储在huawei-csi设定的超时时间内没有返回，huawei-csi向Kubernetes返回超时错误。&#xA;原因5：其他原因。&#xA;解决措施或规避方法 创建PVC时，如果PVC处于Pending状态，需要根据以下不同的原因采取不同的解决措施。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，查看PVC的详细信息。&#xA;kubectl describe pvc mypvc 根据PVC详细信息中Events信息，执行相应操作。&#xA;如果由原因1导致PVC处于Pending状态，执行以下步骤。&#xA;Events: Type Reason Age From Message ---- ------ ---- ---- ------- Warning ProvisioningFailed 0s (x15 over 3m24s) persistentvolume-controller storageclass.storage.k8s.io &amp;#34;mysc&amp;#34; not found 删除PVC。 创建StorageClass，可参考动态卷供应典型场景StorageClass配置示例。 创建新的PVC，可参考动态卷供应PVC参数说明。 如果由原因2导致PVC处于Pending状态，执行以下步骤。&#xA;Events: Type Reason Age From Message ---- ------ ---- ---- ------- Normal Provisioning 63s (x3 over 64s) csi.huawei.com_huawei-csi-controller-b59577886-qqzm8_58533e4a-884c-4c7f-92c3-6e8a7b327515 External provisioner is provisioning volume for claim &amp;#34;default/mypvc&amp;#34; Warning ProvisioningFailed 63s (x3 over 64s) csi.</description>
+    </item>
+    <item>
+      <title>删除PVC前，PVC的状态为Pending</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%A0%E9%99%A4pvc%E5%89%8D-pvc%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BApending/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E5%88%A0%E9%99%A4pvc%E5%89%8D-pvc%E7%9A%84%E7%8A%B6%E6%80%81%E4%B8%BApending/</guid>
+      <description>现象描述 在执行删除PVC前，PVC的状态处于Pending。&#xA;根因分析 原因1：由于没有提前创建指定名称的StorageClass，导致Kubernetes在创建PVC时无法找到指定StorageClass名称。&#xA;原因2：由于存储池能力和StorageClass能力不匹配，导致huawei-csi选择存储池失败。&#xA;原因3：由于存储RESTful接口执行返回具体错误码（例如：50331651），导致huawei-csi在执行创建PVC时失败。&#xA;原因4：由于存储在huawei-csi设定的超时时间内没有返回，huawei-csi向Kubernetes返回超时错误。&#xA;原因5：其他原因。&#xA;解决措施或规避方法 删除Pending状态下的PVC，需要根据以下不同的原因采取不同的解决措施。&#xA;使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。&#xA;执行以下命令，查看PVC的详细信息。&#xA;kubectl describe pvc mypvc 根据PVC详细信息中Events信息，执行相应操作。&#xA;如果由原因1导致PVC处于Pending状态，可以执行 kubectl delete pvc mypvc 命令，删除PVC。&#xA;Events: Type Reason Age From Message ---- ------ ---- ---- ------- Warning ProvisioningFailed 0s (x15 over 3m24s) persistentvolume-controller storageclass.storage.k8s.io &amp;#34;mysc&amp;#34; not found 如果由原因2导致PVC处于Pending状态，可以执行 kubectl delete pvc mypvc 命令，删除PVC。&#xA;Events: Type Reason Age From Message ---- ------ ---- ---- ------- Normal Provisioning 63s (x3 over 64s) csi.huawei.com_huawei-csi-controller-b59577886-qqzm8_58533e4a-884c-4c7f-92c3-6e8a7b327515 External provisioner is provisioning volume for claim &amp;#34;default/mypvc&amp;#34; Warning ProvisioningFailed 63s (x3 over 64s) csi.</description>
+    </item>
+    <item>
+      <title>通用临时卷扩容失败</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E9%80%9A%E7%94%A8%E4%B8%B4%E6%97%B6%E5%8D%B7%E6%89%A9%E5%AE%B9%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/%E9%80%9A%E7%94%A8%E4%B8%B4%E6%97%B6%E5%8D%B7%E6%89%A9%E5%AE%B9%E5%A4%B1%E8%B4%A5/</guid>
+      <description>现象描述 在Kubernetes版本低于1.25环境中，对LUN类型的通用临时卷扩容失败，显示PV已经扩容，但PVC未成功更新容量。&#xA;根因分析 该问题是由Kubernetes的bug导致，Kubernetes在1.25版本中修复了该问题。</description>
+    </item>
+    <item>
+      <title>PVC扩容的目标容量超过存储池容量导致扩容失败</title>
+      <link>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/pvc%E6%89%A9%E5%AE%B9%E7%9A%84%E7%9B%AE%E6%A0%87%E5%AE%B9%E9%87%8F%E8%B6%85%E8%BF%87%E5%AD%98%E5%82%A8%E6%B1%A0%E5%AE%B9%E9%87%8F%E5%AF%BC%E8%87%B4%E6%89%A9%E5%AE%B9%E5%A4%B1%E8%B4%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/%E6%95%85%E9%9A%9C%E5%A4%84%E7%90%86/pvc%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/pvc%E6%89%A9%E5%AE%B9%E7%9A%84%E7%9B%AE%E6%A0%87%E5%AE%B9%E9%87%8F%E8%B6%85%E8%BF%87%E5%AD%98%E5%82%A8%E6%B1%A0%E5%AE%B9%E9%87%8F%E5%AF%BC%E8%87%B4%E6%89%A9%E5%AE%B9%E5%A4%B1%E8%B4%A5/</guid>
+      <description>现象描述 在低于1.23版本的Kubernetes环境中，对PVC进行扩容，当目标容量超过存储池容量时，扩容失败。&#xA;根因分析 Kubernetes社区已知问题，详情请参考处理扩充卷过程中的失败。&#xA;解决措施或规避方法 参考处理扩充卷过程中的失败。</description>
+    </item>
+  </channel>
+</rss>
