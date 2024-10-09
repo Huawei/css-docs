@@ -28,7 +28,7 @@ jobs:
           extended: true
 
       - name: Install Dart Sass
-          run: sudo snap install dart-sass
+        run: sudo snap install dart-sass
 
       - name: Setup Node
         uses: actions/setup-node@v4
