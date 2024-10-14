@@ -1,6 +1,7 @@
 # Base configuration
 baseURL = "https://huawei.github.io/css-docs/"
 title = "Huawei"
+copyright = "版权所有 © 华为技术有限公司 2024。保留一切权利。"
 contentDir = "content/zh-cn"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
@@ -44,6 +45,7 @@ weight = 2
 title = "Huawei CSS"
 description = "Huawei Container Storage Suite"
 version_menu = "Releases"
+copyright = "Copyright © 2024 Huawei Technologies Co., Ltd. All rights reserved."
 [[languages.en.params.versions]]
   version = "v4.5.0 (current)"
   url = "https://huawei.github.io/css-docs/en/docs"
@@ -86,10 +88,6 @@ showLightDarkModeMenu = false
     name = "GitHub"
     weight = 50
     url = "https://github.com/Huawei/eSDK_K8S_Plugin"
-
-[params.copyright]
-  authors = "Huawei Technologies"
-  from_year = 2018
 
 [params.links]
 [[params.links.developer]]
