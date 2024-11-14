@@ -41,11 +41,11 @@ languageName ="English"
 # contentDir = "content/en"
 languageCode = "en"
 weight = 2
+copyright = "Copyright © 2024 Huawei Technologies Co., Ltd. All rights reserved."
 [languages.en.params]
 title = "Huawei CSS"
 description = "Huawei Container Storage Suite"
 version_menu = "Releases"
-copyright = "Copyright © 2024 Huawei Technologies Co., Ltd. All rights reserved."
 [[languages.en.params.versions]]
   version = "v4.5.0 (current)"
   url = "https://huawei.github.io/css-docs/en/docs"
