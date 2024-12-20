@@ -220,7 +220,7 @@ The following table lists the OSs and multipathing software supported by the Hua
 </tr>
 <tr id="row141121958174817"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p411217583481"><a name="p411217583481"></a><a name="p411217583481"></a>Red Hat Enterprise Linux x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8</p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 9.4</p>
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p141128581485"><a name="p141128581485"></a><a name="p141128581485"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>

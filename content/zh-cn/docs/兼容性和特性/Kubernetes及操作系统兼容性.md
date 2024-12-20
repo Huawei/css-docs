@@ -223,7 +223,7 @@ weight: 1
 </tr>
 <tr id="row141121958174817"><td class="cellrowborder" valign="top" width="24.537546245375463%" headers="mcps1.2.5.1.1 "><p id="p411217583481"><a name="p411217583481"></a><a name="p411217583481"></a>Red Hat Enterprise Linux x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.957304269573047%" headers="mcps1.2.5.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8</p>
+<td class="cellrowborder" valign="top" width="26.957304269573047%" headers="mcps1.2.5.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 9.4</p>
 </td>
 <td class="cellrowborder" valign="top" width="19.548045195480455%" headers="mcps1.2.5.1.3 "><p id="p141128581485"><a name="p141128581485"></a><a name="p141128581485"></a>随OS自带，支持FC/iSCSI</p>
 </td>
