@@ -63,7 +63,7 @@ The CCE or CCE Agile platform cannot directly install Huawei CSI using Helm. You
 
 5.  After the installation package is uploaded, choose  **Charts**  \>  **My Charts**. On the  **My Charts**  page that is displayed, choose  **Install**  \>  **Submit**. The chart release name can be customized.
 
-    ![](/css-docs/figures/安装csi中文.png)
+    ![](/css-docs/figures/安装csi-en.png)
 
 6.  On the home page, choose  **Charts**  \>  **Releases**  and select the project specified during installation \(for example,  **default**  in the following figure\). After the installation is successful,  **Installed**  is displayed in the  **Status**  column.
 
