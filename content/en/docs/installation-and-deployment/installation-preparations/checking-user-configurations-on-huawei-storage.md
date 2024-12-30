@@ -53,7 +53,7 @@ After Huawei storage is connected to the container platform, Huawei CSI needs to
 <td class="cellrowborder" valign="top" width="15.000000000000002%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0214996140_p293715275511"><a name="en-us_topic_0214996140_p293715275511"></a><a name="en-us_topic_0214996140_p293715275511"></a>Local user</p>
 </td>
 </tr>
-<tr id="en-us_topic_0214996140_row163581026142419"><td class="cellrowborder" valign="top" width="24.000000000000004%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0214996140_p335942672413"><a name="en-us_topic_0214996140_p335942672413"></a><a name="en-us_topic_0214996140_p335942672413"></a>OceanStor 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8</p>
+<tr id="en-us_topic_0214996140_row163581026142419"><td class="cellrowborder" valign="top" width="24.000000000000004%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0214996140_p335942672413"><a name="en-us_topic_0214996140_p335942672413"></a><a name="en-us_topic_0214996140_p335942672413"></a>OceanStor</p>
 </td>
 <td class="cellrowborder" valign="top" width="18.000000000000004%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0214996140_p1129916445242"><a name="en-us_topic_0214996140_p1129916445242"></a><a name="en-us_topic_0214996140_p1129916445242"></a>System user</p>
 </td>
@@ -64,11 +64,11 @@ After Huawei storage is connected to the container platform, Huawei CSI needs to
 <td class="cellrowborder" valign="top" width="15.000000000000002%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0214996140_p11299154442413"><a name="en-us_topic_0214996140_p11299154442413"></a><a name="en-us_topic_0214996140_p11299154442413"></a>Local user</p>
 </td>
 </tr>
-<tr id="en-us_topic_0214996140_row143210168434"><td class="cellrowborder" rowspan="2" valign="top" width="24.000000000000004%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0214996140_p23218164437"><a name="en-us_topic_0214996140_p23218164437"></a><a name="en-us_topic_0214996140_p23218164437"></a>OceanStor Dorado 6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8</p>
+<tr id="en-us_topic_0214996140_row143210168434"><td class="cellrowborder" rowspan="2" valign="top" width="24.000000000000004%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0214996140_p23218164437"><a name="en-us_topic_0214996140_p23218164437"></a><a name="en-us_topic_0214996140_p23218164437"></a>OceanStor Dorado</p>
 </td>
 <td class="cellrowborder" valign="top" width="18.000000000000004%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0214996140_p13170324518"><a name="en-us_topic_0214996140_p13170324518"></a><a name="en-us_topic_0214996140_p13170324518"></a>System user</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.2.6.1.3 "><p id="en-us_topic_0214996140_p2045125319467"><a name="en-us_topic_0214996140_p2045125319467"></a><a name="en-us_topic_0214996140_p2045125319467"></a>Administrator/User-defined role<sup id="sup156143344"><a name="sup156143344"></a><a name="sup156143344"></a>1</sup></p>
+<td class="cellrowborder" valign="top" width="25.000000000000007%" headers="mcps1.2.6.1.3 "><p id="en-us_topic_0214996140_p2045125319467"><a name="en-us_topic_0214996140_p2045125319467"></a><a name="en-us_topic_0214996140_p2045125319467"></a>Administrator/User-defined role<sup id="sup1406972128"><a name="sup1406972128"></a><a name="sup1406972128"></a>1</sup></p>
 </td>
 <td class="cellrowborder" valign="top" width="18.000000000000004%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0214996140_p845125344614"><a name="en-us_topic_0214996140_p845125344614"></a><a name="en-us_topic_0214996140_p845125344614"></a>N/A</p>
 </td>
@@ -100,6 +100,6 @@ After Huawei storage is connected to the container platform, Huawei CSI needs to
 
 -   Note 1: If a user-defined role is used, you need to configure permissions for the role. For details about how to configure the minimum permissions, see  [Configuring Custom Permissions](/docs/appendix/configuring-custom-permissions).
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >You are advised not to use the users of the super administrator role.
 

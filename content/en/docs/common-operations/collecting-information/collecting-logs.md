@@ -8,7 +8,7 @@ weight: 3
 ## Performing Check Before Collection{#section298992810393}
 
 1.  Use a remote access tool, such as PuTTY, to log in to the node where the oceanctl tool is installed in the Kubernetes cluster through the management IP address.
-2.  Run the following command. The displayed version is  **v4.5.0**.
+2.  Run the following command. The displayed version is  **v4.6.0**.
 
     ```
     oceanctl version
@@ -17,7 +17,7 @@ weight: 3
     The following is an example of the command output.
 
     ```yaml
-    Oceanctl Version: v4.5.0
+    Oceanctl Version: v4.6.0
     ```
 
 3.  Run the  **oceanctl collect logs --help**  command. The following information is displayed.

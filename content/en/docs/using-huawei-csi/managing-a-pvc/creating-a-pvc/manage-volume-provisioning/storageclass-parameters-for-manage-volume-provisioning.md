@@ -132,7 +132,7 @@ If SAN storage is used, refer to example file  **/examples/sc-lun.yaml**. If NAS
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.4 "><p id="p173981610175210"><a name="p173981610175210"></a><a name="p173981610175210"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p99211326131"><a name="p99211326131"></a><a name="p99211326131"></a>For details about the configuration format, refer to the Linux permission settings, for example, 777 and 755.</p>
-<p id="p248531271420"><a name="p248531271420"></a><a name="p248531271420"></a>This parameter is available when <strong id="b690713435814"><a name="b690713435814"></a><a name="b690713435814"></a>volumeType</strong> is set to <strong id="b1590753455819"><a name="b1590753455819"></a><a name="b1590753455819"></a>lun</strong>.</p>
+<p id="p248531271420"><a name="p248531271420"></a><a name="p248531271420"></a>All SAN storage devices are supported. Only the following NAS storage devices are supported: OceanStor Dorado, OceanStor, and OceanStor Pacific 8.1.2 and later versions.</p>
 </td>
 </tr>
 <tr id="row1795755912408"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>
@@ -201,7 +201,7 @@ If SAN storage is used, refer to example file  **/examples/sc-lun.yaml**. If NAS
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.4 "><p id="p181910281476"><a name="p181910281476"></a><a name="p181910281476"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>If Kerberos 5 is used, set this parameter to <strong id="b2843162417513"><a name="b2843162417513"></a><a name="b2843162417513"></a>krb5</strong>.</li><li>If Kerberos 5i is used, set this parameter to <strong id="b199331272517"><a name="b199331272517"></a><a name="b199331272517"></a>krb5i</strong>.</li><li>If Kerberos 5p is used, set this parameter to <strong id="b28462298511"><a name="b28462298511"></a><a name="b28462298511"></a>krb5p</strong>.</li><li>Kerberos supports only NFSv4.0 or NFSv4.1.</li></ul>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>If Kerberos 5 is used, set this parameter to <strong id="b2843162417513"><a name="b2843162417513"></a><a name="b2843162417513"></a>krb5</strong>.</li><li>If Kerberos 5i is used, set this parameter to <strong id="b199331272517"><a name="b199331272517"></a><a name="b199331272517"></a>krb5i</strong>.</li><li>If Kerberos 5p is used, set this parameter to <strong id="b28462298511"><a name="b28462298511"></a><a name="b28462298511"></a>krb5p</strong>.</li><li>Kerberos supports only NFSv4.0 and later versions.</li><li>OceanStor Dorado and OceanStor 6.1.3 and later versions support Kerberos.</li></ul>
 </td>
 </tr>
 <tr id="row128563915810"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.1 "><p id="p22011843373"><a name="p22011843373"></a><a name="p22011843373"></a>mountOptions.proto</p>
@@ -213,7 +213,7 @@ If SAN storage is used, refer to example file  **/examples/sc-lun.yaml**. If NAS
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.4 "><p id="p1201844372"><a name="p1201844372"></a><a name="p1201844372"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>Ensure that NFS over RDMA is enabled on the storage system.</li><li>NAS storage of OceanStor Dorado 6.1.7 or later is supported.</li></ul>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>Ensure that NFS over RDMA is enabled on the storage system.</li><li>For Huawei enterprise storage, NAS storage of OceanStor Dorado and OceanStor 6.1.7 and later is supported.</li><li>For Huawei distributed storage, NAS storage of OceanStor Pacific 8.2.0 and later is supported. If NFS over RDMA is used for distributed storage, <strong id="b4866112910519"><a name="b4866112910519"></a><a name="b4866112910519"></a>mountOptions.nfsvers</strong> must be set to <strong id="b980117322517"><a name="b980117322517"></a><a name="b980117322517"></a>3</strong>.</li></ul>
 </td>
 </tr>
 <tr id="row17614421981"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.1 "><p id="p33347614411"><a name="p33347614411"></a><a name="p33347614411"></a>mountOptions.port</p>

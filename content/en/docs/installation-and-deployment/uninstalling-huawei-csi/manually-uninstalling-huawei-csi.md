@@ -7,7 +7,7 @@ weight: 2
 
 This section describes how to manually uninstall Huawei CSI.
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >If you do not uninstall Huawei CSI for the purpose of an upgrade, ensure that all resources \(such as PV, PVC, snapshot, and storage backend resources\) provisioned by Huawei CSI have been cleared on your container platform before uninstalling Huawei CSI. Otherwise, once you uninstall Huawei CSI, these resources cannot be automatically scheduled, managed, or cleared.
 
 ## Uninstalling the huawei-csi-node Service{#section1012817231386}
@@ -72,4 +72,9 @@ If  [the CSIDriver feature is not used during installation](/docs/installation-a
 2.  Uninstall the webhook resource. For details, see  [Uninstalling a Webhook Resource](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services#section871155813014).
 3.  \(Optional\) Uninstall the snapshot-dependent component service. For details, see  [Uninstalling the Snapshot-Dependent Component Service](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services#section48371491319).
 4.  \(Optional\) Uninstall the Lease resource. For details, see  [Uninstalling a Lease Resource](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services#section263805014317).
+5.  \(Optional\) Run the following command to delete the namespace where Huawei CSI is located. The default namespace  **huawei-csi**  is used as an example.
+
+    ```
+    kubectl delete ns huawei-csi
+    ```
 

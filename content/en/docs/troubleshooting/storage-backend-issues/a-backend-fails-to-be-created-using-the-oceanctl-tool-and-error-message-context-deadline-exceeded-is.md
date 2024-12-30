@@ -1,8 +1,8 @@
 ---
-title: "A Backend Fails to Be Created Using the oceanctl Tool and Error Message `context deadline exceeded` Is Displayed"
-linkTitle: "A Backend Fails to Be Created Using the oceanctl Tool and Error Message `context deadline exceeded` Is Displayed"
+title: "A Backend Fails to Be Created Using the oceanctl Tool and Error Message \"context deadline exceeded\" Is Displayed"
+linkTitle: "A Backend Fails to Be Created Using the oceanctl Tool and Error Message \"context deadline exceeded\" Is Displayed"
 description: 
-weight: 2
+weight: 1
 ---
 
 ## Symptom{#en-us_topic_0000001279996521_section1566717121452}
@@ -65,7 +65,7 @@ Perform the following steps to check whether Huawei CSI fails to verify the conn
 
 Contact the Kubernetes platform administrator to check the network between kube-apiserver and CSI webhook. For example, if kube-apiserver has an HTTPS proxy, the CSI webhook service may fail to be accessed.
 
->![](/css-docs/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >In the temporary workaround, the webhook resource will be deleted. This resource is used to check whether the entered account information is correct and whether the connection to the storage can be set up when a storage backend is created. Therefore, deleting this resource affects only the verification during backend creation and does not affect other functions. Pay attention to the following:
 >-   Ensure that the host machine where the huawei-csi-controller service is located can properly communicate with the storage.
 >-   Ensure that the entered account and password are correct.

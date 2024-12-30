@@ -10,7 +10,7 @@ When the capacity of a PVC used by a container is insufficient, you need to expa
 ## Prerequisites{#en-us_topic_0254162571_section07036257166}
 
 -   A PVC has been created, the backend to which it resides exists and supports capacity expansion.
--   For details about the storage devices that support capacity expansion, see  [Table 2](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#table14995183994515)  and  [Table 2](/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage#table175022559255). For details about the Kubernetes versions that support capacity expansion, see  [Kubernetes Feature Matrix](/docs/compatibility-and-features/kubernetes-feature-matrix).
+-   For details about the storage devices that support capacity expansion, see  [Features Supported by Huawei Enterprise Storage](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)  and  [Features Supported by Huawei Distributed Storage](/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage#section14115311203711). For details about the Kubernetes versions that support capacity expansion, see  [Kubernetes Feature Matrix](/docs/compatibility-and-features/kubernetes-feature-matrix).
 -   The csi-resizer service is enabled for huawei-csi-controller.
 
     ```
@@ -68,7 +68,7 @@ When the capacity of a PVC used by a container is insufficient, you need to expa
 
     In the preceding command,  _mypvc_  indicates the name of the PVC to be expanded, and  _120Gi_  indicates the capacity after expansion. Change the values based on the site requirements.
 
-    >![](/css-docs/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
     >-   The PVC capacity depends on storage specifications and host specifications. For example, OceanStor Dorado 6.1.2 or OceanStor Pacific series 8.1.0 is connected to CentOS 7. If ext4 file systems are used, see  [Table 2](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning#en-us_topic_0150885187_table178824527142). If XFS file systems are used, see  [Table 3](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning#en-us_topic_0150885187_table101951367104). If NFS or raw devices are used, the capacity must meet the specifications of the used Huawei storage device model and version.
     >-   If the PVC capacity does not meet the specifications, a PVC or Pod may fail to be created due to the limitations of storage specifications or host file system specifications.
     >-   If the capacity expansion fails because the target capacity exceeds the storage pool capacity, see  [Failed to Expand the PVC Capacity Because the Target Capacity Exceeds the Storage Pool Capacity](/docs/troubleshooting/pvc-issues/failed-to-expand-the-pvc-capacity-because-the-target-capacity-exceeds-the-storage-pool-capacity).

@@ -78,7 +78,7 @@ After configuring a StorageClass, you can use the StorageClass to configure a PV
 </td>
 <td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.6.1.4 "><p id="p1589841251413"><a name="p1589841251413"></a><a name="p1589841251413"></a>ReadWriteOnce</p>
 </td>
-<td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li>RWO/ROX/RWOP: supported by all types of volumes. RWOP is supported only by Kubernetes 1.22 and later versions. Check whether this feature is enabled for your Kubernetes cluster by referring to <a href="enabling-the-readwriteoncepod-feature-gate.md">Enabling the ReadWriteOncePod Feature Gate</a>.</li><li>The support for RWX is as follows:<a name="ul201701421154515"></a><a name="ul201701421154515"></a><ul id="ul201701421154515"><li><a href="storage-backend-parameters.md#li277121152812">NAS storage</a>: supported by all volumes</li><li><a href="storage-backend-parameters.md#en-us_topic_0000001324610777_li5135242193418">SAN storage</a>: supported only by volumes whose <strong id="b143575715820"><a name="b143575715820"></a><a name="b143575715820"></a>volumeMode</strong> is set to <strong id="b13525711580"><a name="b13525711580"></a><a name="b13525711580"></a>Block</strong></li></ul>
+<td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li>RWO/ROX/RWOP: supported by all types of volumes. RWOP is supported only by Kubernetes 1.22 and later versions. For versions earlier than Kubernetes 1.29, you need to enable this feature by following the instructions in <a href="/css-docs/docs/common-operations/enabling-the-readwriteoncepod-feature-gate">Enabling the ReadWriteOncePod Feature Gate</a>.</li><li>The support for RWX is as follows:<a name="ul201701421154515"></a><a name="ul201701421154515"></a><ul id="ul201701421154515"><li><a href="/css-docs/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters#li277121152812">NAS storage</a>: supported by all volumes</li><li><a href="/css-docs/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters#en-us_topic_0000001324610777_li5135242193418">SAN storage</a>: supported only by volumes whose <strong id="b143575715820"><a name="b143575715820"></a><a name="b143575715820"></a>volumeMode</strong> is set to <strong id="b13525711580"><a name="b13525711580"></a><a name="b13525711580"></a>Block</strong></li></ul>
 </li></ul>
 </td>
 </tr>
@@ -98,7 +98,7 @@ After configuring a StorageClass, you can use the StorageClass to configure a PV
 </th>
 </tr>
 </thead>
-<tbody><tr id="en-us_topic_0150885187_row11882205261417"><td class="cellrowborder" valign="top" width="33.23%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p1788211526142"><a name="en-us_topic_0150885187_p1788211526142"></a><a name="en-us_topic_0150885187_p1788211526142"></a>OceanStor Dorado 6.1.2</p>
+<tbody><tr id="en-us_topic_0150885187_row11882205261417"><td class="cellrowborder" valign="top" width="33.23%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p1788211526142"><a name="en-us_topic_0150885187_p1788211526142"></a><a name="en-us_topic_0150885187_p1788211526142"></a>OceanStor Dorado</p>
 </td>
 <td class="cellrowborder" valign="top" width="19.89%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0150885187_p265163441310"><a name="en-us_topic_0150885187_p265163441310"></a><a name="en-us_topic_0150885187_p265163441310"></a>512 Ki to 256 Ti</p>
 </td>
@@ -107,7 +107,7 @@ After configuring a StorageClass, you can use the StorageClass to configure a PV
 <td class="cellrowborder" valign="top" width="23.44%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0150885187_p15882185241416"><a name="en-us_topic_0150885187_p15882185241416"></a><a name="en-us_topic_0150885187_p15882185241416"></a>512 Ki to 50 Ti</p>
 </td>
 </tr>
-<tr id="en-us_topic_0150885187_row1230184492014"><td class="cellrowborder" valign="top" width="33.23%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p9499133571212"><a name="en-us_topic_0150885187_p9499133571212"></a><a name="en-us_topic_0150885187_p9499133571212"></a>OceanStor Pacific series 8.1.0</p>
+<tr id="en-us_topic_0150885187_row1230184492014"><td class="cellrowborder" valign="top" width="33.23%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p9499133571212"><a name="en-us_topic_0150885187_p9499133571212"></a><a name="en-us_topic_0150885187_p9499133571212"></a>OceanStor Pacific series</p>
 </td>
 <td class="cellrowborder" valign="top" width="19.89%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0150885187_p7650193417133"><a name="en-us_topic_0150885187_p7650193417133"></a><a name="en-us_topic_0150885187_p7650193417133"></a>64 Mi to 512 Ti</p>
 </td>
@@ -132,7 +132,7 @@ After configuring a StorageClass, you can use the StorageClass to configure a PV
 </th>
 </tr>
 </thead>
-<tbody><tr id="en-us_topic_0150885187_row12195156161015"><td class="cellrowborder" valign="top" width="33.07330733073307%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p1919526121011"><a name="en-us_topic_0150885187_p1919526121011"></a><a name="en-us_topic_0150885187_p1919526121011"></a>OceanStor Dorado 6.1.2</p>
+<tbody><tr id="en-us_topic_0150885187_row12195156161015"><td class="cellrowborder" valign="top" width="33.07330733073307%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p1919526121011"><a name="en-us_topic_0150885187_p1919526121011"></a><a name="en-us_topic_0150885187_p1919526121011"></a>OceanStor Dorado</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.412041204120417%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0150885187_p131951613101"><a name="en-us_topic_0150885187_p131951613101"></a><a name="en-us_topic_0150885187_p131951613101"></a>512 Ki to 256 Ti</p>
 </td>
@@ -141,7 +141,7 @@ After configuring a StorageClass, you can use the StorageClass to configure a PV
 <td class="cellrowborder" valign="top" width="23.002300230023007%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0150885187_p15195865109"><a name="en-us_topic_0150885187_p15195865109"></a><a name="en-us_topic_0150885187_p15195865109"></a>512 Ki to 500 Ti</p>
 </td>
 </tr>
-<tr id="en-us_topic_0150885187_row171951969107"><td class="cellrowborder" valign="top" width="33.07330733073307%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p1519514631010"><a name="en-us_topic_0150885187_p1519514631010"></a><a name="en-us_topic_0150885187_p1519514631010"></a>OceanStor Pacific series 8.1.0</p>
+<tr id="en-us_topic_0150885187_row171951969107"><td class="cellrowborder" valign="top" width="33.07330733073307%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0150885187_p1519514631010"><a name="en-us_topic_0150885187_p1519514631010"></a><a name="en-us_topic_0150885187_p1519514631010"></a>OceanStor Pacific series</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.412041204120417%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0150885187_p1619519612104"><a name="en-us_topic_0150885187_p1619519612104"></a><a name="en-us_topic_0150885187_p1619519612104"></a>64 Mi to 512 Ti</p>
 </td>

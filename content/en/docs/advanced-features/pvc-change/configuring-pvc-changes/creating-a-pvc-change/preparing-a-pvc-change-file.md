@@ -55,6 +55,7 @@ The sample template of the PVC change file is  **/examples/volumemodifyclaim.yam
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.6.1.4 "><p id="p1782413895514"><a name="p1782413895514"></a><a name="p1782413895514"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p1482417805520"><a name="p1482417805520"></a><a name="p1482417805520"></a>The name must comply with the naming rules of a <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-subdomain-names" target="_blank" rel="noopener noreferrer">DNS subdomain name</a>. The value can contain a maximum of 63 characters, including digits, lowercase letters, hyphens (-), and periods (.). It must start and end with a lowercase letter or digit.</p>
+<p id="p1890916560354"><a name="p1890916560354"></a><a name="p1890916560354"></a>Note: During a PVC change, the original StorageClass is backed up. The name of the backup StorageClass is <em id="i1932131117367"><a name="i1932131117367"></a><a name="i1932131117367"></a>&lt;Original StorageClass name&gt;&lt;VolumeModifyClaim name&gt;</em>, and must comply with the StorageClass naming rules.</p>
 </td>
 </tr>
 <tr id="row1482498135514"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p18241589552"><a name="p18241589552"></a><a name="p18241589552"></a>spec.source.kind</p>
@@ -108,7 +109,7 @@ The sample template of the PVC change file is  **/examples/volumemodifyclaim.yam
 </tbody>
 </table>
 
->![](/css-docs/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >-   The  **spec.source.kind**  and  **spec.source.name**  parameters are used to specify the volume change scope. For example, if they are set to a StorageClass and the corresponding name respectively, all PVCs in the  **Bound**  state provisioned using the target StorageClass will be changed.
 >-   After all associated PVCs are changed, Huawei CSI will replace the original StorageClass and add the  **spec.parameters**  parameter of the VolumeModifyClaim so that the PVCs meet the StorageClass definition.
 

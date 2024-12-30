@@ -16,10 +16,10 @@ To use the CSI image on the container management platform, you need to import th
 
 The installation of Huawei CSI depends on the following image files provided by Huawei. Import and upload the image files in sequence. For details about how to obtain the image files, see  [Downloading the Huawei CSI Software Package](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package).
 
--   huawei-csi-v4.5.0-arch.tar
--   storage-backend-controller-v4.5.0-_arch_.tar
--   storage-backend-sidecar-v4.5.0-_arch_.tar
--   huawei-csi-extender-v4.5.0-arch.tar
+-   huawei-csi-v4.6.0-arch.tar
+-   storage-backend-controller-v4.6.0-_arch_.tar
+-   storage-backend-sidecar-v4.6.0-_arch_.tar
+-   huawei-csi-extender-v4.6.0-arch.tar
 
 **Prerequisites**
 
@@ -27,25 +27,25 @@ A Linux host with Docker installed is available, and the host can access the ima
 
 **Procedure**
 
-1.  Run the  **docker load -i huawei-csi-v4.5.0-arch.tar**  command to import the CSI image to the current node.
+1.  Run the following command to import the CSI image to the current node. The value of  _arch_  can be  **X86**,  **ARM**, or  **PPC64LE**.
 
     ```
-    docker load -i huawei-csi-v4.5.0-arch.tar 
+    docker load -i huawei-csi-v4.6.0-<arch>.tar 
     ```
 
-2.  Run the  **docker tag huawei-csi:4.5.0  repo.huawei.com/huawei-csi:4.5.0**  command to add the image repository address to the image tag.  **repo.huawei.com**  indicates the image repository address.
+2.  Run the following command to add the image repository address to the image tag.  **repo.huawei.com**  indicates the image repository address.
 
     ```
-    docker tag huawei-csi:4.5.0 repo.huawei.com/huawei-csi:4.5.0
+    docker tag huawei-csi:4.6.0 <repo.huawei.com>/huawei-csi:4.6.0
     ```
 
-3.  Run the  **docker push repo.huawei.com/huawei-csi:4.5.0**  command to upload the CSI image to the image repository.  **repo.huawei.com**  indicates the image repository address.
+3.  Run the following command to upload the CSI image to the image repository.  **repo.huawei.com**  indicates the image repository address.
 
     ```
-    docker push repo.huawei.com/huawei-csi:4.5.0
+    docker push <repo.huawei.com>/huawei-csi:4.6.0
     ```
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >-   You can also use containerd to import and upload the images.
 >-   For details about how to import and upload images to the CCE or CCE Agile platform, see the user manual of the platform.
 
@@ -63,7 +63,7 @@ If the image has been uploaded to the image repository, skip this section.
 1.  Use a remote access tool, such as PuTTY, to log in to the node where the image is to be imported through the management IP address.
 2.  Copy the  **image**  directory in the Kubernetes CSI component package to any directory on the current node.
 3.  Run the  **cd image**  command to go to the  **image**  working directory. For details about the tool path, see  [Table 1](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
-4.  Run the following commands in sequence to import all Huawei CSI images in the image directory to the local node. In the commands,  _name_  indicates the name of a .tar image package.
+4.  Run the following commands in sequence to import all Huawei CSI images in the  **image**  directory to the local node. In the commands,  _name_  indicates the name of a .tar image package.
 
     Run the following command using the Docker container engine:
 
@@ -83,6 +83,6 @@ If the image has been uploaded to the image repository, skip this section.
     podman load -i <name>.tar
     ```
 
-    >![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+    >![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
     >If another container engine is installed on the node, use the image import command for the corresponding container engine.
 

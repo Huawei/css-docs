@@ -133,7 +133,7 @@ An example template of the backend configuration file is  **/examples/backend/ba
 <td class="cellrowborder" valign="top" width="11.881188118811878%" headers="mcps1.2.6.1.4 "><p id="p159191115165113"><a name="p159191115165113"></a><a name="p159191115165113"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="27.72277227722772%" headers="mcps1.2.6.1.5 "><p id="p592814711497"><a name="p592814711497"></a><a name="p592814711497"></a>If ALUA is enabled for the host multipathing software, ensure that the backend ALUA configuration is the same as that of the host ALUA configuration.</p>
-<p id="p9408545184515"><a name="p9408545184515"></a><a name="p9408545184515"></a>For details about the ALUA configuration, see <a href="configuring-alua-using-helm.md">Configuring ALUA Using Helm</a>.</p>
+<p id="p9408545184515"><a name="p9408545184515"></a><a name="p9408545184515"></a>For details about the ALUA configuration, see <a href="/css-docs/docs/advanced-features/configuring-alua/configuring-alua-using-helm">Configuring ALUA Using Helm</a>.</p>
 </td>
 </tr>
 <tr id="row69321538172918"><td class="cellrowborder" valign="top" width="13.86138613861386%" headers="mcps1.2.6.1.1 "><p id="p2932193817290"><a name="p2932193817290"></a><a name="p2932193817290"></a>parameters.parentname</p>
@@ -180,7 +180,7 @@ An example template of the backend configuration file is  **/examples/backend/ba
 </td>
 <td class="cellrowborder" valign="top" width="11.881188118811878%" headers="mcps1.2.6.1.4 "><p id="p1191961545114"><a name="p1191961545114"></a><a name="p1191961545114"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.72277227722772%" headers="mcps1.2.6.1.5 "><p id="p176418120111"><a name="p176418120111"></a><a name="p176418120111"></a>This parameter is mandatory if storage topology awareness is enabled. For details, see <a href="configuring-storage-topology-awareness-using-helm.md">Configuring Storage Topology Awareness Using Helm</a>.</p>
+<td class="cellrowborder" valign="top" width="27.72277227722772%" headers="mcps1.2.6.1.5 "><p id="p176418120111"><a name="p176418120111"></a><a name="p176418120111"></a>This parameter is mandatory if storage topology awareness is enabled. For details, see <a href="/css-docs/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm">Configuring Storage Topology Awareness Using Helm</a>.</p>
 </td>
 </tr>
 <tr id="row11363104441311"><td class="cellrowborder" valign="top" width="13.86138613861386%" headers="mcps1.2.6.1.1 "><p id="p0363164461310"><a name="p0363164461310"></a><a name="p0363164461310"></a>maxClientThreads</p>
@@ -191,7 +191,7 @@ An example template of the backend configuration file is  **/examples/backend/ba
 </td>
 <td class="cellrowborder" valign="top" width="11.881188118811878%" headers="mcps1.2.6.1.4 "><p id="p16919715145113"><a name="p16919715145113"></a><a name="p16919715145113"></a>30</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.72277227722772%" headers="mcps1.2.6.1.5 "><p id="p7363204412133"><a name="p7363204412133"></a><a name="p7363204412133"></a>If this parameter is not specified, the default maximum number of connections is 30.</p>
+<td class="cellrowborder" valign="top" width="27.72277227722772%" headers="mcps1.2.6.1.5 "><p id="p7363204412133"><a name="p7363204412133"></a><a name="p7363204412133"></a>The value ranges from 1 to 30. If this parameter is not set or the value is not in the specified range, the default value 30 is used.</p>
 </td>
 </tr>
 </tbody>

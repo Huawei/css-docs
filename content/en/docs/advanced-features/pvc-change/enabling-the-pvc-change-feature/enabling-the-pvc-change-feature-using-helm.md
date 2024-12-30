@@ -8,7 +8,7 @@ weight: 1
 ## Prerequisites{#section10631153612202}
 
 -   You have installed Huawei CSI using Helm.
--   Huawei CSI v4.5.0  or later is used.
+-   Huawei CSI v4.6.0  or later is used.
 
 ## Procedure{#section1361061612118}
 
@@ -39,7 +39,7 @@ weight: 1
     customresourcedefinition.apiextensions.k8s.io/volumemodifycontents.xuanwu.huawei.io configured
     ```
 
-    >![](/css-docs/public_sys-resources/en/icon-note.gif)
+    >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
     >If the command output contains  **Warning: resource customresourcedefinitions/volumemodifycontents.xuanwu.huawei.io is missing the kubectl.kubernetes.io/last-applied-configuration...**, you can ignore it. This message is displayed because the  **kubectl create**  command instead of the  **kubectl apply**  command is used for installation by Helm.
 
 4.  <a name="li1230915254221"></a>Run the following command to obtain the original service configuration file.

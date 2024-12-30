@@ -7,6 +7,8 @@ weight: 3
 
 Huawei CSI plug-in is compatible with Huawei OceanStor series all-flash storage and hybrid flash storage. The following table lists the supported storage versions.
 
+## Supported Huawei Enterprise Storage{#section6374917361}
+
 **Table  1**  Supported Huawei enterprise storage
 
 <a name="table993123194920"></a>
@@ -28,16 +30,18 @@ Huawei CSI plug-in is compatible with Huawei OceanStor series all-flash storage 
 </tr>
 <tr id="row096032118493"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0150885201_p112034513115"><a name="en-us_topic_0150885201_p112034513115"></a><a name="en-us_topic_0150885201_p112034513115"></a>OceanStor</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0150885201_p612014452314"><a name="en-us_topic_0150885201_p612014452314"></a><a name="en-us_topic_0150885201_p612014452314"></a>6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0150885201_p612014452314"><a name="en-us_topic_0150885201_p612014452314"></a><a name="en-us_topic_0150885201_p612014452314"></a>6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00</p>
 </td>
 </tr>
 <tr id="row17366171818495"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p193661118204917"><a name="p193661118204917"></a><a name="p193661118204917"></a>OceanStor Dorado</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p3366618184918"><a name="p3366618184918"></a><a name="p3366618184918"></a>6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p3366618184918"><a name="p3366618184918"></a><a name="p3366618184918"></a>6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+## Features Supported by Huawei Enterprise Storage{#section0652122673620}
 
 Huawei CSI plug-in supports the following features for Huawei enterprise storage.
 
@@ -66,11 +70,11 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 <p id="p11579201753211"><a name="p11579201753211"></a><a name="p11579201753211"></a></p>
 </td>
 <td class="cellrowborder" rowspan="3" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>SAN: FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup144069810307"><a name="sup144069810307"></a><a name="sup144069810307"></a>3</sup></p>
-<p id="p20838142381814"><a name="p20838142381814"></a><a name="p20838142381814"></a>NAS: NFS 3/4.0/4.1</p>
+<p id="p20838142381814"><a name="p20838142381814"></a><a name="p20838142381814"></a>NAS: NFS 3/4.0/4.1/4.2<sup id="sup7228111612318"><a name="sup7228111612318"></a><a name="sup7228111612318"></a>4</sup></p>
 <p id="p7579181715326"><a name="p7579181715326"></a><a name="p7579181715326"></a></p>
 </td>
 <td class="cellrowborder" rowspan="3" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>SAN: FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup19167519194320"><a name="sup19167519194320"></a><a name="sup19167519194320"></a>3</sup></p>
-<p id="p12839143282719"><a name="p12839143282719"></a><a name="p12839143282719"></a>NAS: NFS 3/4.0/4.1<sup id="sup5839532102713"><a name="sup5839532102713"></a><a name="sup5839532102713"></a>4</sup></p>
+<p id="p12839143282719"><a name="p12839143282719"></a><a name="p12839143282719"></a>NAS: NFS 3/4.0/4.1/4.2<sup id="sup5839532102713"><a name="sup5839532102713"></a><a name="sup5839532102713"></a>4</sup></p>
 <p id="p757919176329"><a name="p757919176329"></a><a name="p757919176329"></a></p>
 </td>
 </tr>
@@ -207,11 +211,11 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 -   Note 1: Manage Provisioning is a volume management feature customized by Huawei CSI. This feature allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
 -   Note 2: If the user's container platform is deployed in a virtualization environment, only iSCSI networking is supported.
 -   Note 3: If NVMe over RoCE or NVMe over FC is used, the version of the nvme-cli tool on worker nodes must be 1.9 or later. To query the version, run the  **nvme version**  command.
--   Note 4: Only OceanStor Dorado 6.1.0 and later versions support NFS. Only OceanStor Dorado 6.1.3 and later versions support NFS 4.1. OceanStor Dorado 6.1.7 and later versions support NFS over RDMA.
+-   Note 4: Only OceanStor/OceanStor Dorado 6.1.0 and later versions support NFS. Only OceanStor/OceanStor Dorado 6.1.3 and later versions support NFS 4.1. OceanStor/OceanStor Dorado 6.1.7 and later versions support NFS over RDMA. OceanStor/OceanStor Dorado 6.1.8 and later versions support NFS 4.2.
 -   Note 5: The provisioned PVC whose  **volumeType**  is  **lun**  and  **accessModes**  is  **ReadOnlyMany**  does not support capacity expansion.
 -   Note 6: Only system users can configure QoS.
 -   Note 7: Only the active-active \(AA\) mode is supported.
--   Note 8: Only OceanStor Dorado 6.1.3 and later versions support multi-tenant.
+-   Note 8: Only OceanStor/OceanStor Dorado 6.1.3 and later versions support multi-tenant.
 
 Huawei CSI plug-in supports the following Dtree features for Huawei enterprise storage.
 
@@ -298,7 +302,7 @@ Huawei CSI plug-in supports the following Dtree features for Huawei enterprise s
 </thead>
 <tbody><tr id="row132mcpsimp"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p134mcpsimp"><a name="p134mcpsimp"></a><a name="p134mcpsimp"></a>OceanStor Dorado</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p136mcpsimp"><a name="p136mcpsimp"></a><a name="p136mcpsimp"></a>6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p136mcpsimp"><a name="p136mcpsimp"></a><a name="p136mcpsimp"></a>6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00</p>
 </td>
 </tr>
 </tbody>

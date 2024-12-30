@@ -32,7 +32,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633715710454"><a name="en-us_topic_0000001324610777_p1633715710454"></a><a name="en-us_topic_0000001324610777_p1633715710454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.5.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.6.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.5.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.6.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.5.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.6.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.5.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.6.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p4337185713453"><a name="en-us_topic_0000001324610777_p4337185713453"></a><a name="en-us_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -68,7 +68,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633725724512"><a name="en-us_topic_0000001324610777_p1633725724512"></a><a name="en-us_topic_0000001324610777_p1633725724512"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1733785714453"><a name="en-us_topic_0000001324610777_p1733785714453"></a><a name="en-us_topic_0000001324610777_p1733785714453"></a>k8s.gcr.io/sig-storage/livenessprobe:v2.5.0</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1733785714453"><a name="en-us_topic_0000001324610777_p1733785714453"></a><a name="en-us_topic_0000001324610777_p1733785714453"></a><span id="text9419635285"><a name="text9419635285"></a><a name="text9419635285"></a>registry.k8s.io/sig-storage/livenessprobe:v2.12.0</span></p>
 </td>
 </tr>
 <tr id="row345374716195"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p333755715453"><a name="en-us_topic_0000001324610777_p333755715453"></a><a name="en-us_topic_0000001324610777_p333755715453"></a>images.sidecar.provisioner</p>
@@ -77,7 +77,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1033711577456"><a name="en-us_topic_0000001324610777_p1033711577456"></a><a name="en-us_topic_0000001324610777_p1033711577456"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p15337125716458"><a name="en-us_topic_0000001324610777_p15337125716458"></a><a name="en-us_topic_0000001324610777_p15337125716458"></a>k8s.gcr.io/sig-storage/csi-provisioner:v3.0.0</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p15337125716458"><a name="en-us_topic_0000001324610777_p15337125716458"></a><a name="en-us_topic_0000001324610777_p15337125716458"></a><span id="text01042496818"><a name="text01042496818"></a><a name="text01042496818"></a>registry.k8s.io/sig-storage/csi-provisioner:v3.6.0</span></p>
 </td>
 </tr>
 <tr id="row145324715192"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p19337155744517"><a name="en-us_topic_0000001324610777_p19337155744517"></a><a name="en-us_topic_0000001324610777_p19337155744517"></a>images.sidecar.attacher</p>
@@ -86,7 +86,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p18337155714518"><a name="en-us_topic_0000001324610777_p18337155714518"></a><a name="en-us_topic_0000001324610777_p18337155714518"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p7337457134516"><a name="en-us_topic_0000001324610777_p7337457134516"></a><a name="en-us_topic_0000001324610777_p7337457134516"></a>k8s.gcr.io/sig-storage/csi-attacher:v3.4.0</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p7337457134516"><a name="en-us_topic_0000001324610777_p7337457134516"></a><a name="en-us_topic_0000001324610777_p7337457134516"></a><span id="text1381095717816"><a name="text1381095717816"></a><a name="text1381095717816"></a>registry.k8s.io/sig-storage/csi-attacher:v4.4.0</span></p>
 </td>
 </tr>
 <tr id="row94532047111915"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p13337175711459"><a name="en-us_topic_0000001324610777_p13337175711459"></a><a name="en-us_topic_0000001324610777_p13337175711459"></a>images.sidecar.resizer</p>
@@ -95,7 +95,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p93375572452"><a name="en-us_topic_0000001324610777_p93375572452"></a><a name="en-us_topic_0000001324610777_p93375572452"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p153371257184518"><a name="en-us_topic_0000001324610777_p153371257184518"></a><a name="en-us_topic_0000001324610777_p153371257184518"></a>k8s.gcr.io/sig-storage/csi-resizer:v1.4.0</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p153371257184518"><a name="en-us_topic_0000001324610777_p153371257184518"></a><a name="en-us_topic_0000001324610777_p153371257184518"></a><span id="text11193167917"><a name="text11193167917"></a><a name="text11193167917"></a>registry.k8s.io/sig-storage/csi-resizer:v1.9.0</span></p>
 </td>
 </tr>
 <tr id="row9453124771918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p833785764516"><a name="en-us_topic_0000001324610777_p833785764516"></a><a name="en-us_topic_0000001324610777_p833785764516"></a>images.sidecar.snapshotter</p>
@@ -104,7 +104,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1833765712454"><a name="en-us_topic_0000001324610777_p1833765712454"></a><a name="en-us_topic_0000001324610777_p1833765712454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1033755713457"><a name="en-us_topic_0000001324610777_p1033755713457"></a><a name="en-us_topic_0000001324610777_p1033755713457"></a>k8s.gcr.io/sig-storage/csi-snapshotter:v4.2.1</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1033755713457"><a name="en-us_topic_0000001324610777_p1033755713457"></a><a name="en-us_topic_0000001324610777_p1033755713457"></a><span id="text101211917799"><a name="text101211917799"></a><a name="text101211917799"></a>registry.k8s.io/sig-storage/csi-snapshotter:v6.3.0</span></p>
 </td>
 </tr>
 <tr id="row196140122014"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p10337557174514"><a name="en-us_topic_0000001324610777_p10337557174514"></a><a name="en-us_topic_0000001324610777_p10337557174514"></a>images.sidecar.snapshotController</p>
@@ -113,7 +113,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p10337457134511"><a name="en-us_topic_0000001324610777_p10337457134511"></a><a name="en-us_topic_0000001324610777_p10337457134511"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p0337195724520"><a name="en-us_topic_0000001324610777_p0337195724520"></a><a name="en-us_topic_0000001324610777_p0337195724520"></a>k8s.gcr.io/sig-storage/snapshot-controller:v4.2.1</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p0337195724520"><a name="en-us_topic_0000001324610777_p0337195724520"></a><a name="en-us_topic_0000001324610777_p0337195724520"></a><span id="text28281726693"><a name="text28281726693"></a><a name="text28281726693"></a>registry.k8s.io/sig-storage/snapshot-controller:v6.3.0</span></p>
 </td>
 </tr>
 <tr id="row84580467201"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p10337165714454"><a name="en-us_topic_0000001324610777_p10337165714454"></a><a name="en-us_topic_0000001324610777_p10337165714454"></a>images.sidecar.registrar</p>
@@ -122,13 +122,13 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p83371057164510"><a name="en-us_topic_0000001324610777_p83371057164510"></a><a name="en-us_topic_0000001324610777_p83371057164510"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1833711578459"><a name="en-us_topic_0000001324610777_p1833711578459"></a><a name="en-us_topic_0000001324610777_p1833711578459"></a>k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.3.0</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1833711578459"><a name="en-us_topic_0000001324610777_p1833711578459"></a><a name="en-us_topic_0000001324610777_p1833711578459"></a><span id="text116171043295"><a name="text116171043295"></a><a name="text116171043295"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.9.0</span></p>
 </td>
 </tr>
 </tbody>
 </table>
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >-   For details about the values of  **huaweiCSIService**,  **storageBackendSidecar**,  **storageBackendController**, and  **huaweiCSIExtender**, see  [Uploading a Huawei CSI Image](/docs/installation-and-deployment/installation-preparations/uploading-a-huawei-csi-image). Use the name and version of the finally generated image.
 >-   For details about other sidecar image parameters, see  [Checking the Images on Which CSI Depends](/docs/installation-and-deployment/installation-preparations/checking-the-images-on-which-csi-depends). Use the name and version of the finally uploaded image.
 
@@ -288,10 +288,32 @@ The controller parameters are used to configure the huawei-csi-controller compon
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p148791050164015"><a name="p148791050164015"></a><a name="p148791050164015"></a>The default value is recommended.</p>
 </td>
 </tr>
+<tr id="row1683154018317"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p12683194016316"><a name="p12683194016316"></a><a name="p12683194016316"></a>controller.exportCsiService.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p6683240539"><a name="p6683240539"></a><a name="p6683240539"></a>Whether to run CSI services on the Service of the Kubernetes cluster.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p2068311401835"><a name="p2068311401835"></a><a name="p2068311401835"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1168416401330"><a name="p1168416401330"></a><a name="p1168416401330"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p10684104015313"><a name="p10684104015313"></a><a name="p10684104015313"></a>After this function is enabled, other services in the Kubernetes cluster can access CSI services through gRPC.</p>
+</td>
+</tr>
+<tr id="row851953511189"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p16519735141815"><a name="p16519735141815"></a><a name="p16519735141815"></a>controller.exportCsiService.port</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p1151953541816"><a name="p1151953541816"></a><a name="p1151953541816"></a>Port used when CSI services run on the Service of the Kubernetes cluster.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p65201635201816"><a name="p65201635201816"></a><a name="p65201635201816"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1052033591813"><a name="p1052033591813"></a><a name="p1052033591813"></a>9090</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p175201135121817"><a name="p175201135121817"></a><a name="p175201135121817"></a>If a port conflict occurs, change the port number to an idle one.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
->![](/css-docs/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >If  **controller.snapshot.enabled**  is set to  **true**, you need to install the volume snapshot CRD resource in the  **helm/crd/snapshot-crds**  directory.
 
 ## node Parameters{#section374014171581}
@@ -342,7 +364,7 @@ The node parameters are used to configure the huawei-csi-node component.
 </td>
 <td class="cellrowborder" valign="top" width="13.13131313131313%" headers="mcps1.2.6.1.3 "><p id="p396420185912"><a name="p396420185912"></a><a name="p396420185912"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.6.1.4 ">- key: "node.kubernetes.io/memory-pressure"
+<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.6.1.4 "><pre class="screen" id="screen135832458509"><a name="screen135832458509"></a><a name="screen135832458509"></a>- key: "node.kubernetes.io/memory-pressure"
   operator: "Exists"
   effect: "NoExecute"
 - key: "node.kubernetes.io/disk-pressure"
@@ -350,7 +372,7 @@ The node parameters are used to configure the huawei-csi-node component.
   effect: "NoExecute"
 - key: "node.kubernetes.io/network-unavailable"
   operator: "Exists"
-  effect: "NoExecute"
+  effect: "NoExecute"</pre>
 </td>
 <td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 "><p id="p596410085910"><a name="p596410085910"></a><a name="p596410085910"></a>For details about taints and tolerations, see <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank" rel="noopener noreferrer">Taints and Tolerations</a>.</p>
 </td>
@@ -375,7 +397,7 @@ The node parameters are used to configure the huawei-csi-node component.
 <td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.6.1.4 "><p id="p104631416105012"><a name="p104631416105012"></a><a name="p104631416105012"></a>volumeDevices</p>
 </td>
 <td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 "><p id="p19463181655017"><a name="p19463181655017"></a><a name="p19463181655017"></a>After a block device is successfully mounted, the directory structure of the mount path is as follows:</p>
-/var/lib/kubelet/plugins/kubernetes.io/csi/{kubeletVolumeDevicesDirName}/publish/{specName}/{podUID}
+<pre class="screen" id="screen64610218547"><a name="screen64610218547"></a><a name="screen64610218547"></a>/var/lib/kubelet/plugins/kubernetes.io/csi/{kubeletVolumeDevicesDirName}/publish/{specName}/{podUID}</pre>
 </td>
 </tr>
 </tbody>
@@ -579,7 +601,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103486342462"><a name="en-us_topic_0000001324610777_p103486342462"></a><a name="en-us_topic_0000001324610777_p103486342462"></a>file</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1429803195"><a name="b1429803195"></a><a name="b1429803195"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b933860580"><a name="b933860580"></a><a name="b933860580"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
 <p id="p1676211161707"><a name="p1676211161707"></a><a name="p1676211161707"></a>When the value is <strong id="b134821913194316"><a name="b134821913194316"></a><a name="b134821913194316"></a>console</strong>, logs are retained in the temporary space of the Pod where CSI is located. When the Pod where CSI is located is destroyed, the logs are also destroyed.</p>
 </td>
 </tr>
@@ -631,7 +653,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </tbody>
 </table>
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >If Huawei CSI has been deployed in your container environment, ensure that the value of  **csiDriver.driverName**  is the same as that configured during previous deployment. Otherwise, existing volumes or snapshots provisioned by Huawei CSI in the system cannot be managed by the newly deployed Huawei CSI.
 
 ## Other Parameters{#section11500468593}
@@ -771,7 +793,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 </tbody>
 </table>
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >Ensure that the namespace entered in  **kubernetes.namespace**  exists on Kubernetes. If the namespace does not exist, run the following command to create it. In this example, the namespace for running Huawei CSI is  **huawei-csi**.
 >```
 >kubectl create namespace huawei-csi

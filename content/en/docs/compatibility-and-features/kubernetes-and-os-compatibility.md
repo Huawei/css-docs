@@ -18,15 +18,15 @@ Huawei CSI plug-in supports the following container management platforms.
 </thead>
 <tbody><tr id="row774818457119"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p774815451619"><a name="p774815451619"></a><a name="p774815451619"></a>Kubernetes</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1074815457112"><a name="p1074815457112"></a><a name="p1074815457112"></a>1.16 to 1.30</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1074815457112"><a name="p1074815457112"></a><a name="p1074815457112"></a>1.16 to 1.31</p>
 </td>
 </tr>
 <tr id="row1374812458110"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15748194519116"><a name="p15748194519116"></a><a name="p15748194519116"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1774819451114"><a name="p1774819451114"></a><a name="p1774819451114"></a>4.6 EUS, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1774819451114"><a name="p1774819451114"></a><a name="p1774819451114"></a>4.6 EUS, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17</p>
 </td>
 </tr>
-<tr id="row1526064545317"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1426094595313"><a name="p1426094595313"></a><a name="p1426094595313"></a>Tanzu Kubernetes</p>
+<tr id="row1526064545317"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1426094595313"><a name="p1426094595313"></a><a name="p1426094595313"></a>Tanzu Kubernetes Grid Integrated</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p626054555310"><a name="p626054555310"></a><a name="p626054555310"></a>TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18</p>
 </td>
@@ -44,7 +44,7 @@ Huawei CSI plug-in supports the following container management platforms.
 </tbody>
 </table>
 
->![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
 >-   The connection between Huawei CSI and Tanzu Kubernetes supports only the centralized storage NAS scenario. For the related FAQ, see  [Common Problems and Solutions for Interconnecting with the Tanzu Kubernetes Cluster](/docs/troubleshooting/common-problems-and-solutions-for-interconnecting-with-the-tanzu-kubernetes-cluster).
 >-   The connection between Huawei CSI and CCE or CCE Agile supports only centralized storage.
 
@@ -112,7 +112,7 @@ The following table lists the OSs and multipathing software supported by the Hua
 </tr>
 <tr id="row10343113716818"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p7442251798"><a name="p7442251798"></a><a name="p7442251798"></a>Red Hat CoreOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.6, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15</p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.6, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17</p>
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p115134245168"><a name="p115134245168"></a><a name="p115134245168"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
@@ -218,9 +218,9 @@ The following table lists the OSs and multipathing software supported by the Hua
 <td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p9412146192210"><a name="p9412146192210"></a><a name="p9412146192210"></a>Not supported</p>
 </td>
 </tr>
-<tr id="row141121958174817"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p411217583481"><a name="p411217583481"></a><a name="p411217583481"></a>Red Hat Enterprise Linux x86_64</p>
+<tr id="row8426659627"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p411217583481"><a name="p411217583481"></a><a name="p411217583481"></a>Red Hat Enterprise Linux x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 9.4</p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 8.9, 8.10, 9.4</p>
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p141128581485"><a name="p141128581485"></a><a name="p141128581485"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
@@ -236,7 +236,7 @@ Note 2: Only Kylin ARM V10 SP3 supports UltraPath 31.3.0.
 
 Note 3: Anolis OS supports only OceanStor Pacific storage.
 
->![](/css-docs/public_sys-resources/en/icon-note.gif)
+>![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >For DM-Multipath 0.7, some virtual devices may not be displayed in the command output after the  **multipathd show maps**  command is executed. Therefore, you are advised to use version 0.8 or later.
 >You can query the DM-Multipath version in either of the following ways:
 >-   If the rpm package is used, run the  **rpm -qa | grep multipath**  or  **rpm -qa | grep device-mapper**  command.

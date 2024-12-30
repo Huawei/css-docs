@@ -72,7 +72,7 @@ To implement dynamic volume provisioning, perform the following steps:
     mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO            mysc           12s
     ```
 
-    >![](/css-docs/public_sys-resources/en/icon-notice.gif) 
+    >![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
     >-   After the PVC is created, if the PVC is in the  **Pending**  state after a long time \(for example, one minute\), refer to  [When a PVC Is Created, the PVC Is in the Pending State](/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state).
     >-   You are advised to create or delete a maximum of 100 PVCs in a batch.
 
@@ -107,6 +107,9 @@ spec:
         persistentVolumeClaim: 
           claimName:  mypvc  # name of PVC
 ```
+
+>![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
+>If Pods are batch created using PVCs, the Pods are in the  **ContainerCreating**  status for a long time, and the huawei-csi-node service is in the  **OOMKilled**  status, the memory of the huawei-csi-node service is insufficient. In this case, increase the memory limit of huawei-csi-node by following the instructions in  [Table 1](/docs/appendix/huawei-csi-resource-management#table4106151116363).
 
 
 

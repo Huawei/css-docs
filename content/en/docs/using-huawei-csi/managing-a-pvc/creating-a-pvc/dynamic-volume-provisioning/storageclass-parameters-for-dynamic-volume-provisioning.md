@@ -150,7 +150,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p2398810105211"><a name="p2398810105211"></a><a name="p2398810105211"></a>3</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0000001162111564_p1775091110298"><a name="en-us_topic_0000001162111564_p1775091110298"></a><a name="en-us_topic_0000001162111564_p1775091110298"></a><strong id="b176541499232"><a name="b176541499232"></a><a name="b176541499232"></a>4</strong> indicates the highest speed. This parameter is available when you clone a PVC or create a PVC using a snapshot. For details, see <a href="en-us_topic_0000002032622617.md">Cloning a PVC</a> or <a href="en-us_topic_0000001996182894.md">Creating a PVC Using a Snapshot</a>.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0000001162111564_p1775091110298"><a name="en-us_topic_0000001162111564_p1775091110298"></a><a name="en-us_topic_0000001162111564_p1775091110298"></a><strong id="b176541499232"><a name="b176541499232"></a><a name="b176541499232"></a>4</strong> indicates the highest speed. This parameter is available when you clone a PVC or create a PVC using a snapshot. For details, see <a href="/css-docs/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc">Cloning a PVC</a> or <a href="/css-docs/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot">Creating a PVC Using a Snapshot</a>.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0000001162111564_row18750161119295"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p133711471387"><a name="p133711471387"></a><a name="p133711471387"></a>parameters.applicationType</p>
@@ -268,7 +268,7 @@ weight: 2
 <tr id="row99331045154111"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p933031214424"><a name="p933031214424"></a><a name="p933031214424"></a>parameters.accesskrb5i</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p7359241154"><a name="p7359241154"></a><a name="p7359241154"></a>Configures the krb5i security protocol.</p>
-<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b131031938"><a name="b131031938"></a><a name="b131031938"></a>read_write</strong>: read and write</li><li><strong id="b437257550"><a name="b437257550"></a><a name="b437257550"></a>none</strong>: no permission</li></ul>
+<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b1089724215"><a name="b1089724215"></a><a name="b1089724215"></a>read_write</strong>: read and write</li><li><strong id="b730091191"><a name="b730091191"></a><a name="b730091191"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p129331245154111"><a name="p129331245154111"></a><a name="p129331245154111"></a>No</p>
 </td>
@@ -280,7 +280,7 @@ weight: 2
 <tr id="row47801443164117"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p11892181264220"><a name="p11892181264220"></a><a name="p11892181264220"></a>parameters.accesskrb5p</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p19699145314447"><a name="p19699145314447"></a><a name="p19699145314447"></a>Configures the krb5p security protocol.</p>
-<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b319669365"><a name="b319669365"></a><a name="b319669365"></a>read_write</strong>: read and write</li><li><strong id="b1647658401"><a name="b1647658401"></a><a name="b1647658401"></a>none</strong>: no permission</li></ul>
+<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b1988855912"><a name="b1988855912"></a><a name="b1988855912"></a>read_write</strong>: read and write</li><li><strong id="b896429942"><a name="b896429942"></a><a name="b896429942"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1780134314118"><a name="p1780134314118"></a><a name="p1780134314118"></a>No</p>
 </td>
@@ -313,6 +313,19 @@ weight: 2
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p5398131019522"><a name="p5398131019522"></a><a name="p5398131019522"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p826718573213"><a name="p826718573213"></a><a name="p826718573213"></a>OceanStor Dorado 6.1.5+ and OceanStor 6.1.5+ NAS storage devices are supported.</p>
+</td>
+</tr>
+<tr id="row1199202362211"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p12992202310228"><a name="p12992202310228"></a><a name="p12992202310228"></a>parameters.disableVerifyCapacity</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p1899222312222"><a name="p1899222312222"></a><a name="p1899222312222"></a>Whether to disable volume capacity verification. After this function is disabled, the system will not verify whether the volume capacity is an integer multiple of the sector size.</p>
+<p id="p4236912172515"><a name="p4236912172515"></a><a name="p4236912172515"></a>The value can be:</p>
+<a name="ul7370193012510"></a><a name="ul7370193012510"></a><ul id="ul7370193012510"><li>"true": disables volume capacity verification.</li><li>"false": enables volume capacity verification.</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p149923239227"><a name="p149923239227"></a><a name="p149923239227"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p10992182382217"><a name="p10992182382217"></a><a name="p10992182382217"></a>"false"</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul199806344293"></a><a name="ul199806344293"></a><ul id="ul199806344293"><li>For OceanStor Dorado and OceanStor storage, the sector size is 512 B.</li><li>For OceanStor Pacific storage, the sector size is 1 MiB.</li></ul>
 </td>
 </tr>
 <tr id="row4937192492016"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p1893710249209"><a name="p1893710249209"></a><a name="p1893710249209"></a>parameters.description</p>
@@ -394,7 +407,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p181910281476"><a name="p181910281476"></a><a name="p181910281476"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>If Kerberos 5 is used, set this parameter to <strong id="b1435135952518"><a name="b1435135952518"></a><a name="b1435135952518"></a>krb5</strong>.</li><li>If Kerberos 5i is used, set this parameter to <strong id="b79148018262"><a name="b79148018262"></a><a name="b79148018262"></a>krb5i</strong>.</li><li>If Kerberos 5p is used, set this parameter to <strong id="b1916811982618"><a name="b1916811982618"></a><a name="b1916811982618"></a>krb5p</strong>.</li><li>Kerberos supports only NFSv4.0 or NFSv4.1.</li></ul>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>If Kerberos 5 is used, set this parameter to <strong id="b1435135952518"><a name="b1435135952518"></a><a name="b1435135952518"></a>krb5</strong>.</li><li>If Kerberos 5i is used, set this parameter to <strong id="b79148018262"><a name="b79148018262"></a><a name="b79148018262"></a>krb5i</strong>.</li><li>If Kerberos 5p is used, set this parameter to <strong id="b1916811982618"><a name="b1916811982618"></a><a name="b1916811982618"></a>krb5p</strong>.</li><li>Kerberos supports only NFSv4.0 and later versions.</li><li>OceanStor Dorado and OceanStor 6.1.3 and later versions support Kerberos.</li></ul>
 </td>
 </tr>
 <tr id="row16497949175212"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p22011843373"><a name="p22011843373"></a><a name="p22011843373"></a>mountOptions.proto</p>
@@ -406,7 +419,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p1201844372"><a name="p1201844372"></a><a name="p1201844372"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>Ensure that NFS over RDMA is enabled on the storage system.</li><li>NAS storage of OceanStor Dorado 6.1.7 or later is supported.</li></ul>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>Ensure that NFS over RDMA is enabled on the storage system.</li><li>For Huawei enterprise storage, NAS storage of OceanStor Dorado and OceanStor 6.1.7 and later is supported.</li><li>For Huawei distributed storage, NAS storage of OceanStor Pacific 8.2.0 and later is supported. If NFS over RDMA is used for distributed storage, <strong id="b1315673395715"><a name="b1315673395715"></a><a name="b1315673395715"></a>mountOptions.nfsvers</strong> must be set to <strong id="b1115711331570"><a name="b1115711331570"></a><a name="b1115711331570"></a>3</strong>.</li></ul>
 </td>
 </tr>
 <tr id="row33343664415"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p33347614411"><a name="p33347614411"></a><a name="p33347614411"></a>mountOptions.port</p>
@@ -524,7 +537,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p981913567333"><a name="p981913567333"></a><a name="p981913567333"></a>Read/write type.</p>
 </td>
 <td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p14819125620331"><a name="p14819125620331"></a><a name="p14819125620331"></a>The value can be:</p>
-<a name="ul17819115611331"></a><a name="ul17819115611331"></a><ul id="ul17819115611331"><li><strong id="b1170000363"><a name="b1170000363"></a><a name="b1170000363"></a>2</strong>: read and write I/Os</li></ul>
+<a name="ul17819115611331"></a><a name="ul17819115611331"></a><ul id="ul17819115611331"><li><strong id="b803954689"><a name="b803954689"></a><a name="b803954689"></a>2</strong>: read and write I/Os</li></ul>
 </td>
 </tr>
 <tr id="row545565991517"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p681925616337"><a name="p681925616337"></a><a name="p681925616337"></a>MAXBANDWIDTH</p>

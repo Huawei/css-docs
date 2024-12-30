@@ -7,6 +7,8 @@ weight: 4
 
 Huawei CSI plug-in is compatible with Huawei OceanStor series distributed storage systems. The following table lists the supported storage versions.
 
+## Supported Huawei Distributed Storage{#section723118313717}
+
 **Table  1**  Supported Huawei distributed storage
 
 <a name="table13501195552513"></a>
@@ -28,6 +30,8 @@ Huawei CSI plug-in is compatible with Huawei OceanStor series distributed storag
 </tr>
 </tbody>
 </table>
+
+## Features Supported by Huawei Distributed Storage{#section14115311203711}
 
 Huawei CSI plug-in supports the following features for Huawei distributed storage.
 
@@ -137,7 +141,7 @@ Huawei CSI plug-in supports the following features for Huawei distributed storag
 </table>
 
 -   Note 1: Manage Provisioning is a volume management feature customized by Huawei CSI. This feature allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
--   Note 2: Only OceanStor Pacific series 8.1.2 and later versions support DPC. For details about whether the  [OSs supported by Huawei CSI](/docs/compatibility-and-features/kubernetes-and-os-compatibility#table133422378818)  support DPC, see the compatibility document of the corresponding product version.
--   Note 3: Only OceanStor Pacific series 8.1.2 and later versions support NFS 4.1.
+-   Note 2: Only OceanStor Pacific series 8.1.2 and later versions support DPC. When DPC is used, the OS must meet the requirements for the  [OSs supported by Huawei CSI](/docs/compatibility-and-features/kubernetes-and-os-compatibility#table133422378818)  and the DPC basic connectivity requirements of OceanStor Pacific series.
+-   Note 3: Only OceanStor Pacific series 8.1.2 and later versions support NFS 4.1. OceanStor Pacific series 8.2.0 and later versions support NFS over RDMA. When NFS over RDMA is used, only NFS 3 is supported.
 -   Note 4: The provisioned PVC whose  **volumeType**  is  **lun**  and  **accessModes**  is  **ReadOnlyMany**  does not support capacity expansion.
 

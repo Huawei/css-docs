@@ -13,9 +13,14 @@ This section describes how to uninstall Huawei CSI on the CCE or CCE Agile platf
 2.  On the home page, choose  **Charts**  \>  **Releases**. The  **Releases**  page is displayed.
 3.  Select a Huawei CSI release and click  **Uninstall**. In the displayed dialog box, click  **OK**.
 
-    ![](/css-docs/figures/卸载-en.png)
+    ![](/css-docs/figures/卸载-ch.png)
 
 4.  Uninstall the huawei-csi-host-info object. For details, see  [Uninstalling the huawei-csi-host-info Object](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services#section870813403017).
 5.  Uninstall the webhook resource. For details, see  [Uninstalling a Webhook Resource](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services#section871155813014).
 6.  \(Optional\) Uninstall the snapshot-dependent component service. For details, see  [Uninstalling the Snapshot-Dependent Component Service](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm/uninstalling-csi-dependent-component-services#section48371491319).
+7.  \(Optional\) Run the following command to delete the namespace where Huawei CSI is located. The default namespace  **huawei-csi**  is used as an example.
+
+    ```
+    kubectl delete ns huawei-csi
+    ```
 
