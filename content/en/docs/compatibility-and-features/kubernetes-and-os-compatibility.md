@@ -28,7 +28,7 @@ Huawei CSI plug-in supports the following container management platforms.
 </tr>
 <tr id="row1526064545317"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1426094595313"><a name="p1426094595313"></a><a name="p1426094595313"></a>Tanzu Kubernetes Grid Integrated</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p626054555310"><a name="p626054555310"></a><a name="p626054555310"></a>TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p626054555310"><a name="p626054555310"></a><a name="p626054555310"></a>TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18, TKGI 1.19</p>
 </td>
 </tr>
 <tr id="row117973419355"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1118023483511"><a name="p1118023483511"></a><a name="p1118023483511"></a>CCE Agile</p>
