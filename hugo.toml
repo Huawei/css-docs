@@ -1,7 +1,7 @@
 # Base configuration
 baseURL = "https://huawei.github.io/css-docs/"
 title = "Huawei"
-copyright = "版权所有 © 华为技术有限公司 2024。保留一切权利。"
+copyright = "版权所有 © 华为技术有限公司 2025。保留一切权利。"
 contentDir = "content/zh-cn"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
@@ -41,7 +41,7 @@ languageName ="English"
 # contentDir = "content/en"
 languageCode = "en"
 weight = 2
-copyright = "Copyright © 2024 Huawei Technologies Co., Ltd. All rights reserved."
+copyright = "Copyright © 2025 Huawei Technologies Co., Ltd. All rights reserved."
 [languages.en.params]
 title = "Huawei CSS"
 description = "Huawei Container Storage Suite"
