@@ -95,6 +95,7 @@ parameters:
   volumeType: dtree # 卷类型配置为 dtree
   allocType: thin
   authClient: "*" 
+  parentname: "namespace-name" # 父文件系统名称
 mountOptions:
   - nfsvers=4.1
 ```

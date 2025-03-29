@@ -25,7 +25,7 @@ weight: 2
 <tbody><tr id="row111271188193"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001324610777_p1233915445454"><a name="zh-cn_topic_0000001324610777_p1233915445454"></a><a name="zh-cn_topic_0000001324610777_p1233915445454"></a>storage</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0000001324610777_p3339204417453"><a name="zh-cn_topic_0000001324610777_p3339204417453"></a><a name="zh-cn_topic_0000001324610777_p3339204417453"></a>存储服务类型。</p>
-<a name="zh-cn_topic_0000001324610777_ul713574293420"></a><a name="zh-cn_topic_0000001324610777_ul713574293420"></a><ul id="zh-cn_topic_0000001324610777_ul713574293420"><li>企业存储提供SAN存储时填写oceanstor-san。</li><li>企业存储提供NAS存储时填写oceanstor-nas。</li><li>企业存储提供Dtree类型的NAS存储时填写oceanstor-dtree。</li><li>分布式存储提供SAN存储时填写fusionstorage-san。</li><li>分布式存储提供NAS存储时填写fusionstorage-nas。</li></ul>
+<a name="zh-cn_topic_0000001324610777_ul713574293420"></a><a name="zh-cn_topic_0000001324610777_ul713574293420"></a><ul id="zh-cn_topic_0000001324610777_ul713574293420"><li>企业存储提供SAN存储时填写oceanstor-san。</li><li>企业存储提供NAS存储时填写oceanstor-nas。</li><li>企业存储提供Dtree类型的NAS存储时填写oceanstor-dtree。</li><li>分布式存储提供SAN存储时填写fusionstorage-san。</li><li>分布式存储提供NAS存储时填写fusionstorage-nas。</li><li>分布式储提供Dtree类型的NAS存储时填写fusionstorage-dtree。</li><li>使用OceanDisk存储时填写oceandisk-san。</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="zh-cn_topic_0000001324610777_p533910449459"><a name="zh-cn_topic_0000001324610777_p533910449459"></a><a name="zh-cn_topic_0000001324610777_p533910449459"></a>是</p>
 </td>
@@ -58,7 +58,7 @@ weight: 2
 </tr>
 <tr id="row184812161516"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="p38488211152"><a name="p38488211152"></a><a name="p38488211152"></a>vstoreName</p>
 </td>
-<td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="p384813214151"><a name="p384813214151"></a><a name="p384813214151"></a>存储侧的租户名称。当对接后端是OceanStor V5存储，需要在指定租户下发放资源时，需要指定该参数。</p>
+<td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="p384813214151"><a name="p384813214151"></a><a name="p384813214151"></a>存储侧的租户名称。当对接后端是OceanStor V5存储时，需要在指定租户下发放资源时，需要指定该参数。</p>
 </td>
 <td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="p884812114157"><a name="p884812114157"></a><a name="p884812114157"></a>条件必选</p>
 </td>
@@ -69,13 +69,13 @@ weight: 2
 </tr>
 <tr id="row1218054742718"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="p14180194702714"><a name="p14180194702714"></a><a name="p14180194702714"></a>accountName</p>
 </td>
-<td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="p1518094762719"><a name="p1518094762719"></a><a name="p1518094762719"></a>存储侧的账户名称。当对接资源是OceanStor Pacific NAS存储，需要在指定账户下发放NAS资源时，需要指定该参数。</p>
+<td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="p1518094762719"><a name="p1518094762719"></a><a name="p1518094762719"></a>存储侧的账户名称。当对接资源是OceanStor Pacific NAS或OceanStor Pacific DTree时，需要在指定账户下发放NAS资源时，需要指定该参数。</p>
 </td>
 <td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="p14180547182717"><a name="p14180547182717"></a><a name="p14180547182717"></a>条件必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p20919715115120"><a name="p20919715115120"></a><a name="p20919715115120"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="p21802475277"><a name="p21802475277"></a><a name="p21802475277"></a>仅对接后端是OceanStor Pacific NAS存储且需要支持账号时，需要指定该参数。</p>
+<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="p195481349369"><a name="p195481349369"></a><a name="p195481349369"></a>对接后端是OceanStor Pacific NAS或OceanStor Pacific DTree且需要支持账户时，需要指定该参数。</p>
 </td>
 </tr>
 <tr id="row1212714182196"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001324610777_p153399449451"><a name="zh-cn_topic_0000001324610777_p153399449451"></a><a name="zh-cn_topic_0000001324610777_p153399449451"></a>urls</p>
@@ -97,31 +97,31 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p19191715195117"><a name="p19191715195117"></a><a name="p19191715195117"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001324610777_p117122413014"><a name="zh-cn_topic_0000001324610777_p117122413014"></a><a name="zh-cn_topic_0000001324610777_p117122413014"></a>storage为oceanstor-dtree时， 可以不填。</p>
+<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001324610777_p117122413014"><a name="zh-cn_topic_0000001324610777_p117122413014"></a><a name="zh-cn_topic_0000001324610777_p117122413014"></a>storage为oceanstor-dtree或fusionstorage-dtree时， 可以不填。</p>
 </td>
 </tr>
 <tr id="row1312711851911"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001324610777_p20613155814116"><a name="zh-cn_topic_0000001324610777_p20613155814116"></a><a name="zh-cn_topic_0000001324610777_p20613155814116"></a>parameters.protocol</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0000001324610777_p12810447425"><a name="zh-cn_topic_0000001324610777_p12810447425"></a><a name="zh-cn_topic_0000001324610777_p12810447425"></a>存储协议。参数格式为字符串。</p>
-<a name="zh-cn_topic_0000001324610777_ul5584070363"></a><a name="zh-cn_topic_0000001324610777_ul5584070363"></a><ul id="zh-cn_topic_0000001324610777_ul5584070363"><li>iscsi</li><li>fc</li><li>roce</li><li>fc-nvme</li><li>nfs</li><li>dpc</li><li>scsi</li></ul>
+<a name="zh-cn_topic_0000001324610777_ul5584070363"></a><a name="zh-cn_topic_0000001324610777_ul5584070363"></a><ul id="zh-cn_topic_0000001324610777_ul5584070363"><li>iscsi</li><li>fc</li><li>roce</li><li>fc-nvme</li><li>nfs</li><li>nfs+</li><li>dpc</li><li>scsi</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="zh-cn_topic_0000001324610777_p1261313581616"><a name="zh-cn_topic_0000001324610777_p1261313581616"></a><a name="zh-cn_topic_0000001324610777_p1261313581616"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p109191715115118"><a name="p109191715115118"></a><a name="p109191715115118"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>使用iscsi时，请确保对接的计算节点已安装iSCSI客户端。</li><li>使用nfs时，请确保对接的计算节点已安装NFS客户端工具。</li><li>使用fc-nvme/roce时，请确保对接的计算节点已安装nvme-cli工具，工具版本仅支持1.x且版本不低于1.9。</li><li>使用dpc时，请确保对接的计算节点已安装DPC客户端，并已在待接入存储上添加为DPC计算节点。</li><li>使用scsi时，请确保对接的计算节点已安装分布式存储VBS客户端。</li></ul>
+<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>使用iscsi时，请确保对接的计算节点已安装iSCSI客户端。</li><li>使用nfs时，请确保对接的计算节点已安装NFS客户端工具。</li><li>使用nfs+时，请确保对接的计算节点已安装NFS+客户端工具。</li><li>使用fc-nvme/roce时，请确保对接的计算节点已安装nvme-cli工具，工具版本仅支持1.x且版本不低于1.9。</li><li>使用dpc时，请确保对接的计算节点已安装DPC客户端，并已在待接入存储上添加为DPC计算节点。</li><li>使用scsi时，请确保对接的计算节点已安装分布式存储VBS客户端。</li></ul>
 </td>
 </tr>
 <tr id="row61271618121913"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001324610777_p12730821724"><a name="zh-cn_topic_0000001324610777_p12730821724"></a><a name="zh-cn_topic_0000001324610777_p12730821724"></a>parameters.portals</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0000001324610777_p127300212214"><a name="zh-cn_topic_0000001324610777_p127300212214"></a><a name="zh-cn_topic_0000001324610777_p127300212214"></a>业务访问端口。节点会使用该端口对存储资源进行读写访问。参数格式为一个列表</p>
-<p id="zh-cn_topic_0000001324610777_p166476473917"><a name="zh-cn_topic_0000001324610777_p166476473917"></a><a name="zh-cn_topic_0000001324610777_p166476473917"></a>iscsi，roce协议支持配置多个端口，nfs协议仅支持配置一个端口，fc、fc-nvme、dpc协议无需配置业务端口，scsi协议的端口形式为字典格式，key为主机名称，value为IP地址，仅支持IPv4。</p>
+<p id="zh-cn_topic_0000001324610777_p166476473917"><a name="zh-cn_topic_0000001324610777_p166476473917"></a><a name="zh-cn_topic_0000001324610777_p166476473917"></a>iscsi，roce，nfs+协议支持配置多个端口，nfs协议仅支持配置一个端口，fc、fc-nvme、dpc协议无需配置业务端口，scsi协议的端口形式为字典格式，key为主机名称，value为IP地址，仅支持IPv4。</p>
 </td>
 <td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="zh-cn_topic_0000001324610777_p8730621026"><a name="zh-cn_topic_0000001324610777_p8730621026"></a><a name="zh-cn_topic_0000001324610777_p8730621026"></a>条件必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p15919101510519"><a name="p15919101510519"></a><a name="p15919101510519"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><a name="ul73520114122"></a><a name="ul73520114122"></a><ul id="ul73520114122"><li>使用租户/账户对接后端时，此时portals必须配置为租户/账户所拥有的逻辑端口信息。</li><li>如果使用nfs协议，支持填写为域名地址。</li></ul>
+<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><a name="ul73520114122"></a><a name="ul73520114122"></a><ul id="ul73520114122"><li>使用租户/账户对接后端时，此时portals必须配置为租户/账户所拥有的逻辑端口信息。</li><li>如果使用nfs/nfs+协议，支持填写为域名地址。</li></ul>
 </td>
 </tr>
 <tr id="row159281476499"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="p2092814473495"><a name="p2092814473495"></a><a name="p2092814473495"></a>parameters.ALUA</p>
@@ -138,10 +138,10 @@ weight: 2
 </tr>
 <tr id="row69321538172918"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="p2932193817290"><a name="p2932193817290"></a><a name="p2932193817290"></a>parameters.parentname</p>
 </td>
-<td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="p9932203882911"><a name="p9932203882911"></a><a name="p9932203882911"></a>当前存储上的某一个文件系统名称，在此文件系统下创建Dtree。</p>
-<p id="p8498143483116"><a name="p8498143483116"></a><a name="p8498143483116"></a>storage为oceanstor-dtree时必选。</p>
+<td class="cellrowborder" valign="top" width="38.58%" headers="mcps1.2.6.1.2 "><p id="p19753720163619"><a name="p19753720163619"></a><a name="p19753720163619"></a>当前存储上的某一个文件系统名称，在此文件系统下创建Dtree。</p>
+<p id="p13753520153612"><a name="p13753520153612"></a><a name="p13753520153612"></a>storage为oceanstor-dtree或fusionstorage-dtree时可选。</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="p7932338112916"><a name="p7932338112916"></a><a name="p7932338112916"></a>条件必选</p>
+<td class="cellrowborder" valign="top" width="7.2700000000000005%" headers="mcps1.2.6.1.3 "><p id="p7932338112916"><a name="p7932338112916"></a><a name="p7932338112916"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p593283812910"><a name="p593283812910"></a><a name="p593283812910"></a>-</p>
 </td>

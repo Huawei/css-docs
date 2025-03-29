@@ -61,7 +61,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p1015617351799"><a name="p1015617351799"></a><a name="p1015617351799"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p0156183516920"><a name="p0156183516920"></a><a name="p0156183516920"></a>storage-backend-controller:<span id="ph131571335991"><a name="ph131571335991"></a><a name="ph131571335991"></a>4.6.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p0156183516920"><a name="p0156183516920"></a><a name="p0156183516920"></a>storage-backend-controller:<span id="ph131571335991"><a name="ph131571335991"></a><a name="ph131571335991"></a>4.7.0</span></p>
     </td>
     </tr>
     <tr id="row137401924896"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="p81571358910"><a name="p81571358910"></a><a name="p81571358910"></a>storage-backend-sidecar</p>
@@ -70,7 +70,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p18157173510920"><a name="p18157173510920"></a><a name="p18157173510920"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p415783518912"><a name="p415783518912"></a><a name="p415783518912"></a>storage-backend-sidecar:<span id="ph61574352914"><a name="ph61574352914"></a><a name="ph61574352914"></a>4.6.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p415783518912"><a name="p415783518912"></a><a name="p415783518912"></a>storage-backend-sidecar:<span id="ph61574352914"><a name="ph61574352914"></a><a name="ph61574352914"></a>4.7.0</span></p>
     </td>
     </tr>
     <tr id="row11864142612910"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="p615719351098"><a name="p615719351098"></a><a name="p615719351098"></a>huawei-csi-driver</p>
@@ -79,7 +79,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p11157435196"><a name="p11157435196"></a><a name="p11157435196"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p1015714351890"><a name="p1015714351890"></a><a name="p1015714351890"></a>huawei-csi:<span id="ph14157935896"><a name="ph14157935896"></a><a name="ph14157935896"></a>4.6.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p1015714351890"><a name="p1015714351890"></a><a name="p1015714351890"></a>huawei-csi:<span id="ph14157935896"><a name="ph14157935896"></a><a name="ph14157935896"></a>4.7.0</span></p>
     </td>
     </tr>
     <tr id="row1035818295911"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="p5157935795"><a name="p5157935795"></a><a name="p5157935795"></a>huawei-csi-extender</p>
@@ -88,7 +88,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p415710351892"><a name="p415710351892"></a><a name="p415710351892"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p51571935491"><a name="p51571935491"></a><a name="p51571935491"></a>huawei-csi-extender:<span id="ph1515716351795"><a name="ph1515716351795"></a><a name="ph1515716351795"></a>4.6.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p51571935491"><a name="p51571935491"></a><a name="p51571935491"></a>huawei-csi-extender:<span id="ph1515716351795"><a name="ph1515716351795"></a><a name="ph1515716351795"></a>4.7.0</span></p>
     </td>
     </tr>
     <tr id="row9547192114619"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0214996140_p86601044154812"><a name="zh-cn_topic_0214996140_p86601044154812"></a><a name="zh-cn_topic_0214996140_p86601044154812"></a>images.sidecar.livenessProbe</p>
@@ -97,7 +97,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p1517410101399"><a name="p1517410101399"></a><a name="p1517410101399"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0214996140_p166034494817"><a name="zh-cn_topic_0214996140_p166034494817"></a><a name="zh-cn_topic_0214996140_p166034494817"></a>registry.k8s.io/sig-storage/livenessprobe:v2.12.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0214996140_p166034494817"><a name="zh-cn_topic_0214996140_p166034494817"></a><a name="zh-cn_topic_0214996140_p166034494817"></a><span id="text1328521101017"><a name="text1328521101017"></a><a name="text1328521101017"></a>registry.k8s.io/sig-storage/livenessprobe:v2.12.0</span></p>
     </td>
     </tr>
     <tr id="row3136101118366"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0214996140_p11661204454815"><a name="zh-cn_topic_0214996140_p11661204454815"></a><a name="zh-cn_topic_0214996140_p11661204454815"></a>images.sidecar.resizer</p>
@@ -106,7 +106,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p017491015911"><a name="p017491015911"></a><a name="p017491015911"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0214996140_p18661134413484"><a name="zh-cn_topic_0214996140_p18661134413484"></a><a name="zh-cn_topic_0214996140_p18661134413484"></a>registry.k8s.io/sig-storage/csi-resizer:v1.9.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0214996140_p18661134413484"><a name="zh-cn_topic_0214996140_p18661134413484"></a><a name="zh-cn_topic_0214996140_p18661134413484"></a><span id="text3532628181013"><a name="text3532628181013"></a><a name="text3532628181013"></a>registry.k8s.io/sig-storage/csi-resizer:v1.9.0</span></p>
     </td>
     </tr>
     <tr id="row020073517369"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0214996140_p866114415480"><a name="zh-cn_topic_0214996140_p866114415480"></a><a name="zh-cn_topic_0214996140_p866114415480"></a>images.sidecar.registrar</p>
@@ -115,7 +115,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p1417416101295"><a name="p1417416101295"></a><a name="p1417416101295"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0214996140_p1866215446487"><a name="zh-cn_topic_0214996140_p1866215446487"></a><a name="zh-cn_topic_0214996140_p1866215446487"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.9.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0214996140_p1866215446487"><a name="zh-cn_topic_0214996140_p1866215446487"></a><a name="zh-cn_topic_0214996140_p1866215446487"></a><span id="text16984124141019"><a name="text16984124141019"></a><a name="text16984124141019"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.9.0</span></p>
     </td>
     </tr>
     <tr id="row324775233618"><td class="cellrowborder" rowspan="2" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0214996140_p766184474818"><a name="zh-cn_topic_0214996140_p766184474818"></a><a name="zh-cn_topic_0214996140_p766184474818"></a>images.sidecar.snapshotter</p>
@@ -124,7 +124,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p01741110595"><a name="p01741110595"></a><a name="p01741110595"></a>v1.20+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p18449610144812"><a name="p18449610144812"></a><a name="p18449610144812"></a>registry.k8s.io/sig-storage/csi-snapshotter:v6.3.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p18449610144812"><a name="p18449610144812"></a><a name="p18449610144812"></a><span id="text11716195016102"><a name="text11716195016102"></a><a name="text11716195016102"></a>registry.k8s.io/sig-storage/csi-snapshotter:v6.3.0</span></p>
     </td>
     </tr>
     <tr id="row1854381033716"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p141741410499"><a name="p141741410499"></a><a name="p141741410499"></a>v1.17-v1.19</p>
@@ -139,7 +139,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p41741010492"><a name="p41741010492"></a><a name="p41741010492"></a>v1.20+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p12512182574812"><a name="p12512182574812"></a><a name="p12512182574812"></a>registry.k8s.io/sig-storage/snapshot-controller:v6.3.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p12512182574812"><a name="p12512182574812"></a><a name="p12512182574812"></a><span id="text255013593103"><a name="text255013593103"></a><a name="text255013593103"></a>registry.k8s.io/sig-storage/snapshot-controller:v6.3.0</span></p>
     </td>
     </tr>
     <tr id="row192011038193813"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p31741108918"><a name="p31741108918"></a><a name="p31741108918"></a>v1.17-v1.19</p>
@@ -154,7 +154,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p7174101012917"><a name="p7174101012917"></a><a name="p7174101012917"></a>v1.20+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p127598810403"><a name="p127598810403"></a><a name="p127598810403"></a>registry.k8s.io/sig-storage/csi-provisioner:v3.6.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p127598810403"><a name="p127598810403"></a><a name="p127598810403"></a><span id="text173371111171115"><a name="text173371111171115"></a><a name="text173371111171115"></a>registry.k8s.io/sig-storage/csi-provisioner:v3.6.0</span></p>
     </td>
     </tr>
     <tr id="row13547021134610"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p151745101197"><a name="p151745101197"></a><a name="p151745101197"></a>v1.17-v1.19</p>
@@ -174,7 +174,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p617410101295"><a name="p617410101295"></a><a name="p617410101295"></a>v1.17+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p10146135017914"><a name="p10146135017914"></a><a name="p10146135017914"></a>registry.k8s.io/sig-storage/csi-attacher:v4.4.0</p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p10146135017914"><a name="p10146135017914"></a><a name="p10146135017914"></a><span id="text10459171819114"><a name="text10459171819114"></a><a name="text10459171819114"></a>registry.k8s.io/sig-storage/csi-attacher:v4.4.0</span></p>
     </td>
     </tr>
     <tr id="row32879215395"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p817413101195"><a name="p817413101195"></a><a name="p817413101195"></a>v.1.16.x</p>

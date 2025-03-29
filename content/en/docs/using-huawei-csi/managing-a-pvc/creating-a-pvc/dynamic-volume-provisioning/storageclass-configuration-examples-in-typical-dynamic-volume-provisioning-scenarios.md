@@ -95,6 +95,7 @@ parameters:
   volumeType: dtree # Set the volume type to dtree.
   allocType: thin
   authClient: "*" 
+  parentname: "namespace-name" # Name of the parent file system
 mountOptions:
   - nfsvers=4.1
 ```

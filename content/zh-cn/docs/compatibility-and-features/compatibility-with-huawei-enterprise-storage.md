@@ -48,34 +48,30 @@ weight: 3
 **表 2**  华为企业存储支持的特性及约束
 
 <a name="table14995183994515"></a>
-<table><thead align="left"><tr id="row6996173914451"><th class="cellrowborder" valign="top" width="19.88%" id="mcps1.2.6.1.1"><p id="p199961439154519"><a name="p199961439154519"></a><a name="p199961439154519"></a>特性</p>
+<table><thead align="left"><tr id="row6996173914451"><th class="cellrowborder" valign="top" width="19.88801119888011%" id="mcps1.2.6.1.1"><p id="p199961439154519"><a name="p199961439154519"></a><a name="p199961439154519"></a>特性</p>
 </th>
-<th class="cellrowborder" valign="top" width="18.759999999999998%" id="mcps1.2.6.1.2"><p id="p09961739124513"><a name="p09961739124513"></a><a name="p09961739124513"></a>OceanStor V5</p>
+<th class="cellrowborder" valign="top" width="18.75812418758124%" id="mcps1.2.6.1.2"><p id="p09961739124513"><a name="p09961739124513"></a><a name="p09961739124513"></a>OceanStor V5</p>
 </th>
-<th class="cellrowborder" valign="top" width="19.42%" id="mcps1.2.6.1.3"><p id="p189961739104515"><a name="p189961739104515"></a><a name="p189961739104515"></a>OceanStor Dorado V3</p>
+<th class="cellrowborder" valign="top" width="19.418058194180585%" id="mcps1.2.6.1.3"><p id="p189961739104515"><a name="p189961739104515"></a><a name="p189961739104515"></a>OceanStor Dorado V3</p>
 </th>
-<th class="cellrowborder" valign="top" width="20.59%" id="mcps1.2.6.1.4"><p id="p1699615397457"><a name="p1699615397457"></a><a name="p1699615397457"></a>OceanStor</p>
+<th class="cellrowborder" valign="top" width="20.58794120587941%" id="mcps1.2.6.1.4"><p id="p1699615397457"><a name="p1699615397457"></a><a name="p1699615397457"></a>OceanStor</p>
 </th>
-<th class="cellrowborder" valign="top" width="21.349999999999998%" id="mcps1.2.6.1.5"><p id="p11601298188"><a name="p11601298188"></a><a name="p11601298188"></a>OceanStor Dorado</p>
+<th class="cellrowborder" valign="top" width="21.347865213478652%" id="mcps1.2.6.1.5"><p id="p11601298188"><a name="p11601298188"></a><a name="p11601298188"></a>OceanStor Dorado</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1899683984519"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p899653994514"><a name="p899653994514"></a><a name="p899653994514"></a><span>Static Provisioning</span></p>
+<tbody><tr id="row1899683984519"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p899653994514"><a name="p899653994514"></a><a name="p899653994514"></a><span>Static Provisioning</span></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p86732141719"><a name="p86732141719"></a><a name="p86732141719"></a>SAN：FC/iSCSI<sup id="sup777718253598"><a name="sup777718253598"></a><a name="sup777718253598"></a>2</sup></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p86732141719"><a name="p86732141719"></a><a name="p86732141719"></a>SAN：FC/iSCSI</p>
 <p id="p9633201715"><a name="p9633201715"></a><a name="p9633201715"></a>NAS：NFS 3</p>
-<p id="p1957941763215"><a name="p1957941763215"></a><a name="p1957941763215"></a></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p3996103915451"><a name="p3996103915451"></a><a name="p3996103915451"></a>SAN：FC/iSCSI<sup id="sup107073234594"><a name="sup107073234594"></a><a name="sup107073234594"></a>2</sup></p>
-<p id="p11579201753211"><a name="p11579201753211"></a><a name="p11579201753211"></a></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p3996103915451"><a name="p3996103915451"></a><a name="p3996103915451"></a>SAN：FC/iSCSI</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>SAN：FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup1754136102416"><a name="sup1754136102416"></a><a name="sup1754136102416"></a>3</sup></p>
-<p id="p20838142381814"><a name="p20838142381814"></a><a name="p20838142381814"></a>NAS：NFS 3/4.0/4.1/4.2<sup id="sup38128018014"><a name="sup38128018014"></a><a name="sup38128018014"></a>4</sup></p>
-<p id="p7579181715326"><a name="p7579181715326"></a><a name="p7579181715326"></a></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>SAN：FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup1754136102416"><a name="sup1754136102416"></a><a name="sup1754136102416"></a>2</sup></p>
+<p id="p20838142381814"><a name="p20838142381814"></a><a name="p20838142381814"></a>NAS：NFS 3/4.0/4.1/4.2<sup id="sup38128018014"><a name="sup38128018014"></a><a name="sup38128018014"></a>3</sup></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>SAN：FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup13412163962419"><a name="sup13412163962419"></a><a name="sup13412163962419"></a>3</sup></p>
-<p id="p12839143282719"><a name="p12839143282719"></a><a name="p12839143282719"></a>NAS：NFS 3/4.0/4.1/4.2<sup id="sup5839532102713"><a name="sup5839532102713"></a><a name="sup5839532102713"></a>4</sup></p>
-<p id="p757919176329"><a name="p757919176329"></a><a name="p757919176329"></a></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>SAN：FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup13412163962419"><a name="sup13412163962419"></a><a name="sup13412163962419"></a>2</sup></p>
+<p id="p12839143282719"><a name="p12839143282719"></a><a name="p12839143282719"></a>NAS：NFS 3/4.0/4.1/4.2<sup id="sup5839532102713"><a name="sup5839532102713"></a><a name="sup5839532102713"></a>3</sup>/NFS+<sup id="sup688317275488"><a name="sup688317275488"></a><a name="sup688317275488"></a>4</sup></p>
 </td>
 </tr>
 <tr id="row49961039174517"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p9996173974516"><a name="p9996173974516"></a><a name="p9996173974516"></a>Dynamic Provisioning</p>
@@ -84,7 +80,7 @@ weight: 3
 <tr id="row55791517133218"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p3579151783219"><a name="p3579151783219"></a><a name="p3579151783219"></a>Manage Provisioning<sup id="sup113201739217"><a name="sup113201739217"></a><a name="sup113201739217"></a>1</sup></p>
 </td>
 </tr>
-<tr id="row8996539144513"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p49961939194517"><a name="p49961939194517"></a><a name="p49961939194517"></a><span>Expand Persistent Volume</span><sup id="sup745085319811"><a name="sup745085319811"></a><a name="sup745085319811"></a>5</sup></p>
+<tr id="row8996539144513"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p49961939194517"><a name="p49961939194517"></a><a name="p49961939194517"></a><span>Expand Persistent Volume</span><sup id="sup386225017483"><a name="sup386225017483"></a><a name="sup386225017483"></a>5</sup></p>
 </td>
 <td class="cellrowborder" colspan="4" valign="top" headers="mcps1.2.6.1.2 mcps1.2.6.1.3 mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p071645145119"><a name="p071645145119"></a><a name="p071645145119"></a><span>支持</span>使用Dynamic Provisioning，Manage Provisioning方式创建的卷</p>
 </td>
@@ -94,27 +90,27 @@ weight: 3
 <td class="cellrowborder" colspan="4" valign="top" headers="mcps1.2.6.1.2 mcps1.2.6.1.3 mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p1771745145117"><a name="p1771745145117"></a><a name="p1771745145117"></a><span>支持</span>使用Dynamic Provisioning，Manage Provisioning方式创建的卷</p>
 </td>
 </tr>
-<tr id="row1599693916456"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p49961939184516"><a name="p49961939184516"></a><a name="p49961939184516"></a>Delete VolumeSnapshot</p>
+<tr id="row1599693916456"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p49961939184516"><a name="p49961939184516"></a><a name="p49961939184516"></a>Delete VolumeSnapshot</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p2996153934511"><a name="p2996153934511"></a><a name="p2996153934511"></a>支持</p>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p2996153934511"><a name="p2996153934511"></a><a name="p2996153934511"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p1499616398455"><a name="p1499616398455"></a><a name="p1499616398455"></a>支持</p>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p1499616398455"><a name="p1499616398455"></a><a name="p1499616398455"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p10996183911451"><a name="p10996183911451"></a><a name="p10996183911451"></a>支持</p>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p10996183911451"><a name="p10996183911451"></a><a name="p10996183911451"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p111601529121812"><a name="p111601529121812"></a><a name="p111601529121812"></a>支持</p>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p111601529121812"><a name="p111601529121812"></a><a name="p111601529121812"></a>支持</p>
 </td>
 </tr>
-<tr id="row15996173994516"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p15997133914455"><a name="p15997133914455"></a><a name="p15997133914455"></a>Restore VolumeSnapshot</p>
+<tr id="row15996173994516"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p15997133914455"><a name="p15997133914455"></a><a name="p15997133914455"></a>Restore VolumeSnapshot</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p149971339154511"><a name="p149971339154511"></a><a name="p149971339154511"></a>支持</p>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p149971339154511"><a name="p149971339154511"></a><a name="p149971339154511"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p29971639124518"><a name="p29971639124518"></a><a name="p29971639124518"></a>支持</p>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p29971639124518"><a name="p29971639124518"></a><a name="p29971639124518"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p199713910459"><a name="p199713910459"></a><a name="p199713910459"></a>SAN：支持</p>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p199713910459"><a name="p199713910459"></a><a name="p199713910459"></a>SAN：支持</p>
 <p id="p33033201414"><a name="p33033201414"></a><a name="p33033201414"></a>NAS：仅6.1.5及其之后版本支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p193754331128"><a name="p193754331128"></a><a name="p193754331128"></a>SAN：支持</p>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p193754331128"><a name="p193754331128"></a><a name="p193754331128"></a>SAN：支持</p>
 <p id="p153757331127"><a name="p153757331127"></a><a name="p153757331127"></a>NAS：仅6.1.5及其之后版本支持</p>
 </td>
 </tr>
@@ -126,37 +122,37 @@ weight: 3
 <p id="p17444611332"><a name="p17444611332"></a><a name="p17444611332"></a>NAS：仅6.1.5及其之后版本支持使用Dynamic Provisioning，Manage Provisioning方式创建的卷</p>
 </td>
 </tr>
-<tr id="row253813281571"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p105391828872"><a name="p105391828872"></a><a name="p105391828872"></a>Raw Block Volume</p>
+<tr id="row253813281571"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p105391828872"><a name="p105391828872"></a><a name="p105391828872"></a>Raw Block Volume</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p7539162811719"><a name="p7539162811719"></a><a name="p7539162811719"></a>仅支持SAN类型的卷</p>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p7539162811719"><a name="p7539162811719"></a><a name="p7539162811719"></a>仅支持SAN类型的卷</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p12539162810713"><a name="p12539162810713"></a><a name="p12539162810713"></a>仅支持SAN类型的卷</p>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p12539162810713"><a name="p12539162810713"></a><a name="p12539162810713"></a>仅支持SAN类型的卷</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p1353952811711"><a name="p1353952811711"></a><a name="p1353952811711"></a>仅支持SAN类型的卷</p>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p1353952811711"><a name="p1353952811711"></a><a name="p1353952811711"></a>仅支持SAN类型的卷</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p153913281879"><a name="p153913281879"></a><a name="p153913281879"></a>仅支持SAN类型的卷</p>
-</td>
-</tr>
-<tr id="row76671821015"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p146673811105"><a name="p146673811105"></a><a name="p146673811105"></a>Topology</p>
-</td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p18667138181019"><a name="p18667138181019"></a><a name="p18667138181019"></a>支持</p>
-</td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p1566710821013"><a name="p1566710821013"></a><a name="p1566710821013"></a>支持</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p106676821018"><a name="p106676821018"></a><a name="p106676821018"></a>支持</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p166671688101"><a name="p166671688101"></a><a name="p166671688101"></a>支持</p>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p153913281879"><a name="p153913281879"></a><a name="p153913281879"></a>仅支持SAN类型的卷</p>
 </td>
 </tr>
-<tr id="row91081351378"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p1423525343819"><a name="p1423525343819"></a><a name="p1423525343819"></a>Generic Ephemeral Volumes</p>
+<tr id="row76671821015"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p146673811105"><a name="p146673811105"></a><a name="p146673811105"></a>Topology</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p2091319219390"><a name="p2091319219390"></a><a name="p2091319219390"></a>支持</p>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p18667138181019"><a name="p18667138181019"></a><a name="p18667138181019"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p15913152193911"><a name="p15913152193911"></a><a name="p15913152193911"></a>支持</p>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p1566710821013"><a name="p1566710821013"></a><a name="p1566710821013"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p1691418293913"><a name="p1691418293913"></a><a name="p1691418293913"></a>支持</p>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p106676821018"><a name="p106676821018"></a><a name="p106676821018"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p18914028397"><a name="p18914028397"></a><a name="p18914028397"></a>支持</p>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p166671688101"><a name="p166671688101"></a><a name="p166671688101"></a>支持</p>
+</td>
+</tr>
+<tr id="row91081351378"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p1423525343819"><a name="p1423525343819"></a><a name="p1423525343819"></a>Generic Ephemeral Volumes</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p2091319219390"><a name="p2091319219390"></a><a name="p2091319219390"></a>支持</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p15913152193911"><a name="p15913152193911"></a><a name="p15913152193911"></a>支持</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p1691418293913"><a name="p1691418293913"></a><a name="p1691418293913"></a>支持</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p18914028397"><a name="p18914028397"></a><a name="p18914028397"></a>支持</p>
 </td>
 </tr>
 <tr id="row59655172115"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p996591717110"><a name="p996591717110"></a><a name="p996591717110"></a><a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes" target="_blank" rel="noopener noreferrer">Access Mode</a></p>
@@ -165,29 +161,29 @@ weight: 3
 <p id="p1390021412527"><a name="p1390021412527"></a><a name="p1390021412527"></a><span>RWX</span>：仅Raw Block卷和NFS类型的卷支持</p>
 </td>
 </tr>
-<tr id="row4749123262619"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p274993211262"><a name="p274993211262"></a><a name="p274993211262"></a>QoS</p>
+<tr id="row4749123262619"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p274993211262"><a name="p274993211262"></a><a name="p274993211262"></a>QoS</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p1374918324264"><a name="p1374918324264"></a><a name="p1374918324264"></a>支持<sup id="sup6549410191016"><a name="sup6549410191016"></a><a name="sup6549410191016"></a>6</sup></p>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p1374918324264"><a name="p1374918324264"></a><a name="p1374918324264"></a>支持<sup id="sup1813215964811"><a name="sup1813215964811"></a><a name="sup1813215964811"></a>6</sup></p>
 </td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p4749123216266"><a name="p4749123216266"></a><a name="p4749123216266"></a>支持</p>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p4749123216266"><a name="p4749123216266"></a><a name="p4749123216266"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p8749203242620"><a name="p8749203242620"></a><a name="p8749203242620"></a>支持</p>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p8749203242620"><a name="p8749203242620"></a><a name="p8749203242620"></a>支持</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p19749123216264"><a name="p19749123216264"></a><a name="p19749123216264"></a>支持</p>
-</td>
-</tr>
-<tr id="row13606622132720"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p1760612292716"><a name="p1760612292716"></a><a name="p1760612292716"></a>应用类型</p>
-</td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p1960652212711"><a name="p1960652212711"></a><a name="p1960652212711"></a>不涉及</p>
-</td>
-<td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p136063224270"><a name="p136063224270"></a><a name="p136063224270"></a>不涉及</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p1360619224273"><a name="p1360619224273"></a><a name="p1360619224273"></a>支持</p>
-</td>
-<td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p1960622242718"><a name="p1960622242718"></a><a name="p1960622242718"></a>支持</p>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p19749123216264"><a name="p19749123216264"></a><a name="p19749123216264"></a>支持</p>
 </td>
 </tr>
-<tr id="row17943182222817"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p79432225287"><a name="p79432225287"></a><a name="p79432225287"></a>卷双活<sup id="sup13691121310106"><a name="sup13691121310106"></a><a name="sup13691121310106"></a>7</sup></p>
+<tr id="row13606622132720"><td class="cellrowborder" valign="top" width="19.88801119888011%" headers="mcps1.2.6.1.1 "><p id="p1760612292716"><a name="p1760612292716"></a><a name="p1760612292716"></a>应用类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.75812418758124%" headers="mcps1.2.6.1.2 "><p id="p1960652212711"><a name="p1960652212711"></a><a name="p1960652212711"></a>不涉及</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.418058194180585%" headers="mcps1.2.6.1.3 "><p id="p136063224270"><a name="p136063224270"></a><a name="p136063224270"></a>不涉及</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.58794120587941%" headers="mcps1.2.6.1.4 "><p id="p1360619224273"><a name="p1360619224273"></a><a name="p1360619224273"></a>支持</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.347865213478652%" headers="mcps1.2.6.1.5 "><p id="p1960622242718"><a name="p1960622242718"></a><a name="p1960622242718"></a>支持</p>
+</td>
+</tr>
+<tr id="row17943182222817"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p79432225287"><a name="p79432225287"></a><a name="p79432225287"></a>卷双活<sup id="sup101691214492"><a name="sup101691214492"></a><a name="sup101691214492"></a>7</sup></p>
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.2 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>不支持</p>
 </td>
@@ -202,16 +198,16 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="p219124920369"><a name="p219124920369"></a><a name="p219124920369"></a>不涉及</p>
 </td>
-<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p15191349103613"><a name="p15191349103613"></a><a name="p15191349103613"></a>仅支持NAS类型的卷<sup id="sup17244016111016"><a name="sup17244016111016"></a><a name="sup17244016111016"></a>8</sup></p>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p15191349103613"><a name="p15191349103613"></a><a name="p15191349103613"></a>仅支持NAS类型的卷<sup id="sup473544144915"><a name="sup473544144915"></a><a name="sup473544144915"></a>8</sup></p>
 </td>
 </tr>
 </tbody>
 </table>
 
 -   注释1 Manage Provisioning是华为CSI自定义的纳管卷特性，该特性支持将已有存储资源纳管至Kubernetes。不允许将一个存储资源纳管多次和针对同一个存储资源进行并发删除/创建操作。
--   注释2 若用户的容器平台部署在虚拟化环境中，则仅支持iSCSI组网。
--   注释3 使用NVMe over RoCE或NVMe over FC时，worker节点nvme-cli工具版本不低于1.9，查询命令为：nvme version。
--   注释4 仅OceanStor/OceanStor Dorado 6.1.0及以后版本支持NFS。仅OceanStor/OceanStor Dorado 6.1.3及以后版本支持NFS 4.1，OceanStor/OceanStor Dorado 6.1.7及以后版本支持NFS over RDMA，OceanStor/OceanStor Dorado 6.1.8及以后版本支持NFS 4.2。
+-   注释2 使用NVMe over RoCE或NVMe over FC时，worker节点nvme-cli工具版本为1.9\~1.16，查询命令为：nvme version。
+-   注释3 仅OceanStor/OceanStor Dorado 6.1.0及以后版本支持NFS。仅OceanStor/OceanStor Dorado 6.1.3及以后版本支持NFS 4.1，OceanStor/OceanStor Dorado 6.1.7及以后版本支持NFS over RDMA，OceanStor/OceanStor Dorado 6.1.8及以后版本支持NFS 4.2。
+-   注释4 OceanStor Dorado 6.1.7及以后版本支持NFS+。
 -   注释5 发放的volumeType为lun且accessModes为ReadOnlyMany的PVC不支持扩容。
 -   注释6 仅系统用户支持配置QoS。
 -   注释7 仅支持AA双活。
@@ -219,7 +215,7 @@ weight: 3
 
 华为CSI插件针对华为企业存储Dtree特性支持如下表所示。
 
-**表 3**  Dtree支持的特性
+**表 3**  华为企业存储Dtree支持的特性
 
 <a name="table17535153417812"></a>
 <table><thead align="left"><tr id="row753517341082"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p1053517341819"><a name="p1053517341819"></a><a name="p1053517341819"></a>特性</p>
@@ -291,7 +287,7 @@ weight: 3
 </tbody>
 </table>
 
-**表 4**  Dtree支持的华为存储版本
+**表 4**  华为企业存储Dtree支持的华为存储版本
 
 <a name="table120mcpsimp"></a>
 <table><thead align="left"><tr id="row126mcpsimp"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p128mcpsimp"><a name="p128mcpsimp"></a><a name="p128mcpsimp"></a>存储产品</p>

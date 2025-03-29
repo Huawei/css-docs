@@ -71,12 +71,13 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p2201185318312"><a name="p2201185318312"></a><a name="p2201185318312"></a>待创建资源所在的后端名称。</p>
 </td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p123704712528"><a name="p123704712528"></a><a name="p123704712528"></a>否</p>
+<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p123704712528"><a name="p123704712528"></a><a name="p123704712528"></a>条件必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p33980109524"><a name="p33980109524"></a><a name="p33980109524"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p2023133002520"><a name="p2023133002520"></a><a name="p2023133002520"></a>如果不设置，华为CSI随机选择一个满足容量要求的后端创建资源。</p>
 <p id="p020135316313"><a name="p020135316313"></a><a name="p020135316313"></a>建议指定后端，确保创建的资源在预期的后端上。</p>
+<p id="p1746961523912"><a name="p1746961523912"></a><a name="p1746961523912"></a>当使用parameters.volumeType为dtree，且配置了parameters.parentname时，该参数必填。</p>
 </td>
 </tr>
 <tr id="row1995791713711"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p395711171674"><a name="p395711171674"></a><a name="p395711171674"></a>parameters.pool</p>
@@ -112,7 +113,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p6398910155219"><a name="p6398910155219"></a><a name="p6398910155219"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001162111564_p57502011142910"><a name="zh-cn_topic_0000001162111564_p57502011142910"></a><a name="zh-cn_topic_0000001162111564_p57502011142910"></a>传空相当于传thin，创建时不会分配所有需要的空间，而是根据使用情况动态分配。</p>
-<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanStor Dorado V3 不支持thick</p>
+<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanStor Dorado V3/OceanDisk不支持thick</p>
 </td>
 </tr>
 <tr id="row167642021133711"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001162111564_p18750171111299"><a name="zh-cn_topic_0000001162111564_p18750171111299"></a><a name="zh-cn_topic_0000001162111564_p18750171111299"></a>parameters.fsType</p>
@@ -139,7 +140,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p466615315578"><a name="p466615315578"></a><a name="p466615315578"></a>可以使用“*”表示任意客户端。当您不确定访问客户端IP信息时，建议使用“*”防止客户端访问被存储拒绝。</p>
 <p id="p164521752175617"><a name="p164521752175617"></a><a name="p164521752175617"></a>当使用客户端主机名称时建议使用全称域名。</p>
 <p id="p20828214135714"><a name="p20828214135714"></a><a name="p20828214135714"></a>IP地址支持IPv4、IPv6地址或两者的混合IP地址。</p>
-<p id="p208641555185710"><a name="p208641555185710"></a><a name="p208641555185710"></a>可以同时输入多个主机名称、IP地址或IP地址段，以英文分号，空格或按回车键隔开。如示例："192.168.0.10;192.168.0.0/24;myserver1.test"</p>
+<p id="p208641555185710"><a name="p208641555185710"></a><a name="p208641555185710"></a>可以同时输入多个主机名称、IP地址或IP地址段，以英文分号隔开。如示例："192.168.0.10;192.168.0.0/24;myserver1.test"</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000001162111564_row475081162913"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001162111564_p187501311122918"><a name="zh-cn_topic_0000001162111564_p187501311122918"></a><a name="zh-cn_topic_0000001162111564_p187501311122918"></a>parameters.cloneSpeed</p>
@@ -156,12 +157,13 @@ weight: 2
 <tr id="zh-cn_topic_0000001162111564_row18750161119295"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p133711471387"><a name="p133711471387"></a><a name="p133711471387"></a>parameters.applicationType</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p153378472388"><a name="p153378472388"></a><a name="p153378472388"></a>后端为OceanStor Dorado存储时，指定创建LUN/NAS时的应用类型名称。</p>
+<p id="p2831229155"><a name="p2831229155"></a><a name="p2831229155"></a>后端为OceanDisk存储时，指定创建Namespace时的应用类型名称。</p>
 </td>
 <td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p193700711523"><a name="p193700711523"></a><a name="p193700711523"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p8398201010524"><a name="p8398201010524"></a><a name="p8398201010524"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul2082135095716"></a><a name="ul2082135095716"></a><ul id="ul2082135095716"><li>“volumeType”为“lun”时，在DeviceManager管理界面，选择“服务 &gt; 块服务 &gt; LUN组 &gt; LUN &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li><li>“volumeType”为“fs”时，在DeviceManager管理界面，选择“服务 &gt; 文件服务 &gt; 文件系统 &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li></ul>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul2082135095716"></a><a name="ul2082135095716"></a><ul id="ul2082135095716"><li>“volumeType”为“lun”时，在DeviceManager管理界面，选择“服务 &gt; 块服务 &gt; LUN组 (Namespace组)&gt; LUN (Namespace)&gt; 创建 &gt; 应用类型”，获取应用类型名称。</li><li>“volumeType”为“fs”时，在DeviceManager管理界面，选择“服务 &gt; 文件服务 &gt; 文件系统 &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li></ul>
 </td>
 </tr>
 <tr id="row15478113119190"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p18478163131914"><a name="p18478163131914"></a><a name="p18478163131914"></a>parameters.qos</p>
@@ -325,7 +327,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p10992182382217"><a name="p10992182382217"></a><a name="p10992182382217"></a>"false"</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul199806344293"></a><a name="ul199806344293"></a><ul id="ul199806344293"><li>OceanStor Dorado和OceanStor的扇区大小为512 B。</li><li>OceanStor Pacific的扇区大小为1 MiB。</li></ul>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul199806344293"></a><a name="ul199806344293"></a><ul id="ul199806344293"><li>OceanStor Dorado和OceanStor的扇区大小为512 B。</li><li>OceanStor Pacific NAS的扇区大小为1 KB。</li><li>OceanStor Pacific SAN的扇区大小为1 MiB。</li><li>OceanStor Pacific DTree的扇区大小为1 B。</li><li>OceanDisk 的扇区大小为512 B。</li></ul>
 </td>
 </tr>
 <tr id="row4937192492016"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p1893710249209"><a name="p1893710249209"></a><a name="p1893710249209"></a><span>parameters.</span><span>description</span></p>
@@ -338,7 +340,19 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p17398151010524"><a name="p17398151010524"></a><a name="p17398151010524"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p8937624182011"><a name="p8937624182011"></a><a name="p8937624182011"></a>仅支持企业存储文件系统及LUN。</p>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul1067792317811"></a><a name="ul1067792317811"></a><ul id="ul1067792317811"><li>支持企业存储文件系统及LUN。</li><li>支持OceanDisk namespace。</li></ul>
+</td>
+</tr>
+<tr id="row112751758144516"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p122751558184511"><a name="p122751558184511"></a><a name="p122751558184511"></a><span>parameters.</span>parentname</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p327525817451"><a name="p327525817451"></a><a name="p327525817451"></a>当前存储上的某一个文件系统名称，在此文件系统下创建Dtree。</p>
+</td>
+<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p8275125812453"><a name="p8275125812453"></a><a name="p8275125812453"></a>条件必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p327535812450"><a name="p327535812450"></a><a name="p327535812450"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p16731411944"><a name="p16731411944"></a><a name="p16731411944"></a>当parameters.volumeType配置为dtree，且backend未配置parentname时，该参数必填。</p>
+<p id="p122751358134518"><a name="p122751358134518"></a><a name="p122751358134518"></a>若仅在StorageClass中配置了parentname，而存储后端中未配置时，要求在安装CSI时根据<a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">表5</a>将CSIDriverObject.attachRequired设置为true。</p>
 </td>
 </tr>
 <tr id="row1795755912408"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>
@@ -407,7 +421,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p181910281476"><a name="p181910281476"></a><a name="p181910281476"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>使用Kerberos 5协议时，请配置krb5。</li><li>使用Kerberos 5i协议时，请配置krb5i。</li><li>使用Kerberos 5p协议时，请配置krb5p。</li><li>Kerberos仅支持NFSv4.0及以上版本的NFS协议。</li><li>Oceanstor Dorado和Oceanstor 6.1.3及以上版本支持Kerberos。</li></ul>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>使用Kerberos 5协议时，请配置krb5。</li><li>使用Kerberos 5i协议时，请配置krb5i。</li><li>使用Kerberos 5p协议时，请配置krb5p。</li><li>Kerberos仅支持NFSv4.0及以上版本的NFS协议。</li><li>OceanStor Dorado和OceanStor 6.1.3及以上版本支持Kerberos。</li></ul>
 </td>
 </tr>
 <tr id="row16497949175212"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p22011843373"><a name="p22011843373"></a><a name="p22011843373"></a>mountOptions.proto</p>
@@ -419,7 +433,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p1201844372"><a name="p1201844372"></a><a name="p1201844372"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>确保存储系统已启用NFS over RDMA。</li><li>华为企业存储支持OceanStor Dorado 6.1.7及以上的NAS存储。</li><li>华为分布式支持OceanStor Pacific 8.2.0及以后的NAS存储。当分布式存储使用NFS over RDMA时，mountOptions.nfsvers参数必须配置为"3"。</li></ul>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>确保存储系统已启用NFS over RDMA。</li><li>华为企业存储支持OceanStor Dorado和OceanStor 6.1.7及以上的NAS存储。</li><li>华为分布式支持OceanStor Pacific 8.2.0及以后的NAS存储。当分布式存储使用NFS over RDMA时，mountOptions.nfsvers参数必须配置为"3"。</li></ul>
 </td>
 </tr>
 <tr id="row33343664415"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p33347614411"><a name="p33347614411"></a><a name="p33347614411"></a>mountOptions.port</p>
@@ -589,6 +603,56 @@ weight: 2
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0273440106_p1943913439308"><a name="zh-cn_topic_0273440106_p1943913439308"></a><a name="zh-cn_topic_0273440106_p1943913439308"></a>最大IOPS限制策略。</p>
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0273440106_p14439114315304"><a name="zh-cn_topic_0273440106_p14439114315304"></a><a name="zh-cn_topic_0273440106_p14439114315304"></a>必填。有效值为大于0的整数。最大值请参考存储设备实际限制，如OceanStor Pacific NAS最大值为1073741824000。</p>
+</td>
+</tr>
+<tr id="row432462123811"><td class="cellrowborder" rowspan="6" valign="top" width="13.278672132786722%" headers="mcps1.2.5.1.1 "><p id="p1123535921314"><a name="p1123535921314"></a><a name="p1123535921314"></a>OceanDisk</p>
+<p id="p1698332163816"><a name="p1698332163816"></a><a name="p1698332163816"></a></p>
+<p id="p99835211384"><a name="p99835211384"></a><a name="p99835211384"></a></p>
+<p id="p1498302193819"><a name="p1498302193819"></a><a name="p1498302193819"></a></p>
+<p id="p7982321193817"><a name="p7982321193817"></a><a name="p7982321193817"></a></p>
+<p id="p15982521123815"><a name="p15982521123815"></a><a name="p15982521123815"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="15.348465153484653%" headers="mcps1.2.5.1.2 "><p id="p42352059141311"><a name="p42352059141311"></a><a name="p42352059141311"></a>IOTYPE</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.167383261673834%" headers="mcps1.2.5.1.3 "><p id="p623513597131"><a name="p623513597131"></a><a name="p623513597131"></a>控制读写类型。</p>
+</td>
+<td class="cellrowborder" valign="top" width="45.205479452054796%" headers="mcps1.2.5.1.4 "><p id="p5235145901319"><a name="p5235145901319"></a><a name="p5235145901319"></a>有效值如下：</p>
+<a name="ul152351059201313"></a><a name="ul152351059201313"></a><ul id="ul152351059201313"><li>2：读写I/O</li></ul>
+</td>
+</tr>
+<tr id="row9761216382"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p15235195941312"><a name="p15235195941312"></a><a name="p15235195941312"></a><span>MAXBANDWIDTH</span></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p2235125914138"><a name="p2235125914138"></a><a name="p2235125914138"></a>最大带宽限制策略。</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p1323595931314"><a name="p1323595931314"></a><a name="p1323595931314"></a>单位MB/s，类型为整数， 范围1~999999999。</p>
+</td>
+</tr>
+<tr id="row201481911193815"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p20235185917134"><a name="p20235185917134"></a><a name="p20235185917134"></a><span>MINBANDWIDTH</span></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p15235759131317"><a name="p15235759131317"></a><a name="p15235759131317"></a>最小带宽保护策略。</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p13235155919131"><a name="p13235155919131"></a><a name="p13235155919131"></a>单位MB/s，类型为整数， 范围1~999999999。</p>
+</td>
+</tr>
+<tr id="row183704195383"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p22356593131"><a name="p22356593131"></a><a name="p22356593131"></a><span>MAXIOPS</span></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p20235359161313"><a name="p20235359161313"></a><a name="p20235359161313"></a>最大IOPS限制策略。</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p0235205911137"><a name="p0235205911137"></a><a name="p0235205911137"></a>类型为整数， 范围100~999999999。</p>
+</td>
+</tr>
+<tr id="row72098131387"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p4235659191313"><a name="p4235659191313"></a><a name="p4235659191313"></a><span>MINIOPS</span></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p14236195921310"><a name="p14236195921310"></a><a name="p14236195921310"></a>最小IOPS保护策略。</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p17236859101318"><a name="p17236859101318"></a><a name="p17236859101318"></a>类型为整数， 范围100~999999999。</p>
+</td>
+</tr>
+<tr id="row189572083380"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p223645911317"><a name="p223645911317"></a><a name="p223645911317"></a><span>LATENCY</span></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p923685919132"><a name="p923685919132"></a><a name="p923685919132"></a>最大时延保护策略。</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p13236259191316"><a name="p13236259191316"></a><a name="p13236259191316"></a>单位ms，仅支持配置0.5或1.5。</p>
 </td>
 </tr>
 </tbody>

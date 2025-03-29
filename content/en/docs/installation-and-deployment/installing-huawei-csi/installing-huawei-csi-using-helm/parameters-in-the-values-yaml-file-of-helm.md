@@ -32,7 +32,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633715710454"><a name="en-us_topic_0000001324610777_p1633715710454"></a><a name="en-us_topic_0000001324610777_p1633715710454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p4337185713453"><a name="en-us_topic_0000001324610777_p4337185713453"></a><a name="en-us_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -511,6 +511,17 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p8124314171910"><a name="p8124314171910"></a><a name="p8124314171910"></a>In scenarios such as mounting and capacity expansion, the CSI plug-in needs to run some host commands, for example, running the <strong id="b14252141604714"><a name="b14252141604714"></a><a name="b14252141604714"></a>mount</strong> command to mount a file system. This parameter is used to control the timeout interval for running a single command.</p>
 </td>
 </tr>
+<tr id="row119848396573"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p11985639165716"><a name="p11985639165716"></a><a name="p11985639165716"></a>csiDriver.enableRoCEConnect</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p1098518397575"><a name="p1098518397575"></a><a name="p1098518397575"></a>Whether to enable automatic disk scanning for CSI when the RoCE protocol is used.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p49852039145718"><a name="p49852039145718"></a><a name="p49852039145718"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p89851639165717"><a name="p89851639165717"></a><a name="p89851639165717"></a>true</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p798563914572"><a name="p798563914572"></a><a name="p798563914572"></a>If an external tool is used to establish RoCE connections, you can set this parameter to <strong id="b7760112513562"><a name="b7760112513562"></a><a name="b7760112513562"></a>false</strong>. For example, if the SNSD automatic connection function is enabled on storage devices, you can set this parameter to <strong id="b227264915716"><a name="b227264915716"></a><a name="b227264915716"></a>false</strong>.</p>
+</td>
+</tr>
 <tr id="row73274310332"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1460663514512"><a name="p1460663514512"></a><a name="p1460663514512"></a>csiDriver.allPathOnline</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p46061935154513"><a name="p46061935154513"></a><a name="p46061935154513"></a>Whether to check whether the number of paths aggregated by DM-Multipath is equal to the actual number of online paths. The following parameter values can be configured:</p>
@@ -601,7 +612,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103486342462"><a name="en-us_topic_0000001324610777_p103486342462"></a><a name="en-us_topic_0000001324610777_p103486342462"></a>file</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b933860580"><a name="b933860580"></a><a name="b933860580"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1640915502"><a name="b1640915502"></a><a name="b1640915502"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
 <p id="p1676211161707"><a name="p1676211161707"></a><a name="p1676211161707"></a>When the value is <strong id="b134821913194316"><a name="b134821913194316"></a><a name="b134821913194316"></a>console</strong>, logs are retained in the temporary space of the Pod where CSI is located. When the Pod where CSI is located is destroyed, the logs are also destroyed.</p>
 </td>
 </tr>

@@ -119,7 +119,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row17451125324615"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p845185320464"><a name="p845185320464"></a><a name="p845185320464"></a>storage-backend-controller</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p2045111538468"><a name="p2045111538468"></a><a name="p2045111538468"></a>storage-backend-controller:<span id="ph97067019519"><a name="ph97067019519"></a><a name="ph97067019519"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p2045111538468"><a name="p2045111538468"></a><a name="p2045111538468"></a>storage-backend-controller:<span id="ph97067019519"><a name="ph97067019519"></a><a name="ph97067019519"></a>4.7.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p10451353174612"><a name="p10451353174612"></a><a name="p10451353174612"></a>v1.16+</p>
 </td>
@@ -128,7 +128,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row93065617462"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p183045684613"><a name="p183045684613"></a><a name="p183045684613"></a>storage-backend-sidecar</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p193075611465"><a name="p193075611465"></a><a name="p193075611465"></a>storage-backend-sidecar:<span id="ph391581875114"><a name="ph391581875114"></a><a name="ph391581875114"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p193075611465"><a name="p193075611465"></a><a name="p193075611465"></a>storage-backend-sidecar:<span id="ph391581875114"><a name="ph391581875114"></a><a name="ph391581875114"></a>4.7.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p133011564464"><a name="p133011564464"></a><a name="p133011564464"></a>v1.16+</p>
 </td>
@@ -137,7 +137,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row14278140184816"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p62781704483"><a name="p62781704483"></a><a name="p62781704483"></a>huawei-csi-driver</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p152781708484"><a name="p152781708484"></a><a name="p152781708484"></a>huawei-csi:<span id="ph46871220155110"><a name="ph46871220155110"></a><a name="ph46871220155110"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p152781708484"><a name="p152781708484"></a><a name="p152781708484"></a>huawei-csi:<span id="ph46871220155110"><a name="ph46871220155110"></a><a name="ph46871220155110"></a>4.7.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p2278704483"><a name="p2278704483"></a><a name="p2278704483"></a>v1.16+</p>
 </td>
@@ -146,7 +146,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row17271523123216"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p10728202303212"><a name="p10728202303212"></a><a name="p10728202303212"></a>huawei-csi-extender</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p6728112311324"><a name="p6728112311324"></a><a name="p6728112311324"></a>huawei-csi-extender:<span id="ph527132313515"><a name="ph527132313515"></a><a name="ph527132313515"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p6728112311324"><a name="p6728112311324"></a><a name="p6728112311324"></a>huawei-csi-extender:<span id="ph527132313515"><a name="ph527132313515"></a><a name="ph527132313515"></a>4.7.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p1072862312323"><a name="p1072862312323"></a><a name="p1072862312323"></a>v1.16+</p>
 </td>

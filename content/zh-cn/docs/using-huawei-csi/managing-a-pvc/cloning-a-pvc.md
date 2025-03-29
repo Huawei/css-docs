@@ -33,7 +33,7 @@ spec:
 
 ## 前提条件{#section349216304616}
 
-系统中已经存在源PVC，且源PVC所在的backend存在支持克隆。支持克隆的存储请参考[华为企业存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)和[华为企业存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)，支持克隆的Kubernetes版本请参考[Kubernetes特性矩阵](/docs/compatibility-and-features/kubernetes-feature-matrix)。
+系统中已经存在源PVC，且源PVC所在的backend存在支持克隆。支持克隆的存储请参考[华为企业存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)和[华为分布式存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage#section14115311203711)，支持克隆的Kubernetes版本请参考[Kubernetes特性矩阵](/docs/compatibility-and-features/kubernetes-feature-matrix)。
 
 ## 操作步骤{#zh-cn_topic_0254212544_section319012981414}
 

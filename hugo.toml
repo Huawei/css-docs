@@ -1,7 +1,7 @@
 # Base configuration
 baseURL = "https://huawei.github.io/css-docs/"
 title = "Huawei"
-copyright = "版权所有 © 华为技术有限公司 2024。保留一切权利。"
+copyright = "版权所有 © 华为技术有限公司 2025。保留一切权利。"
 contentDir = "content/zh-cn"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
@@ -41,14 +41,17 @@ languageName ="English"
 # contentDir = "content/en"
 languageCode = "en"
 weight = 2
-copyright = "Copyright © 2024 Huawei Technologies Co., Ltd. All rights reserved."
+copyright = "Copyright © 2025 Huawei Technologies Co., Ltd. All rights reserved."
 [languages.en.params]
 title = "Huawei CSS"
 description = "Huawei Container Storage Suite"
 version_menu = "Releases"
 [[languages.en.params.versions]]
-version = "v4.6.0 (current)"
+version = "v4.7.0 (current)"
 url = "http://huawei.github.io/css-docs/en/docs"
+[[languages.en.params.versions]]
+version = "v4.6.0"
+url = "http://huawei.github.io/css-docs/en/v4.6.0"
 [[languages.en.params.versions]]
 version = "v4.5.0"
 url = "http://huawei.github.io/css-docs/en/v4.5.0"
@@ -84,8 +87,11 @@ sidebar_search_disable = true
 showLightDarkModeMenu = false
 
 [[params.versions]]
-version = "v4.6.0（当前版本）"
+version = "v4.7.0（当前版本）"
 url = "http://huawei.github.io/css-docs/docs"
+[[params.versions]]
+version = "v4.6.0"
+url = "http://huawei.github.io/css-docs/v4.6.0"
 [[params.versions]]
 version = "v4.5.0"
 url = "http://huawei.github.io/css-docs/v4.5.0"

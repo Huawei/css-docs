@@ -12,6 +12,7 @@ For details about the backend configuration in typical scenarios, see the follow
 -   [Configuring a Storage Backend of the NVMe over RoCE Type](#section887724419372)
 -   [Configuring a Storage Backend of the NVMe over FC Type](#section11434793492)
 -   [Configuring a Storage Backend of the NFS Type](#section13980125055717)
+-   [Configuring a Storage Backend of the NFS+ Type](#section1890151345820)
 -   [Configuring a Storage Backend of the SCSI Type](#section51803398537)
 -   [Configuring a Storage Backend of the DPC Type](#section1094123525411)
 -   [Configuring Storage Backends of the Dtree Type](#section6768010203620)
@@ -63,6 +64,25 @@ parameters:
 maxClientThreads: "30"
 ```
 
+The following is an example of the backend configuration file of the iSCSI type for OceanDisk storage:
+
+```yaml
+storage: "oceandisk-san"
+name: "oceandisk-iscsi-125"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.125:8088"
+  - "https://192.168.129.126:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "iscsi"
+  portals:
+    - "192.168.128.122"
+    - "192.168.128.123"
+maxClientThreads: "30"
+```
+
 ## Configuring a Storage Backend of the FC Type{#section4385132433717}
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
@@ -87,6 +107,22 @@ parameters:
 maxClientThreads: "30"
 ```
 
+The following is an example of the backend configuration file of the FC type for OceanDisk storage:
+
+```yaml
+storage: "oceandisk-san"
+name: "fc-155"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+  - "https://192.168.129.156:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "fc"
+maxClientThreads: "30"
+```
+
 ## Configuring a Storage Backend of the NVMe over RoCE Type{#section887724419372}
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
@@ -99,6 +135,25 @@ The following is an example of the backend configuration file of the NVMe over R
 
 ```yaml
 storage: "oceanstor-san"
+name: "roce-155"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+  - "https://192.168.129.156:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "roce"
+  portals:
+    - "192.168.128.120"        
+    - "192.168.128.121"
+maxClientThreads: "30"
+```
+
+The following is an example of the backend configuration file of the NVMe over RoCE type for OceanDisk storage:
+
+```yaml
+storage: "oceandisk-san"
 name: "roce-155"
 namespace: "huawei-csi"
 urls:
@@ -170,6 +225,27 @@ parameters:
 maxClientThreads: "30"
 ```
 
+## Configuring a Storage Backend of the NFS+ Type{#section1890151345820}
+
+The following is an example of the backend configuration file of the NFS+ type for enterprise storage:
+
+```yaml
+storage: "oceanstor-nas"
+name: "nfs-plus-155"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+  - "https://192.168.129.156:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "nfs+"
+  portals:        
+    - "192.168.128.155"
+    - "192.168.128.156"
+maxClientThreads: "30"
+```
+
 ## Configuring a Storage Backend of the SCSI Type{#section51803398537}
 
 The following is an example of the backend configuration file of the SCSI type for distributed storage:
@@ -191,7 +267,7 @@ maxClientThreads: "30"
 
 ## Configuring a Storage Backend of the DPC Type{#section1094123525411}
 
-The following is an example of the backend configuration file of the DPC type for distributed storage:
+The following is an example of the backend configuration file of the DPC type for distributed NAS storage:
 
 ```yaml
 storage: "fusionstorage-nas"
@@ -207,6 +283,20 @@ parameters:
 maxClientThreads: "30"
 ```
 
+The following is an example of the backend configuration file of the DPC type for distributed dtree storage:
+
+```yaml
+storage: "fusionstorage-dtree"
+name: "dpc-dtree"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+parameters:      
+  protocol: "dpc"
+  parentname: "parent-filesystem" # This field is optional and can be configured in a StorageClass.
+maxClientThreads: "30"
+```
+
 ## Configuring Storage Backends of the Dtree Type{#section6768010203620}
 
 The following is an example of the backend configuration file of the Dtree type for enterprise storage:
@@ -219,7 +309,23 @@ urls:
 - "https://192.168.129.155:8088"
 parameters:
   protocol: "nfs"
-  parentname: "parent-filesystem"  
+  parentname: "parent-filesystem" # This field is optional and can be configured in a StorageClass.
+  portals:
+    - "192.168.128.155"
+maxClientThreads: "30"
+```
+
+The following is an example of the backend configuration file of the Dtree type for distributed storage:
+
+```yaml
+storage: "fusionstorage-dtree"
+name: "nfs-dtree"
+namespace: "huawei-csi"
+urls:
+- "https://192.168.129.155:8088"
+parameters:
+  protocol: "nfs"
+  parentname: "parent-filesystem" # This field is optional and can be configured in a StorageClass.
   portals:
     - "192.168.128.155"
 maxClientThreads: "30"

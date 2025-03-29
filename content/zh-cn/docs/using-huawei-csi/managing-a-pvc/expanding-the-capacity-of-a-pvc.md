@@ -10,7 +10,7 @@ weight: 2
 ## 前提条件{#zh-cn_topic_0254162571_section07036257166}
 
 -   PVC已创建，所在的backend存在且支持扩容。
--   支持扩容的存储请参考[华为企业存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)和[华为企业存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)，支持扩容的Kubernetes版本请参考[Kubernetes特性矩阵](/docs/compatibility-and-features/kubernetes-feature-matrix)。
+-   支持扩容的存储请参考[华为企业存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-enterprise-storage#section0652122673620)和[华为分布式存储支持的特性](/docs/compatibility-and-features/compatibility-with-huawei-distributed-storage#section14115311203711)，支持扩容的Kubernetes版本请参考[Kubernetes特性矩阵](/docs/compatibility-and-features/kubernetes-feature-matrix)。
 -   huawei-csi-controller启用了csi-resizer服务。
 
     ```

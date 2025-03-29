@@ -29,7 +29,7 @@ weight: 1
     ```
     REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION     
     1       	Mon Jan  8 04:15:40 2024	superseded	esdk-4.4.0	4.4.0      	Install complete
-    2       	Mon Jan  8 04:16:12 2024	deployed  	esdk-4.6.0	4.6.0      	Upgrade complete
+    2       	Mon Jan  8 04:16:12 2024	deployed  	esdk-4.7.0	4.7.0      	Upgrade complete
     ```
 
 4.  Run the following command to roll back the CSI services to the specified version.

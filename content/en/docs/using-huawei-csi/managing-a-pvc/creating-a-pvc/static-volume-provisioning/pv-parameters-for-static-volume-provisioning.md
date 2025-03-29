@@ -105,6 +105,18 @@ weight: 1
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.6.1.5 "><p id="p748584017914"><a name="p748584017914"></a><a name="p748584017914"></a>If this parameter is not set, the default value <strong id="b1741124652319"><a name="b1741124652319"></a><a name="b1741124652319"></a>ext4</strong> is used. This parameter is available only when <strong id="b8787155232319"><a name="b8787155232319"></a><a name="b8787155232319"></a>volumeMode</strong> is set to <strong id="b1788175212317"><a name="b1788175212317"></a><a name="b1788175212317"></a>Filesystem</strong>.</p>
 </td>
 </tr>
+<tr id="row1894264183210"><td class="cellrowborder" valign="top" width="14.285714285714285%" headers="mcps1.2.6.1.1 "><p id="p1294211453210"><a name="p1294211453210"></a><a name="p1294211453210"></a>spec.csi.volumeAttributes.dTreeParentName</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.71428571428572%" headers="mcps1.2.6.1.2 "><p id="p189421447325"><a name="p189421447325"></a><a name="p189421447325"></a>Name of the parent file system when the volume resource type is dtree.</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.238095238095237%" headers="mcps1.2.6.1.3 "><p id="p1694217415328"><a name="p1694217415328"></a><a name="p1694217415328"></a>Conditionally mandatory</p>
+</td>
+<td class="cellrowborder" valign="top" width="11.428571428571429%" headers="mcps1.2.6.1.4 "><p id="p169421345328"><a name="p169421345328"></a><a name="p169421345328"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.6.1.5 "><p id="p139424420325"><a name="p139424420325"></a><a name="p139424420325"></a>This parameter is mandatory when the managed object is a dtree resource and the <strong id="b164084228153"><a name="b164084228153"></a><a name="b164084228153"></a>parentname</strong> parameter is not configured in the storage backend.</p>
+<p id="p1545865605919"><a name="p1545865605919"></a><a name="p1545865605919"></a>If <strong id="b106757519292"><a name="b106757519292"></a><a name="b106757519292"></a>dTreeParentName</strong> is configured only in the PV but <strong id="b12614134202920"><a name="b12614134202920"></a><a name="b12614134202920"></a>parentname</strong> is not configured in the corresponding storage backend, set <strong id="b1567545102912"><a name="b1567545102912"></a><a name="b1567545102912"></a>CSIDriverObject.attachRequired</strong> to <strong id="b15675105112912"><a name="b15675105112912"></a><a name="b15675105112912"></a>true</strong> during CSI installation according to <a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">Table 5</a>.</p>
+</td>
+</tr>
 <tr id="en-us_topic_0000001255922865_row1455742510558"><td class="cellrowborder" valign="top" width="14.285714285714285%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001255922865_p055732595515"><a name="en-us_topic_0000001255922865_p055732595515"></a><a name="en-us_topic_0000001255922865_p055732595515"></a>spec.capacity.storage</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.71428571428572%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0000001255922865_p1573183510015"><a name="en-us_topic_0000001255922865_p1573183510015"></a><a name="en-us_topic_0000001255922865_p1573183510015"></a>Volume size.</p>

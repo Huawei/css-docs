@@ -71,12 +71,13 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p2201185318312"><a name="p2201185318312"></a><a name="p2201185318312"></a>Name of the backend where the resource to be created is located.</p>
 </td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p123704712528"><a name="p123704712528"></a><a name="p123704712528"></a>No</p>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p123704712528"><a name="p123704712528"></a><a name="p123704712528"></a>Conditionally mandatory</p>
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p33980109524"><a name="p33980109524"></a><a name="p33980109524"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p2023133002520"><a name="p2023133002520"></a><a name="p2023133002520"></a>If this parameter is not set, Huawei CSI will randomly select a backend that meets the capacity requirements to create resources.</p>
 <p id="p020135316313"><a name="p020135316313"></a><a name="p020135316313"></a>You are advised to specify a backend to ensure that the created resource is located on the expected backend.</p>
+<p id="p1746961523912"><a name="p1746961523912"></a><a name="p1746961523912"></a>This parameter is mandatory when <strong id="b151916252017"><a name="b151916252017"></a><a name="b151916252017"></a>parameters.volumeType</strong> is set to <strong id="b108997379016"><a name="b108997379016"></a><a name="b108997379016"></a>dtree</strong> and <strong id="b1451934015019"><a name="b1451934015019"></a><a name="b1451934015019"></a>parameters.parentname</strong> is configured.</p>
 </td>
 </tr>
 <tr id="row1995791713711"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p395711171674"><a name="p395711171674"></a><a name="p395711171674"></a>parameters.pool</p>
@@ -112,7 +113,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p6398910155219"><a name="p6398910155219"></a><a name="p6398910155219"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0000001162111564_p57502011142910"><a name="en-us_topic_0000001162111564_p57502011142910"></a><a name="en-us_topic_0000001162111564_p57502011142910"></a>If this parameter is not specified, <strong id="b7399769818"><a name="b7399769818"></a><a name="b7399769818"></a>thin</strong> will be used. Not all required space is allocated during creation. Instead, the space is dynamically allocated based on the usage.</p>
-<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanStor Dorado V3 does not support <strong id="b13346103634718"><a name="b13346103634718"></a><a name="b13346103634718"></a>thick</strong>.</p>
+<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanStor Dorado V3/OceanDisk does not support <strong id="b13346103634718"><a name="b13346103634718"></a><a name="b13346103634718"></a>thick</strong>.</p>
 </td>
 </tr>
 <tr id="row167642021133711"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001162111564_p18750171111299"><a name="en-us_topic_0000001162111564_p18750171111299"></a><a name="en-us_topic_0000001162111564_p18750171111299"></a>parameters.fsType</p>
@@ -139,7 +140,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p466615315578"><a name="p466615315578"></a><a name="p466615315578"></a>The asterisk (*) can be used to indicate any client. If you are not sure about the IP address of the access client, you are advised to use the asterisk (*) to prevent the client access from being rejected by the storage system.</p>
 <p id="p164521752175617"><a name="p164521752175617"></a><a name="p164521752175617"></a>If the client host name is used, you are advised to use the full domain name.</p>
 <p id="p20828214135714"><a name="p20828214135714"></a><a name="p20828214135714"></a>The IP addresses can be IPv4 addresses, IPv6 addresses, or a combination of IPv4 and IPv6 addresses.</p>
-<p id="p208641555185710"><a name="p208641555185710"></a><a name="p208641555185710"></a>You can enter multiple host names, IP addresses, or IP address segments and separate them with semicolons (;) or spaces or by pressing <strong id="b143841457211"><a name="b143841457211"></a><a name="b143841457211"></a>Enter</strong>. Example: <strong id="b1791131414223"><a name="b1791131414223"></a><a name="b1791131414223"></a>192.168.0.10;192.168.0.0/24;myserver1.test</strong></p>
+<p id="p208641555185710"><a name="p208641555185710"></a><a name="p208641555185710"></a>You can enter multiple host names, IP addresses, or IP address segments and separate them with semicolons (;). Example: <strong id="b1791131414223"><a name="b1791131414223"></a><a name="b1791131414223"></a>192.168.0.10;192.168.0.0/24;myserver1.test</strong></p>
 </td>
 </tr>
 <tr id="en-us_topic_0000001162111564_row475081162913"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001162111564_p187501311122918"><a name="en-us_topic_0000001162111564_p187501311122918"></a><a name="en-us_topic_0000001162111564_p187501311122918"></a>parameters.cloneSpeed</p>
@@ -156,12 +157,13 @@ weight: 2
 <tr id="en-us_topic_0000001162111564_row18750161119295"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p133711471387"><a name="p133711471387"></a><a name="p133711471387"></a>parameters.applicationType</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p153378472388"><a name="p153378472388"></a><a name="p153378472388"></a>Application type name for creating a LUN or NAS when the backend is OceanStor Dorado.</p>
+<p id="p2831229155"><a name="p2831229155"></a><a name="p2831229155"></a>Application type name for creating a namespace when the backend is OceanDisk.</p>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p193700711523"><a name="p193700711523"></a><a name="p193700711523"></a>No</p>
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p8398201010524"><a name="p8398201010524"></a><a name="p8398201010524"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul2082135095716"></a><a name="ul2082135095716"></a><ul id="ul2082135095716"><li>If the value of <strong id="b5482191814267"><a name="b5482191814267"></a><a name="b5482191814267"></a>volumeType</strong> is <strong id="b19100162522617"><a name="b19100162522617"></a><a name="b19100162522617"></a>lun</strong>, log in to DeviceManager and choose <strong id="b5787165272514"><a name="b5787165272514"></a><a name="b5787165272514"></a>Services</strong> &gt; <strong id="b778745272512"><a name="b778745272512"></a><a name="b778745272512"></a>Block Service</strong> &gt; <strong id="b4788452122517"><a name="b4788452122517"></a><a name="b4788452122517"></a>LUN Groups</strong> &gt; <strong id="b7788452142520"><a name="b7788452142520"></a><a name="b7788452142520"></a>LUNs</strong> &gt; <strong id="b978845212254"><a name="b978845212254"></a><a name="b978845212254"></a>Create</strong> to obtain the application type name.</li><li>If the value of <strong id="b182924592619"><a name="b182924592619"></a><a name="b182924592619"></a>volumeType</strong> is <strong id="b18880342102610"><a name="b18880342102610"></a><a name="b18880342102610"></a>fs</strong>, log in to DeviceManager and choose <strong id="b421011305263"><a name="b421011305263"></a><a name="b421011305263"></a>Services</strong> &gt; <strong id="b4210730192612"><a name="b4210730192612"></a><a name="b4210730192612"></a>File Service</strong> &gt; <strong id="b192111530132614"><a name="b192111530132614"></a><a name="b192111530132614"></a>File Systems</strong> &gt; <strong id="b19211153032614"><a name="b19211153032614"></a><a name="b19211153032614"></a>Create</strong> to obtain the application type name.</li></ul>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul2082135095716"></a><a name="ul2082135095716"></a><ul id="ul2082135095716"><li>If the value of <strong id="b5482191814267"><a name="b5482191814267"></a><a name="b5482191814267"></a>volumeType</strong> is <strong id="b19100162522617"><a name="b19100162522617"></a><a name="b19100162522617"></a>lun</strong>, log in to DeviceManager and choose <strong id="b5787165272514"><a name="b5787165272514"></a><a name="b5787165272514"></a>Services</strong> &gt; <strong id="b778745272512"><a name="b778745272512"></a><a name="b778745272512"></a>Block Service</strong> &gt; <strong id="b4788452122517"><a name="b4788452122517"></a><a name="b4788452122517"></a>LUN Groups</strong> (or <strong id="b17715361287"><a name="b17715361287"></a><a name="b17715361287"></a>Namespace Groups</strong>) &gt; <strong id="b7788452142520"><a name="b7788452142520"></a><a name="b7788452142520"></a>LUNs</strong> (or <strong id="b8514952682"><a name="b8514952682"></a><a name="b8514952682"></a>Namespaces</strong>) &gt; <strong id="b978845212254"><a name="b978845212254"></a><a name="b978845212254"></a>Create</strong> to obtain the application type name.</li><li>If the value of <strong id="b182924592619"><a name="b182924592619"></a><a name="b182924592619"></a>volumeType</strong> is <strong id="b18880342102610"><a name="b18880342102610"></a><a name="b18880342102610"></a>fs</strong>, log in to DeviceManager and choose <strong id="b421011305263"><a name="b421011305263"></a><a name="b421011305263"></a>Services</strong> &gt; <strong id="b4210730192612"><a name="b4210730192612"></a><a name="b4210730192612"></a>File Service</strong> &gt; <strong id="b192111530132614"><a name="b192111530132614"></a><a name="b192111530132614"></a>File Systems</strong> &gt; <strong id="b19211153032614"><a name="b19211153032614"></a><a name="b19211153032614"></a>Create</strong> to obtain the application type name.</li></ul>
 </td>
 </tr>
 <tr id="row15478113119190"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p18478163131914"><a name="p18478163131914"></a><a name="p18478163131914"></a>parameters.qos</p>
@@ -268,7 +270,7 @@ weight: 2
 <tr id="row99331045154111"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p933031214424"><a name="p933031214424"></a><a name="p933031214424"></a>parameters.accesskrb5i</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p7359241154"><a name="p7359241154"></a><a name="p7359241154"></a>Configures the krb5i security protocol.</p>
-<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b1089724215"><a name="b1089724215"></a><a name="b1089724215"></a>read_write</strong>: read and write</li><li><strong id="b730091191"><a name="b730091191"></a><a name="b730091191"></a>none</strong>: no permission</li></ul>
+<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b462316621"><a name="b462316621"></a><a name="b462316621"></a>read_write</strong>: read and write</li><li><strong id="b1653181838"><a name="b1653181838"></a><a name="b1653181838"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p129331245154111"><a name="p129331245154111"></a><a name="p129331245154111"></a>No</p>
 </td>
@@ -280,7 +282,7 @@ weight: 2
 <tr id="row47801443164117"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p11892181264220"><a name="p11892181264220"></a><a name="p11892181264220"></a>parameters.accesskrb5p</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p19699145314447"><a name="p19699145314447"></a><a name="p19699145314447"></a>Configures the krb5p security protocol.</p>
-<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b1988855912"><a name="b1988855912"></a><a name="b1988855912"></a>read_write</strong>: read and write</li><li><strong id="b896429942"><a name="b896429942"></a><a name="b896429942"></a>none</strong>: no permission</li></ul>
+<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b612749994"><a name="b612749994"></a><a name="b612749994"></a>read_write</strong>: read and write</li><li><strong id="b550705364"><a name="b550705364"></a><a name="b550705364"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1780134314118"><a name="p1780134314118"></a><a name="p1780134314118"></a>No</p>
 </td>
@@ -325,7 +327,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p10992182382217"><a name="p10992182382217"></a><a name="p10992182382217"></a>"false"</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul199806344293"></a><a name="ul199806344293"></a><ul id="ul199806344293"><li>For OceanStor Dorado and OceanStor storage, the sector size is 512 B.</li><li>For OceanStor Pacific storage, the sector size is 1 MiB.</li></ul>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul199806344293"></a><a name="ul199806344293"></a><ul id="ul199806344293"><li>For OceanStor Dorado and OceanStor storage, the sector size is 512 B.</li><li>For OceanStor Pacific NAS, the sector size is 1 KB.</li><li>For OceanStor Pacific SAN, the sector size is 1 MiB.</li><li>For OceanStor Pacific dtrees, the sector size is 1 B.</li><li>For OceanDisk, the sector size is 512 B.</li></ul>
 </td>
 </tr>
 <tr id="row4937192492016"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p1893710249209"><a name="p1893710249209"></a><a name="p1893710249209"></a>parameters.description</p>
@@ -338,7 +340,19 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p17398151010524"><a name="p17398151010524"></a><a name="p17398151010524"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p8937624182011"><a name="p8937624182011"></a><a name="p8937624182011"></a>Only enterprise storage file systems and LUNs are supported.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul1067792317811"></a><a name="ul1067792317811"></a><ul id="ul1067792317811"><li>Enterprise storage file systems and LUNs are supported.</li><li>OceanDisk namespaces are supported.</li></ul>
+</td>
+</tr>
+<tr id="row112751758144516"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p122751558184511"><a name="p122751558184511"></a><a name="p122751558184511"></a>parameters.parentname</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p327525817451"><a name="p327525817451"></a><a name="p327525817451"></a>Name of a file system on the current storage device. Dtree is created in the file system.</p>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p8275125812453"><a name="p8275125812453"></a><a name="p8275125812453"></a>Conditionally mandatory</p>
+</td>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p327535812450"><a name="p327535812450"></a><a name="p327535812450"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p16731411944"><a name="p16731411944"></a><a name="p16731411944"></a>This parameter is mandatory when <strong id="b17319112182717"><a name="b17319112182717"></a><a name="b17319112182717"></a>parameters.volumeType</strong> is set to <strong id="b77238552715"><a name="b77238552715"></a><a name="b77238552715"></a>dtree</strong> and <strong id="b42909772719"><a name="b42909772719"></a><a name="b42909772719"></a>backend</strong> is not configured.</p>
+<p id="p122751358134518"><a name="p122751358134518"></a><a name="p122751358134518"></a>If <strong id="b15553549123319"><a name="b15553549123319"></a><a name="b15553549123319"></a>parentname</strong> is configured only in the StorageClass but not configured in the storage backend, set <strong id="b18820101018343"><a name="b18820101018343"></a><a name="b18820101018343"></a>CSIDriverObject.attachRequired</strong> to <strong id="b329641615346"><a name="b329641615346"></a><a name="b329641615346"></a>true</strong> during CSI installation according to <a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">Table 5</a>.</p>
 </td>
 </tr>
 <tr id="row1795755912408"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>
@@ -537,7 +551,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p981913567333"><a name="p981913567333"></a><a name="p981913567333"></a>Read/write type.</p>
 </td>
 <td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p14819125620331"><a name="p14819125620331"></a><a name="p14819125620331"></a>The value can be:</p>
-<a name="ul17819115611331"></a><a name="ul17819115611331"></a><ul id="ul17819115611331"><li><strong id="b803954689"><a name="b803954689"></a><a name="b803954689"></a>2</strong>: read and write I/Os</li></ul>
+<a name="ul17819115611331"></a><a name="ul17819115611331"></a><ul id="ul17819115611331"><li><strong id="b1645347268"><a name="b1645347268"></a><a name="b1645347268"></a>2</strong>: read and write I/Os</li></ul>
 </td>
 </tr>
 <tr id="row545565991517"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p681925616337"><a name="p681925616337"></a><a name="p681925616337"></a>MAXBANDWIDTH</p>
@@ -589,6 +603,56 @@ weight: 2
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0273440106_p1943913439308"><a name="en-us_topic_0273440106_p1943913439308"></a><a name="en-us_topic_0273440106_p1943913439308"></a>Maximum IOPS. This is a restriction policy parameter.</p>
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0273440106_p14439114315304"><a name="en-us_topic_0273440106_p14439114315304"></a><a name="en-us_topic_0273440106_p14439114315304"></a>This parameter is mandatory. The value is an integer greater than 0. For details about the maximum value, see the actual limit of the storage device. For example, the maximum value of OceanStor Pacific NAS is 1073741824000.</p>
+</td>
+</tr>
+<tr id="row432462123811"><td class="cellrowborder" rowspan="6" valign="top" width="16%" headers="mcps1.2.5.1.1 "><p id="p1123535921314"><a name="p1123535921314"></a><a name="p1123535921314"></a>OceanDisk</p>
+<p id="p1698332163816"><a name="p1698332163816"></a><a name="p1698332163816"></a></p>
+<p id="p99835211384"><a name="p99835211384"></a><a name="p99835211384"></a></p>
+<p id="p1498302193819"><a name="p1498302193819"></a><a name="p1498302193819"></a></p>
+<p id="p7982321193817"><a name="p7982321193817"></a><a name="p7982321193817"></a></p>
+<p id="p15982521123815"><a name="p15982521123815"></a><a name="p15982521123815"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p42352059141311"><a name="p42352059141311"></a><a name="p42352059141311"></a>IOTYPE</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p623513597131"><a name="p623513597131"></a><a name="p623513597131"></a>Read/write type.</p>
+</td>
+<td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p5235145901319"><a name="p5235145901319"></a><a name="p5235145901319"></a>The value can be:</p>
+<a name="ul152351059201313"></a><a name="ul152351059201313"></a><ul id="ul152351059201313"><li><strong id="b489261134"><a name="b489261134"></a><a name="b489261134"></a>2</strong>: read and write I/Os</li></ul>
+</td>
+</tr>
+<tr id="row9761216382"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p15235195941312"><a name="p15235195941312"></a><a name="p15235195941312"></a>MAXBANDWIDTH</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p2235125914138"><a name="p2235125914138"></a><a name="p2235125914138"></a>Maximum bandwidth. This is a restriction policy parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p1323595931314"><a name="p1323595931314"></a><a name="p1323595931314"></a>The value is an integer ranging from 1 to 999999999, expressed in MB/s.</p>
+</td>
+</tr>
+<tr id="row201481911193815"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p20235185917134"><a name="p20235185917134"></a><a name="p20235185917134"></a>MINBANDWIDTH</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p15235759131317"><a name="p15235759131317"></a><a name="p15235759131317"></a>Minimum bandwidth. This is a protection policy parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p13235155919131"><a name="p13235155919131"></a><a name="p13235155919131"></a>The value is an integer ranging from 1 to 999999999, expressed in MB/s.</p>
+</td>
+</tr>
+<tr id="row183704195383"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p22356593131"><a name="p22356593131"></a><a name="p22356593131"></a>MAXIOPS</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p20235359161313"><a name="p20235359161313"></a><a name="p20235359161313"></a>Maximum IOPS. This is a restriction policy parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p0235205911137"><a name="p0235205911137"></a><a name="p0235205911137"></a>The value is an integer ranging from 100 to 999999999.</p>
+</td>
+</tr>
+<tr id="row72098131387"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p4235659191313"><a name="p4235659191313"></a><a name="p4235659191313"></a>MINIOPS</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p14236195921310"><a name="p14236195921310"></a><a name="p14236195921310"></a>Minimum IOPS. This is a protection policy parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p17236859101318"><a name="p17236859101318"></a><a name="p17236859101318"></a>The value is an integer ranging from 100 to 999999999.</p>
+</td>
+</tr>
+<tr id="row189572083380"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p223645911317"><a name="p223645911317"></a><a name="p223645911317"></a>LATENCY</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p923685919132"><a name="p923685919132"></a><a name="p923685919132"></a>Maximum latency. This is a protection policy parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p13236259191316"><a name="p13236259191316"></a><a name="p13236259191316"></a>The value can be <strong id="b182714313911"><a name="b182714313911"></a><a name="b182714313911"></a>0.5</strong> or <strong id="b027112313912"><a name="b027112313912"></a><a name="b027112313912"></a>1.5</strong>, expressed in ms.</p>
 </td>
 </tr>
 </tbody>

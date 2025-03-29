@@ -8,7 +8,7 @@ weight: 3
 ## 前置检查{#section298992810393}
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群内有oceanctl工具的节点。
-2.  执行以下命令，显示版本号为**v4.6.0**。
+2.  执行以下命令，显示版本号为**v4.7.0**。
 
     ```
     oceanctl version
@@ -17,7 +17,7 @@ weight: 3
     命令结果示例如下：
 
     ```yaml
-    Oceanctl Version: v4.6.0
+    Oceanctl Version: v4.7.0
     ```
 
 3.  执行oceanctl collect logs --help命令，返回信息如下。

@@ -32,7 +32,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1633715710454"><a name="zh-cn_topic_0000001324610777_p1633715710454"></a><a name="zh-cn_topic_0000001324610777_p1633715710454"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.6.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.7.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p4337185713453"><a name="zh-cn_topic_0000001324610777_p4337185713453"></a><a name="zh-cn_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -68,7 +68,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1633725724512"><a name="zh-cn_topic_0000001324610777_p1633725724512"></a><a name="zh-cn_topic_0000001324610777_p1633725724512"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1733785714453"><a name="zh-cn_topic_0000001324610777_p1733785714453"></a><a name="zh-cn_topic_0000001324610777_p1733785714453"></a>registry.k8s.io/sig-storage/livenessprobe:v2.12.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1733785714453"><a name="zh-cn_topic_0000001324610777_p1733785714453"></a><a name="zh-cn_topic_0000001324610777_p1733785714453"></a><span id="text9419635285"><a name="text9419635285"></a><a name="text9419635285"></a>registry.k8s.io/sig-storage/livenessprobe:v2.12.0</span></p>
 </td>
 </tr>
 <tr id="row345374716195"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p333755715453"><a name="zh-cn_topic_0000001324610777_p333755715453"></a><a name="zh-cn_topic_0000001324610777_p333755715453"></a>images.sidecar.provisioner</p>
@@ -77,7 +77,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1033711577456"><a name="zh-cn_topic_0000001324610777_p1033711577456"></a><a name="zh-cn_topic_0000001324610777_p1033711577456"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p15337125716458"><a name="zh-cn_topic_0000001324610777_p15337125716458"></a><a name="zh-cn_topic_0000001324610777_p15337125716458"></a>registry.k8s.io/sig-storage/csi-provisioner:v3.6.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p15337125716458"><a name="zh-cn_topic_0000001324610777_p15337125716458"></a><a name="zh-cn_topic_0000001324610777_p15337125716458"></a><span id="text01042496818"><a name="text01042496818"></a><a name="text01042496818"></a>registry.k8s.io/sig-storage/csi-provisioner:v3.6.0</span></p>
 </td>
 </tr>
 <tr id="row145324715192"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p19337155744517"><a name="zh-cn_topic_0000001324610777_p19337155744517"></a><a name="zh-cn_topic_0000001324610777_p19337155744517"></a>images.sidecar.attacher</p>
@@ -86,7 +86,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p18337155714518"><a name="zh-cn_topic_0000001324610777_p18337155714518"></a><a name="zh-cn_topic_0000001324610777_p18337155714518"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p7337457134516"><a name="zh-cn_topic_0000001324610777_p7337457134516"></a><a name="zh-cn_topic_0000001324610777_p7337457134516"></a>registry.k8s.io/sig-storage/csi-attacher:v4.4.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p7337457134516"><a name="zh-cn_topic_0000001324610777_p7337457134516"></a><a name="zh-cn_topic_0000001324610777_p7337457134516"></a><span id="text1381095717816"><a name="text1381095717816"></a><a name="text1381095717816"></a>registry.k8s.io/sig-storage/csi-attacher:v4.4.0</span></p>
 </td>
 </tr>
 <tr id="row94532047111915"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p13337175711459"><a name="zh-cn_topic_0000001324610777_p13337175711459"></a><a name="zh-cn_topic_0000001324610777_p13337175711459"></a>images.sidecar.resizer</p>
@@ -95,7 +95,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p93375572452"><a name="zh-cn_topic_0000001324610777_p93375572452"></a><a name="zh-cn_topic_0000001324610777_p93375572452"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p153371257184518"><a name="zh-cn_topic_0000001324610777_p153371257184518"></a><a name="zh-cn_topic_0000001324610777_p153371257184518"></a>registry.k8s.io/sig-storage/csi-resizer:v1.9.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p153371257184518"><a name="zh-cn_topic_0000001324610777_p153371257184518"></a><a name="zh-cn_topic_0000001324610777_p153371257184518"></a><span id="text11193167917"><a name="text11193167917"></a><a name="text11193167917"></a>registry.k8s.io/sig-storage/csi-resizer:v1.9.0</span></p>
 </td>
 </tr>
 <tr id="row9453124771918"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p833785764516"><a name="zh-cn_topic_0000001324610777_p833785764516"></a><a name="zh-cn_topic_0000001324610777_p833785764516"></a>images.sidecar.snapshotter</p>
@@ -104,7 +104,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1833765712454"><a name="zh-cn_topic_0000001324610777_p1833765712454"></a><a name="zh-cn_topic_0000001324610777_p1833765712454"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1033755713457"><a name="zh-cn_topic_0000001324610777_p1033755713457"></a><a name="zh-cn_topic_0000001324610777_p1033755713457"></a>registry.k8s.io/sig-storage/csi-snapshotter:v6.3.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1033755713457"><a name="zh-cn_topic_0000001324610777_p1033755713457"></a><a name="zh-cn_topic_0000001324610777_p1033755713457"></a><span id="text101211917799"><a name="text101211917799"></a><a name="text101211917799"></a>registry.k8s.io/sig-storage/csi-snapshotter:v6.3.0</span></p>
 </td>
 </tr>
 <tr id="row196140122014"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p10337557174514"><a name="zh-cn_topic_0000001324610777_p10337557174514"></a><a name="zh-cn_topic_0000001324610777_p10337557174514"></a>images.sidecar.snapshotController</p>
@@ -113,7 +113,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p10337457134511"><a name="zh-cn_topic_0000001324610777_p10337457134511"></a><a name="zh-cn_topic_0000001324610777_p10337457134511"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p0337195724520"><a name="zh-cn_topic_0000001324610777_p0337195724520"></a><a name="zh-cn_topic_0000001324610777_p0337195724520"></a>registry.k8s.io/sig-storage/snapshot-controller:v6.3.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p0337195724520"><a name="zh-cn_topic_0000001324610777_p0337195724520"></a><a name="zh-cn_topic_0000001324610777_p0337195724520"></a><span id="text28281726693"><a name="text28281726693"></a><a name="text28281726693"></a>registry.k8s.io/sig-storage/snapshot-controller:v6.3.0</span></p>
 </td>
 </tr>
 <tr id="row84580467201"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p10337165714454"><a name="zh-cn_topic_0000001324610777_p10337165714454"></a><a name="zh-cn_topic_0000001324610777_p10337165714454"></a>images.sidecar.registrar</p>
@@ -122,7 +122,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p83371057164510"><a name="zh-cn_topic_0000001324610777_p83371057164510"></a><a name="zh-cn_topic_0000001324610777_p83371057164510"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1833711578459"><a name="zh-cn_topic_0000001324610777_p1833711578459"></a><a name="zh-cn_topic_0000001324610777_p1833711578459"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.9.0</p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1833711578459"><a name="zh-cn_topic_0000001324610777_p1833711578459"></a><a name="zh-cn_topic_0000001324610777_p1833711578459"></a><span id="text116171043295"><a name="text116171043295"></a><a name="text116171043295"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.9.0</span></p>
 </td>
 </tr>
 </tbody>
@@ -509,6 +509,17 @@ csiDriver配置项包括了华为CSI运行时的基本配置，如华为驱动�
 <td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.6.1.4 "><p id="p412471411917"><a name="p412471411917"></a><a name="p412471411917"></a>30</p>
 </td>
 <td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.6.1.5 "><p id="p8124314171910"><a name="p8124314171910"></a><a name="p8124314171910"></a>CSI插件在挂载，扩容盘符等场景下，需要运行一些主机命令，例如使用mount命令挂载文件系统。该配置用于控制执行单条命令的超时时间。</p>
+</td>
+</tr>
+<tr id="row119848396573"><td class="cellrowborder" valign="top" width="20.22%" headers="mcps1.2.6.1.1 "><p id="p11985639165716"><a name="p11985639165716"></a><a name="p11985639165716"></a>csiDriver.enableRoCEConnect</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.259999999999998%" headers="mcps1.2.6.1.2 "><p id="p1098518397575"><a name="p1098518397575"></a><a name="p1098518397575"></a>使用RoCE协议时，是否开启CSI自动扫盘</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.84%" headers="mcps1.2.6.1.3 "><p id="p49852039145718"><a name="p49852039145718"></a><a name="p49852039145718"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.6.1.4 "><p id="p89851639165717"><a name="p89851639165717"></a><a name="p89851639165717"></a>true</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.889999999999997%" headers="mcps1.2.6.1.5 "><p id="p798563914572"><a name="p798563914572"></a><a name="p798563914572"></a>如果使用外部工具建立RoCE连接，可以设置为false。例如：存储开启SNSD自动建连时，可以配置为false。</p>
 </td>
 </tr>
 <tr id="row73274310332"><td class="cellrowborder" valign="top" width="20.22%" headers="mcps1.2.6.1.1 "><p id="p1460663514512"><a name="p1460663514512"></a><a name="p1460663514512"></a>csiDriver.allPathOnline</p>

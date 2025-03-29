@@ -145,6 +145,15 @@ weight: 3
 <td class="cellrowborder" valign="top" width="23.44%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0150885187_p138617554183"><a name="zh-cn_topic_0150885187_p138617554183"></a><a name="zh-cn_topic_0150885187_p138617554183"></a>64Mi~50Ti</p>
 </td>
 </tr>
+<tr id="row114604135313"><td class="cellrowborder" valign="top" width="33.23%" headers="mcps1.2.5.1.1 "><p id="p7142144118479"><a name="p7142144118479"></a><a name="p7142144118479"></a>OceanDisk</p>
+</td>
+<td class="cellrowborder" valign="top" width="19.89%" headers="mcps1.2.5.1.2 "><p id="p16142541184718"><a name="p16142541184718"></a><a name="p16142541184718"></a>512Ki~256Ti</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.44%" headers="mcps1.2.5.1.3 "><p id="p1114214184720"><a name="p1114214184720"></a><a name="p1114214184720"></a><span>50Ti</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="23.44%" headers="mcps1.2.5.1.4 "><p id="p186916546476"><a name="p186916546476"></a><a name="p186916546476"></a>512Ki~50Ti</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -167,7 +176,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="23.512351235123514%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0150885187_p919518613107"><a name="zh-cn_topic_0150885187_p919518613107"></a><a name="zh-cn_topic_0150885187_p919518613107"></a><span>500Ti</span></p>
 </td>
-<td class="cellrowborder" valign="top" width="23.002300230023007%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0150885187_p15195865109"><a name="zh-cn_topic_0150885187_p15195865109"></a><a name="zh-cn_topic_0150885187_p15195865109"></a>512Ki~500Ti</p>
+<td class="cellrowborder" valign="top" width="23.002300230023007%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0150885187_p15195865109"><a name="zh-cn_topic_0150885187_p15195865109"></a><a name="zh-cn_topic_0150885187_p15195865109"></a>512Ki~256Ti</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0150885187_row171951969107"><td class="cellrowborder" valign="top" width="33.07330733073307%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0150885187_p1519514631010"><a name="zh-cn_topic_0150885187_p1519514631010"></a><a name="zh-cn_topic_0150885187_p1519514631010"></a>OceanStor Pacific系列</p>
@@ -177,6 +186,15 @@ weight: 3
 <td class="cellrowborder" valign="top" width="23.512351235123514%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0150885187_p171963681017"><a name="zh-cn_topic_0150885187_p171963681017"></a><a name="zh-cn_topic_0150885187_p171963681017"></a><span>500Ti</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="23.002300230023007%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0150885187_p3196126121011"><a name="zh-cn_topic_0150885187_p3196126121011"></a><a name="zh-cn_topic_0150885187_p3196126121011"></a>64Mi~500Ti</p>
+</td>
+</tr>
+<tr id="row14753133712533"><td class="cellrowborder" valign="top" width="33.07330733073307%" headers="mcps1.2.5.1.1 "><p id="p1438619618481"><a name="p1438619618481"></a><a name="p1438619618481"></a>OceanDisk</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.412041204120417%" headers="mcps1.2.5.1.2 "><p id="p8844111114811"><a name="p8844111114811"></a><a name="p8844111114811"></a>512Ki~256Ti</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.512351235123514%" headers="mcps1.2.5.1.3 "><p id="p484401134818"><a name="p484401134818"></a><a name="p484401134818"></a><span>500Ti</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="23.002300230023007%" headers="mcps1.2.5.1.4 "><p id="p1484421164813"><a name="p1484421164813"></a><a name="p1484421164813"></a>512Ki~256Ti</p>
 </td>
 </tr>
 </tbody>

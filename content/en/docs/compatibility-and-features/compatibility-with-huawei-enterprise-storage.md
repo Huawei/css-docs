@@ -62,20 +62,16 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 </thead>
 <tbody><tr id="row1899683984519"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p899653994514"><a name="p899653994514"></a><a name="p899653994514"></a>Static Provisioning</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p86732141719"><a name="p86732141719"></a><a name="p86732141719"></a>SAN: FC/iSCSI<sup id="sup777718253598"><a name="sup777718253598"></a><a name="sup777718253598"></a>2</sup></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p86732141719"><a name="p86732141719"></a><a name="p86732141719"></a>SAN: FC/iSCSI</p>
 <p id="p9633201715"><a name="p9633201715"></a><a name="p9633201715"></a>NAS: NFS 3</p>
-<p id="p1957941763215"><a name="p1957941763215"></a><a name="p1957941763215"></a></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p3996103915451"><a name="p3996103915451"></a><a name="p3996103915451"></a>SAN: FC/iSCSI<sup id="sup107073234594"><a name="sup107073234594"></a><a name="sup107073234594"></a>2</sup></p>
-<p id="p11579201753211"><a name="p11579201753211"></a><a name="p11579201753211"></a></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p3996103915451"><a name="p3996103915451"></a><a name="p3996103915451"></a>SAN: FC/iSCSI</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>SAN: FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup144069810307"><a name="sup144069810307"></a><a name="sup144069810307"></a>3</sup></p>
-<p id="p20838142381814"><a name="p20838142381814"></a><a name="p20838142381814"></a>NAS: NFS 3/4.0/4.1/4.2<sup id="sup7228111612318"><a name="sup7228111612318"></a><a name="sup7228111612318"></a>4</sup></p>
-<p id="p7579181715326"><a name="p7579181715326"></a><a name="p7579181715326"></a></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="20.59%" headers="mcps1.2.6.1.4 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>SAN: FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup633519235215"><a name="sup633519235215"></a><a name="sup633519235215"></a>2</sup></p>
+<p id="p20838142381814"><a name="p20838142381814"></a><a name="p20838142381814"></a>NAS: NFS 3/4.0/4.1/4.2<sup id="sup7228111612318"><a name="sup7228111612318"></a><a name="sup7228111612318"></a>3</sup></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>SAN: FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup19167519194320"><a name="sup19167519194320"></a><a name="sup19167519194320"></a>3</sup></p>
-<p id="p12839143282719"><a name="p12839143282719"></a><a name="p12839143282719"></a>NAS: NFS 3/4.0/4.1/4.2<sup id="sup5839532102713"><a name="sup5839532102713"></a><a name="sup5839532102713"></a>4</sup></p>
-<p id="p757919176329"><a name="p757919176329"></a><a name="p757919176329"></a></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>SAN: FC/iSCSI/NVMe over RoCE/NVMe over FC<sup id="sup1827623413216"><a name="sup1827623413216"></a><a name="sup1827623413216"></a>2</sup></p>
+<p id="p12839143282719"><a name="p12839143282719"></a><a name="p12839143282719"></a>NAS: NFS 3/4.0/4.1/4.2<sup id="sup5839532102713"><a name="sup5839532102713"></a><a name="sup5839532102713"></a>3</sup>/NFS+<sup id="sup688317275488"><a name="sup688317275488"></a><a name="sup688317275488"></a>4</sup></p>
 </td>
 </tr>
 <tr id="row49961039174517"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p9996173974516"><a name="p9996173974516"></a><a name="p9996173974516"></a>Dynamic Provisioning</p>
@@ -84,7 +80,7 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 <tr id="row55791517133218"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p3579151783219"><a name="p3579151783219"></a><a name="p3579151783219"></a>Manage Provisioning<sup id="sup113201739217"><a name="sup113201739217"></a><a name="sup113201739217"></a>1</sup></p>
 </td>
 </tr>
-<tr id="row8996539144513"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p49961939194517"><a name="p49961939194517"></a><a name="p49961939194517"></a>Expand Persistent Volume<sup id="sup745085319811"><a name="sup745085319811"></a><a name="sup745085319811"></a>5</sup></p>
+<tr id="row8996539144513"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p49961939194517"><a name="p49961939194517"></a><a name="p49961939194517"></a>Expand Persistent Volume<sup id="sup386225017483"><a name="sup386225017483"></a><a name="sup386225017483"></a>5</sup></p>
 </td>
 <td class="cellrowborder" colspan="4" valign="top" headers="mcps1.2.6.1.2 mcps1.2.6.1.3 mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p071645145119"><a name="p071645145119"></a><a name="p071645145119"></a>Volumes created in Dynamic Provisioning or Manage Provisioning mode are supported.</p>
 </td>
@@ -167,7 +163,7 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 </tr>
 <tr id="row4749123262619"><td class="cellrowborder" valign="top" width="19.88%" headers="mcps1.2.6.1.1 "><p id="p274993211262"><a name="p274993211262"></a><a name="p274993211262"></a>QoS</p>
 </td>
-<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p1374918324264"><a name="p1374918324264"></a><a name="p1374918324264"></a>Supported<sup id="sup112641622162312"><a name="sup112641622162312"></a><a name="sup112641622162312"></a>6</sup></p>
+<td class="cellrowborder" valign="top" width="18.759999999999998%" headers="mcps1.2.6.1.2 "><p id="p1374918324264"><a name="p1374918324264"></a><a name="p1374918324264"></a>Supported<sup id="sup14253125012116"><a name="sup14253125012116"></a><a name="sup14253125012116"></a>6</sup></p>
 </td>
 <td class="cellrowborder" valign="top" width="19.42%" headers="mcps1.2.6.1.3 "><p id="p4749123216266"><a name="p4749123216266"></a><a name="p4749123216266"></a>Supported</p>
 </td>
@@ -187,7 +183,7 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 <td class="cellrowborder" valign="top" width="21.349999999999998%" headers="mcps1.2.6.1.5 "><p id="p1960622242718"><a name="p1960622242718"></a><a name="p1960622242718"></a>Supported</p>
 </td>
 </tr>
-<tr id="row17943182222817"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p79432225287"><a name="p79432225287"></a><a name="p79432225287"></a>Volume HyperMetro<sup id="sup3481527112310"><a name="sup3481527112310"></a><a name="sup3481527112310"></a>7</sup></p>
+<tr id="row17943182222817"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p79432225287"><a name="p79432225287"></a><a name="p79432225287"></a>Volume HyperMetro<sup id="sup12716652182119"><a name="sup12716652182119"></a><a name="sup12716652182119"></a>7</sup></p>
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.2 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>Not supported</p>
 </td>
@@ -202,24 +198,24 @@ Huawei CSI plug-in supports the following features for Huawei enterprise storage
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="p219124920369"><a name="p219124920369"></a><a name="p219124920369"></a>N/A</p>
 </td>
-<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p15191349103613"><a name="p15191349103613"></a><a name="p15191349103613"></a>Only NAS volumes are supported.<sup id="sup17837133182311"><a name="sup17837133182311"></a><a name="sup17837133182311"></a>8</sup></p>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.6.1.4 mcps1.2.6.1.5 "><p id="p15191349103613"><a name="p15191349103613"></a><a name="p15191349103613"></a>Only NAS volumes are supported.<sup id="sup5907954152119"><a name="sup5907954152119"></a><a name="sup5907954152119"></a>8</sup></p>
 </td>
 </tr>
 </tbody>
 </table>
 
 -   Note 1: Manage Provisioning is a volume management feature customized by Huawei CSI. This feature allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
--   Note 2: If the user's container platform is deployed in a virtualization environment, only iSCSI networking is supported.
--   Note 3: If NVMe over RoCE or NVMe over FC is used, the version of the nvme-cli tool on worker nodes must be 1.9 or later. To query the version, run the  **nvme version**  command.
--   Note 4: Only OceanStor/OceanStor Dorado 6.1.0 and later versions support NFS. Only OceanStor/OceanStor Dorado 6.1.3 and later versions support NFS 4.1. OceanStor/OceanStor Dorado 6.1.7 and later versions support NFS over RDMA. OceanStor/OceanStor Dorado 6.1.8 and later versions support NFS 4.2.
+-   Note 2: If NVMe over RoCE or NVMe over FC is used, the version of the nvme-cli tool on worker nodes ranges from 1.9 to 1.16. To query the version, run the  **nvme version**  command.
+-   Note 3: Only OceanStor/OceanStor Dorado 6.1.0 and later versions support NFS. Only OceanStor/OceanStor Dorado 6.1.3 and later versions support NFS 4.1. OceanStor/OceanStor Dorado 6.1.7 and later versions support NFS over RDMA. OceanStor/OceanStor Dorado 6.1.8 and later versions support NFS 4.2.
+-   Note 4: OceanStor Dorado 6.1.7 and later versions support NFS+.
 -   Note 5: The provisioned PVC whose  **volumeType**  is  **lun**  and  **accessModes**  is  **ReadOnlyMany**  does not support capacity expansion.
 -   Note 6: Only system users can configure QoS.
 -   Note 7: Only the active-active \(AA\) mode is supported.
 -   Note 8: Only OceanStor/OceanStor Dorado 6.1.3 and later versions support multi-tenant.
 
-Huawei CSI plug-in supports the following Dtree features for Huawei enterprise storage.
+Huawei CSI plug-in supports the following features for Huawei enterprise storage dtrees.
 
-**Table  3**  Features supported by Dtree
+**Table  3**  Features supported by Huawei enterprise storage dtrees
 
 <a name="table17535153417812"></a>
 <table><thead align="left"><tr id="row753517341082"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p1053517341819"><a name="p1053517341819"></a><a name="p1053517341819"></a>Feature</p>
@@ -248,7 +244,7 @@ Huawei CSI plug-in supports the following Dtree features for Huawei enterprise s
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p170mcpsimp"><a name="p170mcpsimp"></a><a name="p170mcpsimp"></a>√ (RWX/RWO/ROX/RWOP: Kubernetes 1.22 or later supports RWOP.)</p>
 </td>
 </tr>
-<tr id="row7414145315813"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p174mcpsimp"><a name="p174mcpsimp"></a><a name="p174mcpsimp"></a>Multi-tenancy</p>
+<tr id="row7414145315813"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p174mcpsimp"><a name="p174mcpsimp"></a><a name="p174mcpsimp"></a>Multi-tenant</p>
 </td>
 <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p176mcpsimp"><a name="p176mcpsimp"></a><a name="p176mcpsimp"></a>√</p>
 </td>
@@ -291,7 +287,7 @@ Huawei CSI plug-in supports the following Dtree features for Huawei enterprise s
 </tbody>
 </table>
 
-**Table  4**  Huawei storage versions supported by Dtree
+**Table  4**  Huawei storage versions supported by Huawei enterprise storage dtrees
 
 <a name="table120mcpsimp"></a>
 <table><thead align="left"><tr id="row126mcpsimp"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p128mcpsimp"><a name="p128mcpsimp"></a><a name="p128mcpsimp"></a>Storage Product</p>

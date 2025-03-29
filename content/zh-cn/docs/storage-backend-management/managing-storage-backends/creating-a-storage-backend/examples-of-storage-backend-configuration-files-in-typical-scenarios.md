@@ -12,6 +12,7 @@ weight: 1
 -   [配置NVMe over RoCE协议类型的存储后端](#section887724419372)
 -   [配置NVMe over FC协议类型的存储后端](#section11434793492)
 -   [配置NFS协议类型的存储后端](#section13980125055717)
+-   [配置NFS+协议类型的存储后端](#section1890151345820)
 -   [配置SCSI协议类型的存储后端](#section51803398537)
 -   [配置DPC协议类型的存储后端](#section1094123525411)
 -   [配置Dtree类型的存储后端](#section6768010203620)
@@ -63,6 +64,25 @@ parameters:
 maxClientThreads: "30"
 ```
 
+OceanDisk存储配置iSCSI协议类型的后端配置文件示例如下：
+
+```yaml
+storage: "oceandisk-san"
+name: "oceandisk-iscsi-125"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.125:8088"
+  - "https://192.168.129.126:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "iscsi"
+  portals:
+    - "192.168.128.122"
+    - "192.168.128.123"
+maxClientThreads: "30"
+```
+
 ## 配置FC协议类型的存储后端{#section4385132433717}
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
@@ -87,6 +107,22 @@ parameters:
 maxClientThreads: "30"
 ```
 
+OceanDisk存储配置FC协议类型的后端配置文件示例如下：
+
+```yaml
+storage: "oceandisk-san"
+name: "fc-155"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+  - "https://192.168.129.156:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "fc"
+maxClientThreads: "30"
+```
+
 ## 配置NVMe over RoCE协议类型的存储后端{#section887724419372}
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
@@ -99,6 +135,25 @@ maxClientThreads: "30"
 
 ```yaml
 storage: "oceanstor-san"
+name: "roce-155"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+  - "https://192.168.129.156:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "roce"
+  portals:
+    - "192.168.128.120"        
+    - "192.168.128.121"
+maxClientThreads: "30"
+```
+
+OceanDisk存储配置NVMe over RoCE协议类型的后端配置文件示例如下：
+
+```yaml
+storage: "oceandisk-san"
 name: "roce-155"
 namespace: "huawei-csi"
 urls:
@@ -170,6 +225,27 @@ parameters:
 maxClientThreads: "30"
 ```
 
+## 配置NFS+协议类型的存储后端{#section1890151345820}
+
+企业存储配置NFS+协议类型的后端配置文件示例如下：
+
+```yaml
+storage: "oceanstor-nas"
+name: "nfs-plus-155"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+  - "https://192.168.129.156:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "nfs+"
+  portals:        
+    - "192.168.128.155"
+    - "192.168.128.156"
+maxClientThreads: "30"
+```
+
 ## 配置SCSI协议类型的存储后端{#section51803398537}
 
 分布式存储配置SCSI协议类型的后端配置文件示例如下：
@@ -191,7 +267,7 @@ maxClientThreads: "30"
 
 ## 配置DPC协议类型的存储后端{#section1094123525411}
 
-分布式存储配置DPC协议类型的后端配置文件示例如下：
+分布式NAS存储配置DPC协议类型的后端配置文件示例如下：
 
 ```yaml
 storage: "fusionstorage-nas"
@@ -207,6 +283,20 @@ parameters:
 maxClientThreads: "30"
 ```
 
+分布式DTree存储配置DPC协议类型的后端配置文件示例如下：
+
+```yaml
+storage: "fusionstorage-dtree"
+name: "dpc-dtree"
+namespace: "huawei-csi"
+urls:
+  - "https://192.168.129.155:8088"
+parameters:      
+  protocol: "dpc"
+  parentname: "parent-filesystem" # 可选字段，可选择在StorageClass中配置
+maxClientThreads: "30"
+```
+
 ## 配置Dtree类型的存储后端{#section6768010203620}
 
 企业存储配置Dtree类型后端配置文件示例如下：
@@ -219,7 +309,23 @@ urls:
 - "https://192.168.129.155:8088"
 parameters:
   protocol: "nfs"
-  parentname: "parent-filesystem"  
+  parentname: "parent-filesystem" # 可选字段，可选择在StorageClass中配置
+  portals:
+    - "192.168.128.155"
+maxClientThreads: "30"
+```
+
+分布式存储配置Dtree类型后端配置文件示例如下：
+
+```yaml
+storage: "fusionstorage-dtree"
+name: "nfs-dtree"
+namespace: "huawei-csi"
+urls:
+- "https://192.168.129.155:8088"
+parameters:
+  protocol: "nfs"
+  parentname: "parent-filesystem" # 可选字段，可选择在StorageClass中配置
   portals:
     - "192.168.128.155"
 maxClientThreads: "30"

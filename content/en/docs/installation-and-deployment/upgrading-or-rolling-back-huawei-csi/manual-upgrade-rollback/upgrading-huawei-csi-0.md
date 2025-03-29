@@ -14,9 +14,9 @@ During the upgrade or rollback, the existing resources such as PVCs, snapshots, 
 >-   During the upgrade or rollback, you cannot use Huawei CSI to create new resources or mount or unmount an existing PVC.
 >-   During the upgrade or rollback, do not uninstall the snapshot-dependent component service.
 
-## Upgrading CSI from 2.x or 3.x to  4.6.0{#section260220843210}
+## Upgrading CSI from 2.x or 3.x to  4.7.0{#section260220843210}
 
-To upgrade CSI from 2._x_  or 3._x_  to  4.6.0, perform the following operations:
+To upgrade CSI from 2._x_  or 3._x_  to  4.7.0, perform the following operations:
 
 1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
 2.  <a name="li1699321211285"></a>Run the following command to back up the backend information to the  **configmap.json**  file. For the OpenShift platform, replace  **kubectl**  with  **oc**.
@@ -29,9 +29,9 @@ To upgrade CSI from 2._x_  or 3._x_  to  4.6.0, perform the following operations
 4.  Install CSI of the current version. For details, see  [Manually Installing Huawei CSI](/docs/installation-and-deployment/installing-huawei-csi/manually-installing-huawei-csi).
 5.  Install the backend information backed up in  [2](#li1699321211285)  according to  [Managing Storage Backends](/docs/storage-backend-management/managing-storage-backends).
 
-## Upgrading CSI from 4.x to  4.6.0{#section173369363219}
+## Upgrading CSI from 4.x to  4.7.0{#section173369363219}
 
-To upgrade CSI from 4._x_  to  4.6.0, perform the following operations:
+To upgrade CSI from 4._x_  to  4.7.0, perform the following operations:
 
 1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
 2.  Uninstall CSI. For details, see  [Manually Uninstalling Huawei CSI](/docs/installation-and-deployment/uninstalling-huawei-csi/manually-uninstalling-huawei-csi).

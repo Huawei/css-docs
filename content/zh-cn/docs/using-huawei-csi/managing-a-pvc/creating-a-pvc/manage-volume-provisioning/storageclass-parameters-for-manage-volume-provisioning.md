@@ -112,6 +112,7 @@ StorageClass支持配置如下参数信息。
 <tr id="row1175164935614"><td class="cellrowborder" valign="top" width="20.57%" headers="mcps1.2.6.1.1 "><p id="p133711471387"><a name="p133711471387"></a><a name="p133711471387"></a>parameters.applicationType</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.41%" headers="mcps1.2.6.1.2 "><p id="p153378472388"><a name="p153378472388"></a><a name="p153378472388"></a>后端为OceanStor Dorado存储时，指定创建LUN/NAS时的应用类型名称。</p>
+<p id="p15301351175010"><a name="p15301351175010"></a><a name="p15301351175010"></a>后端为OceanDisk存储时，指定创建Namespace时的应用类型名称。</p>
 <div class="note" id="note161704482570"><a name="note161704482570"></a><a name="note161704482570"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p131701948105720"><a name="p131701948105720"></a><a name="p131701948105720"></a>若卷纳管前已配置应用类型，applicationType必须与已配置的应用类型保持一致。</p>
 </div></div>
 </td>
@@ -119,7 +120,7 @@ StorageClass支持配置如下参数信息。
 </td>
 <td class="cellrowborder" valign="top" width="9.15%" headers="mcps1.2.6.1.4 "><p id="p8398201010524"><a name="p8398201010524"></a><a name="p8398201010524"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul2082135095716"></a><a name="ul2082135095716"></a><ul id="ul2082135095716"><li>“volumeType”为“lun”时，在DeviceManager管理界面，选择“服务 &gt; 块服务 &gt; LUN组 &gt; LUN &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li><li>“volumeType”为“fs”时，在DeviceManager管理界面，选择“服务 &gt; 文件服务 &gt; 文件系统 &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li></ul>
+<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul2082135095716"></a><a name="ul2082135095716"></a><ul id="ul2082135095716"><li>“volumeType”为“lun”时，在DeviceManager管理界面，选择“服务 &gt; 块服务 &gt; LUN组(Namespace组) &gt; LUN(Namespace) &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li><li>“volumeType”为“fs”时，在DeviceManager管理界面，选择“服务 &gt; 文件服务 &gt; 文件系统 &gt; 创建 &gt; 应用类型”，获取应用类型名称。</li></ul>
 </td>
 </tr>
 <tr id="row990944017312"><td class="cellrowborder" valign="top" width="20.57%" headers="mcps1.2.6.1.1 "><p id="p6909540133118"><a name="p6909540133118"></a><a name="p6909540133118"></a>parameters.fsPermission</p>
@@ -133,6 +134,19 @@ StorageClass支持配置如下参数信息。
 </td>
 <td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><p id="p99211326131"><a name="p99211326131"></a><a name="p99211326131"></a>配置格式参考Linux权限设置，如“777”、“755”等。</p>
 <p id="p248531271420"><a name="p248531271420"></a><a name="p248531271420"></a>支持所有的SAN存储，NAS存储仅支持OceanStor Dorado 、OceanStor、OceanStor Pacific 8.1.2及之后版本的存储设备。</p>
+</td>
+</tr>
+<tr id="row1638737115618"><td class="cellrowborder" valign="top" width="20.57%" headers="mcps1.2.6.1.1 "><p id="p12992202310228"><a name="p12992202310228"></a><a name="p12992202310228"></a><span>parameters.disableVerifyCapacity</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="25.41%" headers="mcps1.2.6.1.2 "><p id="p1899222312222"><a name="p1899222312222"></a><a name="p1899222312222"></a>是否禁用卷容量校验，禁用后将不校验卷容量是否为扇区大小整数倍。</p>
+<p id="p4236912172515"><a name="p4236912172515"></a><a name="p4236912172515"></a>可选值：</p>
+<a name="ul7370193012510"></a><a name="ul7370193012510"></a><ul id="ul7370193012510"><li>"true": 禁用卷容量校验。</li><li>"false": 开启卷容量校验。</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="6.959999999999999%" headers="mcps1.2.6.1.3 "><p id="p149923239227"><a name="p149923239227"></a><a name="p149923239227"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.15%" headers="mcps1.2.6.1.4 "><p id="p10992182382217"><a name="p10992182382217"></a><a name="p10992182382217"></a>"false"</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul199806344293"></a><a name="ul199806344293"></a><ul id="ul199806344293"><li>OceanStor Dorado和OceanStor的扇区大小为512 B。</li><li>OceanStor Pacific NAS的扇区大小为1 KB。</li><li>OceanStor Pacific SAN的扇区大小为1 MiB。</li><li>OceanDisk 的扇区大小为512 B。</li></ul>
 </td>
 </tr>
 <tr id="row1795755912408"><td class="cellrowborder" valign="top" width="20.57%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>
@@ -201,7 +215,7 @@ StorageClass支持配置如下参数信息。
 </td>
 <td class="cellrowborder" valign="top" width="9.15%" headers="mcps1.2.6.1.4 "><p id="p181910281476"><a name="p181910281476"></a><a name="p181910281476"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>使用Kerberos 5协议时，请配置krb5。</li><li>使用Kerberos 5i协议时，请配置krb5i。</li><li>使用Kerberos 5p协议时，请配置krb5p。</li><li>Kerberos仅支持NFSv4.0及以上版本的NFS协议。</li></ul>
+<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>使用Kerberos 5协议时，请配置krb5。</li><li>使用Kerberos 5i协议时，请配置krb5i。</li><li>使用Kerberos 5p协议时，请配置krb5p。</li><li>Kerberos仅支持NFSv4.0及以上版本的NFS协议。</li><li>OceanStor Dorado和OceanStor 6.1.3及以上版本支持Kerberos。</li></ul>
 </td>
 </tr>
 <tr id="row128563915810"><td class="cellrowborder" valign="top" width="20.57%" headers="mcps1.2.6.1.1 "><p id="p22011843373"><a name="p22011843373"></a><a name="p22011843373"></a>mountOptions.proto</p>
@@ -213,7 +227,7 @@ StorageClass支持配置如下参数信息。
 </td>
 <td class="cellrowborder" valign="top" width="9.15%" headers="mcps1.2.6.1.4 "><p id="p1201844372"><a name="p1201844372"></a><a name="p1201844372"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>确保存储系统已启用NFS over RDMA。</li><li>华为企业存储支持OceanStor Dorado 6.1.7及以上的NAS存储。</li><li>华为分布式支持OceanStor Pacific 8.2.0及以后的NAS存储。当分布式存储使用NFS over RDMA时，mountOptions.nfsvers参数必须配置为"3"。</li></ul>
+<td class="cellrowborder" valign="top" width="37.91%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>确保存储系统已启用NFS over RDMA。</li><li>华为企业存储支持OceanStor Dorado和OceanStor 6.1.7及以上的NAS存储。</li><li>华为分布式支持OceanStor Pacific 8.2.0及以后的NAS存储。当分布式存储使用NFS over RDMA时，mountOptions.nfsvers参数必须配置为"3"。</li></ul>
 </td>
 </tr>
 <tr id="row17614421981"><td class="cellrowborder" valign="top" width="20.57%" headers="mcps1.2.6.1.1 "><p id="p33347614411"><a name="p33347614411"></a><a name="p33347614411"></a>mountOptions.port</p>

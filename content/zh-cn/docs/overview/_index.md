@@ -22,5 +22,5 @@ Kubernetes通过其官方维护的一系列sidecar组件负责注册监听Kubern
 **图 2**  CSI部署模型<a name="fig64461013274"></a>  
 ![](/css-docs/figures/CSI部署模型.png "CSI部署模型")
 
-本文档主要介绍华为CSI V4.6.0插件的安装部署和使用。
+本文档主要介绍华为CSI V4.7.0插件的安装部署和使用。
 

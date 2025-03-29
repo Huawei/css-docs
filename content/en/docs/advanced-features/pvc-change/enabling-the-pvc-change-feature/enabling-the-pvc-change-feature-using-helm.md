@@ -8,7 +8,6 @@ weight: 1
 ## Prerequisites{#section10631153612202}
 
 -   You have installed Huawei CSI using Helm.
--   Huawei CSI v4.6.0  or later is used.
 
 ## Procedure{#section1361061612118}
 

@@ -18,17 +18,17 @@ Huawei CSI plug-in supports the following container management platforms.
 </thead>
 <tbody><tr id="row774818457119"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p774815451619"><a name="p774815451619"></a><a name="p774815451619"></a>Kubernetes</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1074815457112"><a name="p1074815457112"></a><a name="p1074815457112"></a>1.16 to 1.31</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1074815457112"><a name="p1074815457112"></a><a name="p1074815457112"></a>1.16 to 1.32</p>
 </td>
 </tr>
 <tr id="row1374812458110"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15748194519116"><a name="p15748194519116"></a><a name="p15748194519116"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1774819451114"><a name="p1774819451114"></a><a name="p1774819451114"></a>4.6 EUS, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1774819451114"><a name="p1774819451114"></a><a name="p1774819451114"></a>4.12 to 4.17</p>
 </td>
 </tr>
 <tr id="row1526064545317"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1426094595313"><a name="p1426094595313"></a><a name="p1426094595313"></a>Tanzu Kubernetes Grid Integrated</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p626054555310"><a name="p626054555310"></a><a name="p626054555310"></a>TKGI 1.14.1, TKGI 1.15, TKGI 1.16, TKGI 1.17, TKGI 1.18, TKGI 1.19</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p626054555310"><a name="p626054555310"></a><a name="p626054555310"></a>TKGI 1.17 to 1.19</p>
 </td>
 </tr>
 <tr id="row117973419355"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1118023483511"><a name="p1118023483511"></a><a name="p1118023483511"></a>CCE Agile</p>
@@ -97,7 +97,7 @@ The following table lists the OSs and multipathing software supported by the Hua
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p1355913785117"><a name="p1355913785117"></a><a name="p1355913785117"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p05591714513"><a name="p05591714513"></a><a name="p05591714513"></a>UltraPath 31.2.1, supporting NVMe over RoCE</p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p05591714513"><a name="p05591714513"></a><a name="p05591714513"></a>UltraPath-NVMe 31.2.1, supporting NVMe over RoCE</p>
 </td>
 </tr>
 <tr id="row33431037682"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p184420254915"><a name="p184420254915"></a><a name="p184420254915"></a>SUSE 15 x86_64</p>
@@ -112,7 +112,7 @@ The following table lists the OSs and multipathing software supported by the Hua
 </tr>
 <tr id="row10343113716818"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.1 "><p id="p7442251798"><a name="p7442251798"></a><a name="p7442251798"></a>Red Hat CoreOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.6, 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14, 4.15, 4.16, 4.17</p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17</p>
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p115134245168"><a name="p115134245168"></a><a name="p115134245168"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
