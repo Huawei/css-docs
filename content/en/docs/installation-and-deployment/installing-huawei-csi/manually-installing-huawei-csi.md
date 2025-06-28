@@ -41,7 +41,7 @@ This section describes how to manually install Huawei CSI.
 7.  \(Optional\) Run the following command to install CSIDriver. If the CSIDriver feature is not used, you can skip this step. For details, see the  [CSIDriver](https://kubernetes-csi.github.io/docs/csi-driver-object.html)  feature.
 
     ```
-    kubectl apply -f ./deploy/csidriver.yaml 
+    kubectl apply -f ./deploy/csidriver.yaml
     ```
 
 8.  Run the following command to install the huawei-csi-controller service.

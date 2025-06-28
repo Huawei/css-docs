@@ -17,6 +17,7 @@ weight: 1
 -   [配置DPC协议类型的存储后端](#section1094123525411)
 -   [配置Dtree类型的存储后端](#section6768010203620)
 -   [配置双活类型的存储后端](#section175945335494)
+-   [配置IPv6类型的存储后端](#section618713292310)
 
 ## 配置iSCSI协议类型的存储后端{#section9560112218344}
 
@@ -378,6 +379,25 @@ parameters:
   protocol: "nfs"
   portals:
     - "192.168.129.157"
+maxClientThreads: "30"
+```
+
+## 配置IPv6类型的存储后端{#section618713292310}
+
+管理URL为IPv6类型的后端配置文件（以NFS协议类型的后端为例）示例如下：
+
+```yaml
+storage: "oceanstor-nas"
+name: "nfs-155"
+namespace: "huawei-csi"
+urls:
+  - "https://[192:168:129::155]:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "nfs"
+  portals:        
+    - "192:168:128::155"
 maxClientThreads: "30"
 ```
 

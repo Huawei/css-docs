@@ -2,7 +2,7 @@
 title: "手动更新存储后端"
 linkTitle: "手动更新存储后端"
 description: 
-weight: 2
+weight: 3
 ---
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  

@@ -32,7 +32,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1633715710454"><a name="zh-cn_topic_0000001324610777_p1633715710454"></a><a name="zh-cn_topic_0000001324610777_p1633715710454"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p4337185713453"><a name="zh-cn_topic_0000001324610777_p4337185713453"></a><a name="zh-cn_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -233,6 +233,17 @@ controller配置项用于配置huawei-csi-controller组件的相关配置。
 <td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p313104444510"><a name="p313104444510"></a><a name="p313104444510"></a>污点和容忍度的详细说明请参考：<a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank" rel="noopener noreferrer">污点和容忍度</a></p>
 </td>
 </tr>
+<tr id="row17847615817"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p8848121511116"><a name="p8848121511116"></a><a name="p8848121511116"></a>controller.affinity</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p198481915714"><a name="p198481915714"></a><a name="p198481915714"></a>huawei-csi-controller的节点亲和性。配置后huawei-csi-controller会优先调度到存在该标签的节点上。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p9848111516113"><a name="p9848111516113"></a><a name="p9848111516113"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p2848111511114"><a name="p2848111511114"></a><a name="p2848111511114"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p16849315113"><a name="p16849315113"></a><a name="p16849315113"></a>节点亲和性的详细说明请参考：<a href="https://kubernetes.io/zh-cn/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity" target="_blank" rel="noopener noreferrer">将Pod指派给节点</a></p>
+</td>
+</tr>
 <tr id="row3514131652617"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p1751521602612"><a name="p1751521602612"></a><a name="p1751521602612"></a>controller.livenessProbePort</p>
 </td>
 <td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p10515161682619"><a name="p10515161682619"></a><a name="p10515161682619"></a>huawei-csi-controller的存活性探针端口，用于健康检查。</p>
@@ -375,6 +386,17 @@ node配置项用于配置huawei-csi-node组件的相关配置。
   effect: "NoExecute"</pre>
 </td>
 <td class="cellrowborder" valign="top" width="22.470000000000002%" headers="mcps1.2.6.1.5 "><p id="p596410085910"><a name="p596410085910"></a><a name="p596410085910"></a>污点和容忍度的详细说明请参考：<a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank" rel="noopener noreferrer">污点和容忍度</a></p>
+</td>
+</tr>
+<tr id="row102254208186"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p72561621151816"><a name="p72561621151816"></a><a name="p72561621151816"></a>node.affinity</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.2 "><p id="p725652110183"><a name="p725652110183"></a><a name="p725652110183"></a>huawei-csi-node的节点亲和性。配置后huawei-csi-node会优先调度到存在该标签的节点上。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.99%" headers="mcps1.2.6.1.3 "><p id="p1725672141811"><a name="p1725672141811"></a><a name="p1725672141811"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.3%" headers="mcps1.2.6.1.4 "><p id="p1625642110181"><a name="p1625642110181"></a><a name="p1625642110181"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.470000000000002%" headers="mcps1.2.6.1.5 "><p id="p132561421101814"><a name="p132561421101814"></a><a name="p132561421101814"></a>节点亲和性的详细说明请参考：<a href="https://kubernetes.io/zh-cn/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity" target="_blank" rel="noopener noreferrer">将Pod指派给节点</a></p>
 </td>
 </tr>
 <tr id="row14307151183115"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p93081173119"><a name="p93081173119"></a><a name="p93081173119"></a>node.livenessProbePort</p>
@@ -730,6 +752,17 @@ csiDriver配置项包括了华为CSI运行时的基本配置，如华为驱动�
 <td class="cellrowborder" valign="top" width="23.400000000000002%" headers="mcps1.2.6.1.5 "><p id="p10485101141015"><a name="p10485101141015"></a><a name="p10485101141015"></a>-</p>
 </td>
 </tr>
+<tr id="row136111531580"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p1761115325820"><a name="p1761115325820"></a><a name="p1761115325820"></a>imagePullSecrets</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.709999999999997%" headers="mcps1.2.6.1.2 "><p id="p1361103155815"><a name="p1361103155815"></a><a name="p1361103155815"></a>用于Kubernetes集群通过镜像仓库的身份验证，进而提取私有镜像。</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.329999999999999%" headers="mcps1.2.6.1.3 "><p id="p1861113325818"><a name="p1861113325818"></a><a name="p1861113325818"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.44%" headers="mcps1.2.6.1.4 "><p id="p1861112355810"><a name="p1861112355810"></a><a name="p1861112355810"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.400000000000002%" headers="mcps1.2.6.1.5 "><p id="p1161112317588"><a name="p1161112317588"></a><a name="p1161112317588"></a>详细说明请参考：<a href="https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/pull-image-private-registry/" target="_blank" rel="noopener noreferrer">从私有仓库拉取镜像</a></p>
+</td>
+</tr>
 <tr id="row1670374213211"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p177048426324"><a name="p177048426324"></a><a name="p177048426324"></a>CSIDriverObject.isCreate</p>
 </td>
 <td class="cellrowborder" valign="top" width="29.709999999999997%" headers="mcps1.2.6.1.2 "><p id="p67047427323"><a name="p67047427323"></a><a name="p67047427323"></a>是否创建CSIDriver对象</p>
@@ -799,6 +832,59 @@ csiDriver配置项包括了华为CSI运行时的基本配置，如华为驱动�
 <td class="cellrowborder" valign="top" width="17.44%" headers="mcps1.2.6.1.4 "><p id="p155681010134316"><a name="p155681010134316"></a><a name="p155681010134316"></a>2s</p>
 </td>
 <td class="cellrowborder" valign="top" width="23.400000000000002%" headers="mcps1.2.6.1.5 "><p id="p165681710114315"><a name="p165681710114315"></a><a name="p165681710114315"></a>仅多controller场景生效。</p>
+</td>
+</tr>
+<tr id="row2630194110428"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p9630104184219"><a name="p9630104184219"></a><a name="p9630104184219"></a>service.ipFamilyPolicy</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.709999999999997%" headers="mcps1.2.6.1.2 "><p id="p2630941144214"><a name="p2630941144214"></a><a name="p2630941144214"></a>service的IP协议栈选择策略。</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.329999999999999%" headers="mcps1.2.6.1.3 "><p id="p763016410424"><a name="p763016410424"></a><a name="p763016410424"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.44%" headers="mcps1.2.6.1.4 "><p id="p11630184134220"><a name="p11630184134220"></a><a name="p11630184134220"></a>SingleStack</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.400000000000002%" headers="mcps1.2.6.1.5 "><p id="p3913114715513"><a name="p3913114715513"></a><a name="p3913114715513"></a>可配置参数：</p>
+<a name="ul11642201414568"></a><a name="ul11642201414568"></a><ul id="ul11642201414568"><li><a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank" rel="noopener noreferrer">SingleStack</a>：service只使用一种 IP 地址族（IPv4 或 IPv6）。</li><li><a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank" rel="noopener noreferrer">PreferDualStack</a>：service优先尝试使用双栈；如果集群不支持双栈，则回退单栈。</li><li><a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank" rel="noopener noreferrer">RequireDualStack</a>：service必须使用双栈；如果集群不支持双栈，则service创建会失败。</li></ul>
+</td>
+</tr>
+<tr id="row1104104874417"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p1710414824415"><a name="p1710414824415"></a><a name="p1710414824415"></a>service.ipFamilies</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.709999999999997%" headers="mcps1.2.6.1.2 "><p id="p9104164834415"><a name="p9104164834415"></a><a name="p9104164834415"></a>service支持的IP协议栈列表。</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.329999999999999%" headers="mcps1.2.6.1.3 "><p id="p12104114864410"><a name="p12104114864410"></a><a name="p12104114864410"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.44%" headers="mcps1.2.6.1.4 "><p id="p210411484448"><a name="p210411484448"></a><a name="p210411484448"></a>IPv4</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.400000000000002%" headers="mcps1.2.6.1.5 "><p id="p26721743512"><a name="p26721743512"></a><a name="p26721743512"></a>可配置参数：</p>
+<a name="ul5941610216"></a><a name="ul5941610216"></a><ul id="ul5941610216"><li>IPv4</li><li>IPv6</li></ul>
+</td>
+</tr>
+<tr id="row2411204292218"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p1941154213223"><a name="p1941154213223"></a><a name="p1941154213223"></a>resources</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.709999999999997%" headers="mcps1.2.6.1.2 "><p id="p113716142716"><a name="p113716142716"></a><a name="p113716142716"></a>可以对huawei-csi-controller和huawei-csi-node相关容器资源进行分配：</p>
+<p id="p1513761411718"><a name="p1513761411718"></a><a name="p1513761411718"></a>resources.&lt;component&gt;.&lt;container-name&gt;</p>
+<p id="p713711141871"><a name="p713711141871"></a><a name="p713711141871"></a></p>
+<p id="p1713731415712"><a name="p1713731415712"></a><a name="p1713731415712"></a>&lt;component&gt;支持的参数：</p>
+<a name="ul18915105142419"></a><a name="ul18915105142419"></a><ul id="ul18915105142419"><li>node：配置huawei-csi-node组件中的sidecar时配置；</li><li>controller: 配置huawei-csi-controller组件中的sidecar时配置；</li></ul>
+<p id="p913716149716"><a name="p913716149716"></a><a name="p913716149716"></a></p>
+<p id="p1813712141714"><a name="p1813712141714"></a><a name="p1813712141714"></a>controller.&lt;container-name&gt;支持的参数:</p>
+<a name="ul328959182417"></a><a name="ul328959182417"></a><ul id="ul328959182417"><li>livenessProbe</li><li>csiProvisioner</li><li>csiAttacher</li><li>csiResizer</li><li>csiSnapshotter</li><li>snapshotController</li><li>storageBackendController</li><li>storageBackendSidecar</li><li>huaweiCsiExtender</li><li>huaweiCsiDriver</li></ul>
+<p id="p1513717142713"><a name="p1513717142713"></a><a name="p1513717142713"></a></p>
+<p id="p8810438121413"><a name="p8810438121413"></a><a name="p8810438121413"></a>node.&lt;container-name&gt;支持的参数:</p>
+<a name="ul1778113710255"></a><a name="ul1778113710255"></a><ul id="ul1778113710255"><li>huaweiCsiDriver</li><li>livenessProbe</li><li>csiNodeDriverRegistrar</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="6.329999999999999%" headers="mcps1.2.6.1.3 "><p id="p2412174213224"><a name="p2412174213224"></a><a name="p2412174213224"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.44%" headers="mcps1.2.6.1.4 "><p id="p1593232713328"><a name="p1593232713328"></a><a name="p1593232713328"></a>各容器资源分配默认值，请参考：<a href="/css-docs/docs/appendix/huawei-csi-resource-management">华为CSI资源管理</a></p>
+</td>
+<td class="cellrowborder" valign="top" width="23.400000000000002%" headers="mcps1.2.6.1.5 "><p id="p13812293161"><a name="p13812293161"></a><a name="p13812293161"></a>以huawei-csi-controller的livenessProbe为例：</p>
+<pre class="screen" id="screen1541341184010"><a name="screen1541341184010"></a><a name="screen1541341184010"></a>resources:
+  controller:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 10m
+      memory: 128Mi</pre>
 </td>
 </tr>
 </tbody>

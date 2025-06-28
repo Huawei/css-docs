@@ -41,7 +41,7 @@ weight: 2
 7.  **（可选）**  执行命令安装CSIDriver。如果不使用CSIDriver特性，可跳过本步骤，详情请参考[CSIDriver](https://kubernetes-csi.github.io/docs/csi-driver-object.html)特性。
 
     ```
-    kubectl apply -f ./deploy/csidriver.yaml 
+    kubectl apply -f ./deploy/csidriver.yaml
     ```
 
 8.  执行命令安装huawei-csi-controller服务。

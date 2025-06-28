@@ -67,6 +67,18 @@ weight: 2
 <p id="p1999211201535"><a name="p1999211201535"></a><a name="p1999211201535"></a>The PV capacity expansion function is supported in Kubernetes 1.14 (alpha) and later versions.</p>
 </td>
 </tr>
+<tr id="row63343268297"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p13432132752911"><a name="p13432132752911"></a><a name="p13432132752911"></a>mountOptions</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p134321427192916"><a name="p134321427192916"></a><a name="p134321427192916"></a>List of mount parameters, which can be used to specify the parameters of the <strong id="b938691915113"><a name="b938691915113"></a><a name="b938691915113"></a>-o</strong> option when the <strong id="b1420143218111"><a name="b1420143218111"></a><a name="b1420143218111"></a>mount</strong> command is executed on a host.</p>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p2432227172910"><a name="p2432227172910"></a><a name="p2432227172910"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p1432112762919"><a name="p1432112762919"></a><a name="p1432112762919"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p15432162772912"><a name="p15432162772912"></a><a name="p15432162772912"></a>For details about common parameters in <strong id="b1945445410117"><a name="b1945445410117"></a><a name="b1945445410117"></a>mountOptions</strong>, see <a href="#table65545557506">Table 2</a>.</p>
+<p id="p104322027152920"><a name="p104322027152920"></a><a name="p104322027152920"></a>You can also specify other mount parameters.</p>
+</td>
+</tr>
 <tr id="row172016531531"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p1120145314312"><a name="p1120145314312"></a><a name="p1120145314312"></a>parameters.backend</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p2201185318312"><a name="p2201185318312"></a><a name="p2201185318312"></a>Name of the backend where the resource to be created is located.</p>
@@ -91,6 +103,24 @@ weight: 2
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>If this parameter is not set, Huawei CSI will randomly select a storage pool that meets the capacity requirements from the selected backend to create resources. You are advised to specify a storage pool to ensure that the created resource is located in the expected storage pool.</p>
 </td>
 </tr>
+<tr id="row12968565337"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p270mcpsimp"><a name="p270mcpsimp"></a><a name="p270mcpsimp"></a>Name of the storage resource created by dynamic volume provisioning.</p>
+<p id="p271mcpsimp"><a name="p271mcpsimp"></a><a name="p271mcpsimp"></a>You can configure a placeholder to customize the storage resource name. The following placeholders are supported:</p>
+<a name="ul277mcpsimp"></a><a name="ul277mcpsimp"></a><ul id="ul277mcpsimp"><li>PVC namespace: {{ .PVCNamespace }}</li><li>PVC name: {{ .PVCName }}</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p49687693314"><a name="p49687693314"></a><a name="p49687693314"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p096819643312"><a name="p096819643312"></a><a name="p096819643312"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul165061538173414"></a><a name="ul165061538173414"></a><ul id="ul165061538173414"><li>Only OceanStor and OceanStor Dorado enterprise storage products are supported.</li><li>The value can contain letters, digits, hyphens (-), underscores (_), and periods (.). It cannot be left empty. The length of the expanded placeholder ranges from 1 to 255 characters.</li><li>Both the PVC namespace and PVC name must be configured.</li><li>To avoid duplicate resource names, the PVC UID is added to the end of the name as a unique identifier by default.</li></ul>
+<p id="p3486174714359"><a name="p3486174714359"></a><a name="p3486174714359"></a></p>
+<p id="p292mcpsimp"><a name="p292mcpsimp"></a><a name="p292mcpsimp"></a>Configuration example:</p>
+<p id="p293mcpsimp"><a name="p293mcpsimp"></a><a name="p293mcpsimp"></a>PVC namespace: <strong id="b17463154211711"><a name="b17463154211711"></a><a name="b17463154211711"></a>namespace</strong>. PVC name: <strong id="b723125051719"><a name="b723125051719"></a><a name="b723125051719"></a>pvc-1</strong>. PVC UID: <strong id="b1858945412171"><a name="b1858945412171"></a><a name="b1858945412171"></a>c2fd3f46-bf17-4a7d-b88e-2e3232bae434</strong>.</p>
+<p id="p301mcpsimp"><a name="p301mcpsimp"></a><a name="p301mcpsimp"></a><strong id="b4947105911719"><a name="b4947105911719"></a><a name="b4947105911719"></a>volumeName</strong> is set to <strong id="b87210186180"><a name="b87210186180"></a><a name="b87210186180"></a>prefix-{{ .PVCNamespace }}_{{ .PVCName }}</strong>.</p>
+<p id="p302mcpsimp"><a name="p302mcpsimp"></a><a name="p302mcpsimp"></a>The ultimate storage resource name is <strong id="b52901641111819"><a name="b52901641111819"></a><a name="b52901641111819"></a>prefix-namespace_pvc-1-c2fd3f46bf174a7db88e2e3232bae434</strong>.</p>
+</td>
+</tr>
 <tr id="en-us_topic_0000001162111564_row18750151182917"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001162111564_p1775061119292"><a name="en-us_topic_0000001162111564_p1775061119292"></a><a name="en-us_topic_0000001162111564_p1775061119292"></a>parameters.volumeType</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0000001162111564_p975011122920"><a name="en-us_topic_0000001162111564_p975011122920"></a><a name="en-us_topic_0000001162111564_p975011122920"></a>Type of the volume to be created. The following types are supported:</p>
@@ -113,7 +143,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p6398910155219"><a name="p6398910155219"></a><a name="p6398910155219"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0000001162111564_p57502011142910"><a name="en-us_topic_0000001162111564_p57502011142910"></a><a name="en-us_topic_0000001162111564_p57502011142910"></a>If this parameter is not specified, <strong id="b7399769818"><a name="b7399769818"></a><a name="b7399769818"></a>thin</strong> will be used. Not all required space is allocated during creation. Instead, the space is dynamically allocated based on the usage.</p>
-<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanStor Dorado V3/OceanDisk does not support <strong id="b13346103634718"><a name="b13346103634718"></a><a name="b13346103634718"></a>thick</strong>.</p>
+<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanDisk does not support <strong id="b1495195217507"><a name="b1495195217507"></a><a name="b1495195217507"></a>thick</strong>.</p>
 </td>
 </tr>
 <tr id="row167642021133711"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001162111564_p18750171111299"><a name="en-us_topic_0000001162111564_p18750171111299"></a><a name="en-us_topic_0000001162111564_p18750171111299"></a>parameters.fsType</p>
@@ -175,7 +205,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p1439818100526"><a name="p1439818100526"></a><a name="p1439818100526"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p24789316192"><a name="p24789316192"></a><a name="p24789316192"></a>For details about the supported QoS configurations, see <a href="#table74841513116">Table 2</a>.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p24789316192"><a name="p24789316192"></a><a name="p24789316192"></a>For details about the supported QoS configurations, see <a href="#table74841513116">Table 3</a>.</p>
 </td>
 </tr>
 <tr id="row1713161417388"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p513251416380"><a name="p513251416380"></a><a name="p513251416380"></a>parameters.storageQuota</p>
@@ -187,7 +217,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p639812105526"><a name="p639812105526"></a><a name="p639812105526"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p21321014103814"><a name="p21321014103814"></a><a name="p21321014103814"></a>For details about the supported quota configurations, see <a href="#table2083974632312">Table 3</a>.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p21321014103814"><a name="p21321014103814"></a><a name="p21321014103814"></a>For details about the supported quota configurations, see <a href="#table2083974632312">Table 4</a>.</p>
 </td>
 </tr>
 <tr id="row87671018115219"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p74248684617"><a name="p74248684617"></a><a name="p74248684617"></a>parameters.hyperMetro</p>
@@ -270,7 +300,7 @@ weight: 2
 <tr id="row99331045154111"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p933031214424"><a name="p933031214424"></a><a name="p933031214424"></a>parameters.accesskrb5i</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p7359241154"><a name="p7359241154"></a><a name="p7359241154"></a>Configures the krb5i security protocol.</p>
-<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b462316621"><a name="b462316621"></a><a name="b462316621"></a>read_write</strong>: read and write</li><li><strong id="b1653181838"><a name="b1653181838"></a><a name="b1653181838"></a>none</strong>: no permission</li></ul>
+<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b236725510"><a name="b236725510"></a><a name="b236725510"></a>read_write</strong>: read and write</li><li><strong id="b1955400068"><a name="b1955400068"></a><a name="b1955400068"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p129331245154111"><a name="p129331245154111"></a><a name="p129331245154111"></a>No</p>
 </td>
@@ -282,7 +312,7 @@ weight: 2
 <tr id="row47801443164117"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p11892181264220"><a name="p11892181264220"></a><a name="p11892181264220"></a>parameters.accesskrb5p</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p19699145314447"><a name="p19699145314447"></a><a name="p19699145314447"></a>Configures the krb5p security protocol.</p>
-<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b612749994"><a name="b612749994"></a><a name="b612749994"></a>read_write</strong>: read and write</li><li><strong id="b550705364"><a name="b550705364"></a><a name="b550705364"></a>none</strong>: no permission</li></ul>
+<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b1458982824"><a name="b1458982824"></a><a name="b1458982824"></a>read_write</strong>: read and write</li><li><strong id="b758244991"><a name="b758244991"></a><a name="b758244991"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1780134314118"><a name="p1780134314118"></a><a name="p1780134314118"></a>No</p>
 </td>
@@ -351,117 +381,147 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p327535812450"><a name="p327535812450"></a><a name="p327535812450"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p16731411944"><a name="p16731411944"></a><a name="p16731411944"></a>This parameter is mandatory when <strong id="b17319112182717"><a name="b17319112182717"></a><a name="b17319112182717"></a>parameters.volumeType</strong> is set to <strong id="b77238552715"><a name="b77238552715"></a><a name="b77238552715"></a>dtree</strong> and <strong id="b42909772719"><a name="b42909772719"></a><a name="b42909772719"></a>backend</strong> is not configured.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p16731411944"><a name="p16731411944"></a><a name="p16731411944"></a>This parameter is mandatory when <strong id="b17319112182717"><a name="b17319112182717"></a><a name="b17319112182717"></a>parameters.volumeType</strong> is set to <strong id="b77238552715"><a name="b77238552715"></a><a name="b77238552715"></a>dtree</strong> and <strong id="b819983510241"><a name="b819983510241"></a><a name="b819983510241"></a>parentname</strong> is not configured for the backend.</p>
 <p id="p122751358134518"><a name="p122751358134518"></a><a name="p122751358134518"></a>If <strong id="b15553549123319"><a name="b15553549123319"></a><a name="b15553549123319"></a>parentname</strong> is configured only in the StorageClass but not configured in the storage backend, set <strong id="b18820101018343"><a name="b18820101018343"></a><a name="b18820101018343"></a>CSIDriverObject.attachRequired</strong> to <strong id="b329641615346"><a name="b329641615346"></a><a name="b329641615346"></a>true</strong> during CSI installation according to <a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">Table 5</a>.</p>
 </td>
 </tr>
-<tr id="row1795755912408"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>
+<tr id="row1795755912408"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>parameters.advancedOptions</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p16369105917476"><a name="p16369105917476"></a><a name="p16369105917476"></a>NFS mount option on the host. The following mount option is supported:</p>
-<p id="p3366172411524"><a name="p3366172411524"></a><a name="p3366172411524"></a><strong id="b1829141763615"><a name="b1829141763615"></a><a name="b1829141763615"></a>nfsvers</strong>: protocol version for NFS mounting. The value can be <strong id="b1677134312360"><a name="b1677134312360"></a><a name="b1677134312360"></a>3</strong>, <strong id="b15848443362"><a name="b15848443362"></a><a name="b15848443362"></a>4</strong>, <strong id="b813154612361"><a name="b813154612361"></a><a name="b813154612361"></a>4.0</strong>, <strong id="b979851623714"><a name="b979851623714"></a><a name="b979851623714"></a>4.1</strong>, or <strong id="b10691247183619"><a name="b10691247183619"></a><a name="b10691247183619"></a>4.2</strong>.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p737mcpsimp"><a name="p737mcpsimp"></a><a name="p737mcpsimp"></a>Advanced <span id="text221712597301"><a name="text221712597301"></a><a name="text221712597301"></a>volume creation</span> parameters. This parameter can be configured only for <strong id="b9692412105018"><a name="b9692412105018"></a><a name="b9692412105018"></a>oceanstor-nas</strong> storage.</p>
+<p id="p738mcpsimp"><a name="p738mcpsimp"></a><a name="p738mcpsimp"></a>The value of the parameter is JSON character strings in dictionary format. A character string is enclosed by single quotation marks and the dictionary key by double quotation marks. Example: <strong id="b5194134115274"><a name="b5194134115274"></a><a name="b5194134115274"></a>'{"CAPACITYTHRESHOLD": 90}'</strong></p>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p53719725212"><a name="p53719725212"></a><a name="p53719725212"></a>No</p>
 </td>
 <td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p13398141016526"><a name="p13398141016526"></a><a name="p13398141016526"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p775515413439"><a name="p775515413439"></a><a name="p775515413439"></a>This parameter is optional after the <strong id="b17158349193611"><a name="b17158349193611"></a><a name="b17158349193611"></a>-o</strong> parameter when the <strong id="b19158549153613"><a name="b19158549153613"></a><a name="b19158549153613"></a>mount</strong> command is executed on the host. The value is in list format.</p>
-<p id="p486929143316"><a name="p486929143316"></a><a name="p486929143316"></a>If the NFS version is specified for mounting, NFS 3, 4.0, 4.1, and 4.2 protocols are supported (the protocol must be supported and enabled on storage devices). If <strong id="b733146143816"><a name="b733146143816"></a><a name="b733146143816"></a>nfsvers</strong> is set to <strong id="b143311693811"><a name="b143311693811"></a><a name="b143311693811"></a>4</strong>, the latest protocol version NFS 4 may be used for mounting due to different OS configurations, for example, 4.2. If the 4.0 protocol is required, you are advised to set <strong id="b7342612383"><a name="b7342612383"></a><a name="b7342612383"></a>nfsvers</strong> to <strong id="b15357673814"><a name="b15357673814"></a><a name="b15357673814"></a>4.0</strong>.</p>
-</td>
-</tr>
-<tr id="row122991419104113"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p743994313307"><a name="p743994313307"></a><a name="p743994313307"></a>mountOptions.acl</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p7439243173012"><a name="p7439243173012"></a><a name="p7439243173012"></a>The DPC namespace supports the ACL function. The DPC client supports POSIX ACL, NFSv4 ACL, and NT ACL authentication.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p18371167175218"><a name="p18371167175218"></a><a name="p18371167175218"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p5398121065216"><a name="p5398121065216"></a><a name="p5398121065216"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p1451716198319"><a name="p1451716198319"></a><a name="p1451716198319"></a>The descriptions of <strong id="b174671246105310"><a name="b174671246105310"></a><a name="b174671246105310"></a>acl</strong>, <strong id="b8467194645310"><a name="b8467194645310"></a><a name="b8467194645310"></a>aclonlyposix</strong>, <strong id="b124671946125312"><a name="b124671946125312"></a><a name="b124671946125312"></a>cnflush</strong>, and <strong id="b1146724617534"><a name="b1146724617534"></a><a name="b1146724617534"></a>cflush</strong> are for reference only. For details about the parameters, see <em id="i1646819463535"><a name="i1646819463535"></a><a name="i1646819463535"></a><a href="https://support.huawei.com/enterprise/en/distributed-storage/oceanstor-pacific-9520-pid-251711061" target="_blank" rel="noopener noreferrer">OceanStor Pacific Series Product Documentation</a></em> and choose <strong id="b1046834613530"><a name="b1046834613530"></a><a name="b1046834613530"></a>Configuration</strong> &gt; <strong id="b14468174665317"><a name="b14468174665317"></a><a name="b14468174665317"></a>Basic Service Configuration Guide for File</strong> &gt; <strong id="b17468144625314"><a name="b17468144625314"></a><a name="b17468144625314"></a>Configuring Basic Services (DPC Scenario)</strong> &gt; <strong id="b946844675316"><a name="b946844675316"></a><a name="b946844675316"></a>Accessing a DPC Share on a Client</strong> &gt; <strong id="b1846811463533"><a name="b1846811463533"></a><a name="b1846811463533"></a>Step 2</strong>.</p>
-</td>
-</tr>
-<tr id="row131796204428"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p184399439309"><a name="p184399439309"></a><a name="p184399439309"></a>mountOptions.aclonlyposix</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p13950103563719"><a name="p13950103563719"></a><a name="p13950103563719"></a>The DPC namespace supports POSIX ACL, and the DPC client supports POSIX ACL authentication.</p>
-<p id="p1943913439308"><a name="p1943913439308"></a><a name="p1943913439308"></a>The following protocols support POSIX ACL: DPC, NFSv3, and HDFS. If NFSv4 ACL or NT ACL is used, the DPC client cannot identify the ACL of this type. As a result, the ACL of this type does not take effect.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p103711978523"><a name="p103711978523"></a><a name="p103711978523"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p639831014524"><a name="p639831014524"></a><a name="p639831014524"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p718315423511"><a name="p718315423511"></a><a name="p718315423511"></a>If <strong id="b4962121204015"><a name="b4962121204015"></a><a name="b4962121204015"></a>aclonlyposix</strong> and <strong id="b9962721104015"><a name="b9962721104015"></a><a name="b9962721104015"></a>acl</strong> are used together, only <strong id="b6963172144010"><a name="b6963172144010"></a><a name="b6963172144010"></a>acl</strong> takes effect. That is, the namespace supports the ACL function.</p>
-</td>
-</tr>
-<tr id="row10278171764220"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p867705717358"><a name="p867705717358"></a><a name="p867705717358"></a>mountOptions.cnflush</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p7533510163615"><a name="p7533510163615"></a><a name="p7533510163615"></a>Asynchronous disk flushing mode. That is, data is not flushed to disks immediately when files in the namespace are closed.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1537112711528"><a name="p1537112711528"></a><a name="p1537112711528"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p53981310175211"><a name="p53981310175211"></a><a name="p53981310175211"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p46771657123516"><a name="p46771657123516"></a><a name="p46771657123516"></a>Asynchronous flushing mode: When a file is closed, data in the cache is not flushed to storage media in synchronous mode. Instead, data is written from the cache to the storage media in asynchronous flushing mode. After the write service is complete, data is flushed from the cache to disks periodically based on the flushing period. In a multi-client scenario, if concurrent operations are performed on the same file, the file size update is affected by the disk flushing period. That is, the file size is updated only after the disk flushing is complete. Generally, the update is completed within several seconds. Synchronous I/Os are not affected by the disk flushing period.</p>
-</td>
-</tr>
-<tr id="row1645871414422"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p13444191520365"><a name="p13444191520365"></a><a name="p13444191520365"></a>mountOptions.cflush</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p194444156366"><a name="p194444156366"></a><a name="p194444156366"></a>Synchronous disk flushing mode. That is, data is flushed to disks immediately when files in the namespace are closed.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1837197175216"><a name="p1837197175216"></a><a name="p1837197175216"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p93981210155216"><a name="p93981210155216"></a><a name="p93981210155216"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p18444315183615"><a name="p18444315183615"></a><a name="p18444315183615"></a>By default, the synchronous disk flushing mode is used.</p>
-</td>
-</tr>
-<tr id="row17198283474"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p13195284475"><a name="p13195284475"></a><a name="p13195284475"></a>mountOptions.sec</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p919162820478"><a name="p919162820478"></a><a name="p919162820478"></a>Kerberos 5 protocol for mounting NFS file systems.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1719152812473"><a name="p1719152812473"></a><a name="p1719152812473"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p181910281476"><a name="p181910281476"></a><a name="p181910281476"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>If Kerberos 5 is used, set this parameter to <strong id="b1435135952518"><a name="b1435135952518"></a><a name="b1435135952518"></a>krb5</strong>.</li><li>If Kerberos 5i is used, set this parameter to <strong id="b79148018262"><a name="b79148018262"></a><a name="b79148018262"></a>krb5i</strong>.</li><li>If Kerberos 5p is used, set this parameter to <strong id="b1916811982618"><a name="b1916811982618"></a><a name="b1916811982618"></a>krb5p</strong>.</li><li>Kerberos supports only NFSv4.0 and later versions.</li><li>OceanStor Dorado and OceanStor 6.1.3 and later versions support Kerberos.</li></ul>
-</td>
-</tr>
-<tr id="row16497949175212"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p22011843373"><a name="p22011843373"></a><a name="p22011843373"></a>mountOptions.proto</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p120110433710"><a name="p120110433710"></a><a name="p120110433710"></a>Transmission protocol used for NFS mounting.</p>
-<p id="p121419557439"><a name="p121419557439"></a><a name="p121419557439"></a>The value can be <strong id="b11371339115410"><a name="b11371339115410"></a><a name="b11371339115410"></a>rdma</strong>.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1520119410379"><a name="p1520119410379"></a><a name="p1520119410379"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p1201844372"><a name="p1201844372"></a><a name="p1201844372"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>Ensure that NFS over RDMA is enabled on the storage system.</li><li>For Huawei enterprise storage, NAS storage of OceanStor Dorado and OceanStor 6.1.7 and later is supported.</li><li>For Huawei distributed storage, NAS storage of OceanStor Pacific 8.2.0 and later is supported. If NFS over RDMA is used for distributed storage, <strong id="b1315673395715"><a name="b1315673395715"></a><a name="b1315673395715"></a>mountOptions.nfsvers</strong> must be set to <strong id="b1115711331570"><a name="b1115711331570"></a><a name="b1115711331570"></a>3</strong>.</li></ul>
-</td>
-</tr>
-<tr id="row33343664415"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p33347614411"><a name="p33347614411"></a><a name="p33347614411"></a>mountOptions.port</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p285125974520"><a name="p285125974520"></a><a name="p285125974520"></a>Protocol port used for NFS mounting.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p7334269448"><a name="p7334269448"></a><a name="p7334269448"></a>Conditionally mandatory</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p163341965441"><a name="p163341965441"></a><a name="p163341965441"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p1233414615447"><a name="p1233414615447"></a><a name="p1233414615447"></a>If the transmission protocol is <strong id="b698755172717"><a name="b698755172717"></a><a name="b698755172717"></a>rdma</strong>, set this parameter to <strong id="b1080767142715"><a name="b1080767142715"></a><a name="b1080767142715"></a>20049</strong>.</p>
-</td>
-</tr>
-<tr id="row11127032122910"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.6.1.1 "><p id="p612723262910"><a name="p612723262910"></a><a name="p612723262910"></a>mountOptions.discard</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.2 "><p id="p4127632172918"><a name="p4127632172918"></a><a name="p4127632172918"></a>Automatically triggers the Trim or Discard operation when a file system is mounted. This operation instructs a block device to release unused blocks.</p>
-</td>
-<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p191271932182911"><a name="p191271932182911"></a><a name="p191271932182911"></a>No</p>
-</td>
-<td class="cellrowborder" valign="top" width="13%" headers="mcps1.2.6.1.4 "><p id="p1712773232912"><a name="p1712773232912"></a><a name="p1712773232912"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p2127193210298"><a name="p2127193210298"></a><a name="p2127193210298"></a>The xfs and ext4 file systems are supported.</p>
+<td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.6.1.5 "><p id="p208761647111216"><a name="p208761647111216"></a><a name="p208761647111216"></a>For details about the supported advanced parameters, see <a href="#_table034918373916">Table 5</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**Table  2**  Supported QoS configurations
+**Table  2**  Common parameters in mountOptions
+
+<a name="table65545557506"></a>
+<table><thead align="left"><tr id="row1555414559506"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.1"><p id="p5274819155114"><a name="p5274819155114"></a><a name="p5274819155114"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.2"><p id="p19274619145114"><a name="p19274619145114"></a><a name="p19274619145114"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.3"><p id="p6274171905110"><a name="p6274171905110"></a><a name="p6274171905110"></a>Mandatory</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.4"><p id="p13274419205110"><a name="p13274419205110"></a><a name="p13274419205110"></a>Default Value</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.5"><p id="p19274171912519"><a name="p19274171912519"></a><a name="p19274171912519"></a>Remarks</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row8555755185012"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p162853569513"><a name="p162853569513"></a><a name="p162853569513"></a>mountOptions.nfsvers</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p1928585612516"><a name="p1928585612516"></a><a name="p1928585612516"></a>NFS mount option on the host. The following mount option is supported:</p>
+<p id="p328516567514"><a name="p328516567514"></a><a name="p328516567514"></a><strong id="b1829141763615"><a name="b1829141763615"></a><a name="b1829141763615"></a>nfsvers</strong>: protocol version for NFS mounting. The value can be <strong id="b1677134312360"><a name="b1677134312360"></a><a name="b1677134312360"></a>3</strong>, <strong id="b15848443362"><a name="b15848443362"></a><a name="b15848443362"></a>4</strong>, <strong id="b813154612361"><a name="b813154612361"></a><a name="b813154612361"></a>4.0</strong>, <strong id="b979851623714"><a name="b979851623714"></a><a name="b979851623714"></a>4.1</strong>, or <strong id="b10691247183619"><a name="b10691247183619"></a><a name="b10691247183619"></a>4.2</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p15285356185114"><a name="p15285356185114"></a><a name="p15285356185114"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p182851756145119"><a name="p182851756145119"></a><a name="p182851756145119"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p228545619510"><a name="p228545619510"></a><a name="p228545619510"></a>This parameter is optional after the <strong id="b17158349193611"><a name="b17158349193611"></a><a name="b17158349193611"></a>-o</strong> parameter when the <strong id="b19158549153613"><a name="b19158549153613"></a><a name="b19158549153613"></a>mount</strong> command is executed on the host. The value is in list format.</p>
+<p id="p13285856115110"><a name="p13285856115110"></a><a name="p13285856115110"></a>If the NFS version is specified for mounting, NFS 3, 4.0, 4.1, and 4.2 protocols are supported (the protocol must be supported and enabled on storage devices). If <strong id="b733146143816"><a name="b733146143816"></a><a name="b733146143816"></a>nfsvers</strong> is set to <strong id="b143311693811"><a name="b143311693811"></a><a name="b143311693811"></a>4</strong>, the latest protocol version NFS 4 may be used for mounting due to different OS configurations, for example, 4.2. If the 4.0 protocol is required, you are advised to set <strong id="b7342612383"><a name="b7342612383"></a><a name="b7342612383"></a>nfsvers</strong> to <strong id="b15357673814"><a name="b15357673814"></a><a name="b15357673814"></a>4.0</strong>.</p>
+</td>
+</tr>
+<tr id="row0555195515508"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p128525610511"><a name="p128525610511"></a><a name="p128525610511"></a>mountOptions.acl</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p112856566510"><a name="p112856566510"></a><a name="p112856566510"></a>The DPC namespace supports the ACL function. The DPC client supports POSIX ACL, NFSv4 ACL, and NT ACL authentication.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p228505620512"><a name="p228505620512"></a><a name="p228505620512"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p132852564514"><a name="p132852564514"></a><a name="p132852564514"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p428595635116"><a name="p428595635116"></a><a name="p428595635116"></a>The descriptions of <strong id="b174671246105310"><a name="b174671246105310"></a><a name="b174671246105310"></a>acl</strong>, <strong id="b8467194645310"><a name="b8467194645310"></a><a name="b8467194645310"></a>aclonlyposix</strong>, <strong id="b124671946125312"><a name="b124671946125312"></a><a name="b124671946125312"></a>cnflush</strong>, and <strong id="b1146724617534"><a name="b1146724617534"></a><a name="b1146724617534"></a>cflush</strong> are for reference only. For details about the parameters, see <em id="i1646819463535"><a name="i1646819463535"></a><a name="i1646819463535"></a><a href="https://support.huawei.com/enterprise/en/distributed-storage/oceanstor-pacific-9520-pid-251711061" target="_blank" rel="noopener noreferrer">OceanStor Pacific Series Product Documentation</a></em> and choose <strong id="b1046834613530"><a name="b1046834613530"></a><a name="b1046834613530"></a>Configuration</strong> &gt; <strong id="b14468174665317"><a name="b14468174665317"></a><a name="b14468174665317"></a>Basic Service Configuration Guide for File</strong> &gt; <strong id="b17468144625314"><a name="b17468144625314"></a><a name="b17468144625314"></a>Configuring Basic Services (DPC Scenario)</strong> &gt; <strong id="b946844675316"><a name="b946844675316"></a><a name="b946844675316"></a>Accessing a DPC Share on a Client</strong> &gt; <strong id="b1846811463533"><a name="b1846811463533"></a><a name="b1846811463533"></a>Step 2</strong>.</p>
+</td>
+</tr>
+<tr id="row19555135525010"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p528513563511"><a name="p528513563511"></a><a name="p528513563511"></a>mountOptions.aclonlyposix</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p328545655110"><a name="p328545655110"></a><a name="p328545655110"></a>The DPC namespace supports POSIX ACL, and the DPC client supports POSIX ACL authentication.</p>
+<p id="p02851756105111"><a name="p02851756105111"></a><a name="p02851756105111"></a>The following protocols support POSIX ACL: DPC, NFSv3, and HDFS. If NFSv4 ACL or NT ACL is used, the DPC client cannot identify the ACL of this type. As a result, the ACL of this type does not take effect.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p1428575617514"><a name="p1428575617514"></a><a name="p1428575617514"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p3285056145120"><a name="p3285056145120"></a><a name="p3285056145120"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p192851156145118"><a name="p192851156145118"></a><a name="p192851156145118"></a>If <strong id="b4962121204015"><a name="b4962121204015"></a><a name="b4962121204015"></a>aclonlyposix</strong> and <strong id="b9962721104015"><a name="b9962721104015"></a><a name="b9962721104015"></a>acl</strong> are used together, only <strong id="b6963172144010"><a name="b6963172144010"></a><a name="b6963172144010"></a>acl</strong> takes effect. That is, the namespace supports the ACL function.</p>
+</td>
+</tr>
+<tr id="row125552552503"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1228513566515"><a name="p1228513566515"></a><a name="p1228513566515"></a>mountOptions.cnflush</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p52851756125115"><a name="p52851756125115"></a><a name="p52851756125115"></a>Asynchronous disk flushing mode. That is, data is not flushed to disks immediately when files in the namespace are closed.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p12854568514"><a name="p12854568514"></a><a name="p12854568514"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p9285956175117"><a name="p9285956175117"></a><a name="p9285956175117"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p228575614518"><a name="p228575614518"></a><a name="p228575614518"></a>Asynchronous flushing mode: When a file is closed, data in the cache is not flushed to storage media in synchronous mode. Instead, data is written from the cache to the storage media in asynchronous flushing mode. After the write service is complete, data is flushed from the cache to disks periodically based on the flushing period. In a multi-client scenario, if concurrent operations are performed on the same file, the file size update is affected by the disk flushing period. That is, the file size is updated only after the disk flushing is complete. Generally, the update is completed within several seconds. Synchronous I/Os are not affected by the disk flushing period.</p>
+</td>
+</tr>
+<tr id="row15109164645110"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p22851456185117"><a name="p22851456185117"></a><a name="p22851456185117"></a>mountOptions.cflush</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p18285656115120"><a name="p18285656115120"></a><a name="p18285656115120"></a>Synchronous disk flushing mode. That is, data is flushed to disks immediately when files in the namespace are closed.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p528515645111"><a name="p528515645111"></a><a name="p528515645111"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p528545655118"><a name="p528545655118"></a><a name="p528545655118"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p8285185695115"><a name="p8285185695115"></a><a name="p8285185695115"></a>By default, the synchronous disk flushing mode is used.</p>
+</td>
+</tr>
+<tr id="row6770194365110"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p92851256105112"><a name="p92851256105112"></a><a name="p92851256105112"></a>mountOptions.sec</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p172852567515"><a name="p172852567515"></a><a name="p172852567515"></a>Kerberos 5 protocol for mounting NFS file systems.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p128511565512"><a name="p128511565512"></a><a name="p128511565512"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p152851756145118"><a name="p152851756145118"></a><a name="p152851756145118"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><a name="ul1028516561513"></a><a name="ul1028516561513"></a><ul id="ul1028516561513"><li>If Kerberos 5 is used, set this parameter to <strong id="b1435135952518"><a name="b1435135952518"></a><a name="b1435135952518"></a>krb5</strong>.</li><li>If Kerberos 5i is used, set this parameter to <strong id="b79148018262"><a name="b79148018262"></a><a name="b79148018262"></a>krb5i</strong>.</li><li>If Kerberos 5p is used, set this parameter to <strong id="b1916811982618"><a name="b1916811982618"></a><a name="b1916811982618"></a>krb5p</strong>.</li><li>Kerberos supports only NFSv4.0 and later versions.</li><li>OceanStor Dorado and OceanStor 6.1.3 and later versions support Kerberos.</li></ul>
+</td>
+</tr>
+<tr id="row1142654125113"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p028615569516"><a name="p028615569516"></a><a name="p028615569516"></a>mountOptions.proto</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p328617569519"><a name="p328617569519"></a><a name="p328617569519"></a>Transmission protocol used for NFS mounting.</p>
+<p id="p18286185612518"><a name="p18286185612518"></a><a name="p18286185612518"></a>The value can be <strong id="b11371339115410"><a name="b11371339115410"></a><a name="b11371339115410"></a>rdma</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p172868562511"><a name="p172868562511"></a><a name="p172868562511"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p1286155614517"><a name="p1286155614517"></a><a name="p1286155614517"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><a name="ul1428618567518"></a><a name="ul1428618567518"></a><ul id="ul1428618567518"><li>Ensure that NFS over RDMA is enabled on the storage system.</li><li>For Huawei enterprise storage, NAS storage of OceanStor Dorado and OceanStor 6.1.7 and later is supported.</li><li>For Huawei distributed storage, NAS storage of OceanStor Pacific 8.2.0 and later is supported. If NFS over RDMA is used for distributed storage, <strong id="b1315673395715"><a name="b1315673395715"></a><a name="b1315673395715"></a>mountOptions.nfsvers</strong> must be set to <strong id="b1115711331570"><a name="b1115711331570"></a><a name="b1115711331570"></a>3</strong>.</li></ul>
+</td>
+</tr>
+<tr id="row16338113817517"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p6286105617518"><a name="p6286105617518"></a><a name="p6286105617518"></a>mountOptions.port</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p628665645117"><a name="p628665645117"></a><a name="p628665645117"></a>Protocol port used for NFS mounting.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p192861056115114"><a name="p192861056115114"></a><a name="p192861056115114"></a>Conditionally mandatory</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p628655665114"><a name="p628655665114"></a><a name="p628655665114"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p6286145618514"><a name="p6286145618514"></a><a name="p6286145618514"></a>If the transmission protocol is <strong id="b698755172717"><a name="b698755172717"></a><a name="b698755172717"></a>rdma</strong>, set this parameter to <strong id="b1080767142715"><a name="b1080767142715"></a><a name="b1080767142715"></a>20049</strong>.</p>
+</td>
+</tr>
+<tr id="row15555205517503"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p202861156155119"><a name="p202861156155119"></a><a name="p202861156155119"></a>mountOptions.discard</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p1928616565514"><a name="p1928616565514"></a><a name="p1928616565514"></a>Automatically triggers the Trim or Discard operation when a file system is mounted. This operation instructs a block device to release unused blocks.</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p1328610561511"><a name="p1328610561511"></a><a name="p1328610561511"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p2286175613513"><a name="p2286175613513"></a><a name="p2286175613513"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p4286556155111"><a name="p4286556155111"></a><a name="p4286556155111"></a>The xfs and ext4 file systems are supported.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  3**  Supported QoS configurations
 
 <a name="table74841513116"></a>
 <table><thead align="left"><tr id="row74844518118"><th class="cellrowborder" valign="top" width="16%" id="mcps1.2.5.1.1"><p id="p2579113031316"><a name="p2579113031316"></a><a name="p2579113031316"></a>Storage Type</p>
@@ -520,30 +580,6 @@ weight: 2
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p352161718293"><a name="p352161718293"></a><a name="p352161718293"></a>The value is an integer greater than 0, expressed in ms.</p>
 </td>
 </tr>
-<tr id="row183095010142"><td class="cellrowborder" rowspan="3" valign="top" width="16%" headers="mcps1.2.5.1.1 "><p id="p38301350131417"><a name="p38301350131417"></a><a name="p38301350131417"></a>OceanStor Dorado V3</p>
-</td>
-<td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p1752194493315"><a name="p1752194493315"></a><a name="p1752194493315"></a>IOTYPE</p>
-</td>
-<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p1252144463312"><a name="p1252144463312"></a><a name="p1252144463312"></a>Read/write type.</p>
-</td>
-<td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p12521944143313"><a name="p12521944143313"></a><a name="p12521944143313"></a>The value can be:</p>
-<a name="ul25214449332"></a><a name="ul25214449332"></a><ul id="ul25214449332"><li><strong id="b78146864311"><a name="b78146864311"></a><a name="b78146864311"></a>2</strong>: read and write I/Os</li></ul>
-</td>
-</tr>
-<tr id="row2083035031413"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p135211344193310"><a name="p135211344193310"></a><a name="p135211344193310"></a>MAXBANDWIDTH</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p552117445334"><a name="p552117445334"></a><a name="p552117445334"></a>Maximum bandwidth. This is a restriction policy parameter.</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p11931954144519"><a name="p11931954144519"></a><a name="p11931954144519"></a>The value is an integer ranging from 1 to 999999999, expressed in MB/s.</p>
-</td>
-</tr>
-<tr id="row68311950201411"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p55218447336"><a name="p55218447336"></a><a name="p55218447336"></a>MAXIOPS</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p052114442338"><a name="p052114442338"></a><a name="p052114442338"></a>Maximum IOPS. This is a restriction policy parameter.</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p4756182510457"><a name="p4756182510457"></a><a name="p4756182510457"></a>The value is an integer ranging from 100 to 999999999.</p>
-</td>
-</tr>
 <tr id="row3455115971517"><td class="cellrowborder" rowspan="6" valign="top" width="16%" headers="mcps1.2.5.1.1 "><p id="p74551059151512"><a name="p74551059151512"></a><a name="p74551059151512"></a>OceanStor Dorado/OceanStor</p>
 </td>
 <td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.5.1.2 "><p id="p17819135614331"><a name="p17819135614331"></a><a name="p17819135614331"></a>IOTYPE</p>
@@ -551,7 +587,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p981913567333"><a name="p981913567333"></a><a name="p981913567333"></a>Read/write type.</p>
 </td>
 <td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p14819125620331"><a name="p14819125620331"></a><a name="p14819125620331"></a>The value can be:</p>
-<a name="ul17819115611331"></a><a name="ul17819115611331"></a><ul id="ul17819115611331"><li><strong id="b1645347268"><a name="b1645347268"></a><a name="b1645347268"></a>2</strong>: read and write I/Os</li></ul>
+<a name="ul17819115611331"></a><a name="ul17819115611331"></a><ul id="ul17819115611331"><li><strong id="b78146864311"><a name="b78146864311"></a><a name="b78146864311"></a>2</strong>: read and write I/Os</li></ul>
 </td>
 </tr>
 <tr id="row545565991517"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p681925616337"><a name="p681925616337"></a><a name="p681925616337"></a>MAXBANDWIDTH</p>
@@ -617,7 +653,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p623513597131"><a name="p623513597131"></a><a name="p623513597131"></a>Read/write type.</p>
 </td>
 <td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p5235145901319"><a name="p5235145901319"></a><a name="p5235145901319"></a>The value can be:</p>
-<a name="ul152351059201313"></a><a name="ul152351059201313"></a><ul id="ul152351059201313"><li><strong id="b489261134"><a name="b489261134"></a><a name="b489261134"></a>2</strong>: read and write I/Os</li></ul>
+<a name="ul152351059201313"></a><a name="ul152351059201313"></a><ul id="ul152351059201313"><li><strong id="b634921940"><a name="b634921940"></a><a name="b634921940"></a>2</strong>: read and write I/Os</li></ul>
 </td>
 </tr>
 <tr id="row9761216382"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p15235195941312"><a name="p15235195941312"></a><a name="p15235195941312"></a>MAXBANDWIDTH</p>
@@ -658,7 +694,7 @@ weight: 2
 </tbody>
 </table>
 
-**Table  3**  Supported quota configurations
+**Table  4**  Supported quota configurations
 
 <a name="table2083974632312"></a>
 <table><thead align="left"><tr id="row68394463230"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.4.1.1"><p id="en-us_topic_0000001218368853_p1643904313015"><a name="en-us_topic_0000001218368853_p1643904313015"></a><a name="en-us_topic_0000001218368853_p1643904313015"></a>Parameter</p>
@@ -682,6 +718,32 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0000001218368853_p1540512282024"><a name="en-us_topic_0000001218368853_p1540512282024"></a><a name="en-us_topic_0000001218368853_p1540512282024"></a>This parameter is conditionally optional only when <span class="parmname" id="parmname682317528456"><a name="parmname682317528456"></a><a name="parmname682317528456"></a><b>spaceQuota</b></span> is set to <span class="parmvalue" id="parmvalue68238521459"><a name="parmvalue68238521459"></a><a name="parmvalue68238521459"></a><b>softQuota</b></span>.</p>
 <p id="en-us_topic_0000001218368853_p14439114315304"><a name="en-us_topic_0000001218368853_p14439114315304"></a><a name="en-us_topic_0000001218368853_p14439114315304"></a>The value is an integer ranging from 0 to 4294967294.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Table  5**  Supported advanced volume creation parameters
+
+<a name="_table034918373916"></a>
+<table><thead align="left"><tr id="row756mcpsimp"><th class="cellrowborder" valign="top" width="10.101010101010102%" id="mcps1.2.5.1.1"><p id="p758mcpsimp"><a name="p758mcpsimp"></a><a name="p758mcpsimp"></a>Storage Backend Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="15.151515151515152%" id="mcps1.2.5.1.2"><p id="p760mcpsimp"><a name="p760mcpsimp"></a><a name="p760mcpsimp"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="35.35353535353536%" id="mcps1.2.5.1.3"><p id="p762mcpsimp"><a name="p762mcpsimp"></a><a name="p762mcpsimp"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.39393939393939%" id="mcps1.2.5.1.4"><p id="p764mcpsimp"><a name="p764mcpsimp"></a><a name="p764mcpsimp"></a>Remarks</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row766mcpsimp"><td class="cellrowborder" valign="top" width="10.101010101010102%" headers="mcps1.2.5.1.1 "><p id="p768mcpsimp"><a name="p768mcpsimp"></a><a name="p768mcpsimp"></a>oceanstor-nas</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.2 "><p id="p770mcpsimp"><a name="p770mcpsimp"></a><a name="p770mcpsimp"></a>CAPACITYTHRESHOLD</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.35353535353536%" headers="mcps1.2.5.1.3 "><p id="p773mcpsimp"><a name="p773mcpsimp"></a><a name="p773mcpsimp"></a>Total capacity alarm threshold.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.39393939393939%" headers="mcps1.2.5.1.4 "><p id="p775mcpsimp"><a name="p775mcpsimp"></a><a name="p775mcpsimp"></a>Parameter type: uint64.</p>
+<p id="p776mcpsimp"><a name="p776mcpsimp"></a><a name="p776mcpsimp"></a>For details about the default value and value range, see the corresponding storage product manual.</p>
 </td>
 </tr>
 </tbody>

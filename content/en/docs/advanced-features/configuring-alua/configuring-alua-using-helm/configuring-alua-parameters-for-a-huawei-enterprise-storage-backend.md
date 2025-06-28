@@ -12,11 +12,11 @@ The ALUA configuration may vary according to the OS. Visit  [Huawei Technical Su
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >A node with a Pod provisioned does not proactively change ALUA information. The host ALUA configuration changes only after a Pod is provisioned again to the node.
 
-## ALUA Parameters for OceanStor V5 and OceanStor Dorado V3 Series{#section16218353201717}
+## ALUA Parameters for OceanStor V5 Series{#section16218353201717}
 
-[Table 1](#en-us_topic_0000001299863718_en-us_topic_0000001199142540_table106361351202112)  lists the ALUA parameters supported by Huawei CSI for OceanStor V5 and OceanStor Dorado V3 series.
+[Table 1](#en-us_topic_0000001299863718_en-us_topic_0000001199142540_table106361351202112)  lists the ALUA parameters supported by Huawei CSI for OceanStor V5 series.
 
-**Table  1**  ALUA parameters supported by Huawei CSI for OceanStor V5 and OceanStor Dorado V3 series
+**Table  1**  ALUA parameters supported by Huawei CSI for OceanStor V5 series
 
 <a name="en-us_topic_0000001299863718_en-us_topic_0000001199142540_table106361351202112"></a>
 <table><thead align="left"><tr id="en-us_topic_0000001299863718_en-us_topic_0000001199142540_row12636135142110"><th class="cellrowborder" valign="top" width="20.77%" id="mcps1.2.4.1.1"><p id="en-us_topic_0000001299863718_en-us_topic_0000001199142540_p7636151112111"><a name="en-us_topic_0000001299863718_en-us_topic_0000001199142540_p7636151112111"></a><a name="en-us_topic_0000001299863718_en-us_topic_0000001199142540_p7636151112111"></a>Parameter</p>

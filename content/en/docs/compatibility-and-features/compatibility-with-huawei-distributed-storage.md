@@ -60,7 +60,7 @@ Huawei CSI plug-in supports the following features for Huawei distributed storag
 <td class="cellrowborder" rowspan="3" valign="top" width="27%" headers="mcps1.2.5.1.3 "><p id="p1550235510250"><a name="p1550235510250"></a><a name="p1550235510250"></a>SAN: iSCSI/SCSI</p>
 <p id="p1155184451813"><a name="p1155184451813"></a><a name="p1155184451813"></a>NAS: DPC<sup id="sup03431118543"><a name="sup03431118543"></a><a name="sup03431118543"></a>2</sup>/NFS 3/4.1<sup id="sup592411910418"><a name="sup592411910418"></a><a name="sup592411910418"></a>3</sup></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1899101904919"><a name="p1899101904919"></a><a name="p1899101904919"></a>SAN: FC/iSCSI/NVMe over RoCE<sup id="sup4943164011220"><a name="sup4943164011220"></a><a name="sup4943164011220"></a>5</sup></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1899101904919"><a name="p1899101904919"></a><a name="p1899101904919"></a>SAN<sup id="sup9603152783919"><a name="sup9603152783919"></a><a name="sup9603152783919"></a>4</sup>: FC/iSCSI/NVMe over RoCE<sup id="sup4943164011220"><a name="sup4943164011220"></a><a name="sup4943164011220"></a>6</sup></p>
 </td>
 </tr>
 <tr id="row16502165517252"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p145026553256"><a name="p145026553256"></a><a name="p145026553256"></a>Dynamic Provisioning</p>
@@ -69,7 +69,7 @@ Huawei CSI plug-in supports the following features for Huawei distributed storag
 <tr id="row247620119518"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p447601759"><a name="p447601759"></a><a name="p447601759"></a>Manage Provisioning<sup id="sup25964561381"><a name="sup25964561381"></a><a name="sup25964561381"></a>1</sup></p>
 </td>
 </tr>
-<tr id="row1050205518258"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1650211552251"><a name="p1650211552251"></a><a name="p1650211552251"></a>Expand Persistent Volume<sup id="sup99731871303"><a name="sup99731871303"></a><a name="sup99731871303"></a>4</sup></p>
+<tr id="row1050205518258"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1650211552251"><a name="p1650211552251"></a><a name="p1650211552251"></a>Expand Persistent Volume<sup id="sup99731871303"><a name="sup99731871303"></a><a name="sup99731871303"></a>5</sup></p>
 </td>
 <td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p3160102971819"><a name="p3160102971819"></a><a name="p3160102971819"></a>Volumes created in Dynamic Provisioning or Manage Provisioning mode are supported.</p>
 </td>
@@ -172,8 +172,9 @@ Huawei CSI plug-in supports the following features for Huawei distributed storag
 -   Note 1: Manage Provisioning is a volume management feature customized by Huawei CSI. This feature allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
 -   Note 2: Only OceanStor Pacific series 8.1.2 and later versions support DPC. When DPC is used, the OS must meet the requirements for the  [OSs supported by Huawei CSI](/docs/compatibility-and-features/kubernetes-and-os-compatibility#table133422378818)  and the DPC basic connectivity requirements of OceanStor Pacific series.
 -   Note 3: Only OceanStor Pacific series 8.1.2 and later versions support NFS 4.1. OceanStor Pacific series 8.2.0 and later versions support NFS over RDMA. When NFS over RDMA is used, only NFS 3 is supported.
--   Note 4: The provisioned PVC whose  **volumeType**  is  **lun**  and  **accessModes**  is  **ReadOnlyMany**  does not support capacity expansion.
--   Note 5: If NVMe over RoCE is used, the version of the nvme-cli tool on worker nodes ranges from 1.9 to 1.16. To query the version, run the  **nvme version**  command.
+-   Note 4 If a container platform is deployed on a virtualization platform, you are advised to use the iSCSI protocol when connecting to SAN storage. If the customer requires the FC, NVMe over FC, or NVMe over RoCE protocol, the virtualization platform needs to be configured. In this case, the customer's virtualization team needs to provide technical support.
+-   Note 5: The provisioned PVC whose  **volumeType**  is  **lun**  and  **accessModes**  is  **ReadOnlyMany**  does not support capacity expansion.
+-   Note 6: If NVMe over RoCE is used, the version of the nvme-cli tool on worker nodes ranges from 1.9 to 1.16. To query the version, run the  **nvme version**  command.
 
 Huawei CSI plug-in supports the following features for Huawei distributed storage dtrees.
 

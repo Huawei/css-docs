@@ -60,7 +60,7 @@ weight: 4
 <td class="cellrowborder" rowspan="3" valign="top" width="16.84%" headers="mcps1.2.5.1.3 "><p id="p1550235510250"><a name="p1550235510250"></a><a name="p1550235510250"></a>SAN：iSCSI/SCSI</p>
 <p id="p1155184451813"><a name="p1155184451813"></a><a name="p1155184451813"></a>NAS：DPC<sup id="sup03431118543"><a name="sup03431118543"></a><a name="sup03431118543"></a>2</sup>/NFS 3/4.1<sup id="sup592411910418"><a name="sup592411910418"></a><a name="sup592411910418"></a>3</sup></p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="26.650000000000002%" headers="mcps1.2.5.1.4 "><p id="p1899101904919"><a name="p1899101904919"></a><a name="p1899101904919"></a>SAN: FC/iSCSI/NVMe over RoCE<sup id="sup4943164011220"><a name="sup4943164011220"></a><a name="sup4943164011220"></a>5</sup></p>
+<td class="cellrowborder" rowspan="3" valign="top" width="26.650000000000002%" headers="mcps1.2.5.1.4 "><p id="p1899101904919"><a name="p1899101904919"></a><a name="p1899101904919"></a>SAN<sup id="sup9603152783919"><a name="sup9603152783919"></a><a name="sup9603152783919"></a>4</sup>: FC/iSCSI/NVMe over RoCE<sup id="sup4943164011220"><a name="sup4943164011220"></a><a name="sup4943164011220"></a>6</sup></p>
 </td>
 </tr>
 <tr id="row16502165517252"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p145026553256"><a name="p145026553256"></a><a name="p145026553256"></a>Dynamic Provisioning</p>
@@ -69,7 +69,7 @@ weight: 4
 <tr id="row247620119518"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p447601759"><a name="p447601759"></a><a name="p447601759"></a>Manage Provisioning<sup id="sup25964561381"><a name="sup25964561381"></a><a name="sup25964561381"></a>1</sup></p>
 </td>
 </tr>
-<tr id="row1050205518258"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1650211552251"><a name="p1650211552251"></a><a name="p1650211552251"></a><span>Expand Persistent Volume</span><sup id="sup99731871303"><a name="sup99731871303"></a><a name="sup99731871303"></a>4</sup></p>
+<tr id="row1050205518258"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p1650211552251"><a name="p1650211552251"></a><a name="p1650211552251"></a><span>Expand Persistent Volume</span><sup id="sup99731871303"><a name="sup99731871303"></a><a name="sup99731871303"></a>5</sup></p>
 </td>
 <td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p3160102971819"><a name="p3160102971819"></a><a name="p3160102971819"></a><span>支持</span>使用Dynamic Provisioning，Manage Provisioning方式创建的卷</p>
 </td>
@@ -172,8 +172,9 @@ weight: 4
 -   注释1 Manage Provisioning是华为CSI自定义的纳管卷特性，该特性支持将已有存储资源纳管至Kubernetes。不允许将一个存储资源纳管多次和针对同一个存储资源进行并发删除/创建操作。
 -   注释2 仅OceanStor Pacific系列 8.1.2及以后版本支持DPC。使用DPC时操作系统需同时满足[华为CSI支持的操作系统](/docs/compatibility-and-features/kubernetes-and-os-compatibility#table133422378818)和OceanStor Pacific系列的DPC基本连通性要求。
 -   注释3 仅OceanStor Pacific系列 8.1.2及以后版本支持NFS 4.1。OceanStor Pacific系列 8.2.0及以后版本支持NFS over RDMA，且使用NFS over RDMA时，仅支持NFS 3。
--   注释4 发放的volumeType为lun且accessModes为ReadOnlyMany的PVC不支持扩容。
--   注释5 使用NVMe over RoCE时，worker节点nvme-cli工具版本为1.9\~1.16，查询命令为：nvme version。
+-   注释4 若用户的容器平台部署在虚拟化平台上，对接SAN存储时建议使用iSCSI协议。若客户要求使用FC/NVMe over FC/NVMe over RoCE协议，需要对虚拟化平台进行特定配置，需客户侧的虚拟化团队提供技术支持。
+-   注释5 发放的volumeType为lun且accessModes为ReadOnlyMany的PVC不支持扩容。
+-   注释6 使用NVMe over RoCE时，worker节点nvme-cli工具版本为1.9\~1.16，查询命令为：nvme version。
 
 华为CSI插件针对华为分布式存储Dtree特性支持如下表所示。
 

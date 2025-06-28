@@ -2,7 +2,7 @@
 title: "Manually Updating a Storage Backend"
 linkTitle: "Manually Updating a Storage Backend"
 description: 
-weight: 2
+weight: 3
 ---
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  

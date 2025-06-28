@@ -61,7 +61,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p1015617351799"><a name="p1015617351799"></a><a name="p1015617351799"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p0156183516920"><a name="p0156183516920"></a><a name="p0156183516920"></a>storage-backend-controller:<span id="ph131571335991"><a name="ph131571335991"></a><a name="ph131571335991"></a>4.7.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p0156183516920"><a name="p0156183516920"></a><a name="p0156183516920"></a>storage-backend-controller:<span id="ph131571335991"><a name="ph131571335991"></a><a name="ph131571335991"></a>4.8.0</span></p>
     </td>
     </tr>
     <tr id="row137401924896"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="p81571358910"><a name="p81571358910"></a><a name="p81571358910"></a>storage-backend-sidecar</p>
@@ -70,7 +70,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p18157173510920"><a name="p18157173510920"></a><a name="p18157173510920"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p415783518912"><a name="p415783518912"></a><a name="p415783518912"></a>storage-backend-sidecar:<span id="ph61574352914"><a name="ph61574352914"></a><a name="ph61574352914"></a>4.7.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p415783518912"><a name="p415783518912"></a><a name="p415783518912"></a>storage-backend-sidecar:<span id="ph61574352914"><a name="ph61574352914"></a><a name="ph61574352914"></a>4.8.0</span></p>
     </td>
     </tr>
     <tr id="row11864142612910"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="p615719351098"><a name="p615719351098"></a><a name="p615719351098"></a>huawei-csi-driver</p>
@@ -79,7 +79,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p11157435196"><a name="p11157435196"></a><a name="p11157435196"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p1015714351890"><a name="p1015714351890"></a><a name="p1015714351890"></a>huawei-csi:<span id="ph14157935896"><a name="ph14157935896"></a><a name="ph14157935896"></a>4.7.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p1015714351890"><a name="p1015714351890"></a><a name="p1015714351890"></a>huawei-csi:<span id="ph14157935896"><a name="ph14157935896"></a><a name="ph14157935896"></a>4.8.0</span></p>
     </td>
     </tr>
     <tr id="row1035818295911"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="p5157935795"><a name="p5157935795"></a><a name="p5157935795"></a>huawei-csi-extender</p>
@@ -88,7 +88,7 @@ weight: 2
     </td>
     <td class="cellrowborder" valign="top" width="13.668633136686331%" headers="mcps1.2.5.1.3 "><p id="p415710351892"><a name="p415710351892"></a><a name="p415710351892"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p51571935491"><a name="p51571935491"></a><a name="p51571935491"></a>huawei-csi-extender:<span id="ph1515716351795"><a name="ph1515716351795"></a><a name="ph1515716351795"></a>4.7.0</span></p>
+    <td class="cellrowborder" valign="top" width="33.92660733926608%" headers="mcps1.2.5.1.4 "><p id="p51571935491"><a name="p51571935491"></a><a name="p51571935491"></a>huawei-csi-extender:<span id="ph1515716351795"><a name="ph1515716351795"></a><a name="ph1515716351795"></a>4.8.0</span></p>
     </td>
     </tr>
     <tr id="row9547192114619"><td class="cellrowborder" valign="top" width="27.597240275972407%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0214996140_p86601044154812"><a name="zh-cn_topic_0214996140_p86601044154812"></a><a name="zh-cn_topic_0214996140_p86601044154812"></a>images.sidecar.livenessProbe</p>

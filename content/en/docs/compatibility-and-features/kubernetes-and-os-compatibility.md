@@ -23,7 +23,7 @@ Huawei CSI plug-in supports the following container management platforms.
 </tr>
 <tr id="row1374812458110"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15748194519116"><a name="p15748194519116"></a><a name="p15748194519116"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1774819451114"><a name="p1774819451114"></a><a name="p1774819451114"></a>4.12 to 4.17</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1774819451114"><a name="p1774819451114"></a><a name="p1774819451114"></a>4.12 to 4.18</p>
 </td>
 </tr>
 <tr id="row1526064545317"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1426094595313"><a name="p1426094595313"></a><a name="p1426094595313"></a>Tanzu Kubernetes Grid Integrated</p>

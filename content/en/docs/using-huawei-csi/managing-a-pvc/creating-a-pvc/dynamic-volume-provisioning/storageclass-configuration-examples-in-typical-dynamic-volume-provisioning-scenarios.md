@@ -133,7 +133,6 @@ parameters:
   pool: pool001
   volumeType: fs
   allocType: thin
-  authClient: "*"
 mountOptions:
   - acl # Set the authentication parameter.
   - cnflush # Set the asynchronous disk flushing mode.
@@ -183,7 +182,7 @@ mountOptions:
 
 When containers use enterprise storage or distributed storage as storage resources, you can set QoS for the storage resources used by containers to ensure that the storage read and write operations of these containers meet certain service levels.
 
-Storage devices of different models or versions support different QoS settings. For details about how to find the configuration items of the corresponding storage devices, see  [Table 2](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning#table74841513116). In this example, the backend is OceanStor Dorado. For other storage devices, refer to this example.
+Storage devices of different models or versions support different QoS settings. For details about how to find the configuration items of the corresponding storage devices, see  [Table 3](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning#table74841513116). In this example, the backend is OceanStor Dorado. For other storage devices, refer to this example.
 
 ```yaml
 kind: StorageClass

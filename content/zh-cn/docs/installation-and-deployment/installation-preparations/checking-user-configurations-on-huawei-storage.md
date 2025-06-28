@@ -30,7 +30,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="17.61%" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p1732191664311"><a name="zh-cn_topic_0214996140_p1732191664311"></a><a name="zh-cn_topic_0214996140_p1732191664311"></a>管理员</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p1532116144311"><a name="zh-cn_topic_0214996140_p1532116144311"></a><a name="zh-cn_topic_0214996140_p1532116144311"></a>本地用户</p>
+<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p1532116144311"><a name="zh-cn_topic_0214996140_p1532116144311"></a><a name="zh-cn_topic_0214996140_p1532116144311"></a>本地用户/LDAP用户<sup id="sup1258215209344"><a name="sup1258215209344"></a><a name="sup1258215209344"></a>2</sup></p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0214996140_row217510214456"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0214996140_p1517512154515"><a name="zh-cn_topic_0214996140_p1517512154515"></a><a name="zh-cn_topic_0214996140_p1517512154515"></a>租户用户</p>
@@ -39,18 +39,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="zh-cn_topic_0214996140_p71768264519"><a name="zh-cn_topic_0214996140_p71768264519"></a><a name="zh-cn_topic_0214996140_p71768264519"></a>管理员</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p111763294517"><a name="zh-cn_topic_0214996140_p111763294517"></a><a name="zh-cn_topic_0214996140_p111763294517"></a>本地用户</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0214996140_row66361943164415"><td class="cellrowborder" valign="top" width="29.13%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0214996140_p66361843174416"><a name="zh-cn_topic_0214996140_p66361843174416"></a><a name="zh-cn_topic_0214996140_p66361843174416"></a>OceanStor Dorado V3</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.97%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0214996140_p84081753144412"><a name="zh-cn_topic_0214996140_p84081753144412"></a><a name="zh-cn_topic_0214996140_p84081753144412"></a>系统用户</p>
-</td>
-<td class="cellrowborder" valign="top" width="17.119999999999997%" headers="mcps1.2.6.1.3 "><p id="zh-cn_topic_0214996140_p1293710272510"><a name="zh-cn_topic_0214996140_p1293710272510"></a><a name="zh-cn_topic_0214996140_p1293710272510"></a>管理员</p>
-</td>
-<td class="cellrowborder" valign="top" width="17.61%" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p18937927175118"><a name="zh-cn_topic_0214996140_p18937927175118"></a><a name="zh-cn_topic_0214996140_p18937927175118"></a>管理员</p>
-</td>
-<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p293715275511"><a name="zh-cn_topic_0214996140_p293715275511"></a><a name="zh-cn_topic_0214996140_p293715275511"></a>本地用户</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p111763294517"><a name="zh-cn_topic_0214996140_p111763294517"></a><a name="zh-cn_topic_0214996140_p111763294517"></a>本地用户/LDAP用户<sup id="sup1536971923412"><a name="sup1536971923412"></a><a name="sup1536971923412"></a>2</sup></p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0214996140_row163581026142419"><td class="cellrowborder" valign="top" width="29.13%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0214996140_p335942672413"><a name="zh-cn_topic_0214996140_p335942672413"></a><a name="zh-cn_topic_0214996140_p335942672413"></a>OceanStor</p>
@@ -61,10 +50,11 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="17.61%" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p329910440244"><a name="zh-cn_topic_0214996140_p329910440244"></a><a name="zh-cn_topic_0214996140_p329910440244"></a>N/A</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p11299154442413"><a name="zh-cn_topic_0214996140_p11299154442413"></a><a name="zh-cn_topic_0214996140_p11299154442413"></a>本地用户</p>
+<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p11299154442413"><a name="zh-cn_topic_0214996140_p11299154442413"></a><a name="zh-cn_topic_0214996140_p11299154442413"></a>本地用户/LDAP用户<sup id="sup922520918341"><a name="sup922520918341"></a><a name="sup922520918341"></a>2</sup></p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0214996140_row143210168434"><td class="cellrowborder" rowspan="2" valign="top" width="29.13%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0214996140_p23218164437"><a name="zh-cn_topic_0214996140_p23218164437"></a><a name="zh-cn_topic_0214996140_p23218164437"></a>OceanStor Dorado</p>
+<p id="p58501367152"><a name="p58501367152"></a><a name="p58501367152"></a></p>
 </td>
 <td class="cellrowborder" valign="top" width="20.97%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0214996140_p13170324518"><a name="zh-cn_topic_0214996140_p13170324518"></a><a name="zh-cn_topic_0214996140_p13170324518"></a>系统用户</p>
 </td>
@@ -72,7 +62,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="17.61%" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p845125344614"><a name="zh-cn_topic_0214996140_p845125344614"></a><a name="zh-cn_topic_0214996140_p845125344614"></a>N/A</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p124515539466"><a name="zh-cn_topic_0214996140_p124515539466"></a><a name="zh-cn_topic_0214996140_p124515539466"></a>本地用户</p>
+<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p124515539466"><a name="zh-cn_topic_0214996140_p124515539466"></a><a name="zh-cn_topic_0214996140_p124515539466"></a>本地用户/LDAP用户<sup id="sup1214418156345"><a name="sup1214418156345"></a><a name="sup1214418156345"></a>2</sup></p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0214996140_row9761201434620"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0214996140_p117072165112"><a name="zh-cn_topic_0214996140_p117072165112"></a><a name="zh-cn_topic_0214996140_p117072165112"></a>租户用户</p>
@@ -81,7 +71,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="zh-cn_topic_0214996140_p15451053204616"><a name="zh-cn_topic_0214996140_p15451053204616"></a><a name="zh-cn_topic_0214996140_p15451053204616"></a>N/A</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p1745125312460"><a name="zh-cn_topic_0214996140_p1745125312460"></a><a name="zh-cn_topic_0214996140_p1745125312460"></a>本地用户</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="zh-cn_topic_0214996140_p1745125312460"><a name="zh-cn_topic_0214996140_p1745125312460"></a><a name="zh-cn_topic_0214996140_p1745125312460"></a>本地用户/LDAP用户<sup id="sup28828162341"><a name="sup28828162341"></a><a name="sup28828162341"></a>2</sup></p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0214996140_row85331119464"><td class="cellrowborder" valign="top" width="29.13%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0214996140_p10532011104612"><a name="zh-cn_topic_0214996140_p10532011104612"></a><a name="zh-cn_topic_0214996140_p10532011104612"></a>OceanStor Pacific系列</p>
@@ -95,10 +85,22 @@ weight: 3
 <td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0214996140_p4533113468"><a name="zh-cn_topic_0214996140_p4533113468"></a><a name="zh-cn_topic_0214996140_p4533113468"></a>本地用户</p>
 </td>
 </tr>
+<tr id="row27531822552"><td class="cellrowborder" valign="top" width="29.13%" headers="mcps1.2.6.1.1 "><p id="p1575442105515"><a name="p1575442105515"></a><a name="p1575442105515"></a>OceanDisk</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.97%" headers="mcps1.2.6.1.2 "><p id="p77542219556"><a name="p77542219556"></a><a name="p77542219556"></a>系统用户</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.119999999999997%" headers="mcps1.2.6.1.3 "><p id="p1175472185518"><a name="p1175472185518"></a><a name="p1175472185518"></a>管理员</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.61%" headers="mcps1.2.6.1.4 "><p id="p375414285512"><a name="p375414285512"></a><a name="p375414285512"></a>N/A</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.6.1.5 "><p id="p19754152135515"><a name="p19754152135515"></a><a name="p19754152135515"></a>本地用户</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 -   注释1 使用自定义角色，需要给角色配置权限，最小权限请参考[配置自定义权限](/docs/appendix/configuring-custom-permissions)章节配置。
+-   注释2 使用LDAP认证方式，需要在创建后端时配置authenticationMode参数，参考[存储后端配置项说明](/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters)。
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-notice.gif)  
 >不推荐使用“超级管理员”角色下的用户。

@@ -12,11 +12,11 @@ weight: 1
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
 >已经发放的Pod的节点不会主动更改ALUA信息，需要通过在该节点重新发放Pod才会变更主机ALUA配置。
 
-## OceanStor V5系列和OceanStor Dorado V3系列存储后端的ALUA参数{#section16218353201717}
+## OceanStor V5系列系列存储后端的ALUA参数{#section16218353201717}
 
-华为CSI支持的OceanStor V5系列和OceanStor Dorado V3系列存储的ALUA参数见[表1](#zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_table106361351202112)。
+华为CSI支持的OceanStor V5系列存储的ALUA参数见[表1](#zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_table106361351202112)。
 
-**表 1**  华为CSI支持的OceanStor V5系列和OceanStor Dorado V3系列存储的ALUA参数说明
+**表 1**  华为CSI支持的OceanStor V5系列存储的ALUA参数说明
 
 <a name="zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_table106361351202112"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_row12636135142110"><th class="cellrowborder" valign="top" width="20.77%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_p7636151112111"><a name="zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_p7636151112111"></a><a name="zh-cn_topic_0000001299863718_zh-cn_topic_0000001199142540_p7636151112111"></a>参数名</p>

@@ -5,7 +5,7 @@ description:
 weight: 2
 ---
 
-如果您从2.x和3.x版本的CSI升级至4.7.0版本失败，需要回退时，请参考[Helm卸载华为CSI](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm)卸载CSI，然后下载安装升级之前版本的CSI。
+如果您从2.x和3.x版本的CSI升级至4.8.0版本失败，需要回退时，请参考[Helm卸载华为CSI](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm)卸载CSI，然后下载安装升级之前版本的CSI。
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-notice.gif)  
 >-   在升级/回退过程中，已经存在的PVC/快照/Pod等资源会正常运行，不会影响您的业务访问。

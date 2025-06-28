@@ -67,6 +67,18 @@ weight: 2
 <p id="p1999211201535"><a name="p1999211201535"></a><a name="p1999211201535"></a>扩容PV功能在Kubernetes <span>1.14 (alpha)后才支持</span>。</p>
 </td>
 </tr>
+<tr id="row63343268297"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p13432132752911"><a name="p13432132752911"></a><a name="p13432132752911"></a>mountOptions</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p134321427192916"><a name="p134321427192916"></a><a name="p134321427192916"></a>挂载参数列表，可用于指定主机执行mount命令时-o选项的参数。</p>
+</td>
+<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p2432227172910"><a name="p2432227172910"></a><a name="p2432227172910"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p1432112762919"><a name="p1432112762919"></a><a name="p1432112762919"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p15432162772912"><a name="p15432162772912"></a><a name="p15432162772912"></a>常见的mountOptions参数参考<a href="#table65545557506">表2</a>。</p>
+<p id="p104322027152920"><a name="p104322027152920"></a><a name="p104322027152920"></a>也可自行指定其他挂载参数。</p>
+</td>
+</tr>
 <tr id="row172016531531"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p1120145314312"><a name="p1120145314312"></a><a name="p1120145314312"></a>parameters.backend</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p2201185318312"><a name="p2201185318312"></a><a name="p2201185318312"></a>待创建资源所在的后端名称。</p>
@@ -91,6 +103,24 @@ weight: 2
 <td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上随机选择一个满足容量要求的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
 </td>
 </tr>
+<tr id="row12968565337"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p270mcpsimp"><a name="p270mcpsimp"></a><a name="p270mcpsimp"></a>指定动态卷供应创建的存储资源名称。</p>
+<p id="p271mcpsimp"><a name="p271mcpsimp"></a><a name="p271mcpsimp"></a>支持配置占位符对存储资源名称进行自定义，支持的占位符如下：</p>
+<a name="ul277mcpsimp"></a><a name="ul277mcpsimp"></a><ul id="ul277mcpsimp"><li>PVC命名空间：{{ .PVCNamespace }}</li><li>PVC名称：{{ .PVCName }}</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p49687693314"><a name="p49687693314"></a><a name="p49687693314"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p096819643312"><a name="p096819643312"></a><a name="p096819643312"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul165061538173414"></a><a name="ul165061538173414"></a><ul id="ul165061538173414"><li>仅支持OceanStor和OceanStor Dorado企业式存储产品。</li><li>支持配置字母、数字、"-"、"_"、"."，不能配置为空，且将占位符展开后的长度范围是1-255。</li><li>必须同时配置PVC命名空间和PVC名称。</li><li>为了避免资源名称重复，会将PVC UID作为唯一标识符默认添加到名称末尾。</li></ul>
+<p id="p3486174714359"><a name="p3486174714359"></a><a name="p3486174714359"></a></p>
+<p id="p292mcpsimp"><a name="p292mcpsimp"></a><a name="p292mcpsimp"></a>配置示例：</p>
+<p id="p293mcpsimp"><a name="p293mcpsimp"></a><a name="p293mcpsimp"></a>PVC命名空间为："namespace"，PVC名称为："pvc-1"，PVC UID："c2fd3f46-bf17-4a7d-b88e-2e3232bae434"。</p>
+<p id="p301mcpsimp"><a name="p301mcpsimp"></a><a name="p301mcpsimp"></a>volumeName配置为: "prefix-{{ .PVCNamespace }}_{{ .PVCName }}"。</p>
+<p id="p302mcpsimp"><a name="p302mcpsimp"></a><a name="p302mcpsimp"></a>最终存储资源名称为："prefix-namespace_pvc-1-c2fd3f46bf174a7db88e2e3232bae434"。</p>
+</td>
+</tr>
 <tr id="zh-cn_topic_0000001162111564_row18750151182917"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001162111564_p1775061119292"><a name="zh-cn_topic_0000001162111564_p1775061119292"></a><a name="zh-cn_topic_0000001162111564_p1775061119292"></a>parameters.volumeType</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0000001162111564_p975011122920"><a name="zh-cn_topic_0000001162111564_p975011122920"></a><a name="zh-cn_topic_0000001162111564_p975011122920"></a>待创建卷类型。支持如下类型：</p>
@@ -113,7 +143,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p6398910155219"><a name="p6398910155219"></a><a name="p6398910155219"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001162111564_p57502011142910"><a name="zh-cn_topic_0000001162111564_p57502011142910"></a><a name="zh-cn_topic_0000001162111564_p57502011142910"></a>传空相当于传thin，创建时不会分配所有需要的空间，而是根据使用情况动态分配。</p>
-<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanStor Dorado V3/OceanDisk不支持thick</p>
+<p id="p371813715289"><a name="p371813715289"></a><a name="p371813715289"></a>OceanStor Dorado/OceanDisk不支持thick</p>
 </td>
 </tr>
 <tr id="row167642021133711"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001162111564_p18750171111299"><a name="zh-cn_topic_0000001162111564_p18750171111299"></a><a name="zh-cn_topic_0000001162111564_p18750171111299"></a>parameters.fsType</p>
@@ -175,7 +205,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p1439818100526"><a name="p1439818100526"></a><a name="p1439818100526"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p24789316192"><a name="p24789316192"></a><a name="p24789316192"></a>支持的QoS配置请参考<a href="#table74841513116">表2</a>说明。</p>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p24789316192"><a name="p24789316192"></a><a name="p24789316192"></a>支持的QoS配置请参考<a href="#table74841513116">表3</a>说明。</p>
 </td>
 </tr>
 <tr id="row1713161417388"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p513251416380"><a name="p513251416380"></a><a name="p513251416380"></a>parameters.storageQuota</p>
@@ -187,7 +217,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p639812105526"><a name="p639812105526"></a><a name="p639812105526"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p21321014103814"><a name="p21321014103814"></a><a name="p21321014103814"></a>支持的配额配置请参考<a href="#table2083974632312">表3</a>说明。</p>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p21321014103814"><a name="p21321014103814"></a><a name="p21321014103814"></a>支持的配额配置请参考<a href="#table2083974632312">表4</a>说明。</p>
 </td>
 </tr>
 <tr id="row87671018115219"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p74248684617"><a name="p74248684617"></a><a name="p74248684617"></a>parameters.hyperMetro</p>
@@ -355,113 +385,143 @@ weight: 2
 <p id="p122751358134518"><a name="p122751358134518"></a><a name="p122751358134518"></a>若仅在StorageClass中配置了parentname，而存储后端中未配置时，要求在安装CSI时根据<a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">表5</a>将CSIDriverObject.attachRequired设置为true。</p>
 </td>
 </tr>
-<tr id="row1795755912408"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>
+<tr id="row1795755912408"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>parameters.advancedOptions</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p16369105917476"><a name="p16369105917476"></a><a name="p16369105917476"></a>主机侧NFS挂载选项。支持如下挂载选项：</p>
-<p id="p3366172411524"><a name="p3366172411524"></a><a name="p3366172411524"></a>nfsvers：挂载NFS时的协议版本。支持配置的参数值为“3”，“4”，“4.0”，“4.1”和”4.2”。</p>
+<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p737mcpsimp"><a name="p737mcpsimp"></a><a name="p737mcpsimp"></a>高级<span id="text221712597301"><a name="text221712597301"></a><a name="text221712597301"></a>创卷</span>参数。仅oceanstor-nas类型的存储支持配置该参数。</p>
+<p id="p738mcpsimp"><a name="p738mcpsimp"></a><a name="p738mcpsimp"></a>配置项值是字典格式的JSON字符串（字符串两边由单引号修饰，字典key由双引号修饰）。如：'{"<span>CAPACITYTHRESHOLD</span>": 90}'</p>
 </td>
 <td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p53719725212"><a name="p53719725212"></a><a name="p53719725212"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p13398141016526"><a name="p13398141016526"></a><a name="p13398141016526"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p775515413439"><a name="p775515413439"></a><a name="p775515413439"></a>在主机执行mount命令时-o参数后的可选选项。列表格式。</p>
-<p id="p486929143316"><a name="p486929143316"></a><a name="p486929143316"></a>指定NFS版本挂载时，当前支持NFS 3/4.0/4.1/4.2协议（需存储设备支持且开启）。当配置参数为nfsvers=4时，因为操作系统配置的不同，实际挂载可能为NFS 4的最高版本协议，如4.2，当需要使用4.0协议时，建议配置nfsvers=4.0。</p>
-</td>
-</tr>
-<tr id="row122991419104113"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p743994313307"><a name="p743994313307"></a><a name="p743994313307"></a>mountOptions.acl</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p7439243173012"><a name="p7439243173012"></a><a name="p7439243173012"></a>DPC命名空间支持ACL功能。DPC客户端支持POSIX ACL、NFSv4 ACL、NT ACL的鉴权行为。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p18371167175218"><a name="p18371167175218"></a><a name="p18371167175218"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p5398121065216"><a name="p5398121065216"></a><a name="p5398121065216"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p1451716198319"><a name="p1451716198319"></a><a name="p1451716198319"></a>acl、aclonlyposix、cnflush、cflush参数描述仅供参考，详细参数说明请参考<a href="https://support.huawei.com/enterprise/zh/distributed-storage/oceanstor-pacific-9520-pid-251711061" target="_blank" rel="noopener noreferrer">《OceanStor Pacific系列 产品文档》</a> &gt; 配置 &gt; 文件服务基础业务配置指南 &gt; 配置基础业务（DPC场景） &gt; 客户端访问DPC共享 &gt; 步骤2。</p>
-</td>
-</tr>
-<tr id="row131796204428"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p184399439309"><a name="p184399439309"></a><a name="p184399439309"></a>mountOptions.aclonlyposix</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p13950103563719"><a name="p13950103563719"></a><a name="p13950103563719"></a>DPC命名空间支持POSIX ACL功能，DPC客户端支持POSIX ACL的鉴权行为。</p>
-<p id="p1943913439308"><a name="p1943913439308"></a><a name="p1943913439308"></a>支持POSIX ACL的协议有：DPC、NFSv3、HDFS。如使用NFSv4 ACL或NT ACL，会导致DPC客户端无法识别该类型的ACL，从而导致该类型的ACL不会生效。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p103711978523"><a name="p103711978523"></a><a name="p103711978523"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p639831014524"><a name="p639831014524"></a><a name="p639831014524"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p718315423511"><a name="p718315423511"></a><a name="p718315423511"></a>aclonlyposix与acl参数同时使用时，仅acl参数生效，即命名空间支持ACL功能。</p>
-</td>
-</tr>
-<tr id="row10278171764220"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p867705717358"><a name="p867705717358"></a><a name="p867705717358"></a>mountOptions.cnflush</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p7533510163615"><a name="p7533510163615"></a><a name="p7533510163615"></a>异步刷盘模式，即关闭命名空间下的文件时不会立即刷盘。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p1537112711528"><a name="p1537112711528"></a><a name="p1537112711528"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p53981310175211"><a name="p53981310175211"></a><a name="p53981310175211"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p46771657123516"><a name="p46771657123516"></a><a name="p46771657123516"></a>异步刷盘模式，当文件关闭时不会同步将Cache的数据持久化到存储介质中，而是通过Cache异步刷盘的方式将数据写入存储介质，Cache的后台刷盘将在写业务完成后根据刷盘周期定时刷盘。在多客户端场景下，对同一文件进行并行操作，文件Size的更新会受刷盘周期的影响，即当刷盘动作完成后才会更新文件的Size，更新通常会在数秒内完成。同步I/O不受刷盘周期影响。</p>
-</td>
-</tr>
-<tr id="row1645871414422"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p13444191520365"><a name="p13444191520365"></a><a name="p13444191520365"></a>mountOptions.cflush</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p194444156366"><a name="p194444156366"></a><a name="p194444156366"></a>同步刷盘模式，即关闭命名空间下的文件时立即刷盘。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p1837197175216"><a name="p1837197175216"></a><a name="p1837197175216"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p93981210155216"><a name="p93981210155216"></a><a name="p93981210155216"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p18444315183615"><a name="p18444315183615"></a><a name="p18444315183615"></a>默认使用同步刷盘模式。</p>
-</td>
-</tr>
-<tr id="row17198283474"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p13195284475"><a name="p13195284475"></a><a name="p13195284475"></a>mountOptions.sec</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p919162820478"><a name="p919162820478"></a><a name="p919162820478"></a>用于指定Kerberos 5协议挂载NFS文件系统。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p1719152812473"><a name="p1719152812473"></a><a name="p1719152812473"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p181910281476"><a name="p181910281476"></a><a name="p181910281476"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul196241519175315"></a><a name="ul196241519175315"></a><ul id="ul196241519175315"><li>使用Kerberos 5协议时，请配置krb5。</li><li>使用Kerberos 5i协议时，请配置krb5i。</li><li>使用Kerberos 5p协议时，请配置krb5p。</li><li>Kerberos仅支持NFSv4.0及以上版本的NFS协议。</li><li>OceanStor Dorado和OceanStor 6.1.3及以上版本支持Kerberos。</li></ul>
-</td>
-</tr>
-<tr id="row16497949175212"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p22011843373"><a name="p22011843373"></a><a name="p22011843373"></a>mountOptions.proto</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p120110433710"><a name="p120110433710"></a><a name="p120110433710"></a>指定NFS挂载时使用的传输协议。</p>
-<p id="p121419557439"><a name="p121419557439"></a><a name="p121419557439"></a>支持配置参数值为：“rdma”。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p1520119410379"><a name="p1520119410379"></a><a name="p1520119410379"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p1201844372"><a name="p1201844372"></a><a name="p1201844372"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><a name="ul197311816164015"></a><a name="ul197311816164015"></a><ul id="ul197311816164015"><li>确保存储系统已启用NFS over RDMA。</li><li>华为企业存储支持OceanStor Dorado和OceanStor 6.1.7及以上的NAS存储。</li><li>华为分布式支持OceanStor Pacific 8.2.0及以后的NAS存储。当分布式存储使用NFS over RDMA时，mountOptions.nfsvers参数必须配置为"3"。</li></ul>
-</td>
-</tr>
-<tr id="row33343664415"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p33347614411"><a name="p33347614411"></a><a name="p33347614411"></a>mountOptions.port</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p285125974520"><a name="p285125974520"></a><a name="p285125974520"></a>指定NFS挂载时使用的<span>协议端口</span>。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p7334269448"><a name="p7334269448"></a><a name="p7334269448"></a>条件必选</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p163341965441"><a name="p163341965441"></a><a name="p163341965441"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p1233414615447"><a name="p1233414615447"></a><a name="p1233414615447"></a>传输协议方式使用“rdma”时，请设置为：20049。</p>
-</td>
-</tr>
-<tr id="row11127032122910"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p612723262910"><a name="p612723262910"></a><a name="p612723262910"></a>mountOptions.discard</p>
-</td>
-<td class="cellrowborder" valign="top" width="25.52%" headers="mcps1.2.6.1.2 "><p id="p4127632172918"><a name="p4127632172918"></a><a name="p4127632172918"></a><span>挂载文件系统时自动触发Trim/Discard操作。该操作会通知块设备释放未使用的块</span>。</p>
-</td>
-<td class="cellrowborder" valign="top" width="5.18%" headers="mcps1.2.6.1.3 "><p id="p191271932182911"><a name="p191271932182911"></a><a name="p191271932182911"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p1712773232912"><a name="p1712773232912"></a><a name="p1712773232912"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p2127193210298"><a name="p2127193210298"></a><a name="p2127193210298"></a>支持xfs、ext4文件系统。</p>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p208761647111216"><a name="p208761647111216"></a><a name="p208761647111216"></a>支持的高级参数列表请参考<a href="#_table034918373916">表5</a>说明。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**表 2**  支持的QoS配置
+**表 2**  常用mountOptions参数说明
+
+<a name="table65545557506"></a>
+<table><thead align="left"><tr id="row1555414559506"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.1"><p id="p5274819155114"><a name="p5274819155114"></a><a name="p5274819155114"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.2"><p id="p19274619145114"><a name="p19274619145114"></a><a name="p19274619145114"></a>说明</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.3"><p id="p6274171905110"><a name="p6274171905110"></a><a name="p6274171905110"></a>必选参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.4"><p id="p13274419205110"><a name="p13274419205110"></a><a name="p13274419205110"></a>默认值</p>
+</th>
+<th class="cellrowborder" valign="top" width="20%" id="mcps1.2.6.1.5"><p id="p19274171912519"><a name="p19274171912519"></a><a name="p19274171912519"></a>备注</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row8555755185012"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p162853569513"><a name="p162853569513"></a><a name="p162853569513"></a>mountOptions.nfsvers</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p1928585612516"><a name="p1928585612516"></a><a name="p1928585612516"></a>主机侧NFS挂载选项。支持如下挂载选项：</p>
+<p id="p328516567514"><a name="p328516567514"></a><a name="p328516567514"></a>nfsvers：挂载NFS时的协议版本。支持配置的参数值为“3”，“4”，“4.0”，“4.1”和”4.2”。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p15285356185114"><a name="p15285356185114"></a><a name="p15285356185114"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p182851756145119"><a name="p182851756145119"></a><a name="p182851756145119"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p228545619510"><a name="p228545619510"></a><a name="p228545619510"></a>在主机执行mount命令时-o参数后的可选选项。列表格式。</p>
+<p id="p13285856115110"><a name="p13285856115110"></a><a name="p13285856115110"></a>指定NFS版本挂载时，当前支持NFS 3/4.0/4.1/4.2协议（需存储设备支持且开启）。当配置参数为nfsvers=4时，因为操作系统配置的不同，实际挂载可能为NFS 4的最高版本协议，如4.2，当需要使用4.0协议时，建议配置nfsvers=4.0。</p>
+</td>
+</tr>
+<tr id="row0555195515508"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p128525610511"><a name="p128525610511"></a><a name="p128525610511"></a>mountOptions.acl</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p112856566510"><a name="p112856566510"></a><a name="p112856566510"></a>DPC命名空间支持ACL功能。DPC客户端支持POSIX ACL、NFSv4 ACL、NT ACL的鉴权行为。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p228505620512"><a name="p228505620512"></a><a name="p228505620512"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p132852564514"><a name="p132852564514"></a><a name="p132852564514"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p428595635116"><a name="p428595635116"></a><a name="p428595635116"></a>acl、aclonlyposix、cnflush、cflush参数描述仅供参考，详细参数说明请参考<a href="https://support.huawei.com/enterprise/zh/distributed-storage/oceanstor-pacific-9520-pid-251711061" target="_blank" rel="noopener noreferrer">《OceanStor Pacific系列 产品文档》</a> &gt; 配置 &gt; 文件服务基础业务配置指南 &gt; 配置基础业务（DPC场景） &gt; 客户端访问DPC共享 &gt; 步骤2。</p>
+</td>
+</tr>
+<tr id="row19555135525010"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p528513563511"><a name="p528513563511"></a><a name="p528513563511"></a>mountOptions.aclonlyposix</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p328545655110"><a name="p328545655110"></a><a name="p328545655110"></a>DPC命名空间支持POSIX ACL功能，DPC客户端支持POSIX ACL的鉴权行为。</p>
+<p id="p02851756105111"><a name="p02851756105111"></a><a name="p02851756105111"></a>支持POSIX ACL的协议有：DPC、NFSv3、HDFS。如使用NFSv4 ACL或NT ACL，会导致DPC客户端无法识别该类型的ACL，从而导致该类型的ACL不会生效。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p1428575617514"><a name="p1428575617514"></a><a name="p1428575617514"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p3285056145120"><a name="p3285056145120"></a><a name="p3285056145120"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p192851156145118"><a name="p192851156145118"></a><a name="p192851156145118"></a>aclonlyposix与acl参数同时使用时，仅acl参数生效，即命名空间支持ACL功能。</p>
+</td>
+</tr>
+<tr id="row125552552503"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1228513566515"><a name="p1228513566515"></a><a name="p1228513566515"></a>mountOptions.cnflush</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p52851756125115"><a name="p52851756125115"></a><a name="p52851756125115"></a>异步刷盘模式，即关闭命名空间下的文件时不会立即刷盘。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p12854568514"><a name="p12854568514"></a><a name="p12854568514"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p9285956175117"><a name="p9285956175117"></a><a name="p9285956175117"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p228575614518"><a name="p228575614518"></a><a name="p228575614518"></a>异步刷盘模式，当文件关闭时不会同步将Cache的数据持久化到存储介质中，而是通过Cache异步刷盘的方式将数据写入存储介质，Cache的后台刷盘将在写业务完成后根据刷盘周期定时刷盘。在多客户端场景下，对同一文件进行并行操作，文件Size的更新会受刷盘周期的影响，即当刷盘动作完成后才会更新文件的Size，更新通常会在数秒内完成。同步I/O不受刷盘周期影响。</p>
+</td>
+</tr>
+<tr id="row15109164645110"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p22851456185117"><a name="p22851456185117"></a><a name="p22851456185117"></a>mountOptions.cflush</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p18285656115120"><a name="p18285656115120"></a><a name="p18285656115120"></a>同步刷盘模式，即关闭命名空间下的文件时立即刷盘。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p528515645111"><a name="p528515645111"></a><a name="p528515645111"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p528545655118"><a name="p528545655118"></a><a name="p528545655118"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p8285185695115"><a name="p8285185695115"></a><a name="p8285185695115"></a>默认使用同步刷盘模式。</p>
+</td>
+</tr>
+<tr id="row6770194365110"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p92851256105112"><a name="p92851256105112"></a><a name="p92851256105112"></a>mountOptions.sec</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p172852567515"><a name="p172852567515"></a><a name="p172852567515"></a>用于指定Kerberos 5协议挂载NFS文件系统。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p128511565512"><a name="p128511565512"></a><a name="p128511565512"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p152851756145118"><a name="p152851756145118"></a><a name="p152851756145118"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><a name="ul1028516561513"></a><a name="ul1028516561513"></a><ul id="ul1028516561513"><li>使用Kerberos 5协议时，请配置krb5。</li><li>使用Kerberos 5i协议时，请配置krb5i。</li><li>使用Kerberos 5p协议时，请配置krb5p。</li><li>Kerberos仅支持NFSv4.0及以上版本的NFS协议。</li><li>OceanStor Dorado和OceanStor 6.1.3及以上版本支持Kerberos。</li></ul>
+</td>
+</tr>
+<tr id="row1142654125113"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p028615569516"><a name="p028615569516"></a><a name="p028615569516"></a>mountOptions.proto</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p328617569519"><a name="p328617569519"></a><a name="p328617569519"></a>指定NFS挂载时使用的传输协议。</p>
+<p id="p18286185612518"><a name="p18286185612518"></a><a name="p18286185612518"></a>支持配置参数值为：“rdma”。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p172868562511"><a name="p172868562511"></a><a name="p172868562511"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p1286155614517"><a name="p1286155614517"></a><a name="p1286155614517"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><a name="ul1428618567518"></a><a name="ul1428618567518"></a><ul id="ul1428618567518"><li>确保存储系统已启用NFS over RDMA。</li><li>华为企业存储支持OceanStor Dorado和OceanStor 6.1.7及以上的NAS存储。</li><li>华为分布式支持OceanStor Pacific 8.2.0及以后的NAS存储。当分布式存储使用NFS over RDMA时，mountOptions.nfsvers参数必须配置为"3"。</li></ul>
+</td>
+</tr>
+<tr id="row16338113817517"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p6286105617518"><a name="p6286105617518"></a><a name="p6286105617518"></a>mountOptions.port</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p628665645117"><a name="p628665645117"></a><a name="p628665645117"></a>指定NFS挂载时使用的<span>协议端口</span>。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p192861056115114"><a name="p192861056115114"></a><a name="p192861056115114"></a>条件必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p628655665114"><a name="p628655665114"></a><a name="p628655665114"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p6286145618514"><a name="p6286145618514"></a><a name="p6286145618514"></a>传输协议方式使用“rdma”时，请设置为：20049。</p>
+</td>
+</tr>
+<tr id="row15555205517503"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p202861156155119"><a name="p202861156155119"></a><a name="p202861156155119"></a>mountOptions.discard</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.2 "><p id="p1928616565514"><a name="p1928616565514"></a><a name="p1928616565514"></a><span>挂载文件系统时自动触发Trim/Discard操作。该操作会通知块设备释放未使用的块</span>。</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.3 "><p id="p1328610561511"><a name="p1328610561511"></a><a name="p1328610561511"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p2286175613513"><a name="p2286175613513"></a><a name="p2286175613513"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p4286556155111"><a name="p4286556155111"></a><a name="p4286556155111"></a>支持xfs、ext4文件系统。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 3**  支持的QoS配置
 
 <a name="table74841513116"></a>
 <table><thead align="left"><tr id="row74844518118"><th class="cellrowborder" valign="top" width="13.278672132786722%" id="mcps1.2.5.1.1"><p id="p2579113031316"><a name="p2579113031316"></a><a name="p2579113031316"></a>存储类型</p>
@@ -518,30 +578,6 @@ weight: 2
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p85211722911"><a name="p85211722911"></a><a name="p85211722911"></a>最大时延保护策略。</p>
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p352161718293"><a name="p352161718293"></a><a name="p352161718293"></a>单位ms，有效值为&gt;0的整数。</p>
-</td>
-</tr>
-<tr id="row183095010142"><td class="cellrowborder" rowspan="3" valign="top" width="13.278672132786722%" headers="mcps1.2.5.1.1 "><p id="p38301350131417"><a name="p38301350131417"></a><a name="p38301350131417"></a>OceanStor Dorado V3</p>
-</td>
-<td class="cellrowborder" valign="top" width="15.348465153484653%" headers="mcps1.2.5.1.2 "><p id="p1752194493315"><a name="p1752194493315"></a><a name="p1752194493315"></a>IOTYPE</p>
-</td>
-<td class="cellrowborder" valign="top" width="26.167383261673834%" headers="mcps1.2.5.1.3 "><p id="p1252144463312"><a name="p1252144463312"></a><a name="p1252144463312"></a>控制读写类型。</p>
-</td>
-<td class="cellrowborder" valign="top" width="45.205479452054796%" headers="mcps1.2.5.1.4 "><p id="p12521944143313"><a name="p12521944143313"></a><a name="p12521944143313"></a>有效值如下：</p>
-<a name="ul25214449332"></a><a name="ul25214449332"></a><ul id="ul25214449332"><li>2：读写I/O</li></ul>
-</td>
-</tr>
-<tr id="row2083035031413"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p135211344193310"><a name="p135211344193310"></a><a name="p135211344193310"></a><span>MAXBANDWIDTH</span></p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p552117445334"><a name="p552117445334"></a><a name="p552117445334"></a>最大带宽限制策略。</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p11931954144519"><a name="p11931954144519"></a><a name="p11931954144519"></a>单位MB/s，整数， 范围1~999999999。</p>
-</td>
-</tr>
-<tr id="row68311950201411"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p55218447336"><a name="p55218447336"></a><a name="p55218447336"></a><span>MAXIOPS</span></p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p052114442338"><a name="p052114442338"></a><a name="p052114442338"></a>最大IOPS限制策略。</p>
-</td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.3 "><p id="p4756182510457"><a name="p4756182510457"></a><a name="p4756182510457"></a>类型为整数， 范围100~999999999。</p>
 </td>
 </tr>
 <tr id="row3455115971517"><td class="cellrowborder" rowspan="6" valign="top" width="13.278672132786722%" headers="mcps1.2.5.1.1 "><p id="p74551059151512"><a name="p74551059151512"></a><a name="p74551059151512"></a>OceanStor Dorado/OceanStor</p>
@@ -658,7 +694,7 @@ weight: 2
 </tbody>
 </table>
 
-**表 3**  支持的配额配置
+**表 4**  支持的配额配置
 
 <a name="table2083974632312"></a>
 <table><thead align="left"><tr id="row68394463230"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0000001218368853_p1643904313015"><a name="zh-cn_topic_0000001218368853_p1643904313015"></a><a name="zh-cn_topic_0000001218368853_p1643904313015"></a>参数名</p>
@@ -682,6 +718,32 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0000001218368853_p1540512282024"><a name="zh-cn_topic_0000001218368853_p1540512282024"></a><a name="zh-cn_topic_0000001218368853_p1540512282024"></a>条件可选，当<span class="parmname" id="zh-cn_topic_0000001218368853_parmname5404162815213"><a name="zh-cn_topic_0000001218368853_parmname5404162815213"></a><a name="zh-cn_topic_0000001218368853_parmname5404162815213"></a>“spaceQuota”</span>配置为<span class="parmvalue" id="zh-cn_topic_0000001218368853_parmvalue74056285216"><a name="zh-cn_topic_0000001218368853_parmvalue74056285216"></a><a name="zh-cn_topic_0000001218368853_parmvalue74056285216"></a>“softQuota”</span>时可选。</p>
 <p id="zh-cn_topic_0000001218368853_p14439114315304"><a name="zh-cn_topic_0000001218368853_p14439114315304"></a><a name="zh-cn_topic_0000001218368853_p14439114315304"></a>类型为整数，支持范围为0～4294967294。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 5**  支持的高级创卷参数
+
+<a name="_table034918373916"></a>
+<table><thead align="left"><tr id="row756mcpsimp"><th class="cellrowborder" valign="top" width="10.101010101010102%" id="mcps1.2.5.1.1"><p id="p758mcpsimp"><a name="p758mcpsimp"></a><a name="p758mcpsimp"></a>存储后端类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="15.151515151515152%" id="mcps1.2.5.1.2"><p id="p760mcpsimp"><a name="p760mcpsimp"></a><a name="p760mcpsimp"></a>参数名</p>
+</th>
+<th class="cellrowborder" valign="top" width="35.35353535353536%" id="mcps1.2.5.1.3"><p id="p762mcpsimp"><a name="p762mcpsimp"></a><a name="p762mcpsimp"></a>参数描述</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.39393939393939%" id="mcps1.2.5.1.4"><p id="p764mcpsimp"><a name="p764mcpsimp"></a><a name="p764mcpsimp"></a>备注</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row766mcpsimp"><td class="cellrowborder" valign="top" width="10.101010101010102%" headers="mcps1.2.5.1.1 "><p id="p768mcpsimp"><a name="p768mcpsimp"></a><a name="p768mcpsimp"></a>oceanstor-nas</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.2 "><p id="p770mcpsimp"><a name="p770mcpsimp"></a><a name="p770mcpsimp"></a><span>CAPACITYTHRESHOLD</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="35.35353535353536%" headers="mcps1.2.5.1.3 "><p id="p773mcpsimp"><a name="p773mcpsimp"></a><a name="p773mcpsimp"></a>总空间容量告警阈值。</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.39393939393939%" headers="mcps1.2.5.1.4 "><p id="p775mcpsimp"><a name="p775mcpsimp"></a><a name="p775mcpsimp"></a>参数类型，uint64。</p>
+<p id="p776mcpsimp"><a name="p776mcpsimp"></a><a name="p776mcpsimp"></a>默认值和取值范围请参考对应存储产品手册。</p>
 </td>
 </tr>
 </tbody>

@@ -133,7 +133,6 @@ parameters:
   pool: pool001
   volumeType: fs
   allocType: thin
-  authClient: "*"
 mountOptions:
   - acl # 鉴权参数
   - cnflush # 设置异步刷盘模式
@@ -183,7 +182,7 @@ mountOptions:
 
 容器使用企业存储或者分布式存储作为存储资源时，可以为容器使用的存储资源设置QoS，从而保证这些容器对存储读写满足一定的服务等级。
 
-不同型号或版本的存储支持的QoS设置不同，请参考[表2](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning#table74841513116)找到对应存储的配置项。本示例中的后端是OceanStor Dorado存储，其他存储可以参考本例设置。
+不同型号或版本的存储支持的QoS设置不同，请参考[表3](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-parameters-for-dynamic-volume-provisioning#table74841513116)找到对应存储的配置项。本示例中的后端是OceanStor Dorado存储，其他存储可以参考本例设置。
 
 ```yaml
 kind: StorageClass

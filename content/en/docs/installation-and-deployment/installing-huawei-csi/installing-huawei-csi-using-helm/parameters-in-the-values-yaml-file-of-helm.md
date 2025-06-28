@@ -32,7 +32,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633715710454"><a name="en-us_topic_0000001324610777_p1633715710454"></a><a name="en-us_topic_0000001324610777_p1633715710454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.7.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.8.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p4337185713453"><a name="en-us_topic_0000001324610777_p4337185713453"></a><a name="en-us_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -233,6 +233,17 @@ The controller parameters are used to configure the huawei-csi-controller compon
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p313104444510"><a name="p313104444510"></a><a name="p313104444510"></a>For details about taints and tolerations, see <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank" rel="noopener noreferrer">Taints and Tolerations</a>.</p>
 </td>
 </tr>
+<tr id="row17847615817"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p8848121511116"><a name="p8848121511116"></a><a name="p8848121511116"></a>controller.affinity</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p198481915714"><a name="p198481915714"></a><a name="p198481915714"></a>Node affinity of huawei-csi-controller. After this parameter is set, huawei-csi-controller will be preferentially scheduled to a node with the label.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p9848111516113"><a name="p9848111516113"></a><a name="p9848111516113"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p2848111511114"><a name="p2848111511114"></a><a name="p2848111511114"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p16849315113"><a name="p16849315113"></a><a name="p16849315113"></a>For details about node affinity, see <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity" target="_blank" rel="noopener noreferrer">Assigning Pods to Nodes</a>.</p>
+</td>
+</tr>
 <tr id="row3514131652617"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1751521602612"><a name="p1751521602612"></a><a name="p1751521602612"></a>controller.livenessProbePort</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p10515161682619"><a name="p10515161682619"></a><a name="p10515161682619"></a>Liveness probe port of huawei-csi-controller, used for health check.</p>
@@ -375,6 +386,17 @@ The node parameters are used to configure the huawei-csi-node component.
   effect: "NoExecute"</pre>
 </td>
 <td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 "><p id="p596410085910"><a name="p596410085910"></a><a name="p596410085910"></a>For details about taints and tolerations, see <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/" target="_blank" rel="noopener noreferrer">Taints and Tolerations</a>.</p>
+</td>
+</tr>
+<tr id="row102254208186"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.6.1.1 "><p id="p72561621151816"><a name="p72561621151816"></a><a name="p72561621151816"></a>node.affinity</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.2 "><p id="p725652110183"><a name="p725652110183"></a><a name="p725652110183"></a>Node affinity of huawei-csi-node. After this parameter is set, huawei-csi-node will be preferentially scheduled to a node with the label.</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13131313131313%" headers="mcps1.2.6.1.3 "><p id="p1725672141811"><a name="p1725672141811"></a><a name="p1725672141811"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.6.1.4 "><p id="p1625642110181"><a name="p1625642110181"></a><a name="p1625642110181"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 "><p id="p132561421101814"><a name="p132561421101814"></a><a name="p132561421101814"></a>For details about node affinity, see <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity" target="_blank" rel="noopener noreferrer">Assigning Pods to Nodes</a>.</p>
 </td>
 </tr>
 <tr id="row14307151183115"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.6.1.1 "><p id="p93081173119"><a name="p93081173119"></a><a name="p93081173119"></a>node.livenessProbePort</p>
@@ -612,7 +634,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103486342462"><a name="en-us_topic_0000001324610777_p103486342462"></a><a name="en-us_topic_0000001324610777_p103486342462"></a>file</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1640915502"><a name="b1640915502"></a><a name="b1640915502"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1237191045"><a name="b1237191045"></a><a name="b1237191045"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
 <p id="p1676211161707"><a name="p1676211161707"></a><a name="p1676211161707"></a>When the value is <strong id="b134821913194316"><a name="b134821913194316"></a><a name="b134821913194316"></a>console</strong>, logs are retained in the temporary space of the Pod where CSI is located. When the Pod where CSI is located is destroyed, the logs are also destroyed.</p>
 </td>
 </tr>
@@ -730,6 +752,17 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p10485101141015"><a name="p10485101141015"></a><a name="p10485101141015"></a>-</p>
 </td>
 </tr>
+<tr id="row136111531580"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.6.1.1 "><p id="p1761115325820"><a name="p1761115325820"></a><a name="p1761115325820"></a>imagePullSecrets</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p1361103155815"><a name="p1361103155815"></a><a name="p1361103155815"></a>Used by the Kubernetes cluster to pass the identity authentication of an image registry to pull private images.</p>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p1861113325818"><a name="p1861113325818"></a><a name="p1861113325818"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1861112355810"><a name="p1861112355810"></a><a name="p1861112355810"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p1161112317588"><a name="p1161112317588"></a><a name="p1161112317588"></a>For details, see <a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/" target="_blank" rel="noopener noreferrer">Pull an Image from a Private Registry</a>.</p>
+</td>
+</tr>
 <tr id="row1670374213211"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.6.1.1 "><p id="p177048426324"><a name="p177048426324"></a><a name="p177048426324"></a>CSIDriverObject.isCreate</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p67047427323"><a name="p67047427323"></a><a name="p67047427323"></a>Whether to create the CSIDriver object.</p>
@@ -799,6 +832,59 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p155681010134316"><a name="p155681010134316"></a><a name="p155681010134316"></a>2s</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p165681710114315"><a name="p165681710114315"></a><a name="p165681710114315"></a>This parameter takes effect only in the multi-controller scenario.</p>
+</td>
+</tr>
+<tr id="row2630194110428"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.6.1.1 "><p id="p9630104184219"><a name="p9630104184219"></a><a name="p9630104184219"></a>service.ipFamilyPolicy</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p2630941144214"><a name="p2630941144214"></a><a name="p2630941144214"></a>IP protocol stack selection policy of a service.</p>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p763016410424"><a name="p763016410424"></a><a name="p763016410424"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p11630184134220"><a name="p11630184134220"></a><a name="p11630184134220"></a>SingleStack</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p3913114715513"><a name="p3913114715513"></a><a name="p3913114715513"></a>The value can be:</p>
+<a name="ul11642201414568"></a><a name="ul11642201414568"></a><ul id="ul11642201414568"><li><a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank" rel="noopener noreferrer">SingleStack</a>: The service uses only one IP address family (IPv4 or IPv6).</li><li><a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank" rel="noopener noreferrer">PreferDualStack</a>: The service preferentially uses dual stack. If the cluster does not support dual stack, single stack is used.</li><li><a href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank" rel="noopener noreferrer">RequireDualStack</a>: The service must use dual stack. If the cluster does not support dual stack, the service will fail to be created.</li></ul>
+</td>
+</tr>
+<tr id="row1104104874417"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.6.1.1 "><p id="p1710414824415"><a name="p1710414824415"></a><a name="p1710414824415"></a>service.ipFamilies</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p9104164834415"><a name="p9104164834415"></a><a name="p9104164834415"></a>List of IP protocol stacks supported by a service.</p>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p12104114864410"><a name="p12104114864410"></a><a name="p12104114864410"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p210411484448"><a name="p210411484448"></a><a name="p210411484448"></a>IPv4</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p26721743512"><a name="p26721743512"></a><a name="p26721743512"></a>The value can be:</p>
+<a name="ul5941610216"></a><a name="ul5941610216"></a><ul id="ul5941610216"><li>IPv4</li><li>IPv6</li></ul>
+</td>
+</tr>
+<tr id="row2411204292218"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.6.1.1 "><p id="p1941154213223"><a name="p1941154213223"></a><a name="p1941154213223"></a>resources</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p113716142716"><a name="p113716142716"></a><a name="p113716142716"></a>You can allocate container resources related to huawei-csi-controller and huawei-csi-node:</p>
+<p id="p1513761411718"><a name="p1513761411718"></a><a name="p1513761411718"></a><strong id="b1063545621816"><a name="b1063545621816"></a><a name="b1063545621816"></a>resources.</strong><em id="i179188131920"><a name="i179188131920"></a><a name="i179188131920"></a>&lt;component&gt;</em><strong id="b16425841814"><a name="b16425841814"></a><a name="b16425841814"></a>.</strong><em id="i1891112961916"><a name="i1891112961916"></a><a name="i1891112961916"></a>&lt;container-name&gt;</em></p>
+<p id="p713711141871"><a name="p713711141871"></a><a name="p713711141871"></a></p>
+<p id="p1713731415712"><a name="p1713731415712"></a><a name="p1713731415712"></a><em id="i89415021218"><a name="i89415021218"></a><a name="i89415021218"></a>&lt;component&gt;</em> supports the following values:</p>
+<a name="ul18915105142419"></a><a name="ul18915105142419"></a><ul id="ul18915105142419"><li><strong id="b8177522171120"><a name="b8177522171120"></a><a name="b8177522171120"></a>node</strong>: configured when the sidecar in the huawei-csi-node component is configured.</li><li><strong id="b644983481118"><a name="b644983481118"></a><a name="b644983481118"></a>controller</strong>: configured when the sidecar in the huawei-csi-controller component is configured.</li></ul>
+<p id="p913716149716"><a name="p913716149716"></a><a name="p913716149716"></a></p>
+<p id="p1813712141714"><a name="p1813712141714"></a><a name="p1813712141714"></a><strong id="b145683816124"><a name="b145683816124"></a><a name="b145683816124"></a>controller.</strong><em id="i49821354129"><a name="i49821354129"></a><a name="i49821354129"></a>&lt;container-name&gt;</em> supports the following values:</p>
+<a name="ul328959182417"></a><a name="ul328959182417"></a><ul id="ul328959182417"><li>livenessProbe</li><li>csiProvisioner</li><li>csiAttacher</li><li>csiResizer</li><li>csiSnapshotter</li><li>snapshotController</li><li>storageBackendController</li><li>storageBackendSidecar</li><li>huaweiCsiExtender</li><li>huaweiCsiDriver</li></ul>
+<p id="p1513717142713"><a name="p1513717142713"></a><a name="p1513717142713"></a></p>
+<p id="p8810438121413"><a name="p8810438121413"></a><a name="p8810438121413"></a><strong id="b226328131211"><a name="b226328131211"></a><a name="b226328131211"></a>node.</strong><em id="i72613288127"><a name="i72613288127"></a><a name="i72613288127"></a>&lt;container-name&gt;</em> supports the following values:</p>
+<a name="ul1778113710255"></a><a name="ul1778113710255"></a><ul id="ul1778113710255"><li>huaweiCsiDriver</li><li>livenessProbe</li><li>csiNodeDriverRegistrar</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p2412174213224"><a name="p2412174213224"></a><a name="p2412174213224"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1593232713328"><a name="p1593232713328"></a><a name="p1593232713328"></a>For the default values of different container resources, see <a href="/css-docs/docs/appendix/huawei-csi-resource-management">Huawei CSI Resource Management</a>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p13812293161"><a name="p13812293161"></a><a name="p13812293161"></a>The following uses livenessProbe of huawei-csi-controller as an example:</p>
+<pre class="screen" id="screen1541341184010"><a name="screen1541341184010"></a><a name="screen1541341184010"></a>resources:
+  controller:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 10m
+      memory: 128Mi</pre>
 </td>
 </tr>
 </tbody>

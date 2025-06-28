@@ -8,10 +8,10 @@ weight: 1
 This section describes how to download the software package and the component structure of the software package.
 
 1.  Open a browser and enter  [https://github.com/Huawei/eSDK\_K8S\_Plugin/releases](https://github.com/Huawei/eSDK_K8S_Plugin/releases)  in the address box.
-2.  Download the software package of the  4.7.0  version based on the CPU architecture.
+2.  Download the software package of the  4.8.0  version based on the CPU architecture.
 
     >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
-    >Software package naming rule: Plug-in name \(**eSDK\_Huawei\_Storage\_Kubernetes\_CSI\_Plugin**\) + Version number + CPU architecture
+    >Software package naming rule: Plug-in name \(**eSDK\_Storage\_CSI**\) + Version number + CPU architecture
     >CSI supports the following CPU architectures: x86, Arm, and PPC64LE.
 
 3.  Decompress the downloaded software package. The following table shows the component structure of the software package.
@@ -25,22 +25,22 @@ This section describes how to download the software package and the component st
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row930973118310"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p230912312313"><a name="p230912312313"></a><a name="p230912312313"></a>image/huawei-csi-v<span id="ph1247142163214"><a name="ph1247142163214"></a><a name="ph1247142163214"></a>4.7.0</span>-<em id="i7879115512231"><a name="i7879115512231"></a><a name="i7879115512231"></a>arch</em>.tar</p>
+    <tbody><tr id="row930973118310"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p230912312313"><a name="p230912312313"></a><a name="p230912312313"></a>image/huawei-csi-v<span id="ph1247142163214"><a name="ph1247142163214"></a><a name="ph1247142163214"></a>4.8.0</span>-<em id="i7879115512231"><a name="i7879115512231"></a><a name="i7879115512231"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p131017311931"><a name="p131017311931"></a><a name="p131017311931"></a>huawei-csi-driver image. <em id="i468114311317"><a name="i468114311317"></a><a name="i468114311317"></a>arch</em> indicates the CPU architecture.</p>
     </td>
     </tr>
-    <tr id="row1636415012105"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p236425091017"><a name="p236425091017"></a><a name="p236425091017"></a>image/storage-backend-controller-v<span id="ph16563185044814"><a name="ph16563185044814"></a><a name="ph16563185044814"></a>4.7.0</span>-<em id="i1580012569101"><a name="i1580012569101"></a><a name="i1580012569101"></a>arch</em>.tar</p>
+    <tr id="row1636415012105"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p236425091017"><a name="p236425091017"></a><a name="p236425091017"></a>image/storage-backend-controller-v<span id="ph16563185044814"><a name="ph16563185044814"></a><a name="ph16563185044814"></a>4.8.0</span>-<em id="i1580012569101"><a name="i1580012569101"></a><a name="i1580012569101"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p0364350161018"><a name="p0364350161018"></a><a name="p0364350161018"></a>Back-end management controller image. <em id="i5481153614711"><a name="i5481153614711"></a><a name="i5481153614711"></a>arch</em> indicates the CPU architecture.</p>
     </td>
     </tr>
-    <tr id="row20811154791011"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p9811154713107"><a name="p9811154713107"></a><a name="p9811154713107"></a>image/storage-backend-sidecar-v<span id="ph0931352104814"><a name="ph0931352104814"></a><a name="ph0931352104814"></a>4.7.0</span>-<em id="i17458825101116"><a name="i17458825101116"></a><a name="i17458825101116"></a>arch</em>.tar</p>
+    <tr id="row20811154791011"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p9811154713107"><a name="p9811154713107"></a><a name="p9811154713107"></a>image/storage-backend-sidecar-v<span id="ph0931352104814"><a name="ph0931352104814"></a><a name="ph0931352104814"></a>4.8.0</span>-<em id="i17458825101116"><a name="i17458825101116"></a><a name="i17458825101116"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p7811174751010"><a name="p7811174751010"></a><a name="p7811174751010"></a>Back-end management sidecar image. <em id="i113682409477"><a name="i113682409477"></a><a name="i113682409477"></a>arch</em> indicates the CPU architecture.</p>
     </td>
     </tr>
-    <tr id="row925351132220"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p32505182215"><a name="p32505182215"></a><a name="p32505182215"></a>image/huawei-csi-extender-v<span id="ph486705310481"><a name="ph486705310481"></a><a name="ph486705310481"></a>4.7.0</span>-<em id="i12719141202718"><a name="i12719141202718"></a><a name="i12719141202718"></a>arch</em>.tar</p>
+    <tr id="row925351132220"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p32505182215"><a name="p32505182215"></a><a name="p32505182215"></a>image/huawei-csi-extender-v<span id="ph486705310481"><a name="ph486705310481"></a><a name="ph486705310481"></a>4.8.0</span>-<em id="i12719141202718"><a name="i12719141202718"></a><a name="i12719141202718"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p182585182214"><a name="p182585182214"></a><a name="p182585182214"></a>huawei-csi-extender image. <em id="i861363955118"><a name="i861363955118"></a><a name="i861363955118"></a>arch</em> indicates the CPU architecture.</p>
     </td>

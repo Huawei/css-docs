@@ -17,6 +17,7 @@ For details about the backend configuration in typical scenarios, see the follow
 -   [Configuring a Storage Backend of the DPC Type](#section1094123525411)
 -   [Configuring Storage Backends of the Dtree Type](#section6768010203620)
 -   [Configuring Storage Backends of the HyperMetro Type](#section175945335494)
+-   [Configuring Storage Backends of the IPv6 Type](#section618713292310)
 
 ## Configuring a Storage Backend of the iSCSI Type{#section9560112218344}
 
@@ -378,6 +379,25 @@ parameters:
   protocol: "nfs"
   portals:
     - "192.168.129.157"
+maxClientThreads: "30"
+```
+
+## Configuring Storage Backends of the IPv6 Type{#section618713292310}
+
+The following is an example of the backend configuration file when the management URL is of the IPv6 type \(an NFS backend is used as an example\):
+
+```yaml
+storage: "oceanstor-nas"
+name: "nfs-155"
+namespace: "huawei-csi"
+urls:
+  - "https://[192:168:129::155]:8088"
+pools:
+  - "StoragePool001"
+parameters:
+  protocol: "nfs"
+  portals:        
+    - "192:168:128::155"
 maxClientThreads: "30"
 ```
 
