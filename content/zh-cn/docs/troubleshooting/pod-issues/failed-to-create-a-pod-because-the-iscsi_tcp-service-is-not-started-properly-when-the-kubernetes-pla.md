@@ -1,6 +1,6 @@
 ---
-title: "Kubernetes平台第一次搭建时， iscsi\_tcp服务没有正常启动，导致创建Pod失败"
-linkTitle: "Kubernetes平台第一次搭建时， iscsi\_tcp服务没有正常启动，导致创建Pod失败"
+title: "Kubernetes平台第一次搭建时， iscsi_tcp服务没有正常启动，导致创建Pod失败"
+linkTitle: "Kubernetes平台第一次搭建时， iscsi_tcp服务没有正常启动，导致创建Pod失败"
 description: 
 weight: 9
 ---

@@ -151,7 +151,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p2398810105211"><a name="p2398810105211"></a><a name="p2398810105211"></a>3</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001162111564_p1775091110298"><a name="zh-cn_topic_0000001162111564_p1775091110298"></a><a name="zh-cn_topic_0000001162111564_p1775091110298"></a>4速度最快。配置克隆PVC或从快照创建PVC时生效，参考<a href="/css-docs/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc">克隆PVC</a>或<a href="/css-docs/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot">从快照创建PVC</a>。</p>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001162111564_p1775091110298"><a name="zh-cn_topic_0000001162111564_p1775091110298"></a><a name="zh-cn_topic_0000001162111564_p1775091110298"></a>4速度最快。配置克隆PVC或从快照创建PVC时生效，参考<a href="/css-docs/v4.7.0/using-huawei-csi/managing-a-pvc/cloning-a-pvc">克隆PVC</a>或<a href="/css-docs/v4.7.0/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot">从快照创建PVC</a>。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000001162111564_row18750161119295"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p133711471387"><a name="p133711471387"></a><a name="p133711471387"></a>parameters.applicationType</p>
@@ -352,7 +352,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p327535812450"><a name="p327535812450"></a><a name="p327535812450"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="p16731411944"><a name="p16731411944"></a><a name="p16731411944"></a>当parameters.volumeType配置为dtree，且backend未配置parentname时，该参数必填。</p>
-<p id="p122751358134518"><a name="p122751358134518"></a><a name="p122751358134518"></a>若仅在StorageClass中配置了parentname，而存储后端中未配置时，要求在安装CSI时根据<a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">表5</a>将CSIDriverObject.attachRequired设置为true。</p>
+<p id="p122751358134518"><a name="p122751358134518"></a><a name="p122751358134518"></a>若仅在StorageClass中配置了parentname，而存储后端中未配置时，要求在安装CSI时根据<a href="/css-docs/v4.7.0/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">表5</a>将CSIDriverObject.attachRequired设置为true。</p>
 </td>
 </tr>
 <tr id="row1795755912408"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p1036995916474"><a name="p1036995916474"></a><a name="p1036995916474"></a>mountOptions.nfsvers</p>

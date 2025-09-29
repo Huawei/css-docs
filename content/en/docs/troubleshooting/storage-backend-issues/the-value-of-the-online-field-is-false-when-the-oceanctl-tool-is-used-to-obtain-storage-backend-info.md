@@ -30,5 +30,5 @@ When CSI uses the account and password entered during storage backend creation t
 ## Solution or Workaround{#section155945247573}
 
 1.  Obtain the latest account password.
-2.  Update the storage backend password by following the instructions in  [Updating the Password of a Storage Backend Using oceanctl](/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl).
+2.  Update the storage backend password by following the instructions in  [Updating the Password of a Storage Backend Using oceanctl](/docs/basic-services/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl).
 

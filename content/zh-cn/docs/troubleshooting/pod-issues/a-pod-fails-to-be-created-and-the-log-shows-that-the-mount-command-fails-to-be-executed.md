@@ -7,7 +7,7 @@ weight: 5
 
 ## 现象描述{#section16564369537}
 
-NAS场景下，创建Pod时，Pod一直处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)），日志显示执行mount命令失败。
+NAS场景下，创建Pod时，Pod一直处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)），日志显示执行mount命令失败。
 
 ## 根因分析{#section135642617536}
 
@@ -16,5 +16,5 @@ NAS场景下，创建Pod时，Pod一直处于ContainerCreating状态，此时查
 ## 解决措施或规避方法{#section75642613539}
 
 -   开启存储侧的NFS 3/4.0/4.1/4.2协议，重新尝试默认挂载。
--   直接指定可用的NFS协议进行挂载，参考[动态卷供应典型场景StorageClass配置示例](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios)。
+-   直接指定可用的NFS协议进行挂载，参考[配置存储类](/docs/basic-services/storageclass-management/configuring-a-storageclass)。
 

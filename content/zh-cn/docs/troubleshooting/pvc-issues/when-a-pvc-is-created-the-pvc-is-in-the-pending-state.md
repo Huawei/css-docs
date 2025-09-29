@@ -43,8 +43,8 @@ weight: 1
         ```
 
         1.  删除PVC。
-        2.  创建StorageClass，可参考[动态卷供应典型场景StorageClass配置示例](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios)。
-        3.  创建新的PVC，可参考[动态卷供应PVC参数说明](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning)。
+        2.  创建StorageClass，可参考[配置存储类](/docs/basic-services/storageclass-management/configuring-a-storageclass)。
+        3.  创建新的PVC，可参考[配置持久卷](/docs/basic-services/persistent-volume-management/configuring-pvs)。
 
     -   如果由原因2导致PVC处于Pending状态，执行以下步骤。
 
@@ -59,8 +59,8 @@ weight: 1
         1.  删除PVC。
         2.  删除StorageClass。
         3.  根据Events信息修改StorageClass.yaml文件。
-        4.  创建StorageClass，详细请参考[动态卷供应典型场景StorageClass配置示例](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios)。
-        5.  创建新的PVC，详情请参考[动态卷供应PVC参数说明](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning)。
+        4.  创建StorageClass，详细请参考[配置存储类](/docs/basic-services/storageclass-management/configuring-a-storageclass)。
+        5.  创建新的PVC，详情请参考[配置持久卷](/docs/basic-services/persistent-volume-management/configuring-pvs)。
 
     -   如果由原因3导致PVC处于Pending状态，请联系华为工程师处理。
 

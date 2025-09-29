@@ -7,7 +7,7 @@ weight: 2
 
 ## 现象描述{#zh-cn_topic_0000001163875516_section1566717121452}
 
-执行完成Pod的创建操作，一段时间后，Pod的状态仍然处于ContainerCreating，查看具体日志信息（详情请参考[如何查看华为CSI日志](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)），报错“Fibre Channel volume device not found”。
+执行完成Pod的创建操作，一段时间后，Pod的状态仍然处于ContainerCreating，查看具体日志信息（详情请参考[如何查看华为CSI日志](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)），报错“Fibre Channel volume device not found”。
 
 ## 根因分析{#zh-cn_topic_0000001163875516_section1425013451056}
 

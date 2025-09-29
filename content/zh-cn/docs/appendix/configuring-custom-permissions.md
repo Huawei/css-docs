@@ -2,7 +2,7 @@
 title: "配置自定义权限"
 linkTitle: "配置自定义权限"
 description: 
-weight: 5
+weight: 2
 ---
 
 ## 自定义角色配置{#section366214517918}

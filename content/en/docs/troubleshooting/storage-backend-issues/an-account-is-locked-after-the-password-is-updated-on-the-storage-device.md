@@ -28,6 +28,6 @@ CSI uses the account and password configured on the storage device to log in to 
     kubectl scale deployment huawei-csi-controller -n huawei-csi --replicas=1
     ```
 
-4.  Use the oceanctl tool to change the storage backend password. For details about how to change the backend password, see  [Updating a Storage Backend](/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend).
+4.  Use the oceanctl tool to change the storage backend password. For details about how to change the backend password, see  [Updating a Storage Backend](/docs/basic-services/storage-backend-management/managing-storage-backends/updating-a-storage-backend).
 5.  Log in to the storage device as user admin and modify the login policy. Take OceanStor Dorado as an example. On DeviceManager, choose  **Settings**  \>  **User and Security**  \>  **Security Policies**  \>  **Login Policy**, click  **Modify**, and enable  **Account Lockout**.
 

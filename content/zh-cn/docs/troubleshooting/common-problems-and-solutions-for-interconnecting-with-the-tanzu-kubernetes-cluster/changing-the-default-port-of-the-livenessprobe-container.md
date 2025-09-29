@@ -30,5 +30,5 @@ huawei-csi-controller的livenessprobe容器的默认端口（9808）与已有的
       livenessProbePort: 9809
     ```
 
-3.  使用Helm更新华为CSI，具体信息请参考[升级华为CSI](/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi)。
+3.  使用Helm更新华为CSI，具体信息请参考[使用Helm升级](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm)。
 

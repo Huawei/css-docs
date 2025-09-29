@@ -2,7 +2,7 @@
 title: "Huawei CSI Resource Management"
 linkTitle: "Huawei CSI Resource Management"
 description: 
-weight: 6
+weight: 3
 ---
 
 This section lists the resource requests and limits used by each container of the Huawei CSI plug-in. For details about the unit, see  [Resource units in Kubernetes](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes).
@@ -178,7 +178,7 @@ This section lists the resource requests and limits used by each container of th
 
 If you need to modify the resource requests and limits of a container, perform the following steps \(in the following example, Helm is used to install Huawei CSI\):
 
-1.  If Helm is used for installation, go to the  **/helm/esdk/templates**  directory. For manual deployment, the file to be modified is in the  **/manual/esdk/deploy**  directory. For details about the component package path, see  [Table 1](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
+1.  If Helm is used for installation, go to the  **/helm/esdk/templates**  directory. For manual deployment, the file to be modified is in the  **/manual/esdk/deploy**  directory. For details about the component package path, see  [Table 1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
 2.  Modify the deployment template file.
 
     -   If the Pod name is  **huawei-csi-controller**, modify the  **huawei-csi-controller.yaml**  file.
@@ -208,6 +208,6 @@ If you need to modify the resource requests and limits of a container, perform t
            memory: 128Mi
     ```
 
-3.  If Huawei CSI is not installed, the modification of resource requests and limits takes effect after Huawei CSI is installed by referring to  [Installing Huawei CSI on Kubernetes, OpenShift, and Tanzu](/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu).
-4.  If Huawei CSI has been installed, the modification of resource requests and limits takes effect after Huawei CSI is updated by referring to  [Upgrading Huawei CSI](/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu#section6841317173013).
+3.  If Huawei CSI is not installed, the modification of resource requests and limits takes effect after Huawei CSI is installed by referring to  [Installing Huawei CSI on Kubernetes, OpenShift, and Tanzu](/docs/installation-and-deployment/csi/installation/installation-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu).
+4.  If Huawei CSI has been installed, the modification of resource requests and limits takes effect after Huawei CSI is updated by referring to  [Upgrading Huawei CSI](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu#section6841317173013).
 

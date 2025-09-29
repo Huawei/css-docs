@@ -7,7 +7,7 @@ weight: 3
 
 ## 现象描述{#zh-cn_topic_0000001279996521_section1566717121452}
 
-创建Pod时，Pod长时间处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)），huawei-csi-node的日志中无创建Pod的日志记录，执行**kubectl get volumeattachment**命令后，PV列无该Pod使用的PV名称。在等待较长时间后（超过十分钟），Pod正常创建，Pod状态变为Running状态。
+创建Pod时，Pod长时间处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)），huawei-csi-node的日志中无创建Pod的日志记录，执行**kubectl get volumeattachment**命令后，PV列无该Pod使用的PV名称。在等待较长时间后（超过十分钟），Pod正常创建，Pod状态变为Running状态。
 
 ## 根因分析{#zh-cn_topic_0000001279996521_section1425013451056}
 

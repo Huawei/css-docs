@@ -30,5 +30,5 @@ Change the default port of the livenessprobe container to an idle port.
       livenessProbePort: 9809
     ```
 
-3.  Update Huawei CSI using Helm. For details, see  [Upgrading Huawei CSI](/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi).
+3.  Update Huawei CSI using Helm. For details, see  [Upgrade Using Helm](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm).
 

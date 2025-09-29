@@ -150,7 +150,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="9.34%" headers="mcps1.2.6.1.4 "><p id="p2398810105211"><a name="p2398810105211"></a><a name="p2398810105211"></a>3</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001162111564_p1775091110298"><a name="zh-cn_topic_0000001162111564_p1775091110298"></a><a name="zh-cn_topic_0000001162111564_p1775091110298"></a>4速度最快。配置克隆PVC或从快照创建PVC时生效，参考<a href="/css-docs/docs/using-huawei-csi/managing-a-pvc/cloning-a-pvc">克隆PVC</a>或<a href="/css-docs/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot">从快照创建PVC</a>。</p>
+<td class="cellrowborder" valign="top" width="39.53%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001162111564_p1775091110298"><a name="zh-cn_topic_0000001162111564_p1775091110298"></a><a name="zh-cn_topic_0000001162111564_p1775091110298"></a>4速度最快。配置克隆PVC或从快照创建PVC时生效，参考<a href="/css-docs/v4.6.0/using-huawei-csi/managing-a-pvc/cloning-a-pvc">克隆PVC</a>或<a href="/css-docs/v4.6.0/using-huawei-csi/managing-a-pvc/creating-a-pvc-using-a-snapshot">从快照创建PVC</a>。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000001162111564_row18750161119295"><td class="cellrowborder" valign="top" width="20.43%" headers="mcps1.2.6.1.1 "><p id="p133711471387"><a name="p133711471387"></a><a name="p133711471387"></a>parameters.applicationType</p>

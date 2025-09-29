@@ -90,7 +90,7 @@ Contact the Kubernetes platform administrator to check the network between kube-
     kubectl delete validatingwebhookconfiguration storage-backend-controller.xuanwu.huawei.io
     ```
 
-4.  Create a storage backend. For details, see  [Managing Storage Backends](/docs/storage-backend-management/managing-storage-backends).
+4.  Create a storage backend. For details, see  [Storage Backend Management](/docs/basic-services/storage-backend-management).
 5.  If the communication between kube-apiserver and CSI webhook is restored, you need to reconstruct the webhook. In this case, run the following command to restart CSI Controller and restore the number of CSI Controller copies by specifying  **--replicas=\***. In the following example, the number is restored to  **1**. Change it based on actual requirements.
 
     Change the number of copies to 0 first.

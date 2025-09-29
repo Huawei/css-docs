@@ -28,6 +28,6 @@ CSI登录存储时使用存储后端配置的账户和密码，当存储侧修�
     kubectl scale deployment huawei-csi-controller -n huawei-csi --replicas=1
     ```
 
-4.  使用oceanctl工具修改存储后端密码，修改后端密码请参考[更新存储后端](/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend)章节。
+4.  使用oceanctl工具修改存储后端密码，修改后端密码请参考[更新存储后端](/docs/basic-services/storage-backend-management/managing-storage-backends/updating-a-storage-backend)章节。
 5.  使用admin账户登录存储，修改登录策略，以OceanStor Dorado存储为例，在DeviceManager管理界面，选择“设置 \> 用户与安全 \> 安全策略 \>登录策略 \>修改\>密码锁定”，恢复密码锁定。
 

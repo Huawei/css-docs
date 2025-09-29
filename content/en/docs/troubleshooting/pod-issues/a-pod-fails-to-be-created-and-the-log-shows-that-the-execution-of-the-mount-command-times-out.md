@@ -7,7 +7,7 @@ weight: 4
 
 ## Symptom{#en-us_topic_0000001279996521_section1566717121452}
 
-When a Pod is being created, the Pod keeps in the  **ContainerCreating**  status. In this case, check the log information of huawei-csi-node \(for details, see  [Viewing Huawei CSI Logs](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)\). The log shows that the execution of the mount command times out.
+When a Pod is being created, the Pod keeps in the  **ContainerCreating**  status. In this case, check the log information of huawei-csi-node \(for details, see  [Viewing Huawei CSI Logs](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)\). The log shows that the execution of the mount command times out.
 
 ## Root Cause Analysis{#en-us_topic_0000001279996521_section1425013451056}
 
@@ -32,7 +32,7 @@ Cause 3: The mounting may fail due to network problems. The default mounting tim
         mkdir /tmp/test_mount
         ```
 
-    -   Run the  **mount**  command to mount the file system and observe the time consumed. The value of  _ip:nfs\_share\_path_  can be obtained from the huawei-csi-node log. For details, see  [Viewing Huawei CSI Logs](/docs/common-operations/collecting-information/viewing-huawei-csi-logs).
+    -   Run the  **mount**  command to mount the file system and observe the time consumed. The value of  _ip:nfs\_share\_path_  can be obtained from the huawei-csi-node log. For details, see  [Viewing Huawei CSI Logs](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs).
 
         ```
         time mount ip:nfs_share_path /tmp/test_mount

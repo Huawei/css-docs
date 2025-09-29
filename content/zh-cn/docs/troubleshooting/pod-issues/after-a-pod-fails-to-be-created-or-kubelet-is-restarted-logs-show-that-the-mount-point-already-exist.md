@@ -7,7 +7,7 @@ weight: 7
 
 ## 现象描述{#section16564369537}
 
-创建Pod时，Pod一直处于ContainerCreating状态，或者重启kubelet后，日志中显示挂载点已存在。此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)），日志提示错误为：The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount
+创建Pod时，Pod一直处于ContainerCreating状态，或者重启kubelet后，日志中显示挂载点已存在。此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)），日志提示错误为：The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount
 
 ## 根因分析{#section135642617536}
 

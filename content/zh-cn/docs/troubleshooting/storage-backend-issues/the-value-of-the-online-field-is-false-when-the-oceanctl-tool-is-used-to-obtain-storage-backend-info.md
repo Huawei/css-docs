@@ -30,5 +30,5 @@ CSI使用创建存储后端时输入的账户和密码登录存储后端，若�
 ## 解决措施或规避方法{#section155945247573}
 
 1.  获取最新的账户密码。
-2.  按照[oceanctl更新存储后端密码](/docs/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl)所示，更新存储后端密码。
+2.  按照[更新存储后端密码](/docs/basic-services/storage-backend-management/managing-storage-backends/updating-a-storage-backend/updating-the-password-of-a-storage-backend-using-oceanctl)所示，更新存储后端密码。
 

@@ -1,6 +1,6 @@
 ---
-title: "Failed to Create a Pod Because the iscsi\_tcp Service Is Not Started Properly When the Kubernetes Platform Is Set Up for the First Time"
-linkTitle: "Failed to Create a Pod Because the iscsi\_tcp Service Is Not Started Properly When the Kubernetes Platform Is Set Up for the First Time"
+title: "Failed to Create a Pod Because the iscsi_tcp Service Is Not Started Properly When the Kubernetes Platform Is Set Up for the First Time"
+linkTitle: "Failed to Create a Pod Because the iscsi_tcp Service Is Not Started Properly When the Kubernetes Platform Is Set Up for the First Time"
 description: 
 weight: 9
 ---

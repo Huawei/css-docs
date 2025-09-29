@@ -27,7 +27,7 @@ In the .yaml configuration files of the controller and node, the Huawei CSI imag
 ```
         ...
         - name: huawei-csi-driver
-          image: huawei-csi:4.8.0
+          image: huawei-csi:4.9.0
         ...
 ```
 
@@ -41,12 +41,12 @@ In the .yaml configuration files of the controller and node, the Huawei CSI imag
     ```
 
     >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
-    >-   In  **huawei-csi-driver**  in the sample .yaml file, modify  **image**  to Huawei CSI image  **huawei-csi:4.8.0**.
+    >-   In  **huawei-csi-driver**  in the sample .yaml file, modify  **image**  to Huawei CSI image  **huawei-csi:4.9.0**.
     >    ```
     >    containers:
     >      ...
     >      - name: huawei-csi-driver
-    >        image: huawei-csi:4.8.0
+    >        image: huawei-csi:4.9.0
     >    ```
 
 3.  Run the following command to modify the configuration file of the huawei-csi-controller service: Press  **I**  or  **Insert**  to enter the insert mode and modify related parameters. After the modification is complete, press  **Esc**  and enter  **:wq!**  to save the modification.
@@ -56,12 +56,12 @@ In the .yaml configuration files of the controller and node, the Huawei CSI imag
     ```
 
     >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
-    >-   In  **huawei-csi-driver**  in the sample .yaml file, modify  **image**  to Huawei CSI image  **huawei-csi:4.8.0**.
+    >-   In  **huawei-csi-driver**  in the sample .yaml file, modify  **image**  to Huawei CSI image  **huawei-csi:4.9.0**.
     >    ```
     >    containers:
     >      ...
     >      - name: huawei-csi-driver
-    >        image: huawei-csi:4.8.0
+    >        image: huawei-csi:4.9.0
     >    ```
 
 4.  Wait until the huawei-csi-node and huawei-csi-controller services are started.

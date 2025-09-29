@@ -90,7 +90,7 @@ weight: 1
     kubectl delete validatingwebhookconfiguration storage-backend-controller.xuanwu.huawei.io
     ```
 
-4.  创建存储后端，可参考[管理存储后端](/docs/storage-backend-management/managing-storage-backends)。
+4.  创建存储后端，可参考[存储后端管理](/docs/basic-services/storage-backend-management)。
 5.  如果kube-apiserver与CSI webhook通信恢复正常，需要重建webhook，执行以下命令，重启CSI Controller，通过指定“**--replicas=\***”恢复CSI Controller的副本数，下例为恢复至1个，请根据实际情况修改。
 
     先将副本数修改为0。

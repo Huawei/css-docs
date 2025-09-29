@@ -44,7 +44,7 @@ weight: 6
 Kubernetes调用CSI插件完成卷映射时，将使用VolumeAttachment资源保存映射信息，用于表示将指定的卷从指定的节点上附加或分离。由于该问题是由于publishInfo不存在导致，因此可通过查看VolumeAttachment资源信息排查集群中其他工作负载是否存在该问题。具体步骤如下：
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。
-2.  <a name="li18768174613266"></a>执行以下命令，获取VolumeAttachment信息，并保留ATTACHER字段为csi.huawei.com的资源，其中csi.huawei.com为华为CSI驱动名称，可在values.yaml文件中配置，配置项为csiDriver.driverName，配置项详情描述参考[表4](/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table188162213437)。
+2.  <a name="li18768174613266"></a>执行以下命令，获取VolumeAttachment信息，并保留ATTACHER字段为csi.huawei.com的资源，其中csi.huawei.com为华为CSI驱动名称，可在values.yaml文件中配置，配置项为csiDriver.driverName，配置项详情描述参考[表4](/docs/installation-and-deployment/csi/installation/installation-using-helm/parameters-in-the-values-yaml-file-of-helm#table188162213437)。
 
     ```
     kubectl get volumeattachments.storage.k8s.io 

@@ -27,7 +27,7 @@ controller和node的yaml配置文件中，配置Huawei CSI的镜像版本号错�
 ```
         ...
         - name: huawei-csi-driver
-          image: huawei-csi:4.8.0
+          image: huawei-csi:4.9.0
         ...
 ```
 
@@ -41,12 +41,12 @@ controller和node的yaml配置文件中，配置Huawei CSI的镜像版本号错�
     ```
 
     >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
-    >-   示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.8.0。
+    >-   示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.9.0。
     >    ```
     >    containers:
     >      ...
     >      - name: huawei-csi-driver
-    >        image: huawei-csi:4.8.0
+    >        image: huawei-csi:4.9.0
     >    ```
 
 3.  执行以下命令，修改huawei-csi-controller服务的配置文件。按**I**或**Insert**进入编辑状态，修改相关参数。修改完成后，按**Esc**，并输入  **:wq!**  ，保存修改。
@@ -56,12 +56,12 @@ controller和node的yaml配置文件中，配置Huawei CSI的镜像版本号错�
     ```
 
     >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
-    >-   示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.8.0。
+    >-   示例yaml文件中huawei-csi-driver的参数image配置项，修改华为CSI镜像huawei-csi:4.9.0。
     >    ```
     >    containers:
     >      ...
     >      - name: huawei-csi-driver
-    >        image: huawei-csi:4.8.0
+    >        image: huawei-csi:4.9.0
     >    ```
 
 4.  等待huawei-csi-node和huawei-csi-controller服务启动。

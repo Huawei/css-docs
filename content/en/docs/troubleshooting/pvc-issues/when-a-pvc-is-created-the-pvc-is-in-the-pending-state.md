@@ -43,8 +43,8 @@ When a PVC is created, if the PVC is in the  **Pending**  state, you need to tak
         ```
 
         1.  Delete the PVC.
-        2.  Create a StorageClass. For details, see  [StorageClass Configuration Examples in Typical Dynamic Volume Provisioning Scenarios](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios).
-        3.  Create a PVC. For details, see  [PVC Parameters for Dynamic Volume Provisioning](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning).
+        2.  Create a StorageClass. For details, see  [Configuring a StorageClass](/docs/basic-services/storageclass-management/configuring-a-storageclass).
+        3.  Create a PVC. For details, see  [Configuring PVs](/docs/basic-services/persistent-volume-management/configuring-pvs).
 
     -   If the PVC is in the  **Pending**  state due to cause 2, perform the following steps.
 
@@ -59,8 +59,8 @@ When a PVC is created, if the PVC is in the  **Pending**  state, you need to tak
         1.  Delete the PVC.
         2.  Delete the StorageClass.
         3.  Modify the  **StorageClass.yaml**  file based on the  **Events**  information.
-        4.  Create a StorageClass. For details, see  [StorageClass Configuration Examples in Typical Dynamic Volume Provisioning Scenarios](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/storageclass-configuration-examples-in-typical-dynamic-volume-provisioning-scenarios).
-        5.  Create a PVC. For details, see  [PVC Parameters for Dynamic Volume Provisioning](/docs/using-huawei-csi/managing-a-pvc/creating-a-pvc/dynamic-volume-provisioning/pvc-parameters-for-dynamic-volume-provisioning).
+        4.  Create a StorageClass. For details, see  [Configuring a StorageClass](/docs/basic-services/storageclass-management/configuring-a-storageclass).
+        5.  Create a PVC. For details, see  [Configuring PVs](/docs/basic-services/persistent-volume-management/configuring-pvs).
 
     -   If the PVC is in the  **Pending**  state due to cause 3, contact Huawei engineers.
 

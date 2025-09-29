@@ -2,7 +2,7 @@
 title: "Configuring Custom Permissions"
 linkTitle: "Configuring Custom Permissions"
 description: 
-weight: 5
+weight: 2
 ---
 
 ## User-defined Role Configurations{#section366214517918}

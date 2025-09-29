@@ -49,7 +49,7 @@ weight: 2
       Warning  FailedMount  33s (x8 over 96s)  kubelet            MountVolume.SetUp failed for volume "host-time" : hostPath type check failed: /etc/localtime is not a file
     ```
 
-4.  执行命令**cd /helm/esdk/templates**，进入到CSI的安装包路径下。路径请参见[表1](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package#zh-cn_topic_0150885197_table17200162435412)。
+4.  执行命令**cd /helm/esdk/templates**，进入到CSI的安装包路径下。路径请参见[表1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#zh-cn_topic_0150885197_table17200162435412)。
 5.  以huawei-csi-controller.yaml文件为例，执行以下命令，查看文件内容。
 
     ```
@@ -74,7 +74,7 @@ weight: 2
     ...
     ```
 
-6.  参考[Helm卸载华为CSI](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm)卸载服务后，重新安装服务。
+6.  参考[使用Helm卸载](/docs/installation-and-deployment/csi/uninstallation/uninstallation-using-helm)卸载服务后，重新安装服务。
 7.  执行以下命令，查看华为CSI服务Pod运行状态为Running。
 
     ```

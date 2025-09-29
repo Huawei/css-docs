@@ -16,7 +16,7 @@ The  **/var/lib/iscsi**  directory does not exist in the huawei-csi-node contain
 ## Solution or Workaround{#en-us_topic_0000001086137838_section350653016492}
 
 1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
-2.  Go to the directory where the Helm project is located. If the previous Helm project cannot be found, copy the  **helm**  directory in the component package to any directory on the master node. For details about the component package path, see  [Table 1](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
+2.  Go to the directory where the Helm project is located. If the previous Helm project cannot be found, copy the  **helm**  directory in the component package to any directory on the master node. For details about the component package path, see  [Table 1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
 3.  Go to the  **templates**  directory and find the  **huawei-csi-node.yaml**  file.
 
     ```

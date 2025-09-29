@@ -31,7 +31,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p8502191171218"><a name="p8502191171218"></a><a name="p8502191171218"></a>csi.huawei.com/manageVolumeName: *    csi.huawei.com/manageBackendName: *</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><a name="ul44235513567"></a><a name="ul44235513567"></a><ul id="ul44235513567"><li>驱动名称获取请参考<a href="/css-docs/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table188162213437">表4</a>。</li><li>驱动名称/manageVolumeName：为存储上已有卷的名称，除英文字符外，其他国家字符不支持。</li><li>驱动名称/manageBackendName：CSI中存储后端的名称。</li></ul>
+<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><a name="ul44235513567"></a><a name="ul44235513567"></a><ul id="ul44235513567"><li>驱动名称获取请参考<a href="/css-docs/v4.6.0/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/parameters-in-the-values-yaml-file-of-helm#table188162213437">表4</a>。</li><li>驱动名称/manageVolumeName：为存储上已有卷的名称，除英文字符外，其他国家字符不支持。</li><li>驱动名称/manageBackendName：CSI中存储后端的名称。</li></ul>
 <p id="p176901459748"><a name="p176901459748"></a><a name="p176901459748"></a>可执行<strong id="b128931112571"><a name="b128931112571"></a><a name="b128931112571"></a>oceanctl get backend -n huawei-csi</strong>命令获取后端名称。</p>
 </td>
 </tr>
@@ -107,7 +107,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p65069712920"><a name="p65069712920"></a><a name="p65069712920"></a>ReadWriteOnce</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li><span>RWO/ROX/RWOP：</span>所有类型卷均支持，<span>RWOP</span>需<span>Kubernetes 1.22</span>版本以上支持。Kubernetes 1.29版本以下需要参考<a href="/css-docs/docs/common-operations/enabling-the-readwriteoncepod-feature-gate">开启ReadWriteOncePod功能门</a>章节开启该特性。</li><li><span>RWX</span>支持情况如下：<a name="ul10813936394"></a><a name="ul10813936394"></a><ul id="ul10813936394"><li><a href="/css-docs/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters#li277121152812">NAS存储</a>：所有卷均支持。</li><li><a href="/css-docs/docs/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters#zh-cn_topic_0000001324610777_li5135242193418">SAN存储</a>：仅volumeMode设置为Block的卷支持。</li></ul>
+<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li><span>RWO/ROX/RWOP：</span>所有类型卷均支持，<span>RWOP</span>需<span>Kubernetes 1.22</span>版本以上支持。Kubernetes 1.29版本以下需要参考<a href="/css-docs/v4.6.0/common-operations/enabling-the-readwriteoncepod-feature-gate">开启ReadWriteOncePod功能门</a>章节开启该特性。</li><li><span>RWX</span>支持情况如下：<a name="ul10813936394"></a><a name="ul10813936394"></a><ul id="ul10813936394"><li><a href="/css-docs/v4.6.0/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters#li277121152812">NAS存储</a>：所有卷均支持。</li><li><a href="/css-docs/v4.6.0/storage-backend-management/managing-storage-backends/creating-a-storage-backend/storage-backend-parameters#zh-cn_topic_0000001324610777_li5135242193418">SAN存储</a>：仅volumeMode设置为Block的卷支持。</li></ul>
 </li></ul>
 </td>
 </tr>

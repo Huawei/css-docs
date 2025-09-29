@@ -49,7 +49,7 @@ When the container mounts the  **/etc/localtime**  file on the host, the type is
       Warning  FailedMount  33s (x8 over 96s)  kubelet            MountVolume.SetUp failed for volume "host-time" : hostPath type check failed: /etc/localtime is not a file
     ```
 
-4.  Run the  **cd /helm/esdk/templates**  command to go to the CSI installation package path. For the path, see  [Table 1](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
+4.  Run the  **cd /helm/esdk/templates**  command to go to the CSI installation package path. For the path, see  [Table 1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
 5.  Take the  **huawei-csi-controller.yaml**  file as an example. Run the following command to view the file content.
 
     ```
@@ -74,7 +74,7 @@ When the container mounts the  **/etc/localtime**  file on the host, the type is
     ...
     ```
 
-6.  Uninstall and reinstall the service by referring to  [Uninstalling Huawei CSI Using Helm](/docs/installation-and-deployment/uninstalling-huawei-csi/uninstalling-huawei-csi-using-helm).
+6.  Uninstall and reinstall the service by referring to  [Uninstallation Using Helm](/docs/installation-and-deployment/csi/uninstallation/uninstallation-using-helm).
 7.  Run the following command to check whether the Pod running status of Huawei CSI services is  **Running**.
 
     ```

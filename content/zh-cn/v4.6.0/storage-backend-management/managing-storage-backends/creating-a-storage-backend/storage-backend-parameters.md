@@ -133,7 +133,7 @@ weight: 2
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p159191115165113"><a name="p159191115165113"></a><a name="p159191115165113"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="p592814711497"><a name="p592814711497"></a><a name="p592814711497"></a>如果主机多路径配置启用了ALUA，请确保后端ALUA配置和主机的ALUA配置一致。</p>
-<p id="p9408545184515"><a name="p9408545184515"></a><a name="p9408545184515"></a>ALUA详细配置请参考<a href="/css-docs/docs/advanced-features/configuring-alua/configuring-alua-using-helm">通过Helm配置ALUA特性</a>。</p>
+<p id="p9408545184515"><a name="p9408545184515"></a><a name="p9408545184515"></a>ALUA详细配置请参考<a href="/css-docs/v4.6.0/advanced-features/configuring-alua/configuring-alua-using-helm">通过Helm配置ALUA特性</a>。</p>
 </td>
 </tr>
 <tr id="row69321538172918"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="p2932193817290"><a name="p2932193817290"></a><a name="p2932193817290"></a>parameters.parentname</p>
@@ -180,7 +180,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="6.5600000000000005%" headers="mcps1.2.6.1.4 "><p id="p1191961545114"><a name="p1191961545114"></a><a name="p1191961545114"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="p176418120111"><a name="p176418120111"></a><a name="p176418120111"></a>如果启用存储拓扑感知，需要配置该参数。具体请参考<a href="/css-docs/docs/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm">通过Helm配置存储拓扑感知</a>。</p>
+<td class="cellrowborder" valign="top" width="34.04%" headers="mcps1.2.6.1.5 "><p id="p176418120111"><a name="p176418120111"></a><a name="p176418120111"></a>如果启用存储拓扑感知，需要配置该参数。具体请参考<a href="/css-docs/v4.6.0/advanced-features/configuring-storage-topology-awareness/configuring-storage-topology-awareness-using-helm">通过Helm配置存储拓扑感知</a>。</p>
 </td>
 </tr>
 <tr id="row11363104441311"><td class="cellrowborder" valign="top" width="13.55%" headers="mcps1.2.6.1.1 "><p id="p0363164461310"><a name="p0363164461310"></a><a name="p0363164461310"></a>maxClientThreads</p>

@@ -1,0 +1,46 @@
+---
+title: "Container Platform"
+linkTitle: "Container Platform"
+description: 
+weight: 2
+---
+
+## Huawei CSI Platform Compatibility{#section14560193716483}
+
+**Table  1**  Supported container management platforms
+
+<a name="table12624165714515"></a>
+<table><thead align="left"><tr id="en-us_topic_0000002392332856_row2624175712515"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="en-us_topic_0000002392332856_p126241057155115"><a name="en-us_topic_0000002392332856_p126241057155115"></a><a name="en-us_topic_0000002392332856_p126241057155115"></a>Container Management Platform</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="en-us_topic_0000002392332856_p162413574519"><a name="en-us_topic_0000002392332856_p162413574519"></a><a name="en-us_topic_0000002392332856_p162413574519"></a>Version</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="en-us_topic_0000002392332856_row26241257165113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p662412577514"><a name="en-us_topic_0000002392332856_p662412577514"></a><a name="en-us_topic_0000002392332856_p662412577514"></a>Kubernetes</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p1862418574519"><a name="en-us_topic_0000002392332856_p1862418574519"></a><a name="en-us_topic_0000002392332856_p1862418574519"></a>1.16 to 1.33</p>
+</td>
+</tr>
+<tr id="en-us_topic_0000002392332856_row206241757125114"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p3624957155117"><a name="en-us_topic_0000002392332856_p3624957155117"></a><a name="en-us_topic_0000002392332856_p3624957155117"></a>Red Hat OpenShift Container Platform</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.12 to 4.18</p>
+</td>
+</tr>
+<tr id="en-us_topic_0000002392332856_row10624135775113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p1862410570513"><a name="en-us_topic_0000002392332856_p1862410570513"></a><a name="en-us_topic_0000002392332856_p1862410570513"></a>Tanzu Kubernetes Grid Integrated</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p662419577513"><a name="en-us_topic_0000002392332856_p662419577513"></a><a name="en-us_topic_0000002392332856_p662419577513"></a>TKGI 1.17 to 1.19</p>
+</td>
+</tr>
+<tr id="en-us_topic_0000002392332856_row19624105712514"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p196241357135116"><a name="en-us_topic_0000002392332856_p196241357135116"></a><a name="en-us_topic_0000002392332856_p196241357135116"></a>CCE Agile</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p1624185718514"><a name="en-us_topic_0000002392332856_p1624185718514"></a><a name="en-us_topic_0000002392332856_p1624185718514"></a>22.3.2</p>
+</td>
+</tr>
+<tr id="en-us_topic_0000002392332856_row1162420578518"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p9624175705117"><a name="en-us_topic_0000002392332856_p9624175705117"></a><a name="en-us_topic_0000002392332856_p9624175705117"></a>CCE</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p10624457195112"><a name="en-us_topic_0000002392332856_p10624457195112"></a><a name="en-us_topic_0000002392332856_p10624457195112"></a>22.9.5</p>
+</td>
+</tr>
+</tbody>
+</table>
+

@@ -7,7 +7,7 @@ weight: 7
 
 ## Symptom{#section16564369537}
 
-When a Pod is being created, the Pod is always in the  **ContainerCreating**  state. Alternatively, after kubelet is restarted, logs show that the mount point already exists. Check the log information of huawei-csi-node \(for details, see  [Viewing Huawei CSI Logs](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)\). The error information is:  **The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount**
+When a Pod is being created, the Pod is always in the  **ContainerCreating**  state. Alternatively, after kubelet is restarted, logs show that the mount point already exists. Check the log information of huawei-csi-node \(for details, see  [Viewing Huawei CSI Logs](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)\). The error information is:  **The mount /var/lib/kubelet/pods/xxx/mount is already exist, but the source path is not /var/lib/kubelet/plugins/kubernetes.io/xxx/globalmount**
 
 ## Root Cause Analysis{#section135642617536}
 

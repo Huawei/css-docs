@@ -7,7 +7,7 @@ weight: 2
 
 ## Symptom{#en-us_topic_0000001163875516_section1566717121452}
 
-A Pod is created. After a period of time, the Pod is still in the  **ContainerCreating**  state. Check the log information \(for details, see  [Viewing Huawei CSI Logs](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)\). The error message "Fibre Channel volume device not found" is displayed.
+A Pod is created. After a period of time, the Pod is still in the  **ContainerCreating**  state. Check the log information \(for details, see  [Viewing Huawei CSI Logs](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)\). The error message "Fibre Channel volume device not found" is displayed.
 
 ## Root Cause Analysis{#en-us_topic_0000001163875516_section1425013451056}
 

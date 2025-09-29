@@ -7,7 +7,7 @@ weight: 4
 
 ## 现象描述{#zh-cn_topic_0000001279996521_section1566717121452}
 
-创建Pod时，Pod一直处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)），日志显示执行mount命令超时。
+创建Pod时，Pod一直处于ContainerCreating状态，此时查看huawei-csi-node的日志信息（详情请参考[如何查看华为CSI日志](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)），日志显示执行mount命令超时。
 
 ## 根因分析{#zh-cn_topic_0000001279996521_section1425013451056}
 
@@ -32,7 +32,7 @@ weight: 4
         mkdir /tmp/test_mount
         ```
 
-    -   执行mount命令，挂载文件系统，并观察耗时，其中ip:nfs\_share\_path可以从huawei-csi-node日志中获取，详情请参考[如何查看华为CSI日志](/docs/common-operations/collecting-information/viewing-huawei-csi-logs)
+    -   执行mount命令，挂载文件系统，并观察耗时，其中ip:nfs\_share\_path可以从huawei-csi-node日志中获取，详情请参考[如何查看华为CSI日志](/docs/common-o-m-operations/collecting-information/viewing-huawei-csi-logs)
 
         ```
         time mount ip:nfs_share_path /tmp/test_mount

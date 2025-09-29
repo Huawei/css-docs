@@ -2,7 +2,7 @@
 title: "华为CSI资源管理"
 linkTitle: "华为CSI资源管理"
 description: 
-weight: 6
+weight: 3
 ---
 
 本章节列举了华为CSI插件中每个容器所使用的资源请求和限制。其中单位说明请参考[Kubernetes 中的资源单位](https://kubernetes.io/zh-cn/docs/concepts/configuration/manage-resources-containers/#resource-units-in-kubernetes)。
@@ -178,7 +178,7 @@ weight: 6
 
 如果需要修改容器的资源请求和限制，以Helm安装华为CSI为例，可参考以下步骤
 
-1.  使用Helm安装时进入/helm/esdk/templates 目录。手动部署时需要修改的文件在/manual/esdk/deploy目录，其中组件包路径请参考[表1](/docs/installation-and-deployment/installation-preparations/downloading-the-huawei-csi-software-package#zh-cn_topic_0150885197_table17200162435412)。
+1.  使用Helm安装时进入/helm/esdk/templates 目录。手动部署时需要修改的文件在/manual/esdk/deploy目录，其中组件包路径请参考[表1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#zh-cn_topic_0150885197_table17200162435412)。
 2.  修改部署模板文件。
 
     -   Pod名称为huawei-csi-controller时，修改huawei-csi-controller.yaml文件。
@@ -208,6 +208,6 @@ weight: 6
            memory: 128Mi
     ```
 
-3.  若华为CSI未安装，则参考[Kubernetes、OpenShift、Tanzu安装华为CSI](/docs/installation-and-deployment/installing-huawei-csi/installing-huawei-csi-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu)章节安装华为CSI后，资源请求和限制的修改生效。
-4.  若已安装华为CSI，则参考[升级华为CSI](/docs/installation-and-deployment/upgrading-or-rolling-back-huawei-csi/upgrading-or-rolling-back-huawei-csi-using-helm/upgrading-huawei-csi/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu#section6841317173013)章节更新华为CSI后，资源请求和限制的修改生效。
+3.  若华为CSI未安装，则参考[Kubernetes、OpenShift、Tanzu安装华为CSI](/docs/installation-and-deployment/csi/installation/installation-using-helm/installing-huawei-csi-on-kubernetes-openshift-and-tanzu)章节安装华为CSI后，资源请求和限制的修改生效。
+4.  若已安装华为CSI，则参考[升级华为CSI](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu#section6841317173013)章节更新华为CSI后，资源请求和限制的修改生效。
 
