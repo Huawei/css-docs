@@ -69,7 +69,7 @@ weight: 3
 </tr>
 <tr id="row10343113716818"><td class="cellrowborder" valign="top" width="24.537546245375463%" headers="mcps1.2.5.1.1 "><p id="p7442251798"><a name="p7442251798"></a><a name="p7442251798"></a>Red Hat CoreOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.957304269573047%" headers="mcps1.2.5.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17, and 4.18</p>
+<td class="cellrowborder" valign="top" width="26.957304269573047%" headers="mcps1.2.5.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, and 4.19</p>
 </td>
 <td class="cellrowborder" valign="top" width="19.548045195480455%" headers="mcps1.2.5.1.3 "><p id="p115134245168"><a name="p115134245168"></a><a name="p115134245168"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
@@ -132,7 +132,7 @@ weight: 3
 </tr>
 <tr id="row292017416534"><td class="cellrowborder" valign="top" width="24.537546245375463%" headers="mcps1.2.5.1.1 "><p id="p7920841155312"><a name="p7920841155312"></a><a name="p7920841155312"></a>EulerOS Arm</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.957304269573047%" headers="mcps1.2.5.1.2 "><p id="p1792014110534"><a name="p1792014110534"></a><a name="p1792014110534"></a>V2R10, V2R12</p>
+<td class="cellrowborder" valign="top" width="26.957304269573047%" headers="mcps1.2.5.1.2 "><p id="p1792014110534"><a name="p1792014110534"></a><a name="p1792014110534"></a>V2R10 and V2R12</p>
 </td>
 <td class="cellrowborder" valign="top" width="19.548045195480455%" headers="mcps1.2.5.1.3 "><p id="p10150157115312"><a name="p10150157115312"></a><a name="p10150157115312"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>

@@ -14,7 +14,7 @@ To upgrade Huawei CSI from 2._x_  or 3._x_  to 4._x_, perform following operatio
 
 ## Backing Up Storage Backend Configurations{#section3200825558}
 
-If you have evaluated the risks mentioned in the preceding notice and need to upgrade CSI from 2._x_  or 3._x_  to  4.9.0, perform the following steps to back up storage backend configurations:
+If you have evaluated the risks mentioned in the preceding notice and need to upgrade CSI from 2._x_  or 3._x_  to  4.10.0, perform the following steps to back up storage backend configurations:
 
 1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
 2.  Run the following command to back up the backend information to the  **configmap.json**  file. For the OpenShift platform, replace  **kubectl**  with  **oc**.

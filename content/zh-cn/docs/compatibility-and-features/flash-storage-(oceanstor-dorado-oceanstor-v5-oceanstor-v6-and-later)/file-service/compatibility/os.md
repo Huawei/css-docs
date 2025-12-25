@@ -43,7 +43,7 @@ weight: 3
 </tr>
 <tr id="row10343113716818"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p7442251798"><a name="p7442251798"></a><a name="p7442251798"></a>Red Hat CoreOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, 4.19</p>
 </td>
 </tr>
 <tr id="row234312371784"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>

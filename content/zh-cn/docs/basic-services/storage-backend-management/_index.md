@@ -12,6 +12,7 @@ weight: 1
 ## oceanctl工具说明{#section1490867112}
 
 -   获取oceanctl工具，将oceanctl工具拷贝到环境目录下,例如（/usr/local/bin），且赋予可执行权限，oceanctl工具位于软件包/bin/oceanctl。
+-   使用oceanctl工具前请确保oceanctl工具版本与CSI版本相同。查看oceanctl版本命令参考[帮助说明](/docs/command-parameter-description/description-of-oceanctl-commands#section1117411442508)。当前版本号应为：V4.10.0。
 -   oceanctl工具依赖kubectl（Kubernetes平台）或oc（OpenShift平台）命令，因此需要在可执行kubectl或oc命令的节点运行。
 -   默认情况下，执行oceanctl命令的用户需要有/var/log目录的读写权限。如果没有该目录权限，可通过“--log-dir=/path/to/custom”指定有权限目录作为日志文件目录。
 -   oceanctl创建后端的命名空间默认为huawei-csi。

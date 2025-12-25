@@ -43,7 +43,7 @@ weight: 3
 </tr>
 <tr id="row10343113716818"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p7442251798"><a name="p7442251798"></a><a name="p7442251798"></a>Red Hat CoreOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17, and 4.18</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12, 4.13, 4.14, 4.15, 4.16, 4.17, 4.18, and 4.19</p>
 </td>
 </tr>
 <tr id="row234312371784"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>
@@ -78,7 +78,7 @@ weight: 3
 </tr>
 <tr id="row292017416534"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p7920841155312"><a name="p7920841155312"></a><a name="p7920841155312"></a>EulerOS Arm</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1792014110534"><a name="p1792014110534"></a><a name="p1792014110534"></a>V2R10, V2R12</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1792014110534"><a name="p1792014110534"></a><a name="p1792014110534"></a>V2R10 and V2R12</p>
 </td>
 </tr>
 <tr id="row10474145114011"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p174741753402"><a name="p174741753402"></a><a name="p174741753402"></a>UOS x86_64</p>

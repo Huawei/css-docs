@@ -14,7 +14,7 @@ Manage Volume Provisioning allows administrators to use resources created on sto
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >Manage Volume Provisioning allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
 >When a storage resource is managed by multiple clusters, operations on the managed volume in a single cluster take effect only in the cluster and will not be synchronized to other clusters. Instead, you need to perform these operations on the managed volume in other clusters.
->For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PV](/docs/basic-services/persistent-volume-management/managing-pvs-73/expanding-the-capacity-of-a-pv).
+>For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PV](/docs/basic-services/persistent-volume-management/managing-pvs-87/expanding-the-capacity-of-a-pv).
 
 ## Configuration Description{#section121779524353}
 
@@ -32,7 +32,7 @@ Perform the following steps to manage and use PVs:
 
 ## Configuring a PVC{#section979723473817}
 
-1.  Prepare the PVC configuration file  **mypv.yaml**. The following is an example. For details about other parameters, see  [Table 1](#en-us_topic_0150885187_table195731435604).
+1.  Prepare the PVC configuration file  **mypvc.yaml**. The following is an example. For details about other parameters, see  [Table 1](#en-us_topic_0150885187_table195731435604).
 
     ```yaml
     kind: PersistentVolumeClaim

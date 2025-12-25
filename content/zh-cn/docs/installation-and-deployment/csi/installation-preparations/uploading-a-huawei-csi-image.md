@@ -16,10 +16,10 @@ weight: 2
 
 安装华为CSI依赖如下华为提供的镜像文件，请按照说明依次导入并上传下列镜像文件，镜像文件获取请参考[下载华为CSI软件包](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package)。
 
--   huawei-csi-v4.9.0-arch.tar
--   storage-backend-controller-v4.9.0-arch.tar
--   storage-backend-sidecar-v4.9.0-arch.tar
--   huawei-csi-extender-v4.9.0-arch.tar
+-   huawei-csi-v4.10.0-arch.tar
+-   storage-backend-controller-v4.10.0-arch.tar
+-   storage-backend-sidecar-v4.10.0-arch.tar
+-   huawei-csi-extender-v4.10.0-arch.tar
 
 **前提条件**
 
@@ -30,19 +30,19 @@ weight: 2
 1.  执行以下命令，将CSI镜像导入当前节点。其中arch为CPU架构。
 
     ```
-    docker load -i huawei-csi-v4.9.0-<arch>.tar 
+    docker load -i huawei-csi-v4.10.0-<arch>.tar 
     ```
 
 2.  执行以下命令，添加镜像仓库地址到镜像标签。其中repo.huawei.com表示镜像仓库的地址。
 
     ```
-    docker tag huawei-csi:4.9.0 <repo.huawei.com>/huawei-csi:4.9.0
+    docker tag huawei-csi:4.10.0 <repo.huawei.com>/huawei-csi:4.10.0
     ```
 
 3.  执行以下命令，将CSI镜像上传到镜像仓库。其中repo.huawei.com表示镜像仓库的地址。
 
     ```
-    docker push <repo.huawei.com>/huawei-csi:4.9.0
+    docker push <repo.huawei.com>/huawei-csi:4.10.0
     ```
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  

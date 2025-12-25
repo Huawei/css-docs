@@ -12,6 +12,7 @@ This section describes how to use the oceanctl tool to configure and manage stor
 ## Description of the oceanctl Tool{#section1490867112}
 
 -   You have obtained the oceanctl tool, copied the oceanctl tool to the environment directory, for example,  **/usr/local/bin**, and obtained the execute permission. The oceanctl tool is stored in  **/bin/oceanctl**  of the software package.
+-   Before using the oceanctl tool, ensure that the oceanctl tool version is the same as the CSI version. For details about how to check the oceanctl version, see  [Obtaining Help Information](/docs/command-parameter-description/description-of-oceanctl-commands#section1117411442508). The current version number should be V4.10.0.
 -   The oceanctl tool depends on  **kubectl**  \(for the Kubernetes platform\) or  **oc**  \(for the OpenShift platform\) commands. Therefore, you need to run the tool on a node where  **kubectl**  or  **oc**  commands can be executed.
 -   By default, the user who runs  **oceanctl**  commands must have the read and write permissions on the  **/var/log**  directory. If you do not have the permissions on the directory, run the  **--log-dir=/path/to/custom**  command to specify a directory on which you have the permissions as the log file directory.
 -   **huawei-csi**  is the default namespace used by oceanctl to create a backend.

@@ -22,5 +22,5 @@ Huawei CSI consists of two components: huawei-csi-controller and huawei-csi-node
 **Figure  2**  CSI deployment model<a name="fig64461013274"></a>  
 ![](/css-docs/figures/csi-deployment-model.png "csi-deployment-model")
 
-This document describes how to install, deploy, and use the Huawei CSI V4.9.0  plug-in.
+This document describes how to install, deploy, and use the Huawei CSI V4.10.0  plug-in.
 

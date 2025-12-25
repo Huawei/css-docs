@@ -18,27 +18,12 @@ weight: 2
 </thead>
 <tbody><tr id="en-us_topic_0000002392332856_row26241257165113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p662412577514"><a name="en-us_topic_0000002392332856_p662412577514"></a><a name="en-us_topic_0000002392332856_p662412577514"></a>Kubernetes</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p1862418574519"><a name="en-us_topic_0000002392332856_p1862418574519"></a><a name="en-us_topic_0000002392332856_p1862418574519"></a>1.16 to 1.33</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p1862418574519"><a name="en-us_topic_0000002392332856_p1862418574519"></a><a name="en-us_topic_0000002392332856_p1862418574519"></a>1.16 to 1.34</p>
 </td>
 </tr>
 <tr id="en-us_topic_0000002392332856_row206241757125114"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p3624957155117"><a name="en-us_topic_0000002392332856_p3624957155117"></a><a name="en-us_topic_0000002392332856_p3624957155117"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.12 to 4.18</p>
-</td>
-</tr>
-<tr id="en-us_topic_0000002392332856_row10624135775113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p1862410570513"><a name="en-us_topic_0000002392332856_p1862410570513"></a><a name="en-us_topic_0000002392332856_p1862410570513"></a>Tanzu Kubernetes Grid Integrated</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p662419577513"><a name="en-us_topic_0000002392332856_p662419577513"></a><a name="en-us_topic_0000002392332856_p662419577513"></a>TKGI 1.17 to 1.19</p>
-</td>
-</tr>
-<tr id="en-us_topic_0000002392332856_row19624105712514"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p196241357135116"><a name="en-us_topic_0000002392332856_p196241357135116"></a><a name="en-us_topic_0000002392332856_p196241357135116"></a>CCE Agile</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p1624185718514"><a name="en-us_topic_0000002392332856_p1624185718514"></a><a name="en-us_topic_0000002392332856_p1624185718514"></a>22.3.2</p>
-</td>
-</tr>
-<tr id="en-us_topic_0000002392332856_row1162420578518"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p9624175705117"><a name="en-us_topic_0000002392332856_p9624175705117"></a><a name="en-us_topic_0000002392332856_p9624175705117"></a>CCE</p>
-</td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p10624457195112"><a name="en-us_topic_0000002392332856_p10624457195112"></a><a name="en-us_topic_0000002392332856_p10624457195112"></a>22.9.5</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.19 (only the NFS protocol is supported)</p>
 </td>
 </tr>
 </tbody>

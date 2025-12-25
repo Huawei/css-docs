@@ -32,7 +32,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1633715710454"><a name="zh-cn_topic_0000001324610777_p1633715710454"></a><a name="zh-cn_topic_0000001324610777_p1633715710454"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.9.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.10.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.9.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.10.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.9.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.10.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.9.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.10.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p4337185713453"><a name="zh-cn_topic_0000001324610777_p4337185713453"></a><a name="zh-cn_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>

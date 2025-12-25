@@ -14,7 +14,7 @@ weight: 3
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
 >纳管卷供应支持将已有存储资源纳管至Kubernetes，不允许将一个存储资源纳管多次和针对同一个存储资源进行并发删除/创建操作。
 >当同一个存储资源被多个集群纳管时，在单个集群中针对该纳管卷的操作仅在当前集群内生效，不会同步到其他集群中，需要使用者自行在其他集群中对该纳管卷进行数据同步操作。
->例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容持久卷](/docs/basic-services/persistent-volume-management/managing-pvs-73/expanding-the-capacity-of-a-pv)中的扩容命令进行扩容。
+>例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容持久卷](/docs/basic-services/persistent-volume-management/managing-pvs-87/expanding-the-capacity-of-a-pv)中的扩容命令进行扩容。
 
 ## 配置说明{#section121779524353}
 
@@ -164,7 +164,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p18506147494"><a name="p18506147494"></a><a name="p18506147494"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p1525217519276"><a name="p1525217519276"></a><a name="p1525217519276"></a>PVC容量的规格取决于存储规格限制和主机规格限制。以OceanStor Dorado 6.1.2/OceanStor Pacific系列 8.1.0对接CentOS 7为例，当使用的是ext4文件系统时，容量限制见<a href="/css-docs/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table178824527142">表2</a>；当使用的是XFS文件系统时，容量限制见<a href="/css-docs/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table101951367104">表3</a>。如果使用的是NFS或者裸设备，容量需满足使用的华为存储设备型号和版本所要求的规格约束。</p>
+<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p1525217519276"><a name="p1525217519276"></a><a name="p1525217519276"></a>PVC容量的规格取决于存储规格限制和主机规格限制。以OceanStor Dorado 6.1.2/OceanStor Pacific系列 8.1.0对接CentOS 7为例，当使用的是ext4文件系统时，容量限制见<a href="/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table178824527142">表2</a>；当使用的是XFS文件系统时，容量限制见<a href="/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table101951367104">表3</a>。如果使用的是NFS或者裸设备，容量需满足使用的华为存储设备型号和版本所要求的规格约束。</p>
 <p id="p63667162711"><a name="p63667162711"></a><a name="p63667162711"></a>如果PVC容量不在规格范围内，可能会由于存储规格限制或主机文件系统规格限制导致创建PVC或Pod失败。</p>
 </td>
 </tr>

@@ -8,7 +8,7 @@ weight: 1
 本章节详细说明了下载方法以及软件包组件结构。
 
 1.  打开浏览器，访问仓库地址：[https://github.com/Huawei/eSDK\_K8S\_Plugin/releases](https://github.com/Huawei/eSDK_K8S_Plugin/releases)。
-2.  根据CPU架构，下载对应的4.9.0版本软件包。
+2.  根据CPU架构，下载对应的4.10.0版本软件包。
 
     >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
     >-   软件包命名规范：插件名称（eSDK\_Storage\_CSI）+版本号+CPU架构。
@@ -25,22 +25,22 @@ weight: 1
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row930973118310"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p230912312313"><a name="p230912312313"></a><a name="p230912312313"></a>image/huawei-csi-v<span id="ph1247142163214"><a name="ph1247142163214"></a><a name="ph1247142163214"></a>4.9.0</span>-<em id="i7879115512231"><a name="i7879115512231"></a><a name="i7879115512231"></a>arch</em>.tar</p>
+    <tbody><tr id="row930973118310"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p230912312313"><a name="p230912312313"></a><a name="p230912312313"></a>image/huawei-csi-v<span id="ph1247142163214"><a name="ph1247142163214"></a><a name="ph1247142163214"></a>4.10.0</span>-<em id="i7879115512231"><a name="i7879115512231"></a><a name="i7879115512231"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p131017311931"><a name="p131017311931"></a><a name="p131017311931"></a>huawei-csi-driver镜像，"arch"为CPU架构。</p>
     </td>
     </tr>
-    <tr id="row1636415012105"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p236425091017"><a name="p236425091017"></a><a name="p236425091017"></a>image/storage-backend-controller-v<span id="ph16563185044814"><a name="ph16563185044814"></a><a name="ph16563185044814"></a>4.9.0</span>-<em id="i1580012569101"><a name="i1580012569101"></a><a name="i1580012569101"></a>arch</em>.tar</p>
+    <tr id="row1636415012105"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p236425091017"><a name="p236425091017"></a><a name="p236425091017"></a>image/storage-backend-controller-v<span id="ph16563185044814"><a name="ph16563185044814"></a><a name="ph16563185044814"></a>4.10.0</span>-<em id="i1580012569101"><a name="i1580012569101"></a><a name="i1580012569101"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p0364350161018"><a name="p0364350161018"></a><a name="p0364350161018"></a>后端管理控制器镜像，"arch"为CPU架构。</p>
     </td>
     </tr>
-    <tr id="row20811154791011"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p9811154713107"><a name="p9811154713107"></a><a name="p9811154713107"></a>image/storage-backend-sidecar-v<span id="ph0931352104814"><a name="ph0931352104814"></a><a name="ph0931352104814"></a>4.9.0</span>-<em id="i17458825101116"><a name="i17458825101116"></a><a name="i17458825101116"></a>arch</em>.tar</p>
+    <tr id="row20811154791011"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p9811154713107"><a name="p9811154713107"></a><a name="p9811154713107"></a>image/storage-backend-sidecar-v<span id="ph0931352104814"><a name="ph0931352104814"></a><a name="ph0931352104814"></a>4.10.0</span>-<em id="i17458825101116"><a name="i17458825101116"></a><a name="i17458825101116"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p7811174751010"><a name="p7811174751010"></a><a name="p7811174751010"></a>后端管理sidecar镜像，"arch"为CPU架构。</p>
     </td>
     </tr>
-    <tr id="row925351132220"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p32505182215"><a name="p32505182215"></a><a name="p32505182215"></a>image/huawei-csi-extender-v<span id="ph486705310481"><a name="ph486705310481"></a><a name="ph486705310481"></a>4.9.0</span>-<em id="i12719141202718"><a name="i12719141202718"></a><a name="i12719141202718"></a>arch</em>.tar</p>
+    <tr id="row925351132220"><td class="cellrowborder" valign="top" width="37.43%" headers="mcps1.2.3.1.1 "><p id="p32505182215"><a name="p32505182215"></a><a name="p32505182215"></a>image/huawei-csi-extender-v<span id="ph486705310481"><a name="ph486705310481"></a><a name="ph486705310481"></a>4.10.0</span>-<em id="i12719141202718"><a name="i12719141202718"></a><a name="i12719141202718"></a>arch</em>.tar</p>
     </td>
     <td class="cellrowborder" valign="top" width="62.57%" headers="mcps1.2.3.1.2 "><p id="p182585182214"><a name="p182585182214"></a><a name="p182585182214"></a>huawei-csi-extender镜像，"arch"为CPU架构。</p>
     </td>

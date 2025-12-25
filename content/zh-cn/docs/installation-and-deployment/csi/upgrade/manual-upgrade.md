@@ -14,9 +14,9 @@ weight: 2
 >-   在升级/回退过程中，不能使用华为CSI创建新的资源，或者对已有的PVC做挂载/卸载操作。
 >-   在升级/回退过程中，请勿卸载Snapshot依赖组件服务。
 
-## 2.x和3.x版本的CSI升级至4.9.0版本{#section260220843210}
+## 2.x和3.x版本的CSI升级至4.10.0版本{#section260220843210}
 
-如果您从2.x和3.x版本的CSI升级至4.9.0版本，请按照以下操作步骤升级：
+如果您从2.x和3.x版本的CSI升级至4.10.0版本，请按照以下操作步骤升级：
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。
 2.  <a name="li1699321211285"></a>执行命令备份后端信息到configmap.json文件中。OpenShift平台使用**oc**替换**kubectl**命令。
@@ -29,9 +29,9 @@ weight: 2
 4.  参考[手动安装](/docs/installation-and-deployment/csi/installation/manual-installation)安装当前版本的CSI。
 5.  将[2](#li1699321211285)中备份的后端信息，按照[存储后端管理](/docs/basic-services/storage-backend-management)章节的说明安装。
 
-## 从4.x版本的CSI升级至4.9.0版本。{#section173369363219}
+## 从4.x版本的CSI升级至4.10.0版本。{#section173369363219}
 
-如果您从4.x版本的CSI升级至4.9.0版本，请按照以下操作步骤升级：
+如果您从4.x版本的CSI升级至4.10.0版本，请按照以下操作步骤升级：
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。
 2.  参考[手动卸载](/docs/installation-and-deployment/csi/uninstallation/manual-uninstallation)卸载CSI。

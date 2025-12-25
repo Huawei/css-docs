@@ -18,12 +18,12 @@ weight: 2
 </thead>
 <tbody><tr id="row26241257165113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p662412577514"><a name="p662412577514"></a><a name="p662412577514"></a>Kubernetes</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1862418574519"><a name="p1862418574519"></a><a name="p1862418574519"></a>1.16 to 1.33</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1862418574519"><a name="p1862418574519"></a><a name="p1862418574519"></a>1.16 to 1.34</p>
 </td>
 </tr>
 <tr id="row206241757125114"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p3624957155117"><a name="p3624957155117"></a><a name="p3624957155117"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p126241057175119"><a name="p126241057175119"></a><a name="p126241057175119"></a>4.12 to 4.18</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p126241057175119"><a name="p126241057175119"></a><a name="p126241057175119"></a>4.12 to 4.19</p>
 </td>
 </tr>
 <tr id="row10624135775113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1862410570513"><a name="p1862410570513"></a><a name="p1862410570513"></a>Tanzu Kubernetes Grid Integrated</p>
