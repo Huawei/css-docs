@@ -18,7 +18,7 @@ weight: 1
 </thead>
 <tbody><tr id="row443523210491"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p11384959194610"><a name="p11384959194610"></a><a name="p11384959194610"></a>OceanDisk 1500/1600 series</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p16384759154614"><a name="p16384759154614"></a><a name="p16384759154614"></a>1.5.0</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p16384759154614"><a name="p16384759154614"></a><a name="p16384759154614"></a>1.5.0, V700R001C10, V700R001C11</p>
 </td>
 </tr>
 </tbody>
