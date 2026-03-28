@@ -37,6 +37,12 @@ This section describes how to check whether the status of host-dependent softwar
     systemctl status upudev upService_plus
     ```
 
+-   Check the status of the NVMe-Native multipathing software. If  **Y**  is displayed in the command output, the status is enabled.
+
+    ```
+    cat /sys/module/nvme_core/parameters/multipath
+    ```
+
 -   Check the status of the DataTurbo client. For details, see  [OceanStor DataTurbo 25.1.0 DTFS User Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100483897/84a8a3d5).
 -   Check the status of the NFS+ client. For details, see  [NFS+ Client 1.x User Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100359503/1d67959e).
 

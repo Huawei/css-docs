@@ -129,7 +129,7 @@ parameters:
 <td class="cellrowborder" valign="top" width="26.279999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p17144750112419"><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p17144750112419"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p17144750112419"></a>主机访问模式。必填，取值为：</p>
 <a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_ul1877452310265"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_ul1877452310265"></a><ul id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_ul1877452310265"><li>0：均衡模式</li><li>1：非对称模式</li></ul>
 </td>
-<td class="cellrowborder" valign="top" width="49.39%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p1540212533612"><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p1540212533612"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p1540212533612"></a><span>非双活场景下</span>建议使用均衡模式。当前华为CSI未支持SAN双活场景，请谨慎使用非对称模式。</p>
+<td class="cellrowborder" valign="top" width="49.39%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p1540212533612"><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p1540212533612"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p1540212533612"></a><span>非双活场景下</span>建议使用均衡模式。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_row15144550162416"><td class="cellrowborder" valign="top" width="24.33%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p714455012410"><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p714455012410"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p714455012410"></a>hyperMetroPathOptimized</p>
@@ -138,7 +138,7 @@ parameters:
 <a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_ul11690126102616"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_ul11690126102616"></a><ul id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_ul11690126102616"><li>1：是</li><li>0：否</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="49.39%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p11144105010245"><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p11144105010245"></a><a name="zh-cn_topic_0000001352783505_zh-cn_topic_0000001198982584_p11144105010245"></a>当主机访问模式设置为非对称模式时，才需要配置该参数。</p>
-<p id="p3136547173316"><a name="p3136547173316"></a><a name="p3136547173316"></a>当前华为CSI未支持SAN双活场景，请谨慎使用非对称模式。</p>
+<p id="p3136547173316"><a name="p3136547173316"></a><a name="p3136547173316"></a></p>
 </td>
 </tr>
 </tbody>

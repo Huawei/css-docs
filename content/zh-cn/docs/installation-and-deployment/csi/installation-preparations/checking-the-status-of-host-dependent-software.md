@@ -37,6 +37,12 @@ weight: 6
     systemctl status upudev upService_plus
     ```
 
+-   检查NVMe-Native多路径软件状态，回显“Y”。
+
+    ```
+    cat /sys/module/nvme_core/parameters/multipath
+    ```
+
 -   检查DataTurbo客户端状态，请参考[《OceanStor DataTurbo 25.1.0 DTFS用户指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100483896/5c81c74a?idPath=7919749|251366268|250389224|263153904|264568316)。
 -   检查NFS+客户端状态，请参考[《NFS+客户端 1.x 用户指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100359502/c54ef101)。
 

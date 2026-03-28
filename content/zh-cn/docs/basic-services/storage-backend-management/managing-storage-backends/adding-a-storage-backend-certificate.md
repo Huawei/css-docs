@@ -5,6 +5,8 @@ description:
 weight: 4
 ---
 
+CSI支持通过添加存储证书的方式，使用TLS/SSL协议加密数据传输通道，提高与存储通信的安全性。
+
 ## 前提条件{#section414814741510}
 
 完成证书制作。以OceanStor Dorado为例，证书制作过程请参考：[点此前往](https://support.huawei.com/hedex/hdx.do?docid=EDOC1100214749&id=ZH-CN_TOPIC_0000001595814228)。
@@ -22,8 +24,8 @@ weight: 4
 
     ```
     NAMESPACE     NAME         PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
-    huawei-csi    backend-1    roce        oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
-    huawei-csi    backend-2    roce        oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088  
+    huawei-csi    backend-1    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    huawei-csi    backend-2    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088  
     ```
 
 3.  执行以下命令为指定存储后端创建证书。

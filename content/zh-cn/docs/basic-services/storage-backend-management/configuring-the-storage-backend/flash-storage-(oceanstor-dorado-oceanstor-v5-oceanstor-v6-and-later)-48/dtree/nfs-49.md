@@ -99,20 +99,21 @@ weight: 1
 </td>
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p78111817135119"><a name="p78111817135119"></a><a name="p78111817135119"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p68113173517"><a name="p68113173517"></a><a name="p68113173517"></a>开启后，CSI将在挂载/卸载PVC时会动态将符合规则的主机IP对应的NFS共享客户端权限设置为读写/无。</p>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p151201848171513"><a name="p151201848171513"></a><a name="p151201848171513"></a>部署CSI时配置参数中csiDriver.reportNodeIP为true且CSIDriverObject.attachRequired为true时，本参数生效。</p>
+<p id="p68113173517"><a name="p68113173517"></a><a name="p68113173517"></a>开启后，CSI将在挂载/卸载PVC时会动态将符合规则的主机IP对应的NFS共享客户端权限设置为读写/无。</p>
 </td>
 </tr>
 <tr id="row1053913587117"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="p16898014175110"><a name="p16898014175110"></a><a name="p16898014175110"></a>parameters.nfsAutoAuthClientCIDRs</p>
 </td>
-<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p78984141516"><a name="p78984141516"></a><a name="p78984141516"></a>主机NFS协议通信IP地址段列表。</p>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p78984141516"><a name="p78984141516"></a><a name="p78984141516"></a>主机NFS协议通信IP地址段列表。例如：</p>
+<p id="p58941415114"><a name="p58941415114"></a><a name="p58941415114"></a>nfsAutoAuthClientCIDRs:</p>
+<p id="p85892581097"><a name="p85892581097"></a><a name="p85892581097"></a>- 10.10.0.0/16</p>
 </td>
 <td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1789941411513"><a name="p1789941411513"></a><a name="p1789941411513"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p9899201465117"><a name="p9899201465117"></a><a name="p9899201465117"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p197680201110"><a name="p197680201110"></a><a name="p197680201110"></a>当parameters.nfsAutoAuthClient配置为true时生效。</p>
-<p id="p489961417517"><a name="p489961417517"></a><a name="p489961417517"></a>CSI将筛选配置的CIDRs范围内的主机IP进行动态管理。</p>
-<p id="p049414227116"><a name="p049414227116"></a><a name="p049414227116"></a>若CIDRs配置为空，则CSI将动态管理所有主机IP。</p>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul3811124210183"></a><a name="ul3811124210183"></a><ul id="ul3811124210183"><li>当parameters.nfsAutoAuthClient配置为true时生效。</li><li>CSI将筛选配置的CIDRs范围内的主机IP进行动态管理。</li><li>若CIDRs配置为空，则CSI将动态管理所有主机IP。</li><li>需确保生效的主机IP的数量在10个以内</li></ul>
 </td>
 </tr>
 <tr id="row69321538172918"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="p2932193817290"><a name="p2932193817290"></a><a name="p2932193817290"></a>parameters.parentname</p>

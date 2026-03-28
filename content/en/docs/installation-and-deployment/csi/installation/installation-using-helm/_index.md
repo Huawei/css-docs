@@ -29,7 +29,7 @@ When installing huawei-csi-controller, Helm deploys the following components in 
 -   Kubernetes External Attacher: used to attach or detach volumes.
 -   Kubernetes External Resizer: used to expand the capacity of volumes.
 -   Kubernetes External liveness-probe: used to determine the health status of a Pod.
--   \(Optional\) huawei-csi-extender: Huawei CSI extender.
+-   \(Optional\) huawei-csi-extender: used to support changing persistent volumes.
 -   \(Optional\) Kubernetes External Snapshotter: used to provide snapshot support \(installed as CRD\).
 -   \(Optional\) Kubernetes External Snapshot Controller: used to control volume snapshots.
 

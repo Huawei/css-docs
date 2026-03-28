@@ -149,7 +149,7 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="33.20699708454811%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001255922865_p105611631131211"><a name="zh-cn_topic_0000001255922865_p105611631131211"></a><a name="zh-cn_topic_0000001255922865_p105611631131211"></a>该参数值由以下两部分构成：</p>
 <a name="zh-cn_topic_0000001255922865_ul317520442816"></a><a name="zh-cn_topic_0000001255922865_ul317520442816"></a><ul id="zh-cn_topic_0000001255922865_ul317520442816"><li>&lt;backendName&gt;：该卷所在的后端名称，可使用如下命令获取配置的后端信息：<p id="p101424597119"><a name="p101424597119"></a><a name="p101424597119"></a><strong id="b1736283518212"><a name="b1736283518212"></a><a name="b1736283518212"></a>oceanctl get backend</strong></p>
-</li><li>&lt;volume-name&gt;：存储上资源（LUN/文件系统）的名称，可通过DeviceManager查看。</li></ul>
+</li><li>&lt;volume-name&gt;：存储上资源（LUN/文件系统/Dtree）的名称，可通过DeviceManager查看。</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000001255922865_row197581481108"><td class="cellrowborder" valign="top" width="17.687074829931973%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001255922865_p110831210"><a name="zh-cn_topic_0000001255922865_p110831210"></a><a name="zh-cn_topic_0000001255922865_p110831210"></a>spec.csi.fsType</p>

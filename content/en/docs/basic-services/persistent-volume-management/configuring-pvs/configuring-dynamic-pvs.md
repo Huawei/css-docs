@@ -23,8 +23,19 @@ Before configuring dynamic PVs, configure StorageClass by referring to  [Configu
 
 1.  Prepare the PVC configuration file  **mypvc.yaml**. The following is an example. For details about other parameters, see  [Table 1](#en-us_topic_0150885187_table195731435604).
 
-    ```
-    kind: PersistentVolumeClaimapiVersion: v1metadata:  name: mypvcspec:  accessModes:    - ReadWriteOnce  volumeMode: Filesystem  storageClassName: mysc  resources:    requests:      storage: 100Gi
+    ```yaml
+    kind: PersistentVolumeClaim
+    apiVersion: v1
+    metadata:
+      name: mypvc
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      volumeMode: Filesystem
+      storageClassName: mysc
+      resources:
+        requests:
+          storage: 100Gi
     ```
 
 2.  Run the following command to create a PVC using the configuration file.
@@ -42,7 +53,8 @@ Before configuring dynamic PVs, configure StorageClass by referring to  [Configu
     The following is an example of the command output. If the PVC status is  **Bound**, the PVC has been created and can be used by a Pod.
 
     ```
-    NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGEmypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO            mysc           12s
+    NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+    mypvc       Bound    pvc-840054d3-1d5b-4153-b73f-826f980abf9e   100Gi      RWO            mysc           12s
     ```
 
     >![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
@@ -217,8 +229,32 @@ Before configuring dynamic PVs, configure StorageClass by referring to  [Configu
 
 After a PVC is created, you can use the PVC to create a Pod. The following is a simple example of using a PVC. In this example, the created Pod uses the newly created  _mypvc_.
 
-```
-apiVersion: apps/v1kind: Deploymentmetadata:  name: nginx-deploymentspec:  selector:    matchLabels:      app: nginx  replicas: 2  template:    metadata:      labels:        app: nginx    spec:      containers:       - image: nginx:alpine        name: container-0         volumeMounts:         - mountPath: /tmp          name: pvc-mypvc       restartPolicy: Always       volumes:       - name: pvc-mypvc         persistentVolumeClaim:           claimName:  mypvc  # name of PVC
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers: 
+      - image: nginx:alpine
+        name: container-0 
+        volumeMounts: 
+        - mountPath: /tmp
+          name: pvc-mypvc 
+      restartPolicy: Always 
+      volumes: 
+      - name: pvc-mypvc 
+        persistentVolumeClaim: 
+          claimName:  mypvc  # name of PVC
 ```
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  

@@ -29,7 +29,7 @@ Helm在安装huawei-csi-controller时，将在指定命名空间的Deployment类
 -   Kubernetes External Attacher：用于挂载/解挂载卷。
 -   Kubernetes External Resizer：用于扩容卷。
 -   Kubernetes External liveness-probe： 用来判断Pod健康状态。
--   （可选）huawei-csi-extender：华为CSI扩展。
+-   （可选）huawei-csi-extender：提供变更持久卷支持。
 -   （可选）Kubernetes External Snapshotter：提供快照支持（作为CRD安装）。
 -   （可选）Kubernetes External Snapshot Controller ：用于卷快照控制。
 

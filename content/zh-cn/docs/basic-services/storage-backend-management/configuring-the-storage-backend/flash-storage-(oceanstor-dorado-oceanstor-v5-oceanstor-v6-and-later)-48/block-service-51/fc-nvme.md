@@ -2,7 +2,7 @@
 title: "FC-NVMe"
 linkTitle: "FC-NVMe"
 description: 
-weight: 4
+weight: 5
 ---
 
 本章节介绍创建FC-NVMe协议类型的存储后端

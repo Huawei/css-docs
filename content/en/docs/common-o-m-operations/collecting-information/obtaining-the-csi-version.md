@@ -34,6 +34,6 @@ This section describes how to view the CSI version.
     The version information is displayed as follows:
 
     ```
-    4.10.0
+    4.11.0
     ```
 

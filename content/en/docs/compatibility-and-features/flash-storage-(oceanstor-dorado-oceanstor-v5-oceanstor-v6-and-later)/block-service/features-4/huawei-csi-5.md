@@ -22,9 +22,9 @@ weight: 1
 </td>
 <td class="cellrowborder" rowspan="3" valign="top" width="21.98219821982198%" headers="mcps1.2.5.1.2 "><p id="p86732141719"><a name="p86732141719"></a><a name="p86732141719"></a>FC/iSCSI</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="29.282928292829286%" headers="mcps1.2.5.1.3 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC</p>
+<td class="cellrowborder" rowspan="3" valign="top" width="29.282928292829286%" headers="mcps1.2.5.1.3 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC/NVMe over TCP</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="28.542854285428543%" headers="mcps1.2.5.1.4 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC</p>
+<td class="cellrowborder" rowspan="3" valign="top" width="28.542854285428543%" headers="mcps1.2.5.1.4 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC/NVMe over TCP</p>
 </td>
 </tr>
 <tr id="row49961039174517"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p9996173974516"><a name="p9996173974516"></a><a name="p9996173974516"></a>Dynamic Provisioning</p>
@@ -92,7 +92,9 @@ weight: 1
 </tr>
 <tr id="row17943182222817"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p79432225287"><a name="p79432225287"></a><a name="p79432225287"></a>Volume HyperMetro</p>
 </td>
-<td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>Not supported</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>Not supported</p>
+</td>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p38504018310"><a name="p38504018310"></a><a name="p38504018310"></a>Supported</p>
 </td>
 </tr>
 <tr id="row8191849183619"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p81912491363"><a name="p81912491363"></a><a name="p81912491363"></a>Storage multi-tenant</p>
@@ -104,7 +106,8 @@ weight: 1
 </table>
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
+>-   When using the iSCSI protocol to connect the CSI to a storage system with multiple controller enclosures, you need to log in to the storage background and run the  **change target\_name display\_mode mode=Full**  command to ensure that the target IQN obtained by the CSI from the storage system is the same as the actual IQN.
 >-   If a container platform is deployed on a virtualization platform, you are advised to use the iSCSI protocol when the CSI is connected to SAN storage.
 >-   If the customer requires the FC, NVMe over FC, or NVMe over RoCE protocol, the virtualization platform needs to be configured. In this case, the customer's virtualization team needs to provide technical support.
->-   When NVMe over RoCE or NVMe over FC is used, the supported nvme-cli tool version is 1.9 or later. To query the version, run the  **nvme version**  command.
+>-   When NVMe over RoCE or NVMe over FC is used, the supported nvme-cli tool version is 1.9 or later. When NVMe over TCP is used, the supported nvme-cli tool version is 2.0 or later. The query command is  **nvme version**.
 

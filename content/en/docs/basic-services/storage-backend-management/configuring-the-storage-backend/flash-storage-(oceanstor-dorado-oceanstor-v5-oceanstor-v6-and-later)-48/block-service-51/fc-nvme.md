@@ -2,7 +2,7 @@
 title: "FC-NVMe"
 linkTitle: "FC-NVMe"
 description: 
-weight: 4
+weight: 5
 ---
 
 This section describes how to create a storage backend of the FC-NVMe protocol type.

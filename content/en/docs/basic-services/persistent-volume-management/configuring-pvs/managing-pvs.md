@@ -12,9 +12,10 @@ Manage Volume Provisioning allows administrators to use resources created on sto
 -   Storage data is migrated in disaster recovery \(DR\) scenarios.
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
->Manage Volume Provisioning allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
->When a storage resource is managed by multiple clusters, operations on the managed volume in a single cluster take effect only in the cluster and will not be synchronized to other clusters. Instead, you need to perform these operations on the managed volume in other clusters.
->For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PV](/docs/basic-services/persistent-volume-management/managing-pvs-87/expanding-the-capacity-of-a-pv).
+>-   Manage Volume Provisioning allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
+>    When a storage resource is managed by multiple clusters, operations on the managed volume in a single cluster take effect only in the cluster and will not be synchronized to other clusters. Instead, you need to perform these operations on the managed volume in other clusters.
+>    For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PV](/docs/basic-services/persistent-volume-management/managing-pvs-91/expanding-the-capacity-of-a-pv).
+>-   When managing PVs, ensure that the PVs comply with the storage class declaration. Otherwise, Huawei CSI may fail to manage the PVs. For example, when you manage a common PV, the storage backend of the HyperMetro type is referenced in the storage class, and the HyperMetro parameter is enabled. After the PV is managed, if you clone the PV or create a PV based on a snapshot, Huawei CSI will fail to execute the operation.
 
 ## Configuration Description{#section121779524353}
 
@@ -159,6 +160,8 @@ Perform the following steps to manage and use PVs:
 <tr id="en-us_topic_0150885187_row1157316351102"><td class="cellrowborder" valign="top" width="13.47134713471347%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0150885187_p9573035309"><a name="en-us_topic_0150885187_p9573035309"></a><a name="en-us_topic_0150885187_p9573035309"></a>spec.resources.requests.storage</p>
 </td>
 <td class="cellrowborder" valign="top" width="26.852685268526855%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0150885187_p1573183510015"><a name="en-us_topic_0150885187_p1573183510015"></a><a name="en-us_topic_0150885187_p1573183510015"></a>Size of the volume to be created. The format is ***Gi and the unit is GiB.</p>
+<div class="note" id="note25632263375"><a name="note25632263375"></a><a name="note25632263375"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p15563526103719"><a name="p15563526103719"></a><a name="p15563526103719"></a>For OceanStor Dorado/OceanStor Pacific series, in the dtree management scenario, the capacity corresponds to the hard quota of the dtree on the storage system.</p>
+</div></div>
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p1436044990"><a name="p1436044990"></a><a name="p1436044990"></a>Yes</p>
 </td>

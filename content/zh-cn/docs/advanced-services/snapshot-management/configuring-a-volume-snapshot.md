@@ -22,7 +22,7 @@ driver: csi.huawei.com
 deletionPolicy: Delete
 ```
 
-实际参数可以参考[表1](#zh-cn_topic_0254162578_table189495491346)中的说明修改。由于当前华为CSI还不支持在VolumeSnapshotClass中设置自定义参数（parameters），因此建议只创建一个VolumeSnapshotClass，供所有快照使用。
+实际参数可以参考[表1](#zh-cn_topic_0254162578_table189495491346)中的说明修改。
 
 **表 1**  VolumeSnapshotClass参数说明
 
@@ -55,6 +55,15 @@ deletionPolicy: Delete
 <a name="ul1034113525514"></a><a name="ul1034113525514"></a><ul id="ul1034113525514"><li>Delete</li><li>Retain</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="55.1%" headers="mcps1.2.4.1.3 "><a name="ul925601066"></a><a name="ul925601066"></a><ul id="ul925601066"><li><span>如果删除策略是 </span>Delete<span>，那么存储设备上的快照会和VolumeSnapshotContent对象一起删除</span>。</li><li><span>如果删除策略是</span>Retain<span>，那么存储设备上的快照和VolumeSnapshotContent对象都会被保留。</span></li></ul>
+</td>
+</tr>
+<tr id="row123551713017"><td class="cellrowborder" valign="top" width="17.91%" headers="mcps1.2.4.1.1 "><p id="p586014583516"><a name="p586014583516"></a><a name="p586014583516"></a>parameters.enableHyperMetroSnap</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.99%" headers="mcps1.2.4.1.2 "><p id="p158602581659"><a name="p158602581659"></a><a name="p158602581659"></a>是否创建SAN双活双端快照。</p>
+<a name="ul1952015398716"></a><a name="ul1952015398716"></a><ul id="ul1952015398716"><li>"true"：分别在组成双活的两端存储创建快照。</li><li>"false"：在当前存储类关联的存储侧创建快照。</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="55.1%" headers="mcps1.2.4.1.3 "><p id="p486075816514"><a name="p486075816514"></a><a name="p486075816514"></a>默认值为"false"。</p>
+<p id="p1586018581150"><a name="p1586018581150"></a><a name="p1586018581150"></a>当后端类型为oceanstor-san且存储版本在V700R001C10及以上，支持配置为"true"。</p>
 </td>
 </tr>
 </tbody>

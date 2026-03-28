@@ -135,7 +135,7 @@ weight: 1
 -   Run the following command to delete a storage backend in the specified namespace.
 
     ```
-    oceanctl delete backend <backend-name...> -n <namespace>
+    oceanctl delete backend <backend-name> -n <namespace>
     ```
 
 ## Creating a Storage Backend Certificate{#section16801122125214}

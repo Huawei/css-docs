@@ -32,7 +32,7 @@ This section describes how to create a storage backend of the iSCSI protocol typ
 </td>
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p15919151545111"><a name="p15919151545111"></a><a name="p15919151545111"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p786315473102"><a name="p786315473102"></a><a name="p786315473102"></a>The value is fixed to <strong id="b1258975519186"><a name="b1258975519186"></a><a name="b1258975519186"></a>oceanstor-san</strong>.</p>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p786315473102"><a name="p786315473102"></a><a name="p786315473102"></a>The value is fixed at <strong id="b1258975519186"><a name="b1258975519186"></a><a name="b1258975519186"></a>oceanstor-san</strong>.</p>
 </td>
 </tr>
 <tr id="row15127618111910"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p733904424519"><a name="en-us_topic_0000001324610777_p733904424519"></a><a name="en-us_topic_0000001324610777_p733904424519"></a>name</p>
@@ -87,7 +87,7 @@ This section describes how to create a storage backend of the iSCSI protocol typ
 </td>
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p109191715115118"><a name="p109191715115118"></a><a name="p109191715115118"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>The value is fixed to <strong id="b6217111310195"><a name="b6217111310195"></a><a name="b6217111310195"></a>iscsi</strong>.</li><li>Ensure that an iSCSI client has been installed on the connected compute node.</li></ul>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>The value is fixed at <strong id="b6217111310195"><a name="b6217111310195"></a><a name="b6217111310195"></a>iscsi</strong>.</li><li>Ensure that an iSCSI client has been installed on the connected compute node.</li></ul>
 </td>
 </tr>
 <tr id="row61271618121913"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p12730821724"><a name="en-us_topic_0000001324610777_p12730821724"></a><a name="en-us_topic_0000001324610777_p12730821724"></a>parameters.portals</p>
@@ -99,6 +99,19 @@ This section describes how to create a storage backend of the iSCSI protocol typ
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p15919101510519"><a name="p15919101510519"></a><a name="p15919101510519"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul73520114122"></a><a name="ul73520114122"></a><ul id="ul73520114122"><li>IPv6 is supported.</li><li>Multiple ports can be configured.</li></ul>
+</td>
+</tr>
+<tr id="row2846155683512"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="p1993622194320"><a name="p1993622194320"></a><a name="p1993622194320"></a>parameters.ALUA</p>
+<p id="p1247462414531"><a name="p1247462414531"></a><a name="p1247462414531"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p13334182974311"><a name="p13334182974311"></a><a name="p13334182974311"></a>ALUA configuration of the storage backend. If the worker node uses the native multipathing software provided by the OS and ALUA is enabled, you need to configure this parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1879919341434"><a name="p1879919341434"></a><a name="p1879919341434"></a>Conditionally mandatory</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p1826418436"><a name="p1826418436"></a><a name="p1826418436"></a>-</p>
+<p id="p44741924115319"><a name="p44741924115319"></a><a name="p44741924115319"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p1496214564317"><a name="p1496214564317"></a><a name="p1496214564317"></a>If ALUA is enabled for the host multipathing software, ensure that the backend ALUA configuration is the same as that of the host ALUA configuration. For details, see <a href="/css-docs/en/docs/common-o-m-operations/configuring-alua">Configuring ALUA</a>.</p>
 </td>
 </tr>
 <tr id="row36316121111"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="p2064181219115"><a name="p2064181219115"></a><a name="p2064181219115"></a>supportedTopologies</p>
@@ -134,6 +147,30 @@ This section describes how to create a storage backend of the iSCSI protocol typ
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p121587482213"><a name="p121587482213"></a><a name="p121587482213"></a>local</p>
 </td>
 <td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p86569419269"><a name="p86569419269"></a><a name="p86569419269"></a>When Huawei enterprise storage is OceanStor V5, the ID of the LDAP domain authentication server must be 0.</p>
+</td>
+</tr>
+<tr id="row496411147306"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001276213416_p179320619189"><a name="en-us_topic_0000001276213416_p179320619189"></a><a name="en-us_topic_0000001276213416_p179320619189"></a>metroBackend</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0000001276213416_p3494125991718"><a name="en-us_topic_0000001276213416_p3494125991718"></a><a name="en-us_topic_0000001276213416_p3494125991718"></a>Backend name of the HyperMetro peer. The value is a character string.</p>
+<p id="p19322352557"><a name="p19322352557"></a><a name="p19322352557"></a>This parameter is mandatory when a PV to be created on the storage side needs to support the SAN HyperMetro feature. In this case, you need to enter the name of the other backend to form a HyperMetro pair with the current backend.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1653215216187"><a name="p1653215216187"></a><a name="p1653215216187"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p1791951575111"><a name="p1791951575111"></a><a name="p1791951575111"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0000001276213416_p768261754513"><a name="en-us_topic_0000001276213416_p768261754513"></a><a name="en-us_topic_0000001276213416_p768261754513"></a>The names of the two backends in the pair must be entered. After the two backends form a HyperMetro relationship, they cannot form a HyperMetro relationship with other backends.</p>
+</td>
+</tr>
+<tr id="row14375247113118"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001276213416_p1619335616176"><a name="en-us_topic_0000001276213416_p1619335616176"></a><a name="en-us_topic_0000001276213416_p1619335616176"></a>hyperMetroDomain</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p03781853135"><a name="p03781853135"></a><a name="p03781853135"></a>HyperMetro domain name.</p>
+<p id="en-us_topic_0000001276213416_p17485124117179"><a name="en-us_topic_0000001276213416_p17485124117179"></a><a name="en-us_topic_0000001276213416_p17485124117179"></a>This parameter is mandatory when a PV to be created on the storage side needs to support the SAN HyperMetro feature. In this case, you need to enter the name of the HyperMetro domain to which the PV to be created belongs.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1382133417179"><a name="p1382133417179"></a><a name="p1382133417179"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p391981511519"><a name="p391981511519"></a><a name="p391981511519"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="en-us_topic_0000001276213416_p568210171458"><a name="en-us_topic_0000001276213416_p568210171458"></a><a name="en-us_topic_0000001276213416_p568210171458"></a>You can query the HyperMetro domain name on DeviceManager.</p>
 </td>
 </tr>
 </tbody>
@@ -197,5 +234,89 @@ This section describes how to create a storage backend of the iSCSI protocol typ
     ```
     NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
     huawei-csi    backend-demo    iscsi       oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    ```
+
+## Creating Storage Backends of the HyperMetro Type{#section1540717120711}
+
+>![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
+>-   Before configuring SAN HyperMetro, you need to configure the HyperMetro relationship between two storage devices, including the remote device and HyperMetro domain. For details, see the product documentation of the corresponding storage model.
+
+1.  Prepare a storage backend configuration file, for example,  **backend.yaml**.
+
+    ```
+    storage: "oceanstor-san"
+    name: "backend-active"
+    namespace: "huawei-csi"
+    urls:
+      - "https://192.168.129.155:8088"
+    pools:
+      - "StoragePool001"
+    hyperMetroDomain: "BlockHyperMetroDomain"
+    metroBackend: "backend-standby"
+    parameters:
+      protocol: "iscsi"
+      portals:
+        - "192.168.129.156"
+        - "192.168.129.158"
+    maxClientThreads: "30"
+    ---
+    storage: "oceanstor-san"
+    name: "backend-standby"
+    namespace: "huawei-csi"
+    urls:
+      - "https://192.168.129.157:8088"
+    pools:
+      - "StoragePool001"
+    hyperMetroDomain: "BlockHyperMetroDomain"
+    metroBackend: "backend-active"
+    parameters:
+      protocol: "iscsi"
+      portals:
+        - "192.168.129.157"
+        - "192.168.129.159"
+    maxClientThreads: "30"
+    ```
+
+2.  Run the following command to create a storage backend.
+
+    ```
+    oceanctl create backend -f /path/to/backend.yaml -i yaml
+    ```
+
+    The following is an example of the command output.
+
+    ```
+    NUMBER  CONFIGURED    NAME              STORAGE              URLS                
+    1       false         backend-active    oceanstor-san        https://192.168.129.155:8088 
+    2       false         backend-standby   oceanstor-san        https://192.168.129.157:8088 
+    Please enter the backend number to configure (Enter 'exit' to exit):
+    ```
+
+3.  Enter the serial number of the backend to be created and enter the account and password.
+
+    ```
+    Please enter the backend number to configure (Enter 'exit' to exit):1
+    Please enter this backend user name: user1
+    Please enter this backend password:
+    
+    Backend backend-standby is configured
+    NUMBER  CONFIGURED    NAME              STORAGE              URLS               
+    1       true          backend-active    oceanstor-san        https://192.168.129.155:8088 
+    2       true          backend-standby   oceanstor-san        https://192.168.129.157:8088 
+    Please enter the backend number to configure (Enter 'exit' to exit):
+    ```
+
+4.  Check the storage backend creation result.
+
+    ```
+    oceanctl get backend
+    ```
+
+    The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
+
+    ```
+    NAMESPACE     NAME              PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    huawei-csi    backend-active    iscsi         oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.155:8088   
+    huawei-csi    backend-standby   iscsi         oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088 
     ```
 

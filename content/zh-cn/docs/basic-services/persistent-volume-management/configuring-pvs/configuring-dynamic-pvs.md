@@ -66,9 +66,9 @@ weight: 1
 <a name="zh-cn_topic_0150885187_table195731435604"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0150885187_row35732351904"><th class="cellrowborder" valign="top" width="15.721572157215721%" id="mcps1.2.6.1.1"><p id="zh-cn_topic_0150885187_p1257333517017"><a name="zh-cn_topic_0150885187_p1257333517017"></a><a name="zh-cn_topic_0150885187_p1257333517017"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="24.652465246524653%" id="mcps1.2.6.1.2"><p id="zh-cn_topic_0150885187_p1457323512015"><a name="zh-cn_topic_0150885187_p1457323512015"></a><a name="zh-cn_topic_0150885187_p1457323512015"></a>说明</p>
+<th class="cellrowborder" valign="top" width="24.632463246324633%" id="mcps1.2.6.1.2"><p id="zh-cn_topic_0150885187_p1457323512015"><a name="zh-cn_topic_0150885187_p1457323512015"></a><a name="zh-cn_topic_0150885187_p1457323512015"></a>说明</p>
 </th>
-<th class="cellrowborder" valign="top" width="6.9006900690069015%" id="mcps1.2.6.1.3"><p id="p1173514981420"><a name="p1173514981420"></a><a name="p1173514981420"></a>必选参数</p>
+<th class="cellrowborder" valign="top" width="6.92069206920692%" id="mcps1.2.6.1.3"><p id="p1173514981420"><a name="p1173514981420"></a><a name="p1173514981420"></a>必选参数</p>
 </th>
 <th class="cellrowborder" valign="top" width="8.8008800880088%" id="mcps1.2.6.1.4"><p id="p1589881291419"><a name="p1589881291419"></a><a name="p1589881291419"></a>默认值</p>
 </th>
@@ -78,9 +78,9 @@ weight: 1
 </thead>
 <tbody><tr id="zh-cn_topic_0150885187_row5573635907"><td class="cellrowborder" valign="top" width="15.721572157215721%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p3573335305"><a name="zh-cn_topic_0150885187_p3573335305"></a><a name="zh-cn_topic_0150885187_p3573335305"></a>metadata.name</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.652465246524653%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p205736355017"><a name="zh-cn_topic_0150885187_p205736355017"></a><a name="zh-cn_topic_0150885187_p205736355017"></a>自定义的PVC对象名称。</p>
+<td class="cellrowborder" valign="top" width="24.632463246324633%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p205736355017"><a name="zh-cn_topic_0150885187_p205736355017"></a><a name="zh-cn_topic_0150885187_p205736355017"></a>自定义的PVC对象名称。</p>
 </td>
-<td class="cellrowborder" valign="top" width="6.9006900690069015%" headers="mcps1.2.6.1.3 "><p id="p7736109151413"><a name="p7736109151413"></a><a name="p7736109151413"></a>是</p>
+<td class="cellrowborder" valign="top" width="6.92069206920692%" headers="mcps1.2.6.1.3 "><p id="p7736109151413"><a name="p7736109151413"></a><a name="p7736109151413"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.8008800880088%" headers="mcps1.2.6.1.4 "><p id="p1589841231412"><a name="p1589841231412"></a><a name="p1589841231412"></a>-</p>
 </td>
@@ -89,10 +89,10 @@ weight: 1
 </tr>
 <tr id="zh-cn_topic_0150885187_row696316316238"><td class="cellrowborder" valign="top" width="15.721572157215721%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p1896393118231"><a name="zh-cn_topic_0150885187_p1896393118231"></a><a name="zh-cn_topic_0150885187_p1896393118231"></a>spec.volumeMode</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.652465246524653%" headers="mcps1.2.6.1.2 "><p id="p1610614478451"><a name="p1610614478451"></a><a name="p1610614478451"></a>卷模式。可选参数。 当使用LUN类型的卷时，支持配置以下类型：</p>
+<td class="cellrowborder" valign="top" width="24.632463246324633%" headers="mcps1.2.6.1.2 "><p id="p1610614478451"><a name="p1610614478451"></a><a name="p1610614478451"></a>卷模式。可选参数。 当使用LUN类型的卷时，支持配置以下类型：</p>
 <a name="ul823916101324"></a><a name="ul823916101324"></a><ul id="ul823916101324"><li>Filesystem：本地文件系统。</li><li>Block：裸设备。</li></ul>
 </td>
-<td class="cellrowborder" valign="top" width="6.9006900690069015%" headers="mcps1.2.6.1.3 "><p id="p1373612911410"><a name="p1373612911410"></a><a name="p1373612911410"></a>否</p>
+<td class="cellrowborder" valign="top" width="6.92069206920692%" headers="mcps1.2.6.1.3 "><p id="p1373612911410"><a name="p1373612911410"></a><a name="p1373612911410"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.8008800880088%" headers="mcps1.2.6.1.4 "><p id="p0898191211148"><a name="p0898191211148"></a><a name="p0898191211148"></a>Filesystem</p>
 </td>
@@ -102,9 +102,9 @@ weight: 1
 </tr>
 <tr id="zh-cn_topic_0150885187_row25733352019"><td class="cellrowborder" valign="top" width="15.721572157215721%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p357320351304"><a name="zh-cn_topic_0150885187_p357320351304"></a><a name="zh-cn_topic_0150885187_p357320351304"></a>spec.storageClassName</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.652465246524653%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p135732351909"><a name="zh-cn_topic_0150885187_p135732351909"></a><a name="zh-cn_topic_0150885187_p135732351909"></a>StorageClass对象名称。</p>
+<td class="cellrowborder" valign="top" width="24.632463246324633%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p135732351909"><a name="zh-cn_topic_0150885187_p135732351909"></a><a name="zh-cn_topic_0150885187_p135732351909"></a>StorageClass对象名称。</p>
 </td>
-<td class="cellrowborder" valign="top" width="6.9006900690069015%" headers="mcps1.2.6.1.3 "><p id="p127361496143"><a name="p127361496143"></a><a name="p127361496143"></a>是</p>
+<td class="cellrowborder" valign="top" width="6.92069206920692%" headers="mcps1.2.6.1.3 "><p id="p127361496143"><a name="p127361496143"></a><a name="p127361496143"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.8008800880088%" headers="mcps1.2.6.1.4 "><p id="p1989831211414"><a name="p1989831211414"></a><a name="p1989831211414"></a>-</p>
 </td>
@@ -113,9 +113,9 @@ weight: 1
 </tr>
 <tr id="zh-cn_topic_0150885187_row1157316351102"><td class="cellrowborder" valign="top" width="15.721572157215721%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p9573035309"><a name="zh-cn_topic_0150885187_p9573035309"></a><a name="zh-cn_topic_0150885187_p9573035309"></a>spec.resources.requests.storage</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.652465246524653%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p1573183510015"><a name="zh-cn_topic_0150885187_p1573183510015"></a><a name="zh-cn_topic_0150885187_p1573183510015"></a>指定待创建卷大小，格式为***Gi，单位为GiB。</p>
+<td class="cellrowborder" valign="top" width="24.632463246324633%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p1573183510015"><a name="zh-cn_topic_0150885187_p1573183510015"></a><a name="zh-cn_topic_0150885187_p1573183510015"></a>指定待创建卷大小，格式为***Gi，单位为GiB。</p>
 </td>
-<td class="cellrowborder" valign="top" width="6.9006900690069015%" headers="mcps1.2.6.1.3 "><p id="p87363981412"><a name="p87363981412"></a><a name="p87363981412"></a>是</p>
+<td class="cellrowborder" valign="top" width="6.92069206920692%" headers="mcps1.2.6.1.3 "><p id="p87363981412"><a name="p87363981412"></a><a name="p87363981412"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.8008800880088%" headers="mcps1.2.6.1.4 "><p id="p489841251410"><a name="p489841251410"></a><a name="p489841251410"></a>10Gi</p>
 </td>
@@ -125,10 +125,10 @@ weight: 1
 </tr>
 <tr id="zh-cn_topic_0150885187_row6573635502"><td class="cellrowborder" valign="top" width="15.721572157215721%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p1657333515012"><a name="zh-cn_topic_0150885187_p1657333515012"></a><a name="zh-cn_topic_0150885187_p1657333515012"></a>spec.accessModes</p>
 </td>
-<td class="cellrowborder" valign="top" width="24.652465246524653%" headers="mcps1.2.6.1.2 "><p id="p51122302293"><a name="p51122302293"></a><a name="p51122302293"></a>指定卷访问模式。</p>
+<td class="cellrowborder" valign="top" width="24.632463246324633%" headers="mcps1.2.6.1.2 "><p id="p51122302293"><a name="p51122302293"></a><a name="p51122302293"></a>指定卷访问模式。</p>
 <a name="ul69743301323"></a><a name="ul69743301323"></a><ul id="ul69743301323"><li><span>RWO</span>（ReadWriteOnce）：卷可以被一个节点以读写方式挂载。 该模式也允许运行在同一节点上的多个 Pod 访问卷。</li><li><span>ROX</span>（ReadOnlyMany）：卷可以被多个节点以只读方式挂载。</li><li><span>RWX</span>（ReadWriteMany）：卷可以被多个节点以读写方式挂载。</li><li><span>RWOP</span>（ReadWriteOncePod）：卷只能被单个 Pod 以读写方式挂载。该特性需要 Kubernetes 1.22 以上版本。</li></ul>
 </td>
-<td class="cellrowborder" valign="top" width="6.9006900690069015%" headers="mcps1.2.6.1.3 "><p id="p87361891145"><a name="p87361891145"></a><a name="p87361891145"></a>是</p>
+<td class="cellrowborder" valign="top" width="6.92069206920692%" headers="mcps1.2.6.1.3 "><p id="p87361891145"><a name="p87361891145"></a><a name="p87361891145"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.8008800880088%" headers="mcps1.2.6.1.4 "><p id="p1589841251413"><a name="p1589841251413"></a><a name="p1589841251413"></a>ReadWriteOnce</p>
 </td>

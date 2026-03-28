@@ -23,7 +23,7 @@ weight: 2
 </tr>
 <tr id="en-us_topic_0000002392332856_row206241757125114"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p3624957155117"><a name="en-us_topic_0000002392332856_p3624957155117"></a><a name="en-us_topic_0000002392332856_p3624957155117"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.12 to 4.19</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.12 to 4.20</p>
 </td>
 </tr>
 <tr id="en-us_topic_0000002392332856_row10624135775113"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p1862410570513"><a name="en-us_topic_0000002392332856_p1862410570513"></a><a name="en-us_topic_0000002392332856_p1862410570513"></a>Tanzu Kubernetes Grid Integrated</p>

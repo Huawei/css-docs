@@ -18,7 +18,7 @@ weight: 1
 </thead>
 <tbody><tr id="row093253164916"><td class="cellrowborder" valign="top" width="49.97%" headers="mcps1.2.3.1.1 "><p id="p33371757165517"><a name="p33371757165517"></a><a name="p33371757165517"></a>OceanStor A系列</p>
 </td>
-<td class="cellrowborder" valign="top" width="50.029999999999994%" headers="mcps1.2.3.1.2 "><p id="p53381357175519"><a name="p53381357175519"></a><a name="p53381357175519"></a>V700R001C10</p>
+<td class="cellrowborder" valign="top" width="50.029999999999994%" headers="mcps1.2.3.1.2 "><p id="p53381357175519"><a name="p53381357175519"></a><a name="p53381357175519"></a>V700R001C10, <span>V700R001C20</span></p>
 </td>
 </tr>
 </tbody>

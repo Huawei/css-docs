@@ -90,6 +90,19 @@ weight: 2
 <td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul1295371272019"></a><a name="ul1295371272019"></a><ul id="ul1295371272019"><li>固定填写：fc</li></ul>
 </td>
 </tr>
+<tr id="row341561664412"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="p1993622194320"><a name="p1993622194320"></a><a name="p1993622194320"></a>parameters.ALUA</p>
+<p id="p1247462414531"><a name="p1247462414531"></a><a name="p1247462414531"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p13334182974311"><a name="p13334182974311"></a><a name="p13334182974311"></a>存储后端ALUA参数配置。当工作节点使用操作系统原生多路径，且启用了ALUA时，需要进行配置。</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1879919341434"><a name="p1879919341434"></a><a name="p1879919341434"></a>条件必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p1826418436"><a name="p1826418436"></a><a name="p1826418436"></a>-</p>
+<p id="p44741924115319"><a name="p44741924115319"></a><a name="p44741924115319"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p1496214564317"><a name="p1496214564317"></a><a name="p1496214564317"></a>如果主机多路径配置启用了ALUA，请确保后端ALUA配置和主机的ALUA配置一致。具体请参考<a href="/css-docs/docs/common-o-m-operations/configuring-alua">配置ALUA特性</a></p>
+</td>
+</tr>
 <tr id="row36316121111"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="p2064181219115"><a name="p2064181219115"></a><a name="p2064181219115"></a>supportedTopologies</p>
 </td>
 <td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p18642127115"><a name="p18642127115"></a><a name="p18642127115"></a>存储拓扑感知配置。参数格式为列表类型的JSON。</p>
@@ -123,6 +136,30 @@ weight: 2
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p121587482213"><a name="p121587482213"></a><a name="p121587482213"></a>local</p>
 </td>
 <td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="p1035410219267"><a name="p1035410219267"></a><a name="p1035410219267"></a>当华为企业存储为OceanStor V5时，LDAP域认证服务器ID必须为0。</p>
+</td>
+</tr>
+<tr id="row3444146104214"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001276213416_p179320619189"><a name="zh-cn_topic_0000001276213416_p179320619189"></a><a name="zh-cn_topic_0000001276213416_p179320619189"></a>metroBackend</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0000001276213416_p3494125991718"><a name="zh-cn_topic_0000001276213416_p3494125991718"></a><a name="zh-cn_topic_0000001276213416_p3494125991718"></a>双活对端的后端名称。参数格式为字符串。</p>
+<p id="p19322352557"><a name="p19322352557"></a><a name="p19322352557"></a>当需要创建PV在存储侧支持SAN双活特性时，该字段必填。此时需要填入准备和当前后端组成双活的另一个后端名称。</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1653215216187"><a name="p1653215216187"></a><a name="p1653215216187"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p1791951575111"><a name="p1791951575111"></a><a name="p1791951575111"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001276213416_p768261754513"><a name="zh-cn_topic_0000001276213416_p768261754513"></a><a name="zh-cn_topic_0000001276213416_p768261754513"></a>组对的两个后端都必须将对方名称填入。这两个后端组成双活关系后，不允许再和其他后端组成双活关系。</p>
+</td>
+</tr>
+<tr id="row644418614218"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001276213416_p1619335616176"><a name="zh-cn_topic_0000001276213416_p1619335616176"></a><a name="zh-cn_topic_0000001276213416_p1619335616176"></a>hyperMetroDomain</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.771685921284515%" headers="mcps1.2.6.1.2 "><p id="p03781853135"><a name="p03781853135"></a><a name="p03781853135"></a>双活域名称。</p>
+<p id="zh-cn_topic_0000001276213416_p17485124117179"><a name="zh-cn_topic_0000001276213416_p17485124117179"></a><a name="zh-cn_topic_0000001276213416_p17485124117179"></a>当需要创建PV在存储侧支持SAN双活特性时，该字段必填。此时需要填入待创建的PV所归属的存储侧双活域名称。</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.1176816134717065%" headers="mcps1.2.6.1.3 "><p id="p1382133417179"><a name="p1382133417179"></a><a name="p1382133417179"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p391981511519"><a name="p391981511519"></a><a name="p391981511519"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><p id="zh-cn_topic_0000001276213416_p568210171458"><a name="zh-cn_topic_0000001276213416_p568210171458"></a><a name="zh-cn_topic_0000001276213416_p568210171458"></a>双活域名称请到DeviceManager界面查询。</p>
 </td>
 </tr>
 </tbody>
@@ -183,5 +220,83 @@ weight: 2
     ```
     NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
     huawei-csi    backend-demo    fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    ```
+
+## 创建双活类型存储后端{#section1540717120711}
+
+>![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
+>-   配置SAN双活前，需要在两台存储设备之间配置双活关系，包含远端设备、双活域等，配置操作请参考对应存储型号的产品文档。
+
+1.  准备存储后端配置文件，如backend.yaml。
+
+    ```
+    storage: "oceanstor-san"
+    name: "backend-active"
+    namespace: "huawei-csi"
+    urls:
+      - "https://192.168.129.155:8088"
+    pools:
+      - "StoragePool001"
+    hyperMetroDomain: "BlockHyperMetroDomain"
+    metroBackend: "backend-standby"
+    parameters:
+      protocol: "fc"
+    maxClientThreads: "30"
+    ---
+    storage: "oceanstor-san"
+    name: "backend-standby"
+    namespace: "huawei-csi"
+    urls:
+      - "https://192.168.129.157:8088"
+    pools:
+      - "StoragePool001"
+    hyperMetroDomain: "BlockHyperMetroDomain"
+    metroBackend: "backend-active"
+    parameters:
+      protocol: "fc"
+    maxClientThreads: "30"
+    ```
+
+2.  执行以下命令创建存储后端。
+
+    ```
+    oceanctl create backend -f /path/to/backend.yaml -i yaml
+    ```
+
+    命令结果示例如下：
+
+    ```
+    NUMBER  CONFIGURED    NAME              STORAGE              URLS                
+    1       false         backend-active    oceanstor-san        https://192.168.129.155:8088 
+    2       false         backend-standby   oceanstor-san        https://192.168.129.157:8088 
+    Please enter the backend number to configure (Enter 'exit' to exit):
+    ```
+
+3.  分别输入待创建后端序号，并输入账号密码。
+
+    ```
+    Please enter the backend number to configure (Enter 'exit' to exit):1
+    Please enter this backend user name: user1
+    Please enter this backend password:
+    
+    Backend backend-standby is configured
+    NUMBER  CONFIGURED    NAME              STORAGE              URLS               
+    1       true          backend-active    oceanstor-san        https://192.168.129.155:8088 
+    2       true          backend-standby   oceanstor-san        https://192.168.129.157:8088 
+    Please enter the backend number to configure (Enter 'exit' to exit):
+    ```
+
+4.  检查存储后端创建结果。
+
+    ```
+    oceanctl get backend
+    ```
+
+    命令结果示例如下，后端状态为"Bound" 则创建成功。
+
+    ```
+    NAMESPACE     NAME              PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    huawei-csi    backend-active    fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.155:8088   
+    huawei-csi    backend-standby   fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088 
     ```
 

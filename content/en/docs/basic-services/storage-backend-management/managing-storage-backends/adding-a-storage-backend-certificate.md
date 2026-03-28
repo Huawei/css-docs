@@ -5,6 +5,8 @@ description:
 weight: 4
 ---
 
+CSI allows you to add a storage certificate to use the TLS/SSL protocol to encrypt data transmission channels, improving the security of communication with storage devices.
+
 ## Prerequisites{#section414814741510}
 
 A certificate has been created. Take OceanStor Dorado as an example. For details about how to create a certificate,  [click here](https://support.huawei.com/hedex/hdx.do?docid=EDOC1100214756&id=EN-US_TOPIC_0000001595814228&lang=en).
@@ -22,8 +24,8 @@ A certificate has been created. Take OceanStor Dorado as an example. For details
 
     ```
     NAMESPACE     NAME         PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
-    huawei-csi    backend-1    roce        oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
-    huawei-csi    backend-2    roce        oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088  
+    huawei-csi    backend-1    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    huawei-csi    backend-2    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088  
     ```
 
 3.  Run the following command to create a certificate for the specified storage backend.

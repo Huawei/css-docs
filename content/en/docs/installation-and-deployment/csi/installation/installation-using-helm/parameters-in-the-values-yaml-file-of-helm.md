@@ -32,7 +32,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633715710454"><a name="en-us_topic_0000001324610777_p1633715710454"></a><a name="en-us_topic_0000001324610777_p1633715710454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.10.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.11.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.10.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.11.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.10.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.11.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.10.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.11.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p4337185713453"><a name="en-us_topic_0000001324610777_p4337185713453"></a><a name="en-us_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -68,7 +68,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633725724512"><a name="en-us_topic_0000001324610777_p1633725724512"></a><a name="en-us_topic_0000001324610777_p1633725724512"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1733785714453"><a name="en-us_topic_0000001324610777_p1733785714453"></a><a name="en-us_topic_0000001324610777_p1733785714453"></a><span id="text9419635285"><a name="text9419635285"></a><a name="text9419635285"></a>registry.k8s.io/sig-storage/livenessprobe:v2.12.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1733785714453"><a name="en-us_topic_0000001324610777_p1733785714453"></a><a name="en-us_topic_0000001324610777_p1733785714453"></a><span id="text9419635285"><a name="text9419635285"></a><a name="text9419635285"></a>registry.k8s.io/sig-storage/livenessprobe:v2.15.0</span></p>
 </td>
 </tr>
 <tr id="row345374716195"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p333755715453"><a name="en-us_topic_0000001324610777_p333755715453"></a><a name="en-us_topic_0000001324610777_p333755715453"></a>images.sidecar.provisioner</p>
@@ -77,7 +77,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1033711577456"><a name="en-us_topic_0000001324610777_p1033711577456"></a><a name="en-us_topic_0000001324610777_p1033711577456"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p15337125716458"><a name="en-us_topic_0000001324610777_p15337125716458"></a><a name="en-us_topic_0000001324610777_p15337125716458"></a><span id="text01042496818"><a name="text01042496818"></a><a name="text01042496818"></a>registry.k8s.io/sig-storage/csi-provisioner:v3.6.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p15337125716458"><a name="en-us_topic_0000001324610777_p15337125716458"></a><a name="en-us_topic_0000001324610777_p15337125716458"></a><span id="text01042496818"><a name="text01042496818"></a><a name="text01042496818"></a>registry.k8s.io/sig-storage/csi-provisioner:v5.2.0</span></p>
 </td>
 </tr>
 <tr id="row145324715192"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p19337155744517"><a name="en-us_topic_0000001324610777_p19337155744517"></a><a name="en-us_topic_0000001324610777_p19337155744517"></a>images.sidecar.attacher</p>
@@ -86,7 +86,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p18337155714518"><a name="en-us_topic_0000001324610777_p18337155714518"></a><a name="en-us_topic_0000001324610777_p18337155714518"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p7337457134516"><a name="en-us_topic_0000001324610777_p7337457134516"></a><a name="en-us_topic_0000001324610777_p7337457134516"></a><span id="text1381095717816"><a name="text1381095717816"></a><a name="text1381095717816"></a>registry.k8s.io/sig-storage/csi-attacher:v4.4.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p7337457134516"><a name="en-us_topic_0000001324610777_p7337457134516"></a><a name="en-us_topic_0000001324610777_p7337457134516"></a><span id="text1381095717816"><a name="text1381095717816"></a><a name="text1381095717816"></a>registry.k8s.io/sig-storage/csi-attacher:v4.8.0</span></p>
 </td>
 </tr>
 <tr id="row94532047111915"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p13337175711459"><a name="en-us_topic_0000001324610777_p13337175711459"></a><a name="en-us_topic_0000001324610777_p13337175711459"></a>images.sidecar.resizer</p>
@@ -95,7 +95,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p93375572452"><a name="en-us_topic_0000001324610777_p93375572452"></a><a name="en-us_topic_0000001324610777_p93375572452"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p153371257184518"><a name="en-us_topic_0000001324610777_p153371257184518"></a><a name="en-us_topic_0000001324610777_p153371257184518"></a><span id="text11193167917"><a name="text11193167917"></a><a name="text11193167917"></a>registry.k8s.io/sig-storage/csi-resizer:v1.9.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p153371257184518"><a name="en-us_topic_0000001324610777_p153371257184518"></a><a name="en-us_topic_0000001324610777_p153371257184518"></a><span id="text11193167917"><a name="text11193167917"></a><a name="text11193167917"></a>registry.k8s.io/sig-storage/csi-resizer:v1.13.2</span></p>
 </td>
 </tr>
 <tr id="row9453124771918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p833785764516"><a name="en-us_topic_0000001324610777_p833785764516"></a><a name="en-us_topic_0000001324610777_p833785764516"></a>images.sidecar.snapshotter</p>
@@ -104,7 +104,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1833765712454"><a name="en-us_topic_0000001324610777_p1833765712454"></a><a name="en-us_topic_0000001324610777_p1833765712454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1033755713457"><a name="en-us_topic_0000001324610777_p1033755713457"></a><a name="en-us_topic_0000001324610777_p1033755713457"></a><span id="text101211917799"><a name="text101211917799"></a><a name="text101211917799"></a>registry.k8s.io/sig-storage/csi-snapshotter:v6.3.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1033755713457"><a name="en-us_topic_0000001324610777_p1033755713457"></a><a name="en-us_topic_0000001324610777_p1033755713457"></a><span id="text101211917799"><a name="text101211917799"></a><a name="text101211917799"></a>registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0</span></p>
 </td>
 </tr>
 <tr id="row196140122014"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p10337557174514"><a name="en-us_topic_0000001324610777_p10337557174514"></a><a name="en-us_topic_0000001324610777_p10337557174514"></a>images.sidecar.snapshotController</p>
@@ -113,7 +113,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p10337457134511"><a name="en-us_topic_0000001324610777_p10337457134511"></a><a name="en-us_topic_0000001324610777_p10337457134511"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p0337195724520"><a name="en-us_topic_0000001324610777_p0337195724520"></a><a name="en-us_topic_0000001324610777_p0337195724520"></a><span id="text28281726693"><a name="text28281726693"></a><a name="text28281726693"></a>registry.k8s.io/sig-storage/snapshot-controller:v6.3.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p0337195724520"><a name="en-us_topic_0000001324610777_p0337195724520"></a><a name="en-us_topic_0000001324610777_p0337195724520"></a><span id="text28281726693"><a name="text28281726693"></a><a name="text28281726693"></a>registry.k8s.io/sig-storage/snapshot-controller:v8.2.0</span></p>
 </td>
 </tr>
 <tr id="row84580467201"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p10337165714454"><a name="en-us_topic_0000001324610777_p10337165714454"></a><a name="en-us_topic_0000001324610777_p10337165714454"></a>images.sidecar.registrar</p>
@@ -122,7 +122,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p83371057164510"><a name="en-us_topic_0000001324610777_p83371057164510"></a><a name="en-us_topic_0000001324610777_p83371057164510"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1833711578459"><a name="en-us_topic_0000001324610777_p1833711578459"></a><a name="en-us_topic_0000001324610777_p1833711578459"></a><span id="text116171043295"><a name="text116171043295"></a><a name="text116171043295"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.9.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1833711578459"><a name="en-us_topic_0000001324610777_p1833711578459"></a><a name="en-us_topic_0000001324610777_p1833711578459"></a><span id="text116171043295"><a name="text116171043295"></a><a name="text116171043295"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0</span></p>
 </td>
 </tr>
 </tbody>
@@ -174,7 +174,7 @@ The controller parameters are used to configure the huawei-csi-controller compon
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p17366114313450"><a name="p17366114313450"></a><a name="p17366114313450"></a>The corresponding provisioner parameter name is <strong id="b561312220596"><a name="b561312220596"></a><a name="b561312220596"></a>--volume-name-prefix</strong>.</p>
 <p id="p9406581769"><a name="p9406581769"></a><a name="p9406581769"></a>It is recommended that the prefix contain no more than 20 characters.</p>
 <p id="p828611423316"><a name="p828611423316"></a><a name="p828611423316"></a>For details, see <a href="https://github.com/kubernetes-csi/external-provisioner/tree/release-3.0" target="_blank" rel="noopener noreferrer">Configuring the PV Name Prefix</a>.</p>
-<a name="ul517195262412"></a><a name="ul517195262412"></a><ul id="ul517195262412"><li>If the connected backend is OceanStor V5 SAN storage, it is recommended that the prefix contain a maximum of 5 characters.</li><li>If the connected backend is OceanStor V5 NAS storage, the prefix can contain only lowercase letters, hyphens (-), and digits.</li><li>If the connected backend is OceanStor Dorado or OceanStor storage, the prefix can contain only lowercase letters, hyphens (-), and digits.</li><li>If the connected backend is OceanStor Pacific series storage, the prefix can contain a maximum of 58 characters, including only letters, digits, underscores (_), hyphens (-), and periods (.).</li><li>If the connected backend is FusionStorage Block, the prefix can contain a maximum of 58 characters, including only letters, digits, underscores (_), and hyphens (-).</li></ul>
+<a name="ul517195262412"></a><a name="ul517195262412"></a><ul id="ul517195262412"><li>If the connected backend is OceanStor V5 SAN storage, it is recommended that the prefix contain a maximum of 5 characters.</li><li>If the connected backend is OceanStor V5 NAS storage, the prefix can contain only lowercase letters, hyphens (-), and digits.</li><li>If the connected backend is OceanStor Dorado, OceanStor, OceanDisk, or OceanStor A series storage, the prefix can contain only lowercase letters, hyphens (-), and digits.</li><li>If the connected backend is OceanStor Pacific series storage, the prefix can contain a maximum of 58 characters, including only letters, digits, underscores (_), hyphens (-), and periods (.).</li><li>If the connected backend is FusionStorage Block, the prefix can contain a maximum of 58 characters, including only letters, digits, underscores (_), and hyphens (-).</li></ul>
 </td>
 </tr>
 <tr id="row17543658153417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p11543175819348"><a name="p11543175819348"></a><a name="p11543175819348"></a>controller.webhookPort</p>
@@ -491,7 +491,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 <tr id="row481610211432"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p5337105710453"><a name="en-us_topic_0000001324610777_p5337105710453"></a><a name="en-us_topic_0000001324610777_p5337105710453"></a>csiDriver.scsiMultipathType</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0000001324610777_p375115112223"><a name="en-us_topic_0000001324610777_p375115112223"></a><a name="en-us_topic_0000001324610777_p375115112223"></a>Multipathing software used when the storage protocol is <strong id="b189936549396"><a name="b189936549396"></a><a name="b189936549396"></a>fc</strong> or <strong id="b69930545398"><a name="b69930545398"></a><a name="b69930545398"></a>iscsi</strong>. The following parameter values can be configured:</p>
-<a name="en-us_topic_0000001324610777_ul260012531222"></a><a name="en-us_topic_0000001324610777_ul260012531222"></a><ul id="en-us_topic_0000001324610777_ul260012531222"><li>DM-multipath</li><li>HW-UltraPath</li><li>HW-UltraPath-NVMe</li></ul>
+<a name="en-us_topic_0000001324610777_ul260012531222"></a><a name="en-us_topic_0000001324610777_ul260012531222"></a><ul id="en-us_topic_0000001324610777_ul260012531222"><li>DM-multipath</li><li>HW-UltraPath</li><li><strong id="b3663145123911"><a name="b3663145123911"></a><a name="b3663145123911"></a>HW-UltraPath-NVMe</strong></li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="en-us_topic_0000001324610777_p4337155712454"><a name="en-us_topic_0000001324610777_p4337155712454"></a><a name="en-us_topic_0000001324610777_p4337155712454"></a>Mandatory when <strong id="b1590511104016"><a name="b1590511104016"></a><a name="b1590511104016"></a>volumeUseMultipath</strong> is set to <strong id="b1190619118404"><a name="b1190619118404"></a><a name="b1190619118404"></a>true</strong>.</p>
 </td>
@@ -502,13 +502,14 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </tr>
 <tr id="row98161421144310"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p634703417465"><a name="en-us_topic_0000001324610777_p634703417465"></a><a name="en-us_topic_0000001324610777_p634703417465"></a>csiDriver.nvmeMultipathType</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0000001324610777_p9347113414463"><a name="en-us_topic_0000001324610777_p9347113414463"></a><a name="en-us_topic_0000001324610777_p9347113414463"></a>Multipathing software used when the storage protocol is <strong id="b1613614119419"><a name="b1613614119419"></a><a name="b1613614119419"></a>roce</strong> or <strong id="b113616194118"><a name="b113616194118"></a><a name="b113616194118"></a>fc-nvme</strong>. Only <strong id="b37779916416"><a name="b37779916416"></a><a name="b37779916416"></a>HW-UltraPath-NVMe</strong> is supported.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="en-us_topic_0000001324610777_p9347113414463"><a name="en-us_topic_0000001324610777_p9347113414463"></a><a name="en-us_topic_0000001324610777_p9347113414463"></a>Multipathing software used when the storage protocol is NVMe. The following parameter values can be configured:</p>
+<a name="ul119740431653"></a><a name="ul119740431653"></a><ul id="ul119740431653"><li><strong id="b18253651113914"><a name="b18253651113914"></a><a name="b18253651113914"></a>HW-UltraPath-NVMe</strong></li><li><strong id="b134931057123919"><a name="b134931057123919"></a><a name="b134931057123919"></a>NVMe-Native</strong></li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="en-us_topic_0000001324610777_p53471934114612"><a name="en-us_topic_0000001324610777_p53471934114612"></a><a name="en-us_topic_0000001324610777_p53471934114612"></a>Mandatory when <strong id="b10123217151614"><a name="b10123217151614"></a><a name="b10123217151614"></a>volumeUseMultipath</strong> is set to <strong id="b10124161751618"><a name="b10124161751618"></a><a name="b10124161751618"></a>true</strong>.</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p1434717343465"><a name="en-us_topic_0000001324610777_p1434717343465"></a><a name="en-us_topic_0000001324610777_p1434717343465"></a>HW-UltraPath-NVMe</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p1434717343465"><a name="en-us_topic_0000001324610777_p1434717343465"></a><a name="en-us_topic_0000001324610777_p1434717343465"></a><strong id="b19664165120391"><a name="b19664165120391"></a><a name="b19664165120391"></a>HW-UltraPath-NVMe</strong></p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p199331895507"><a name="p199331895507"></a><a name="p199331895507"></a>-</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><a name="ul13355942470"></a><a name="ul13355942470"></a><ul id="ul13355942470"><li>roce-nvme and fc-nvme support only <strong id="b175951628405"><a name="b175951628405"></a><a name="b175951628405"></a>HW-UltraPath-NVMe</strong>.</li><li>The tcp-nvme protocol supports only NVMe-Native.</li></ul>
 </td>
 </tr>
 <tr id="row1081711215431"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p53476342464"><a name="en-us_topic_0000001324610777_p53476342464"></a><a name="en-us_topic_0000001324610777_p53476342464"></a>csiDriver.scanVolumeTimeout</p>
@@ -535,21 +536,21 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </tr>
 <tr id="row119848396573"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p11985639165716"><a name="p11985639165716"></a><a name="p11985639165716"></a>csiDriver.enableRoCEConnect</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p1098518397575"><a name="p1098518397575"></a><a name="p1098518397575"></a>Whether to enable automatic disk scanning for CSI when the RoCE protocol is used.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p1098518397575"><a name="p1098518397575"></a><a name="p1098518397575"></a>Whether to enable CSI automatic disk scanning when the roce-nvme or tcp-nvme protocol is used.</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p49852039145718"><a name="p49852039145718"></a><a name="p49852039145718"></a>No</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p89851639165717"><a name="p89851639165717"></a><a name="p89851639165717"></a>true</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p798563914572"><a name="p798563914572"></a><a name="p798563914572"></a>If an external tool is used to establish RoCE connections, you can set this parameter to <strong id="b7760112513562"><a name="b7760112513562"></a><a name="b7760112513562"></a>false</strong>. For example, if the SNSD automatic connection function is enabled on storage devices, you can set this parameter to <strong id="b227264915716"><a name="b227264915716"></a><a name="b227264915716"></a>false</strong>.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p798563914572"><a name="p798563914572"></a><a name="p798563914572"></a>If an external tool is used to establish an NVMe_over_RoCE or NVMe_over_TCP connection, set this parameter to <strong id="b10757113315310"><a name="b10757113315310"></a><a name="b10757113315310"></a>false</strong>. For example, if the SNSD automatic connection function is enabled on storage devices, you can set this parameter to <strong id="b227264915716"><a name="b227264915716"></a><a name="b227264915716"></a>false</strong>.</p>
 </td>
 </tr>
 <tr id="row73274310332"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1460663514512"><a name="p1460663514512"></a><a name="p1460663514512"></a>csiDriver.allPathOnline</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p46061935154513"><a name="p46061935154513"></a><a name="p46061935154513"></a>Whether to check whether the number of paths aggregated by DM-Multipath is equal to the actual number of online paths. The following parameter values can be configured:</p>
-<a name="ul107341114134816"></a><a name="ul107341114134816"></a><ul id="ul107341114134816"><li><strong id="b219535212295"><a name="b219535212295"></a><a name="b219535212295"></a>true</strong>: The drive letter mounting condition is met only when the number of paths aggregated by DM-Multipath is equal to the actual number of online paths.</li><li><strong id="b163220514303"><a name="b163220514303"></a><a name="b163220514303"></a>false</strong>: By default, the number of paths aggregated by DM-Multipath is not checked. As long as virtual drive letters are generated upon aggregation, the drive letter mounting condition is met.</li></ul>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p46061935154513"><a name="p46061935154513"></a><a name="p46061935154513"></a>Whether to check that the number of paths aggregated by DM-Multipath or NVMe-Native is equal to the actual number of online paths. The following parameter values can be configured:</p>
+<a name="ul107341114134816"></a><a name="ul107341114134816"></a><ul id="ul107341114134816"><li><strong id="b219535212295"><a name="b219535212295"></a><a name="b219535212295"></a>true</strong>: The drive letter mounting condition is met only when the number of paths aggregated by multipathing software is equal to the actual number of online paths.</li><li><strong id="b163220514303"><a name="b163220514303"></a><a name="b163220514303"></a>false</strong>: By default, the number of paths aggregated by multipathing software is not checked. As long as virtual drive letters are generated upon aggregation, the drive letter mounting condition is met.</li></ul>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p4606133516456"><a name="p4606133516456"></a><a name="p4606133516456"></a>This parameter is mandatory when <strong id="b11700644123220"><a name="b11700644123220"></a><a name="b11700644123220"></a>csiDriver.scsiMultipathType</strong> is set to <strong id="b370118444322"><a name="b370118444322"></a><a name="b370118444322"></a>DM-multipath</strong>.</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p4606133516456"><a name="p4606133516456"></a><a name="p4606133516456"></a>This parameter is mandatory when <strong id="b12891115134211"><a name="b12891115134211"></a><a name="b12891115134211"></a>csiDriver.scsiMultipathType</strong> is set to <strong id="b951620544421"><a name="b951620544421"></a><a name="b951620544421"></a>DM-multipath</strong> or <strong id="b836675715424"><a name="b836675715424"></a><a name="b836675715424"></a>csiDriver.nvmeMultipathType</strong> is set to <strong id="b1447613597427"><a name="b1447613597427"></a><a name="b1447613597427"></a>NVMe-Native</strong>.</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p960673554519"><a name="p960673554519"></a><a name="p960673554519"></a>false</p>
 </td>
@@ -634,7 +635,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103486342462"><a name="en-us_topic_0000001324610777_p103486342462"></a><a name="en-us_topic_0000001324610777_p103486342462"></a>file</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b85360405"><a name="b85360405"></a><a name="b85360405"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1005746855"><a name="b1005746855"></a><a name="b1005746855"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
 <p id="p1676211161707"><a name="p1676211161707"></a><a name="p1676211161707"></a>When the value is <strong id="b134821913194316"><a name="b134821913194316"></a><a name="b134821913194316"></a>console</strong>, logs are retained in the temporary space of the Pod where CSI is located. When the Pod where CSI is located is destroyed, the logs are also destroyed.</p>
 </td>
 </tr>
@@ -681,6 +682,31 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p621572294611"><a name="p621572294611"></a><a name="p621572294611"></a>9</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p493411995018"><a name="p493411995018"></a><a name="p493411995018"></a>-</p>
+</td>
+</tr>
+<tr id="row139961733287"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p39979331481"><a name="p39979331481"></a><a name="p39979331481"></a>csiDriver.reportNodeIP</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p199971133488"><a name="p199971133488"></a><a name="p199971133488"></a>Whether to report the node IP address.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p149971633082"><a name="p149971633082"></a><a name="p149971633082"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p119973331189"><a name="p119973331189"></a><a name="p119973331189"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p19997133316810"><a name="p19997133316810"></a><a name="p19997133316810"></a>After this item is enabled, the CSI node will automatically report the node IP address.</p>
+</td>
+</tr>
+<tr id="row8792111991412"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p84391039101412"><a name="p84391039101412"></a><a name="p84391039101412"></a>csiDriver.enablePerNodeSecret</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p11792141941419"><a name="p11792141941419"></a><a name="p11792141941419"></a>Whether to create a Secret for each node.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p14792141917143"><a name="p14792141917143"></a><a name="p14792141917143"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p779218196141"><a name="p779218196141"></a><a name="p779218196141"></a>fasle</p>
+</td>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p15792219121412"><a name="p15792219121412"></a><a name="p15792219121412"></a>By default, the information required by CSI on all nodes is saved to a Secret. After this function is enabled, an independent Secret is created for each node to save information.</p>
+<div class="notice" id="note1796210117254"><a name="note1796210117254"></a><a name="note1796210117254"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p4613191314526"><a name="p4613191314526"></a><a name="p4613191314526"></a>After this function is enabled, the following conditions must be met:</p>
+<a name="ul71991022115319"></a><a name="ul71991022115319"></a><ul id="ul71991022115319"><li>The K8s node name must meet the K8s naming rules in <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names" target="_blank" rel="noopener noreferrer">Names</a>.</li><li>The storage backend whose name is the same as that of the K8s node cannot exist in the cluster.</li></ul>
+</div></div>
 </td>
 </tr>
 </tbody>
@@ -791,7 +817,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 <tr id="row890414451319"><td class="cellrowborder" valign="top" width="19%" headers="mcps1.2.6.1.1 "><p id="p498831161311"><a name="p498831161311"></a><a name="p498831161311"></a>CSIDriverObject.fsGroupPolicy</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.2 "><p id="p1298810111139"><a name="p1298810111139"></a><a name="p1298810111139"></a>Whether the ownership and permissions of a basic volume can be changed before the volume is mounted. The following parameter values can be configured:</p>
-<a name="ul1988191110133"></a><a name="ul1988191110133"></a><ul id="ul1988191110133"><li><strong id="b11757125816481"><a name="b11757125816481"></a><a name="b11757125816481"></a>"ReadWriteOnceWithFSType"</strong>: The volume ownership and permission can be changed only when <strong id="b153739854918"><a name="b153739854918"></a><a name="b153739854918"></a>fsType</strong> is specified and <strong id="b10473619174916"><a name="b10473619174916"></a><a name="b10473619174916"></a>accessModes</strong> of the volume contains <strong id="b18125727114913"><a name="b18125727114913"></a><a name="b18125727114913"></a>ReadWriteOnce</strong>.</li><li><strong id="b921173212492"><a name="b921173212492"></a><a name="b921173212492"></a>"File"</strong>: Kubernetes can use <strong id="b8999113718206"><a name="b8999113718206"></a><a name="b8999113718206"></a>fsGroup</strong> to change the permissions and ownership of a volume to match <strong id="b1929510499201"><a name="b1929510499201"></a><a name="b1929510499201"></a>fsGroup</strong> requested by a user in the Pod security policy, regardless of <strong id="b4272343218"><a name="b4272343218"></a><a name="b4272343218"></a>fsGroup</strong> or <strong id="b1678393019209"><a name="b1678393019209"></a><a name="b1678393019209"></a>accessModes</strong>.</li><li><strong id="b338051305014"><a name="b338051305014"></a><a name="b338051305014"></a>"None"</strong>: A volume is mounted without any change.</li><li><strong id="b146621687387"><a name="b146621687387"></a><a name="b146621687387"></a>"null"</strong>: The <strong id="b1335918135381"><a name="b1335918135381"></a><a name="b1335918135381"></a>fsGroupPolicy</strong> parameter is not set.</li></ul>
+<a name="ul1988191110133"></a><a name="ul1988191110133"></a><ul id="ul1988191110133"><li><strong id="b11757125816481"><a name="b11757125816481"></a><a name="b11757125816481"></a>"ReadWriteOnceWithFSType"</strong>: The volume ownership and permission can be changed only when <strong id="b153739854918"><a name="b153739854918"></a><a name="b153739854918"></a>fsType</strong> is specified and <strong id="b10473619174916"><a name="b10473619174916"></a><a name="b10473619174916"></a>acfsTypecessModes</strong> of the volume contains <strong id="b18125727114913"><a name="b18125727114913"></a><a name="b18125727114913"></a>ReadWriteOnce</strong>.</li><li><strong id="b921173212492"><a name="b921173212492"></a><a name="b921173212492"></a>"File"</strong>: Kubernetes can use <strong id="b8999113718206"><a name="b8999113718206"></a><a name="b8999113718206"></a>fsGroup</strong> to change the permissions and ownership of a volume to match <strong id="b1929510499201"><a name="b1929510499201"></a><a name="b1929510499201"></a>fsGroup</strong> requested by a user in the Pod security policy, regardless of <strong id="b4272343218"><a name="b4272343218"></a><a name="b4272343218"></a>fsGroup</strong> or <strong id="b1678393019209"><a name="b1678393019209"></a><a name="b1678393019209"></a>accessModes</strong>.</li><li><strong id="b338051305014"><a name="b338051305014"></a><a name="b338051305014"></a>"None"</strong>: A volume is mounted without any change.</li><li><strong id="b146621687387"><a name="b146621687387"></a><a name="b146621687387"></a>"null"</strong>: The <strong id="b1335918135381"><a name="b1335918135381"></a><a name="b1335918135381"></a>fsGroupPolicy</strong> parameter is not set.</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p159881411191317"><a name="p159881411191317"></a><a name="p159881411191317"></a>No</p>
 </td>

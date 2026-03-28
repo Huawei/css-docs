@@ -87,7 +87,7 @@ This section describes how to create a storage backend of the NVMe over RoCE pro
 </td>
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p109191715115118"><a name="p109191715115118"></a><a name="p109191715115118"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>The value is fixed to <strong id="b8491614290"><a name="b8491614290"></a><a name="b8491614290"></a>roce</strong>.</li><li>Ensure that the nvme-cli tool has been installed on the compute node to be connected. The supported nvme-cli tool version is 1.9 and later.</li></ul>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>The value is fixed to <strong id="b65144581436"><a name="b65144581436"></a><a name="b65144581436"></a>roce-nvme</strong> or <strong id="b29024854420"><a name="b29024854420"></a><a name="b29024854420"></a>roce</strong> (<strong id="b11966612194410"><a name="b11966612194410"></a><a name="b11966612194410"></a>roce</strong> is deprecated).</li><li>Ensure that the nvme-cli tool has been installed on the compute node to be connected. The supported nvme-cli tool version is 1.9 and later.</li></ul>
 </td>
 </tr>
 <tr id="row61271618121913"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p12730821724"><a name="en-us_topic_0000001324610777_p12730821724"></a><a name="en-us_topic_0000001324610777_p12730821724"></a>parameters.portals</p>
@@ -152,7 +152,7 @@ This section describes how to create a storage backend of the NVMe over RoCE pro
     pools:
       - "StoragePool001"
     parameters:
-      protocol: "roce"
+      protocol: "roce-nvme"
       portals:
         - "10.10.30.20"
         - "10.10.30.21"
@@ -196,6 +196,6 @@ This section describes how to create a storage backend of the NVMe over RoCE pro
 
     ```
     NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
-    huawei-csi    backend-demo    roce        oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    huawei-csi    backend-demo    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 

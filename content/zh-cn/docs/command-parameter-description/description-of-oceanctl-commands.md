@@ -135,7 +135,7 @@ weight: 1
 -   执行以下命令删除指定命名空间下存储后端。
 
     ```
-    oceanctl delete backend <backend-name...> -n <namespace>
+    oceanctl delete backend <backend-name> -n <namespace>
     ```
 
 ## 创建存储后端证书{#section16801122125214}

@@ -12,22 +12,28 @@ This section describes how to uninstall the CSI-dependent component services.
 Secret object  **huawei-csi-host-info**  stores the initiator information about each node in the cluster, for example, iSCSI initiators. When you run the  **helm uninstall**  command, the resource will not be uninstalled. To uninstall the resource, perform the following steps:
 
 1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
-2.  Run the following command to delete the Secret object.  _huawei-csi-host-info_  is the name of the Secret object, and  _huawei-csi_  is the namespace where the Secret object is located.
+2.  <a name="li1648412587587"></a>Run the following command to check whether the Secret object exists.  **huawei-csi**  is the namespace where the Secret object is located.
+
+    ```
+    kubectl get secret -n huawei-csi -l secret-provisioner=csi.huawei.com
+    ```
+
+3.  If the Secret exists in  [2](#li1648412587587), run the following command to delete the Secret:
+
+    ```
+    kubectl delete secret -n huawei-csi -l secret-provisioner=csi.huawei.com
+    ```
+
+4.  <a name="li93910361022"></a>Run the following command to check whether the Secret object exists.  **huawei-csi**  is the namespace where the Secret object is located.
+
+    ```
+    kubectl get secret huawei-csi-host-info -n huawei-csi
+    ```
+
+5.  If the Secret exists in  [4](#li93910361022), run the following command to uninstall the Secret object.  **huawei-csi-host-info**  is the name of the Secret object.
 
     ```
     kubectl delete secret huawei-csi-host-info -n huawei-csi
-    ```
-
-3.  Run the following command to check whether the Secret object is successfully uninstalled.
-
-    ```
-    kubectl get secret huawei-csi-host-info -n huawei-csi 
-    ```
-
-    The following is an example of the command output. If  **NotFound**  is displayed in the command output, the  **huawei-csi-host-info**  object is successfully uninstalled.
-
-    ```yaml
-    Error from server (NotFound): secrets "huawei-csi-host-info" not found
     ```
 
 ## Uninstalling a Webhook Resource{#section871155813014}
@@ -114,7 +120,7 @@ When huawei-csi-controller is deployed in multi-copy mode, a Lease resource is g
 3.  Run the following command to uninstall the Lease resource.
 
     ```
-    kubectl delete lease -n huawei-csi csi-huawei-com external-attacher-leader-csi-huawei-com external-resizer-csi-huawei-com external-snapshotter-leader-csi-
+    kubectl delete lease -n huawei-csi csi-huawei-com external-attacher-leader-csi-huawei-com external-resizer-csi-huawei-com external-snapshotter-leader-csi-huawei-com snapshot-controller-leader storage-backend-controller huawei-csi-extender
     ```
 
 4.  Run the following command to check whether the uninstallation is successful.

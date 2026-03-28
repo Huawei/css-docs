@@ -23,7 +23,7 @@ weight: 2
 </tr>
 <tr id="en-us_topic_0000002392332856_row206241757125114"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0000002392332856_p3624957155117"><a name="en-us_topic_0000002392332856_p3624957155117"></a><a name="en-us_topic_0000002392332856_p3624957155117"></a>Red Hat OpenShift Container Platform</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.19 (only the NFS protocol is supported)</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0000002392332856_p126241057175119"><a name="en-us_topic_0000002392332856_p126241057175119"></a><a name="en-us_topic_0000002392332856_p126241057175119"></a>4.19 and 4.20 (only the NFS protocol is supported)</p>
 </td>
 </tr>
 </tbody>

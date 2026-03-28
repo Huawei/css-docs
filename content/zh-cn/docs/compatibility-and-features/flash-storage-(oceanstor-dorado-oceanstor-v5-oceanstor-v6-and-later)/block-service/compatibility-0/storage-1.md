@@ -23,12 +23,12 @@ weight: 1
 </tr>
 <tr id="zh-cn_topic_0000002392172984_row096032118493"><td class="cellrowborder" valign="top" width="49.97%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p112034513115"><a name="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p112034513115"></a><a name="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p112034513115"></a>OceanStor</p>
 </td>
-<td class="cellrowborder" valign="top" width="50.029999999999994%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p612014452314"><a name="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p612014452314"></a><a name="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p612014452314"></a>6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00, V700R001C10</p>
+<td class="cellrowborder" valign="top" width="50.029999999999994%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p612014452314"><a name="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p612014452314"></a><a name="zh-cn_topic_0000002392172984_zh-cn_topic_0150885201_p612014452314"></a>6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00, V700R001C10,&nbsp;V700R001C20</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000002392172984_row17366171818495"><td class="cellrowborder" valign="top" width="49.97%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0000002392172984_p193661118204917"><a name="zh-cn_topic_0000002392172984_p193661118204917"></a><a name="zh-cn_topic_0000002392172984_p193661118204917"></a>OceanStor Dorado</p>
 </td>
-<td class="cellrowborder" valign="top" width="50.029999999999994%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0000002392172984_p3366618184918"><a name="zh-cn_topic_0000002392172984_p3366618184918"></a><a name="zh-cn_topic_0000002392172984_p3366618184918"></a>6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00, V700R001C10</p>
+<td class="cellrowborder" valign="top" width="50.029999999999994%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0000002392172984_p3366618184918"><a name="zh-cn_topic_0000002392172984_p3366618184918"></a><a name="zh-cn_topic_0000002392172984_p3366618184918"></a>6.1.0, 6.1.2, 6.1.3, 6.1.5, 6.1.6, 6.1.7, 6.1.8, V700R001C00, V700R001C10,&nbsp;V700R001C20</p>
 </td>
 </tr>
 </tbody>

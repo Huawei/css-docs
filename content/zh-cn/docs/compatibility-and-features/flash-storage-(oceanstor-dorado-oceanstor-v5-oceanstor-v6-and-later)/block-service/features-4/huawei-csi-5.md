@@ -22,9 +22,9 @@ weight: 1
 </td>
 <td class="cellrowborder" rowspan="3" valign="top" width="21.98219821982198%" headers="mcps1.2.5.1.2 "><p id="p86732141719"><a name="p86732141719"></a><a name="p86732141719"></a>FC/iSCSI</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="29.282928292829286%" headers="mcps1.2.5.1.3 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC</p>
+<td class="cellrowborder" rowspan="3" valign="top" width="29.282928292829286%" headers="mcps1.2.5.1.3 "><p id="p12996173920456"><a name="p12996173920456"></a><a name="p12996173920456"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC/NVMe over TCP</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="28.542854285428543%" headers="mcps1.2.5.1.4 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC</p>
+<td class="cellrowborder" rowspan="3" valign="top" width="28.542854285428543%" headers="mcps1.2.5.1.4 "><p id="p115594419186"><a name="p115594419186"></a><a name="p115594419186"></a>FC/iSCSI/NVMe over RoCE/NVMe over FC/NVMe over TCP</p>
 </td>
 </tr>
 <tr id="row49961039174517"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p9996173974516"><a name="p9996173974516"></a><a name="p9996173974516"></a>Dynamic Provisioning</p>
@@ -92,7 +92,9 @@ weight: 1
 </tr>
 <tr id="row17943182222817"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p79432225287"><a name="p79432225287"></a><a name="p79432225287"></a>卷双活</p>
 </td>
-<td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>不支持</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>不支持</p>
+</td>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p38504018310"><a name="p38504018310"></a><a name="p38504018310"></a>支持</p>
 </td>
 </tr>
 <tr id="row8191849183619"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p81912491363"><a name="p81912491363"></a><a name="p81912491363"></a>存储多租户</p>
@@ -104,7 +106,8 @@ weight: 1
 </table>
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
+>-   使用iSCSI协议对接多框存储时，需要登录存储后台执行命令"change target\_name display\_mode mode=Full"，确保CSI从存储系统获取的目标IQN与实际的IQN保持一致。
 >-   若客户的容器平台部署在虚拟化平台上，CSI对接SAN存储时建议使用iSCSI协议。
 >-   若客户要求使用FC/NVMe over FC/NVMe over RoCE协议，需要对虚拟化平台进行特定配置，需客户侧的虚拟化团队提供技术支持。
->-   使用NVMe over RoCE或NVMe over FC时，支持的nvme-cli工具版本为1.9及以上，查询命令为：nvme version。
+>-   使用NVMe over RoCE或NVMe over FC时，支持的nvme-cli工具版本为1.9及以上；使用NVMe over TCP时，支持的nvme-cli工具版本为2.0及以上；查询命令为：nvme version。
 

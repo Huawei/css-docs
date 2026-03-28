@@ -88,7 +88,8 @@ weight: 1
 </table>
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
+>-   使用iSCSI协议对接多框存储时，需要登录存储后台执行命令"change target\_name display\_mode mode=Full"，确保CSI从存储系统获取的目标IQN与实际的IQN保持一致。
 >-   若客户的容器平台部署在虚拟化平台上，CSI对接SAN存储时建议使用iSCSI协议。
 >-   若客户要求使用FC/NVMe over FC/NVMe over RoCE协议，需要对虚拟化平台进行特定配置，需客户侧的虚拟化团队提供技术支持。
->-   使用NVMe over RoCE或NVMe over FC时，支持的nvme-cli工具版本为1.9及以上，查询命令为：nvme version。
+>-   使用NVMe over RoCE或NVMe over FC时，支持的nvme-cli工具版本为1.9及以上；使用NVMe over TCP时，支持的nvme-cli工具版本为2.0及以上；查询命令为：nvme version。
 

@@ -87,7 +87,7 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="6.8533385549246155%" headers="mcps1.2.6.1.4 "><p id="p109191715115118"><a name="p109191715115118"></a><a name="p109191715115118"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>固定填写：roce</li><li>请确保对接的计算节点已安装nvme-cli工具，并且nvme-cli工具版本在1.9及以上。</li></ul>
+<td class="cellrowborder" valign="top" width="34.9911885647151%" headers="mcps1.2.6.1.5 "><a name="ul555819319152"></a><a name="ul555819319152"></a><ul id="ul555819319152"><li>固定填写：roce-nvme, 或roce(已弃用)</li><li>请确保对接的计算节点已安装nvme-cli工具，并且nvme-cli工具版本在1.9及以上。</li></ul>
 </td>
 </tr>
 <tr id="row61271618121913"><td class="cellrowborder" valign="top" width="13.266105345604077%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001324610777_p12730821724"><a name="zh-cn_topic_0000001324610777_p12730821724"></a><a name="zh-cn_topic_0000001324610777_p12730821724"></a>parameters.portals</p>
@@ -152,7 +152,7 @@ weight: 3
     pools:
       - "StoragePool001"
     parameters:
-      protocol: "roce"
+      protocol: "roce-nvme"
       portals:
         - "10.10.30.20"
         - "10.10.30.21"
@@ -196,6 +196,6 @@ weight: 3
 
     ```
     NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
-    huawei-csi    backend-demo    roce        oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    huawei-csi    backend-demo    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 

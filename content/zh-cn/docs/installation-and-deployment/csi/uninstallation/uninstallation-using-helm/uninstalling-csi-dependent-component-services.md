@@ -12,22 +12,28 @@ weight: 3
 名称为huawei-csi-host-info的Secret对象中保存着集群中各个节点的启动器信息，例如iSCSI启动器。使用helm uninstall命令时不会卸载该资源，若需卸载该资源，请参考以下步骤：
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。
-2.  执行以下命令卸载Secret对象，其中huawei-csi-host-info是Secret对象的名称，huawei-csi是Secret对象所在的命名空间。
+2.  <a name="li1648412587587"></a>执行以下命令检查Secret对象是否存在，其中huawei-csi是Secret对象所在的命名空间
+
+    ```
+    kubectl get secret -n huawei-csi -l secret-provisioner=csi.huawei.com
+    ```
+
+3.  若步骤[2](#li1648412587587)中Secrte存在，执行以下命令删除Secret。
+
+    ```
+    kubectl delete secret -n huawei-csi -l secret-provisioner=csi.huawei.com
+    ```
+
+4.  <a name="li93910361022"></a>执行以下命令检查Secret对象是否存在，其中huawei-csi是Secret对象所在的命名空间
+
+    ```
+    kubectl get secret huawei-csi-host-info -n huawei-csi
+    ```
+
+5.  若步骤[4](#li93910361022)中Secret存在，执行以下命令卸载Secret对象，其中huawei-csi-host-info是Secret对象的名称。
 
     ```
     kubectl delete secret huawei-csi-host-info -n huawei-csi
-    ```
-
-3.  执行以下命令检查Secret对象是否卸载成功。
-
-    ```
-    kubectl get secret huawei-csi-host-info -n huawei-csi 
-    ```
-
-    命令结果示例如下，如果命令回显提示“NotFound”表示huawei-csi-host-info对象已成功卸载。
-
-    ```yaml
-    Error from server (NotFound): secrets "huawei-csi-host-info" not found
     ```
 
 ## 卸载Webhook资源{#section871155813014}
@@ -114,7 +120,7 @@ weight: 3
 3.  执行以下命令，卸载Lease资源。
 
     ```
-    kubectl delete lease -n huawei-csi csi-huawei-com external-attacher-leader-csi-huawei-com external-resizer-csi-huawei-com external-snapshotter-leader-csi-
+    kubectl delete lease -n huawei-csi csi-huawei-com external-attacher-leader-csi-huawei-com external-resizer-csi-huawei-com external-snapshotter-leader-csi-huawei-com snapshot-controller-leader storage-backend-controller huawei-csi-extender
     ```
 
 4.  执行以下命令，检查是否已成功卸载。

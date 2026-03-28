@@ -323,6 +323,24 @@ weight: 2
 <td class="cellrowborder" valign="top" width="30.836916308369155%" headers="mcps1.2.5.1.4 "><p id="p12576164017592"><a name="p12576164017592"></a><a name="p12576164017592"></a>查询租户信息</p>
 </td>
 </tr>
+<tr id="row149271424132312"><td class="cellrowborder" valign="top" width="21.897810218978098%" headers="mcps1.2.5.1.1 "><p id="p3806112312320"><a name="p3806112312320"></a><a name="p3806112312320"></a>hyper_metro_pair</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.95710428957104%" headers="mcps1.2.5.1.2 "><p id="p208062231232"><a name="p208062231232"></a><a name="p208062231232"></a>hyper_metro</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.30816918308169%" headers="mcps1.2.5.1.3 "><p id="p14806182313234"><a name="p14806182313234"></a><a name="p14806182313234"></a>读写</p>
+</td>
+<td class="cellrowborder" valign="top" width="30.836916308369155%" headers="mcps1.2.5.1.4 "><p id="p20806112319238"><a name="p20806112319238"></a><a name="p20806112319238"></a>创建块双活Pair</p>
+</td>
+</tr>
+<tr id="row9927182442316"><td class="cellrowborder" valign="top" width="21.897810218978098%" headers="mcps1.2.5.1.1 "><p id="p580692332316"><a name="p580692332316"></a><a name="p580692332316"></a>hyper_metro_domain</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.95710428957104%" headers="mcps1.2.5.1.2 "><p id="p13806102311239"><a name="p13806102311239"></a><a name="p13806102311239"></a>hyper_metro</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.30816918308169%" headers="mcps1.2.5.1.3 "><p id="p1680632316231"><a name="p1680632316231"></a><a name="p1680632316231"></a>只读</p>
+</td>
+<td class="cellrowborder" valign="top" width="30.836916308369155%" headers="mcps1.2.5.1.4 "><p id="p480612352313"><a name="p480612352313"></a><a name="p480612352313"></a>查询块双活域信息</p>
+</td>
+</tr>
 </tbody>
 </table>
 

@@ -22,7 +22,7 @@ driver: csi.huawei.com
 deletionPolicy: Delete
 ```
 
-You can modify the parameters according to  [Table 1](#en-us_topic_0254162578_table189495491346). Currently, Huawei CSI does not support user-defined parameters \(**parameters**\) in a VolumeSnapshotClass. Therefore, you are advised to create a VolumeSnapshotClass for all snapshots.
+You can modify the parameters according to  [Table 1](#en-us_topic_0254162578_table189495491346).
 
 **Table  1**  VolumeSnapshotClass parameters
 
@@ -55,6 +55,15 @@ You can modify the parameters according to  [Table 1](#en-us_topic_0254162578_ta
 <a name="ul1034113525514"></a><a name="ul1034113525514"></a><ul id="ul1034113525514"><li>Delete</li><li>Retain</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="55.1%" headers="mcps1.2.4.1.3 "><a name="ul925601066"></a><a name="ul925601066"></a><ul id="ul925601066"><li>If the deletion policy is <strong id="b1091982014164"><a name="b1091982014164"></a><a name="b1091982014164"></a>Delete</strong>, the snapshot on the storage device will be deleted together with the VolumeSnapshotContent object.</li><li>If the deletion policy is <strong id="b1013813510484"><a name="b1013813510484"></a><a name="b1013813510484"></a>Retain</strong>, the snapshot and VolumeSnapshotContent object on the storage device will be retained.</li></ul>
+</td>
+</tr>
+<tr id="row123551713017"><td class="cellrowborder" valign="top" width="17.91%" headers="mcps1.2.4.1.1 "><p id="p586014583516"><a name="p586014583516"></a><a name="p586014583516"></a>parameters.enableHyperMetroSnap</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.99%" headers="mcps1.2.4.1.2 "><p id="p158602581659"><a name="p158602581659"></a><a name="p158602581659"></a>Whether to create SAN HyperMetro snapshots on both ends.</p>
+<a name="ul1952015398716"></a><a name="ul1952015398716"></a><ul id="ul1952015398716"><li><strong id="b13651495568"><a name="b13651495568"></a><a name="b13651495568"></a>"true"</strong>: Create snapshots on the two storage systems that form the HyperMetro pair.</li><li><strong id="b191151317195619"><a name="b191151317195619"></a><a name="b191151317195619"></a>"false"</strong>: Create a snapshot on the storage system associated with the current storage class.</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="55.1%" headers="mcps1.2.4.1.3 "><p id="p486075816514"><a name="p486075816514"></a><a name="p486075816514"></a>The default value is <strong id="b137398514423"><a name="b137398514423"></a><a name="b137398514423"></a>"false"</strong>.</p>
+<p id="p1586018581150"><a name="p1586018581150"></a><a name="p1586018581150"></a>When the backend type is oceanstor-san and the storage version is V700R001C10 or later, this parameter can be set to <strong id="b1236892018435"><a name="b1236892018435"></a><a name="b1236892018435"></a>"true"</strong>.</p>
 </td>
 </tr>
 </tbody>

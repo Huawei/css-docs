@@ -129,7 +129,7 @@ parameters:
 <td class="cellrowborder" valign="top" width="26.279999999999998%" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p17144750112419"><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p17144750112419"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p17144750112419"></a>Host access mode. This parameter is mandatory. The value can be:</p>
 <a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_ul1877452310265"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_ul1877452310265"></a><ul id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_ul1877452310265"><li><strong id="b84741933863"><a name="b84741933863"></a><a name="b84741933863"></a>0</strong>: balanced mode</li><li><strong id="b518112383611"><a name="b518112383611"></a><a name="b518112383611"></a>1</strong>: asymmetric mode</li></ul>
 </td>
-<td class="cellrowborder" valign="top" width="49.39%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p1540212533612"><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p1540212533612"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p1540212533612"></a>The balanced mode is recommended in non-HyperMetro scenarios. Currently, Huawei CSI does not support SAN HyperMetro scenarios. Exercise caution when using the asymmetric mode.</p>
+<td class="cellrowborder" valign="top" width="49.39%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p1540212533612"><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p1540212533612"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p1540212533612"></a>The balanced mode is recommended in non-HyperMetro scenarios.</p>
 </td>
 </tr>
 <tr id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_row15144550162416"><td class="cellrowborder" valign="top" width="24.33%" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p714455012410"><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p714455012410"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p714455012410"></a>hyperMetroPathOptimized</p>
@@ -138,7 +138,7 @@ parameters:
 <a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_ul11690126102616"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_ul11690126102616"></a><ul id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_ul11690126102616"><li><strong id="b3557233277"><a name="b3557233277"></a><a name="b3557233277"></a>1</strong>: yes</li><li><strong id="b20190153618711"><a name="b20190153618711"></a><a name="b20190153618711"></a>0</strong>: no</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="49.39%" headers="mcps1.2.4.1.3 "><p id="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p11144105010245"><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p11144105010245"></a><a name="en-us_topic_0000001352783505_en-us_topic_0000001198982584_p11144105010245"></a>This parameter needs to be specified only when the host access mode is set to asymmetric.</p>
-<p id="p3136547173316"><a name="p3136547173316"></a><a name="p3136547173316"></a>Currently, Huawei CSI does not support SAN HyperMetro scenarios. Exercise caution when using the asymmetric mode.</p>
+<p id="p3136547173316"><a name="p3136547173316"></a><a name="p3136547173316"></a></p>
 </td>
 </tr>
 </tbody>

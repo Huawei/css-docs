@@ -34,7 +34,7 @@ huawei-csi supports two log output modes:  **file**  and  **console**.  **file**
       volumeUseMultipath: true
       # Multipath software used by fc/iscsi. support [DM-multipath, HW-UltraPath, HW-UltraPath-NVMe]
       scsiMultipathType: DM-multipath
-      # Multipath software used by roce/fc-nvme. only support [HW-UltraPath-NVMe]
+      # Multipath software used by roce-nvme/fc-nvme. only support [HW-UltraPath-NVMe]
       nvmeMultipathType: HW-UltraPath-NVMe
       # Timeout interval for waiting for multipath aggregation when DM-multipath is used on the host. support 1~600
       scanVolumeTimeout: 3

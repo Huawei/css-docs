@@ -12,9 +12,10 @@ weight: 3
 -   容灾场景下，对存储数据进行迁移。
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
->纳管卷供应支持将已有存储资源纳管至Kubernetes，不允许将一个存储资源纳管多次和针对同一个存储资源进行并发删除/创建操作。
->当同一个存储资源被多个集群纳管时，在单个集群中针对该纳管卷的操作仅在当前集群内生效，不会同步到其他集群中，需要使用者自行在其他集群中对该纳管卷进行数据同步操作。
->例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容持久卷](/docs/basic-services/persistent-volume-management/managing-pvs-87/expanding-the-capacity-of-a-pv)中的扩容命令进行扩容。
+>-   纳管卷供应支持将已有存储资源纳管至Kubernetes，不允许将一个存储资源纳管多次和针对同一个存储资源进行并发删除/创建操作。
+>    当同一个存储资源被多个集群纳管时，在单个集群中针对该纳管卷的操作仅在当前集群内生效，不会同步到其他集群中，需要使用者自行在其他集群中对该纳管卷进行数据同步操作。
+>    例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容持久卷](/docs/basic-services/persistent-volume-management/managing-pvs-91/expanding-the-capacity-of-a-pv)中的扩容命令进行扩容。
+>-   纳管持久卷时，持久卷应该符合存储类声明，否则华为CSI可能无法正确管理该持久卷。例如：用户纳管普通持久卷时，使用的存储类中引用了双活类型的存储后端，并开启双活参数。纳管该持久卷后，用户如果对该持久卷执行克隆或基于快照创建新持久卷时，华为CSI将执行失败。
 
 ## 配置说明{#section121779524353}
 
@@ -86,9 +87,9 @@ weight: 3
 </th>
 <th class="cellrowborder" valign="top" width="5.15051505150515%" id="mcps1.2.6.1.3"><p id="p19360047916"><a name="p19360047916"></a><a name="p19360047916"></a>必选参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="26.62266226622662%" id="mcps1.2.6.1.4"><p id="p9506371793"><a name="p9506371793"></a><a name="p9506371793"></a>默认值</p>
+<th class="cellrowborder" valign="top" width="26.602660266026607%" id="mcps1.2.6.1.4"><p id="p9506371793"><a name="p9506371793"></a><a name="p9506371793"></a>默认值</p>
 </th>
-<th class="cellrowborder" valign="top" width="27.902790279027904%" id="mcps1.2.6.1.5"><p id="zh-cn_topic_0150885187_p85734352017"><a name="zh-cn_topic_0150885187_p85734352017"></a><a name="zh-cn_topic_0150885187_p85734352017"></a>备注</p>
+<th class="cellrowborder" valign="top" width="27.92279227922792%" id="mcps1.2.6.1.5"><p id="zh-cn_topic_0150885187_p85734352017"><a name="zh-cn_topic_0150885187_p85734352017"></a><a name="zh-cn_topic_0150885187_p85734352017"></a>备注</p>
 </th>
 </tr>
 </thead>
@@ -99,9 +100,9 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p15360547910"><a name="p15360547910"></a><a name="p15360547910"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p8502191171218"><a name="p8502191171218"></a><a name="p8502191171218"></a>csi.huawei.com/manageVolumeName: *    csi.huawei.com/manageBackendName: *</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p8502191171218"><a name="p8502191171218"></a><a name="p8502191171218"></a>csi.huawei.com/manageVolumeName: *    csi.huawei.com/manageBackendName: *</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><a name="ul44235513567"></a><a name="ul44235513567"></a><ul id="ul44235513567"><li>驱动名称获取请参考<a href="/css-docs/docs/installation-and-deployment/csi/installation/installation-using-helm/parameters-in-the-values-yaml-file-of-helm#table188162213437">表4</a>。</li><li>驱动名称/manageVolumeName：为存储上已有卷的名称，除英文字符外，其他国家字符不支持。</li><li>驱动名称/manageBackendName：CSI中存储后端的名称。</li></ul>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><a name="ul44235513567"></a><a name="ul44235513567"></a><ul id="ul44235513567"><li>驱动名称获取请参考<a href="/css-docs/docs/installation-and-deployment/csi/installation/installation-using-helm/parameters-in-the-values-yaml-file-of-helm#table188162213437">表4</a>。</li><li>驱动名称/manageVolumeName：为存储上已有卷的名称，除英文字符外，其他国家字符不支持。</li><li>驱动名称/manageBackendName：CSI中存储后端的名称。</li></ul>
 <p id="p176901459748"><a name="p176901459748"></a><a name="p176901459748"></a>可执行<strong id="b128931112571"><a name="b128931112571"></a><a name="b128931112571"></a>oceanctl get backend -n huawei-csi</strong>命令获取后端名称。</p>
 </td>
 </tr>
@@ -111,9 +112,9 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p3360941498"><a name="p3360941498"></a><a name="p3360941498"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p10506117498"><a name="p10506117498"></a><a name="p10506117498"></a>-</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p10506117498"><a name="p10506117498"></a><a name="p10506117498"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p168401138144212"><a name="p168401138144212"></a><a name="p168401138144212"></a>格式：provisioner: 安装时指定的驱动名称。</p>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><p id="p168401138144212"><a name="p168401138144212"></a><a name="p168401138144212"></a>格式：provisioner: 安装时指定的驱动名称。</p>
 <p id="p1067565015410"><a name="p1067565015410"></a><a name="p1067565015410"></a>例如 provisioner: csi.huawei.com。</p>
 <p id="p19806312144118"><a name="p19806312144118"></a><a name="p19806312144118"></a>该参数在创建PVC时生效，用于监听PVC资源，获取metadata.annotations信息。</p>
 </td>
@@ -124,9 +125,9 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p1736019415915"><a name="p1736019415915"></a><a name="p1736019415915"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p1506677916"><a name="p1506677916"></a><a name="p1506677916"></a>-</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p1506677916"><a name="p1506677916"></a><a name="p1506677916"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p20875193814315"><a name="p20875193814315"></a><a name="p20875193814315"></a>以Kubernetes v1.22.1为例，支持数字、小写字母、中划线（-）和点（.）的组合，并且必须以字母数字开头和结尾。</p>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><p id="p20875193814315"><a name="p20875193814315"></a><a name="p20875193814315"></a>以Kubernetes v1.22.1为例，支持数字、小写字母、中划线（-）和点（.）的组合，并且必须以字母数字开头和结尾。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0150885187_row696316316238"><td class="cellrowborder" valign="top" width="13.47134713471347%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p1896393118231"><a name="zh-cn_topic_0150885187_p1896393118231"></a><a name="zh-cn_topic_0150885187_p1896393118231"></a>spec.volumeMode</p>
@@ -139,9 +140,9 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p153606414917"><a name="p153606414917"></a><a name="p153606414917"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p55061271915"><a name="p55061271915"></a><a name="p55061271915"></a>Filesystem</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p55061271915"><a name="p55061271915"></a><a name="p55061271915"></a>Filesystem</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p62045214421"><a name="p62045214421"></a><a name="p62045214421"></a>该参数在挂载PV时生效。</p>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><p id="p62045214421"><a name="p62045214421"></a><a name="p62045214421"></a>该参数在挂载PV时生效。</p>
 <a name="ul1518211174214"></a><a name="ul1518211174214"></a><ul id="ul1518211174214"><li>Filesystem表示在容器通过一个本地文件系统访问PV，本地文件系统类型为指定StorageClass中的fsType字段指定。</li><li>Block表示使用裸卷的方式访问访问PV。</li></ul>
 </td>
 </tr>
@@ -151,20 +152,22 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p1736015413918"><a name="p1736015413918"></a><a name="p1736015413918"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p195061171092"><a name="p195061171092"></a><a name="p195061171092"></a>-</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p195061171092"><a name="p195061171092"></a><a name="p195061171092"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p1521791621216"><a name="p1521791621216"></a><a name="p1521791621216"></a>StorageClass的配置需要与纳管卷的配置保持一致。</p>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><p id="p1521791621216"><a name="p1521791621216"></a><a name="p1521791621216"></a>StorageClass的配置需要与纳管卷的配置保持一致。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0150885187_row1157316351102"><td class="cellrowborder" valign="top" width="13.47134713471347%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0150885187_p9573035309"><a name="zh-cn_topic_0150885187_p9573035309"></a><a name="zh-cn_topic_0150885187_p9573035309"></a>spec.resources.requests.storage</p>
 </td>
 <td class="cellrowborder" valign="top" width="26.852685268526855%" headers="mcps1.2.6.1.2 "><p id="zh-cn_topic_0150885187_p1573183510015"><a name="zh-cn_topic_0150885187_p1573183510015"></a><a name="zh-cn_topic_0150885187_p1573183510015"></a>指定待创建卷大小，格式为***Gi，单位为GiB。</p>
+<div class="note" id="note25632263375"><a name="note25632263375"></a><a name="note25632263375"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p15563526103719"><a name="p15563526103719"></a><a name="p15563526103719"></a>OceanStor Dorado/OceanStor Pacific系列，对于Dtree纳管场景，此容量对应存储上Dtree的硬配额。</p>
+</div></div>
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p1436044990"><a name="p1436044990"></a><a name="p1436044990"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p18506147494"><a name="p18506147494"></a><a name="p18506147494"></a>-</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p18506147494"><a name="p18506147494"></a><a name="p18506147494"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><p id="p1525217519276"><a name="p1525217519276"></a><a name="p1525217519276"></a>PVC容量的规格取决于存储规格限制和主机规格限制。以OceanStor Dorado 6.1.2/OceanStor Pacific系列 8.1.0对接CentOS 7为例，当使用的是ext4文件系统时，容量限制见<a href="/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table178824527142">表2</a>；当使用的是XFS文件系统时，容量限制见<a href="/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table101951367104">表3</a>。如果使用的是NFS或者裸设备，容量需满足使用的华为存储设备型号和版本所要求的规格约束。</p>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><p id="p1525217519276"><a name="p1525217519276"></a><a name="p1525217519276"></a>PVC容量的规格取决于存储规格限制和主机规格限制。以OceanStor Dorado 6.1.2/OceanStor Pacific系列 8.1.0对接CentOS 7为例，当使用的是ext4文件系统时，容量限制见<a href="/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table178824527142">表2</a>；当使用的是XFS文件系统时，容量限制见<a href="/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs#zh-cn_topic_0150885187_table101951367104">表3</a>。如果使用的是NFS或者裸设备，容量需满足使用的华为存储设备型号和版本所要求的规格约束。</p>
 <p id="p63667162711"><a name="p63667162711"></a><a name="p63667162711"></a>如果PVC容量不在规格范围内，可能会由于存储规格限制或主机文件系统规格限制导致创建PVC或Pod失败。</p>
 </td>
 </tr>
@@ -175,9 +178,9 @@ weight: 3
 </td>
 <td class="cellrowborder" valign="top" width="5.15051505150515%" headers="mcps1.2.6.1.3 "><p id="p10360448912"><a name="p10360448912"></a><a name="p10360448912"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="26.62266226622662%" headers="mcps1.2.6.1.4 "><p id="p65069712920"><a name="p65069712920"></a><a name="p65069712920"></a>ReadWriteOnce</p>
+<td class="cellrowborder" valign="top" width="26.602660266026607%" headers="mcps1.2.6.1.4 "><p id="p65069712920"><a name="p65069712920"></a><a name="p65069712920"></a>ReadWriteOnce</p>
 </td>
-<td class="cellrowborder" valign="top" width="27.902790279027904%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li><span>RWO/ROX/RWOP：</span>所有类型卷均支持，<span>RWOP</span>需<span>Kubernetes 1.22</span>版本以上支持。Kubernetes 1.29版本以下需要参考<a href="/css-docs/docs/common-o-m-operations/enabling-the-readwriteoncepod-feature-gate">开启ReadWriteOncePod功能门</a>章节开启该特性。</li><li><span>RWX</span>支持情况如下：<a name="ul10813936394"></a><a name="ul10813936394"></a><ul id="ul10813936394"><li>NAS存储：所有卷均支持。</li><li>SAN存储：仅volumeMode设置为Block的卷支持。</li></ul>
+<td class="cellrowborder" valign="top" width="27.92279227922792%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li><span>RWO/ROX/RWOP：</span>所有类型卷均支持，<span>RWOP</span>需<span>Kubernetes 1.22</span>版本以上支持。Kubernetes 1.29版本以下需要参考<a href="/css-docs/docs/common-o-m-operations/enabling-the-readwriteoncepod-feature-gate">开启ReadWriteOncePod功能门</a>章节开启该特性。</li><li><span>RWX</span>支持情况如下：<a name="ul10813936394"></a><a name="ul10813936394"></a><ul id="ul10813936394"><li>NAS存储：所有卷均支持。</li><li>SAN存储：仅volumeMode设置为Block的卷支持。</li></ul>
 </li></ul>
 </td>
 </tr>

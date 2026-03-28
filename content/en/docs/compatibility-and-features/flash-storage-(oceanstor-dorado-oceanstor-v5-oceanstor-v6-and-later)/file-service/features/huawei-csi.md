@@ -134,7 +134,7 @@ weight: 1
 </tr>
 <tr id="row1283074261313"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p08311742201314"><a name="p08311742201314"></a><a name="p08311742201314"></a>Manage Provisioning</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1483184281313"><a name="p1483184281313"></a><a name="p1483184281313"></a>X</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1483184281313"><a name="p1483184281313"></a><a name="p1483184281313"></a>√</p>
 </td>
 </tr>
 <tr id="row341412531489"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p162mcpsimp"><a name="p162mcpsimp"></a><a name="p162mcpsimp"></a>Expand Persistent Volume</p>
