@@ -61,7 +61,7 @@ If CSI of an earlier version is deployed using Helm, perform the following steps
     </td>
     <td class="cellrowborder" valign="top" width="22.222222222222225%" headers="mcps1.2.5.1.3 "><p id="p1015617351799"><a name="p1015617351799"></a><a name="p1015617351799"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p0156183516920"><a name="p0156183516920"></a><a name="p0156183516920"></a>storage-backend-controller:<span id="ph131571335991"><a name="ph131571335991"></a><a name="ph131571335991"></a>4.11.0</span></p>
+    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p0156183516920"><a name="p0156183516920"></a><a name="p0156183516920"></a>storage-backend-controller:<span id="ph131571335991"><a name="ph131571335991"></a><a name="ph131571335991"></a>4.12.0</span></p>
     </td>
     </tr>
     <tr id="row137401924896"><td class="cellrowborder" valign="top" width="24.242424242424242%" headers="mcps1.2.5.1.1 "><p id="p81571358910"><a name="p81571358910"></a><a name="p81571358910"></a>storage-backend-sidecar</p>
@@ -70,7 +70,7 @@ If CSI of an earlier version is deployed using Helm, perform the following steps
     </td>
     <td class="cellrowborder" valign="top" width="22.222222222222225%" headers="mcps1.2.5.1.3 "><p id="p18157173510920"><a name="p18157173510920"></a><a name="p18157173510920"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p415783518912"><a name="p415783518912"></a><a name="p415783518912"></a>storage-backend-sidecar:<span id="ph61574352914"><a name="ph61574352914"></a><a name="ph61574352914"></a>4.11.0</span></p>
+    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p415783518912"><a name="p415783518912"></a><a name="p415783518912"></a>storage-backend-sidecar:<span id="ph61574352914"><a name="ph61574352914"></a><a name="ph61574352914"></a>4.12.0</span></p>
     </td>
     </tr>
     <tr id="row11864142612910"><td class="cellrowborder" valign="top" width="24.242424242424242%" headers="mcps1.2.5.1.1 "><p id="p615719351098"><a name="p615719351098"></a><a name="p615719351098"></a>huawei-csi-driver</p>
@@ -79,7 +79,7 @@ If CSI of an earlier version is deployed using Helm, perform the following steps
     </td>
     <td class="cellrowborder" valign="top" width="22.222222222222225%" headers="mcps1.2.5.1.3 "><p id="p11157435196"><a name="p11157435196"></a><a name="p11157435196"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p1015714351890"><a name="p1015714351890"></a><a name="p1015714351890"></a>huawei-csi:<span id="ph14157935896"><a name="ph14157935896"></a><a name="ph14157935896"></a>4.11.0</span></p>
+    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p1015714351890"><a name="p1015714351890"></a><a name="p1015714351890"></a>huawei-csi:<span id="ph14157935896"><a name="ph14157935896"></a><a name="ph14157935896"></a>4.12.0</span></p>
     </td>
     </tr>
     <tr id="row1035818295911"><td class="cellrowborder" valign="top" width="24.242424242424242%" headers="mcps1.2.5.1.1 "><p id="p5157935795"><a name="p5157935795"></a><a name="p5157935795"></a>huawei-csi-extender</p>
@@ -88,7 +88,7 @@ If CSI of an earlier version is deployed using Helm, perform the following steps
     </td>
     <td class="cellrowborder" valign="top" width="22.222222222222225%" headers="mcps1.2.5.1.3 "><p id="p415710351892"><a name="p415710351892"></a><a name="p415710351892"></a>v1.16+</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p51571935491"><a name="p51571935491"></a><a name="p51571935491"></a>huawei-csi-extender:<span id="ph1515716351795"><a name="ph1515716351795"></a><a name="ph1515716351795"></a>4.11.0</span></p>
+    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p51571935491"><a name="p51571935491"></a><a name="p51571935491"></a>huawei-csi-extender:<span id="ph1515716351795"><a name="ph1515716351795"></a><a name="ph1515716351795"></a>4.12.0</span></p>
     </td>
     </tr>
     <tr id="row9547192114619"><td class="cellrowborder" valign="top" width="24.242424242424242%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0214996140_p86601044154812"><a name="en-us_topic_0214996140_p86601044154812"></a><a name="en-us_topic_0214996140_p86601044154812"></a>images.sidecar.livenessProbe</p>
@@ -183,6 +183,15 @@ If CSI of an earlier version is deployed using Helm, perform the following steps
     <tr id="row32879215395"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p817413101195"><a name="p817413101195"></a><a name="p817413101195"></a>v.1.16.x</p>
     </td>
     <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p1328711216396"><a name="p1328711216396"></a><a name="p1328711216396"></a>quay.io/k8scsi/csi-attacher:v1.2.1</p>
+    </td>
+    </tr>
+    <tr id="row19232043615"><td class="cellrowborder" valign="top" width="24.242424242424242%" headers="mcps1.2.5.1.1 "><p id="p47517185579"><a name="p47517185579"></a><a name="p47517185579"></a>images.sidecar.healthMonitorController</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="28.282828282828287%" headers="mcps1.2.5.1.2 "><p id="p475161817573"><a name="p475161817573"></a><a name="p475161817573"></a><a href="https://github.com/kubernetes-csi/external-health-monitor" target="_blank" rel="noopener noreferrer">health-monitor-controller</a> sidecar image.</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="22.222222222222225%" headers="mcps1.2.5.1.3 "><p id="p87513189579"><a name="p87513189579"></a><a name="p87513189579"></a>v.1.16.x</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.5.1.4 "><p id="p1275114189576"><a name="p1275114189576"></a><a name="p1275114189576"></a><span id="text1722433515717"><a name="text1722433515717"></a><a name="text1722433515717"></a>registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.17.0</span></p>
     </td>
     </tr>
     </tbody>

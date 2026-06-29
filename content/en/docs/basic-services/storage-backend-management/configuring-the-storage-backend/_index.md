@@ -12,6 +12,7 @@ weight: 1
 >    -   An underscore \(\_\) is converted to a hyphen \(-\).
 >    -   A 5-digit hash code is added to the end.
 >3.  If a storage backend is connected to a vStore, the vStore name cannot be changed after the storage backend is created.
+>4.  When you use the CCE or CCE Agile platform to create a backend, you need to specify the  **provisioner**  parameter. For details, see commands of  [Creating a Storage Backend](/docs/command-parameter-description/description-of-oceanctl-commands#li4802118061)  on the CCE Platform.
 
 
 

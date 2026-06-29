@@ -218,7 +218,7 @@ weight: 2
     命令结果示例如下，后端状态为Bound，则创建成功。
 
     ```
-    NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-demo    fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 
@@ -295,7 +295,7 @@ weight: 2
     命令结果示例如下，后端状态为"Bound" 则创建成功。
 
     ```
-    NAMESPACE     NAME              PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME              PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-active    fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.155:8088   
     huawei-csi    backend-standby   fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088 
     ```

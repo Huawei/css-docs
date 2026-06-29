@@ -23,7 +23,7 @@ huawei-csi-node中容器内部无/var/lib/iscsi目录。
     cd /templates
     ```
 
-4.  执行以下命令，将huawei-csi-node.yaml \> volumes \> iscsi-dir \> hostPath中“path“设置为“/var/lib/iscsi“  ，然后保存并退出文件。
+4.  执行以下命令，将huawei-csi-node.yaml \> volumes \> iscsi-dir \> hostPath中“path”设置为“/var/lib/iscsi”  ，然后保存并退出文件。
 
     ```
     vi huawei-csi-node.yaml

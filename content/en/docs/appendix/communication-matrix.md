@@ -131,11 +131,11 @@ weight: 1
 </th>
 <td class="cellrowborder" valign="top" width="16.98830116988301%" headers="mcps1.1.6.12.1 "><p id="p83419292419"><a name="p83419292419"></a><a name="p83419292419"></a>OM</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.657834216578344%" headers="mcps1.1.6.12.1 "><p id="p934110222419"><a name="p934110222419"></a><a name="p934110222419"></a>O&amp;M plane</p>
+<td class="cellrowborder" valign="top" width="21.657834216578344%" headers="mcps1.1.6.12.1 "><p id="p934110222419"><a name="p934110222419"></a><a name="p934110222419"></a>O&M plane</p>
 </td>
-<td class="cellrowborder" valign="top" width="21.01789821017898%" headers="mcps1.1.6.12.1 "><p id="p73411721248"><a name="p73411721248"></a><a name="p73411721248"></a>O&amp;M plane</p>
+<td class="cellrowborder" valign="top" width="21.01789821017898%" headers="mcps1.1.6.12.1 "><p id="p73411721248"><a name="p73411721248"></a><a name="p73411721248"></a>O&M plane</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.377962203779624%" headers="mcps1.1.6.12.1 "><p id="p153412232414"><a name="p153412232414"></a><a name="p153412232414"></a>O&amp;M plane</p>
+<td class="cellrowborder" valign="top" width="20.377962203779624%" headers="mcps1.1.6.12.1 "><p id="p153412232414"><a name="p153412232414"></a><a name="p153412232414"></a>O&M plane</p>
 </td>
 </tr>
 <tr id="row143419242410"><th class="firstcol" valign="top" width="19.958004199580042%" id="mcps1.1.6.13.1"><p id="p434122182418"><a name="p434122182418"></a><a name="p434122182418"></a>Special Scenario</p>

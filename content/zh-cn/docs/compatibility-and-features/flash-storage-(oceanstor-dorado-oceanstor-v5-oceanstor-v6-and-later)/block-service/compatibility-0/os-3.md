@@ -138,7 +138,7 @@ weight: 3
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p151151934614"><a name="p151151934614"></a><a name="p151151934614"></a>随OS自带，支持NVMe over TCP</p>
 </td>
 </tr>
-<tr id="row234312371784"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>
+<tr id="row234312371784"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p141451428911"><a name="p141451428911"></a><a name="p141451428911"></a>18.04, 20.04, 22.04</p>
 </td>
@@ -149,7 +149,16 @@ weight: 3
 <td class="cellrowborder" valign="top" width="16.09%" headers="mcps1.2.6.1.5 "><p id="p94709338418"><a name="p94709338418"></a><a name="p94709338418"></a>不支持</p>
 </td>
 </tr>
-<tr id="row1279582641416"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p7795172661419"><a name="p7795172661419"></a><a name="p7795172661419"></a>Ubuntu ARM</p>
+<tr id="row1911913410246"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p111201741122410"><a name="p111201741122410"></a><a name="p111201741122410"></a>24.04</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.2 "><p id="p10120184117246"><a name="p10120184117246"></a><a name="p10120184117246"></a>不支持</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="p12120104192416"><a name="p12120104192416"></a><a name="p12120104192416"></a>不支持</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p1012014120245"><a name="p1012014120245"></a><a name="p1012014120245"></a>随OS自带，支持NVMe over TCP</p>
+</td>
+</tr>
+<tr id="row1279582641416"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p7795172661419"><a name="p7795172661419"></a><a name="p7795172661419"></a>Ubuntu ARM</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p14796182613148"><a name="p14796182613148"></a><a name="p14796182613148"></a>22.04</p>
 </td>
@@ -158,6 +167,15 @@ weight: 3
 <td class="cellrowborder" valign="top" width="26.82%" headers="mcps1.2.6.1.4 "><p id="p83292514146"><a name="p83292514146"></a><a name="p83292514146"></a>不支持</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.09%" headers="mcps1.2.6.1.5 "><p id="p174701133154117"><a name="p174701133154117"></a><a name="p174701133154117"></a>不支持</p>
+</td>
+</tr>
+<tr id="row1532114715248"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p1732119475247"><a name="p1732119475247"></a><a name="p1732119475247"></a>24.04</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.2 "><p id="p132154715243"><a name="p132154715243"></a><a name="p132154715243"></a>不支持</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="p2322447162420"><a name="p2322447162420"></a><a name="p2322447162420"></a>不支持</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p173221947152418"><a name="p173221947152418"></a><a name="p173221947152418"></a>随OS自带，支持NVMe over TCP</p>
 </td>
 </tr>
 <tr id="row10343173719816"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p11441251399"><a name="p11441251399"></a><a name="p11441251399"></a>Kylin x86_64</p>

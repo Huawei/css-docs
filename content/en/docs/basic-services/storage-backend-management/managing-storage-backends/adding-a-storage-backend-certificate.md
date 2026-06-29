@@ -23,7 +23,7 @@ A certificate has been created. Take OceanStor Dorado as an example. For details
     The following is an example of the command output.
 
     ```
-    NAMESPACE     NAME         PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME         PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-1    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     huawei-csi    backend-2    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088  
     ```

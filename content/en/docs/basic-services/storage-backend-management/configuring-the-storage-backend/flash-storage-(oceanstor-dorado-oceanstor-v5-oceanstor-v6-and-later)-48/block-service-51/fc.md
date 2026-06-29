@@ -218,7 +218,7 @@ This section describes how to create a storage backend of the FC protocol type.
     The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
 
     ```
-    NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-demo    fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 
@@ -295,7 +295,7 @@ This section describes how to create a storage backend of the FC protocol type.
     The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
 
     ```
-    NAMESPACE     NAME              PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME              PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-active    fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.155:8088   
     huawei-csi    backend-standby   fc          oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088 
     ```

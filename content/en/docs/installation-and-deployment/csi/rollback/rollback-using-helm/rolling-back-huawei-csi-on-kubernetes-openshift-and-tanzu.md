@@ -7,7 +7,7 @@ weight: 1
 
 ## Prerequisites{#section12493103133711}
 
--   CSI has been updated using Helm 3.
+-   CSI has been updated using Helm.
 
 ## Procedure{#section1015846181614}
 
@@ -29,7 +29,7 @@ weight: 1
     ```
     REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION     
     1       	Mon Jan  8 04:15:40 2024	superseded	esdk-4.4.0	4.4.0      	Install complete
-    2       	Mon Jan  8 04:16:12 2024	deployed  	esdk-4.11.0	4.11.0      	Upgrade complete
+    2       	Mon Jan  8 04:16:12 2024	deployed  	esdk-4.12.0	4.12.0      	Upgrade complete
     ```
 
 4.  Run the following command to roll back the CSI services to the specified version.

@@ -12,6 +12,7 @@ weight: 1
 >    -   "\_"字符转换成“-”字符。
 >    -   末尾追加5位Hash码。
 >3.  当存储后端对接租户时，在存储后端创建完成后，不允许修改租户名称。
+>4.  使用CCE或CCE Agile平台创建后端时，需指定provisioner参数，具体参考[CCE平台创建backend命令](/docs/command-parameter-description/description-of-oceanctl-commands#li4802118061)。
 
 
 

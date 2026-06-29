@@ -18,7 +18,7 @@ weight: 3
     kubectl get secret -n huawei-csi -l secret-provisioner=csi.huawei.com
     ```
 
-3.  若步骤[2](#li1648412587587)中Secrte存在，执行以下命令删除Secret。
+3.  若步骤[2](#li1648412587587)中Secret存在，执行以下命令删除Secret。
 
     ```
     kubectl delete secret -n huawei-csi -l secret-provisioner=csi.huawei.com

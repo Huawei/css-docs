@@ -7,6 +7,9 @@ weight: 2
 
 静态卷供应（Static Volume Provisioning）允许管理员使用已经在存储侧创建的资源做为PV，供集群中的容器使用。
 
+>![](/css-docs/public_sys-resources/zh-cn/icon-notice.gif)  
+>当使用静态持久卷的方式管理双活卷时，请确保双活两端的存储卷名称一致。
+
 ## 配置说明{#section1426372873615}
 
 请根据以下步骤配置使用静态持久卷：

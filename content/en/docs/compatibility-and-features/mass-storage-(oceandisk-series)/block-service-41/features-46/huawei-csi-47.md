@@ -89,7 +89,7 @@ weight: 1
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >-   When using the iSCSI protocol to connect the CSI to a storage system with multiple controller enclosures, you need to log in to the storage background and run the  **change target\_name display\_mode mode=Full**  command to ensure that the target IQN obtained by the CSI from the storage system is the same as the actual IQN.
->-   If a container platform is deployed on a virtualization platform, you are advised to use the iSCSI protocol when the CSI is connected to SAN storage.
->-   If the customer requires the FC, NVMe over FC, or NVMe over RoCE protocol, the virtualization platform needs to be configured. In this case, the customer's virtualization team needs to provide technical support.
+>-   If a container platform is deployed on a virtualization platform, the iSCSI protocol is recommended when the CSI is connected to SAN storage.
+>-   If the FC, NVMe over FC, or NVMe over RoCE protocol is required, the virtualization platform needs to be configured. In this case, the customer's virtualization team needs to provide technical support.
 >-   When NVMe over RoCE or NVMe over FC is used, the supported nvme-cli tool version is 1.9 or later. When NVMe over TCP is used, the supported nvme-cli tool version is 2.0 or later. The query command is  **nvme version**.
 

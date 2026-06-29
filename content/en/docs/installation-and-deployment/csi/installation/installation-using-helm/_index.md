@@ -5,7 +5,7 @@ description:
 weight: 1
 ---
 
-This section describes how to install Huawei CSI using Helm 3.
+This section describes how to install and deploy Huawei CSI using Helm. The Helm software version must be 3.0 or later.
 
 ## Helm Installation Description{#section16991437124819}
 
@@ -18,7 +18,7 @@ Helm is a software package management tool in the Kubernetes ecosystem. Similar 
 You can use Helm to package, distribute, install, upgrade, and roll back Kubernetes applications in a unified manner.
 
 -   For details about how to obtain and install Helm, see  [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/).
--   For details about the mapping between Helm and Kubernetes versions, see  [https://helm.sh/docs/topics/version\_skew/](https://helm.sh/docs/topics/version_skew/).
+-   For details about the mapping between Helm and Kubernetes versions, see  [https://helm.sh/docs/topics/version_skew/](https://helm.sh/docs/topics/version_skew/).
 
 When installing huawei-csi-controller, Helm deploys the following components in the workloads of the Deployment type in the specified namespace:
 
@@ -32,6 +32,7 @@ When installing huawei-csi-controller, Helm deploys the following components in 
 -   \(Optional\) huawei-csi-extender: used to support changing persistent volumes.
 -   \(Optional\) Kubernetes External Snapshotter: used to provide snapshot support \(installed as CRD\).
 -   \(Optional\) Kubernetes External Snapshot Controller: used to control volume snapshots.
+-   \(Optional\) Kubernetes External Health Monitor Controller: used to monitor and control volume health.
 
 When installing huawei-csi-node, Helm deploys the following components in the workloads of the DaemonSet type in the specified namespace:
 

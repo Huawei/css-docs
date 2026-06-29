@@ -45,7 +45,7 @@ weight: 3
 <td class="cellrowborder" valign="top" width="16.09%" headers="mcps1.2.6.1.5 "><p id="p11470143304120"><a name="p11470143304120"></a><a name="p11470143304120"></a>Not supported</p>
 </td>
 </tr>
-<tr id="row462220559496"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p8622205534918"><a name="p8622205534918"></a><a name="p8622205534918"></a>CentOS ARM</p>
+<tr id="row462220559496"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p8622205534918"><a name="p8622205534918"></a><a name="p8622205534918"></a>CentOS Arm</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p162295519499"><a name="p162295519499"></a><a name="p162295519499"></a>7.6</p>
 </td>
@@ -120,7 +120,7 @@ weight: 3
 </tr>
 <tr id="row10343113716818"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p7442251798"><a name="p7442251798"></a><a name="p7442251798"></a>Red Hat CoreOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12~4.18, 4.20</p>
+<td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p1214517426916"><a name="p1214517426916"></a><a name="p1214517426916"></a>4.12 to 4.18, and 4.20</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.32%" headers="mcps1.2.6.1.3 "><p id="p115134245168"><a name="p115134245168"></a><a name="p115134245168"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
@@ -138,7 +138,7 @@ weight: 3
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p151151934614"><a name="p151151934614"></a><a name="p151151934614"></a>Delivered with the OS, supporting NVMe over TCP</p>
 </td>
 </tr>
-<tr id="row234312371784"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>
+<tr id="row234312371784"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p141451428911"><a name="p141451428911"></a><a name="p141451428911"></a>18.04, 20.04, and 22.04</p>
 </td>
@@ -149,7 +149,16 @@ weight: 3
 <td class="cellrowborder" valign="top" width="16.09%" headers="mcps1.2.6.1.5 "><p id="p94709338418"><a name="p94709338418"></a><a name="p94709338418"></a>Not supported</p>
 </td>
 </tr>
-<tr id="row1279582641416"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p7795172661419"><a name="p7795172661419"></a><a name="p7795172661419"></a>Ubuntu Arm</p>
+<tr id="row1911913410246"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p111201741122410"><a name="p111201741122410"></a><a name="p111201741122410"></a>24.04</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.2 "><p id="p10120184117246"><a name="p10120184117246"></a><a name="p10120184117246"></a>Not supported</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="p12120104192416"><a name="p12120104192416"></a><a name="p12120104192416"></a>Not supported</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p1012014120245"><a name="p1012014120245"></a><a name="p1012014120245"></a>Delivered with the OS, supporting NVMe over TCP</p>
+</td>
+</tr>
+<tr id="row1279582641416"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p7795172661419"><a name="p7795172661419"></a><a name="p7795172661419"></a>Ubuntu Arm</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p14796182613148"><a name="p14796182613148"></a><a name="p14796182613148"></a>22.04</p>
 </td>
@@ -158,6 +167,15 @@ weight: 3
 <td class="cellrowborder" valign="top" width="26.82%" headers="mcps1.2.6.1.4 "><p id="p83292514146"><a name="p83292514146"></a><a name="p83292514146"></a>Not supported</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.09%" headers="mcps1.2.6.1.5 "><p id="p174701133154117"><a name="p174701133154117"></a><a name="p174701133154117"></a>Not supported</p>
+</td>
+</tr>
+<tr id="row1532114715248"><td class="cellrowborder" valign="top" headers="mcps1.2.6.1.1 "><p id="p1732119475247"><a name="p1732119475247"></a><a name="p1732119475247"></a>24.04</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.2 "><p id="p132154715243"><a name="p132154715243"></a><a name="p132154715243"></a>Not supported</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.3 "><p id="p2322447162420"><a name="p2322447162420"></a><a name="p2322447162420"></a>Not supported</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p173221947152418"><a name="p173221947152418"></a><a name="p173221947152418"></a>Delivered with the OS, supporting NVMe over TCP</p>
 </td>
 </tr>
 <tr id="row10343173719816"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p11441251399"><a name="p11441251399"></a><a name="p11441251399"></a>Kylin x86_64</p>
@@ -181,7 +199,7 @@ weight: 3
 <td class="cellrowborder" valign="top" headers="mcps1.2.6.1.4 "><p id="p638715384432"><a name="p638715384432"></a><a name="p638715384432"></a>Not supported</p>
 </td>
 </tr>
-<tr id="row514418498117"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p0144174981113"><a name="p0144174981113"></a><a name="p0144174981113"></a>Kylin ARM</p>
+<tr id="row514418498117"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p0144174981113"><a name="p0144174981113"></a><a name="p0144174981113"></a>Kylin Arm</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p121441149121117"><a name="p121441149121117"></a><a name="p121441149121117"></a>V10 SP1, V10 SP2, and V10 SP3</p>
 </td>
@@ -194,7 +212,7 @@ weight: 3
 </tr>
 <tr id="row110899123112"><td class="cellrowborder" rowspan="2" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p16108109203112"><a name="p16108109203112"></a><a name="p16108109203112"></a>Debian x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p1310859163119"><a name="p1310859163119"></a><a name="p1310859163119"></a>9, 11</p>
+<td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p1310859163119"><a name="p1310859163119"></a><a name="p1310859163119"></a>9 and 11</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.32%" headers="mcps1.2.6.1.3 "><p id="p91081299314"><a name="p91081299314"></a><a name="p91081299314"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>
@@ -256,7 +274,7 @@ weight: 3
 <td class="cellrowborder" valign="top" width="16.09%" headers="mcps1.2.6.1.5 "><p id="p2591049165715"><a name="p2591049165715"></a><a name="p2591049165715"></a>Not supported</p>
 </td>
 </tr>
-<tr id="row867984183816"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p1967912417382"><a name="p1967912417382"></a><a name="p1967912417382"></a>BC-Linux ARM</p>
+<tr id="row867984183816"><td class="cellrowborder" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p1967912417382"><a name="p1967912417382"></a><a name="p1967912417382"></a>BC-Linux Arm</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p1967915493815"><a name="p1967915493815"></a><a name="p1967915493815"></a>21.10</p>
 </td>
@@ -280,7 +298,7 @@ weight: 3
 </tr>
 <tr id="row8426659627"><td class="cellrowborder" rowspan="3" valign="top" width="15.989999999999998%" headers="mcps1.2.6.1.1 "><p id="p411217583481"><a name="p411217583481"></a><a name="p411217583481"></a>Red Hat Enterprise Linux x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 8.9, 9.4</p>
+<td class="cellrowborder" valign="top" width="20.78%" headers="mcps1.2.6.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 8.9, and 9.4</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.32%" headers="mcps1.2.6.1.3 "><p id="p141128581485"><a name="p141128581485"></a><a name="p141128581485"></a>Delivered with the OS, supporting FC/iSCSI</p>
 </td>

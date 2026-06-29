@@ -16,7 +16,7 @@ weight: 1
 </thead>
 <tbody><tr id="row1899683984519"><td class="cellrowborder" valign="top" width="33.040000000000006%" headers="mcps1.2.3.1.1 "><p id="p899653994514"><a name="p899653994514"></a><a name="p899653994514"></a>Static Provisioning</p>
 </td>
-<td class="cellrowborder" rowspan="3" valign="top" width="66.96%" headers="mcps1.2.3.1.2 "><a name="ul563501712309"></a><a name="ul563501712309"></a><ul id="ul563501712309"><li>DataTurbo/NFS 3/4.0/4.1/4.2</li><li>Only local file systems of storage with a single zone are supported.</li></ul>
+<td class="cellrowborder" rowspan="3" valign="top" width="66.96%" headers="mcps1.2.3.1.2 "><a name="ul563501712309"></a><a name="ul563501712309"></a><ul id="ul563501712309"><li>DataTurbo, NFS 3/4.0/4.1/4.2, NFS over RDMA</li><li>Only local file systems of storage with a single zone are supported.</li></ul>
 </td>
 </tr>
 <tr id="row49961039174517"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p9996173974516"><a name="p9996173974516"></a><a name="p9996173974516"></a>Dynamic Provisioning</p>
@@ -109,17 +109,17 @@ weight: 1
 </tr>
 <tr id="row241417531381"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p157mcpsimp"><a name="p157mcpsimp"></a><a name="p157mcpsimp"></a>Dynamic Provisioning</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p159mcpsimp"><a name="p159mcpsimp"></a><a name="p159mcpsimp"></a>X</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p159mcpsimp"><a name="p159mcpsimp"></a><a name="p159mcpsimp"></a>√</p>
 </td>
 </tr>
 <tr id="row1283074261313"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p08311742201314"><a name="p08311742201314"></a><a name="p08311742201314"></a>Manage Provisioning</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1483184281313"><a name="p1483184281313"></a><a name="p1483184281313"></a>X</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1483184281313"><a name="p1483184281313"></a><a name="p1483184281313"></a>√</p>
 </td>
 </tr>
 <tr id="row341412531489"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p162mcpsimp"><a name="p162mcpsimp"></a><a name="p162mcpsimp"></a>Expand Persistent Volume</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p165mcpsimp"><a name="p165mcpsimp"></a><a name="p165mcpsimp"></a>X</p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p165mcpsimp"><a name="p165mcpsimp"></a><a name="p165mcpsimp"></a>√</p>
 </td>
 </tr>
 <tr id="row104141753384"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p168mcpsimp"><a name="p168mcpsimp"></a><a name="p168mcpsimp"></a>Access Mode</p>

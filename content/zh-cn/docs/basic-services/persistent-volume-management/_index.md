@@ -5,6 +5,11 @@ description:
 weight: 3
 ---
 
+>![](/css-docs/public_sys-resources/zh-cn/icon-notice.gif)  
+>-   使用华为CSI进行卷管理操作期间，请勿删除存储后端。
+>-   在映射block卷时，华为CSI会自动创建创建主机、主机组、LUN组等这些卷映射需要的关联对象，以及映射视图。如果手动在存储上创建了这些对象，会影响华为CSI的映射逻辑，请确保在使用华为CSI映射卷前删除这些对象。
+>-   集群中节点的主机名称长度需小于等于27个字符，名称中超长部分会在存储上创建主机时被截断，这可能会导致集群多个节点映射到存储上同一个主机。
+
 根据业务的需求，容器中的文件需要在磁盘上进行持久化。当容器被重建或者重新分配至新的节点时，可以继续使用这些持久化数据。
 
 为了可以将数据持久化到存储设备上，您需要在发放容器时使用[持久卷（PersistentVolume，PV）](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)以及[持久卷申领（PersistentVolumeClaim，PVC）](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)。

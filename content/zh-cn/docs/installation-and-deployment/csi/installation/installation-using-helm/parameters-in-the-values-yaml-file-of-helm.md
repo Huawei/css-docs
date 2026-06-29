@@ -32,7 +32,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p1633715710454"><a name="zh-cn_topic_0000001324610777_p1633715710454"></a><a name="zh-cn_topic_0000001324610777_p1633715710454"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p16337457154513"><a name="zh-cn_topic_0000001324610777_p16337457154513"></a><a name="zh-cn_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 </td>
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0000001324610777_p4337185713453"><a name="zh-cn_topic_0000001324610777_p4337185713453"></a><a name="zh-cn_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -123,6 +123,15 @@ values.yaml中的images配置项主要配置华为CSI运行时依赖的组件镜
 <td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0000001324610777_p83371057164510"><a name="zh-cn_topic_0000001324610777_p83371057164510"></a><a name="zh-cn_topic_0000001324610777_p83371057164510"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0000001324610777_p1833711578459"><a name="zh-cn_topic_0000001324610777_p1833711578459"></a><a name="zh-cn_topic_0000001324610777_p1833711578459"></a><span id="text116171043295"><a name="text116171043295"></a><a name="text116171043295"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0</span></p>
+</td>
+</tr>
+<tr id="row1875101815710"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p47517185579"><a name="p47517185579"></a><a name="p47517185579"></a>images.sidecar.healthMonitorController</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.17%" headers="mcps1.2.5.1.2 "><p id="p475161817573"><a name="p475161817573"></a><a name="p475161817573"></a><a href="https://github.com/kubernetes-csi/external-health-monitor" target="_blank" rel="noopener noreferrer">health-monitor-controller</a> sidecar镜像</p>
+</td>
+<td class="cellrowborder" valign="top" width="5.89%" headers="mcps1.2.5.1.3 "><p id="p87513189579"><a name="p87513189579"></a><a name="p87513189579"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.94%" headers="mcps1.2.5.1.4 "><p id="p1275114189576"><a name="p1275114189576"></a><a name="p1275114189576"></a><span id="text1722433515717"><a name="text1722433515717"></a><a name="text1722433515717"></a>registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.17.0</span></p>
 </td>
 </tr>
 </tbody>
@@ -210,6 +219,26 @@ controller配置项用于配置huawei-csi-controller组件的相关配置。
 </td>
 <td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p728462210401"><a name="p728462210401"></a><a name="p728462210401"></a>要求Kubernetes版本高于v1.16。</p>
 </td>
+</tr>
+<tr id="row8431533182117"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p643153312213"><a name="p643153312213"></a><a name="p643153312213"></a>controller.resizer.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p1472110527115"><a name="p1472110527115"></a><a name="p1472110527115"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p1972125219116"><a name="p1972125219116"></a><a name="p1972125219116"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p572145214116"><a name="p572145214116"></a><a name="p572145214116"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row779183652114"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p1679163619215"><a name="p1679163619215"></a><a name="p1679163619215"></a>controller.resizer.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p17721352121111"><a name="p17721352121111"></a><a name="p17721352121111"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p1172112526113"><a name="p1172112526113"></a><a name="p1172112526113"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p197211052101112"><a name="p197211052101112"></a><a name="p197211052101112"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
 </tr>
 <tr id="row14131154414450"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p913144454511"><a name="p913144454511"></a><a name="p913144454511"></a>controller.nodeSelector</p>
 </td>
@@ -321,6 +350,179 @@ controller配置项用于配置huawei-csi-controller组件的相关配置。
 <td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p175201135121817"><a name="p175201135121817"></a><a name="p175201135121817"></a>如果存在端口冲突可修改为其他未占用的端口。</p>
 </td>
 </tr>
+<tr id="row25248102218"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p19524181017211"><a name="p19524181017211"></a><a name="p19524181017211"></a>controller.healthMonitor.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p498710333217"><a name="p498710333217"></a><a name="p498710333217"></a>是否开启卷监控服务</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p11189104712218"><a name="p11189104712218"></a><a name="p11189104712218"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p3189547328"><a name="p3189547328"></a><a name="p3189547328"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p2524510626"><a name="p2524510626"></a><a name="p2524510626"></a>开启后，可使用卷监控相关特性</p>
+</td>
+</tr>
+<tr id="row199951919932"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p1299561914320"><a name="p1299561914320"></a><a name="p1299561914320"></a>controller.healthMonitor.monitorInterval</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p5483164717312"><a name="p5483164717312"></a><a name="p5483164717312"></a>监控轮询间隔</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p6995201918318"><a name="p6995201918318"></a><a name="p6995201918318"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p189951319130"><a name="p189951319130"></a><a name="p189951319130"></a>60s</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p186191649648"><a name="p186191649648"></a><a name="p186191649648"></a>配置卷监控轮询间隔时间</p>
+</td>
+</tr>
+<tr id="row88958350237"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p1889533542311"><a name="p1889533542311"></a><a name="p1889533542311"></a>controller.healthMonitor.workThreads</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p18951935172315"><a name="p18951935172315"></a><a name="p18951935172315"></a>监控PV工作线程数</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p16896203542311"><a name="p16896203542311"></a><a name="p16896203542311"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p8896735182320"><a name="p8896735182320"></a><a name="p8896735182320"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 "><p id="p189620359232"><a name="p189620359232"></a><a name="p189620359232"></a>配置监控PV工作线程数</p>
+</td>
+</tr>
+<tr id="row208051073261"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p7805147162614"><a name="p7805147162614"></a><a name="p7805147162614"></a>controller.provisioner.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p20116048112920"><a name="p20116048112920"></a><a name="p20116048112920"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p17116548192914"><a name="p17116548192914"></a><a name="p17116548192914"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p211612488290"><a name="p211612488290"></a><a name="p211612488290"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1991913335261"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p176441258172612"><a name="p176441258172612"></a><a name="p176441258172612"></a>controller.provisioner.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p11161948172911"><a name="p11161948172911"></a><a name="p11161948172911"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p81161348172911"><a name="p81161348172911"></a><a name="p81161348172911"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p1116184815293"><a name="p1116184815293"></a><a name="p1116184815293"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row494353112620"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p2035818367274"><a name="p2035818367274"></a><a name="p2035818367274"></a>controller.attacher.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p20191349112917"><a name="p20191349112917"></a><a name="p20191349112917"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p19191134912919"><a name="p19191134912919"></a><a name="p19191134912919"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p6191154915292"><a name="p6191154915292"></a><a name="p6191154915292"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1918343092610"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p1418174412273"><a name="p1418174412273"></a><a name="p1418174412273"></a>controller.attacher.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p1719194917294"><a name="p1719194917294"></a><a name="p1719194917294"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p16191154902910"><a name="p16191154902910"></a><a name="p16191154902910"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p12191114917296"><a name="p12191114917296"></a><a name="p12191114917296"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row192431428132611"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p113911258172712"><a name="p113911258172712"></a><a name="p113911258172712"></a>controller.snapshotter.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p242612506293"><a name="p242612506293"></a><a name="p242612506293"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p242695018298"><a name="p242695018298"></a><a name="p242695018298"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p17426135052912"><a name="p17426135052912"></a><a name="p17426135052912"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1055414269263"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p14529191210289"><a name="p14529191210289"></a><a name="p14529191210289"></a>controller.snapshotter.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p17426165015299"><a name="p17426165015299"></a><a name="p17426165015299"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p19426155002918"><a name="p19426155002918"></a><a name="p19426155002918"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p18426105016296"><a name="p18426105016296"></a><a name="p18426105016296"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row2882424152620"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p078319270286"><a name="p078319270286"></a><a name="p078319270286"></a>controller.storageBackendController.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p19297952192917"><a name="p19297952192917"></a><a name="p19297952192917"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p52971521296"><a name="p52971521296"></a><a name="p52971521296"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p1297165202911"><a name="p1297165202911"></a><a name="p1297165202911"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1918322112615"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p79091333122816"><a name="p79091333122816"></a><a name="p79091333122816"></a>controller.storageBackendController.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p14297205215297"><a name="p14297205215297"></a><a name="p14297205215297"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p1629785215294"><a name="p1629785215294"></a><a name="p1629785215294"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p192971252192913"><a name="p192971252192913"></a><a name="p192971252192913"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row49609209269"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p0433345162810"><a name="p0433345162810"></a><a name="p0433345162810"></a>controller.storageBackendSidecar.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p768295310299"><a name="p768295310299"></a><a name="p768295310299"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p0682053172917"><a name="p0682053172917"></a><a name="p0682053172917"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p1968218539298"><a name="p1968218539298"></a><a name="p1968218539298"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row109641718162619"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p1119618514281"><a name="p1119618514281"></a><a name="p1119618514281"></a>controller.storageBackendSidecar.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p968211532299"><a name="p968211532299"></a><a name="p968211532299"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p1268215319299"><a name="p1268215319299"></a><a name="p1268215319299"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p14683553122914"><a name="p14683553122914"></a><a name="p14683553122914"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row428571752616"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p3200145912289"><a name="p3200145912289"></a><a name="p3200145912289"></a>controller.huaweiCsiExtender.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p692855142913"><a name="p692855142913"></a><a name="p692855142913"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p49265518295"><a name="p49265518295"></a><a name="p49265518295"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p1292145522914"><a name="p1292145522914"></a><a name="p1292145522914"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row0582215122615"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p119671131291"><a name="p119671131291"></a><a name="p119671131291"></a>controller.huaweiCsiExtender.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p792195582914"><a name="p792195582914"></a><a name="p792195582914"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p69285518296"><a name="p69285518296"></a><a name="p69285518296"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p10928556292"><a name="p10928556292"></a><a name="p10928556292"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row084591322618"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p13514171119292"><a name="p13514171119292"></a><a name="p13514171119292"></a>controller.huaweiCsiDriver.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p357385622912"><a name="p357385622912"></a><a name="p357385622912"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p1157395642920"><a name="p1157395642920"></a><a name="p1157395642920"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p1957395602919"><a name="p1957395602919"></a><a name="p1957395602919"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1764151162618"><td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.1 "><p id="p942701922915"><a name="p942701922915"></a><a name="p942701922915"></a>controller.huaweiCsiDriver.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.94%" headers="mcps1.2.6.1.2 "><p id="p185731564293"><a name="p185731564293"></a><a name="p185731564293"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.88%" headers="mcps1.2.6.1.3 "><p id="p257315617299"><a name="p257315617299"></a><a name="p257315617299"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.430000000000001%" headers="mcps1.2.6.1.4 "><p id="p1257313562298"><a name="p1257313562298"></a><a name="p1257313562298"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.81%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
 </tbody>
 </table>
 
@@ -421,6 +623,26 @@ node配置项用于配置huawei-csi-node组件的相关配置。
 <td class="cellrowborder" valign="top" width="22.470000000000002%" headers="mcps1.2.6.1.5 "><p id="p19463181655017"><a name="p19463181655017"></a><a name="p19463181655017"></a>当一个块设备被成功挂载之后，挂载路径的目录结构应该如下所示：</p>
 <pre class="screen" id="screen64610218547"><a name="screen64610218547"></a><a name="screen64610218547"></a>/var/lib/kubelet/plugins/kubernetes.io/csi/{kubeletVolumeDevicesDirName}/publish/{specName}/{podUID}</pre>
 </td>
+</tr>
+<tr id="row184551840113015"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p134551640163011"><a name="p134551640163011"></a><a name="p134551640163011"></a>node.huaweiCsiDriver.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.2 "><p id="p771310404312"><a name="p771310404312"></a><a name="p771310404312"></a>表示客户端每秒能发送到kube-apiserver的请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.99%" headers="mcps1.2.6.1.3 "><p id="p6713164010312"><a name="p6713164010312"></a><a name="p6713164010312"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.3%" headers="mcps1.2.6.1.4 "><p id="p6713340173116"><a name="p6713340173116"></a><a name="p6713340173116"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.470000000000002%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1048311384300"><td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.1 "><p id="p1248333812303"><a name="p1248333812303"></a><a name="p1248333812303"></a>node.huaweiCsiDriver.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.119999999999997%" headers="mcps1.2.6.1.2 "><p id="p13713240113114"><a name="p13713240113114"></a><a name="p13713240113114"></a>表示客户端在短时间内能够发送的最大请求数量。</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.99%" headers="mcps1.2.6.1.3 "><p id="p3713540113113"><a name="p3713540113113"></a><a name="p3713540113113"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.3%" headers="mcps1.2.6.1.4 "><p id="p8713154053110"><a name="p8713154053110"></a><a name="p8713154053110"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.470000000000002%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
 </tr>
 </tbody>
 </table>

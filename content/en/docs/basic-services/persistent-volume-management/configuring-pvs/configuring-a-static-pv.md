@@ -7,6 +7,9 @@ weight: 2
 
 Static volume provisioning allows administrators to use a resource created on the storage side as a PV for containers in the cluster.
 
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
+>When static PVs are used to manage HyperMetro volumes, ensure that storage volume names on both ends in the HyperMetro relationship are the same.
+
 ## Configuration Description{#section1426372873615}
 
 Perform the following steps to configure a static PV:
@@ -322,7 +325,7 @@ After a PV is created in static volume provisioning mode, you can create a PVC b
 <tr id="row10874152212484"><td class="cellrowborder" valign="top" width="13.47865213478652%" headers="mcps1.2.6.1.1 "><p id="p0833642172413"><a name="p0833642172413"></a><a name="p0833642172413"></a>spec.accessModes</p>
 </td>
 <td class="cellrowborder" valign="top" width="30.12698730126987%" headers="mcps1.2.6.1.2 "><p id="p2083384212416"><a name="p2083384212416"></a><a name="p2083384212416"></a>Access mode of the volume.</p>
-<a name="ul18620120655"></a><a name="ul18620120655"></a><ul id="ul18620120655"><li><strong id="b617788276"><a name="b617788276"></a><a name="b617788276"></a>RWO</strong> (ReadWriteOnce): A volume can be mounted to a node in read/write mode. This mode also allows multiple Pods running on the same node to access the volume.</li><li><strong id="b1021183257"><a name="b1021183257"></a><a name="b1021183257"></a>ROX</strong> (ReadOnlyMany): A volume can be mounted to multiple nodes in read-only mode.</li><li><strong id="b1821823460"><a name="b1821823460"></a><a name="b1821823460"></a>RWX</strong> (ReadWriteMany): A volume can be mounted to multiple nodes in read/write mode.</li><li><strong id="b1178306101"><a name="b1178306101"></a><a name="b1178306101"></a>RWOP</strong> (ReadWriteOncePod): A volume can only be mounted to a single Pod in read/write mode. Kubernetes 1.22 and later versions support this feature.</li></ul>
+<a name="ul18620120655"></a><a name="ul18620120655"></a><ul id="ul18620120655"><li><strong id="b326210134"><a name="b326210134"></a><a name="b326210134"></a>RWO</strong> (ReadWriteOnce): A volume can be mounted to a node in read/write mode. This mode also allows multiple Pods running on the same node to access the volume.</li><li><strong id="b993588315"><a name="b993588315"></a><a name="b993588315"></a>ROX</strong> (ReadOnlyMany): A volume can be mounted to multiple nodes in read-only mode.</li><li><strong id="b1906464738"><a name="b1906464738"></a><a name="b1906464738"></a>RWX</strong> (ReadWriteMany): A volume can be mounted to multiple nodes in read/write mode.</li><li><strong id="b1212020146"><a name="b1212020146"></a><a name="b1212020146"></a>RWOP</strong> (ReadWriteOncePod): A volume can only be mounted to a single Pod in read/write mode. Kubernetes 1.22 and later versions support this feature.</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="5.899410058994099%" headers="mcps1.2.6.1.3 "><p id="p1823972854011"><a name="p1823972854011"></a><a name="p1823972854011"></a>Yes</p>
 </td>

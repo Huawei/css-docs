@@ -1,0 +1,137 @@
+---
+title: "Uninstalling CSI-Dependent Component Services"
+linkTitle: "Uninstalling CSI-Dependent Component Services"
+description: 
+weight: 3
+---
+
+This section describes how to uninstall the CSI-dependent component services.
+
+## Uninstalling the huawei-csi-host-info Object{#section870813403017}
+
+Secret object  **huawei-csi-host-info**  stores the initiator information about each node in the cluster, for example, iSCSI initiators. When you run the  **helm uninstall**  command, the resource will not be uninstalled. To uninstall the resource, perform the following steps:
+
+1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
+2.  <a name="li1648412587587"></a>Run the following command to check whether the Secret object exists.  **huawei-csi**  is the namespace where the Secret object is located.
+
+    ```
+    kubectl get secret -n huawei-csi -l secret-provisioner=csi.huawei.com
+    ```
+
+3.  If the Secret exists in  [2](#li1648412587587), run the following command to delete the Secret:
+
+    ```
+    kubectl delete secret -n huawei-csi -l secret-provisioner=csi.huawei.com
+    ```
+
+4.  <a name="li93910361022"></a>Run the following command to check whether the Secret object exists.  **huawei-csi**  is the namespace where the Secret object is located.
+
+    ```
+    kubectl get secret huawei-csi-host-info -n huawei-csi
+    ```
+
+5.  If the Secret exists in  [4](#li93910361022), run the following command to uninstall the Secret object.  **huawei-csi-host-info**  is the name of the Secret object.
+
+    ```
+    kubectl delete secret huawei-csi-host-info -n huawei-csi
+    ```
+
+## Uninstalling a Webhook Resource{#section871155813014}
+
+The webhook resource named  **storage-backend-controller.xuanwu.huawei.io**  is used to verify the backend key information and connectivity with the storage. When you run the  **helm uninstall**  command, the resource will not be uninstalled. To uninstall the resource, perform the following steps:
+
+1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
+2.  Run the following command to query the webhook-dependent component service.
+
+    ```
+    kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io storage-backend-controller.xuanwu.huawei.io
+    ```
+
+    The following is an example of the command output.
+
+    ```
+    NAME                                          WEBHOOKS   AGE
+    storage-backend-controller.xuanwu.huawei.io   1          12d
+    ```
+
+3.  Run the following command to uninstall the webhook-dependent component service.
+
+    ```
+    kubectl delete validatingwebhookconfigurations.admissionregistration.k8s.io storage-backend-controller.xuanwu.huawei.io
+    ```
+
+4.  Run the following command to check whether the service is successfully uninstalled. If the command output is empty, the uninstallation is successful.
+
+    ```
+    kubectl get validatingwebhookconfigurations.admissionregistration.k8s.io storage-backend-controller.xuanwu.huawei.io
+    ```
+
+## Uninstalling the Snapshot-Dependent Component Service{#section48371491319}
+
+>![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
+>-   Do not uninstall the snapshot-dependent component service when snapshots exist. Otherwise, Kubernetes will automatically delete all user snapshots and they cannot be restored. For details, see  [Delete a CustomResourceDefinition](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#delete-a-customresourcedefinition).
+>-   Do not uninstall the snapshot-dependent component service during the CSI upgrade.
+
+**Scenario Description**
+
+-   Currently, Huawei CSI uses the snapshot feature.
+-   Currently, only Huawei CSI is available in the Kubernetes cluster, and Huawei CSI is no longer used.
+-   Before the uninstallation, ensure that no VolumeSnapshot resource managed by Huawei CSI exists in the Kubernetes cluster.
+
+**Procedure**
+
+1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
+2.  Run the following command to uninstall the snapshot-dependent component service.
+
+    ```
+    kubectl delete crd volumesnapshotclasses.snapshot.storage.k8s.io volumesnapshotcontents.snapshot.storage.k8s.io volumesnapshots.snapshot.storage.k8s.io
+    ```
+
+3.  Run the following command to check whether the service is successfully uninstalled. If the command output is empty, the uninstallation is successful.
+
+    ```
+    kubectl get crd | grep snapshot.storage.k8s.io
+    ```
+
+## Uninstalling a Lease Resource{#section263805014317}
+
+When huawei-csi-controller is deployed in multi-copy mode, a Lease resource is generated to store the current Holder information. When you run the  **helm uninstall**  command, the resource will not be uninstalled. To uninstall the resource, perform the following steps:
+
+1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
+2.  Run the following command to query the Lease information.
+
+    ```
+    kubectl get lease -n huawei-csi
+    ```
+
+    The following is an example of the command output.
+
+    ```
+    NAME                                         HOLDER    AGE
+    csi-huawei-com                               node-1    24d
+    external-attacher-leader-csi-huawei-com      node-1    24d
+    external-resizer-csi-huawei-com              node-1    24d
+    external-snapshotter-leader-csi-huawei-com   node-1    24d
+    snapshot-controller-leader                   node-1    24d
+    storage-backend-controller                   node-1    24d
+    huawei-csi-extender                          node-1    24d
+    ```
+
+3.  Run the following command to uninstall the Lease resource.
+
+    ```
+    kubectl delete lease -n huawei-csi csi-huawei-com external-attacher-leader-csi-huawei-com external-resizer-csi-huawei-com external-snapshotter-leader-csi-huawei-com snapshot-controller-leader storage-backend-controller huawei-csi-extender
+    ```
+
+4.  Run the following command to check whether the uninstallation is successful.
+
+    ```
+    kubectl get lease -n huawei-csi
+    ```
+
+    The following is an example of the command output. If the command output is empty, the uninstallation is successful.
+
+    ```
+    No resources found in huawei-csi namespace.
+    ```
+

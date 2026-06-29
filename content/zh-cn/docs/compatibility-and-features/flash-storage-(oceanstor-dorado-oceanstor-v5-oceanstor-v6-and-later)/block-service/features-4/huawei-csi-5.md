@@ -94,7 +94,7 @@ weight: 1
 </td>
 <td class="cellrowborder" valign="top" headers="mcps1.2.5.1.2 "><p id="p09431322152815"><a name="p09431322152815"></a><a name="p09431322152815"></a>不支持</p>
 </td>
-<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p38504018310"><a name="p38504018310"></a><a name="p38504018310"></a>支持</p>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p1658717474019"><a name="p1658717474019"></a><a name="p1658717474019"></a>支持 （FC/iSCSI + DM-Multipath）</p>
 </td>
 </tr>
 <tr id="row8191849183619"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p81912491363"><a name="p81912491363"></a><a name="p81912491363"></a>存储多租户</p>
@@ -107,7 +107,7 @@ weight: 1
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
 >-   使用iSCSI协议对接多框存储时，需要登录存储后台执行命令"change target\_name display\_mode mode=Full"，确保CSI从存储系统获取的目标IQN与实际的IQN保持一致。
->-   若客户的容器平台部署在虚拟化平台上，CSI对接SAN存储时建议使用iSCSI协议。
->-   若客户要求使用FC/NVMe over FC/NVMe over RoCE协议，需要对虚拟化平台进行特定配置，需客户侧的虚拟化团队提供技术支持。
+>-   若容器平台部署在虚拟化平台上，CSI对接SAN存储时建议使用iSCSI协议。
+>-   若使用FC/NVMe over FC/NVMe over RoCE协议，需要对虚拟化平台进行特定配置，需客户侧的虚拟化团队提供技术支持。
 >-   使用NVMe over RoCE或NVMe over FC时，支持的nvme-cli工具版本为1.9及以上；使用NVMe over TCP时，支持的nvme-cli工具版本为2.0及以上；查询命令为：nvme version。
 

@@ -219,7 +219,7 @@ This section describes how to create a storage backend of the NFS+ protocol type
     The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
 
     ```
-    NAMESPACE     NAME            PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME            PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-demo    nfs+         oceanstor-nas    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 
@@ -227,7 +227,7 @@ This section describes how to create a storage backend of the NFS+ protocol type
 
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >-   Before configuring NAS HyperMetro, you need to configure the HyperMetro relationship between two storage devices, including the remote device and HyperMetro domain. The HyperMetro domain of the file system can only work in HyperMetro active-active \(AA\) mode. For details about the configuration operation, see the product documentation of the corresponding storage model.
->-   The accounts for connecting to NAS HyperMetro backends must be the administrator accounts of the storage vStores.
+>-   The accounts for connecting to NAS HyperMetro backends must be the administrator accounts of the storage vStores, and the usernames and passwords used for login at both ends in the HyperMetro relationship must be the same.
 >-   Except NAS HyperMetro backends, the management URLs of other backends cannot be the URL of a logical management port of a vStore that has established the HyperMetro relationship.
 >-   When a HyperMetro storage backend is used, do not provision common file systems. Otherwise, services may be interrupted in logical port failover scenarios.
 
@@ -307,7 +307,7 @@ This section describes how to create a storage backend of the NFS+ protocol type
     The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
 
     ```
-    NAMESPACE     NAME              PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME              PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-active    nfs+         oceanstor-nas    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.155:8088   
     huawei-csi    backend-standby   nfs+         oceanstor-nas    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088 
     ```

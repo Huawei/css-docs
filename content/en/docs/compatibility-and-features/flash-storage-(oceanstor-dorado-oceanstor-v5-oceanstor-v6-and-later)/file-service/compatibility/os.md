@@ -18,12 +18,7 @@ weight: 3
 </thead>
 <tbody><tr id="row10343137688"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p174422515917"><a name="p174422515917"></a><a name="p174422515917"></a>CentOS x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p714515424912"><a name="p714515424912"></a><a name="p714515424912"></a>7.6, 7.7, and 7.9</p>
-</td>
-</tr>
-<tr id="row126961850188"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p66968571811"><a name="p66968571811"></a><a name="p66968571811"></a>CentOS x86_64</p>
-</td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p146964518186"><a name="p146964518186"></a><a name="p146964518186"></a>8.2 and 8.4</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p714515424912"><a name="p714515424912"></a><a name="p714515424912"></a>7.6, 7.7, 7.9, 8.2, 8.4</p>
 </td>
 </tr>
 <tr id="row462220559496"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p8622205534918"><a name="p8622205534918"></a><a name="p8622205534918"></a>CentOS Arm</p>
@@ -48,12 +43,12 @@ weight: 3
 </tr>
 <tr id="row234312371784"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p24411253910"><a name="p24411253910"></a><a name="p24411253910"></a>Ubuntu x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p141451428911"><a name="p141451428911"></a><a name="p141451428911"></a>18.04, 20.04, and 22.04</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p141451428911"><a name="p141451428911"></a><a name="p141451428911"></a>18.04, 20.04, 22.04, and 24.04</p>
 </td>
 </tr>
 <tr id="row1279582641416"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p7795172661419"><a name="p7795172661419"></a><a name="p7795172661419"></a>Ubuntu Arm</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p14796182613148"><a name="p14796182613148"></a><a name="p14796182613148"></a>22.04</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p14796182613148"><a name="p14796182613148"></a><a name="p14796182613148"></a>22.04 and 24.04</p>
 </td>
 </tr>
 <tr id="row10343173719816"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p11441251399"><a name="p11441251399"></a><a name="p11441251399"></a>Kylin x86_64</p>
@@ -93,12 +88,17 @@ weight: 3
 </tr>
 <tr id="row1941116615225"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p17411196152216"><a name="p17411196152216"></a><a name="p17411196152216"></a>OpenEuler x86_64</p>
 </td>
-<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p241115619228"><a name="p241115619228"></a><a name="p241115619228"></a>22.03 LTS SP1</p>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p241115619228"><a name="p241115619228"></a><a name="p241115619228"></a>22.03 LTS SP1 and 24.03 LTS SP1</p>
 </td>
 </tr>
 <tr id="row8426659627"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p411217583481"><a name="p411217583481"></a><a name="p411217583481"></a>Red Hat Enterprise Linux x86_64</p>
 </td>
 <td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p91129587480"><a name="p91129587480"></a><a name="p91129587480"></a>8.6, 8.7, 8.8, 8.9, 8.10, and 9.4</p>
+</td>
+</tr>
+<tr id="row195039433324"><td class="cellrowborder" valign="top" width="47.65%" headers="mcps1.2.3.1.1 "><p id="p914473714135"><a name="p914473714135"></a><a name="p914473714135"></a>Anolis OS x86_64</p>
+</td>
+<td class="cellrowborder" valign="top" width="52.349999999999994%" headers="mcps1.2.3.1.2 "><p id="p1214473771310"><a name="p1214473771310"></a><a name="p1214473771310"></a>8.9</p>
 </td>
 </tr>
 </tbody>

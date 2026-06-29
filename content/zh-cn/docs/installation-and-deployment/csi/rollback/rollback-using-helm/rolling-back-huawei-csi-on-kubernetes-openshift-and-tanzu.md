@@ -7,7 +7,7 @@ weight: 1
 
 ## 前提条件{#section12493103133711}
 
--   已使用Helm 3完成CSI的更新。
+-   已使用Helm完成CSI的更新。
 
 ## 操作步骤{#section1015846181614}
 
@@ -29,7 +29,7 @@ weight: 1
     ```
     REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION     
     1       	Mon Jan  8 04:15:40 2024	superseded	esdk-4.4.0	4.4.0      	Install complete
-    2       	Mon Jan  8 04:16:12 2024	deployed  	esdk-4.11.0	4.11.0      	Upgrade complete
+    2       	Mon Jan  8 04:16:12 2024	deployed  	esdk-4.12.0	4.12.0      	Upgrade complete
     ```
 
 4.  执行命令，回退CSI服务到指定版本。

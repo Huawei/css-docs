@@ -192,7 +192,7 @@ This section describes how to create a storage backend of the NFS protocol type.
     The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
 
     ```
-    NAMESPACE     NAME            PROTOCOL    STORAGETYPE             SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME            PROTOCOL    STORAGETYPE             SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-demo    nfs         oceanstor-a-series-nas  xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:26335   
     ```
 

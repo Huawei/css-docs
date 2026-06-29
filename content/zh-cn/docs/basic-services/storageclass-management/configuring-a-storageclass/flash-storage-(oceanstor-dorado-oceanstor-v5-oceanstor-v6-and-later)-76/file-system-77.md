@@ -199,7 +199,7 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="7.35740142843166%" headers="mcps1.2.7.1.5 "><p id="p91331855155916"><a name="p91331855155916"></a><a name="p91331855155916"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上随机选择一个满足容量要求的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
+<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上选择一个剩余容量最大的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
 </td>
 </tr>
 <tr id="row12968565337"><td class="cellrowborder" valign="top" width="18.060855102240485%" headers="mcps1.2.7.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
@@ -313,7 +313,7 @@ parameters:
 <tr id="row15478113119190"><td class="cellrowborder" valign="top" width="18.060855102240485%" headers="mcps1.2.7.1.1 "><p id="p18478163131914"><a name="p18478163131914"></a><a name="p18478163131914"></a>parameters.qos</p>
 </td>
 <td class="cellrowborder" valign="top" width="23.51041972409745%" headers="mcps1.2.7.1.2 "><p id="p15525175120211"><a name="p15525175120211"></a><a name="p15525175120211"></a>PV在存储侧的文件系统的QoS设置。</p>
-<p id="p12218174732111"><a name="p12218174732111"></a><a name="p12218174732111"></a>配置项值是字典格式的JSON字符串（字符串两边由单引号修饰，字典key由双引号修饰）。如：'{"maxMBPS": 999, "maxIOPS": 999}'</p>
+<p id="p12218174732111"><a name="p12218174732111"></a><a name="p12218174732111"></a>配置项值是字典格式的JSON字符串（字符串两边由单引号修饰，字典key由双引号修饰）。如：'{"MAXBANDWIDTH": 999, "MAXIOPS": 999}'</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.545347813325507%" headers="mcps1.2.7.1.3 "><p id="p03704715211"><a name="p03704715211"></a><a name="p03704715211"></a>否</p>
 </td>

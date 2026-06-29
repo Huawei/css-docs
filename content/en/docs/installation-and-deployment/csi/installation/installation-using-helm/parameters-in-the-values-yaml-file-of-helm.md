@@ -32,7 +32,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p1633715710454"><a name="en-us_topic_0000001324610777_p1633715710454"></a><a name="en-us_topic_0000001324610777_p1633715710454"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p16337457154513"><a name="en-us_topic_0000001324610777_p16337457154513"></a><a name="en-us_topic_0000001324610777_p16337457154513"></a>huawei-csi:<span id="ph09001410174913"><a name="ph09001410174913"></a><a name="ph09001410174913"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row12803747173911"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p1616415034013"><a name="p1616415034013"></a><a name="p1616415034013"></a>images.storageBackendSidecar</p>
@@ -41,7 +41,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p1380304783914"><a name="p1380304783914"></a><a name="p1380304783914"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1380384793918"><a name="p1380384793918"></a><a name="p1380384793918"></a>storage-backend-sidecar:<span id="ph111931741165212"><a name="ph111931741165212"></a><a name="ph111931741165212"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row1089864973918"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p46581916408"><a name="p46581916408"></a><a name="p46581916408"></a>images.storageBackendController</p>
@@ -50,7 +50,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p2089912497394"><a name="p2089912497394"></a><a name="p2089912497394"></a>Yes</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1489984963919"><a name="p1489984963919"></a><a name="p1489984963919"></a>storage-backend-controller:<span id="ph21391643115214"><a name="ph21391643115214"></a><a name="ph21391643115214"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row12997135033511"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p199785073518"><a name="p199785073518"></a><a name="p199785073518"></a>images.huaweiCSIExtender</p>
@@ -59,7 +59,7 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p17997350183511"><a name="p17997350183511"></a><a name="p17997350183511"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p15997155019358"><a name="p15997155019358"></a><a name="p15997155019358"></a>huawei-csi-extender:<span id="ph8385174515525"><a name="ph8385174515525"></a><a name="ph8385174515525"></a>4.12.0</span></p>
 </td>
 </tr>
 <tr id="row185030354414"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0000001324610777_p4337185713453"><a name="en-us_topic_0000001324610777_p4337185713453"></a><a name="en-us_topic_0000001324610777_p4337185713453"></a>images.sidecar.livenessProbe</p>
@@ -123,6 +123,15 @@ The images parameters in the  **values.yaml**  file are used to configure the co
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0000001324610777_p83371057164510"><a name="en-us_topic_0000001324610777_p83371057164510"></a><a name="en-us_topic_0000001324610777_p83371057164510"></a>Yes</p>
 </td>
 <td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0000001324610777_p1833711578459"><a name="en-us_topic_0000001324610777_p1833711578459"></a><a name="en-us_topic_0000001324610777_p1833711578459"></a><span id="text116171043295"><a name="text116171043295"></a><a name="text116171043295"></a>registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0</span></p>
+</td>
+</tr>
+<tr id="row1875101815710"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.5.1.1 "><p id="p47517185579"><a name="p47517185579"></a><a name="p47517185579"></a>images.sidecar.healthMonitorController</p>
+</td>
+<td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.5.1.2 "><p id="p475161817573"><a name="p475161817573"></a><a name="p475161817573"></a><a href="https://github.com/kubernetes-csi/external-health-monitor" target="_blank" rel="noopener noreferrer">health-monitor-controller</a> sidecar image.</p>
+</td>
+<td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.5.1.3 "><p id="p87513189579"><a name="p87513189579"></a><a name="p87513189579"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.999999999999996%" headers="mcps1.2.5.1.4 "><p id="p1275114189576"><a name="p1275114189576"></a><a name="p1275114189576"></a><span id="text1722433515717"><a name="text1722433515717"></a><a name="text1722433515717"></a>registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.17.0</span></p>
 </td>
 </tr>
 </tbody>
@@ -210,6 +219,26 @@ The controller parameters are used to configure the huawei-csi-controller compon
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p728462210401"><a name="p728462210401"></a><a name="p728462210401"></a>The Kubernetes version must be later than v1.16.</p>
 </td>
+</tr>
+<tr id="row8431533182117"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p643153312213"><a name="p643153312213"></a><a name="p643153312213"></a>controller.resizer.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p1472110527115"><a name="p1472110527115"></a><a name="p1472110527115"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p1972125219116"><a name="p1972125219116"></a><a name="p1972125219116"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p572145214116"><a name="p572145214116"></a><a name="p572145214116"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row779183652114"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1679163619215"><a name="p1679163619215"></a><a name="p1679163619215"></a>controller.resizer.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p17721352121111"><a name="p17721352121111"></a><a name="p17721352121111"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p1172112526113"><a name="p1172112526113"></a><a name="p1172112526113"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p197211052101112"><a name="p197211052101112"></a><a name="p197211052101112"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
 </tr>
 <tr id="row14131154414450"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p913144454511"><a name="p913144454511"></a><a name="p913144454511"></a>controller.nodeSelector</p>
 </td>
@@ -321,6 +350,179 @@ The controller parameters are used to configure the huawei-csi-controller compon
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p175201135121817"><a name="p175201135121817"></a><a name="p175201135121817"></a>If a port conflict occurs, change the port number to an idle one.</p>
 </td>
 </tr>
+<tr id="row25248102218"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p19524181017211"><a name="p19524181017211"></a><a name="p19524181017211"></a>controller.healthMonitor.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p498710333217"><a name="p498710333217"></a><a name="p498710333217"></a>Whether to enable the volume monitoring service.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p11189104712218"><a name="p11189104712218"></a><a name="p11189104712218"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p3189547328"><a name="p3189547328"></a><a name="p3189547328"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p2524510626"><a name="p2524510626"></a><a name="p2524510626"></a>After this function is enabled, volume monitoring features can be used.</p>
+</td>
+</tr>
+<tr id="row199951919932"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1299561914320"><a name="p1299561914320"></a><a name="p1299561914320"></a>controller.healthMonitor.monitorInterval</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p5483164717312"><a name="p5483164717312"></a><a name="p5483164717312"></a>Monitoring polling interval.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p6995201918318"><a name="p6995201918318"></a><a name="p6995201918318"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p189951319130"><a name="p189951319130"></a><a name="p189951319130"></a>60s</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p186191649648"><a name="p186191649648"></a><a name="p186191649648"></a>Set the volume monitoring polling interval.</p>
+</td>
+</tr>
+<tr id="row88958350237"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1889533542311"><a name="p1889533542311"></a><a name="p1889533542311"></a>controller.healthMonitor.workThreads</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p18951935172315"><a name="p18951935172315"></a><a name="p18951935172315"></a>Number of monitoring PV worker threads.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p16896203542311"><a name="p16896203542311"></a><a name="p16896203542311"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p8896735182320"><a name="p8896735182320"></a><a name="p8896735182320"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p189620359232"><a name="p189620359232"></a><a name="p189620359232"></a>Set the number of monitoring PV worker threads.</p>
+</td>
+</tr>
+<tr id="row208051073261"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p7805147162614"><a name="p7805147162614"></a><a name="p7805147162614"></a>controller.provisioner.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p20116048112920"><a name="p20116048112920"></a><a name="p20116048112920"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p17116548192914"><a name="p17116548192914"></a><a name="p17116548192914"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p211612488290"><a name="p211612488290"></a><a name="p211612488290"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1991913335261"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p176441258172612"><a name="p176441258172612"></a><a name="p176441258172612"></a>controller.provisioner.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p11161948172911"><a name="p11161948172911"></a><a name="p11161948172911"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p81161348172911"><a name="p81161348172911"></a><a name="p81161348172911"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1116184815293"><a name="p1116184815293"></a><a name="p1116184815293"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row494353112620"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p2035818367274"><a name="p2035818367274"></a><a name="p2035818367274"></a>controller.attacher.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p20191349112917"><a name="p20191349112917"></a><a name="p20191349112917"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p19191134912919"><a name="p19191134912919"></a><a name="p19191134912919"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p6191154915292"><a name="p6191154915292"></a><a name="p6191154915292"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1918343092610"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1418174412273"><a name="p1418174412273"></a><a name="p1418174412273"></a>controller.attacher.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p1719194917294"><a name="p1719194917294"></a><a name="p1719194917294"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p16191154902910"><a name="p16191154902910"></a><a name="p16191154902910"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p12191114917296"><a name="p12191114917296"></a><a name="p12191114917296"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row192431428132611"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p113911258172712"><a name="p113911258172712"></a><a name="p113911258172712"></a>controller.snapshotter.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p242612506293"><a name="p242612506293"></a><a name="p242612506293"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p242695018298"><a name="p242695018298"></a><a name="p242695018298"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p17426135052912"><a name="p17426135052912"></a><a name="p17426135052912"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1055414269263"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p14529191210289"><a name="p14529191210289"></a><a name="p14529191210289"></a>controller.snapshotter.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p17426165015299"><a name="p17426165015299"></a><a name="p17426165015299"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p19426155002918"><a name="p19426155002918"></a><a name="p19426155002918"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p18426105016296"><a name="p18426105016296"></a><a name="p18426105016296"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row2882424152620"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p078319270286"><a name="p078319270286"></a><a name="p078319270286"></a>controller.storageBackendController.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p19297952192917"><a name="p19297952192917"></a><a name="p19297952192917"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p52971521296"><a name="p52971521296"></a><a name="p52971521296"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1297165202911"><a name="p1297165202911"></a><a name="p1297165202911"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1918322112615"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p79091333122816"><a name="p79091333122816"></a><a name="p79091333122816"></a>controller.storageBackendController.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p14297205215297"><a name="p14297205215297"></a><a name="p14297205215297"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p1629785215294"><a name="p1629785215294"></a><a name="p1629785215294"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p192971252192913"><a name="p192971252192913"></a><a name="p192971252192913"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row49609209269"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p0433345162810"><a name="p0433345162810"></a><a name="p0433345162810"></a>controller.storageBackendSidecar.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p768295310299"><a name="p768295310299"></a><a name="p768295310299"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p0682053172917"><a name="p0682053172917"></a><a name="p0682053172917"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1968218539298"><a name="p1968218539298"></a><a name="p1968218539298"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row109641718162619"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p1119618514281"><a name="p1119618514281"></a><a name="p1119618514281"></a>controller.storageBackendSidecar.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p968211532299"><a name="p968211532299"></a><a name="p968211532299"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p1268215319299"><a name="p1268215319299"></a><a name="p1268215319299"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p14683553122914"><a name="p14683553122914"></a><a name="p14683553122914"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row428571752616"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p3200145912289"><a name="p3200145912289"></a><a name="p3200145912289"></a>controller.huaweiCsiExtender.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p692855142913"><a name="p692855142913"></a><a name="p692855142913"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p49265518295"><a name="p49265518295"></a><a name="p49265518295"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1292145522914"><a name="p1292145522914"></a><a name="p1292145522914"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row0582215122615"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p119671131291"><a name="p119671131291"></a><a name="p119671131291"></a>controller.huaweiCsiExtender.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p792195582914"><a name="p792195582914"></a><a name="p792195582914"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p69285518296"><a name="p69285518296"></a><a name="p69285518296"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p10928556292"><a name="p10928556292"></a><a name="p10928556292"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row084591322618"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p13514171119292"><a name="p13514171119292"></a><a name="p13514171119292"></a>controller.huaweiCsiDriver.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p357385622912"><a name="p357385622912"></a><a name="p357385622912"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p1157395642920"><a name="p1157395642920"></a><a name="p1157395642920"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1957395602919"><a name="p1957395602919"></a><a name="p1957395602919"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1764151162618"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p942701922915"><a name="p942701922915"></a><a name="p942701922915"></a>controller.huaweiCsiDriver.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p185731564293"><a name="p185731564293"></a><a name="p185731564293"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p257315617299"><a name="p257315617299"></a><a name="p257315617299"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1257313562298"><a name="p1257313562298"></a><a name="p1257313562298"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
 </tbody>
 </table>
 
@@ -421,6 +623,26 @@ The node parameters are used to configure the huawei-csi-node component.
 <td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 "><p id="p19463181655017"><a name="p19463181655017"></a><a name="p19463181655017"></a>After a block device is successfully mounted, the directory structure of the mount path is as follows:</p>
 <pre class="screen" id="screen64610218547"><a name="screen64610218547"></a><a name="screen64610218547"></a>/var/lib/kubelet/plugins/kubernetes.io/csi/{kubeletVolumeDevicesDirName}/publish/{specName}/{podUID}</pre>
 </td>
+</tr>
+<tr id="row184551840113015"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.6.1.1 "><p id="p134551640163011"><a name="p134551640163011"></a><a name="p134551640163011"></a>node.huaweiCsiDriver.kubeApiQps</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.2 "><p id="p771310404312"><a name="p771310404312"></a><a name="p771310404312"></a>Number of requests that can be sent by the client to kube-apiserver per second.</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13131313131313%" headers="mcps1.2.6.1.3 "><p id="p6713164010312"><a name="p6713164010312"></a><a name="p6713164010312"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.6.1.4 "><p id="p6713340173116"><a name="p6713340173116"></a><a name="p6713340173116"></a>5</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row1048311384300"><td class="cellrowborder" valign="top" width="20.2020202020202%" headers="mcps1.2.6.1.1 "><p id="p1248333812303"><a name="p1248333812303"></a><a name="p1248333812303"></a>node.huaweiCsiDriver.kubeApiBurst</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.2 "><p id="p13713240113114"><a name="p13713240113114"></a><a name="p13713240113114"></a>Maximum number of requests that can be sent by the client in a short period.</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.13131313131313%" headers="mcps1.2.6.1.3 "><p id="p3713540113113"><a name="p3713540113113"></a><a name="p3713540113113"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.14141414141414%" headers="mcps1.2.6.1.4 "><p id="p8713154053110"><a name="p8713154053110"></a><a name="p8713154053110"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.26262626262626%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -635,7 +857,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103486342462"><a name="en-us_topic_0000001324610777_p103486342462"></a><a name="en-us_topic_0000001324610777_p103486342462"></a>file</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1005746855"><a name="b1005746855"></a><a name="b1005746855"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b107464782"><a name="b107464782"></a><a name="b107464782"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
 <p id="p1676211161707"><a name="p1676211161707"></a><a name="p1676211161707"></a>When the value is <strong id="b134821913194316"><a name="b134821913194316"></a><a name="b134821913194316"></a>console</strong>, logs are retained in the temporary space of the Pod where CSI is located. When the Pod where CSI is located is destroyed, the logs are also destroyed.</p>
 </td>
 </tr>

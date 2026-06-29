@@ -197,7 +197,7 @@ mountOptions:
 </td>
 <td class="cellrowborder" valign="top" width="7.35740142843166%" headers="mcps1.2.7.1.5 "><p id="p177255616169"><a name="p177255616169"></a><a name="p177255616169"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>If this parameter is not set, Huawei CSI will randomly select a storage pool that meets the capacity requirements from the selected backend to create resources. You are advised to specify a storage pool to ensure that the created resource is located in the expected storage pool.</p>
+<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>If this parameter is not set, Huawei CSI will randomly select a storage pool with the largest remaining capacity from the selected backend to create resources. You are advised to specify a storage pool to ensure that the created resource is located in the expected storage pool.</p>
 </td>
 </tr>
 <tr id="row12968565337"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
@@ -407,7 +407,7 @@ mountOptions:
 </tr>
 <tr id="row7725201815153"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="p3200183116498"><a name="p3200183116498"></a><a name="p3200183116498"></a>parameters.gcTimeThreshold</p>
 </td>
-<td class="cellrowborder" valign="top" width="23.089717248801485%" headers="mcps1.2.7.1.2 "><p id="p413812361537"><a name="p413812361537"></a><a name="p413812361537"></a>KV cache expiration time. The value ranges from 1 to 3650 days. Example: <strong id="b1074246735"><a name="b1074246735"></a><a name="b1074246735"></a>1</strong></p>
+<td class="cellrowborder" valign="top" width="23.089717248801485%" headers="mcps1.2.7.1.2 "><p id="p413812361537"><a name="p413812361537"></a><a name="p413812361537"></a>KV cache expiration time. The value ranges from 1 to 3650 days. Example: <strong id="b454992585"><a name="b454992585"></a><a name="b454992585"></a>1</strong></p>
 </td>
 <td class="cellrowborder" valign="top" width="6.848644946678408%" headers="mcps1.2.7.1.3 "><p id="p1820073117497"><a name="p1820073117497"></a><a name="p1820073117497"></a>Conditionally mandatory</p>
 </td>
@@ -458,7 +458,7 @@ mountOptions:
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p8682131154212"><a name="p8682131154212"></a><a name="p8682131154212"></a>WWN of a storage device.</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p317291919718"><a name="p317291919718"></a><a name="p317291919718"></a>To mount the HyperScale cluster file system, enter the domain name of the HyperScale cluster.</p>
-<p id="p174715461239"><a name="p174715461239"></a><a name="p174715461239"></a>The description of the <strong id="b13661619203515"><a name="b13661619203515"></a><a name="b13661619203515"></a>dn</strong> parameter is for reference only. For details about other mounting parameters of the DataTurbo protocol, see <a href="https://support.huawei.com/enterprise/en/doc/EDOC1100483897/a8d5b478?idPath=7919749|251366268|250389224|263153904|264568316" target="_blank" rel="noopener noreferrer">OceanStor DataTurbo DTFS User Guide</a>.</p>
+<p id="p174715461239"><a name="p174715461239"></a><a name="p174715461239"></a>The description of the <strong id="b13661619203515"><a name="b13661619203515"></a><a name="b13661619203515"></a>dn</strong> parameter is for reference only. For details about other mounting parameters of the DataTurbo protocol, see <a href="https://support.huawei.com/enterprise/en/doc/EDOC1100539414/a8d5b478/mounting-a-file-system?idPath=7919749|251366268|250389224|263153904|264568316" target="_blank" rel="noopener noreferrer">AI Storage Kit 25.x.x DTFS User Guide</a>.</p>
 </td>
 </tr>
 </tbody>

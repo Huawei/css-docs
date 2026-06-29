@@ -43,6 +43,6 @@ weight: 6
     cat /sys/module/nvme_core/parameters/multipath
     ```
 
--   检查DataTurbo客户端状态，请参考[《OceanStor DataTurbo 25.1.0 DTFS用户指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100483896/5c81c74a?idPath=7919749|251366268|250389224|263153904|264568316)。
+-   检查DataTurbo客户端状态，请参考[《AI Storage Kit 25.x.x DTFS 用户指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100539415/e33f6e5e?idPath=7919749|251366268|250389224|263153904|264568316)。
 -   检查NFS+客户端状态，请参考[《NFS+客户端 1.x 用户指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100359502/c54ef101)。
 

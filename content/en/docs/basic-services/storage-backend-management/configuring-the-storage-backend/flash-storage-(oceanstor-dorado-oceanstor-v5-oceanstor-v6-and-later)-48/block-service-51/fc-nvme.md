@@ -181,7 +181,7 @@ This section describes how to create a storage backend of the FC-NVMe protocol t
     The following is an example of the command output. If the backend status is  **Bound**, the creation is successful.
 
     ```
-    NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME            PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-demo    fc-nvme     oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 

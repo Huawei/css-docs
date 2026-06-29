@@ -199,7 +199,7 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.7.1.5 "><p id="p91331855155916"><a name="p91331855155916"></a><a name="p91331855155916"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>If this parameter is not set, Huawei CSI will randomly select a storage pool that meets the capacity requirements from the selected backend to create resources. You are advised to specify a storage pool to ensure that the created resource is located in the expected storage pool.</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>If this parameter is not set, Huawei CSI will randomly select a storage pool with the largest remaining capacity from the selected backend to create resources. You are advised to specify a storage pool to ensure that the created resource is located in the expected storage pool.</p>
 </td>
 </tr>
 <tr id="row12968565337"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.7.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
@@ -313,7 +313,7 @@ parameters:
 <tr id="row15478113119190"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.7.1.1 "><p id="p18478163131914"><a name="p18478163131914"></a><a name="p18478163131914"></a>parameters.qos</p>
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.7.1.2 "><p id="p15525175120211"><a name="p15525175120211"></a><a name="p15525175120211"></a>QoS settings of the file system on the storage side of the PV.</p>
-<p id="p12218174732111"><a name="p12218174732111"></a><a name="p12218174732111"></a>The value of the parameter is JSON character strings in dictionary format. A character string is enclosed by single quotation marks and the dictionary key by double quotation marks. Example: <strong id="b1246522122814"><a name="b1246522122814"></a><a name="b1246522122814"></a>'{"maxMBPS": 999, "maxIOPS": 999}'</strong></p>
+<p id="p12218174732111"><a name="p12218174732111"></a><a name="p12218174732111"></a>The value of the parameter is JSON character strings in dictionary format. A character string is enclosed by single quotation marks and the dictionary key by double quotation marks. For example, <strong id="b13019712126"><a name="b13019712126"></a><a name="b13019712126"></a>'{"MAXBANDWIDTH": 999, "MAXIOPS": 999}'</strong>.</p>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.7.1.3 "><p id="p03704715211"><a name="p03704715211"></a><a name="p03704715211"></a>No</p>
 </td>
@@ -342,7 +342,7 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.7.1.2 "><p id="p85711524172312"><a name="p85711524172312"></a><a name="p85711524172312"></a>Data synchronization speed of a HyperMetro pair. The value ranges from 1 to 4.</p>
 <p id="p34101616202511"><a name="p34101616202511"></a><a name="p34101616202511"></a>The value can be:</p>
-<a name="ul15591625182515"></a><a name="ul15591625182515"></a><ul id="ul15591625182515"><li><strong id="b543729462"><a name="b543729462"></a><a name="b543729462"></a>"1"</strong>: low</li><li><strong id="b1243639326"><a name="b1243639326"></a><a name="b1243639326"></a>"2"</strong>: medium</li><li><strong id="b527339930"><a name="b527339930"></a><a name="b527339930"></a>"3"</strong>: high</li><li><strong id="b115813200"><a name="b115813200"></a><a name="b115813200"></a>"4"</strong>: highest</li></ul>
+<a name="ul15591625182515"></a><a name="ul15591625182515"></a><ul id="ul15591625182515"><li><strong id="b1753143526"><a name="b1753143526"></a><a name="b1753143526"></a>"1"</strong>: low</li><li><strong id="b1443941813"><a name="b1443941813"></a><a name="b1443941813"></a>"2"</strong>: medium</li><li><strong id="b299184702"><a name="b299184702"></a><a name="b299184702"></a>"3"</strong>: high</li><li><strong id="b2031390739"><a name="b2031390739"></a><a name="b2031390739"></a>"4"</strong>: highest</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.7.1.3 "><p id="p15716241239"><a name="p15716241239"></a><a name="p15716241239"></a>No</p>
 </td>
@@ -413,7 +413,7 @@ parameters:
 <tr id="row99331045154111"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.7.1.1 "><p id="p933031214424"><a name="p933031214424"></a><a name="p933031214424"></a>parameters.accesskrb5i</p>
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.7.1.2 "><p id="p7359241154"><a name="p7359241154"></a><a name="p7359241154"></a>Configures the krb5i security protocol.</p>
-<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b996918065"><a name="b996918065"></a><a name="b996918065"></a>read_write</strong>: read and write</li><li><strong id="b1458717344"><a name="b1458717344"></a><a name="b1458717344"></a>none</strong>: no permission</li></ul>
+<a name="ul149421336953"></a><a name="ul149421336953"></a><ul id="ul149421336953"><li><strong id="b43471279502"><a name="b43471279502"></a><a name="b43471279502"></a>read_only</strong>: read-only</li><li><strong id="b2109026782"><a name="b2109026782"></a><a name="b2109026782"></a>read_write</strong>: read and write</li><li><strong id="b367490135"><a name="b367490135"></a><a name="b367490135"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.7.1.3 "><p id="p129331245154111"><a name="p129331245154111"></a><a name="p129331245154111"></a>No</p>
 </td>
@@ -421,13 +421,13 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.7.1.5 "><p id="p1713445513599"><a name="p1713445513599"></a><a name="p1713445513599"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.7.1.6 "><p id="p787455154620"><a name="p787455154620"></a><a name="p787455154620"></a>During mounting, you can specify the <strong id="b2091265169"><a name="b2091265169"></a><a name="b2091265169"></a>sec</strong> parameter in <strong id="b1706827952"><a name="b1706827952"></a><a name="b1706827952"></a>mountOptions</strong>.</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.7.1.6 "><p id="p787455154620"><a name="p787455154620"></a><a name="p787455154620"></a>During mounting, you can specify the <strong id="b99331758"><a name="b99331758"></a><a name="b99331758"></a>sec</strong> parameter in <strong id="b535561970"><a name="b535561970"></a><a name="b535561970"></a>mountOptions</strong>.</p>
 </td>
 </tr>
 <tr id="row47801443164117"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.7.1.1 "><p id="p11892181264220"><a name="p11892181264220"></a><a name="p11892181264220"></a>parameters.accesskrb5p</p>
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.7.1.2 "><p id="p19699145314447"><a name="p19699145314447"></a><a name="p19699145314447"></a>Configures the krb5p security protocol.</p>
-<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b1116083062"><a name="b1116083062"></a><a name="b1116083062"></a>read_write</strong>: read and write</li><li><strong id="b1834924821"><a name="b1834924821"></a><a name="b1834924821"></a>none</strong>: no permission</li></ul>
+<a name="ul1713519393512"></a><a name="ul1713519393512"></a><ul id="ul1713519393512"><li><strong id="b1335072755019"><a name="b1335072755019"></a><a name="b1335072755019"></a>read_only</strong>: read-only</li><li><strong id="b1441455196"><a name="b1441455196"></a><a name="b1441455196"></a>read_write</strong>: read and write</li><li><strong id="b265369625"><a name="b265369625"></a><a name="b265369625"></a>none</strong>: no permission</li></ul>
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.7.1.3 "><p id="p1780134314118"><a name="p1780134314118"></a><a name="p1780134314118"></a>No</p>
 </td>
@@ -435,7 +435,7 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.7.1.5 "><p id="p131341955105920"><a name="p131341955105920"></a><a name="p131341955105920"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.7.1.6 "><p id="p1132519619463"><a name="p1132519619463"></a><a name="p1132519619463"></a>During mounting, you can specify the <strong id="b1375737032"><a name="b1375737032"></a><a name="b1375737032"></a>sec</strong> parameter in <strong id="b563502492"><a name="b563502492"></a><a name="b563502492"></a>mountOptions</strong>.</p>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.7.1.6 "><p id="p1132519619463"><a name="p1132519619463"></a><a name="p1132519619463"></a>During mounting, you can specify the <strong id="b1436821933"><a name="b1436821933"></a><a name="b1436821933"></a>sec</strong> parameter in <strong id="b201516147"><a name="b201516147"></a><a name="b201516147"></a>mountOptions</strong>.</p>
 </td>
 </tr>
 <tr id="row446717321624"><td class="cellrowborder" valign="top" width="16%" headers="mcps1.2.7.1.1 "><p id="p204682321028"><a name="p204682321028"></a><a name="p204682321028"></a>parameters.snapshotDirectoryVisibility</p>
@@ -646,7 +646,7 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="26.167383261673834%" headers="mcps1.2.5.1.3 "><p id="p41575261777"><a name="p41575261777"></a><a name="p41575261777"></a>Read/write type.</p>
 </td>
-<td class="cellrowborder" valign="top" width="45.205479452054796%" headers="mcps1.2.5.1.4 "><p id="p1315717261879"><a name="p1315717261879"></a><a name="p1315717261879"></a>The valid value is as follows:</p>
+<td class="cellrowborder" valign="top" width="45.205479452054796%" headers="mcps1.2.5.1.4 "><p id="p1315717261879"><a name="p1315717261879"></a><a name="p1315717261879"></a>The value can be:</p>
 <a name="ul121571261076"></a><a name="ul121571261076"></a><ul id="ul121571261076"><li><strong id="b78146864311"><a name="b78146864311"></a><a name="b78146864311"></a>2</strong>: read and write I/Os</li></ul>
 </td>
 </tr>

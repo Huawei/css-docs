@@ -5,7 +5,7 @@ description:
 weight: 1
 ---
 
-本章节介绍如何使用Helm 3安装部署华为CSI。
+本章节介绍如何使用Helm安装部署华为CSI，Helm软件版本要求3.0以上。
 
 ## Helm安装说明{#section16991437124819}
 
@@ -18,7 +18,7 @@ Helm是Kubernetes生态系统中的一个软件包管理工具，类似Ubuntu的
 使用Helm可以对Kubernetes应用进行统一打包、分发、安装、升级以及回退等操作。
 
 -   Helm的获取、安装请参考：[https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/)
--   Helm与Kubernetes版本对应关系请参考：[https://helm.sh/docs/topics/version\_skew/](https://helm.sh/docs/topics/version_skew/)
+-   Helm与Kubernetes版本对应关系请参考：[https://helm.sh/docs/topics/version_skew/](https://helm.sh/docs/topics/version_skew/)
 
 Helm在安装huawei-csi-controller时，将在指定命名空间的Deployment类型的工作负载中部署以下组件：
 
@@ -32,6 +32,7 @@ Helm在安装huawei-csi-controller时，将在指定命名空间的Deployment类
 -   （可选）huawei-csi-extender：提供变更持久卷支持。
 -   （可选）Kubernetes External Snapshotter：提供快照支持（作为CRD安装）。
 -   （可选）Kubernetes External Snapshot Controller ：用于卷快照控制。
+-   （可选）Kubernetes External Health Monitor Controller ：用于卷健康监控控制。
 
 Helm在安装huawei-csi-node时，将在指定命名空间的DaemonSet类型的工作负载中部署以下组件：
 

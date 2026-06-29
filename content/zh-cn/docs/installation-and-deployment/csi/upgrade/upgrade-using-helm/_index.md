@@ -7,9 +7,9 @@ weight: 1
 
 本章节介绍如何升级华为CSI。
 
--   如果您从2.x版本升级至4.11.0版本，请参考旧版本用户指南卸载CSI，然后参考[使用Helm安装](/docs/installation-and-deployment/csi/installation/installation-using-helm)章节安装华为CSI。
--   如果您从2.x或3.x版本升级至4.11.0版本，请参考[从2.x或3.x升级至4.x版本](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm/upgrading-from-2-x-or-3-x-to-4-x)章节升级华为CSI。
--   如果您从4.x版本升级至4.11.0版本，请参考[Kubernetes、OpenShift、Tanzu升级华为CSI](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu)章节升级华为CSI。
+-   如果您从2.x版本升级至4.12.0版本，请参考旧版本用户指南卸载CSI，然后参考[使用Helm安装](/docs/installation-and-deployment/csi/installation/installation-using-helm)章节安装华为CSI。
+-   如果您从2.x或3.x版本升级至4.12.0版本，请参考[从2.x或3.x升级至4.x版本](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm/upgrading-from-2-x-or-3-x-to-4-x)章节升级华为CSI。
+-   如果您从4.x版本升级至4.12.0版本，请参考[Kubernetes、OpenShift、Tanzu升级华为CSI](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm/upgrading-huawei-csi-on-kubernetes-openshift-and-tanzu)章节升级华为CSI。
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-notice.gif)  
 >-   部分2.x版本CSI已经下架，若升级失败，可能无法回退到已下架版本的CSI。

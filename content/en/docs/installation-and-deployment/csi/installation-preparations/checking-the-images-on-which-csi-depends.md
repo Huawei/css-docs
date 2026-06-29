@@ -2,12 +2,12 @@
 title: "Checking the Images on Which CSI Depends"
 linkTitle: "Checking the Images on Which CSI Depends"
 description: 
-weight: 7
+weight: 8
 ---
 
 The installation of Huawei CSI depends on the images listed in the following table. If all worker nodes in the cluster have been connected to the Internet and can pull images online, you can skip this section. If nodes in the cluster cannot connect to the Internet, download the corresponding image file based on the Kubernetes version and upload it to the image repository or import it to all worker nodes in the Kubernetes cluster.
 
-The huawei-csi-controller service depends on the following sidecar images: livenessprobe, csi-provisioner, csi-attacher, csi-resizer, csi-snapshotter, snapshot-controller, storage-backend-controller, storage-backend-sidecar, huawei-csi-driver, and huawei-csi-extender. The huawei-csi-node service depends on the following sidecar images: livenessprobe, csi-node-driver-registrar, and huawei-csi-driver.
+The huawei-csi-controller service depends on the following sidecar images: livenessprobe, csi-provisioner, csi-attacher, csi-resizer, csi-snapshotter, snapshot-controller, health-monitor-controller, storage-backend-controller, storage-backend-sidecar, huawei-csi-driver, and huawei-csi-extender. The huawei-csi-node service depends on the following sidecar images: livenessprobe, csi-node-driver-registrar, and huawei-csi-driver.
 
 For details about the functions and details of each image, see the following table.
 
@@ -123,7 +123,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row17451125324615"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p845185320464"><a name="p845185320464"></a><a name="p845185320464"></a>storage-backend-controller</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p2045111538468"><a name="p2045111538468"></a><a name="p2045111538468"></a>storage-backend-controller:<span id="ph97067019519"><a name="ph97067019519"></a><a name="ph97067019519"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p2045111538468"><a name="p2045111538468"></a><a name="p2045111538468"></a>storage-backend-controller:<span id="ph97067019519"><a name="ph97067019519"></a><a name="ph97067019519"></a>4.12.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p10451353174612"><a name="p10451353174612"></a><a name="p10451353174612"></a>v1.16+</p>
 </td>
@@ -132,7 +132,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row93065617462"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p183045684613"><a name="p183045684613"></a><a name="p183045684613"></a>storage-backend-sidecar</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p193075611465"><a name="p193075611465"></a><a name="p193075611465"></a>storage-backend-sidecar:<span id="ph391581875114"><a name="ph391581875114"></a><a name="ph391581875114"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p193075611465"><a name="p193075611465"></a><a name="p193075611465"></a>storage-backend-sidecar:<span id="ph391581875114"><a name="ph391581875114"></a><a name="ph391581875114"></a>4.12.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p133011564464"><a name="p133011564464"></a><a name="p133011564464"></a>v1.16+</p>
 </td>
@@ -141,7 +141,7 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row14278140184816"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p62781704483"><a name="p62781704483"></a><a name="p62781704483"></a>huawei-csi-driver</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p152781708484"><a name="p152781708484"></a><a name="p152781708484"></a>huawei-csi:<span id="ph46871220155110"><a name="ph46871220155110"></a><a name="ph46871220155110"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p152781708484"><a name="p152781708484"></a><a name="p152781708484"></a>huawei-csi:<span id="ph46871220155110"><a name="ph46871220155110"></a><a name="ph46871220155110"></a>4.12.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p2278704483"><a name="p2278704483"></a><a name="p2278704483"></a>v1.16+</p>
 </td>
@@ -150,11 +150,20 @@ For details about the functions and details of each image, see the following tab
 </tr>
 <tr id="row17271523123216"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p10728202303212"><a name="p10728202303212"></a><a name="p10728202303212"></a>huawei-csi-extender</p>
 </td>
-<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p6728112311324"><a name="p6728112311324"></a><a name="p6728112311324"></a>huawei-csi-extender:<span id="ph527132313515"><a name="ph527132313515"></a><a name="ph527132313515"></a>4.11.0</span></p>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p6728112311324"><a name="p6728112311324"></a><a name="p6728112311324"></a>huawei-csi-extender:<span id="ph527132313515"><a name="ph527132313515"></a><a name="ph527132313515"></a>4.12.0</span></p>
 </td>
 <td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p1072862312323"><a name="p1072862312323"></a><a name="p1072862312323"></a>v1.16+</p>
 </td>
 <td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p197281123143210"><a name="p197281123143210"></a><a name="p197281123143210"></a>This image is provided by Huawei CSI software package, used to provide extended features of Huawei CSI.</p>
+</td>
+</tr>
+<tr id="row1833511611213"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p4593111711214"><a name="p4593111711214"></a><a name="p4593111711214"></a>health-monitor-controller</p>
+</td>
+<td class="cellrowborder" valign="top" width="23%" headers="mcps1.2.5.1.2 "><p id="p3593101717211"><a name="p3593101717211"></a><a name="p3593101717211"></a><span id="text1722433515717"><a name="text1722433515717"></a><a name="text1722433515717"></a>registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.17.0</span></p>
+</td>
+<td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.5.1.3 "><p id="p1159312171211"><a name="p1159312171211"></a><a name="p1159312171211"></a>v1.16+</p>
+</td>
+<td class="cellrowborder" valign="top" width="41%" headers="mcps1.2.5.1.4 "><p id="p1759317171527"><a name="p1759317171527"></a><a name="p1759317171527"></a>This image is provided by the Kubernetes community, and used to check the health status of volumes.</p>
 </td>
 </tr>
 </tbody>

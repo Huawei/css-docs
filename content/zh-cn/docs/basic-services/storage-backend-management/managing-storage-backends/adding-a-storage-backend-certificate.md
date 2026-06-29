@@ -23,7 +23,7 @@ CSI支持通过添加存储证书的方式，使用TLS/SSL协议加密数据传�
     命令结果示例如下：
 
     ```
-    NAMESPACE     NAME         PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME         PROTOCOL    STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-1    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     huawei-csi    backend-2    roce-nvme   oceanstor-san    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088  
     ```

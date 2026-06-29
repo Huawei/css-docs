@@ -156,7 +156,7 @@ parameters:
 </td>
 <td class="cellrowborder" valign="top" width="7.35740142843166%" headers="mcps1.2.7.1.5 "><p id="p78631236144"><a name="p78631236144"></a><a name="p78631236144"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上随机选择一个满足容量要求的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
+<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上选择一个剩余容量最大的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
 </td>
 </tr>
 <tr id="row12968565337"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
@@ -224,6 +224,22 @@ parameters:
 <td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="zh-cn_topic_0000001162111564_p8750311172910"><a name="zh-cn_topic_0000001162111564_p8750311172910"></a><a name="zh-cn_topic_0000001162111564_p8750311172910"></a>仅当PVC的volumeMode配置为“Filesystem”时生效。</p>
 </td>
 </tr>
+<tr id="row152191856151911"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="p76971017208"><a name="p76971017208"></a><a name="p76971017208"></a>parameters.restoreMode</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.089717248801485%" headers="mcps1.2.7.1.2 "><p id="p202194565196"><a name="p202194565196"></a><a name="p202194565196"></a>从快照恢复PVC时的恢复模式。支持模式为：</p>
+<a name="ul84770582113"></a><a name="ul84770582113"></a><ul id="ul84770582113"><li>clone</li><li>snapshot</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="6.848644946678408%" headers="mcps1.2.7.1.3 "><p id="p10220356111918"><a name="p10220356111918"></a><a name="p10220356111918"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.453184619900206%" headers="mcps1.2.7.1.4 "><p id="p722045613195"><a name="p722045613195"></a><a name="p722045613195"></a>clone</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.35740142843166%" headers="mcps1.2.7.1.5 "><p id="p102201356161913"><a name="p102201356161913"></a><a name="p102201356161913"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><a name="ul2041575992117"></a><a name="ul2041575992117"></a><ul id="ul2041575992117"><li>clone：在存储上创建新的资源，并与快照资源建立克隆pair进行数据恢复。</li><li>snapshot：直接使用存储上的快照资源，将其分配到PVC进行使用。</li></ul>
+<div class="notice" id="note7766172513619"><a name="note7766172513619"></a><a name="note7766172513619"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><a name="ul196087015277"></a><a name="ul196087015277"></a><ul id="ul196087015277"><li>snapshot模式仅支持OceanStor Dorado和OceanStor存储的非双活卷。</li><li>使用snapshot模式时，由于直接使用快照资源作为PVC，为保证数据一致性，建议将StorageClass中的reclaimPolicy配置为Retain，PVC中的accessMode配置为ROX。</li><li>为避免数据不一致，使用snapshot模式恢复的PVC不推荐使用扩容或者快照能力。</li></ul>
+</div></div>
+</td>
+</tr>
 <tr id="zh-cn_topic_0000001162111564_row475081162913"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="zh-cn_topic_0000001162111564_p187501311122918"><a name="zh-cn_topic_0000001162111564_p187501311122918"></a><a name="zh-cn_topic_0000001162111564_p187501311122918"></a>parameters.cloneSpeed</p>
 </td>
 <td class="cellrowborder" valign="top" width="23.089717248801485%" headers="mcps1.2.7.1.2 "><p id="zh-cn_topic_0000001162111564_p77501911192918"><a name="zh-cn_topic_0000001162111564_p77501911192918"></a><a name="zh-cn_topic_0000001162111564_p77501911192918"></a>克隆速度，支持配置为1~4。</p>
@@ -255,7 +271,7 @@ parameters:
 <tr id="row15478113119190"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="p18478163131914"><a name="p18478163131914"></a><a name="p18478163131914"></a>parameters.qos</p>
 </td>
 <td class="cellrowborder" valign="top" width="23.089717248801485%" headers="mcps1.2.7.1.2 "><p id="p15525175120211"><a name="p15525175120211"></a><a name="p15525175120211"></a>PV在存储侧的LUN/NAS的QoS设置。</p>
-<p id="p12218174732111"><a name="p12218174732111"></a><a name="p12218174732111"></a>配置项值是字典格式的JSON字符串（字符串两边由单引号修饰，字典key由双引号修饰）。如：'{"maxMBPS": 999, "maxIOPS": 999}'</p>
+<p id="p12218174732111"><a name="p12218174732111"></a><a name="p12218174732111"></a>配置项值是字典格式的JSON字符串（字符串两边由单引号修饰，字典key由双引号修饰）。如：'{"MAXBANDWIDTH": 999, "MAXIOPS": 999}'</p>
 </td>
 <td class="cellrowborder" valign="top" width="6.848644946678408%" headers="mcps1.2.7.1.3 "><p id="p03704715211"><a name="p03704715211"></a><a name="p03704715211"></a>否</p>
 </td>

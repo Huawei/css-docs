@@ -219,7 +219,7 @@ weight: 2
     命令结果示例如下，后端状态为Bound，则创建成功。
 
     ```
-    NAMESPACE     NAME            PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME            PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-demo    nfs+         oceanstor-nas    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
     ```
 
@@ -227,7 +227,7 @@ weight: 2
 
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
 >-   配置NAS双活前，需要在两台存储设备之间配置双活关系，包含远端设备、双活域等，仅支持文件系统双活域工作模式为双活AA模式，配置操作请参考对应存储型号的产品文档。
->-   对接NAS双活后端的账号必须为存储租户的租户管理员账号。
+>-   对接NAS双活后端的账号必须为存储租户的租户管理员账号，且双活两端用于登录的用户名、密码必须一致。
 >-   除NAS双活后端外，其他后端的管理URL不能配置为在已建立双活关系的租户的逻辑管理端口的URL。
 >-   使用双活类型的存储后端时，请勿发放普通文件系统。否则，在逻辑端口漂移场景下，有业务中断的风险。
 
@@ -307,7 +307,7 @@ weight: 2
     命令结果示例如下，后端状态为"Bound" 则创建成功。
 
     ```
-    NAMESPACE     NAME              PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  URL                 
+    NAMESPACE     NAME              PROTOCOL     STORAGETYPE      SN                    STATUS  ONLINE  Url                 
     huawei-csi    backend-active    nfs+         oceanstor-nas    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.155:8088   
     huawei-csi    backend-standby   nfs+         oceanstor-nas    xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.158:8088 
     ```

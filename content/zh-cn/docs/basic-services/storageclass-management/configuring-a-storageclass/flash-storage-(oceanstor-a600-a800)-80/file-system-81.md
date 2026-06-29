@@ -197,7 +197,7 @@ mountOptions:
 </td>
 <td class="cellrowborder" valign="top" width="7.35740142843166%" headers="mcps1.2.7.1.5 "><p id="p177255616169"><a name="p177255616169"></a><a name="p177255616169"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上随机选择一个满足容量要求的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
+<td class="cellrowborder" valign="top" width="35.7694941786518%" headers="mcps1.2.7.1.6 "><p id="p99571317978"><a name="p99571317978"></a><a name="p99571317978"></a>如果不设置，华为CSI会在所选后端上选择一个剩余容量最大的存储池创建资源。建议指定存储池，确保创建的资源在预期的存储池上。</p>
 </td>
 </tr>
 <tr id="row12968565337"><td class="cellrowborder" valign="top" width="18.481557577536446%" headers="mcps1.2.7.1.1 "><p id="p19968166163320"><a name="p19968166163320"></a><a name="p19968166163320"></a>parameters.volumeName</p>
@@ -458,7 +458,7 @@ mountOptions:
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.4 "><p id="p8682131154212"><a name="p8682131154212"></a><a name="p8682131154212"></a>存储设备WWN</p>
 </td>
 <td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.5 "><p id="p317291919718"><a name="p317291919718"></a><a name="p317291919718"></a>挂载HyperScale集群文件系统dn需要填写HyperScale集群下的域名。</p>
-<p id="p174715461239"><a name="p174715461239"></a><a name="p174715461239"></a>dn参数描述仅供参考，DataTurbo协议其他挂载详细参数说明请参考<a href="https://support.huawei.com/enterprise/zh/doc/EDOC1100483896/a8d5b478?idPath=7919749|251366268|250389224|263153904|264568316" target="_blank" rel="noopener noreferrer">《OceanStor DataTurbo DTFS用户指南》</a>。</p>
+<p id="p174715461239"><a name="p174715461239"></a><a name="p174715461239"></a>dn参数描述仅供参考，DataTurbo协议其他挂载详细参数说明请参考<a href="https://support.huawei.com/enterprise/zh/doc/EDOC1100539415/a8d5b478?idPath=7919749|251366268|250389224|263153904|264568316" target="_blank" rel="noopener noreferrer">《AI Storage Kit 25.x.x DTFS 用户指南》</a>。</p>
 </td>
 </tr>
 </tbody>

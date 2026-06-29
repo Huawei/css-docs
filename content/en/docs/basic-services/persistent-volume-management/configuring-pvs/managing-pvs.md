@@ -14,8 +14,9 @@ Manage Volume Provisioning allows administrators to use resources created on sto
 >![](/css-docs/public_sys-resources/en-us/icon-note.gif)  
 >-   Manage Volume Provisioning allows existing storage resources to be managed by Kubernetes. You are not allowed to manage a storage resource for multiple times and concurrently delete or create a storage resource.
 >    When a storage resource is managed by multiple clusters, operations on the managed volume in a single cluster take effect only in the cluster and will not be synchronized to other clusters. Instead, you need to perform these operations on the managed volume in other clusters.
->    For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PV](/docs/basic-services/persistent-volume-management/managing-pvs-91/expanding-the-capacity-of-a-pv).
+>    For example, when you expand the capacity of a PVC in a cluster, the capacity of the corresponding PVC in other clusters will not be automatically expanded. In this case, you need to manually expand the capacity in other clusters by running the expansion commands in  [Expanding the Capacity of a PV](/docs/basic-services/persistent-volume-management/managing-pvs-92/expanding-the-capacity-of-a-pv).
 >-   When managing PVs, ensure that the PVs comply with the storage class declaration. Otherwise, Huawei CSI may fail to manage the PVs. For example, when you manage a common PV, the storage backend of the HyperMetro type is referenced in the storage class, and the HyperMetro parameter is enabled. After the PV is managed, if you clone the PV or create a PV based on a snapshot, Huawei CSI will fail to execute the operation.
+>-   When managed PVs are used to manage HyperMetro volumes, ensure that storage volume names on both ends in the HyperMetro relationship are the same.
 
 ## Configuration Description{#section121779524353}
 

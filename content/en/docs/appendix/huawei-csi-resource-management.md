@@ -24,7 +24,7 @@ This section lists the resource requests and limits used by each container of th
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1410617113360"><td class="cellrowborder" rowspan="10" align="left" valign="top" width="20.022002200220022%" headers="mcps1.2.7.1.1 "><p id="p12106711173612"><a name="p12106711173612"></a><a name="p12106711173612"></a>huawei-csi-controller</p>
+<tbody><tr id="row1410617113360"><td class="cellrowborder" rowspan="11" align="left" valign="top" width="20.022002200220022%" headers="mcps1.2.7.1.1 "><p id="p12106711173612"><a name="p12106711173612"></a><a name="p12106711173612"></a>huawei-csi-controller</p>
 </td>
 <td class="cellrowborder" valign="top" width="20.132013201320138%" headers="mcps1.2.7.1.2 "><p id="p203561471148"><a name="p203561471148"></a><a name="p203561471148"></a>huawei-csi-driver</p>
 </td>
@@ -125,15 +125,26 @@ This section lists the resource requests and limits used by each container of th
 <td class="cellrowborder" valign="top" headers="mcps1.2.7.1.5 "><p id="p2107134716518"><a name="p2107134716518"></a><a name="p2107134716518"></a>512Mi</p>
 </td>
 </tr>
-<tr id="row8401617164917"><td class="cellrowborder" valign="top" headers="mcps1.2.7.1.1 "><p id="p1541817204910"><a name="p1541817204910"></a><a name="p1541817204910"></a>liveness-probe</p>
+<tr id="row99625450327"><td class="cellrowborder" valign="top" headers="mcps1.2.7.1.1 "><p id="p13125165010322"><a name="p13125165010322"></a><a name="p13125165010322"></a>liveness-probe</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.2 "><p id="p027511186507"><a name="p027511186507"></a><a name="p027511186507"></a>10m</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.2 "><p id="p1012525019322"><a name="p1012525019322"></a><a name="p1012525019322"></a>10m</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.3 "><p id="p4641162516512"><a name="p4641162516512"></a><a name="p4641162516512"></a>100m</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.3 "><p id="p151258508325"><a name="p151258508325"></a><a name="p151258508325"></a>100m</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.4 "><p id="p5416174491"><a name="p5416174491"></a><a name="p5416174491"></a>128Mi</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.4 "><p id="p5125450153214"><a name="p5125450153214"></a><a name="p5125450153214"></a>128Mi</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.5 "><p id="p610711476511"><a name="p610711476511"></a><a name="p610711476511"></a>128Mi</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.5 "><p id="p8125850163214"><a name="p8125850163214"></a><a name="p8125850163214"></a>128Mi</p>
+</td>
+</tr>
+<tr id="row8401617164917"><td class="cellrowborder" valign="top" headers="mcps1.2.7.1.1 "><p id="p1541817204910"><a name="p1541817204910"></a><a name="p1541817204910"></a>external-health-monitor</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.2 "><p id="p1155899344"><a name="p1155899344"></a><a name="p1155899344"></a>50m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.3 "><p id="p455139103416"><a name="p455139103416"></a><a name="p455139103416"></a>300m</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.4 "><p id="p2055997340"><a name="p2055997340"></a><a name="p2055997340"></a>128Mi</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.2.7.1.5 "><p id="p255139103419"><a name="p255139103419"></a><a name="p255139103419"></a>512Mi</p>
 </td>
 </tr>
 <tr id="row115187505412"><td class="cellrowborder" rowspan="3" align="left" valign="top" width="20.022002200220022%" headers="mcps1.2.7.1.1 "><p id="p1751885019415"><a name="p1751885019415"></a><a name="p1751885019415"></a>huawei-csi-node</p>
