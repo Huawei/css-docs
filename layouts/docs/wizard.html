@@ -15,6 +15,7 @@
 </div>
 <script>
 // 让 iframe 自适应高度：监听 iframe 内部 body 高度变化，动态调整 iframe 高度
+(function () {
   var frame = document.getElementById('csi-wizard-frame');
   if (!frame) return;
   function resizeFrame() {
