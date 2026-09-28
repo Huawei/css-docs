@@ -146,7 +146,7 @@ This section describes how to create a storage backend of the NFS protocol type.
     name: "backend-demo"
     namespace: "huawei-csi"
     urls:
-      - "https://192.168.129.157:8088"
+      - "https://192.168.129.157:26335"
     storageDeviceSN: 21000000000000000000
     parameters:
       protocol: "nfs"
@@ -166,7 +166,7 @@ This section describes how to create a storage backend of the NFS protocol type.
 
     ```
     NUMBER  CONFIGURED    NAME           STORAGE                   URLS                
-    1       false         backend-demo   oceanstor-a-series-dtree    https://192.168.129.157:8088 
+    1       false         backend-demo   oceanstor-a-series-dtree    https://192.168.129.157:26335 
     Please enter the backend number to configure (Enter 'exit' to exit):
     ```
 
@@ -179,7 +179,7 @@ This section describes how to create a storage backend of the NFS protocol type.
     
     Backend backend-demo is configured
     NUMBER  CONFIGURED    NAME            STORAGE                   URLS               
-    1       true          backend-demo    oceanstor-a-series-dtree    https://192.168.129.157:8088 
+    1       true          backend-demo    oceanstor-a-series-dtree    https://192.168.129.157:26335 
     Please enter the backend number to configure (Enter 'exit' to exit):
     ```
 
@@ -193,6 +193,6 @@ This section describes how to create a storage backend of the NFS protocol type.
 
     ```
     NAMESPACE     NAME            PROTOCOL    STORAGETYPE             SN                    STATUS  ONLINE  Url                 
-    huawei-csi    backend-demo    nfs         oceanstor-a-series-dtree  xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:8088   
+    huawei-csi    backend-demo    nfs         oceanstor-a-series-dtree  xxxxxxxxxxxxxxxxxxxx  Bound   true    https://192.168.129.157:26335   
     ```
 

@@ -565,7 +565,7 @@ mountOptions:
 </td>
 <td class="cellrowborder" valign="top" width="7.519248075192481%" headers="mcps1.2.5.1.2 "><p id="p6464091481"><a name="p6464091481"></a><a name="p6464091481"></a>int</p>
 </td>
-<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.3 "><p id="p14665213125419"><a name="p14665213125419"></a><a name="p14665213125419"></a>Audit log rule. The default value is <strong id="b15160191015439"><a name="b15160191015439"></a><a name="b15160191015439"></a>0</strong>.</p>
+<td class="cellrowborder" valign="top" width="30.826917308269174%" headers="mcps1.2.5.1.3 "><p id="p14665213125419"><a name="p14665213125419"></a><a name="p14665213125419"></a>Audit log rule.</p>
 <p id="p566511314545"><a name="p566511314545"></a><a name="p566511314545"></a>0x00000001:open</p>
 <p id="p19665121365413"><a name="p19665121365413"></a><a name="p19665121365413"></a>0x00000002:create</p>
 <p id="p36651713135416"><a name="p36651713135416"></a><a name="p36651713135416"></a>0x00000004:read</p>
