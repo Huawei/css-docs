@@ -60,6 +60,7 @@ weight: 1
     >![](/css-docs/public_sys-resources/zh-cn/icon-notice.gif)  
     >-   完成创建PVC操作后，如果长时间后（如一分钟后）PVC的状态是Pending，请参考[创建PVC时， PVC的状态为Pending](/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state)。
     >-   建议每批次最多批量创建/删除100个PVC。
+    >-   发放带KVCache资源的本地文件系统卷时，卷容量范围大于等于10Gi并且小于等于32Pi
 
 **表 1**  配置动态卷持久卷PVC参数说明
 
@@ -227,7 +228,7 @@ weight: 1
 
 ## 使用PVC{#section8172141413917}
 
-在完成PVC创建后，就可以使用PVC来创建Pod。如下示例是一个简单的使用PVC示例，在该示例中，创建的Pod使用了刚刚创建的_ mypvc_。
+在完成PVC创建后，就可以使用PVC来创建Pod。如下示例是一个简单的使用PVC示例，在该示例中，创建的Pod使用了刚刚创建的  _mypvc_。
 
 ```yaml
 apiVersion: apps/v1

@@ -1,0 +1,6 @@
+commands:
+  - text_zh: 创建 PVC
+    text_en: Create the PVC
+    code: |
+      kubectl apply -f pvc.yaml
+      kubectl get pvc mypvc

@@ -23,9 +23,9 @@ Multipathing software has been correctly installed on a host.
 
 ## Procedure{#section14674125816351}
 
--   If you use the iSCSI/FC protocol to connect to Huawei enterprise storage, configure and check host multipathing by referring to  [OceanStor Dorado and OceanStor Host Connectivity Guide for Red Hat](https://support.huawei.com/enterprise/en/doc/EDOC1100113070/1b4ad686/os-native-multipathing-software).
--   If you use the NVMe over RoCE/NVMe over FC protocol to connect to Huawei enterprise storage, configure and check host multipathing by referring to  [OceanStor Dorado and OceanStor Host Connectivity Guide for Red Hat](https://support.huawei.com/enterprise/en/doc/EDOC1100113070/5f5e5688/ultrapath).
--   If you use iSCSI to connect to Huawei distributed storage, configure and check host multipathing by referring to Configuring Multipathing for an Application Server in  [FusionStorage 8.0.1 Block Storage Basic Service Configuration Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100115354)
+-   If you use the iSCSI/FC protocol to connect to Huawei enterprise storage, configure and check host multipathing by referring to  [OceanStor Dorado and OceanStor 6.x and V700R001 Host Connectivity Guide for Red Hat](https://support.huawei.com/enterprise/en/doc/EDOC1100113070/1b4ad686/os-native-multipathing-software).
+-   If you use the NVMe over RoCE/NVMe over FC/NVMe over TCP protocol to connect to Huawei enterprise storage, configure and check host multipathing by referring to  [OceanStor Dorado and OceanStor 6.x and V700R001 Host Connectivity Guide for Connecting to Linux Hosts Using NoF](https://support.huawei.com/enterprise/en/doc/EDOC1100154490/b0c7a303).
+-   If you use iSCSI to connect to Huawei scale-out storage, configure and check host multipathing by referring to Configuring Multipathing for an Application Server in  [FusionStorage 8.0.1 Block Storage Basic Service Configuration Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100115354)
 -   If you use the native multipathing software provided by the OS, check whether the  **/etc/multipath.conf**  file contains the following configuration item.
 
     ```

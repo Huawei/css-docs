@@ -8,7 +8,7 @@ weight: 3
 ## 前置检查{#section298992810393}
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群内有oceanctl工具的节点。
-2.  执行以下命令，显示版本号为**4.12.0**。
+2.  执行以下命令，显示版本号为**4.13.0**。
 
     ```
     oceanctl version
@@ -17,7 +17,7 @@ weight: 3
     命令结果示例如下：
 
     ```yaml
-    Oceanctl Version: 4.12.0
+    Oceanctl Version: 4.13.0
     ```
 
 3.  执行oceanctl collect logs --help命令，返回信息如下。
@@ -78,7 +78,7 @@ weight: 3
     oceanctl collect logs -n huawei-csi -a --threads-max=10
     ```
 
-3.  检查/tmp目录下生成的日志压缩包，可以使用**unzip **<zip\_name\>** -d collect\_logs**解压日志压缩包，其中<zip\_name\>为压缩包的名字。
+3.  检查/tmp目录下生成的日志压缩包，可以使用**unzip**  <zip\_name\>  **-d collect\_logs**解压日志压缩包，其中<zip\_name\>为压缩包的名字。
 
     ```
     # date
@@ -91,13 +91,13 @@ weight: 3
 ## 使用oceanctl收集CSI单个节点日志{#section1039148347}
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录[前置检查](#section298992810393)章节中检查的节点。
-2.  执行**oceanctl collect logs -n **<namespace\>** -N**  <nodeName\>命令，收集集群内所有CSI容器所在节点的CSI日志。
+2.  执行**oceanctl collect logs -n**  <namespace\>  **-N**  <nodeName\>命令，收集集群内所有CSI容器所在节点的CSI日志。
 
     ```
     oceanctl collect logs -n huawei-csi -N node-1
     ```
 
-3.  检查/tmp目录下生成的日志压缩包，可以使用**unzip **<zip\_name\>** -d collect\_logs**解压日志压缩包，其中<zip\_name\>为压缩包的名字。
+3.  检查/tmp目录下生成的日志压缩包，可以使用**unzip**  <zip\_name\>  **-d collect\_logs**解压日志压缩包，其中<zip\_name\>为压缩包的名字。
 
     ```
     # date

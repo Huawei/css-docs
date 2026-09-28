@@ -100,7 +100,7 @@ This section describes how to create a storage backend of the FC protocol type.
 <td class="cellrowborder" valign="top" width="14.563106796116502%" headers="mcps1.2.6.1.4 "><p id="p1826418436"><a name="p1826418436"></a><a name="p1826418436"></a>-</p>
 <p id="p44741924115319"><a name="p44741924115319"></a><a name="p44741924115319"></a></p>
 </td>
-<td class="cellrowborder" valign="top" width="25.242718446601938%" headers="mcps1.2.6.1.5 "><p id="p1496214564317"><a name="p1496214564317"></a><a name="p1496214564317"></a>If ALUA is enabled for the host multipathing software, ensure that the backend ALUA configuration is the same as that of the host ALUA configuration. For details, see <a href="/css-docs/en/docs/common-o-m-operations/configuring-alua">Configuring ALUA</a>.</p>
+<td class="cellrowborder" valign="top" width="25.242718446601938%" headers="mcps1.2.6.1.5 "><p id="p1496214564317"><a name="p1496214564317"></a><a name="p1496214564317"></a>If ALUA is enabled for the host multipathing software, ensure that the backend ALUA configuration is the same as that of the host ALUA configuration. For details, see <a href="/css-docs/docs/common-o-m-operations/configuring-alua">Configuring ALUA</a>.</p>
 </td>
 </tr>
 <tr id="row36316121111"><td class="cellrowborder" valign="top" width="16.504854368932037%" headers="mcps1.2.6.1.1 "><p id="p2064181219115"><a name="p2064181219115"></a><a name="p2064181219115"></a>supportedTopologies</p>
@@ -111,7 +111,7 @@ This section describes how to create a storage backend of the FC protocol type.
 </td>
 <td class="cellrowborder" valign="top" width="14.563106796116502%" headers="mcps1.2.6.1.4 "><p id="p1191961545114"><a name="p1191961545114"></a><a name="p1191961545114"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="25.242718446601938%" headers="mcps1.2.6.1.5 "><p id="p176418120111"><a name="p176418120111"></a><a name="p176418120111"></a>This parameter is mandatory if storage topology awareness is enabled. For details, see <a href="/css-docs/en/docs/common-o-m-operations/configuring-storage-topology-awareness">Configuring Storage Topology Awareness</a>.</p>
+<td class="cellrowborder" valign="top" width="25.242718446601938%" headers="mcps1.2.6.1.5 "><p id="p176418120111"><a name="p176418120111"></a><a name="p176418120111"></a>This parameter is mandatory if storage topology awareness is enabled. For details, see <a href="/css-docs/docs/common-o-m-operations/configuring-storage-topology-awareness">Configuring Storage Topology Awareness</a>.</p>
 </td>
 </tr>
 <tr id="row11363104441311"><td class="cellrowborder" valign="top" width="16.504854368932037%" headers="mcps1.2.6.1.1 "><p id="p0363164461310"><a name="p0363164461310"></a><a name="p0363164461310"></a>maxClientThreads</p>

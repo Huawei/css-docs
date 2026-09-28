@@ -1,0 +1,23 @@
+commands:
+  - when: { state: platform, neq: cce }
+    text_zh: 将 helm-values.yaml 保存为 CSI 软件包目录下 helm/esdk/values.yaml，然后依次执行以下命令
+    text_en: Save helm-values.yaml as helm/esdk/values.yaml, then install
+    code: |
+      cd helm/esdk
+      kubectl apply -f ./crds/backend/
+      kubectl apply -f ./crds/snapshot-crds/ --validate=false
+      helm install helm-huawei-csi ./ -n {{helm.namespace}} --create-namespace
+      kubectl get pod -n {{helm.namespace}}
+  - when: { state: platform, eq: openshift }
+    text_zh: OpenShift 前置步骤（安装前执行）
+    text_en: OpenShift prerequisite (run before installing)
+    code: |
+      oc create -f helm_scc.yaml
+  - when: { state: platform, eq: cce }
+    text_zh: CCE / CCE Agile：修改 values.yaml 后打包上传控制台安装
+    text_en: "CCE / CCE Agile: edit values.yaml, package, and upload to the console"
+    code: |
+      cd helm/
+      vi ./esdk/values.yaml
+      helm package ./esdk/ -d ./
+      # Console: Charts -> My Charts -> Upload Chart -> Install

@@ -1,0 +1,559 @@
+# 字段目录（Q11/Q12/Q13）：表单与模板共用的唯一规则源。
+# 条件表达式：{field: X, op: v} 或 {state: X, op: v}，op ∈ eq/neq/in/not-in/exists/empty，
+#            复合 {all:[...]} / {any:[...]} / {not:{...}}；字符串简写 = 字段真值检查。
+# level: basic=平铺展示 / advanced=折叠进"高级选项"
+fields:
+  # ================= 场景问答（Step 0） =================
+  - {
+      id: scenario.familyId,
+      type: select-family,
+      label_zh: 产品系列,
+      label_en: Product Series,
+      required: true,
+      level: basic,
+    }
+  - {
+      id: scenario.serviceType,
+      type: select-service,
+      label_zh: 业务类型,
+      label_en: Service Type,
+      required: true,
+      level: basic,
+    }
+  - {
+      id: scenario.protocol,
+      type: select-protocol,
+      label_zh: 协议,
+      label_en: Protocol,
+      required: true,
+      level: basic,
+    }
+  - {
+      id: scenario.platform,
+      type: select-platform,
+      label_zh: 容器平台,
+      label_en: Container Platform,
+      required: true,
+      level: basic,
+    }
+
+  # ================= CSI 安装（Step 1 · helm） =================
+  - id: helm.driverName
+    label_zh: CSI Driver 名称
+    label_en: CSI Driver Name
+    type: text
+    default: csi.huawei.com
+    required: true
+    level: basic
+    validate: { pattern: "^[a-z0-9.\\-]+$" }
+    help_zh: 必须与 StorageClass 的 provisioner 一致；重装时必须保持不变，否则已有卷不可管理
+    help_en: Must match the StorageClass provisioner; must stay unchanged across reinstalls
+  - id: helm.namespace
+    label_zh: 命名空间
+    label_en: Namespace
+    type: text
+    default: huawei-csi
+    required: true
+    level: basic
+    validate: { pattern: "^[a-z0-9-]+$" }
+    help_zh: CSI 运行命名空间；后端 YAML 的 namespace 必须与之保持一致
+    help_en: CSI namespace; backend YAML namespace must match
+  - id: helm.kubeletConfigDir
+    label_zh: Kubelet 工作目录
+    label_en: Kubelet Config Dir
+    type: text
+    required: true
+    level: basic
+    help_zh: Tanzu/CCE 平台请勿修改
+    help_en: Preset by platform (differs on Tanzu/CCE); editable
+  - id: helm.controllerCount
+    label_zh: Controller 副本数
+    label_en: Controller Replicas
+    type: number
+    default: 1
+    level: basic
+    validate: { min: 1, max: 10 }
+    help_zh: K8s < 1.17 必须为 1
+    help_en: Must be 1 on K8s < 1.17
+  - id: helm.snapshotEnabled
+    label_zh: 启用快照支持
+    label_en: Enable Snapshot
+    type: bool
+    default: true
+    level: advanced
+  - id: helm.volumeUseMultipath
+    label_zh: 启用多路径
+    label_en: Enable Multipath
+    type: bool
+    default: true
+    level: advanced
+  - id: helm.scsiMultipathType
+    label_zh: SCSI 多路径类型
+    label_en: SCSI Multipath Type
+    type: select
+    options: [DM-multipath, HW-UltraPath, HW-UltraPath-NVMe]
+    default: DM-multipath
+    level: advanced
+  - id: helm.nvmeMultipathType
+    label_zh: NVMe 多路径类型
+    label_en: NVMe Multipath Type
+    type: select
+    options: [HW-UltraPath-NVMe, NVMe-Native]
+    default: HW-UltraPath-NVMe
+    level: advanced
+  - id: helm.logLevel
+    label_zh: 日志级别
+    label_en: Log Level
+    type: select
+    options: [debug, info, warning, error, fatal]
+    default: info
+    level: advanced
+  - id: helm.maxVolumesPerNode
+    label_zh: 每节点最大卷数
+    label_en: Max Volumes Per Node
+    type: number
+    level: advanced
+    validate: { min: 0, max: 1000 }
+    help_zh: 不填则保持官方默认（不限制）；填写后输出生效行
+    help_en: Empty keeps the official default (unlimited); setting it outputs the active line
+  - id: helm.connectorThreads
+    label_zh: 连接线程数
+    label_en: Connector Threads
+    type: number
+    default: 4
+    level: advanced
+    validate: { min: 1, max: 10 }
+  - id: helm.imagePullSecrets
+    label_zh: 私有仓库凭据（imagePullSecrets）
+    label_en: imagePullSecrets
+    type: list
+    item: { type: text }
+    level: advanced
+    help_zh: 内网镜像仓库需要认证时填写 Secret 名称
+    help_en: Secret names for private registries requiring auth
+
+  # ================= 存储后端（Step 2 · backend，支持多个） =================
+  - id: backend.name
+    label_zh: 后端名称
+    label_en: Backend Name
+    type: text
+    required: true
+    level: basic
+    validate: { pattern: "^[a-z0-9][a-z0-9-]{0,62}$" }
+    help_zh: 小写字母/数字/中划线，≤63 字符，全局唯一
+    help_en: Lowercase letters/digits/hyphens, ≤63 chars, unique; referenced by StorageClass
+  - id: backend.url
+    label_zh: 存储管理地址
+    label_en: Storage Management URL
+    type: text
+    required: true
+    level: basic
+    placeholder_zh: https://192.168.1.10:8088
+    placeholder_en: https://192.168.1.10:8088
+    validate: { pattern: "^https?://\\S+$" }
+    help_zh: 支持 http 或 https（如 https://192.168.1.10:8088）
+    help_en: Supports http or https (e.g. https://192.168.1.10:8088)
+  - id: backend.pools
+    label_zh: 存储池
+    label_en: Storage Pools
+    type: list
+    required: true
+    level: basic
+    item: { type: text }
+    help_zh: 一个或多个存储池名称
+    help_en: One or more storage pool names
+  - id: backend.protocol
+    label_zh: 协议
+    label_en: Protocol
+    type: select
+    required: true
+    options_from: family.protocols
+    level: basic
+    help_zh: 默认选中场景协议；每个后端可独立配置不同协议
+    help_en: Defaults to the scenario protocol; each backend can use a different protocol independently
+  - id: backend.portals
+    label_zh: Portal 地址
+    label_en: Portals
+    type: list
+    item:
+      { type: text, validate: { pattern: "^[0-9a-fA-F:.\\[\\]]+(:\\d+)?$" } }
+    visible_when:
+      { field: backend.protocol, in: [iscsi, roce-nvme, tcp-nvme, nfs, nfs+] }
+    required_when: { field: backend.protocol, in: [iscsi, roce-nvme, tcp-nvme] }
+    level: basic
+    help_zh: iscsi/roce-nvme/tcp-nvme 必填；NFS 仅支持一个
+    help_en: Required for iscsi/roce-nvme/tcp-nvme; NFS allows one
+  - id: backend.scsiHosts
+    label_zh: 主机名映射
+    label_en: Hostname Mapping
+    type: key-value-list
+    visible_when: { field: backend.protocol, eq: scsi }
+    level: basic
+    help_zh: 'SCSI 协议专用：每行一个 "主机名: IP"'
+    help_en: 'SCSI protocol only: one "hostname: IP" per row'
+  - id: backend.alua
+    label_zh: ALUA
+    label_en: ALUA
+    type: bool
+    level: advanced
+    help_zh: 主机多路径开启 ALUA 时填写 true
+    help_en: Set true when host multipathing enables ALUA
+  - id: backend.maxClientThreads
+    label_zh: 最大客户端线程
+    label_en: Max Client Threads
+    type: number
+    default: 30
+    level: advanced
+    validate: { min: 1, max: 30 }
+  - id: backend.authenticationMode
+    label_zh: 认证模式
+    label_en: Authentication Mode
+    type: select
+    options: [local, ldap]
+    default: local
+    level: advanced
+
+  # ---- 文档已核实的后端高级参数 ----
+  - id: backend.parentname
+    label_zh: 父文件系统名称
+    label_en: Parent File System
+    type: text
+    visible_when: { state: serviceType, eq: dtree }
+    required: true
+    level: basic
+    help_zh: 创建 dtree 所需的父文件系统名
+    help_en: parent file system for creating the dtree
+  - id: backend.nfsAutoAuthClient
+    label_zh: NFS 自动授权客户端
+    label_en: NFS Auto Auth Client
+    type: bool
+    visible_when:
+      {
+        all:
+          [
+            { state: serviceType, eq: dtree },
+            { field: backend.protocol, eq: nfs },
+          ],
+      }
+    level: advanced
+    help_zh: 闪存 Dtree NFS 专用；需配合 csiDriver.reportNodeIP 与 attachRequired=true
+    help_en: Flash dtree NFS only; requires csiDriver.reportNodeIP and attachRequired=true
+  - id: backend.nfsAutoAuthClientCIDRs
+    label_zh: 自动授权客户端 CIDR
+    label_en: Auto Auth Client CIDRs
+    type: list
+    item: { type: text }
+    visible_when:
+      {
+        all:
+          [
+            { state: serviceType, eq: dtree },
+            { field: backend.protocol, eq: nfs },
+            { field: backend.nfsAutoAuthClient, eq: true },
+          ],
+      }
+    level: advanced
+    help_zh: 仅当 nfsAutoAuthClient=true 时有效；≤10 个主机 IP，每行一个
+    help_en: Valid only when nfsAutoAuthClient=true; up to 10 host IPs, one per row
+  - id: backend.vstoreName
+    label_zh: vStore 名称
+    label_en: vStore Name
+    type: text
+    visible_when: { state: familyId, eq: flash }
+    level: advanced
+    help_zh: 仅 OceanStor V5 多 vStore 场景
+    help_en: OceanStor V5 vStore provisioning only
+  - id: backend.accountName
+    label_zh: 账号名称
+    label_en: Account Name
+    type: text
+    visible_when:
+      {
+        all:
+          [
+            { state: familyId, eq: pacific },
+            { state: serviceType, in: [file, dtree] },
+          ],
+      }
+    level: advanced
+    help_zh: 仅 OceanStor Pacific NAS/Dtree 账号模式下必填
+    help_en: Required for OceanStor Pacific NAS/dtree under an account
+  - id: backend.hyperMetro
+    label_zh: 双活（HyperMetro）
+    label_en: HyperMetro
+    type: bool
+    visible_when: { state: serviceType, neq: dtree }
+    level: basic
+    help_zh: 勾选后自动创建双活对端后端；Dtree 不支持
+    help_en: Creates the HyperMetro peer backend automatically; not supported for Dtree
+  - id: backend.metrovStorePairID
+    label_zh: 双活 Pair ID
+    label_en: Metro Pair ID
+    type: text
+    required_when: { field: backend.hyperMetro, eq: true }
+    visible_when: { field: backend.hyperMetro, eq: true }
+    level: basic
+    help_zh: 双活后端成对的配对标识
+    help_en: Pair identifier shared by the HyperMetro backends
+  - id: backend.metroBackend
+    label_zh: 对端后端
+    label_en: Metro Backend
+    type: text
+    visible_when: { field: backend.hyperMetro, eq: true }
+    level: basic
+    help_zh: 对端后端名称
+    help_en: Peer backend name
+  - id: backend.supportedTopologies
+    label_zh: 拓扑感知（JSON）
+    label_en: Supported Topologies
+    type: text
+    level: advanced
+    help_zh: '启用存储拓扑感知时必填；JSON 列表，如 [{"topology.storage.kubernetes.io/node": "node1"}]'
+    help_en: Required when topology awareness is enabled; JSON list
+  - id: backend.storageDeviceSN
+    label_zh: 存储设备序列号（ESN）
+    label_en: Storage Device SN
+    type: text
+    visible_when: { state: familyId, eq: dme }
+    level: advanced
+    required_when: { state: familyId, eq: dme }
+    help_zh: DME 互联必填；获取方式：DME 控制台 > 基础设施 > 存储设备 > ESN
+    help_en: Required for DME interconnection; from DME console > Infrastructure > Storage Devices > ESN
+
+  # ================= 存储类（Step 3 · sc） =================
+  - id: sc.name
+    label_zh: 存储类名称
+    label_en: StorageClass Name
+    type: text
+    default: mysc
+    required: true
+    level: basic
+    validate: { pattern: "^[a-z0-9][a-z0-9-]{0,62}$" }
+    help_zh: PVC 通过 storageClassName 引用该名称
+    help_en: PVCs reference this name via storageClassName
+  - id: sc.backend
+    label_zh: 关联后端
+    label_en: Backend
+    type: select
+    required: true
+    options_from: state.backends
+    level: basic
+    help_zh: 必须选择第 2 步已创建的后端（一致性自动校验）
+    help_en: Must be a backend created in step 2
+  - id: sc.pool
+    label_zh: 存储池
+    label_en: Pool
+    type: select
+    options_from: state.backendPools
+    level: basic
+    help_zh: 不选则 CSI 自动选择剩余容量最大的池；列表来自"关联后端"已配置的存储池
+    help_en: Leave empty to let CSI pick the pool with most free capacity; options come from the selected backend
+  - id: sc.allocType
+    label_zh: 分配类型
+    label_en: Allocation Type
+    type: select
+    options: [thin, thick]
+    default: thin
+    level: basic
+    help_zh: OceanStor Dorado 不支持 thick
+    help_en: thick is not supported on OceanStor Dorado
+  - id: sc.fsType
+    label_zh: 文件系统类型
+    label_en: Filesystem Type
+    type: select
+    options: [ext2, ext3, ext4, xfs]
+    default: ext4
+    visible_when: { state: serviceType, eq: block }
+    level: basic
+    help_zh: ext4 单卷上限 50Ti，更大容量请用 xfs
+    help_en: ext4 caps at 50Ti per volume; use xfs for larger
+  - id: sc.authClient
+    label_zh: 授权客户端
+    label_en: Auth Client
+    type: text
+    default: "*"
+    visible_when: { state: serviceType, in: [file, dtree] }
+    required_when: { state: serviceType, in: [file, dtree] }
+    level: basic
+    help_zh: 文件服务必填；* 表示任意客户端；多个用分号分隔
+    help_en: Required for file services; * = any client; separate multiple with ;
+  - id: sc.mountOptions
+    label_zh: 挂载选项
+    label_en: Mount Options
+    type: list
+    item: { type: text }
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+    help_zh: 如 nfsvers=4.1
+    help_en: e.g. nfsvers=4.1
+  - id: sc.reclaimPolicy
+    label_zh: 回收策略
+    label_en: Reclaim Policy
+    type: select
+    options: [Delete, Retain]
+    default: Delete
+    level: advanced
+  - id: sc.allowVolumeExpansion
+    label_zh: 允许卷扩容
+    label_en: Allow Volume Expansion
+    type: bool
+    default: true
+    level: advanced
+  - id: sc.qos
+    label_zh: QoS
+    label_en: QoS
+    type: json-text
+    hook: validate-json
+    level: advanced
+    placeholder_zh: '{"MAXBANDWIDTH":999,"MAXIOPS":999}'
+    placeholder_en: '{"MAXBANDWIDTH":999,"MAXIOPS":999}'
+    help_zh: JSON 字符串；仅块服务支持
+    help_en: JSON string; block service only
+  - id: sc.hyperMetro
+    label_zh: 双活 HyperMetro
+    label_en: HyperMetro
+    type: select
+    options: ["true", "false"]
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+    help_zh: 后端配置了 HyperMetro 域时必填 true
+    help_en: Required true when the backend has a HyperMetro domain
+  - id: sc.description
+    label_zh: 描述
+    label_en: Description
+    type: text
+    level: advanced
+
+  # ---- 块服务高级参数（文档已核实） ----
+  - id: sc.restoreMode
+    label_zh: 恢复模式
+    label_en: Restore Mode
+    type: select
+    options: [clone, snapshot]
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+  - id: sc.cloneSpeed
+    label_zh: 克隆速度
+    label_en: Clone Speed
+    type: select
+    options: ["1", "2", "3", "4"]
+    default: "3"
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+  - id: sc.applicationType
+    label_zh: 应用类型
+    label_en: Application Type
+    type: text
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+  - id: sc.fsPermission
+    label_zh: 文件系统权限
+    label_en: FS Permission
+    type: text
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+  - id: sc.disableVerifyCapacity
+    label_zh: 关闭容量校验
+    label_en: Disable Verify Capacity
+    type: select
+    options: ["true", "false"]
+    default: "true"
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+  - id: sc.volumeName
+    label_zh: 卷名称模板
+    label_en: Volume Name
+    type: text
+    visible_when: { state: serviceType, eq: block }
+    level: advanced
+    help_zh: 支持 {{ .PVCNamespace }} 与 {{ .PVCName }} 占位符
+    help_en: Supports {{ .PVCNamespace }} and {{ .PVCName }} placeholders
+  - id: sc.metroPairSyncSpeed
+    label_zh: 双活同步速度
+    label_en: Metro Pair Sync Speed
+    type: text
+    visible_when:
+      {
+        all:
+          [
+            { state: serviceType, eq: block },
+            { field: sc.hyperMetro, eq: "true" },
+          ],
+      }
+    level: advanced
+
+  # ---- 文件服务高级参数（文档已核实） ----
+  - id: sc.waitForSplit
+    label_zh: 等待分裂
+    label_en: Wait For Split
+    type: bool
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+  - id: sc.rootSquash
+    label_zh: root 权限压缩
+    label_en: Root Squash
+    type: text
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+  - id: sc.allSquash
+    label_zh: 全用户权限压缩
+    label_en: All Squash
+    type: text
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+  - id: sc.snapshotDirectoryVisibility
+    label_zh: 快照目录可见性
+    label_en: Snapshot Directory Visibility
+    type: select
+    options: ["true", "false"]
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+  - id: sc.reservedSnapshotSpaceRatio
+    label_zh: 快照空间预留比例
+    label_en: Reserved Snapshot Space Ratio
+    type: text
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+  - id: sc.advancedOptions
+    label_zh: 高级选项（JSON）
+    label_en: Advanced Options
+    type: json-text
+    hook: validate-json
+    visible_when: { state: serviceType, in: [file, dtree] }
+    level: advanced
+
+  # ================= 持久卷声明（Step 4 · pvc） =================
+  - id: pvc.name
+    label_zh: PVC 名称
+    label_en: PVC Name
+    type: text
+    default: mypvc
+    required: true
+    level: basic
+    validate: { pattern: "^[a-z0-9][a-z0-9-]{0,62}$" }
+  - id: pvc.accessModes
+    label_zh: 访问模式
+    label_en: Access Modes
+    type: select
+    options: [ReadWriteOnce, ReadOnlyMany, ReadWriteMany, ReadWriteOncePod]
+    default: ReadWriteOnce
+    level: basic
+    help_zh: RWX 仅文件服务或块原始卷支持；RWOP 需 K8s ≥ 1.22
+    help_en: RWX only for file services or raw block; RWOP needs K8s ≥ 1.22
+  - id: pvc.volumeMode
+    label_zh: 卷模式
+    label_en: Volume Mode
+    type: select
+    options: [Filesystem, Block]
+    default: Filesystem
+    level: basic
+  - id: pvc.storage
+    label_zh: 容量
+    label_en: Capacity
+    type: text
+    default: 10Gi
+    required: true
+    level: basic
+    validate: { pattern: "^\\d+(\\.\\d+)?(Mi|Gi|Ti)$" }
+    help_zh: 单位 Mi/Gi/Ti，如 100Gi
+    help_en: Unit Mi/Gi/Ti, e.g. 100Gi

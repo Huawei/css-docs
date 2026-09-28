@@ -1,0 +1,70 @@
+# 界面文案（Q11=A：字段 label 就近写在 fields.yaml，这里是 UI 通用文案）
+app.title: 华为 CSI 配置向导
+app.subtitle: 引导生成 helm-values / 存储后端配置，并给出官方 StorageClass / PVC 示例
+nav.scenario: 场景
+nav.helm: CSI 安装
+nav.backend: 存储后端
+nav.storageclass: 存储类
+nav.pvc: 持久卷声明
+nav.result: 结果
+scenario.summary: 当前场景
+scenario.title: 配置场景
+scenario.hint: 选择与配置直接相关的场景信息
+scenario.start: 进入向导
+step.back: 上一步
+step.next: 下一步
+step.viewResult: 查看结果
+scenario.help.family: 华为存储的产品系列，决定存储类型与可用协议
+scenario.help.serviceType: 块服务（数据库、虚拟机等块设备场景）/ 文件服务（共享文件系统）/ Dtree（配额目录树）
+scenario.help.protocol: 主机与存储之间的连接协议
+scenario.help.platform: 决定安装参数预设（如 kubelet 目录、driver 名称、安装方式）
+nav.reset: 重新开始
+result.downloadAll: 全部下载
+result.exampleBadge: 官方示例
+result.yamlCollapse: 点击展开
+result.redirectNotice: "{step} 还有 {n} 处未通过校验，已为你跳转修正"
+result.unresolved: 以下步骤存在未通过校验的字段，结果可能不完整：
+backend.add: 添加后端
+backend.remove: 删除
+list.add: 添加
+backend.card: 后端 {n}
+advanced.toggle: 高级选项
+preview.title: 生成预览
+preview.valid: 校验通过
+download: 下载
+copy: 复制
+copied: 已复制
+result.title: 部署结果
+result.hint: 按以下顺序执行；StorageClass / PVC 为官方文档示例（按当前存储产品/协议自动选择），其余来自当前配置。
+result.order: 执行顺序
+result.commands: 部署命令
+result.noBackends: 尚未创建后端，请先在第 2 步添加
+loading: 正在加载配置…
+configError.title: 配置加载失败
+configError.hint: 请检查 public/config/ 下的配置文件。
+lang.switch: English
+err.required: 必填
+err.pattern: 格式不正确
+err.min: 不能小于 {min}
+err.max: 不能大于 {max}
+err.enum: 不在可选范围内
+err.invalidJson: 不是合法的 JSON 字符串
+err.unknownHook: 未知的校验规则
+err.summary: 共 {n} 项待修正
+serviceType.block: 块服务
+serviceType.file: 文件服务
+serviceType.dtree: Dtree
+protocol.fc: FC
+protocol.iscsi: iSCSI
+protocol.roce-nvme: NVMe over RoCE
+protocol.fc-nvme: NVMe over FC
+protocol.tcp-nvme: NVMe over TCP
+protocol.nfs: NFS
+protocol.nfs+: NFS+
+protocol.dpc: DPC
+protocol.scsi: SCSI
+protocol.dtfs: DataTurbo
+platform.k8s: Kubernetes
+platform.openshift: OpenShift
+platform.tanzu: Tanzu (TKGI)
+platform.cce: CCE / CCE Agile

@@ -1,0 +1,686 @@
+# Official examples (read-only artifacts): StorageClass / PVC
+# Source: Huawei CSI official documentation css-docs v4.12.0
+#   StorageClass: https://huawei.github.io/css-docs/docs/basic-services/storageclass-management/configuring-a-storageclass/
+#   PVC: https://huawei.github.io/css-docs/docs/basic-services/persistent-volume-management/configuring-pvs/configuring-dynamic-pvs/
+# Copied verbatim from official examples; the result page auto-selects the matching entry based on the current “product family + service type + protocol”.
+examples:
+  storageclass:
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: flash },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify NFS version 4.1 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify the version 4.1 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: flash },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: nfs+ },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: flash },
+              { state: serviceType, eq: dtree },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify NFS version 4.1 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify the version 4.1 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: flash },
+              { state: serviceType, eq: dtree },
+              { state: protocol, eq: nfs+ },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+    - when:
+        {
+          all:
+            [{ state: familyId, eq: flash }, { state: serviceType, eq: block }],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: lun-181
+          pool: StoragePool001
+          volumeType: lun
+          allocType: thin
+          fsType: ext4
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: lun-181
+          pool: StoragePool001
+          volumeType: lun
+          allocType: thin
+          fsType: ext4
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: a-series },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify NFS version 4.1 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify the version 4.1 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: a-series },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: dtfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: dtfs-nas-181
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+          authUser: user01
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: dtfs-nas-181
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+          authUser: user01
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: a-series },
+              { state: serviceType, eq: dtree },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify NFS version 4.1 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify the version 4.1 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: a-series },
+              { state: serviceType, eq: dtree },
+              { state: protocol, eq: dtfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: dtfs-nas-181
+          volumeType: dtree
+          allocType: thin
+          authUser: user01
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: dtfs-nas-181
+          volumeType: dtree
+          allocType: thin
+          authUser: user01
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: dme },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=3 # Specify NFS version 3 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=3 # Specify the version 3 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: dme },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: dtfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: dtfs-nas-181
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+          authUser: user01
+        mountOptions:
+          - dn=xxx # Specify the domain name of the logical port as xxx
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: dtfs-nas-181
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+          authUser: user01
+        mountOptions:
+          - dn=xxx # Specify the domain name of the logical port as xxx.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: pacific },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify NFS version 4.1 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify the version 4.1 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: pacific },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: dpc },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dpc-101
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+        mountOptions:
+          - acl # Authentication parameter
+          - cnflush # Set asynchronous disk flushing mode
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dpc-101
+          pool: pool001
+          volumeType: fs
+          allocType: thin
+        mountOptions:
+          - acl # Set the authentication parameter.
+          - cnflush # Set the asynchronous disk flushing mode.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: pacific },
+              { state: serviceType, eq: dtree },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify NFS version 4.1 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.1 # Specify the version 4.1 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: pacific },
+              { state: serviceType, eq: dtree },
+              { state: protocol, eq: dpc },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+        mountOptions:
+          - acl # Authentication parameter
+          - cnflush # Set asynchronous disk flushing mode
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-dtree-181
+          volumeType: dtree
+          authClient: "*"
+        mountOptions:
+          - acl # Set the authentication parameter.
+          - cnflush # Set the asynchronous disk flushing mode.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: pacific },
+              { state: serviceType, eq: block },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: lun-181
+          pool: StoragePool001
+          volumeType: lun
+          allocType: thin
+          fsType: ext4
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: lun-181
+          pool: StoragePool001
+          volumeType: lun
+          allocType: thin
+          fsType: ext4
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: oceandisk },
+              { state: serviceType, eq: file },
+              { state: protocol, eq: nfs },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.0 # Specify NFS version 4.0 for NFS mounting
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: nfs-nas-181
+          pool: StoragePool001
+          volumeType: fs
+          allocType: thin
+          authClient: "*"
+        mountOptions:
+          - nfsvers=4.0 # Specify the version 4.0 for NFS mounting.
+    - when:
+        {
+          all:
+            [
+              { state: familyId, eq: oceandisk },
+              { state: serviceType, eq: block },
+            ],
+        }
+      zh: |
+        # 请根据实际使用场景进行修改
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: lun-181
+          pool: StoragePool001
+          volumeType: lun
+          allocType: thin
+          fsType: ext4
+      en: |
+        # Please modify according to your actual use case
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+          name: mysc
+        provisioner: csi.huawei.com
+        parameters:
+          backend: lun-181
+          pool: StoragePool001
+          volumeType: lun
+          allocType: thin
+          fsType: ext4
+  pvc:
+    - zh: |
+        # 请根据实际使用场景进行修改
+        kind: PersistentVolumeClaim
+        apiVersion: v1
+        metadata:
+          name: mypvc
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          volumeMode: Filesystem
+          storageClassName: mysc
+          resources:
+            requests:
+              storage: 100Gi
+      en: |
+        # Please modify according to your actual use case
+        kind: PersistentVolumeClaim
+        apiVersion: v1
+        metadata:
+          name: mypvc
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          volumeMode: Filesystem
+          storageClassName: mysc
+          resources:
+            requests:
+              storage: 100Gi

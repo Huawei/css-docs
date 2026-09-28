@@ -33,7 +33,7 @@ To delete a PVC in the  **Pending**  state, you need to take different measures 
     ```
 
 3.  Perform the corresponding operation according to the  **Events**  information in the detailed PVC information.
-    -   If the PVC is in the  **Pending**  state due to cause 1, run the  **kubectl delete pvc **_mypvc_  command to delete the PVC.
+    -   If the PVC is in the  **Pending**  state due to cause 1, run the  **kubectl delete pvc** _mypvc_  command to delete the PVC.
 
         ```yaml
         Events:
@@ -42,7 +42,7 @@ To delete a PVC in the  **Pending**  state, you need to take different measures 
           Warning  ProvisioningFailed  0s (x15 over 3m24s)  persistentvolume-controller  storageclass.storage.k8s.io "mysc" not found
         ```
 
-    -   If the PVC is in the  **Pending**  state due to cause 2, run the  **kubectl delete pvc **_mypvc_  command to delete the PVC.
+    -   If the PVC is in the  **Pending**  state due to cause 2, run the  **kubectl delete pvc** _mypvc_  command to delete the PVC.
 
         ```
         Events:

@@ -99,7 +99,7 @@ weight: 1
 </tr>
 <tr id="row8191849183619"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p81912491363"><a name="p81912491363"></a><a name="p81912491363"></a>Multiple vStores</p>
 </td>
-<td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p112016213919"><a name="p112016213919"></a><a name="p112016213919"></a>Not supported</p>
+<td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p112016213919"><a name="p112016213919"></a><a name="p112016213919"></a>Not supported. Only single-vStore interconnection is supported.</p>
 </td>
 </tr>
 </tbody>
@@ -110,4 +110,5 @@ weight: 1
 >-   If a container platform is deployed on a virtualization platform, the iSCSI protocol is recommended when the CSI is connected to SAN storage.
 >-   If the FC, NVMe over FC, or NVMe over RoCE protocol is required, the virtualization platform needs to be configured. In this case, the customer's virtualization team needs to provide technical support.
 >-   When NVMe over RoCE or NVMe over FC is used, the supported nvme-cli tool version is 1.9 or later. When NVMe over TCP is used, the supported nvme-cli tool version is 2.0 or later. The query command is  **nvme version**.
+>-   A single cluster can connect to only one storage vStore. Initiators are associated with a single vStore on the storage system. If multiple vStores are interconnected, some vStores cannot obtain the initiator permission. As a result, storage resources fail to be mapped and mounted.
 

@@ -43,6 +43,6 @@ This section describes how to check whether the status of host-dependent softwar
     cat /sys/module/nvme_core/parameters/multipath
     ```
 
--   Check the status of the DataTurbo client. For details, see  [AI Storage Kit 25.x.x DTFS User Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100539414/e33f6e5e/purpose?idPath=7919749|251366268|250389224|263153904|264568316).
+-   Check the DataTurbo client status. For details, see  [AI Storage Kit 25.x.x DTFS User Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100539414/e33f6e5e/purpose?idPath=7919749|251366268|250389224|263153904|264568316).
 -   Check the status of the NFS+ client. For details, see  [NFS+ Client 1.x User Guide](https://support.huawei.com/enterprise/en/doc/EDOC1100359503/1d67959e).
 

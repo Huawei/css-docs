@@ -2,7 +2,7 @@
 title: "Checking the Images on Which CSI Depends"
 linkTitle: "Checking the Images on Which CSI Depends"
 description: 
-weight: 8
+weight: 7
 ---
 
 The installation of Huawei CSI depends on the images listed in the following table. If all worker nodes in the cluster have been connected to the Internet and can pull images online, you can skip this section. If nodes in the cluster cannot connect to the Internet, download the corresponding image file based on the Kubernetes version and upload it to the image repository or import it to all worker nodes in the Kubernetes cluster.

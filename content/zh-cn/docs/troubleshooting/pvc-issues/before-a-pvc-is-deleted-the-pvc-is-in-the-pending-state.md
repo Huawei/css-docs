@@ -33,7 +33,7 @@ weight: 2
     ```
 
 3.  根据PVC详细信息中Events信息，执行相应操作。
-    -   如果由原因1导致PVC处于Pending状态，可以执行  **kubectl delete pvc **_mypvc_  命令，删除PVC。
+    -   如果由原因1导致PVC处于Pending状态，可以执行  **kubectl delete pvc** _mypvc_  命令，删除PVC。
 
         ```yaml
         Events:
@@ -42,7 +42,7 @@ weight: 2
           Warning  ProvisioningFailed  0s (x15 over 3m24s)  persistentvolume-controller  storageclass.storage.k8s.io "mysc" not found
         ```
 
-    -   如果由原因2导致PVC处于Pending状态，可以执行** kubectl delete pvc **_mypvc_  命令，删除PVC。
+    -   如果由原因2导致PVC处于Pending状态，可以执行  **kubectl delete pvc** _mypvc_  命令，删除PVC。
 
         ```
         Events:
@@ -52,7 +52,7 @@ weight: 2
           Warning  ProvisioningFailed    63s (x3 over 64s)  csi.huawei.com_huawei-csi-controller-b59577886-qqzm8_58533e4a-884c-4c7f-92c3-6e8a7b327515  failed to provision volume with StorageClass "mysc": rpc error: code = Internal desc = failed to select pool, the capability filter failed, error: failed to select pool, the final filter field: replication, parameters map[allocType:thin replication:True size:1099511627776 volumeType:lun]. please check your storage class
         ```
 
-    -   如果由原因3导致PVC处于Pending状态，可以执行** kubectl delete pvc** _mypvc_  命令，删除PVC。
+    -   如果由原因3导致PVC处于Pending状态，可以执行  **kubectl delete pvc** _mypvc_  命令，删除PVC。
 
         ```
         Events:

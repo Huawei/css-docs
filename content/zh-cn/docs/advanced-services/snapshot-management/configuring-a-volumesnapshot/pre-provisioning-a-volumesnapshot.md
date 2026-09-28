@@ -83,8 +83,6 @@ spec:
 </td>
 <td class="cellrowborder" valign="top" width="54.56999999999999%" headers="mcps1.2.4.1.3 "><p id="p186954484407"><a name="p186954484407"></a><a name="p186954484407"></a>该参数值由以下三部分构成：</p>
 <a name="ul46951348124017"></a><a name="ul46951348124017"></a><ul id="ul46951348124017"><li>&lt;backend-name&gt;：该快照资源对应的后端名称，可使用如下命令获取配置的后端信息：oceanctl get backend</li><li>&lt;parent-id&gt;：存储上快照资源的父资源对象ID，可通过DeviceManager查看。</li><li>&lt;snapshot-name&gt;：存储上快照资源的名称，可通过DeviceManager查看。</li></ul>
-<div class="notice" id="note361571515246"><a name="note361571515246"></a><a name="note361571515246"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p176151115192412"><a name="p176151115192412"></a><a name="p176151115192412"></a>&lt;snapshot-name&gt;，存储上快照资源名称仅支持数字、字母以及下划线（_）的组合。</p>
-</div></div>
 </td>
 </tr>
 <tr id="row17349349444"><td class="cellrowborder" valign="top" width="19.63%" headers="mcps1.2.4.1.1 "><p id="p1535113412442"><a name="p1535113412442"></a><a name="p1535113412442"></a>spec.volumeSnapshotClassName</p>

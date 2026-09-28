@@ -7,7 +7,17 @@ weight: 9
 
 在Kubernetes集群中，可以根据节点的拓扑标签以及存储后端支持的拓扑能力调度和发放资源。
 
-## 前提条件{#zh-cn_topic_0000001200451233_section12171124814413}
+## 前提条件{#section63651698416}
+
+使用存储拓扑感知能力，需要在安装CSI时开启Topology特性门控。执行以下命令检查Topology特性门控是否开启。
+
+```
+helm get values helm-huawei-csi -n huawei-csi -a | grep topology
+```
+
+若回显内容为“topology: true”，则表示特性开启。若回显内容为 “topology: false”，或者没有回显，则需要通过[使用Helm升级](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm)操作，更新CSI配置参数并开启Topology特性门控。
+
+## 节点拓扑标签配置{#zh-cn_topic_0000001200451233_section12171124814413}
 
 需要在集群中的worker节点完成拓扑的标签配置，标签配置方法如下：
 
@@ -27,7 +37,7 @@ weight: 9
     node03   Ready    worker                     42d   v1.22.3
     ```
 
-3.  执行以下命令，给worker节点配置拓扑标签。其中_ nodename _为worker节点名称, key 和 value 参数说明请参考[表1](#zh-cn_topic_0000001200451233_table1261817418166)。
+3.  执行以下命令，给worker节点配置拓扑标签。其中  _nodename_  为worker节点名称, key 和 value 参数说明请参考[表1](#zh-cn_topic_0000001200451233_table1261817418166)。
 
     ```
     kubectl label node <nodename> <key>=<value>
@@ -85,7 +95,19 @@ weight: 9
     [node01,"beta.kubernetes.io/arch":"amd64","beta.kubernetes.io/os":"linux","kubernetes.io/arch":"amd64","kubernetes.io/hostname":"node01","kubernetes.io/os":"linux","node-role.kubernetes.io/controlplane":"true","node-role.kubernetes.io/etcd":"true","node-role.kubernetes.io/worker":"true","topology.kubernetes.io/zone":"ChengDu"}]
     ```
 
-## 操作步骤{#section2619114191417}
+5.  执行命令，重启huawei-csi-node服务。
+
+    ```
+    kubectl delete po -n huawei-csi -l app=huawei-csi-node
+    ```
+
+6.  等待所有huawei-csi-node服务运行后，执行以下命令，检查CSINode资源是否添加上topologyKeys，其中nodename为worker节点名称。
+
+    ```
+    kubectl get CSINode <nodename> -o yaml
+    ```
+
+## 拓扑感知配置流程{#section2619114191417}
 
 1.  使用远程访问工具（以PuTTY为例），通过管理IP地址，登录Kubernetes集群的任意master节点。
 2.  进入Helm工程的目录下，如果无法找到之前的Helm工程，则将组件包中的helm目录拷贝到master节点的任意目录下，组件包路径请参考[表1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#zh-cn_topic_0150885197_table17200162435412)。
@@ -95,7 +117,7 @@ weight: 9
     cp backend.yaml backend.yaml.bak
     ```
 
-4.  执行  **vi backend.yaml**  命令打开文件，按需求配置拓扑感知，示例如下所示。修改完成后，按  **Esc**  并输入  **:wq!**  ，保存修改。
+4.  执行  **vi** **backend.yaml**  命令打开文件，按需求配置拓扑感知，示例如下所示。修改完成后，按  **Esc**  并输入  **:wq!**  ，保存修改。
 
     ```yaml
     storage: "oceanstor-san"
@@ -135,7 +157,7 @@ weight: 9
     Please enter this backend password:
     ```
 
-7.  执行** vi StorageClass.yaml**  命令，修改yaml文件。按  **I**  或  **Insert**  进入编辑状态，在yaml文件下增加相关参数，详细参数说明请参见[表2](#zh-cn_topic_0000001352573769_table118458471087)。修改完成后，按  **Esc**  并输入  **:wq!**  ，保存修改。
+7.  执行  **vi StorageClass.yaml**  命令，修改yaml文件。按  **I**  或  **Insert**  进入编辑状态，在yaml文件下增加相关参数，详细参数说明请参见[表2](#zh-cn_topic_0000001352573769_table118458471087)。修改完成后，按  **Esc**  并输入  **:wq!**  ，保存修改。
 
     在StorageClass.yaml文件中添加以下配置项。
 

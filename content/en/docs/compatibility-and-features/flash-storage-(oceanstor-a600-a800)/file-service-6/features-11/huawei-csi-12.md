@@ -90,6 +90,11 @@ weight: 1
 <td class="cellrowborder" valign="top" width="66.96%" headers="mcps1.2.3.1.2 "><p id="p49831014582"><a name="p49831014582"></a><a name="p49831014582"></a>Not supported</p>
 </td>
 </tr>
+<tr id="row1057418422920"><td class="cellrowborder" valign="top" width="33.040000000000006%" headers="mcps1.2.3.1.1 "><p id="p15574164211910"><a name="p15574164211910"></a><a name="p15574164211910"></a>KV cache</p>
+</td>
+<td class="cellrowborder" valign="top" width="66.96%" headers="mcps1.2.3.1.2 "><p id="p757474210919"><a name="p757474210919"></a><a name="p757474210919"></a>Supported in V700R001C20 and later versions</p>
+</td>
+</tr>
 </tbody>
 </table>
 

@@ -23,8 +23,8 @@ weight: 5
 
 ## 操作步骤{#section14674125816351}
 
--   如果您使用iSCSI/FC协议对接华为企业存储，请参考[OceanStor Dorado & OceanStor在Red Hat下的主机连通性指南](https://support.huawei.com/enterprise/zh/doc/EDOC1100112792/e369b5d4)，对主机多路径进行配置和检查。
--   如果您使用NVMe over RoCE/NVMe over FC协议对接华为企业存储，请参考[OceanStor Dorado & OceanStor在Red Hat下的主机连通性指南](https://support.huawei.com/enterprise/zh/doc/EDOC1100112792/2bb03fdc)，对主机多路径进行配置和检查。
+-   如果您使用iSCSI/FC协议对接华为企业存储，请参考[《OceanStor Dorado & OceanStor 6.x & V700R001 在Red Hat下的主机连通性指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100112792/e369b5d4)，对主机多路径进行配置和检查。
+-   如果您使用NVMe over RoCE/NVMe over FC/NVMe over TCP协议对接华为企业存储，请参考[《OceanStor Dorado & OceanStor 6.x & V700R001使用NVMe over Fabrics协议对接Linux主机连通性指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100154491/b0c7a303)，对主机多路径进行配置和检查。
 -   如果您使用iSCSI协议对接华为分布式存储，请参考  [《FusionStorage 8.0.1 块存储基础业务配置指南》](https://support.huawei.com/enterprise/zh/doc/EDOC1100115351)中的“应用服务器配置多路径”章节，对主机多路径进行配置和检查。
 -   如果您使用了操作系统原生多路径时，需要检查/etc/multipath.conf文件是否存在如下配置：
 

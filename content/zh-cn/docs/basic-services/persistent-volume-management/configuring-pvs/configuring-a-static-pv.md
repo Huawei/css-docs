@@ -171,12 +171,11 @@ weight: 2
 </td>
 <td class="cellrowborder" valign="top" width="28.49368318756074%" headers="mcps1.2.6.1.2 "><p id="p189421447325"><a name="p189421447325"></a><a name="p189421447325"></a>卷资源类型为Dtree时，其父文件系统名称。</p>
 </td>
-<td class="cellrowborder" valign="top" width="6.802721088435375%" headers="mcps1.2.6.1.3 "><p id="p1694217415328"><a name="p1694217415328"></a><a name="p1694217415328"></a>条件必选</p>
+<td class="cellrowborder" valign="top" width="6.802721088435375%" headers="mcps1.2.6.1.3 "><p id="p1694217415328"><a name="p1694217415328"></a><a name="p1694217415328"></a>是</p>
 </td>
 <td class="cellrowborder" valign="top" width="13.80952380952381%" headers="mcps1.2.6.1.4 "><p id="p169421345328"><a name="p169421345328"></a><a name="p169421345328"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.20699708454811%" headers="mcps1.2.6.1.5 "><p id="p139424420325"><a name="p139424420325"></a><a name="p139424420325"></a>纳管对象为Dtree资源，且存储后端中未配置parentname参数时，必须配置该参数。</p>
-<p id="p1545865605919"><a name="p1545865605919"></a><a name="p1545865605919"></a>若仅在PV中配置了dTreeParentName，而对应的存储后端中未配置parentname时，要求在安装CSI时根据<a href="/css-docs/docs/installation-and-deployment/csi/installation/installation-using-helm/parameters-in-the-values-yaml-file-of-helm#table258712427285">表5</a>将CSIDriverObject.attachRequired设置为true。</p>
+<td class="cellrowborder" valign="top" width="33.20699708454811%" headers="mcps1.2.6.1.5 "><p id="p139424420325"><a name="p139424420325"></a><a name="p139424420325"></a>纳管对象为Dtree资源，必须配置该参数。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0000001255922865_row1455742510558"><td class="cellrowborder" valign="top" width="17.687074829931973%" headers="mcps1.2.6.1.1 "><p id="zh-cn_topic_0000001255922865_p055732595515"><a name="zh-cn_topic_0000001255922865_p055732595515"></a><a name="zh-cn_topic_0000001255922865_p055732595515"></a>spec.capacity.storage</p>

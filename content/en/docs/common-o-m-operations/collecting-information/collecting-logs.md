@@ -78,7 +78,7 @@ weight: 3
     oceanctl collect logs -n huawei-csi -a --threads-max=10
     ```
 
-3.  Check the log package generated in the  **/tmp**  directory. You can run the  **unzip **_<zip\_name\>_** -d collect\_logs**  command to decompress the log package. In the preceding command,  _<zip\_name\>_  indicates the package name.
+3.  Check the log package generated in the  **/tmp**  directory. You can run the  **unzip** _<zip\_name\>_ **-d collect\_logs**  command to decompress the log package. In the preceding command,  _<zip\_name\>_  indicates the package name.
 
     ```
     # date
@@ -91,13 +91,13 @@ weight: 3
 ## Collecting the Log of a Single CSI Node Using oceanctl{#section1039148347}
 
 1.  Use a remote access tool, such as PuTTY, to log in to the node checked in  [Performing Check Before Collection](#section298992810393)  through the management IP address.
-2.  Run the  **oceanctl collect logs -n **_<namespace\>_** -N **_<nodeName\>_  command to collect CSI logs of all nodes where CSI containers reside in the cluster.
+2.  Run the  **oceanctl collect logs -n** _<namespace\>_ **-N** _<nodeName\>_  command to collect CSI logs of all nodes where CSI containers reside in the cluster.
 
     ```
     oceanctl collect logs -n huawei-csi -N node-1
     ```
 
-3.  Check the log package generated in the  **/tmp**  directory. You can run the  **unzip **_<zip\_name\>_** -d collect\_logs**  command to decompress the log package. In the preceding command,  _<zip\_name\>_  indicates the package name.
+3.  Check the log package generated in the  **/tmp**  directory. You can run the  **unzip** _<zip\_name\>_ **-d collect\_logs**  command to decompress the log package. In the preceding command,  _<zip\_name\>_  indicates the package name.
 
     ```
     # date

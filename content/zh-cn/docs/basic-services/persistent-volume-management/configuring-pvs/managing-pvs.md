@@ -14,7 +14,7 @@ weight: 3
 >![](/css-docs/public_sys-resources/zh-cn/icon-note.gif)  
 >-   纳管卷供应支持将已有存储资源纳管至Kubernetes，不允许将一个存储资源纳管多次和针对同一个存储资源进行并发删除/创建操作。
 >    当同一个存储资源被多个集群纳管时，在单个集群中针对该纳管卷的操作仅在当前集群内生效，不会同步到其他集群中，需要使用者自行在其他集群中对该纳管卷进行数据同步操作。
->    例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容持久卷](/docs/basic-services/persistent-volume-management/managing-pvs-92/expanding-the-capacity-of-a-pv)中的扩容命令进行扩容。
+>    例如：在某一集群中对PVC进行扩容时，其他集群对应的PVC不会自动扩容，需要在其他集群中手动根据[扩容持久卷](/docs/basic-services/persistent-volume-management/managing-pvs-99/expanding-the-capacity-of-a-pv)中的扩容命令进行扩容。
 >-   纳管持久卷时，持久卷应该符合存储类声明，否则华为CSI可能无法正确管理该持久卷。例如：用户纳管普通持久卷时，使用的存储类中引用了双活类型的存储后端，并开启双活参数。纳管该持久卷后，用户如果对该持久卷执行克隆或基于快照创建新持久卷时，华为CSI将执行失败。
 >-   当使用纳管持久卷的方式管理双活卷时，请确保双活两端的存储卷名称一致。
 

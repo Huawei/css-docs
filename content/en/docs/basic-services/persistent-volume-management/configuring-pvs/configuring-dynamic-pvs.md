@@ -60,6 +60,7 @@ Before configuring dynamic PVs, configure StorageClass by referring to  [Configu
     >![](/css-docs/public_sys-resources/en-us/icon-notice.gif)  
     >-   After the PVC is created, if the PVC is in the  **Pending**  state after a long time \(for example, one minute\), refer to  [When a PVC Is Created, the PVC Is in the Pending State](/docs/troubleshooting/pvc-issues/when-a-pvc-is-created-the-pvc-is-in-the-pending-state).
     >-   You are advised to create or delete a maximum of 100 PVCs in a batch.
+    >-   When a local file system volume with KV cache resources is provisioned, the volume capacity must be greater than or equal to 10 Gi and less than or equal to 32 Pi.
 
 **Table  1**  PVC parameters for configuring a dynamic PV
 
@@ -132,7 +133,7 @@ Before configuring dynamic PVs, configure StorageClass by referring to  [Configu
 </td>
 <td class="cellrowborder" valign="top" width="8.8008800880088%" headers="mcps1.2.6.1.4 "><p id="p1589841251413"><a name="p1589841251413"></a><a name="p1589841251413"></a>ReadWriteOnce</p>
 </td>
-<td class="cellrowborder" valign="top" width="43.92439243924392%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li>RWO/ROX/RWOP: supported by all types of volumes. RWOP is supported only by Kubernetes 1.22 and later versions. For versions earlier than Kubernetes 1.29, you need to enable this feature by following the instructions in <a href="/css-docs/en/docs/common-o-m-operations/enabling-the-readwriteoncepod-feature-gate">Enabling the ReadWriteOncePod Feature Gate</a>.</li><li>The support for RWX is as follows:<a name="ul201701421154515"></a><a name="ul201701421154515"></a><ul id="ul201701421154515"><li>NAS storage: supported by all volumes</li><li>SAN storage: supported only by volumes whose <strong id="b14230943031350"><a name="b14230943031350"></a><a name="b14230943031350"></a>volumeMode</strong> is set to <strong id="b132583025131350"><a name="b132583025131350"></a><a name="b132583025131350"></a>Block</strong></li></ul>
+<td class="cellrowborder" valign="top" width="43.92439243924392%" headers="mcps1.2.6.1.5 "><a name="ul16793434324"></a><a name="ul16793434324"></a><ul id="ul16793434324"><li>RWO/ROX/RWOP: supported by all types of volumes. RWOP is supported only by Kubernetes 1.22 and later versions. For versions earlier than Kubernetes 1.29, you need to enable this feature by following the instructions in <a href="/css-docs/docs/common-o-m-operations/enabling-the-readwriteoncepod-feature-gate">Enabling the ReadWriteOncePod Feature Gate</a>.</li><li>The support for RWX is as follows:<a name="ul201701421154515"></a><a name="ul201701421154515"></a><ul id="ul201701421154515"><li>NAS storage: supported by all volumes</li><li>SAN storage: supported only by volumes whose <strong id="b14230943031350"><a name="b14230943031350"></a><a name="b14230943031350"></a>volumeMode</strong> is set to <strong id="b132583025131350"><a name="b132583025131350"></a><a name="b132583025131350"></a>Block</strong></li></ul>
 </li></ul>
 </td>
 </tr>

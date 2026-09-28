@@ -1,0 +1,47 @@
+# 向导元信息 + 流程定义（Q7/Q10）。
+# 新增产物类型 = 在 flow 中加一项 + 新模板 + fields.yaml 加字段组，无需改代码。
+version: "4.13.0" # 适配的华为 CSI 版本（当前文档版本）
+schemaVersion: 1 # 配置 schema 自身版本
+title_zh: 华为 CSI 配置向导
+title_en: Huawei CSI Config Wizard
+
+flow:
+  - id: helm
+    artifact: helm
+    label_zh: CSI 安装
+    label_en: CSI Installation
+    desc_zh: 生成 CSI 驱动安装所需的完整 Helm values.yaml，供 helm install 使用
+    desc_en: Generates the full Helm values.yaml for CSI driver installation (helm install)
+    file: helm-values.yaml
+    template: templates/helm-values.yaml
+    commands: templates/commands/helm.yaml
+  - id: backend
+    artifact: backend
+    label_zh: 存储后端
+    label_en: Storage Backend
+    desc_zh: 生成存储后端配置（oceanctl 创建，创建时交互输入存储账号密码，可添加多个）
+    desc_en: Generates storage backend config (created via oceanctl; prompts for storage account password; multiple supported)
+    file: backend.yaml
+    template: templates/backend.yaml
+    commands: templates/commands/backend.yaml
+    multi: true # 支持多个后端（每个后端一个文件）
+  - id: storageclass
+    artifact: sc
+    label_zh: 存储类
+    label_en: StorageClass
+    desc_zh: 官方文档示例（按当前存储产品/协议自动选择，只读参考）
+    desc_en: Official doc example (auto-selected by storage product/protocol, read-only reference)
+    file: storageclass.yaml
+    template: templates/storageclass.yaml
+    commands: templates/commands/storageclass.yaml
+    exampleOnly: true
+  - id: pvc
+    artifact: pvc
+    label_zh: 持久卷声明
+    label_en: PersistentVolumeClaim
+    desc_zh: 官方文档示例（动态 PVC，只读参考）
+    desc_en: Official doc example (dynamic PVC, read-only reference)
+    file: pvc.yaml
+    template: templates/pvc.yaml
+    commands: templates/commands/pvc.yaml
+    exampleOnly: true

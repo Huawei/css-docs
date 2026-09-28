@@ -180,10 +180,23 @@ The controller parameters are used to configure the huawei-csi-controller compon
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p9963729104213"><a name="p9963729104213"></a><a name="p9963729104213"></a>pvc</p>
 </td>
-<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p17366114313450"><a name="p17366114313450"></a><a name="p17366114313450"></a>The corresponding provisioner parameter name is <strong id="b561312220596"><a name="b561312220596"></a><a name="b561312220596"></a>--volume-name-prefix</strong>.</p>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p15381102832915"><a name="p15381102832915"></a><a name="p15381102832915"></a>The corresponding provisioner parameter name is <strong id="b561312220596"><a name="b561312220596"></a><a name="b561312220596"></a>--volume-name-prefix</strong>.</p>
 <p id="p9406581769"><a name="p9406581769"></a><a name="p9406581769"></a>It is recommended that the prefix contain no more than 20 characters.</p>
 <p id="p828611423316"><a name="p828611423316"></a><a name="p828611423316"></a>For details, see <a href="https://github.com/kubernetes-csi/external-provisioner/tree/release-3.0" target="_blank" rel="noopener noreferrer">Configuring the PV Name Prefix</a>.</p>
 <a name="ul517195262412"></a><a name="ul517195262412"></a><ul id="ul517195262412"><li>If the connected backend is OceanStor V5 SAN storage, it is recommended that the prefix contain a maximum of 5 characters.</li><li>If the connected backend is OceanStor V5 NAS storage, the prefix can contain only lowercase letters, hyphens (-), and digits.</li><li>If the connected backend is OceanStor Dorado, OceanStor, OceanDisk, or OceanStor A series storage, the prefix can contain only lowercase letters, hyphens (-), and digits.</li><li>If the connected backend is OceanStor Pacific series storage, the prefix can contain a maximum of 58 characters, including only letters, digits, underscores (_), hyphens (-), and periods (.).</li><li>If the connected backend is FusionStorage Block, the prefix can contain a maximum of 58 characters, including only letters, digits, underscores (_), and hyphens (-).</li></ul>
+</td>
+</tr>
+<tr id="row947104713435"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p04711347144314"><a name="p04711347144314"></a><a name="p04711347144314"></a>controller.hostNamePrefix</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p1747214724312"><a name="p1747214724312"></a><a name="p1747214724312"></a>Prefix of a storage host resource name.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p174721947134318"><a name="p174721947134318"></a><a name="p174721947134318"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><a name="ul206881522144516"></a><a name="ul206881522144516"></a><ul id="ul206881522144516"><li>Mass storage: The default prefix is empty.</li><li>For other storage: "k8s_"</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><a name="ul07925352244"></a><a name="ul07925352244"></a><ul id="ul07925352244"><li>The prefix characters must comply with the rules for the host name of the connected storage system.</li><li>The total length of the prefix and the original host name must comply with the host name length limit of the connected storage system.</li></ul>
+<div class="notice" id="note76921121256"><a name="note76921121256"></a><a name="note76921121256"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p069211218253"><a name="p069211218253"></a><a name="p069211218253"></a>This parameter needs to be configured when CSI is installed for the first time. Do not modify this parameter during subsequent upgrade or redeployment. Otherwise, volume mounting may fail.</p>
+</div></div>
 </td>
 </tr>
 <tr id="row17543658153417"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p11543175819348"><a name="p11543175819348"></a><a name="p11543175819348"></a>controller.webhookPort</p>
@@ -328,6 +341,17 @@ The controller parameters are used to configure the huawei-csi-controller compon
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p148791050164015"><a name="p148791050164015"></a><a name="p148791050164015"></a>The default value is recommended.</p>
 </td>
 </tr>
+<tr id="row1424312118178"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p11244142161714"><a name="p11244142161714"></a><a name="p11244142161714"></a>controller.csiExtender.volumeModify.workerThreads</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p182441121151719"><a name="p182441121151719"></a><a name="p182441121151719"></a>Number of worker threads for processing PVC change tasks.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p324432111718"><a name="p324432111718"></a><a name="p324432111718"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p02441321181711"><a name="p02441321181711"></a><a name="p02441321181711"></a>10</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p52441421151717"><a name="p52441421151717"></a><a name="p52441421151717"></a>Value range: (0, 100]</p>
+</td>
+</tr>
 <tr id="row1683154018317"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p12683194016316"><a name="p12683194016316"></a><a name="p12683194016316"></a>controller.exportCsiService.enabled</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p6683240539"><a name="p6683240539"></a><a name="p6683240539"></a>Whether to run CSI services on the Service of the Kubernetes cluster.</p>
@@ -349,6 +373,16 @@ The controller parameters are used to configure the huawei-csi-controller compon
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p175201135121817"><a name="p175201135121817"></a><a name="p175201135121817"></a>If a port conflict occurs, change the port number to an idle one.</p>
 </td>
+</tr>
+<tr id="row5142546141020"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p652012538109"><a name="p652012538109"></a><a name="p652012538109"></a>controller.exportCsiService.audience</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p345954913116"><a name="p345954913116"></a><a name="p345954913116"></a>Audience of the CSI service token</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p131431146131016"><a name="p131431146131016"></a><a name="p131431146131016"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1143346181013"><a name="p1143346181013"></a><a name="p1143346181013"></a>csi.huawei.com</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
 </tr>
 <tr id="row25248102218"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p19524181017211"><a name="p19524181017211"></a><a name="p19524181017211"></a>controller.healthMonitor.enabled</p>
 </td>
@@ -402,6 +436,27 @@ The controller parameters are used to configure the huawei-csi-controller compon
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1116184815293"><a name="p1116184815293"></a><a name="p1116184815293"></a>10</p>
 </td>
 <td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row14877516144320"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p3878916194311"><a name="p3878916194311"></a><a name="p3878916194311"></a>controller.provisioner.topology</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p2878111613434"><a name="p2878111613434"></a><a name="p2878111613434"></a>Whether to enable the topology feature gate.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p108787165430"><a name="p108787165430"></a><a name="p108787165430"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p118781616134312"><a name="p118781616134312"></a><a name="p118781616134312"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 ">&nbsp;&nbsp;</td>
+</tr>
+<tr id="row138732020431"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p28717205436"><a name="p28717205436"></a><a name="p28717205436"></a>controller.provisioner.strictTopology</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.6.1.2 "><p id="p487102014318"><a name="p487102014318"></a><a name="p487102014318"></a>Whether to use the strict topology mode.</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p138822094316"><a name="p138822094316"></a><a name="p138822094316"></a>No</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p388420114316"><a name="p388420114316"></a><a name="p388420114316"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="27%" headers="mcps1.2.6.1.5 "><p id="p2088620184310"><a name="p2088620184310"></a><a name="p2088620184310"></a>This parameter takes effect only when <strong id="b175925441249"><a name="b175925441249"></a><a name="b175925441249"></a>controller.provisioner.topology</strong> is set to <strong id="b4503154642412"><a name="b4503154642412"></a><a name="b4503154642412"></a>true</strong>.</p>
+</td>
 </tr>
 <tr id="row494353112620"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="p2035818367274"><a name="p2035818367274"></a><a name="p2035818367274"></a>controller.attacher.kubeApiQps</p>
 </td>
@@ -823,7 +878,9 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103471434184614"><a name="en-us_topic_0000001324610777_p103471434184614"></a><a name="en-us_topic_0000001324610777_p103471434184614"></a>/var/log/huawei</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p1093411975015"><a name="p1093411975015"></a><a name="p1093411975015"></a>Ensure that the directory has sufficient space for storing logs. It is recommended that the space be greater than or equal to 200 MB.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><div class="notice" id="note20539181920584"><a name="note20539181920584"></a><a name="note20539181920584"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p10539419115812"><a name="p10539419115812"></a><a name="p10539419115812"></a>The custom log directory must be in the <strong id="b77581678253"><a name="b77581678253"></a><a name="b77581678253"></a>/var/log/</strong> directory. Otherwise, log files cannot be persisted.</p>
+</div></div>
+<p id="p1093411975015"><a name="p1093411975015"></a><a name="p1093411975015"></a>Ensure that the directory has sufficient space for storing logs. It is recommended that the space be greater than or equal to 200 MB.</p>
 </td>
 </tr>
 <tr id="row1778411129457"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p17348134104614"><a name="en-us_topic_0000001324610777_p17348134104614"></a><a name="en-us_topic_0000001324610777_p17348134104614"></a>csiDriver.controllerLogging.fileSize</p>
@@ -857,7 +914,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p103486342462"><a name="en-us_topic_0000001324610777_p103486342462"></a><a name="en-us_topic_0000001324610777_p103486342462"></a>file</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b107464782"><a name="b107464782"></a><a name="b107464782"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p67624161807"><a name="p67624161807"></a><a name="p67624161807"></a>When the value is <strong id="b1129555750"><a name="b1129555750"></a><a name="b1129555750"></a>file</strong>, logs are retained in the specified directory of the node. When the Pod where CSI is located is destroyed, logs are still retained.</p>
 <p id="p1676211161707"><a name="p1676211161707"></a><a name="p1676211161707"></a>When the value is <strong id="b134821913194316"><a name="b134821913194316"></a><a name="b134821913194316"></a>console</strong>, logs are retained in the temporary space of the Pod where CSI is located. When the Pod where CSI is located is destroyed, the logs are also destroyed.</p>
 </td>
 </tr>
@@ -881,7 +938,9 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="en-us_topic_0000001324610777_p034893417469"><a name="en-us_topic_0000001324610777_p034893417469"></a><a name="en-us_topic_0000001324610777_p034893417469"></a>/var/log/huawei</p>
 </td>
-<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p1993429105012"><a name="p1993429105012"></a><a name="p1993429105012"></a>Ensure that the directory has sufficient space for storing logs. It is recommended that the space be greater than or equal to 200 MB.</p>
+<td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><div class="notice" id="note6751733185915"><a name="note6751733185915"></a><a name="note6751733185915"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p1755333597"><a name="p1755333597"></a><a name="p1755333597"></a>The custom log directory must be in the <strong id="b108337547258"><a name="b108337547258"></a><a name="b108337547258"></a>/var/log/</strong> directory. Otherwise, log files cannot be persisted.</p>
+</div></div>
+<p id="p1993429105012"><a name="p1993429105012"></a><a name="p1993429105012"></a>Ensure that the directory has sufficient space for storing logs. It is recommended that the space be greater than or equal to 200 MB.</p>
 </td>
 </tr>
 <tr id="row078551284516"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.6.1.1 "><p id="en-us_topic_0000001324610777_p73486347467"><a name="en-us_topic_0000001324610777_p73486347467"></a><a name="en-us_topic_0000001324610777_p73486347467"></a>csiDriver.nodeLogging.fileSize</p>
@@ -923,7 +982,7 @@ The csiDriver parameters include the basic configurations for running Huawei CSI
 </td>
 <td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.3 "><p id="p14792141917143"><a name="p14792141917143"></a><a name="p14792141917143"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p779218196141"><a name="p779218196141"></a><a name="p779218196141"></a>fasle</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p779218196141"><a name="p779218196141"></a><a name="p779218196141"></a>false</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p15792219121412"><a name="p15792219121412"></a><a name="p15792219121412"></a>By default, the information required by CSI on all nodes is saved to a Secret. After this function is enabled, an independent Secret is created for each node to save information.</p>
 <div class="notice" id="note1796210117254"><a name="note1796210117254"></a><a name="note1796210117254"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p4613191314526"><a name="p4613191314526"></a><a name="p4613191314526"></a>After this function is enabled, the following conditions must be met:</p>
@@ -1055,7 +1114,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p14210121524211"><a name="p14210121524211"></a><a name="p14210121524211"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1221071514218"><a name="p1221071514218"></a><a name="p1221071514218"></a>8s</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1221071514218"><a name="p1221071514218"></a><a name="p1221071514218"></a>15s</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p7210121554213"><a name="p7210121554213"></a><a name="p7210121554213"></a>This parameter takes effect only in the multi-controller scenario.</p>
 </td>
@@ -1066,7 +1125,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p11680894311"><a name="p11680894311"></a><a name="p11680894311"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p3168888435"><a name="p3168888435"></a><a name="p3168888435"></a>6s</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p3168888435"><a name="p3168888435"></a><a name="p3168888435"></a>10s</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p616888134320"><a name="p616888134320"></a><a name="p616888134320"></a>This parameter takes effect only in the multi-controller scenario.</p>
 </td>
@@ -1077,7 +1136,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p10568910134310"><a name="p10568910134310"></a><a name="p10568910134310"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p155681010134316"><a name="p155681010134316"></a><a name="p155681010134316"></a>2s</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p155681010134316"><a name="p155681010134316"></a><a name="p155681010134316"></a>5s</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p165681710114315"><a name="p165681710114315"></a><a name="p165681710114315"></a>This parameter takes effect only in the multi-controller scenario.</p>
 </td>
@@ -1122,7 +1181,7 @@ Other parameters include some features of the CSI plug-in or the policies for ob
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.6.1.3 "><p id="p2412174213224"><a name="p2412174213224"></a><a name="p2412174213224"></a>No</p>
 </td>
-<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1593232713328"><a name="p1593232713328"></a><a name="p1593232713328"></a>For the default values of different container resources, see <a href="/css-docs/en/docs/appendix/huawei-csi-resource-management">Huawei CSI Resource Management</a>.</p>
+<td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.6.1.4 "><p id="p1593232713328"><a name="p1593232713328"></a><a name="p1593232713328"></a>For the default values of different container resources, see <a href="/css-docs/docs/appendix/huawei-csi-resource-management">Huawei CSI Resource Management</a>.</p>
 </td>
 <td class="cellrowborder" valign="top" width="26%" headers="mcps1.2.6.1.5 "><p id="p13812293161"><a name="p13812293161"></a><a name="p13812293161"></a>The following uses livenessProbe of huawei-csi-controller as an example:</p>
 <pre class="screen" id="screen1541341184010"><a name="screen1541341184010"></a><a name="screen1541341184010"></a>resources:

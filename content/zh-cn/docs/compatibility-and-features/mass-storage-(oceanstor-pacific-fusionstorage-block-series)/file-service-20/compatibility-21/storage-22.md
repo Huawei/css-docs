@@ -18,7 +18,7 @@ weight: 1
 </thead>
 <tbody><tr id="row16502155513258"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0150885201_p467542723319"><a name="zh-cn_topic_0150885201_p467542723319"></a><a name="zh-cn_topic_0150885201_p467542723319"></a>OceanStor Pacific系列</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0150885201_p146755279338"><a name="zh-cn_topic_0150885201_p146755279338"></a><a name="zh-cn_topic_0150885201_p146755279338"></a>8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0, 8.2.1, V800R001C10, <span>V800R001C20</span></p>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0150885201_p146755279338"><a name="zh-cn_topic_0150885201_p146755279338"></a><a name="zh-cn_topic_0150885201_p146755279338"></a>8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0, 8.2.1, V800R001C10, <span>V800R001C20</span>, V800R001C30</p>
 </td>
 </tr>
 </tbody>
@@ -35,7 +35,7 @@ weight: 1
 </thead>
 <tbody><tr id="row132mcpsimp"><td class="cellrowborder" valign="top" width="49.96%" headers="mcps1.2.3.1.1 "><p id="p19397953184113"><a name="p19397953184113"></a><a name="p19397953184113"></a>OceanStor Pacific系列</p>
 </td>
-<td class="cellrowborder" valign="top" width="50.03999999999999%" headers="mcps1.2.3.1.2 "><p id="p6397953124114"><a name="p6397953124114"></a><a name="p6397953124114"></a>8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0, 8.2.1, V800R001C10, <span>V800R001C20</span></p>
+<td class="cellrowborder" valign="top" width="50.03999999999999%" headers="mcps1.2.3.1.2 "><p id="p6397953124114"><a name="p6397953124114"></a><a name="p6397953124114"></a>8.1.0, 8.1.1, 8.1.2, 8.1.3, 8.1.5, 8.2.0, 8.2.1, V800R001C10, <span>V800R001C20</span>, V800R001C30</p>
 </td>
 </tr>
 </tbody>

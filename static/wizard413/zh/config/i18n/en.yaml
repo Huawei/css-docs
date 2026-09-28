@@ -1,0 +1,69 @@
+app.title: Huawei CSI Config Wizard
+app.subtitle: Guided generation of helm-values / Storage Backend configs, plus official StorageClass / PVC examples
+nav.scenario: Scenario
+nav.helm: CSI Installation
+nav.backend: Storage Backend
+nav.storageclass: StorageClass
+nav.pvc: PersistentVolumeClaim
+nav.result: Result
+scenario.summary: Scenario
+scenario.title: Configuration Scenario
+scenario.hint: Select the scenario information directly related to the configuration
+scenario.start: Start Wizard
+step.back: Back
+step.next: Next
+step.viewResult: View Result
+scenario.help.family: Huawei storage product series; determines the storage type and available protocols
+scenario.help.serviceType: Block (databases, VMs), File (shared filesystems), or Dtree (quota directory trees)
+scenario.help.protocol: The connection protocol between hosts and storage
+scenario.help.platform: Determines installation presets (kubelet dir, driver name, install mode)
+nav.reset: Start Over
+result.downloadAll: Download All
+result.exampleBadge: Official Example
+result.yamlCollapse: Click to expand
+result.redirectNotice: "{step} has {n} unresolved validation issue(s); jumped there to fix"
+result.unresolved: "The following steps have validation issues; results may be incomplete"
+backend.add: Add Backend
+backend.remove: Remove
+list.add: Add
+backend.card: Backend {n}
+advanced.toggle: Advanced Options
+preview.title: Generated Preview
+preview.valid: Valid
+download: Download
+copy: Copy
+copied: Copied
+result.title: Deployment Result
+result.hint: Apply in the order below. StorageClass/PVC are official doc examples (auto-selected by storage product/protocol); everything else reflects the current config.
+result.order: Apply Order
+result.commands: Deployment Commands
+result.noBackends: No backends created yet - add one in step 2
+loading: Loading configuration…
+configError.title: Configuration Error
+configError.hint: Check the files under public/config/.
+lang.switch: 中文
+err.required: Required
+err.pattern: Invalid format
+err.min: Must be ≥ {min}
+err.max: Must be ≤ {max}
+err.enum: Not in the allowed set
+err.invalidJson: Not a valid JSON string
+err.unknownHook: Unknown validation rule
+err.summary: "{n} issue(s) to fix"
+serviceType.block: Block Service
+serviceType.file: File Service
+serviceType.dtree: Dtree
+protocol.fc: FC
+protocol.iscsi: iSCSI
+protocol.roce-nvme: NVMe over RoCE
+protocol.fc-nvme: NVMe over FC
+protocol.tcp-nvme: NVMe over TCP
+protocol.nfs: NFS
+protocol.nfs+: NFS+
+protocol.dpc: DPC
+protocol.scsi: SCSI
+protocol.dtfs: DataTurbo
+platform.k8s: Kubernetes
+platform.openshift: OpenShift
+platform.tanzu: Tanzu (TKGI)
+platform.cce: CCE / CCE Agile

@@ -99,7 +99,7 @@ weight: 1
 </tr>
 <tr id="row8191849183619"><td class="cellrowborder" valign="top" headers="mcps1.2.5.1.1 "><p id="p81912491363"><a name="p81912491363"></a><a name="p81912491363"></a>存储多租户</p>
 </td>
-<td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p112016213919"><a name="p112016213919"></a><a name="p112016213919"></a>不支持</p>
+<td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.5.1.2 mcps1.2.5.1.3 mcps1.2.5.1.4 "><p id="p112016213919"><a name="p112016213919"></a><a name="p112016213919"></a>仅支持对接单租户</p>
 </td>
 </tr>
 </tbody>
@@ -110,4 +110,5 @@ weight: 1
 >-   若容器平台部署在虚拟化平台上，CSI对接SAN存储时建议使用iSCSI协议。
 >-   若使用FC/NVMe over FC/NVMe over RoCE协议，需要对虚拟化平台进行特定配置，需客户侧的虚拟化团队提供技术支持。
 >-   使用NVMe over RoCE或NVMe over FC时，支持的nvme-cli工具版本为1.9及以上；使用NVMe over TCP时，支持的nvme-cli工具版本为2.0及以上；查询命令为：nvme version。
+>-   单套集群仅允许对接一个存储租户。因启动器在存储存在单租户关联限制，多租户对接将导致部分租户无法获取启动器权限，进而造成存储资源映射与挂载失败。
 

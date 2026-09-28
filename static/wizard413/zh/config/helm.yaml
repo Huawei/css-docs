@@ -1,0 +1,21 @@
+# Step1 平台预设（Q18=A：平台进入场景问答）。
+# 平台差异事实：Tanzu/CCE 的 kubeletConfigDir、CCE 的 driverName + 打包上传、OpenShift 的 SCC 前置。
+defaultPlatform: k8s
+platforms:
+  - id: k8s
+    label_zh: Kubernetes
+    label_en: Kubernetes
+    presets: {kubeletConfigDir: /var/lib/kubelet}
+  - id: openshift
+    label_zh: OpenShift
+    label_en: OpenShift
+    presets: {kubeletConfigDir: /var/lib/kubelet}
+  - id: tanzu
+    label_zh: Tanzu (TKGI)
+    label_en: Tanzu (TKGI)
+    presets: {kubeletConfigDir: /var/vcap/data/kubelet}
+  - id: cce
+    label_zh: CCE / CCE Agile
+    label_en: CCE / CCE Agile
+    presets: {kubeletConfigDir: /mnt/paas/kubernetes/kubelet, driverName: csi.oceanstor.com}
+    installMode: package-upload

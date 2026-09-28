@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="td-content">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+  <div class="csi-wizard-wrapper" style="margin-top: 1.5rem;">
+    <iframe
+      src="{{ .Params.wizard_src | relURL }}"
+      title="{{ .Title }}"
+      style="width: 100%; min-height: 80vh; border: 1px solid #e0e0e0; border-radius: 8px; display: block;"
+      loading="lazy"
+      id="csi-wizard-frame"
+    ></iframe>
+  </div>
+  {{ partial "page-meta-lastmod.html" . }}
+</div>
+<script>
+// 让 iframe 自适应高度：监听 iframe 内部 body 高度变化，动态调整 iframe 高度
+  var frame = document.getElementById('csi-wizard-frame');
+  if (!frame) return;
+  function resizeFrame() {
+    try {
+      var doc = frame.contentDocument || frame.contentWindow.document;
+      var h = doc.body.scrollHeight;
+      if (h && h > 0) frame.style.height = (h + 40) + 'px';
+    } catch (e) {
+      // 跨域时无法读取，保持 min-height
+    }
+  }
+  frame.addEventListener('load', resizeFrame);
+  window.addEventListener('resize', resizeFrame);
+  // 轮询兜底：wizard 内部表单切换导致高度变化
+  setInterval(resizeFrame, 1000);
+})();
+</script>
+{{ end }}

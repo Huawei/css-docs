@@ -7,7 +7,17 @@ weight: 9
 
 In the Kubernetes cluster, resources can be scheduled and provisioned based on the topology labels of nodes and the topology capabilities supported by storage backends.
 
-## Prerequisites{#en-us_topic_0000001200451233_section12171124814413}
+## Prerequisites{#section63651698416}
+
+To use the storage topology awareness capability, ensure the topology feature is enabled during CSI installation. Run the following command to check whether the topology feature is enabled:
+
+```
+helm get values helm-huawei-csi -n huawei-csi -a | grep topology
+```
+
+If  **topology: true**  is displayed in the command output, the feature is enabled. If  **topology: false**  is displayed or no command output is displayed in the command output, perform operations in  [Upgrade Using Helm](/docs/installation-and-deployment/csi/upgrade/upgrade-using-helm)  to update CSI configuration parameters and enable the topology feature.
+
+## Configuring Topology Labels for Nodes{#en-us_topic_0000001200451233_section12171124814413}
 
 You need to configure topology labels on worker nodes in the cluster. The method is as follows:
 
@@ -85,7 +95,19 @@ You need to configure topology labels on worker nodes in the cluster. The method
     [node01,"beta.kubernetes.io/arch":"amd64","beta.kubernetes.io/os":"linux","kubernetes.io/arch":"amd64","kubernetes.io/hostname":"node01","kubernetes.io/os":"linux","node-role.kubernetes.io/controlplane":"true","node-role.kubernetes.io/etcd":"true","node-role.kubernetes.io/worker":"true","topology.kubernetes.io/zone":"ChengDu"}]
     ```
 
-## Procedure{#section2619114191417}
+5.  Run the following command to restart the huawei-csi-node service.
+
+    ```
+    kubectl delete po -n huawei-csi -l app=huawei-csi-node
+    ```
+
+6.  After all huawei-csi-node services are running, run the following command to check whether  **topologyKeys**  field is added to the CSINode resource. In the command,  **nodename**  indicates the name of the worker node.
+
+    ```
+    kubectl get CSINode <nodename> -o yaml
+    ```
+
+## Topology Awareness Configuration Process{#section2619114191417}
 
 1.  Use a remote access tool, such as PuTTY, to log in to any master node in the Kubernetes cluster through the management IP address.
 2.  Go to the directory where the Helm project is located. If the previous Helm project cannot be found, copy the  **helm**  directory in the component package to any directory on the master node. For details about the component package path, see  [Table 1](/docs/installation-and-deployment/csi/installation-preparations/downloading-the-huawei-csi-software-package#en-us_topic_0150885197_table17200162435412).
@@ -95,7 +117,7 @@ You need to configure topology labels on worker nodes in the cluster. The method
     cp backend.yaml backend.yaml.bak
     ```
 
-4.  Run the  **vi backend.yaml**  command to open the file and configure topology awareness as required. The following is an example. After the modification is complete, press  **Esc**  and enter  **:wq!**  to save the modification.
+4.  Run the  **vi** **backend.yaml**  command to open the file and configure topology awareness as required. The following is an example. After the modification is complete, press  **Esc**  and enter  **:wq!**  to save the modification.
 
     ```yaml
     storage: "oceanstor-san"
@@ -210,7 +232,7 @@ You need to configure topology labels on worker nodes in the cluster. The method
     </td>
     </tr>
     <tr id="en-us_topic_0000001352573769_row85481628121017"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0000001352573769_p1209324123216"><a name="en-us_topic_0000001352573769_p1209324123216"></a><a name="en-us_topic_0000001352573769_p1209324123216"></a><span class="parmname" id="en-us_topic_0000001352573769_parmname152098242326"><a name="en-us_topic_0000001352573769_parmname152098242326"></a><a name="en-us_topic_0000001352573769_parmname152098242326"></a><b>values</b></span>:</p>
-    <p id="en-us_topic_0000001352573769_p1024122115329"><a name="en-us_topic_0000001352573769_p1024122115329"></a><a name="en-us_topic_0000001352573769_p1024122115329"></a>If <span class="parmname" id="parmname208347569183"><a name="parmname208347569183"></a><a name="parmname208347569183"></a><b>key</b></span> is <span class="parmvalue" id="parmvalue1783415671817"><a name="parmvalue1783415671817"></a><a name="parmvalue1783415671817"></a><b>topology.kubernetes.io/zone</b></span> or <span class="parmvalue" id="parmvalue1383405681818"><a name="parmvalue1383405681818"></a><a name="parmvalue1383405681818"></a><b>topology.kubernetes.io/region</b></span>, <span class="parmname" id="parmname18834205691818"><a name="parmname18834205691818"></a><a name="parmname18834205691818"></a><b>values</b></span> must be the same as that in <a href="/css-docs/en/docs/common-o-m-operations/configuring-storage-topology-awareness#en-us_topic_0000001200451233_section12171124814413">Prerequisites</a>.</p>
+    <p id="en-us_topic_0000001352573769_p1024122115329"><a name="en-us_topic_0000001352573769_p1024122115329"></a><a name="en-us_topic_0000001352573769_p1024122115329"></a>If <span class="parmname" id="parmname208347569183"><a name="parmname208347569183"></a><a name="parmname208347569183"></a><b>key</b></span> is <span class="parmvalue" id="parmvalue1783415671817"><a name="parmvalue1783415671817"></a><a name="parmvalue1783415671817"></a><b>topology.kubernetes.io/zone</b></span> or <span class="parmvalue" id="parmvalue1383405681818"><a name="parmvalue1383405681818"></a><a name="parmvalue1383405681818"></a><b>topology.kubernetes.io/region</b></span>, <span class="parmname" id="parmname18834205691818"><a name="parmname18834205691818"></a><a name="parmname18834205691818"></a><b>values</b></span> must be the same as that in <a href="/css-docs/docs/common-o-m-operations/configuring-storage-topology-awareness#en-us_topic_0000001200451233_section12171124814413">Configuring Topology Labels for Nodes</a>.</p>
     <p id="en-us_topic_0000001352573769_p195481328151018"><a name="en-us_topic_0000001352573769_p195481328151018"></a><a name="en-us_topic_0000001352573769_p195481328151018"></a>If <span class="parmname" id="en-us_topic_0000001352573769_parmname13144742173219"><a name="en-us_topic_0000001352573769_parmname13144742173219"></a><a name="en-us_topic_0000001352573769_parmname13144742173219"></a><b>key</b></span> is <strong id="en-us_topic_0000001352573769_b1914414427326"><a name="en-us_topic_0000001352573769_b1914414427326"></a><a name="en-us_topic_0000001352573769_b1914414427326"></a>topology.kubernetes.io/protocol.</strong><em id="en-us_topic_0000001352573769_i14145194283217"><a name="en-us_topic_0000001352573769_i14145194283217"></a><a name="en-us_topic_0000001352573769_i14145194283217"></a>&lt;protocol&gt;</em>, <span class="parmname" id="en-us_topic_0000001352573769_parmname1114654215323"><a name="en-us_topic_0000001352573769_parmname1114654215323"></a><a name="en-us_topic_0000001352573769_parmname1114654215323"></a><b>value</b></span> is fixed at <span class="parmvalue" id="en-us_topic_0000001352573769_parmvalue9146174218322"><a name="en-us_topic_0000001352573769_parmvalue9146174218322"></a><a name="en-us_topic_0000001352573769_parmvalue9146174218322"></a><b>csi.huawei.com</b></span>.</p>
     </td>
     </tr>

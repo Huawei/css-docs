@@ -1,0 +1,470 @@
+images:
+  # Images provided by Huawei
+  huaweiCSIService: huawei-csi:4.13.0
+  storageBackendSidecar: storage-backend-sidecar:4.13.0
+  storageBackendController: storage-backend-controller:4.13.0
+  huaweiCSIExtender: huawei-csi-extender:4.13.0
+
+  # CSI-related sidecar images provided by the Kubernetes community.
+  # These must match the appropriate Kubernetes version.
+  sidecar:
+    attacher: registry.k8s.io/sig-storage/csi-attacher:v4.8.0
+    provisioner: registry.k8s.io/sig-storage/csi-provisioner:v5.2.0
+    resizer: registry.k8s.io/sig-storage/csi-resizer:v1.13.2
+    registrar: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0
+    livenessProbe: registry.k8s.io/sig-storage/livenessprobe:v2.15.0
+    snapshotter: registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0
+    snapshotController: registry.k8s.io/sig-storage/snapshot-controller:v8.2.0
+    healthMonitorController: registry.k8s.io/sig-storage/csi-external-health-monitor-controller:v0.17.0
+
+# Default image pull policy for sidecar container images, support [IfNotPresent, Always, Never]
+sidecarImagePullPolicy: "IfNotPresent"
+
+# Default image pull policy for Huawei plugin container images, support [IfNotPresent, Always, Never]
+huaweiImagePullPolicy: "IfNotPresent"
+
+# Uses secrets to pull images from private container image registry or repository
+{{#if helm.imagePullSecrets}}
+imagePullSecrets:
+{{#each helm.imagePullSecrets}}
+  - name: "{{this}}"
+{{/each}}
+{{/if}}
+{{#unless helm.imagePullSecrets}}
+imagePullSecrets: []
+{{/unless}}
+
+# Namespace for installing huawei-csi-nodes and huawei-csi-controllers
+kubernetes:
+  # the default value huawei-csi is recommended.
+  namespace: {{helm.namespace}}
+
+# Specify kubelet config dir path.
+# kubernetes and openshift is usually /var/lib/kubelet
+# Tanzu is usually /var/vcap/data/kubelet
+# CCE is usually /mnt/paas/kubernetes/kubelet
+kubeletConfigDir: {{helm.kubeletConfigDir}}
+
+CSIDriverObject:
+  # isCreate: create CSIDriver Object
+  # If the Kubernetes version is lower than 1.18, set this parameter to false.
+  # Allowed values:
+  #   true: will create CSIDriver object during installation.
+  #   false: will not create CSIDriver object during installation.
+  # Default value: false
+  isCreate: false
+  # If the Kubernetes version is lower than 1.20, set this parameter to null.
+  # fsGroupPolicy: Defines if the underlying volume supports changing ownership and permission of the volume before being mounted.
+  # 'fsGroupPolicy' is only valid when 'isCreate' is true
+  # Allowed values:
+  #   ReadWriteOnceWithFSType: supports volume ownership and permissions change only if the fsType is defined
+  #   and the volume's accessModes contains ReadWriteOnce.
+  #   File: kubernetes may use fsGroup to change permissions and ownership of the volume
+  #   to match user requested fsGroup in the pod's security policy regardless of fstype or access mode.
+  #   None: volumes will be mounted with no modifications.
+  # Default value: null
+  fsGroupPolicy: null
+  # If the Kubernetes version is lower than 1.18, set this parameter to true.
+  # attachRequired: Whether to skip any attach operation altogether.
+  # When 'isCreate' is true and 'attachRequired' is false, csi-attacher sidecar will not be deployed
+  # Allowed values:
+  #   true: attach will be called.
+  #   false: attach will be skipped.
+  # Default value: true
+  attachRequired: true
+
+controller:
+  # controllerCount: Define the number of huawei-csi controller
+  # Allowed values: n, where n > 0
+  # Default value: 1
+  # Recommended value: 2
+  controllerCount: {{helm.controllerCount}}
+
+  # volumeNamePrefix: Define a prefix that is prepended to volumes.
+  # THIS MUST BE ALL LOWER CASE.
+  # Default value: pvc
+  # Examples: "volumes", "vol"
+  volumeNamePrefix: pvc
+
+  # Port used by the webhook service. The default port is 4433.
+  # You can change the port to another port that is not occupied.
+  webhookPort: 4433
+
+  # Controller container probe port. The default port is 9808.
+  # You can change the port to another port that is not occupied.
+  livenessProbePort: 9808
+
+  snapshot:
+    # enabled: Enable/Disable volume snapshot feature
+    # If the Kubernetes version is lower than 1.17, set this parameter to false.
+    # Allowed values:
+    #   true: enable volume snapshot feature(install snapshotter sidecar)
+    #   false: disable volume snapshot feature(do not install snapshotter sidecar)
+    # Default value: None
+    enabled: {{helm.snapshotEnabled}}
+
+  resizer:
+    # enabled: Enable/Disable volume expansion feature
+    # Allowed values:
+    #   true: enable volume expansion feature(install resizer sidecar)
+    #   false: disable volume snapshot feature(do not install resizer sidecar)
+    # Default value: None
+    enabled: true
+    # CSI community csi-resizer container kube-api rate limiting configuration
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+  csiExtender:
+    # volume modify feature
+    volumeModify:
+      # enabled: Enable/Disable volume modify feature
+      # Allowed values:
+      #   true: enable volume modify feature
+      #   false: disable volume modify feature
+      # Default value: false
+      enabled: false
+      # Duration, the base delay time when the resource of volume modify enters limit queue
+      retryBaseDelay: 5s
+      # Duration, the max delay time when the resource of volume modify enters limit queue
+      retryMaxDelay: 5m
+      # Duration, volume modify resource reconcile delay time
+      reconcileDelay: 1s
+
+  exportCsiService:
+    # enabled: Enable/Disable running the CSI exported server on service, so that other pod can call CSI
+    # Allowed values:
+    #   true: enable running the exported CSI server
+    #   false: disable running the exported CSI server on service
+    # Default value: false
+    enabled: false
+    # Port used by the CSI server when it is exported on service. The default port is 9090.
+    # You can change the port to another port that is not occupied.
+    port: 9090
+
+  healthMonitor:
+    # enabled: Enable/Disable health monitor feature
+    # Allowed values:
+    #   true: enable health monitor feature
+    #   false: disable health monitor feature
+    # Default value: false
+    enabled: false
+    # monitorInterval: Health monitor polling interval
+    # Default value: 60s
+    monitorInterval: 60s
+    # number of pv monitor worker threads
+    # Default value: 10
+    workThreads: 10
+
+  # nodeSelector: Define node selection constraints for controller pods.
+  # For the pod to be eligible to run on a node, the node must have each
+  # of the indicated key-value pairs as labels.
+  # Leave as blank to consider all nodes
+  # Allowed values: map of key-value pairs
+  # Default value: None
+  nodeSelector:
+  # Uncomment if nodes you wish to use have the node-role.kubernetes.io/master taint
+  #  node-role.kubernetes.io/master: ""
+  # Uncomment if nodes you wish to use have the node-role.kubernetes.io/control-plane taint
+  #  node-role.kubernetes.io/control-plane: ""
+
+  # tolerations: Define tolerations that would be applied to controller deployment
+  # Leave as blank to install controller on worker nodes
+  # Allowed values: map of key-value pairs
+  # Default value: None
+  tolerations:
+  # Uncomment if nodes you wish to use have the node-role.kubernetes.io/master taint
+  #  - key: "node-role.kubernetes.io/master"
+  #    operator: "Exists"
+  # Uncomment if nodes you wish to use have the node-role.kubernetes.io/control-plane taint
+  #  - key: "node-role.kubernetes.io/control-plane"
+  #    operator: "Exists"
+
+  # affinity: constrain which nodes your Pod can be scheduled on based on node labels
+  affinity: {}
+
+  # CSI community csi-provisioner container kube-api rate limiting configuration
+  provisioner:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+  # CSI community csi-attacher container kube-api rate limiting configuration
+  attacher:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+
+  # CSI community csi-snapshotter container kube-api rate limiting configuration
+  snapshotter:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+  # Huawei storage-backend-controller container kube-api rate limiting configuration
+  storageBackendController:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+  # Huawei storage-backend-sidecar container kube-api rate limiting configuration
+  storageBackendSidecar:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+  # Huawei huawei-csi-extender container kube-api rate limiting configuration
+  huaweiCsiExtender:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+  # Huawei huawei-csi-driver container kube-api rate limiting configuration
+  huaweiCsiDriver:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+node:
+  # maxVolumesPerNode: Defines the maximum number of volumes that can be used by a node.
+  # Examples: 100
+  # Uncomment if you want to limit the number of volumes that can be used in a Node.
+  {{#if helm.maxVolumesPerNode}}
+  maxVolumesPerNode: {{helm.maxVolumesPerNode}}
+  {{/if}}
+
+  # nodeSelector: Define node selection constraints for node pods.
+  # For the pod to be eligible to run on a node, the node must have each
+  # of the indicated key-value pairs as labels.
+  # Leave as blank to consider all nodes
+  # Allowed values: map of key-value pairs
+  # Default value: None
+  nodeSelector:
+  # Uncomment if nodes you wish to use have the node-role.kubernetes.io/master taint
+  #  node-role.kubernetes.io/master: ""
+  # Uncomment if nodes you wish to use have the node-role.kubernetes.io/control-plane taint
+  #  node-role.kubernetes.io/control-plane: ""
+
+  # tolerations: Define tolerations that would be applied to node daemonset
+  # Add/Remove tolerations as per requirement
+  # Leave as blank if you wish to not apply any tolerations
+  # Allowed values: map of key-value pairs
+  # Default value: None
+  tolerations:
+    - key: "node.kubernetes.io/memory-pressure"
+      operator: "Exists"
+      effect: "NoExecute"
+    - key: "node.kubernetes.io/disk-pressure"
+      operator: "Exists"
+      effect: "NoExecute"
+    - key: "node.kubernetes.io/network-unavailable"
+      operator: "Exists"
+      effect: "NoExecute"
+#    - key: "node-role.kubernetes.io/control-plane"
+#      operator: "Exists"
+#      effect: "NoSchedule"
+#    - key: "node-role.kubernetes.io/master"
+#      operator: "Exists"
+#      effect: "NoSchedule"
+
+  # affinity: constrain which nodes your Pod can be scheduled on based on node labels
+  affinity: {}
+
+  # Node container probe port. The default port is 9800.
+  # You can change the port to another port that is not occupied.
+  livenessProbePort: 9800
+
+  # After successful MountVolume for block volume, publish directory structure will be like below
+  # /var/lib/kubelet/plugins/kubernetes.io/csi/{kubeletVolumeDevicesDirName}/publish/{specName}/{podUID}
+  kubeletVolumeDevicesDirName: volumeDevices
+
+  # Huawei huawei-csi-driver container kube-api rate limiting configuration
+  huaweiCsiDriver:
+    kubeApiQps: 5
+    kubeApiBurst: 10
+
+
+# The CSI driver parameter configuration
+csiDriver:
+  # Driver name, it is strongly recommended not to modify this parameter
+  # The CCE platform needs to modify this parameter, e.g. csi.oceanstor.com
+  driverName: {{helm.driverName}}
+  # Endpoint, it is strongly recommended not to modify this parameter
+  endpoint: /csi/csi.sock
+  # DR Endpoint, it is strongly recommended not to modify this parameter
+  drEndpoint: /csi/dr-csi.sock
+  # Maximum number of concurrent disk scans or detaches, support 1~10
+  connectorThreads: {{helm.connectorThreads}}
+  # Flag to enable or disable volume multipath access, support [true, false]
+  volumeUseMultipath: {{helm.volumeUseMultipath}}
+  # Multipath software used by fc/iscsi. support [DM-multipath, HW-UltraPath, HW-UltraPath-NVMe]
+  scsiMultipathType: {{helm.scsiMultipathType}}
+  # Multipath software used by roce-nvme/fc-nvme. support [HW-UltraPath-NVMe, NVMe-Native]
+  nvmeMultipathType: {{helm.nvmeMultipathType}}
+  # Timeout interval for waiting for multipath aggregation when DM-multipath is used on the host. support 1~600
+  scanVolumeTimeout: 3
+  # Timeout interval for running command on the host. support 1~600
+  execCommandTimeout: 30
+  # Whether to enable automatic CSI disk scanning when RoCE protocol is used,
+  # If an external tool is used to establish a connection, this parameter can be set to false.
+  # Default value: true
+  enableRoCEConnect: true
+  # check the number of paths for multipath aggregation
+  # Allowed values:
+  #   true: the number of paths aggregated by DM-multipath is equal to the number of online paths
+  #   false: the number of paths aggregated by DM-multipath is not checked.
+  # Default value: false
+  allPathOnline: false
+  # Interval for updating backend capabilities. support 60~600
+  backendUpdateInterval: 60
+  # Huawei-csi-controller log configuration
+  controllerLogging:
+    # Log record type, support [file, console]
+    module: file
+    # Log Level, support [debug, info, warning, error, fatal]
+    level: {{helm.logLevel}}
+    # Directory for storing logs
+    fileDir: /var/log/huawei
+    # Size of a single log file
+    fileSize: 20M
+    # Maximum number of log files that can be backed up.
+    maxBackups: 9
+  # Huawei-csi-node log configuration
+  nodeLogging:
+    # Log record type, support [file, console]
+    module: file
+    # Log Level, support [debug, info, warning, error, fatal]
+    level: {{helm.logLevel}}
+    # Directory for storing logs
+    fileDir: /var/log/huawei
+    # Size of a single log file
+    fileSize: 20M
+    # Maximum number of log files that can be backed up.
+    maxBackups: 9
+  # Whether to report node IP
+  reportNodeIP: false
+  # Whether to allow creating secrets for each Kubernetes node to store host information.
+  # Allowed values:
+  #   true: create a secret for each Kubernetes node and store the host information in the secret, suitable for large-scale clusters.
+  #   false: store the host information of all Kubernetes nodes in a secret.
+  enablePerNodeSecret: false
+
+# leaderElection configuration
+leaderElection:
+  leaseDuration: 8s
+  renewDeadline: 6s
+  retryPeriod: 2s
+
+# The parameter service used to configure dual-IP protocol stack.
+# ref: https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services
+service:
+  # ipFamilyPolicy: define huawei-csi-controller service IP policy
+  # Allowed values:
+  #   SingleStack: Single-stack service. The control plane allocates a cluster IP for the Service, using the first configured service cluster IP range.
+  #   PreferDualStack: Allocates both IPv4 and IPv6 cluster IPs for the Service when dual-stack is enabled. If dual-stack is not enabled or supported, it falls back to single-stack behavior.
+  #   RequireDualStack: Allocates Service .spec.clusterIPs from both IPv4 and IPv6 address ranges when dual-stack is enabled. If dual-stack is not enabled or supported, the Service API object creation fails.
+  # Default value: SingleStack
+  ipFamilyPolicy: SingleStack
+  # ipFamilies: indicate the list of supported IP protocols.
+  # Allowed values: the list of IP protocols, whose elements can contain only IPv4 and IPv6.
+  # Default value: -IPv4
+  ipFamilies:
+    - IPv4
+    # - IPv6
+
+# Specify the amount of CPU and memory resources that a container requires.
+resources:
+# To disable the default configuration, comment out the following section.
+  controller:
+    livenessProbe:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+      requests:
+        cpu: 10m
+        memory: 128Mi
+    csiProvisioner:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    csiAttacher:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    csiResizer:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    csiSnapshotter:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    snapshotController:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    storageBackendController:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    storageBackendSidecar:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    huaweiCsiExtender:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    huaweiCsiDriver:
+      limits:
+        cpu: 500m
+        memory: 1Gi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    healthMonitor:
+      limits:
+        cpu: 300m
+        memory: 512Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+  node:
+    livenessProbe:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+      requests:
+        cpu: 10m
+        memory: 128Mi
+    csiNodeDriverRegistrar:
+      limits:
+        cpu: 300m
+        memory: 128Mi
+      requests:
+        cpu: 50m
+        memory: 128Mi
+    huaweiCsiDriver:
+      limits:
+        cpu: 500m
+        memory: 1Gi
+      requests:
+        cpu: 50m
+        memory: 128Mi

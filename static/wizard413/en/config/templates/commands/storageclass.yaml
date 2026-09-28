@@ -1,0 +1,6 @@
+commands:
+  - text_zh: 创建 StorageClass
+    text_en: Create the StorageClass
+    code: |
+      kubectl apply -f storageclass.yaml
+      kubectl get sc mysc

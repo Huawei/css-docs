@@ -1,0 +1,6 @@
+commands:
+  - text_zh: 创建后端（oceanctl 会交互式询问存储账号密码）
+    text_en: Create the backend (oceanctl prompts for the storage account password, stored as a K8s Secret)
+    code: |
+      oceanctl create backend -f {{backend.name}}.yaml -i yaml
+      oceanctl get backend {{backend.name}} -n {{helm.namespace}}
