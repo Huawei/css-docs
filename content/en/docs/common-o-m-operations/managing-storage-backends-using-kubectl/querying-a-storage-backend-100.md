@@ -38,7 +38,7 @@ weight: 2
 
     ```
     NAME              CLAIM                       SN               VENDORNAME   PROVIDERVERSION   ONLINE   AGE
-    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.12.0            true     53d
+    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.13.0            true     53d
     ```
 
 2.  Run the following command to view storage backend instances in YAML format:

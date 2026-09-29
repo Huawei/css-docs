@@ -32,7 +32,7 @@ CSI allows you to add a storage certificate to use the TLS/SSL protocol to encry
 
     ```
     NAME              CLAIM                       SN               VENDORNAME   PROVIDERVERSION   ONLINE   AGE
-    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.12.0            true     53d
+    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.13.0            true     53d
     ```
 
 ## Deleting a Storage Certificate{#section12785430175717}

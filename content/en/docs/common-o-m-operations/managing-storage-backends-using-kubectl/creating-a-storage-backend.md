@@ -224,6 +224,6 @@ weight: 1
 
     ```
     NAME              CLAIM                       SN               VENDORNAME   PROVIDERVERSION   ONLINE   AGE
-    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.12.0            true     53d
+    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.13.0            true     53d
     ```
 

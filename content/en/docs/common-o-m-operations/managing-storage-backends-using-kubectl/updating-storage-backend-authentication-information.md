@@ -46,7 +46,7 @@ To prevent the storage backend from becoming temporarily unavailable when the ex
 
     ```
     NAME              CLAIM                       SN               VENDORNAME   PROVIDERVERSION   ONLINE   AGE
-    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.12.0            true     53d
+    content-xxxxxxx   huawei-csi/backend-demo     xxxxxxxxxxxxxx   Huawei       4.13.0            true     53d
     ```
 
 5.  Delete the old secret.
